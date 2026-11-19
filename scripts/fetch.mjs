@@ -13,7 +13,7 @@ import path from 'node:path';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site', 'data', 'bids.json');
 const BASE = 'https://apis.data.go.kr/1230000/ad/BidPublicInfoService02';
-const OPERATION = 'getBidPblancListInfoServcPPSSrch'; // 나라장터검색조건에 의한 입찰공고용역조회
+const OPERATION = 'getBidPblancListInfoServcPPSSrch02'; // 나라장터검색조건에 의한 입찰공고용역조회
 const ROWS = 100;
 
 const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8'));
@@ -48,6 +48,8 @@ async function callApi(params) {
   if (header && header.resultCode !== '00') {
     throw new Error(`API 오류 ${header.resultCode}: ${header.resultMsg}`);
   }
+  const gw = json?.OpenAPI_ServiceResponse?.cmmMsgHeader;
+  if (gw) throw new Error(`API 게이트웨이 오류 ${gw.returnReasonCode}: ${gw.returnAuthMsg || gw.errMsg}`);
   const body = json?.response?.body;
   if (!body) throw new Error(`예상과 다른 응답 구조: ${text.slice(0, 300)}`);
   const raw = body.items;
