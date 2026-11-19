@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공공사업 공고 모음</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+  :root {
+    --bg: #f2f4f6; --card: #ffffff; --text: #191f28; --sub: #4e5968; --muted: #8b95a1;
+    --line: #f2f4f6; --field: #f2f4f6; --blue: #3182f6; --blue-weak: #e8f3ff;
+    --red: #f04452; --red-weak: #ffeeee; --gray-pill: #f2f4f6; --shadow: 0 1px 3px rgba(0, 27, 55, .06);
+    --logo-bg: transparent;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101013; --card: #17171c; --text: #f2f4f6; --sub: #c3c8cf; --muted: #7e8590;
+      --line: #212127; --field: #212127; --blue: #4593fc; --blue-weak: #1b2a41;
+      --red: #ff6b76; --red-weak: #3a1d21; --gray-pill: #25252c; --shadow: none;
+      --logo-bg: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); letter-spacing: -0.01em;
+    font: 16px/1.5 "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif; }
+  main { max-width: 880px; margin: 0 auto; padding: 0 16px 64px; }
+
+  .top { display: flex; align-items: center; justify-content: space-between; padding: 20px 0 8px; }
+  .logo-text { font-weight: 800; font-size: 20px; color: var(--blue); }
+  .updated { color: var(--muted); font-size: 13px; text-align: right; }
+
+  .hero { padding: 28px 0 24px; }
+  .hero h1 { font-size: 30px; line-height: 1.3; font-weight: 800; margin: 0; text-wrap: balance; }
+  .hero h1 em { font-style: normal; color: var(--blue); }
+  .hero p { margin: 8px 0 0; color: var(--sub); font-size: 16px; }
+
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 12px; }
+  .stat { background: var(--card); border-radius: 20px; padding: 20px; box-shadow: var(--shadow); }
+  .stat .label { color: var(--muted); font-size: 14px; font-weight: 500; }
+  .stat .value { font-size: 24px; font-weight: 800; margin-top: 4px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .stat .value small { font-size: 15px; font-weight: 600; color: var(--sub); margin-left: 2px; }
+  .stat.alert .value { color: var(--red); }
+
+  .panel { background: var(--card); border-radius: 24px; box-shadow: var(--shadow); overflow: hidden; }
+  .controls { padding: 20px 20px 8px; display: grid; gap: 12px; }
+  .search { position: relative; }
+  .search input { width: 100%; height: 48px; border: 0; border-radius: 14px; background: var(--field); color: var(--text);
+    padding: 0 16px 0 44px; font: inherit; font-size: 16px; outline: none; }
+  .search input::placeholder { color: var(--muted); }
+  .search input:focus { box-shadow: inset 0 0 0 2px var(--blue); }
+  .search svg { position: absolute; left: 14px; top: 14px; color: var(--muted); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .chip-btn { border: 0; cursor: pointer; height: 36px; padding: 0 14px; border-radius: 999px; font: inherit; font-size: 14px; font-weight: 600;
+    background: var(--gray-pill); color: var(--sub); transition: background .15s, color .15s; }
+  .chip-btn:hover { color: var(--text); }
+  .chip-btn[aria-pressed="true"] { background: var(--text); color: var(--card); }
+  .divider { width: 1px; height: 18px; background: var(--gray-pill); margin: 0 4px; }
+  .switch { margin-left: auto; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--sub); cursor: pointer; }
+  .switch input { appearance: none; width: 44px; height: 26px; border-radius: 999px; background: var(--gray-pill); position: relative; cursor: pointer; margin: 0; transition: background .15s; }
+  .switch input::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.2); transition: transform .15s; }
+  .switch input:checked { background: var(--blue); }
+  .switch input:checked::after { transform: translateX(18px); }
+
+  .count { padding: 8px 20px 4px; color: var(--muted); font-size: 13px; font-weight: 500; }
+  .item { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 18px 20px; text-decoration: none; color: inherit;
+    border-top: 1px solid var(--line); transition: background .12s; }
+  .item:hover { background: var(--field); }
+  .item .title { font-size: 16px; font-weight: 700; line-height: 1.4; }
+  .item .org { color: var(--muted); font-size: 14px; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .tag { background: var(--blue-weak); color: var(--blue); border-radius: 6px; padding: 1px 7px; font-size: 12px; font-weight: 600; }
+  .item .right { text-align: right; white-space: nowrap; }
+  .item .amount { font-size: 17px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .item .due { color: var(--muted); font-size: 13px; margin-top: 4px; display: flex; gap: 6px; justify-content: flex-end; align-items: center; }
+  .dday { border-radius: 6px; padding: 1px 7px; font-size: 12px; font-weight: 700; background: var(--gray-pill); color: var(--sub); }
+  .dday.soon { background: var(--red-weak); color: var(--red); }
+  .item.closed .title, .item.closed .amount { color: var(--muted); font-weight: 600; }
+  .empty { padding: 56px 20px; text-align: center; color: var(--muted); border-top: 1px solid var(--line); }
+  footer { color: var(--muted); font-size: 13px; margin-top: 20px; padding: 0 4px; line-height: 1.6; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 24px; }
+    .stats { gap: 8px; }
+    .stat { padding: 16px 14px; border-radius: 16px; }
+    .stat .label { font-size: 12px; }
+    .stat .value { font-size: 18px; }
+    .stat .value small { font-size: 12px; }
+    .item { grid-template-columns: 1fr; }
+    .item .right { text-align: left; display: flex; gap: 10px; align-items: center; margin-top: 6px; }
+    .item .due { margin-top: 0; }
+    .switch { margin-left: 0; width: 100%; justify-content: space-between; padding-top: 4px; }
+    .divider { display: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <span class="logo-text">공고 모음</span>
+    <div class="updated" id="updated"></div>
+  </div>
+
+  <section class="hero">
+    <h1>지금 입찰할 수 있는<br>공공사업 <em id="heroCount">-</em>건</h1>
+    <p>공간정보 · 데이터 · AI 분야 나라장터 용역 공고를 모았어요.</p>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><div class="label">진행 중</div><div class="value" id="sOpen">-</div></div>
+    <div class="stat"><div class="label">추정가격 합계</div><div class="value" id="sSum">-</div></div>
+    <div class="stat alert"><div class="label">3일 안에 마감</div><div class="value" id="sSoon">-</div></div>
+  </section>
+
+  <section class="panel">
+    <div class="controls">
+      <div class="search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="q" placeholder="사업명이나 발주기관을 검색해 보세요" aria-label="검색">
+      </div>
+      <div class="filters">
+        <button class="chip-btn" data-sort="amount">금액 높은 순</button>
+        <button class="chip-btn" data-sort="deadline">마감 빠른 순</button>
+        <span class="divider"></span>
+        <button class="chip-btn" data-min="0">전체</button>
+        <button class="chip-btn" data-min="100000000">1억 이상</button>
+        <button class="chip-btn" data-min="300000000">3억 이상</button>
+        <label class="switch">마감 전만 보기 <input type="checkbox" id="open" checked></label>
+      </div>
+    </div>
+    <div class="count" id="count"></div>
+    <div id="list"></div>
+  </section>
+
+  <footer>
+    금액은 추정가격(부가세 제외)이에요. 참가자격과 마감 시각은 나라장터 원문에서 꼭 확인하세요.<br>
+    <span id="source"></span>
+  </footer>
+</main>
+
+<script>
+const state = { items: [], sort: 'amount', min: 0 };
+const $ = (id) => document.getElementById(id);
+
+function parseDeadline(s) {
+  if (!s) return null;
+  const t = Date.parse(String(s).trim().replace(' ', 'T') + '+09:00');
+  return Number.isNaN(t) ? null : t;
+}
+function won(n) {
+  if (n == null) return '-';
+  const eok = Math.floor(n / 1e8), man = Math.round((n % 1e8) / 1e4);
+  return ((eok ? eok + '억 ' : '') + (man ? man.toLocaleString('ko-KR') + '만 ' : '')).trim() + '원';
+}
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+function dueLabel(t) {
+  const d = new Date(t + 9 * 3600000);
+  return (d.getUTCMonth() + 1) + '월 ' + d.getUTCDate() + '일 ' + String(d.getUTCHours()).padStart(2, '0') + ':' + String(d.getUTCMinutes()).padStart(2, '0');
+}
+
+function renderStats() {
+  const now = Date.now();
+  const open = state.items.filter((x) => x._dl === null || x._dl >= now);
+  const sum = open.reduce((a, x) => a + (x.amount || 0), 0);
+  const soon = open.filter((x) => x._dl !== null && x._dl - now <= 3 * 86400000).length;
+  $('heroCount').textContent = open.length;
+  $('sOpen').innerHTML = open.length + '<small>건</small>';
+  $('sSum').innerHTML = (sum / 1e8).toFixed(1) + '<small>억 원</small>';
+  $('sSoon').innerHTML = soon + '<small>건</small>';
+}
+
+function render() {
+  const q = $('q').value.trim().toLowerCase();
+  const openOnly = $('open').checked;
+  const now = Date.now();
+
+  document.querySelectorAll('[data-sort]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.sort === state.sort));
+  document.querySelectorAll('[data-min]').forEach((b) => b.setAttribute('aria-pressed', Number(b.dataset.min) === state.min));
+
+  const rows = state.items.filter((x) => {
+    if (q && !(x.title + ' ' + x.org).toLowerCase().includes(q)) return false;
+    if (state.min && (x.amount ?? 0) < state.min) return false;
+    if (openOnly && x._dl !== null && x._dl < now) return false;
+    return true;
+  });
+  rows.sort((a, b) => {
+    const [av, bv, dir] = state.sort === 'amount' ? [a.amount, b.amount, -1] : [a._dl, b._dl, 1];
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    return (av - bv) * dir;
+  });
+
+  $('count').textContent = rows.length + '건';
+  if (!rows.length) {
+    $('list').innerHTML = '<div class="empty">조건에 맞는 공고가 없어요.</div>';
+    return;
+  }
+  $('list').innerHTML = rows.map((x) => {
+    let due = '', cls = '';
+    if (x._dl !== null) {
+      const days = Math.ceil((x._dl - now) / 86400000);
+      if (x._dl < now) { cls = 'closed'; due = `<span>${dueLabel(x._dl)}</span><span class="dday">마감</span>`; }
+      else due = `<span>${dueLabel(x._dl)} 마감</span><span class="dday ${days <= 3 ? 'soon' : ''}">D-${days}</span>`;
+    }
+    const tags = (x.keywords || []).slice(0, 2).map((k) => `<span class="tag">${esc(k)}</span>`).join('');
+    return `<a class="item ${cls}" href="${esc(x.url)}" target="_blank" rel="noopener">
+      <div>
+        <div class="title">${esc(x.title)}</div>
+        <div class="org"><span>${esc(x.org)}</span>${tags}</div>
+      </div>
+      <div class="right">
+        <div class="amount">${won(x.amount)}</div>
+        <div class="due">${due}</div>
+      </div>
+    </a>`;
+  }).join('');
+}
+
+document.querySelector('.filters').addEventListener('click', (e) => {
+  const b = e.target.closest('button');
+  if (!b) return;
+  if (b.dataset.sort) state.sort = b.dataset.sort;
+  if (b.dataset.min !== undefined) state.min = Number(b.dataset.min);
+  render();
+});
+['q', 'open'].forEach((id) => $(id).addEventListener('input', render));
+
+fetch('data/bids.json', { cache: 'no-store' })
+  .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then((data) => {
+    state.items = (data.items || []).map((x) => ({ ...x, _dl: parseDeadline(x.deadline) }));
+    const u = new Date(data.updatedAt);
+    if (!Number.isNaN(u.getTime())) {
+      $('updated').textContent = u.toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' }) + ' 갱신';
+    }
+    $('source').textContent = '출처: ' + (data.source || '-');
+    renderStats();
+    render();
+  })
+  .catch((err) => { $('count').textContent = '데이터를 불러오지 못했어요: ' + err.message; });
+</script>
+</body>
+</html>
