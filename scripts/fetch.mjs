@@ -50,6 +50,8 @@ async function callApi(params) {
   }
   const gw = json?.OpenAPI_ServiceResponse?.cmmMsgHeader;
   if (gw) throw new Error(`API 게이트웨이 오류 ${gw.returnReasonCode}: ${gw.returnAuthMsg || gw.errMsg}`);
+  const errHeader = Object.values(json || {}).find((v) => v?.header && !v.body)?.header;
+  if (errHeader) throw new Error(`API 오류 ${errHeader.resultCode}: ${errHeader.resultMsg}`);
   const body = json?.response?.body;
   if (!body) throw new Error(`예상과 다른 응답 구조: ${text.slice(0, 300)}`);
   const raw = body.items;
@@ -76,7 +78,8 @@ function normalize(it, keyword) {
 }
 
 const end = new Date();
-const begin = new Date(end.getTime() - Math.min(config.lookbackDays || 7, 7) * 86400 * 1000); // API 조회기간 한도 7일
+// API 조회기간 한도는 7일인데 꼭 7일을 채우면 "입력범위값 초과"가 나서 6일까지만 본다.
+const begin = new Date(end.getTime() - Math.min(config.lookbackDays || 6, 6) * 86400 * 1000);
 const range = { inqryDiv: '1', inqryBgnDt: kstStamp(begin), inqryEndDt: kstStamp(end) };
 // config.industryCode 를 채우면 그 업종으로 제한된 공고만 받는다. 예: "1468" = 소프트웨어사업자(컴퓨터관련서비스사업)
 if (config.industryCode) range.indstrytyCd = String(config.industryCode);
