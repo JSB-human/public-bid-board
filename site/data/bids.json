@@ -100,20 +100,6 @@
    ]
   },
   {
-   "id": "R26BK01842555",
-   "ord": "000",
-   "title": "2026년 하수사업 GIS DB 구축용역",
-   "org": "서울특별시 용산구",
-   "amount": 241409091,
-   "deadline": "2026-11-27 10:00:00",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01842555&bidPbancOrd=000",
-   "keywords": [
-    "GIS"
-   ],
-   "posted": "2026-11-19 15:40:32",
-   "method": "제한경쟁"
-  },
-  {
    "id": "R26BK01837152",
    "ord": "000",
    "title": "2027년 빅데이터 시스템 통합 유지관리 용역",
@@ -280,20 +266,6 @@
    "method": "제한경쟁"
   },
   {
-   "id": "R26BK01834691",
-   "ord": "000",
-   "title": "관내 사각형거 보수공사 3차원 라이다 측량 및 DB 구축 용역",
-   "org": "서울특별시 금천구",
-   "amount": 99732727,
-   "deadline": "2026-11-23 10:00:00",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834691&bidPbancOrd=000",
-   "keywords": [
-    "3차원"
-   ],
-   "posted": "2026-11-17 09:25:35",
-   "method": "수의계약"
-  },
-  {
    "id": "R26BK01840656",
    "ord": "000",
    "title": "2027년 공간정보시스템 통합유지보수 용역(협상에 의한 계약)",
@@ -428,146 +400,6 @@
    ]
   },
   {
-   "id": "R26BK01837632",
-   "ord": "000",
-   "title": "[재공고]2027년 INOS 2.0 GIS 및 데이터연계 SW 유지보수",
-   "org": "한전KDN(주)",
-   "amount": 70243304,
-   "deadline": "2026-12-01 11:00:00",
-   "posted": "2026-11-17 21:03:07",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837632&bidPbancOrd=000",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01837698",
-   "ord": "000",
-   "title": "마산괴목지구 농어촌생활용수 개발사업 GIS DB구축 용역",
-   "org": "전북특별자치도 무주군",
-   "amount": 83975455,
-   "deadline": "2026-11-24 10:00:00",
-   "posted": "2026-11-18 13:21:46",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837698&bidPbancOrd=000",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01830355",
-   "ord": "000",
-   "title": "포항시 하수도정비 중점관리지역 정비사업(2단계) 지하구조물 전산화 용역(GIS DB 구축)",
-   "org": "경상북도 포항시 맑은물사업소",
-   "amount": 59232727,
-   "deadline": "2026-11-19 10:00:00",
-   "posted": "2026-11-13 17:31:26",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830355&bidPbancOrd=000",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01830878",
-   "ord": "001",
-   "title": "대포지구 농어촌마을하수도 증설사업 GIS DB 구축 용역(총괄분)",
-   "org": "경상남도 산청군",
-   "amount": 396181818,
-   "deadline": "2026-11-23 10:00:00",
-   "posted": "2026-11-17 08:52:33",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830878&bidPbancOrd=001",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01838537",
-   "ord": "000",
-   "title": "방광지구 농어촌마을하수도 증설사업 GIS DB 구축용역",
-   "org": "전남광주통합특별시 구례군 상하수도사업소",
-   "amount": 49090909,
-   "deadline": "2026-11-24 10:00:00",
-   "posted": "2026-11-18 11:31:37",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01838537&bidPbancOrd=000",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01839803",
-   "ord": "001",
-   "title": "대포지구 농어촌마을하수도 증설사업 GIS DB 구축 용역(총괄분)",
-   "org": "경상남도 산청군",
-   "amount": 396181818,
-   "deadline": "2026-11-26 12:00:00",
-   "posted": "2026-11-19 11:02:38",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01839803&bidPbancOrd=001",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01841794",
-   "ord": "000",
-   "title": "용연~덕남정수장 비상도수관로 건설공사 GIS DB 구축용역",
-   "org": "전남광주통합특별시 상수도사업본부",
-   "amount": 142318182,
-   "deadline": "2026-11-27 10:00:00",
-   "posted": "2026-11-19 13:44:44",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841794&bidPbancOrd=000",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01841792",
-   "ord": "001",
-   "title": "2026년 이천시 배수관로 GIS DB 현행화 구축용역(2권역)",
-   "org": "경기도 이천시 환경수자원국 수도과",
-   "amount": 90872727,
-   "deadline": "2026-11-25 10:00:00",
-   "posted": "2026-11-19 16:21:50",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841792&bidPbancOrd=001",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01841653",
-   "ord": "001",
-   "title": "2026년 이천시 배수관로 GIS DB 현행화 구축용역(1권역)",
-   "org": "경기도 이천시 환경수자원국 수도과",
-   "amount": 90872727,
-   "deadline": "2026-11-25 10:00:00",
-   "posted": "2026-11-19 16:22:47",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841653&bidPbancOrd=001",
-   "keywords": [
-    "GIS"
-   ]
-  },
-  {
-   "id": "R26BK01834393",
-   "ord": "001",
-   "title": "관내 사각형거 보수공사 3차원 라이다 측량 및 DB 구축 용역",
-   "org": "서울특별시 금천구",
-   "amount": 99732727,
-   "deadline": "2026-11-20 10:00:00",
-   "posted": "2026-11-17 08:55:18",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834393&bidPbancOrd=001",
-   "keywords": [
-    "3차원"
-   ]
-  },
-  {
    "id": "R26BK01789176",
    "ord": "000",
    "title": "2027년 빅데이터 플랫폼 통합유지관리 사업",
@@ -579,49 +411,6 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789176&bidPbancOrd=000",
    "keywords": [
     "빅데이터"
-   ]
-  },
-  {
-   "id": "R26BK01839228",
-   "ord": "000",
-   "title": "바이오 빅데이터 플랫폼 통합운영실 위탁운영 및 유지관리(2차)",
-   "org": "한국과학기술정보연구원",
-   "amount": 709090909,
-   "deadline": "2026-12-01 10:00:00",
-   "posted": "2026-11-18 15:00:15",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01839228&bidPbancOrd=000",
-   "keywords": [
-    "빅데이터"
-   ]
-  },
-  {
-   "id": "R26BK01838486",
-   "ord": "000",
-   "title": "27년 빅데이터,정보분석 운영 및 유지관리 사업",
-   "org": "국세청",
-   "amount": 5792566364,
-   "deadline": "2026-12-08 10:00:00",
-   "posted": "2026-11-18 15:15:55",
-   "method": "일반경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01838486&bidPbancOrd=000",
-   "keywords": [
-    "빅데이터"
-   ]
-  },
-  {
-   "id": "R26BK01839120",
-   "ord": "000",
-   "title": "(2단계) AI, 빅데이터 기반 기뢰전작전지원체계 구축사업",
-   "org": "국방부 국군재정관리단",
-   "amount": 1414545455,
-   "deadline": "2026-12-01 11:00:00",
-   "posted": "2026-11-18 16:48:44",
-   "method": "일반경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01839120&bidPbancOrd=000",
-   "keywords": [
-    "빅데이터",
-    "AI"
    ]
   },
   {
@@ -639,146 +428,6 @@
    ]
   },
   {
-   "id": "R26BK01836843",
-   "ord": "000",
-   "title": "카자흐스탄 크즐오르다 대학교 인공지능 단과대학 내 VR 실습실 장비 설치사업 구축",
-   "org": "서울과학기술대학교 산학협력단",
-   "amount": 95345036,
-   "deadline": "2026-11-30 11:00:00",
-   "posted": "2026-11-17 16:38:45",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01836843&bidPbancOrd=000",
-   "keywords": [
-    "인공지능"
-   ]
-  },
-  {
-   "id": "R26BK01826833",
-   "ord": "000",
-   "title": "방글라데시 AI 혁신기술 전문인력 양성사업(2026-2029/1,300만불) PMC  용역",
-   "org": "한국국제협력단",
-   "amount": 8822230253,
-   "deadline": "2026-11-26 10:00:00",
-   "posted": "2026-11-13 18:07:40",
-   "method": "일반경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01826833&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01831194",
-   "ord": "000",
-   "title": "2026년 충남 지역주도형 AI대전환 사업- 제조 온톨로지 공정최적화 구축",
-   "org": "(주)지에스티",
-   "amount": 150000000,
-   "deadline": "2026-11-27 10:00:00",
-   "posted": "2026-11-16 09:33:21",
-   "method": "일반경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831194&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01831967",
-   "ord": "000",
-   "title": "데이터 기반 AI 생육의사결정 플랫폼 구축",
-   "org": "제주대학교 산학협력단",
-   "amount": 27272727,
-   "deadline": "2026-11-27 10:00:00",
-   "posted": "2026-11-16 13:15:21",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831967&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01832222",
-   "ord": "000",
-   "title": "AI 학사․진로 상담 챗봇 구축 입찰 공고",
-   "org": "동서대학교",
-   "amount": 90909091,
-   "deadline": "2026-11-27 14:00:00",
-   "posted": "2026-11-16 13:23:18",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832222&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01832626",
-   "ord": "000",
-   "title": "순천향대학교 AI의료융합데이터센터 플랫폼 구축 사업(재공고)",
-   "org": "순천향대학교",
-   "amount": 542000000,
-   "deadline": "2026-11-27 10:00:00",
-   "posted": "2026-11-16 14:20:09",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832626&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01834421",
-   "ord": "001",
-   "title": "실차 주행 데이터 기반 전장부품 신뢰성 평가 AI 모델 개발 용역",
-   "org": "광주과학기술원",
-   "amount": 40909091,
-   "deadline": null,
-   "posted": "2026-11-18 17:27:06",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834421&bidPbancOrd=001",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01834642",
-   "ord": "000",
-   "title": "기획예산처 AI·데이터 기반 정보보호 고도화 전략계획 수립 컨설팅 사업",
-   "org": "기획예산처",
-   "amount": 272727273,
-   "deadline": "2026-12-15 10:00:00",
-   "posted": "2026-11-17 13:26:59",
-   "method": "일반경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834642&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01821463",
-   "ord": "000",
-   "title": "항만자동화 테스트베드 AI 통합운영시스템(TOS) 구축 및 최적화 용역",
-   "org": "여수광양항만공사",
-   "amount": 10704500000,
-   "deadline": "2026-12-18 14:00:00",
-   "posted": "2026-11-17 15:34:50",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01821463&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01837066",
-   "ord": "000",
-   "title": "(긴급)2027년 공공의료정보망·정책망 AI 기능 개선 및 운영·유지관리 사업 용역",
-   "org": "국립중앙의료원",
-   "amount": 352716364,
-   "deadline": "2026-11-30 11:00:00",
-   "posted": "2026-11-17 17:14:32",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837066&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
    "id": "R26BK01834827",
    "ord": "000",
    "title": "2027년 AI데이터안심활용센터 운영 및 유지보수",
@@ -788,20 +437,6 @@
    "posted": "2026-11-18 09:01:33",
    "method": "제한경쟁",
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834827&bidPbancOrd=000",
-   "keywords": [
-    "AI"
-   ]
-  },
-  {
-   "id": "R26BK01837670",
-   "ord": "000",
-   "title": "2026년 AI 사이버공격 대응 플랫폼 구축(3단계)",
-   "org": "한국교육학술정보원",
-   "amount": 5582727273,
-   "deadline": "2026-11-24 12:00:00",
-   "posted": "2026-11-18 09:24:24",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837670&bidPbancOrd=000",
    "keywords": [
     "AI"
    ]

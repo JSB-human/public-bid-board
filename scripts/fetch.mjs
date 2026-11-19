@@ -18,14 +18,22 @@ const ROWS = 100;
 
 const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8'));
 const exclude = config.excludePattern ? new RegExp(config.excludePattern, 'i') : null;
+const excludeOrg = config.excludeOrgPattern ? new RegExp(config.excludeOrgPattern, 'i') : null;
+
+// 분야와 먼 공고, 너무 큰 공고를 걸러낸다. 이미 저장된 데이터에도 똑같이 적용한다.
+function wanted(row) {
+  if (exclude && exclude.test(row.title)) return false;
+  if (excludeOrg && excludeOrg.test(row.org || '')) return false;
+  if (config.maxAmount && row.amount != null && row.amount > config.maxAmount) return false;
+  return true;
+}
+// 재공고는 공고번호가 바뀌어 같은 사업이 두 번 보인다. 제목과 기관이 같으면 최신 것만 남긴다.
+const titleKey = (row) => (row.org || '') + '|' + row.title.replace(/재공고|긴급/g, '').replace(/[^0-9A-Za-z가-힣]/g, '');
 
 let key = process.env.DATA_GO_KR_KEY;
-if (!key) {
-  console.warn('DATA_GO_KR_KEY 가 없어 수집을 건너뜁니다. 기존 데이터를 그대로 둡니다.');
-  process.exit(0);
-}
+if (!key) console.warn('DATA_GO_KR_KEY 가 없어 수집은 건너뛰고 기존 데이터 정리만 합니다.');
 // 포털은 인코딩된 키와 디코딩된 키를 둘 다 준다. 인코딩된 키면 풀어서 쓴다.
-if (/%[0-9A-Fa-f]{2}/.test(key)) key = decodeURIComponent(key);
+else if (/%[0-9A-Fa-f]{2}/.test(key)) key = decodeURIComponent(key);
 
 // API 는 한국시간 yyyyMMddHHmm 을 받는다.
 function kstStamp(date) {
@@ -86,7 +94,7 @@ if (config.industryCode) range.indstrytyCd = String(config.industryCode);
 
 const fetched = new Map();
 let checkedShape = false;
-for (const keyword of config.keywords) {
+for (const keyword of key ? config.keywords : []) {
   let page = 1;
   let count = 0;
   while (true) {
@@ -100,7 +108,7 @@ for (const keyword of config.keywords) {
     }
     for (const it of items) {
       const row = normalize(it, keyword);
-      if (!row.id || (exclude && exclude.test(row.title))) continue;
+      if (!row.id || !wanted(row)) continue;
       const prev = fetched.get(row.id);
       if (prev) {
         const kws = [...new Set([...prev.keywords, keyword])];
@@ -126,12 +134,26 @@ for (const [id, row] of fetched) merged.set(id, { ...merged.get(id), ...row });
 
 // 마감이 오래 지난 공고는 지운다.
 const cutoff = Date.now() - (config.keepClosedDays || 14) * 86400 * 1000;
-const items = [...merged.values()].filter((x) => {
+const kept = [...merged.values()].filter((x) => {
+  if (!wanted(x)) return false;
   if (!x.deadline) return true;
   const t = Date.parse(x.deadline.replace(' ', 'T') + '+09:00');
   return Number.isNaN(t) || t >= cutoff;
 });
+const byTitle = new Map();
+for (const x of kept) {
+  const k = titleKey(x);
+  const prev = byTitle.get(k);
+  if (!prev || (x.posted || x.id) > (prev.posted || prev.id)) byTitle.set(k, x);
+}
+const items = [...byTitle.values()];
 
 await mkdir(path.dirname(OUT), { recursive: true });
-await writeFile(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), source: '조달청 나라장터 입찰공고정보서비스', items }, null, 1) + '\n');
+// 키 없이 정리만 한 경우에는 갱신 시각과 출처를 바꾸지 않는다.
+let prevMeta = {};
+try { prevMeta = JSON.parse(await readFile(OUT, 'utf8')); } catch {}
+const meta = key
+  ? { updatedAt: new Date().toISOString(), source: '조달청 나라장터 입찰공고정보서비스' }
+  : { updatedAt: prevMeta.updatedAt, source: prevMeta.source };
+await writeFile(OUT, JSON.stringify({ ...meta, items }, null, 1) + '\n');
 console.log(`저장: ${items.length}건 (이번에 받은 ${fetched.size}건)`);
