@@ -158,7 +158,7 @@ if (key) {
   for (const row of merged.values()) {
     if (!wanted(row) || regionCache[row.id]) continue;
     try {
-      const { items: rg } = await callApi({ inqryDiv: '2', bidNtceNo: row.id, numOfRows: '50', pageNo: '1' }, REGION_OPERATION);
+      const { items: rg } = await callApi({ inqryDiv: '2', bidNtceNo: row.id, bidNtceOrd: row.ord || '000', numOfRows: '50', pageNo: '1' }, REGION_OPERATION);
       asked++;
       if (!shown && rg.length) { console.log('지역 응답 예시:', JSON.stringify(rg[0])); shown = true; }
       regionCache[row.id] = { regions: regionsOf(rg) };
