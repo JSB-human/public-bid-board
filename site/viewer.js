@@ -68,6 +68,8 @@ function setHead(file, dl) {
 }
 
 function body(html) {
+  // 다른 화면으로 바뀌면 열려 있던 한글 문서 메모리를 돌려준다(그리는 중이던 쪽은 token 으로 멈춘다).
+  if (!html.includes('v-pages')) freeHwp();
   const b = root.querySelector('.v-body');
   b.innerHTML = html;
   b.scrollTop = 0;
@@ -79,6 +81,7 @@ function close() {
   if (!root) return;
   token++;
   stack.length = 0;
+  freeHwp();
   root.classList.remove('show');
   document.documentElement.style.overflow = '';
   for (const u of objectUrls.splice(0)) URL.revokeObjectURL(u);
@@ -141,10 +144,7 @@ async function show(file, dl, data) {
     if (!data) data = await download(file.url, my);
     if (my !== token) return;
     if (ext === 'pdf') await showPdf(data, my);
-    else if (ext === 'hwpx') {
-      // 표까지 그려 보고, 구조가 낯설면 글자만이라도 보여 준다.
-      try { showHtml(await hwpxHtml(data)); } catch { showText(await hwpxText(data)); }
-    } else if (ext === 'hwp') showText(await hwpText(data));
+    else if (ext === 'hwp' || ext === 'hwpx') await showHwp(data, ext, my);
     else showZip(file, data);
   } catch (e) {
     if (my !== token || e.message === 'cancelled') return;
@@ -194,11 +194,11 @@ async function hwpxHtml(buf) {
   return out.join('');
 }
 
-function showHtml(html) {
-  body(`<div class="v-note">글자와 표만 보여 드려요. 그림·서식은 내려받아 확인하세요.</div><article class="v-text v-doc">${html}</article>`);
+function showHtml(html, why = '') {
+  body(`<div class="v-note">${esc(why)} 글자와 표만 보여 드려요. 그림·서식은 내려받아 확인하세요.</div><article class="v-text v-doc">${html}</article>`);
 }
 
-function showText(text) {
+function showText(text, why = '') {
   const paras = text.split('\n').map((l) => l.trim()).filter((l) => !IMG_NOTE.test(l));
   const html = [];
   let blank = 0;
@@ -209,7 +209,7 @@ function showText(text) {
     const head = l.length <= 40 && /^([ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.?|\d{1,2}\.|제\s*\d+\s*[장절]|[□■◆▣])\s*\S/.test(l);
     html.push(`<p class="${head ? 'h' : ''}">${esc(l)}</p>`);
   }
-  body(`<div class="v-note">한글 파일은 글자만 보여 드려요. 표·그림·서식은 내려받아 확인하세요.</div><article class="v-text">${html.join('')}</article>`);
+  body(`<div class="v-note">${esc(why)} 표·그림·서식은 내려받아 확인하세요.</div><article class="v-text">${html.join('')}</article>`);
 }
 
 function showZip(file, data) {
@@ -265,6 +265,47 @@ function loadPdfJs() {
   return pdfjsReady;
 }
 
+// 쪽마다 자리부터 잡아 두고, 화면에 들어올 때 그린다. PDF 와 한글이 같이 쓴다.
+//   size(i) → { w, h } (쪽 크기, 같은 단위면 됨),  draw(i, cssWidth, dpr) → canvas
+function pagedView(count, size, draw, my, note = '') {
+  const b = body(`${note}<div class="v-pages"></div>`);
+  const pages = b.querySelector('.v-pages');
+  const counter = root.querySelector('.v-page');
+  const first = size(0);
+  for (let i = 0; i < count; i++) {
+    const slot = document.createElement('div');
+    slot.className = 'v-pg';
+    slot.dataset.i = i;
+    slot.style.aspectRatio = `${first.w} / ${first.h}`;
+    pages.appendChild(slot);
+  }
+  const drawn = new Set();
+  const paint = async (slot) => {
+    const i = Number(slot.dataset.i);
+    if (drawn.has(i) || my !== token) return;
+    drawn.add(i);
+    const s = size(i);
+    slot.style.aspectRatio = `${s.w} / ${s.h}`;
+    try {
+      const canvas = await draw(i, slot.clientWidth || pages.clientWidth, Math.min(window.devicePixelRatio || 1, 2.5));
+      if (my === token) slot.appendChild(canvas);
+    } catch (e) {
+      slot.innerHTML = `<div class="v-pgerr">${i + 1}쪽을 그리지 못했어요</div>`;
+    }
+  };
+  const io = new IntersectionObserver((list) => {
+    for (const e of list) if (e.isIntersecting) paint(e.target);
+    const visible = list.filter((e) => e.isIntersecting).map((e) => Number(e.target.dataset.i));
+    if (visible.length) counter.textContent = `${Math.min(...visible) + 1} / ${count}`;
+  }, { root: b, rootMargin: '600px 0px' });
+  const slots = pages.querySelectorAll('.v-pg');
+  slots.forEach((s) => io.observe(s));
+  // 화면 감지가 늦게 오더라도 첫 쪽들은 바로 그린다.
+  (async () => { for (const s of [...slots].slice(0, 2)) await paint(s); })();
+  counter.hidden = false;
+  counter.textContent = `1 / ${count}`;
+}
+
 async function showPdf(data, my) {
   const lib = await loadPdfJs();
   const doc = await lib.getDocument({
@@ -274,46 +315,86 @@ async function showPdf(data, my) {
     standardFontDataUrl: `${PDFJS}/standard_fonts/`,
   }).promise;
   if (my !== token) return;
-  const b = body('<div class="v-pages"></div>');
-  const pages = b.querySelector('.v-pages');
-  const counter = root.querySelector('.v-page');
+  const pagesInfo = [];
+  for (let n = 1; n <= doc.numPages; n++) pagesInfo.push(null);
   const first = await doc.getPage(1);
-  const base = first.getViewport({ scale: 1 });
-  // 쪽마다 자리부터 잡아 두고, 화면에 들어올 때 그린다.
-  for (let n = 1; n <= doc.numPages; n++) {
-    const slot = document.createElement('div');
-    slot.className = 'v-pg';
-    slot.dataset.n = n;
-    slot.style.aspectRatio = `${base.width} / ${base.height}`;
-    pages.appendChild(slot);
-  }
-  const drawn = new Set();
-  const draw = async (slot) => {
-    const n = Number(slot.dataset.n);
-    if (drawn.has(n) || my !== token) return;
-    drawn.add(n);
-    const page = n === 1 ? first : await doc.getPage(n);
-    const width = slot.clientWidth || pages.clientWidth;
+  const v0 = first.getViewport({ scale: 1 });
+  pagedView(doc.numPages, (i) => pagesInfo[i] || { w: v0.width, h: v0.height }, async (i, width, dpr) => {
+    const page = i === 0 ? first : await doc.getPage(i + 1);
     const v1 = page.getViewport({ scale: 1 });
-    slot.style.aspectRatio = `${v1.width} / ${v1.height}`;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+    pagesInfo[i] = { w: v1.width, h: v1.height };
     const vp = page.getViewport({ scale: (width / v1.width) * dpr });
     const canvas = document.createElement('canvas');
     canvas.width = Math.floor(vp.width);
     canvas.height = Math.floor(vp.height);
-    slot.appendChild(canvas);
     await page.render({ canvasContext: canvas.getContext('2d'), viewport: vp }).promise;
+    return canvas;
+  }, my);
+}
+
+// ---------- 한글 (rhwp: Rust + WebAssembly 로 만든 HWP·HWPX 렌더러, MIT) ----------
+const RHWP = 'https://cdn.jsdelivr.net/npm/@rhwp/core@0.8.7';
+let rhwpReady = null;
+let hwpDoc = null; // 지금 열린 한글 문서. 닫을 때 WebAssembly 메모리를 돌려준다.
+function loadRhwp() {
+  if (!rhwpReady) {
+    rhwpReady = (async () => {
+      // 글자 폭은 브라우저 글꼴로 재야 줄바꿈이 맞는다(라이브러리가 요구하는 함수).
+      let ctx = null, last = '';
+      globalThis.measureTextWidth = (font, text) => {
+        if (!ctx) ctx = document.createElement('canvas').getContext('2d');
+        if (font !== last) { ctx.font = font; last = font; }
+        return ctx.measureText(text).width;
+      };
+      const m = await import(`${RHWP}/rhwp.js`);
+      await m.default({ module_or_path: `${RHWP}/rhwp_bg.wasm` });
+      return m;
+    })().catch((e) => { rhwpReady = null; throw e; });
+  }
+  return rhwpReady;
+}
+function freeHwp() {
+  try { hwpDoc?.free(); } catch {}
+  hwpDoc = null;
+}
+
+async function showHwp(data, ext, my) {
+  const p = root.querySelector('.v-progress');
+  if (p) p.textContent = '한글 보기 도구를 준비하는 중 (처음 한 번 약 12MB)';
+  let m;
+  try {
+    m = await loadRhwp();
+  } catch {
+    return showHwpSimple(data, ext, '한글 보기 도구를 불러오지 못해 글자만 보여 드려요.');
+  }
+  if (my !== token) return;
+  freeHwp();
+  let doc;
+  try {
+    doc = new m.HwpDocument(data);
+  } catch {
+    return showHwpSimple(data, ext, '이 파일은 원본 모양으로 그리지 못해 글자만 보여 드려요.');
+  }
+  hwpDoc = doc;
+  const sizes = [];
+  const size = (i) => {
+    if (!sizes[i]) { const s = JSON.parse(doc.getPageInfo(i)); sizes[i] = { w: s.width, h: s.height }; }
+    return sizes[i];
   };
-  const io = new IntersectionObserver((list) => {
-    for (const e of list) {
-      if (e.isIntersecting) draw(e.target);
-    }
-    const visible = list.filter((e) => e.isIntersecting).map((e) => Number(e.target.dataset.n));
-    if (visible.length) counter.textContent = `${Math.min(...visible)} / ${doc.numPages}`;
-  }, { root: b, rootMargin: '600px 0px' });
-  pages.querySelectorAll('.v-pg').forEach((s) => io.observe(s));
-  counter.hidden = false;
-  counter.textContent = `1 / ${doc.numPages}`;
+  pagedView(doc.pageCount(), size, async (i, width, dpr) => {
+    if (my !== token || hwpDoc !== doc) throw new Error('closed');
+    const canvas = document.createElement('canvas');
+    doc.renderPageToCanvas(i, canvas, (width / size(i).w) * dpr);
+    return canvas;
+  }, my, '<div class="v-note">한글 파일을 화면용으로 다시 그린 거라 글꼴이나 줄바꿈이 원본과 조금 다를 수 있어요.</div>');
+}
+
+// 렌더러를 못 쓸 때: HWPX 는 글자와 표, HWP 는 글자만
+async function showHwpSimple(data, ext, why) {
+  if (ext === 'hwpx') {
+    try { showHtml(await hwpxHtml(data), why); return; } catch {}
+    showText(await hwpxText(data), why);
+  } else showText(await hwpText(data), why);
 }
 
 window.openViewer = openViewer;

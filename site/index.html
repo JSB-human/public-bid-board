@@ -228,6 +228,7 @@
   .v-pages { display: grid; gap: 12px; padding: 16px; max-width: 900px; margin: 0 auto; }
   .v-pg { background: #fff; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.12); overflow: hidden; width: 100%; }
   .v-pg canvas { display: block; width: 100%; height: auto; }
+  .v-pgerr { height: 100%; display: grid; place-items: center; color: #8b95a1; font-size: 14px; }
   .v-note { max-width: 760px; margin: 16px auto 0; padding: 10px 14px; border-radius: 12px; background: var(--blue-weak); color: var(--blue-text); font-size: 13px; font-weight: 500; }
   .v-text { max-width: 760px; margin: 12px auto 40px; background: var(--card); border-radius: 16px; padding: 28px 32px; box-shadow: var(--shadow); }
   .v-text p { margin: 0 0 6px; font-size: 15px; line-height: 1.75; color: var(--text); overflow-wrap: anywhere; white-space: pre-wrap; }
@@ -268,6 +269,7 @@
   .empty { background: var(--card); border-radius: 20px; padding: 56px 20px; text-align: center; color: var(--muted); box-shadow: var(--shadow); }
   .empty b { display: block; color: var(--text); font-size: 17px; margin-bottom: 4px; }
   footer { color: var(--muted); font-size: 13px; padding: 24px 4px 56px; line-height: 1.7; }
+  footer a { color: inherit; }
 
   @media (max-width: 640px) {
     .hero { padding-top: 20px; }
@@ -330,7 +332,9 @@
 
   <footer>
     금액은 추정가격(부가세 제외)이에요. 참가자격과 마감 시각은 나라장터 원문에서 꼭 확인하세요.<br>
-    <span id="source"></span>
+    <span id="source"></span><br>
+    파일 보기: <a href="https://github.com/edwardkim/rhwp" target="_blank" rel="noopener">rhwp</a>(한글, MIT) ·
+    <a href="https://mozilla.github.io/pdf.js/" target="_blank" rel="noopener">PDF.js</a>(PDF, Apache-2.0)
   </footer>
 </main>
 
