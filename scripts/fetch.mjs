@@ -14,6 +14,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site', 'data', 'bids.json');
 const REGION_CACHE = path.join(ROOT, 'site', 'data', 'regions.json');
 const REGION_OPERATION = 'getBidPblancListInfoPrtcptPsblRgn02'; // 입찰공고 참가가능지역 조회
+const LICENSE_OPERATION = 'getBidPblancListInfoLicenseLimit02'; // 입찰공고 면허제한정보 조회
 const BASE = 'https://apis.data.go.kr/1230000/ad/BidPublicInfoService02';
 const OPERATION = 'getBidPblancListInfoServcPPSSrch02'; // 나라장터검색조건에 의한 입찰공고용역조회
 const ROWS = 100;
@@ -96,6 +97,23 @@ function normalize(it, keyword) {
     method: it.cntrctCnclsMthdNm || '',
     url: `https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=${id}&bidPbancOrd=${ord}`,
     keywords: [keyword],
+    detail: {
+      category: [it.pubPrcrmntMidClsfcNm, it.pubPrcrmntClsfcNm].filter(Boolean),
+      kind: it.ntceKindNm || '',
+      reNotice: it.reNtceYn === 'Y',
+      noticeOrg: it.ntceInsttNm || '',
+      award: it.sucsfbidMthdNm || '',
+      bidMethod: it.bidMethdNm || '',
+      joint: it.cmmnSpldmdMethdNm || '',
+      techRate: num(it.techAbltEvlRt),
+      priceRate: num(it.bidPrceEvlRt),
+      budget: num(it.asignBdgtAmt),
+      regDeadline: it.bidQlfctRgstDt || null,
+      bidBegin: it.bidBeginDt || null,
+      opening: it.opengDt || null,
+      refNo: it.refNo || '',
+      files: Array.from({ length: 10 }, (_, i) => ({ name: it[`ntceSpecFileNm${i + 1}`], url: it[`ntceSpecDocUrl${i + 1}`] })).filter((f) => f.name && f.url),
+    },
   };
 }
 
@@ -166,14 +184,24 @@ function regionsOf(apiItems) {
 let regionCache = {};
 try { regionCache = JSON.parse(await readFile(REGION_CACHE, 'utf8')); } catch {}
 if (key) {
-  let shown = false, failed = 0, asked = 0;
+  let shown = false, shownLicense = false, failed = 0, asked = 0;
   for (const row of merged.values()) {
-    if (!wanted(row) || regionCache[row.id]) continue;
+    const cached = regionCache[row.id];
+    if (!wanted(row) || (cached && cached.licenses)) continue;
+    const q = { inqryDiv: '2', bidNtceNo: row.id, bidNtceOrd: row.ord || '000', numOfRows: '50', pageNo: '1' };
     try {
-      const { items: rg } = await callApi({ inqryDiv: '2', bidNtceNo: row.id, bidNtceOrd: row.ord || '000', numOfRows: '50', pageNo: '1' }, REGION_OPERATION);
+      const entry = cached || {};
+      if (!entry.regions) {
+        const { items: rg } = await callApi(q, REGION_OPERATION);
+        if (!shown && rg.length) { console.log('지역 응답 예시:', JSON.stringify(rg[0])); shown = true; }
+        entry.regions = regionsOf(rg);
+      }
+      // 면허(업종)제한. 같은 그룹 번호끼리 묶어 둔다.
+      const { items: lc } = await callApi(q, LICENSE_OPERATION);
+      if (!shownLicense && lc.length) { console.log('면허 응답 예시:', JSON.stringify(lc[0])); shownLicense = true; }
+      entry.licenses = lc.map((x) => ({ group: String(x.lmtGrpNo ?? ''), name: String(x.lcnsLmtNm ?? '').trim() })).filter((x) => x.name);
+      regionCache[row.id] = entry;
       asked++;
-      if (!shown && rg.length) { console.log('지역 응답 예시:', JSON.stringify(rg[0])); shown = true; }
-      regionCache[row.id] = { regions: regionsOf(rg) };
     } catch (e) {
       if (!failed++) console.warn('지역 조회 실패:', e.message);
       if (failed >= 3) { console.warn('지역 조회를 중단합니다.'); break; }
@@ -183,7 +211,12 @@ if (key) {
   await mkdir(path.dirname(REGION_CACHE), { recursive: true });
   await writeFile(REGION_CACHE, JSON.stringify(regionCache, null, 1) + '\n');
 }
-for (const row of merged.values()) if (regionCache[row.id]) row.regions = regionCache[row.id].regions;
+for (const row of merged.values()) {
+  const c = regionCache[row.id];
+  if (!c) continue;
+  if (c.regions) row.regions = c.regions;
+  if (c.licenses) row.licenses = c.licenses;
+}
 // 지역제한이 있는데 우리 지역이 포함되지 않으면 뺀다. 제한이 없거나 조회하지 못한 공고는 남긴다.
 const regionOk = (row) => !config.homeRegion || !row.regions?.length || row.regions.includes(config.homeRegion);
 

@@ -63,8 +63,22 @@
   .switch input:checked::after { transform: translateX(18px); }
 
   .count { padding: 8px 20px 4px; color: var(--muted); font-size: 13px; font-weight: 500; }
-  .item { display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 18px 20px; text-decoration: none; color: inherit;
-    border-top: 1px solid var(--line); transition: background .12s; }
+  .entry { border-top: 1px solid var(--line); }
+  .entry.open { background: var(--field); }
+  .detail { padding: 0 20px 20px; }
+  .detail .sum { margin: 0 0 14px; font-size: 15px; line-height: 1.6; color: var(--text); }
+  .facts { display: grid; grid-template-columns: 110px 1fr; gap: 8px 12px; font-size: 14px; }
+  .facts .k, .files .k { color: var(--muted); }
+  .facts .v { color: var(--sub); min-width: 0; overflow-wrap: anywhere; }
+  .lic { display: inline-block; background: var(--card); border-radius: 6px; padding: 1px 8px; margin: 0 6px 4px 0; font-size: 13px; }
+  .files { margin-top: 12px; font-size: 14px; display: grid; gap: 6px; }
+  .files a { color: var(--blue); text-decoration: none; overflow-wrap: anywhere; }
+  .files a:hover { text-decoration: underline; }
+  .go { display: inline-block; margin-top: 16px; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700;
+    font-size: 15px; padding: 11px 18px; border-radius: 12px; }
+  .item { width: 100%; border: 0; background: none; font: inherit; text-align: left; cursor: pointer;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 18px 20px; text-decoration: none; color: inherit;
+    transition: background .12s; }
   .item:hover { background: var(--field); }
   .item .title { font-size: 16px; font-weight: 700; line-height: 1.4; }
   .item .org { color: var(--muted); font-size: 14px; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -139,7 +153,7 @@
 </main>
 
 <script>
-const state = { items: [], sort: 'amount', min: 0 };
+const state = { items: [], sort: 'amount', min: 0, open: new Set() };
 const $ = (id) => document.getElementById(id);
 
 function parseDeadline(s) {
@@ -207,18 +221,78 @@ function render() {
     }
     const tags = (x.keywords || []).slice(0, 2).map((k) => `<span class="tag">${esc(k)}</span>`).join('');
     const region = x.regions && x.regions.length ? `<span class="tag region">${esc(x.regions.join('·'))} 업체만</span>` : '';
-    return `<a class="item ${cls}" href="${esc(x.url)}" target="_blank" rel="noopener">
-      <div>
-        <div class="title">${esc(x.title)}</div>
-        <div class="org"><span>${esc(x.org)}</span>${tags}${region}</div>
-      </div>
-      <div class="right">
-        <div class="amount">${won(x.amount)}</div>
-        <div class="due">${due}</div>
-      </div>
-    </a>`;
+    const open = state.open.has(x.id);
+    const renotice = x.detail && x.detail.reNotice ? '<span class="tag region">재공고</span>' : '';
+    return `<div class="entry ${open ? 'open' : ''}">
+      <button class="item ${cls}" data-id="${esc(x.id)}" aria-expanded="${open}">
+        <div>
+          <div class="title">${esc(x.title)}</div>
+          <div class="org"><span>${esc(x.org)}</span>${tags}${region}${renotice}</div>
+        </div>
+        <div class="right">
+          <div class="amount">${won(x.amount)}</div>
+          <div class="due">${due}</div>
+        </div>
+      </button>
+      ${open ? detailHtml(x) : ''}
+    </div>`;
   }).join('');
 }
+
+function when(s) {
+  const t = parseDeadline(s);
+  return t === null ? '' : dueLabel(t);
+}
+
+// API 가 주는 항목을 조합해 만든 한두 문장 요약. 공고문 본문을 읽고 쓴 것은 아니다.
+function summaryText(x) {
+  const d = x.detail || {};
+  const cat = (d.category || []).slice(-1)[0];
+  let s = `${x.org}에서 발주한 ${cat ? cat + ' ' : ''}용역이에요.`;
+  const how = [x.method, d.award].filter(Boolean).join(' · ');
+  if (how) s += ` ${how} 방식`;
+  if (d.techRate != null && d.priceRate != null) s += `${how ? '이고' : ''} 기술 ${d.techRate} : 가격 ${d.priceRate} 비율로 평가해요.`;
+  else if (how) s += '이에요.';
+  if (d.reNotice) s += ' 앞선 공고가 유찰돼 다시 나온 재공고예요.';
+  return s;
+}
+
+function detailHtml(x) {
+  const d = x.detail;
+  const link = `<a class="go" href="${esc(x.url)}" target="_blank" rel="noopener">나라장터에서 원문 보기</a>`;
+  if (!d) return `<div class="detail"><p class="sum">상세 정보는 다음 갱신 때 채워져요.</p>${link}</div>`;
+  const rows = [];
+  const add = (k, v) => { if (v) rows.push(`<div class="k">${k}</div><div class="v">${v}</div>`); };
+  add('분류', esc((d.category || []).join(' › ')));
+  add('배정예산', d.budget != null ? won(d.budget) + ' (부가세 포함)' : '');
+  add('참가등록 마감', when(d.regDeadline));
+  add('입찰 기간', [when(d.bidBegin), when(x.deadline)].filter(Boolean).join(' ~ '));
+  add('개찰', when(d.opening));
+  add('공동수급', esc(d.joint));
+  add('참가 지역', x.regions ? (x.regions.length ? esc(x.regions.join(', ')) + ' 업체만' : '시스템에 등록된 지역제한 없음') : '');
+  if (x.licenses) {
+    add('필요 면허·업종', x.licenses.length
+      ? x.licenses.map((l) => `<span class="lic">${esc(l.name)}</span>`).join('')
+      : '시스템에 등록된 제한 없음');
+  }
+  add('공고기관', d.noticeOrg && d.noticeOrg !== x.org ? esc(d.noticeOrg) : '');
+  add('참조번호', esc(d.refNo));
+  const files = (d.files || []).map((f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.name)}</a>`).join('');
+  return `<div class="detail">
+    <p class="sum">${esc(summaryText(x))}</p>
+    <div class="facts">${rows.join('')}</div>
+    ${files ? `<div class="files"><div class="k">첨부파일</div>${files}</div>` : ''}
+    ${link}
+  </div>`;
+}
+
+$('list').addEventListener('click', (e) => {
+  const b = e.target.closest('button.item');
+  if (!b) return;
+  const id = b.dataset.id;
+  if (state.open.has(id)) state.open.delete(id); else state.open.add(id);
+  render();
+});
 
 document.querySelector('.filters').addEventListener('click', (e) => {
   const b = e.target.closest('button');
