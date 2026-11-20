@@ -1,0 +1,24 @@
+{
+ "basic": {
+  "name": "디어라운드(주)",
+  "ceo": "조현주",
+  "opened": "2018-02-01",
+  "region": "서울특별시 서초구 방배동",
+  "address": "서울특별시 서초구 방배로 57 (방배동) 1층",
+  "employees": 20,
+  "homepage": "www.cronozen.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:16:38.262Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 3,
+   "202511": 3,
+   "202512": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-20T06:16:39.390Z"
+ }
+}

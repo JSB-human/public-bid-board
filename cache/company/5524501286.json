@@ -1,0 +1,20 @@
+{
+ "basic": {
+  "name": "인버스페이스",
+  "ceo": "우희권",
+  "opened": "2026-05-04",
+  "region": "인천광역시 연수구 송도동",
+  "address": "인천광역시 연수구 인천타워대로 185 (송도동) 14층 1428호(송도동, 송도 센트럴비즈 한라)",
+  "employees": 0,
+  "homepage": "https://inverspace.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:17:50.588Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:17:51.031Z"
+ }
+}

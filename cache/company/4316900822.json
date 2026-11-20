@@ -1,0 +1,20 @@
+{
+ "basic": {
+  "name": "모던테크",
+  "ceo": "TSOGTJARGAL BAZARSAD",
+  "opened": "2026-07-22",
+  "region": "인천광역시 연수구 송도동",
+  "address": "인천광역시 연수구 인천타워대로 323 (송도동) A동 31층 3101호",
+  "employees": 0,
+  "homepage": "https://moderntechhq.com",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:16:06.576Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:16:07.025Z"
+ }
+}

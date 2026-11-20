@@ -1,0 +1,20 @@
+{
+ "basic": {
+  "name": "주식회사 픽셀와이",
+  "ceo": "윤병준",
+  "opened": "2026-03-30",
+  "region": "경기도 김포시 구래동",
+  "address": "경기도 김포시 김포한강9로75번길 190 (구래동) 504-L09호",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:18:26.337Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:18:26.798Z"
+ }
+}
