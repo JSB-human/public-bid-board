@@ -75,9 +75,19 @@ async function scanWindow(b, e) {
     for (const it of r.items) {
       const keyword = kwMatch(it.bidNtceNm);
       if (!keyword || !wanted({ title: it.bidNtceNm, org: it.dminsttNm })) continue;
-      add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword });
+      add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword, open: { status: it.progrsDivCdNm || '', openedAt: it.opengDt || null, participants: num(it.prtcptCnum), note: (it.opengRsltNtcCntnts || '').trim(), rbid: it.rbidNo || '' } });
       scanned++;
     }
+    if (page * 100 >= r.total || !r.items.length) break;
+  }
+  // 같은 기간의 낙찰자도 묶어서 받는다(공고마다 부르지 않으려고)
+  for (let page = 1; ; page++) {
+    if (!budgetLeft() || quotaHit) break;
+    const params = { inqryDiv: '1', inqryBgnDt: kstStamp(new Date(b)), inqryEndDt: kstStamp(new Date(e)), numOfRows: '100', pageNo: String(page) };
+    if (config.industryCode) params.indstrytyCd = String(config.industryCode);
+    let r;
+    try { r = await callApi(API.scsbid, 'getScsbidListSttusServcPPSSrch', params); } catch (err) { if (isQuota(err.message)) quotaHit = true; break; }
+    for (const w of r.items) if (candidates.has(w.bidNtceNo) && w.bidwinnrNm) add(w.bidNtceNo, { win: { name: w.bidwinnrNm.trim(), bizno: (w.bidwinnrBizno || '').replace(/D/g, ''), ceo: (w.bidwinnrCeoNm || '').trim(), amount: num(w.sucsfbidAmt), rate: num(w.sucsfbidRate), date: w.fnlSucsfDate || null } });
     if (page * 100 >= r.total || !r.items.length) break;
   }
   return rows;
@@ -143,7 +153,9 @@ for (const [id, c] of order) {
     }
     if (!regionOk(rec)) { state.excluded[id] = '지역'; excludedNow++; continue; }
 
-    // 개찰 상태
+    // 개찰 상태: 기간 조회에서 받은 게 있으면 그대로 쓰고, 없을 때만 공고별로 묻는다
+    if (c.open && c.open.status) Object.assign(rec, { status: c.open.status, openedAt: c.open.openedAt, participants: c.open.participants, note: c.open.note });
+    else {
     const op = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', { inqryDiv: '3', bidNtceNo: id, numOfRows: '20', pageNo: '1' });
     const o = op.items.sort((a, b) => (b.rbidNo || '').localeCompare(a.rbidNo || ''))[0];
     if (o) {
@@ -152,6 +164,8 @@ for (const [id, c] of order) {
       rec.participants = num(o.prtcptCnum);
       rec.note = (o.opengRsltNtcCntnts || '').trim();
     } else if (!rec.status) rec.status = '개찰 전';
+    }
+    if (c.win && !rec.winner) rec.winner = c.win;
 
     // 참여 업체 순위
     if (rec.status === '개찰완료' && !rec.bidders) {
@@ -202,7 +216,7 @@ await mkdir(path.dirname(STATE), { recursive: true });
 await writeFile(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), source: '조달청 나라장터 낙찰정보·계약정보서비스', items }, null, 1) + '\n');
 // 아직 공고 정보도 못 채운 후보는 다음 실행으로 넘긴다
 state.pending = {};
-for (const [id, c] of candidates) if (!state.excluded[id] && !results.get(id)?.title) state.pending[id] = { ord: c.ord || '000', keyword: c.keyword };
+for (const [id, c] of candidates) if (!state.excluded[id] && !results.get(id)?.title) state.pending[id] = { ord: c.ord || '000', keyword: c.keyword, open: c.open, win: c.win };
 if (quotaHit) console.warn('오늘 낙찰정보 API 호출 한도를 다 써서 나머지는 다음 실행에서 이어 갑니다.');
 console.log(`다음 실행으로 넘긴 후보 ${Object.keys(state.pending).length}건`);
 await writeFile(STATE, JSON.stringify(state, null, 1) + '\n');
