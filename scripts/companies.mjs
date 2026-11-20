@@ -10,7 +10,7 @@
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, config, API, apiKey, num, stats, callApi, corpKey } from './lib.mjs';
+import { ROOT, config, API, apiKey, num, stats, callApi, corpKey, budgetLeft as apiBudget, usageOf, saveUsage } from './lib.mjs';
 import { unzip } from '../site/hwp.js';
 
 const RESULTS = path.join(ROOT, 'site', 'data', 'results.json');
@@ -18,7 +18,8 @@ const OUT = path.join(ROOT, 'site', 'data', 'companies.json');
 const CACHE = path.join(ROOT, 'cache', 'company');
 const DART_CORPS = path.join(ROOT, 'cache', 'dart-corps.json');
 const DAY = 86400e3;
-const MAX_CALLS = config.maxCompanyCallsPerRun ?? 800;
+// 조달업체·국민연금은 하루 10,000회라 넉넉하다. 한 번 실행이 너무 길어지지 않게만 막는다.
+const MAX_CALLS = config.maxCompanyCallsPerRun ?? 3000;
 const DART_KEY = process.env.DART_API_KEY || '';
 const now = Date.now();
 const readJson = async (f, d) => { try { return JSON.parse(await readFile(f, 'utf8')); } catch { return d; } };
@@ -74,7 +75,7 @@ console.log(`회사 ${companies.size}곳 (결과 ${results.length}건에서)`);
 
 // ---------- 2. 회사 정보 붙이기 ----------
 await mkdir(CACHE, { recursive: true });
-const budgetLeft = () => stats.calls < MAX_CALLS;
+const budgetLeft = (base) => stats.calls < MAX_CALLS && (!base || apiBudget(base, 0.95));
 // 많이 나온 회사부터
 const ranked = [...companies.values()].sort((a, b) => b.history.length - a.history.length);
 
@@ -111,7 +112,7 @@ for (const c of ranked) {
   let changed = false;
   try {
     // 기본정보
-    if (apiKey && budgetLeft() && (!cache.basic || now - Date.parse(cache.basic.fetchedAt) > 30 * DAY)) {
+    if (apiKey && budgetLeft(API.usr) && (!cache.basic || now - Date.parse(cache.basic.fetchedAt) > 30 * DAY)) {
       const r = await callApi(API.usr, 'getPrcrmntCorpBasicInfo02', { inqryDiv: '3', bizno: c.bizno, numOfRows: '5', pageNo: '1' });
       const b = r.items[0];
       cache.basic = b ? {
@@ -125,15 +126,16 @@ for (const c of ranked) {
       changed = true;
     }
     // 국민연금 직원 수 추이: 사업장 검색 결과가 달마다 한 줄씩 나오고, 달마다 상세를 불러 가입자 수를 얻는다.
-    if (apiKey && budgetLeft() && (!cache.nps || now - Date.parse(cache.nps.fetchedAt) > 20 * DAY)) {
+    if (apiKey && budgetLeft(API.nps) && (!cache.nps || now - Date.parse(cache.nps.fetchedAt) > 20 * DAY)) {
       const nameKey = corpKey(c.name);
       const r = await callApi(API.nps, 'getBassInfoSearchV2', { wkplNm: c.name.replace(/주식회사|\(주\)|㈜/g, '').trim(), bzowrRgstNo: c.bizno.slice(0, 6), numOfRows: '100', pageNo: '1' });
       const rows = r.items.filter((x) => corpKey(x.wkplNm) === nameKey || corpKey(x.wkplNm).includes(nameKey));
       const months = cache.nps?.months || {};
       const byMonth = new Map();
       for (const x of rows) if (!byMonth.has(x.dataCrtYm)) byMonth.set(x.dataCrtYm, x.seq);
-      for (const [ym, seq] of [...byMonth].sort((a, b) => b[0].localeCompare(a[0])).slice(0, 12)) {
-        if (months[ym] != null || !budgetLeft()) continue;
+      const span = c.history.length >= 2 ? 12 : 1; // 한 번만 나온 회사는 최근 달만 본다(호출 절약)
+      for (const [ym, seq] of [...byMonth].sort((a, b) => b[0].localeCompare(a[0])).slice(0, span)) {
+        if (months[ym] != null || !budgetLeft(API.nps)) continue;
         const d = await callApi(API.nps, 'getDetailInfoSearchV2', { seq: String(seq), numOfRows: '1', pageNo: '1' });
         if (d.items[0]) months[ym] = num(d.items[0].jnngpCnt);
       }
@@ -205,3 +207,5 @@ const out = ranked.map((c) => {
 });
 await writeFile(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), items: out }, null, 1) + '\n');
 console.log(`회사 정보: 이번에 ${enriched}곳 갱신, API 호출 ${stats.calls}회 | 저장 ${out.length}곳`);
+await saveUsage();
+console.log(`API 사용량(오늘): 조달업체 ${usageOf(API.usr)}, 국민연금 ${usageOf(API.nps)}`);

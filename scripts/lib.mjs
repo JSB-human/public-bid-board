@@ -34,12 +34,34 @@ export const num = (v) => (v !== undefined && v !== null && v !== '' && !Number.
 
 export const stats = { calls: 0 };
 
+// ---------- API 별 하루 호출 예산 ----------
+// 개발계정 한도: 입찰공고·낙찰·계약 1,000회, 조달업체·국민연금 10,000회 (하루, 한국시간 자정 초기화).
+// 운영계정으로 올리면 config.dailyLimits 에 새 한도를 적는다.
+const NAMES = { [API.bid]: 'bid', [API.scsbid]: 'scsbid', [API.cntrct]: 'cntrct', [API.usr]: 'usr', [API.nps]: 'nps' };
+const LIMITS = { bid: 1000, scsbid: 1000, cntrct: 1000, usr: 10000, nps: 10000, ...(config.dailyLimits || {}) };
+const USAGE = path.join(ROOT, 'cache', 'api-usage.json');
+const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
+let usage = { date: today, calls: {} };
+try { const u = JSON.parse(await readFile(USAGE, 'utf8')); if (u.date === today) usage = u; } catch {}
+export const apiName = (base) => NAMES[base] || base;
+// share: 이 스크립트가 쓸 수 있는 한도 비율. 진행 중 공고 수집(fetch)이 늘 쓸 수 있게 다른 스크립트는 낮게 잡는다.
+export const budgetLeft = (base, share = 0.85) => (usage.calls[apiName(base)] || 0) < LIMITS[apiName(base)] * share;
+export const usageOf = (base) => `${usage.calls[apiName(base)] || 0}/${LIMITS[apiName(base)]}`;
+export async function saveUsage() {
+  const { mkdir, writeFile } = await import('node:fs/promises');
+  await mkdir(path.dirname(USAGE), { recursive: true });
+  await writeFile(USAGE, JSON.stringify(usage, null, 1) + '\n');
+}
+
 // 공공데이터포털은 가끔 "어플리케이션 에러"를 내므로 몇 번 다시 시도한다. 입력값 오류는 재시도하지 않는다.
 export async function callApi(base, operation, params) {
   for (let attempt = 1; ; attempt++) {
     try {
       return await callApiOnce(base, operation, params);
     } catch (e) {
+      // 하루 한도를 넘었으면 오늘은 이 API 를 더 부르지 않는다.
+      // 원래 메시지("요청제한…")는 그대로 둔다. results.mjs 가 이 글자로 한도 초과를 알아챈다.
+      if (/요청제한|LIMITED_NUMBER|22:/.test(e.message)) { usage.calls[apiName(base)] = LIMITS[apiName(base)]; throw e; }
       if (attempt >= 4 || /API 오류 (06|07|08)|등록되지 않은/.test(e.message)) throw e;
       await new Promise((r) => setTimeout(r, attempt * 3000));
     }
@@ -48,6 +70,7 @@ export async function callApi(base, operation, params) {
 
 async function callApiOnce(base, operation, params) {
   stats.calls++;
+  usage.calls[apiName(base)] = (usage.calls[apiName(base)] || 0) + 1;
   const fmt = base === API.nps ? { dataType: 'json' } : { type: 'json' };
   const qs = new URLSearchParams({ serviceKey: key, ...fmt, ...params });
   const res = await fetch(`${base}/${operation}?${qs}`);

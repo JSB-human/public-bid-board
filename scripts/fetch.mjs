@@ -8,7 +8,7 @@
 
 import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
-import { ROOT, config, API, apiKey as key, kstStamp, callApi as call, wanted, regionOk, regionsOf, normalizeNotice as normalize } from './lib.mjs';
+import { ROOT, config, API, apiKey as key, kstStamp, callApi as call, wanted, regionOk, regionsOf, normalizeNotice as normalize, saveUsage } from './lib.mjs';
 
 const OUT = path.join(ROOT, 'site', 'data', 'bids.json');
 const REGION_CACHE = path.join(ROOT, 'site', 'data', 'regions.json');
@@ -135,3 +135,4 @@ const meta = key
   : { updatedAt: prevMeta.updatedAt, source: prevMeta.source };
 await writeFile(OUT, JSON.stringify({ ...meta, items }, null, 1) + '\n');
 console.log(`저장: ${items.length}건 (이번에 받은 ${fetched.size}건)`);
+await saveUsage();
