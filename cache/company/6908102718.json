@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 디에이티",
+  "ceo": "차영광",
+  "opened": "2022-01-10",
+  "region": "인천광역시 서해구 경서동",
+  "address": "인천광역시 서해구 느티로 25 (경서동)",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T08:40:54.714Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T08:40:56.106Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T08:40:56.106Z"
+ }
+}

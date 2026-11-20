@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "에스디와이",
+  "ceo": "송도영",
+  "opened": "2025-02-24",
+  "region": "경기도 용인시 기흥구 상갈동",
+  "address": "경기도 용인시 기흥구 금화로 3 (상갈동) 202호 n-04",
+  "employees": 2,
+  "homepage": "https://bandalhome.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T08:39:29.694Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T08:39:30.081Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T08:39:31.447Z"
+ }
+}
