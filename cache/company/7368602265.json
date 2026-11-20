@@ -1,0 +1,29 @@
+{
+ "basic": {
+  "name": "다담시스 주식회사",
+  "ceo": "장근수",
+  "opened": "2021-06-30",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 1 (가산동) 1208호",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T10:13:10.003Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 3,
+   "202511": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-20T10:13:10.679Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T10:13:10.680Z"
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "basic": {
+  "name": "주식회사 컨셉위드인사이트",
+  "ceo": "김광석",
+  "opened": "2017-12-01",
+  "region": "서울특별시 마포구",
+  "address": "서울특별시 마포구 월드컵북로 361, 14층(상암동)",
+  "employees": 8,
+  "homepage": "www.conceptwithinsight.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T10:13:59.923Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202606": 3,
+   "202607": 3,
+   "202608": 3,
+   "202609": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-20T10:14:00.965Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T10:14:00.965Z"
+ }
+}
