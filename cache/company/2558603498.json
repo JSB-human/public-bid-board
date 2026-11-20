@@ -1,0 +1,20 @@
+{
+ "basic": {
+  "name": "주식회사 퍼플에이아이",
+  "ceo": "이수진",
+  "opened": "2025-05-09",
+  "region": "대전광역시 동구 성남동",
+  "address": "대전광역시 동구 동서대로 1688 (성남동), 8층 806-76호",
+  "employees": 0,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:09:09.144Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:09:09.521Z"
+ }
+}

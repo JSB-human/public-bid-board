@@ -1,0 +1,20 @@
+{
+ "basic": {
+  "name": "소프트캣",
+  "ceo": "박찬엽",
+  "opened": "2024-09-01",
+  "region": "경기도 고양시 덕양구 원흥동",
+  "address": "경기도 고양시 덕양구 원흥3로 16 (원흥동) 904호",
+  "employees": 2,
+  "homepage": "https://softcat.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:07:51.272Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:07:51.619Z"
+ }
+}
