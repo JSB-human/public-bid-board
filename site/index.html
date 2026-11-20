@@ -54,16 +54,17 @@
   body { margin: 0; background: var(--bg); color: var(--text); letter-spacing: -0.02em; -webkit-font-smoothing: antialiased;
     font: 16px/1.5 "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif; }
   button { font: inherit; letter-spacing: inherit; color: inherit; }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  :root { --header-h: 56px; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 16px; }
 
   /* 상단 바 */
   header { position: sticky; top: 0; z-index: 10; background: var(--header-bg);
     -webkit-backdrop-filter: saturate(180%) blur(16px); backdrop-filter: saturate(180%) blur(16px); }
-  header .wrap { height: 56px; display: flex; align-items: center; justify-content: space-between; }
-  .brand { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 17px; }
+  header .bar { height: 56px; display: flex; align-items: center; gap: 24px; }
+  .brand { flex: none; display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 17px; color: inherit; text-decoration: none; }
   .brand i { width: 28px; height: 28px; border-radius: 9px; background: var(--blue); display: grid; place-items: center; }
   .brand i svg { width: 16px; height: 16px; color: #fff; }
-  .updated { font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+  .updated { flex: none; margin-left: auto; font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
   .updated::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
 
   /* 히어로 */
@@ -87,14 +88,45 @@
   .stat.red .value { color: var(--red); }
   .stat.orange .value { color: var(--orange); }
 
+  /* 마감 달력: 앞으로 2주 동안 날마다 몇 건이 마감되는지 */
+  .cal { background: var(--card); border-radius: 22px; box-shadow: var(--shadow); padding: 16px 16px 12px; margin-top: 12px; }
+  .cal-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 0 4px 10px; }
+  .cal-h b { font-size: 15px; }
+  .cal-h span { font-size: 13px; color: var(--muted); }
+  .cal-days { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(46px, 1fr); gap: 4px; overflow-x: auto; scrollbar-width: none; }
+  .cal-days::-webkit-scrollbar { display: none; }
+  .day { border: 0; background: var(--field); border-radius: 13px; padding: 8px 0 7px; display: grid; justify-items: center; gap: 1px; cursor: pointer; transition: background .15s, color .15s; }
+  .day:hover:not([disabled]) { background: var(--blue-weak); }
+  .day[disabled] { background: none; cursor: default; }
+  .day[disabled] b { color: var(--faint); font-weight: 600; }
+  .day .wd { font-size: 11px; font-weight: 600; color: var(--muted); }
+  .day.sun .wd { color: var(--red); } .day.sat .wd { color: var(--blue); }
+  .day b { font-size: 15px; font-variant-numeric: tabular-nums; }
+  .day em { font-style: normal; font-size: 11px; font-weight: 800; min-width: 22px; height: 18px; line-height: 18px; padding: 0 6px; border-radius: 999px; background: var(--blue); color: #fff; margin-top: 3px; }
+  .day em.soon { background: var(--red); }
+  .day[disabled] em { background: none; color: var(--faint); }
+  .day.today { box-shadow: inset 0 0 0 1.5px var(--faint); }
+  .day[aria-pressed="true"] { background: var(--text); color: var(--card); }
+  .day[aria-pressed="true"] .wd { color: inherit; opacity: .7; }
+  /* 분야 */
+  .kinds { display: flex; gap: 8px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .kinds::-webkit-scrollbar { display: none; }
+  .kinds .chip { display: inline-flex; align-items: center; gap: 7px; }
+  .kinds .chip b { font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .kinds .chip[aria-pressed="true"] b { color: inherit; opacity: .7; }
+  .kd { width: 8px; height: 8px; border-radius: 50%; background: var(--teal); }
+  .kd.k-ai { background: var(--purple); } .kd.k-map { background: var(--blue); } .kd.k-data { background: var(--green); } .kd.k-city { background: var(--orange); }
+
   /* 검색과 필터 (스크롤하면 위에 붙음) */
   /* 메뉴 */
-  header .tabs { display: flex; gap: 4px; height: 44px; align-items: stretch; justify-content: flex-start; }
-  .tabs a { display: flex; align-items: center; padding: 0 14px; font-size: 15px; font-weight: 700; color: var(--muted); text-decoration: none;
-    border-bottom: 2.5px solid transparent; transition: color .15s, border-color .15s; }
+  header .tabs { display: flex; gap: 2px; height: 100%; align-items: stretch; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+  header .tabs::-webkit-scrollbar { display: none; }
+  .tabs a { flex: none; display: flex; align-items: center; gap: 6px; padding: 0 12px; font-size: 15px; font-weight: 700; color: var(--muted); text-decoration: none;
+    border-bottom: 2.5px solid transparent; border-top: 2.5px solid transparent; transition: color .15s, border-color .15s; }
+  .tabs a svg { width: 16px; height: 16px; }
   .tabs a:hover { color: var(--sub); }
   .tabs a[aria-current="page"] { color: var(--text); border-bottom-color: var(--text); }
-  .toolbar { position: sticky; top: 100px; z-index: 9; background: var(--bg); padding: 16px 0 12px; margin: 0 -16px; }
+  .toolbar { position: sticky; top: var(--header-h); z-index: 9; background: var(--bg); padding: 12px 0 12px; margin: 0 -16px; }
   .toolbar .inner { padding: 0 16px; }
   .search { position: relative; }
   .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--muted); pointer-events: none; }
@@ -278,6 +310,10 @@
   footer a { color: inherit; }
 
   @media (max-width: 640px) {
+    :root { --header-h: 96px; }
+    header .bar { height: auto; flex-wrap: wrap; gap: 0; }
+    .brand { height: 52px; }
+    header .tabs { order: 3; width: 100%; height: 44px; margin: 0 -6px; }
     .hero { padding-top: 20px; }
     .hero h1 { font-size: 24px; }
     .stats { grid-template-columns: repeat(2, 1fr); }
@@ -473,20 +509,101 @@
     .mini-search { flex: 1; }
     .mini-search input { width: 100%; }
   }
+  /* ---------- 관계도 (우주 보기) : 테마와 상관없이 늘 어둡다 ---------- */
+  body.space { --bg: #05060d; --text: #f2f4f6; --sub: #c3c8cf; --muted: #868b94; --header-bg: rgba(5, 6, 13, .78); overflow: hidden; }
+  body.space .brand i { background: #2b6ff0; }
+  #view-galaxy { position: relative; height: calc(100dvh - var(--header-h)); overflow: hidden; color: #e8ecf4; font-size: 14px;
+    background: radial-gradient(60% 50% at 22% 28%, rgba(63, 94, 251, .16), transparent 70%),
+      radial-gradient(50% 45% at 80% 72%, rgba(255, 92, 138, .10), transparent 70%), #05060d; }
+  #view-galaxy[hidden] { display: none; }
+  .gx-canvas { position: absolute; inset: 0; cursor: grab; }
+  .gx-canvas:active { cursor: grabbing; }
+  .gx-canvas .float-tooltip-kap, .gx-canvas .scene-tooltip { background: rgba(18, 22, 36, .94) !important; border-radius: 10px !important; padding: 8px 11px !important;
+    font: inherit !important; color: #e8ecf4 !important; box-shadow: 0 6px 24px rgba(0, 0, 0, .5); }
+  .gx-tip { display: grid; gap: 2px; } .gx-tip b { font-size: 14px; } .gx-tip span { font-size: 12px; color: #9aa5ba; }
+  .gx-search input, .gx-seg, .gx-btn, .gx-panel, .gx-sug, .gx-legend {
+    background: rgba(18, 22, 36, .72); border: 1px solid rgba(255, 255, 255, .09);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); }
+  .gx-top { position: absolute; top: 14px; left: 16px; right: 16px; display: flex; gap: 10px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; pointer-events: none; z-index: 3; }
+  .gx-top > * { pointer-events: auto; }
+  .gx-search { position: relative; width: min(320px, 100%); }
+  .gx-search svg { position: absolute; left: 13px; top: 21px; transform: translateY(-50%); width: 18px; height: 18px; color: #8a94a8; pointer-events: none; z-index: 1; }
+  .gx-search input { width: 100%; height: 42px; border-radius: 13px; color: #f2f4f6; padding: 0 12px 0 40px; font: inherit; font-size: 15px; outline: none; }
+  .gx-search input::placeholder { color: #7c869a; }
+  .gx-search input:focus { border-color: #5aa9ff; }
+  .gx-sug { position: absolute; top: 48px; left: 0; right: 0; border-radius: 13px; padding: 5px; display: grid; background: rgba(18, 22, 36, .96); }
+  .gx-sug[hidden] { display: none; }
+  .gx-sug button, .gx-row { display: flex; align-items: center; gap: 9px; width: 100%; border: 0; background: none; color: #e8ecf4; text-align: left; text-decoration: none;
+    padding: 8px 9px; border-radius: 9px; cursor: pointer; font-size: 14px; font-weight: 600; }
+  .gx-sug button:hover, .gx-row:hover { background: rgba(255, 255, 255, .08); }
+  .gx-sug span, .gx-row span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .gx-sug small, .gx-row small { flex: none; color: #8a94a8; font-size: 12px; font-weight: 500; }
+  .gx-none { padding: 10px; color: #8a94a8; }
+  .gx-tools { display: flex; gap: 6px; flex-wrap: wrap; }
+  .gx-seg { display: inline-flex; border-radius: 13px; padding: 3px; }
+  .gx-seg button { border: 0; background: none; height: 34px; padding: 0 12px; border-radius: 10px; font-size: 13px; font-weight: 700; color: #9aa5ba; cursor: pointer; }
+  .gx-seg button[aria-pressed="true"] { background: rgba(255, 255, 255, .14); color: #fff; }
+  .gx-btn { height: 42px; padding: 0 13px; border-radius: 13px; font-size: 13px; font-weight: 700; color: #c3cad8; cursor: pointer; }
+  .gx-btn:hover { color: #fff; }
+  .gx-btn[aria-pressed="true"] { background: rgba(90, 169, 255, .28); border-color: rgba(90, 169, 255, .6); color: #fff; }
+  .gx-legend { position: absolute; left: 16px; bottom: 16px; z-index: 2; border-radius: 13px; padding: 9px 12px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center;
+    max-width: calc(100% - 32px); font-size: 12px; font-weight: 600; color: #c3cad8; }
+  .gx-legend span { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+  .gx-legend .gx-count { color: #7c869a; font-weight: 500; }
+  #view-galaxy .dot { flex: none; width: 9px; height: 9px; border-radius: 50%; background: #8f9bb3; }
+  #view-galaxy .dot.org { background: #ffc857; } #view-galaxy .dot.won { background: #5aa9ff; } #view-galaxy .dot.partner { background: #ff5c8a; }
+  #view-galaxy .ln { width: 16px; height: 3px; border-radius: 2px; }
+  .gx-hint { position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%); z-index: 2; font-size: 13px; color: #9aa5ba; white-space: nowrap; pointer-events: none; transition: opacity .6s; }
+  .gx-hint.off { opacity: 0; }
+  .gx-panel { position: absolute; z-index: 4; top: 68px; right: 16px; bottom: 16px; width: 330px; border-radius: 18px; padding: 18px 16px 16px; overflow: hidden auto; overscroll-behavior: contain;
+    background: rgba(14, 17, 29, .86); animation: gxin .25s ease; scrollbar-width: thin; }
+  .gx-panel[hidden] { display: none; }
+  @keyframes gxin { from { opacity: 0; transform: translateX(12px); } }
+  .gx-close { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border: 0; border-radius: 10px; background: none; color: #9aa5ba; font-size: 22px; line-height: 1; cursor: pointer; }
+  .gx-close:hover { background: rgba(255, 255, 255, .1); color: #fff; }
+  .gx-kind { display: inline-block; font-size: 12px; font-weight: 800; padding: 3px 9px; border-radius: 999px; }
+  .gx-kind.co { background: rgba(90, 169, 255, .2); color: #8cc2ff; } .gx-kind.org { background: rgba(255, 200, 87, .18); color: #ffc857; }
+  .gx-panel h2 { margin: 10px 30px 4px 0; font-size: 20px; line-height: 1.35; font-weight: 800; letter-spacing: -0.03em; overflow-wrap: anywhere; }
+  .gx-panel p { margin: 0; color: #9aa5ba; font-size: 13px; }
+  .gx-panel h3 { margin: 18px 0 6px; font-size: 12px; font-weight: 700; color: #8a94a8; }
+  .gx-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 14px; }
+  .gx-tiles div { background: rgba(255, 255, 255, .06); border-radius: 12px; padding: 9px 11px; display: grid; }
+  .gx-tiles small { font-size: 12px; color: #8a94a8; } .gx-tiles b { font-size: 17px; font-variant-numeric: tabular-nums; }
+  .gx-rows { display: grid; margin: 0 -9px; }
+  .gx-cta { display: flex; align-items: center; justify-content: center; height: 44px; margin-top: 18px; border-radius: 12px; background: #2b6ff0; color: #fff; text-decoration: none; font-weight: 700; padding: 0 16px; }
+  .gx-cta:hover { filter: brightness(1.1); }
+  .gx-state { height: 100%; display: grid; place-content: center; justify-items: center; gap: 8px; text-align: center; color: #9aa5ba; padding: 24px; }
+  .gx-state b { color: #fff; font-size: 17px; }
+  .gx-teaser { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 20px; border-radius: 20px; text-decoration: none; color: #e8ecf4; overflow: hidden;
+    background: radial-gradient(40% 120% at 12% 0%, rgba(63, 94, 251, .45), transparent 70%), radial-gradient(35% 110% at 88% 100%, rgba(255, 92, 138, .3), transparent 70%), #0b0d1a;
+    box-shadow: var(--shadow); transition: transform .15s; }
+  .gx-teaser:hover { transform: translateY(-1px); }
+  .gx-teaser-t { display: grid; gap: 3px; min-width: 0; } .gx-teaser-t b { font-size: 17px; } .gx-teaser-t span { font-size: 14px; color: #b3bccd; }
+  .gx-teaser-go { flex: none; font-weight: 700; font-size: 14px; background: rgba(255, 255, 255, .14); padding: 9px 14px; border-radius: 999px; }
+  .panel-h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .more { color: var(--blue); text-decoration: none; font-weight: 700; font-size: 13px; }
+  @media (max-width: 720px) {
+    .gx-top { top: 10px; left: 10px; right: 10px; }
+    .gx-search { width: 100%; }
+    .gx-panel { top: auto; left: 8px; right: 8px; bottom: 8px; width: auto; max-height: 46%; animation: none; }
+    .has-panel .gx-legend, .gx-hint { display: none; }
+    .gx-legend { left: 10px; bottom: 10px; }
+  }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
 <body>
 <header>
-  <div class="wrap">
-    <div class="brand"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>공고 모음</div>
+  <div class="wrap bar">
+    <a class="brand" href="#"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>공고 모음</a>
+    <nav class="tabs" aria-label="메뉴">
+      <a href="#" data-tab="open">진행 중</a>
+      <a href="#results" data-tab="results">마감·결과</a>
+      <a href="#companies" data-tab="companies">업체</a>
+      <a href="#galaxy" data-tab="galaxy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="2.4"/><circle cx="5" cy="6" r="1.6"/><circle cx="19" cy="7" r="1.6"/><circle cx="17" cy="19" r="1.6"/><path d="M10.2 10.4 6.2 7M13.9 10.6 17.8 7.9M13.2 14 16.2 17.7"/></svg>관계도</a>
+    </nav>
     <div class="updated" id="updated">불러오는 중</div>
   </div>
-  <nav class="wrap tabs" aria-label="메뉴">
-    <a href="#" data-tab="open">진행 중 공고</a>
-    <a href="#results" data-tab="results">마감·결과</a>
-    <a href="#companies" data-tab="companies">업체</a>
-  </nav>
 </header>
 
 <main class="wrap" id="view-open">
@@ -501,6 +618,9 @@
     <button class="stat red" data-only="soon" aria-pressed="false"><div class="label">3일 안에 마감</div><div class="value" id="sSoon">-</div></button>
     <button class="stat orange" data-only="re" aria-pressed="false"><div class="label">재공고</div><div class="value" id="sRe">-</div></button>
   </section>
+
+  <section class="cal" id="cal" aria-label="마감 달력"></section>
+  <div class="kinds" id="kinds" role="group" aria-label="분야"></div>
 
   <div class="toolbar">
     <div class="inner">
@@ -533,11 +653,13 @@
 
 <main class="wrap" id="view-results" hidden></main>
 <main class="wrap" id="view-companies" hidden></main>
+<main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
 <script type="module" src="insights.js"></script>
 <script>
-const state = { items: [], sort: 'amount', min: 0, only: null, open: new Set() };
+const state = { items: [], sort: 'amount', min: 0, only: null, day: null, kind: null, open: new Set() };
+const KINDS = { ai: 'AI', map: '공간정보', data: '데이터', city: '스마트도시', etc: '기타' };
 const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
 
@@ -592,6 +714,31 @@ function daysLeft(t, now) {
 const isOpen = (x, now) => x._dl === null || x._dl >= now;
 const isSoon = (x, now) => x._dl !== null && x._dl >= now && x._dl - now <= 3 * DAY;
 const isRe = (x) => !!(x.detail && x.detail.reNotice);
+const dayKey = (t) => { const d = kst(t); return d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0') + '-' + String(d.getUTCDate()).padStart(2, '0'); };
+
+// 마감 달력과 분야 단추. 마감 전 공고만 센다.
+function renderGlance() {
+  const now = Date.now();
+  const open = state.items.filter((x) => isOpen(x, now));
+  const by = new Map();
+  for (const x of open) if (x._dl !== null) by.set(dayKey(x._dl), (by.get(dayKey(x._dl)) || 0) + 1);
+  const WD = ['일', '월', '화', '수', '목', '금', '토'];
+  let inRange = 0;
+  const cells = Array.from({ length: 14 }, (_, i) => {
+    const t = now + i * DAY, d = kst(t), key = dayKey(t), n = by.get(key) || 0, wd = d.getUTCDay();
+    inRange += n;
+    const date = d.getUTCDate() === 1 || i === 0 ? (d.getUTCMonth() + 1) + '/' + d.getUTCDate() : d.getUTCDate();
+    return `<button class="day ${i === 0 ? 'today' : ''} ${wd === 0 ? 'sun' : wd === 6 ? 'sat' : ''}" data-day="${key}" aria-pressed="${state.day === key}" ${n ? '' : 'disabled'}
+      aria-label="${d.getUTCMonth() + 1}월 ${d.getUTCDate()}일 마감 ${n}건"><span class="wd">${i === 0 ? '오늘' : WD[wd]}</span><b>${date}</b><em class="${n && i <= 3 ? 'soon' : ''}">${n || '·'}</em></button>`;
+  }).join('');
+  const later = open.filter((x) => x._dl !== null).length - inRange;
+  $('cal').innerHTML = `<div class="cal-h"><b>마감 달력</b><span>앞으로 2주 ${inRange}건${later > 0 ? ` · 그 뒤 ${later}건` : ''}</span></div><div class="cal-days">${cells}</div>`;
+
+  const count = {};
+  for (const x of open) count[kindOf(x)] = (count[kindOf(x)] || 0) + 1;
+  $('kinds').innerHTML = `<button class="chip" data-kind="" aria-pressed="${!state.kind}">전체 분야</button>` + Object.entries(KINDS).filter(([k]) => count[k])
+    .map(([k, name]) => `<button class="chip" data-kind="${k}" aria-pressed="${state.kind === k}"><i class="kd k-${k}"></i>${name}<b>${count[k]}</b></button>`).join('');
+}
 
 function renderStats() {
   const now = Date.now();
@@ -619,6 +766,8 @@ function render() {
     if (openOnly && !isOpen(x, now)) return false;
     if (state.only === 'soon' && !isSoon(x, now)) return false;
     if (state.only === 're' && !isRe(x)) return false;
+    if (state.day && (x._dl === null || dayKey(x._dl) !== state.day)) return false;
+    if (state.kind && kindOf(x) !== state.kind) return false;
     return true;
   });
   rows.sort((a, b) => {
@@ -629,9 +778,15 @@ function render() {
     return (av - bv) * dir;
   });
 
-  const label = state.only === 'soon' ? '3일 안에 마감' : state.only === 're' ? '재공고' : '';
+  document.querySelectorAll('[data-day]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.day === state.day));
+  document.querySelectorAll('[data-kind]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.kind === (state.kind || '')));
+  const label = [
+    state.only === 'soon' ? '3일 안에 마감' : state.only === 're' ? '재공고' : '',
+    state.day ? Number(state.day.slice(5, 7)) + '월 ' + Number(state.day.slice(8)) + '일 마감' : '',
+    state.kind ? KINDS[state.kind] : '',
+  ].filter(Boolean).join(' · ');
   $('count').innerHTML = `<span><b>${rows.length}</b>건${label ? ' · ' + label : ''}</span>` +
-    (state.only ? '<button class="chip" id="clearOnly" style="height:28px;font-size:13px">필터 해제</button>' : '');
+    (label ? '<button class="chip" id="clearOnly" style="height:28px;font-size:13px">필터 해제</button>' : '');
 
   if (!rows.length) {
     $('list').innerHTML = '<div class="empty"><b>조건에 맞는 공고가 없어요</b>검색어나 필터를 바꿔 보세요.</div>';
@@ -815,7 +970,19 @@ document.querySelector('.stats').addEventListener('click', (e) => {
   render();
 });
 $('count').addEventListener('click', (e) => {
-  if (e.target.id === 'clearOnly') { state.only = null; render(); }
+  if (e.target.id === 'clearOnly') { state.only = null; state.day = null; state.kind = null; render(); }
+});
+$('cal').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-day]');
+  if (!b || b.disabled) return;
+  state.day = state.day === b.dataset.day ? null : b.dataset.day;
+  render();
+});
+$('kinds').addEventListener('click', (e) => {
+  const b = e.target.closest('[data-kind]');
+  if (!b) return;
+  state.kind = b.dataset.kind || null;
+  render();
 });
 ['q', 'open'].forEach((id) => $(id).addEventListener('input', render));
 
@@ -833,6 +1000,7 @@ fetch('data/bids.json', { cache: 'no-store' })
       u.toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) + ' 갱신';
     $('source').textContent = '출처: ' + (data.source || '-');
     renderStats();
+    renderGlance();
     render();
   })
   .catch((err) => { $('count').textContent = '데이터를 불러오지 못했어요: ' + err.message; });

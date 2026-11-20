@@ -249,17 +249,10 @@ function drawCompanyList() {
     const won = all.filter((c) => c.stats.wins).length;
     el.innerHTML = `
       <section class="hero"><h1>공고에 나온 업체 <em>${all.length}</em>곳</h1>
-        <p>수주한 회사 ${won}곳 · 컨소시엄으로 이어진 회사 ${all.filter((c) => c.partners.length).length}곳. 점을 누르면 그 회사로 가요.</p></section>
-      <section class="graph-card">
-        <div class="graph-head">
-          <div class="graph-title"><b>관계도</b><span class="legend"><i class="lg-p"></i>컨소시엄 <i class="lg-r"></i>같은 공고에서 경쟁 · 색은 함께 일하는 무리, 크기는 수주 규모</span></div>
-          <div class="graph-tools">
-            <div class="mini-search">${SEARCH}<input id="gq" type="search" placeholder="회사 찾기" aria-label="관계도에서 회사 찾기"></div>
-            <div class="seg" id="gMode"><button data-m="all" aria-pressed="true">경쟁 포함</button><button data-m="partner">컨소시엄만</button></div>
-            <button class="icon-btn" data-z="1.3" aria-label="확대">+</button><button class="icon-btn" data-z="0.77" aria-label="축소">−</button><button class="icon-btn" data-z="fit" aria-label="전체 보기">⤢</button>
-          </div>
-        </div>
-        <div id="netGraph" class="net"></div></section>
+        <p>수주한 회사 ${won}곳 · 컨소시엄으로 이어진 회사 ${all.filter((c) => c.partners.length).length}곳. 줄을 누르면 그 회사로 가요.</p></section>
+      <a class="gx-teaser" href="#galaxy">
+        <span class="gx-teaser-t"><b>관계도에서 한눈에 보기</b><span>업체와 발주기관을 별처럼 띄워, 누가 어디서 일을 받고 누구와 손잡는지 따라가 볼 수 있어요.</span></span>
+        <span class="gx-teaser-go">열기 →</span></a>
       <div class="toolbar"><div class="inner">
         <div class="search">${SEARCH}<input type="search" id="cq" placeholder="회사명·대표자·사업자번호로 검색" aria-label="업체 검색"></div>
         <div class="chips" id="cChips"><button class="chip" data-s="wins">수주 많은 순</button><button class="chip" data-s="amount">수주액 순</button>
@@ -268,12 +261,6 @@ function drawCompanyList() {
     $('cq').addEventListener('input', (e) => { cs.q = e.target.value.trim().toLowerCase(); drawCompanyRows(); });
     $('cChips').addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (b) { cs.sort = b.dataset.s; drawCompanyRows(); } });
     $('cRows').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-biz]'); if (tr && !e.target.closest('a')) location.hash = 'company/' + tr.dataset.biz; });
-    let mode = 'all', g = null;
-    const draw = async () => { g = await drawNetwork($('netGraph'), all, mode); };
-    $('gMode').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; mode = b.dataset.m; $('gMode').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', x === b)); draw(); });
-    $('gq').addEventListener('input', (e) => g?.find(e.target.value));
-    el.querySelectorAll('[data-z]').forEach((b) => b.addEventListener('click', () => (b.dataset.z === 'fit' ? g?.fit() : g?.zoomBy(Number(b.dataset.z)))));
-    draw();
   }
   drawCompanyRows();
 }
@@ -323,7 +310,7 @@ function drawCompany(bizno) {
     <p class="back"><a href="#companies">← 업체 목록</a></p>
     <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
     <section class="stats">${tiles.map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('')}</section>
-    <section class="panel"><div class="section-title">관계도 <small>컨소시엄 파트너와 그 파트너, 같은 공고에서 겨룬 회사</small></div><div class="net ego" id="egoGraph"></div>
+    <section class="panel"><div class="section-title panel-h"><span>관계도 <small>컨소시엄 파트너와 그 파트너, 같은 공고에서 겨룬 회사</small></span><a class="more" href="#galaxy/c:${esc(c.bizno)}">우주에서 보기 →</a></div><div class="net ego" id="egoGraph"></div>
       <div class="rel-cols">
         <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
         <div><div class="sub-title">같은 공고에서 겨룬 회사</div>${relList(c.rivals, '공고')}</div>
@@ -397,27 +384,6 @@ function toNode(c, max) {
 }
 const pairKey = (a, b) => (a < b ? a + '|' + b : b + '|' + a);
 
-// 전체 관계도: 이어진 회사만. 컨소시엄은 모두, 경쟁은 두 번 이상 겨뤘거나 둘 다 자주 나오는 회사끼리.
-async function drawNetwork(el, all, mode = 'all') {
-  const by = new Map(all.map((c) => [c.bizno, c]));
-  const active = (b) => (by.get(b)?.stats.bids || 0) >= 3;
-  const links = new Map();
-  for (const c of all) {
-    for (const p of c.partners || []) if (by.has(p.bizno)) links.set(pairKey(c.bizno, p.bizno) + '|p', { source: c.bizno, target: p.bizno, kind: 'partner', count: p.count });
-    if (mode === 'all') for (const p of c.rivals || []) if (by.has(p.bizno) && (p.count >= 2 || (active(c.bizno) && active(p.bizno)))) links.set(pairKey(c.bizno, p.bizno) + '|r', { source: c.bizno, target: p.bizno, kind: 'rival', count: p.count });
-  }
-  const deg = new Map();
-  for (const l of links.values()) for (const k of [l.source, l.target]) deg.set(k, (deg.get(k) || 0) + 1);
-  const pool = [...deg.keys()].map((b) => by.get(b));
-  const max = Math.max(1, ...pool.map(scoreOf));
-  const keep = new Set(pool.sort((a, b) => scoreOf(b) + deg.get(b.bizno) - (scoreOf(a) + deg.get(a.bizno))).slice(0, 140).map((c) => c.bizno));
-  const nodes = [...keep].map((b) => toNode(by.get(b), max));
-  const ls = [...links.values()].filter((l) => keep.has(l.source) && keep.has(l.target));
-  if (nodes.length < 2) { el.innerHTML = '<div class="note pad">관계도를 그릴 만큼 이어진 업체가 아직 없어요.</div>'; return null; }
-  const { networkGraph } = await import('./graph.js');
-  return networkGraph(el, { nodes, links: ls, height: Math.round(Math.min(640, window.innerHeight * 0.62, Math.max(340, el.clientWidth * 0.95))), onOpen: (id) => (location.hash = 'company/' + id) });
-}
-
 // 한 회사 중심: 파트너, 파트너의 파트너, 겨룬 회사(상위 14곳)
 async function drawEgo(el, c) {
   const by = data.byBizno;
@@ -436,10 +402,37 @@ async function drawEgo(el, c) {
 
 
 // ---------- 메뉴 이동 ----------
+// ---------- 관계도 (우주 보기) ----------
+let galaxy = null;
+async function renderGalaxy() {
+  const root = $('view-galaxy');
+  const want = decodeURIComponent((location.hash.match(/^#galaxy\/(.+)/) || [])[1] || '');
+  try {
+    if (!galaxy) {
+      root.innerHTML = '<div class="gx-state"><div class="v-spin"></div>별을 띄우는 중이에요</div>';
+      galaxy = (async () => {
+        const [c, r] = await Promise.all([load('companies'), load('results')]);
+        const { openGalaxy } = await import('./galaxy.js');
+        return openGalaxy(root, { companies: c.items, results: r.items });
+      })();
+    }
+    const g = await galaxy;
+    if ($('view-galaxy').hidden) { g.pause(); return; }
+    g.resume();
+    if (want) g.focus(want);
+  } catch (e) {
+    galaxy = null;
+    console.error(e);
+    root.innerHTML = '<div class="gx-state"><b>관계도를 열지 못했어요</b>이 브라우저에서 3D 그래픽(WebGL)을 쓸 수 없거나 데이터가 아직 없어요.<a class="gx-cta" href="#companies">업체 목록으로</a></div>';
+  }
+}
+
 function route() {
   const h = location.hash;
-  const tab = /^#results/.test(h) ? 'results' : /^#compan/.test(h) ? 'companies' : 'open';
-  for (const t of ['open', 'results', 'companies']) $('view-' + t).hidden = t !== tab;
+  const tab = /^#results/.test(h) ? 'results' : /^#compan/.test(h) ? 'companies' : /^#galaxy/.test(h) ? 'galaxy' : 'open';
+  for (const t of ['open', 'results', 'companies', 'galaxy']) $('view-' + t).hidden = t !== tab;
+  document.body.classList.toggle('space', tab === 'galaxy');
+  if (tab === 'galaxy') renderGalaxy(); else galaxy?.then((g) => g.pause()).catch(() => {});
   document.querySelectorAll('.tabs [data-tab]').forEach((a) => (a.dataset.tab === tab ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
   if (tab === 'results') renderResults();
   if (tab === 'companies') renderCompanies();

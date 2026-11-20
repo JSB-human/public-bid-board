@@ -203,6 +203,8 @@ for (const [id, c] of order) {
   } catch (e) {
     failed++;
     console.warn(`결과 조회 실패 ${id}: ${e.message}`);
+    // 하루 한도를 넘겼으면 남은 공고도 모두 실패하니 여기서 멈추고 다음 실행에 잇는다
+    if (isQuota(e.message)) { quotaHit = true; break; }
     if (/등록되지 않은|게이트웨이/.test(e.message)) break;
   }
 }
