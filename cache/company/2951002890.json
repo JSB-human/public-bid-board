@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "폿즈",
+  "ceo": "박경준",
+  "opened": "2026-04-02",
+  "region": "경기도 성남시 분당구 구미동",
+  "address": "경기도 성남시 분당구 구미동 156 392호",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:27:49.613Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:27:50.028Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:27:50.028Z"
+ }
+}

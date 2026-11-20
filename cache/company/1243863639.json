@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "에스앤에스",
+  "ceo": "임민규",
+  "opened": "2005-12-01",
+  "region": "경기도 화성시 만세구 서신면 상안리",
+  "address": "경기도 화성시 만세구 서신면 마도로 70-17 1동 2동",
+  "employees": 7,
+  "homepage": "www.sns2005.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:28:05.919Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:28:06.340Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:28:09.452Z"
+ }
+}

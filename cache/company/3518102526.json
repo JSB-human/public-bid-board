@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "도시혁신그룹 무브먼트 주식회사",
+  "ceo": "정재욱",
+  "opened": "2021-07-23",
+  "region": "서울특별시 강남구 역삼동",
+  "address": "서울특별시 강남구 역삼로15길 9 (역삼동) 2츠",
+  "employees": 0,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:28:16.089Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:28:16.518Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:28:16.518Z"
+ }
+}

@@ -16,5 +16,11 @@
   "months": {},
   "found": false,
   "fetchedAt": "2026-11-20T06:17:51.031Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:26:35.733Z"
  }
 }
