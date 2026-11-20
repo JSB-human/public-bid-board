@@ -61,23 +61,24 @@ for (const x of bids) {
 //    오래된 기간에서 결과가 계속 0이면 API 에 데이터가 없는 것으로 보고 멈춘다(state.dataStart).
 const BACKFILL_BUDGET = config.backfillCallsPerRun ?? 600;
 let scanned = 0;
+// 한 기간의 개찰 결과를 업종으로만 걸러 한 번에 받고, 키워드는 여기서 맞춘다(키워드마다 부르면 호출이 14배).
+const kwMatch = (title) => config.keywords.find((k) => String(title || '').toLowerCase().includes(k.toLowerCase()));
 async function scanWindow(b, e) {
   let rows = 0;
-  for (const keyword of config.keywords) {
-    for (let page = 1; ; page++) {
-      if (!budgetLeft() || quotaHit) return null;
-      const params = { inqryDiv: '1', inqryBgnDt: kstStamp(new Date(b)), inqryEndDt: kstStamp(new Date(e)), bidNtceNm: keyword, numOfRows: '100', pageNo: String(page) };
-      if (config.industryCode) params.indstrytyCd = String(config.industryCode);
-      let r;
-      try { r = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', params); } catch (err) { console.warn('개찰 목록 실패:', err.message); if (isQuota(err.message)) { quotaHit = true; return null; } break; }
-      rows += r.items.length;
-      for (const it of r.items) {
-        if (!wanted({ title: it.bidNtceNm, org: it.dminsttNm })) continue;
-        add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword });
-        scanned++;
-      }
-      if (page * 100 >= r.total || !r.items.length) break;
+  for (let page = 1; ; page++) {
+    if (!budgetLeft() || quotaHit) return null;
+    const params = { inqryDiv: '1', inqryBgnDt: kstStamp(new Date(b)), inqryEndDt: kstStamp(new Date(e)), numOfRows: '100', pageNo: String(page) };
+    if (config.industryCode) params.indstrytyCd = String(config.industryCode);
+    let r;
+    try { r = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', params); } catch (err) { console.warn('개찰 목록 실패:', err.message); if (isQuota(err.message)) { quotaHit = true; return null; } return null; }
+    rows += r.items.length;
+    for (const it of r.items) {
+      const keyword = kwMatch(it.bidNtceNm);
+      if (!keyword || !wanted({ title: it.bidNtceNm, org: it.dminsttNm })) continue;
+      add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword });
+      scanned++;
     }
+    if (page * 100 >= r.total || !r.items.length) break;
   }
   return rows;
 }
