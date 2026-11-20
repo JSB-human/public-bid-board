@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "앰플트리",
+  "ceo": "윤홍석",
+  "opened": "2015-03-17",
+  "region": "경기도 고양시 일산동구",
+  "address": "경기도 고양시 일산동구 장백로 200-0 (장항동) 유국타워 1001호",
+  "employees": 5,
+  "homepage": "https://www.ampletree.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:44:58.572Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:44:58.970Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:44:58.970Z"
+ }
+}

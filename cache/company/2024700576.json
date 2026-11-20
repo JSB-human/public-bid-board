@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "성온엘",
+  "ceo": "이미경",
+  "opened": "2020-03-16",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 시흥대로64길 27-0 (시흥동, 우림메르디앙) 201호",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:45:30.719Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:45:31.115Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:45:31.115Z"
+ }
+}

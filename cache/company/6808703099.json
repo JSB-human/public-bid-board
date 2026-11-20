@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "스마트이노베이션 주식회사",
+  "ceo": "하아름",
+  "opened": "2024-10-08",
+  "region": "경기도 수원시 권선구 권선동",
+  "address": "경기도 수원시 권선구 권광로 87 (권선동) 402호",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:44:02.118Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202512": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-20T15:44:02.756Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:44:02.756Z"
+ }
+}

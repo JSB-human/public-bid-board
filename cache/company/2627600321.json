@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "랭프랜",
+  "ceo": "정원용",
+  "opened": "2020-09-15",
+  "region": "서울특별시 은평구",
+  "address": "서울특별시 은평구 백련산로 127, 2동 604호",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:43:40.001Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202607": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-20T15:43:40.611Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:43:40.611Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "한국이엠에스(주)",
+  "ceo": "이재덕",
+  "opened": "1999-03-04",
+  "region": "경기도 고양시 일산구",
+  "address": "경기도 고양시 일산동구 고봉로 642, 영진빌2층 (성석동)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:43:13.791Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:43:14.215Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:43:14.748Z"
+ }
+}

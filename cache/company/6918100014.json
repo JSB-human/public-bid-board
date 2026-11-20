@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "에스큐앤티 주식회사(SQ&T Inc.)",
+  "ceo": "민병국",
+  "opened": "2015-04-01",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 선유로 70, 901호, 901-1호(문래동 3가, 우리벤처타운2)",
+  "employees": 75,
+  "homepage": "www.sqnt.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:44:29.046Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:44:29.449Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:44:29.449Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 유크",
+  "ceo": "박윤정",
+  "opened": "2022-04-28",
+  "region": "대전광역시 동구",
+  "address": "대전광역시 동구 우암로85번길 50-0 (삼성동)",
+  "employees": 0,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:43:13.161Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:43:13.564Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:43:13.564Z"
+ }
+}

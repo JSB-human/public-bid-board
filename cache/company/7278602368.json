@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 숨",
+  "ceo": "유재욱",
+  "opened": "2022-01-26",
+  "region": "대전광역시 중구",
+  "address": "대전광역시 중구 동서대로 1218 (태평동)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:42:53.954Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:42:54.360Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:42:54.360Z"
+ }
+}

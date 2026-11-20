@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 시그널아이씨티",
+  "ceo": "강민희",
+  "opened": "2021-06-03",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 75-15 (가산동, 하우스디와이즈타워)",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T15:43:30.182Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T15:43:31.143Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T15:43:31.143Z"
+ }
+}
