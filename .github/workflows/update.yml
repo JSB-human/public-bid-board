@@ -47,6 +47,19 @@ jobs:
           node scripts/docs.test.mjs
           node scripts/docs.mjs
 
+      - name: 마감 공고 결과 수집 (참여 업체·낙찰·계약)
+        continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+        run: node scripts/results.mjs
+
+      - name: 업체 정보 정리 (이력·관계·직원 수·재무)
+        continue-on-error: true
+        env:
+          DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
+        run: node scripts/companies.mjs
+
       - name: 데이터 변경분 커밋
         run: |
           if [ -n "$(git status --porcelain site/data cache)" ]; then

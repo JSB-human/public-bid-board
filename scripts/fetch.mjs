@@ -6,116 +6,20 @@
 // 주의: 오퍼레이션명과 응답 필드명은 실제 키로 호출해 확인하기 전까지 미검증이다.
 // 형식이 다르면 첫 응답의 필드 목록을 출력하고 실패로 끝난다.
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
-import { fileURLToPath } from 'node:url';
+import { writeFile, mkdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
+import { ROOT, config, API, apiKey as key, kstStamp, callApi as call, wanted, regionOk, regionsOf, normalizeNotice as normalize } from './lib.mjs';
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site', 'data', 'bids.json');
 const REGION_CACHE = path.join(ROOT, 'site', 'data', 'regions.json');
 const REGION_OPERATION = 'getBidPblancListInfoPrtcptPsblRgn02'; // 입찰공고 참가가능지역 조회
 const LICENSE_OPERATION = 'getBidPblancListInfoLicenseLimit02'; // 입찰공고 면허제한정보 조회
-const BASE = 'https://apis.data.go.kr/1230000/ad/BidPublicInfoService02';
 const OPERATION = 'getBidPblancListInfoServcPPSSrch02'; // 나라장터검색조건에 의한 입찰공고용역조회
 const ROWS = 100;
-
-const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8'));
-const exclude = config.excludePattern ? new RegExp(config.excludePattern, 'i') : null;
-const excludeOrg = config.excludeOrgPattern ? new RegExp(config.excludeOrgPattern, 'i') : null;
-
-// 분야와 먼 공고, 너무 큰 공고를 걸러낸다. 이미 저장된 데이터에도 똑같이 적용한다.
-function wanted(row) {
-  if (exclude && exclude.test(row.title)) return false;
-  if (excludeOrg && excludeOrg.test(row.org || '')) return false;
-  if (config.maxAmount && row.amount != null && row.amount > config.maxAmount) return false;
-  return true;
-}
+const callApi = (params, operation = OPERATION) => call(API.bid, operation, params);
 // 재공고는 공고번호가 바뀌어 같은 사업이 두 번 보인다. 제목과 기관이 같으면 최신 것만 남긴다.
 const titleKey = (row) => (row.org || '') + '|' + row.title.replace(/재공고|긴급/g, '').replace(/[^0-9A-Za-z가-힣]/g, '');
-
-let key = process.env.DATA_GO_KR_KEY;
 if (!key) console.warn('DATA_GO_KR_KEY 가 없어 수집은 건너뛰고 기존 데이터 정리만 합니다.');
-// 포털은 인코딩된 키와 디코딩된 키를 둘 다 준다. 인코딩된 키면 풀어서 쓴다.
-else if (/%[0-9A-Fa-f]{2}/.test(key)) key = decodeURIComponent(key);
-
-// API 는 한국시간 yyyyMMddHHmm 을 받는다.
-function kstStamp(date) {
-  const d = new Date(date.getTime() + 9 * 3600 * 1000);
-  const p = (n) => String(n).padStart(2, '0');
-  return `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}${p(d.getUTCHours())}${p(d.getUTCMinutes())}`;
-}
-
-// 공공데이터포털은 가끔 "어플리케이션 에러"를 내므로 몇 번 다시 시도한다. 입력값 오류는 재시도하지 않는다.
-async function callApi(params, operation = OPERATION) {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      return await callApiOnce(params, operation);
-    } catch (e) {
-      if (attempt >= 4 || /API 오류 (06|07|08)/.test(e.message)) throw e;
-      await new Promise((r) => setTimeout(r, attempt * 3000));
-    }
-  }
-}
-
-async function callApiOnce(params, operation) {
-  const qs = new URLSearchParams({ serviceKey: key, type: 'json', ...params });
-  const res = await fetch(`${BASE}/${operation}?${qs}`);
-  const text = await res.text();
-  let json;
-  try {
-    json = JSON.parse(text);
-  } catch {
-    throw new Error(`JSON 이 아닌 응답 (HTTP ${res.status}): ${text.slice(0, 300)}`);
-  }
-  const header = json?.response?.header;
-  if (header && header.resultCode !== '00') {
-    throw new Error(`API 오류 ${header.resultCode}: ${header.resultMsg}`);
-  }
-  const gw = json?.OpenAPI_ServiceResponse?.cmmMsgHeader;
-  if (gw) throw new Error(`API 게이트웨이 오류 ${gw.returnReasonCode}: ${gw.returnAuthMsg || gw.errMsg}`);
-  const errHeader = Object.values(json || {}).find((v) => v?.header && !v.body)?.header;
-  if (errHeader) throw new Error(`API 오류 ${errHeader.resultCode}: ${errHeader.resultMsg}`);
-  const body = json?.response?.body;
-  if (!body) throw new Error(`예상과 다른 응답 구조: ${text.slice(0, 300)}`);
-  const raw = body.items;
-  const items = Array.isArray(raw) ? raw : Array.isArray(raw?.item) ? raw.item : raw?.item ? [raw.item] : [];
-  return { items, total: Number(body.totalCount) || 0 };
-}
-
-function normalize(it, keyword) {
-  const id = it.bidNtceNo;
-  const ord = it.bidNtceOrd || '000';
-  const num = (v) => (v !== undefined && v !== null && v !== '' && !Number.isNaN(Number(v)) ? Number(v) : null);
-  return {
-    id,
-    ord,
-    title: (it.bidNtceNm || '').trim(),
-    org: it.dminsttNm || it.ntceInsttNm || '',
-    amount: num(it.presmptPrce) ?? num(it.asignBdgtAmt),
-    deadline: it.bidClseDt || null,
-    posted: it.bidNtceDt || null,
-    method: it.cntrctCnclsMthdNm || '',
-    url: `https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=${id}&bidPbancOrd=${ord}`,
-    keywords: [keyword],
-    detail: {
-      category: [it.pubPrcrmntMidClsfcNm, it.pubPrcrmntClsfcNm].filter(Boolean),
-      kind: it.ntceKindNm || '',
-      reNotice: it.reNtceYn === 'Y',
-      noticeOrg: it.ntceInsttNm || '',
-      award: it.sucsfbidMthdNm || '',
-      bidMethod: it.bidMethdNm || '',
-      joint: it.cmmnSpldmdMethdNm || '',
-      techRate: num(it.techAbltEvlRt),
-      priceRate: num(it.bidPrceEvlRt),
-      budget: num(it.asignBdgtAmt),
-      regDeadline: it.bidQlfctRgstDt || null,
-      bidBegin: it.bidBeginDt || null,
-      opening: it.opengDt || null,
-      refNo: it.refNo || '',
-      files: Array.from({ length: 10 }, (_, i) => ({ name: it[`ntceSpecFileNm${i + 1}`], url: it[`ntceSpecDocUrl${i + 1}`] })).filter((f) => f.name && f.url),
-    },
-  };
-}
 
 const end = new Date();
 // API 조회기간 한도는 7일인데 꼭 7일을 채우면 "입력범위값 초과"가 나서 6일까지만 본다.
@@ -169,22 +73,6 @@ for (const [id, row] of fetched) {
 }
 
 // 참가가능지역(지역제한)을 공고별로 조회해 붙인다. 한 번 조회한 공고는 캐시에서 읽는다.
-const REGIONS = [
-  ['서울', /서울/], ['부산', /부산/], ['대구', /대구/], ['인천', /인천/], ['광주', /광주/], ['대전', /대전/],
-  ['울산', /울산/], ['세종', /세종/], ['경기', /경기/], ['강원', /강원/], ['충북', /충북|충청북/], ['충남', /충남|충청남/],
-  ['전북', /전북|전라북/], ['전남', /전남|전라남/], ['경북', /경북|경상북/], ['경남', /경남|경상남/], ['제주', /제주/],
-];
-function regionsOf(apiItems) {
-  const found = new Set();
-  for (const it of apiItems) {
-    const keys = Object.keys(it).filter((k) => /rgn/i.test(k));
-    for (const k of keys.length ? keys : Object.keys(it).filter((k) => !/ntce|dt$/i.test(k))) {
-      const v = String(it[k] ?? '');
-      for (const [name, re] of REGIONS) if (re.test(v)) found.add(name);
-    }
-  }
-  return [...found];
-}
 let regionCache = {};
 try { regionCache = JSON.parse(await readFile(REGION_CACHE, 'utf8')); } catch {}
 if (key) {
@@ -221,8 +109,6 @@ for (const row of merged.values()) {
   if (c.regions) row.regions = c.regions;
   if (c.licenses) row.licenses = c.licenses;
 }
-// 지역제한이 있는데 우리 지역이 포함되지 않으면 뺀다. 제한이 없거나 조회하지 못한 공고는 남긴다.
-const regionOk = (row) => !config.homeRegion || !row.regions?.length || row.regions.includes(config.homeRegion);
 
 // 마감이 오래 지난 공고는 지운다.
 const cutoff = Date.now() - (config.keepClosedDays || 14) * 86400 * 1000;

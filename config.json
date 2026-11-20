@@ -1,6 +1,9 @@
 {
   "lookbackDays": 6,
   "keepClosedDays": 14,
+  "backfillDays": 90,
+  "maxCallsPerRun": 1500,
+  "maxCompanyCallsPerRun": 800,
   "industryCode": "1468",
   "homeRegion": "서울",
   "maxAmount": 3000000000,
