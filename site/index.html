@@ -172,6 +172,15 @@
   .step.next .n { color: var(--text); font-weight: 700; }
   .step .t { color: var(--muted); font-variant-numeric: tabular-nums; }
 
+  .bg { margin: 0 0 10px; font-size: 14px; line-height: 1.65; color: var(--sub); }
+  .scope { margin: 0; padding: 14px 16px 14px 18px; background: var(--field); border-radius: 14px; list-style: none; display: grid; gap: 6px; }
+  .scope li { position: relative; padding-left: 14px; font-size: 14px; line-height: 1.55; color: var(--text); font-weight: 600; }
+  .scope li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--blue); }
+  .scope li.sub { margin-left: 14px; font-weight: 400; color: var(--sub); }
+  .scope li.sub::before { width: 4px; height: 4px; background: var(--faint); }
+  .cond { display: grid; grid-template-columns: 96px 1fr; gap: 8px; align-items: start; margin-bottom: 8px; }
+  .cond .ck { font-size: 13px; color: var(--muted); font-weight: 500; padding-top: 6px; }
+  .lic.warn { background: var(--red-weak); color: var(--red); }
   .lics { display: flex; flex-wrap: wrap; gap: 6px; }
   .lic { font-size: 13px; font-weight: 600; padding: 6px 10px; border-radius: 10px; background: var(--field); color: var(--sub); }
   .note { font-size: 13px; color: var(--muted); margin-top: 6px; }
@@ -206,6 +215,8 @@
     .side .chev { display: none; }
     .detail { padding: 0 16px 16px; }
     .tiles { grid-template-columns: 1fr 1fr; }
+    .cond { grid-template-columns: 1fr; gap: 4px; }
+    .cond .ck { padding-top: 0; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
@@ -416,8 +427,10 @@ function detailHtml(x, now) {
   const cta = `<a class="cta" href="${esc(x.url)}" target="_blank" rel="noopener">나라장터에서 원문 보기 ${svg(OUT)}</a>`;
   if (!d) return `<div class="detail"><p class="summary">상세 정보는 다음 갱신 때 채워져요.</p>${cta}</div>`;
 
+  const doc = x.doc || {};
   const tiles = [];
   const tile = (k, v, wide) => { if (v) tiles.push(`<div class="tile ${wide ? 'wide' : ''}"><div class="k">${k}</div><div class="v">${v}</div></div>`); };
+  tile('사업기간', esc(doc.period), true);
   tile('추정가격', won(x.amount));
   tile('배정예산 (부가세 포함)', d.budget != null ? won(d.budget) : '');
   tile('공동수급', esc((d.joint || '').replace(/^\(전자\)/, '')));
@@ -440,9 +453,43 @@ function detailHtml(x, now) {
   const timeline = steps.length ? `<div class="section-title">일정</div><div class="timeline">${steps.map(([n, t], i) =>
     `<div class="step ${i < nextIdx || nextIdx === -1 ? 'done' : ''} ${i === nextIdx ? 'next' : ''}"><i></i><span class="n">${n}</span><span class="t">${dueLabel(t)}</span></div>`).join('')}</div>` : '';
 
-  const lics = x.licenses ? `<div class="section-title">필요 면허 · 업종</div>${x.licenses.length
-    ? `<div class="lics">${x.licenses.map((l) => `<span class="lic">${esc(l.name.replace(/\/\d+$/, ''))}</span>`).join('')}</div>`
-    : '<div class="note">시스템에 등록된 제한이 없어요.</div>'}<div class="note">직접생산확인 같은 조건은 공고문 본문에서 확인하세요.</div>` : '';
+  // 참가 조건: 시스템에 등록된 면허 + 공고문에서 찾은 직접생산확인·지역 조건
+  const cond = [];
+  if (x.licenses && x.licenses.length) {
+    cond.push(`<div class="cond"><div class="ck">면허·업종</div><div class="lics">${x.licenses.map((l) => `<span class="lic">${esc(l.name.replace(/\/\d+$/, ''))}</span>`).join('')}</div></div>`);
+  }
+  if (doc.direct && doc.direct.length) {
+    cond.push(`<div class="cond"><div class="ck">직접생산확인</div><div class="lics">${doc.direct.map((p) => `<span class="lic">${esc(p.name)}</span>`).join('')}</div></div>`);
+  }
+  if (doc.regionReq && doc.regionReq.length) {
+    cond.push(`<div class="cond"><div class="ck">본문 지역 조건</div><div class="lics"><span class="lic warn">${esc(doc.regionReq.join('·'))} 소재 업체</span></div></div>`);
+  }
+  if (doc.regionDuty) cond.push('<div class="note">지역업체와 공동수급해야 하는 조건이 있어요.</div>');
+  const lics = cond.length || x.licenses
+    ? `<div class="section-title">참가 조건</div>${cond.join('') || '<div class="note">등록된 제한이 없어요.</div>'}<div class="note">${doc.files ? '공고문에서 자동으로 찾은 조건이라 빠진 게 있을 수 있어요.' : '직접생산확인 같은 조건은 공고문 본문에서 확인하세요.'}</div>`
+    : '';
+
+  // 사업 내용: 제안요청서(없으면 공고문)에서 발췌
+  let scopeHtml = '';
+  if (doc.scope && doc.scope.length) {
+    const items = doc.scope.map((raw) => {
+      const l = raw.replace(/[-]/g, '').trim();
+      const sub = /^[-‐–·•‧*]/.test(l);
+      const text = l.replace(/^([-‐–·•‧❍○●◦〇ㅇ□■▶‣*]|[가-하]\.|\d{1,2}(?:\.\d{1,2})*[.)]|[①-⑳])\s*/, '');
+      return text ? `<li class="${sub ? 'sub' : ''}">${esc(text)}</li>` : '';
+    }).join('');
+    const bg = (doc.background || []).map((l) => l.replace(/[-]/g, '').replace(/^([-‐–·•‧❍○●◦〇ㅇ□■▶‣*]|[가-하]\.|\d{1,2}(?:\.\d{1,2})*[.)])\s*/, '').trim()).filter(Boolean).join(' ');
+    const src = (doc.files || []).find((f) => /제안|과업|규격/.test(f)) || (doc.files || [])[0] || '';
+    scopeHtml = `<div class="section-title">사업 내용</div>
+      ${bg ? `<p class="bg">${esc(bg.length > 220 ? bg.slice(0, 220) + '…' : bg)}</p>` : ''}
+      <ul class="scope">${items}</ul>
+      <div class="note">${esc(src.replace(/\.[a-z0-9]+$/i, '').replace(/^\d+\.\s*/, '').replace(/^.*› /, ''))}에서 자동으로 발췌했어요.</div>`;
+  } else if (doc.files) {
+    const hwp = (doc.skipped || []).some((f) => /\.hwp$/i.test(f));
+    scopeHtml = `<div class="section-title">사업 내용</div><div class="note">${hwp
+      ? '제안요청서가 한글(HWP) 파일이라 자동으로 읽지 못했어요. 첨부파일에서 확인하세요.'
+      : '공고문에 사업 내용이 따로 적혀 있지 않아요. 첨부파일에서 확인하세요.'}</div>`;
+  }
 
   const files = (d.files || []).map((f) => {
     const ext = (f.name.match(/\.([a-z0-9]+)$/i) || [, ''])[1].toLowerCase();
@@ -452,10 +499,11 @@ function detailHtml(x, now) {
 
   return `<div class="detail">
     <p class="summary">${summaryHtml(x)}</p>
+    ${scopeHtml}
     <div class="section-title">핵심 정보</div>
     <div class="tiles">${tiles.join('')}</div>
-    ${timeline}
     ${lics}
+    ${timeline}
     ${files ? `<div class="section-title">첨부파일</div><div class="files">${files}</div>` : ''}
     ${cta}
   </div>`;

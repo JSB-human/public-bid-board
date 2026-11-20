@@ -34,12 +34,22 @@ jobs:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: node scripts/fetch.mjs
 
+      - name: PDF 글자 추출 도구 설치
+        run: sudo apt-get install -y -qq poppler-utils >/dev/null
+
+      - name: 첨부파일에서 사업 내용 발췌
+        # 실패해도 목록 배포는 계속한다.
+        continue-on-error: true
+        run: |
+          node scripts/docs.test.mjs
+          node scripts/docs.mjs
+
       - name: 데이터 변경분 커밋
         run: |
-          if [ -n "$(git status --porcelain site/data)" ]; then
+          if [ -n "$(git status --porcelain site/data cache)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add site/data
+            git add site/data cache
             git commit -m "공고 데이터 갱신"
             git push
           fi
