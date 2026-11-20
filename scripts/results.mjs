@@ -41,6 +41,12 @@ function parseCorpList(s) {
 // ---------- 1. 후보 모으기 ----------
 const candidates = new Map(); // id → { ord, title, org, keyword }
 const add = (id, v) => { if (id && !state.excluded[id]) candidates.set(id, { ...candidates.get(id), ...v }); };
+// 지난 실행에서 찾았지만 아직 못 채운 공고 (하루 호출 한도 때문에 여러 날에 걸쳐 채운다)
+state.pending ||= {};
+for (const [id, v] of Object.entries(state.pending)) add(id, v);
+// 하루 호출 한도를 넘으면 이번 실행의 조회를 멈춘다
+let quotaHit = false;
+const isQuota = (m) => /요청제한|LIMITED_NUMBER|오류 22/.test(m);
 
 // (가) 진행 중 목록에 있던 공고 중 마감이 지난 것
 const bids = (await readJson(BIDS, { items: [] })).items;
@@ -59,11 +65,11 @@ async function scanWindow(b, e) {
   let rows = 0;
   for (const keyword of config.keywords) {
     for (let page = 1; ; page++) {
-      if (!budgetLeft()) return null;
+      if (!budgetLeft() || quotaHit) return null;
       const params = { inqryDiv: '1', inqryBgnDt: kstStamp(new Date(b)), inqryEndDt: kstStamp(new Date(e)), bidNtceNm: keyword, numOfRows: '100', pageNo: String(page) };
       if (config.industryCode) params.indstrytyCd = String(config.industryCode);
       let r;
-      try { r = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', params); } catch (err) { console.warn('개찰 목록 실패:', err.message); break; }
+      try { r = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', params); } catch (err) { console.warn('개찰 목록 실패:', err.message); if (isQuota(err.message)) { quotaHit = true; return null; } break; }
       rows += r.items.length;
       for (const it of r.items) {
         if (!wanted({ title: it.bidNtceNm, org: it.dminsttNm })) continue;
