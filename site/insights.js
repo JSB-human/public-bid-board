@@ -47,6 +47,7 @@ async function renderResults() {
       <section class="hero"><h1>마감된 공고와<br>누가 가져갔는지</h1>
         <p>진행 중 목록과 같은 조건에 맞던 공고의 참여 업체·낙찰·계약 결과예요.</p></section>
       <section class="stats" id="rStats"></section>
+      <section class="dash" id="rDash"></section>
       <div class="toolbar"><div class="inner">
         <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명으로 검색" aria-label="결과 검색"></div>
         <div class="chips" id="rChips">
@@ -75,11 +76,59 @@ async function renderResults() {
       ['유찰', items.filter((r) => r.status === '유찰').length + '<small>건</small>'],
       ['평균 참여', (() => { const p = items.filter((r) => r.participants); return p.length ? (p.reduce((s, r) => s + r.participants, 0) / p.length).toFixed(1) + '<small>곳</small>' : '-'; })()],
     ].map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('');
+    $('rDash').innerHTML = dashboard(items);
     $('rFoot').textContent = `출처: ${d.source || '-'} · 갱신 ${d.updatedAt ? new Date(d.updatedAt).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' }) : '-'}`;
     drawResults();
   } catch (e) {
     $('rList').innerHTML = emptyState('아직 결과 데이터가 없어요', '다음 자동 갱신 때 모아요.');
   }
+}
+
+// 한눈에 보기: 월별 결과, 많이 따 간 회사, 많이 발주한 기관
+function dashboard(items) {
+  const months = new Map();
+  for (const r of items) {
+    const t = parseDeadline(r.openedAt || r.deadline);
+    if (t === null) continue;
+    const d = new Date(t + 9 * 3600000);
+    const k = `${d.getUTCFullYear()}.${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
+    const m = months.get(k) || { won: 0, failed: 0, wait: 0 };
+    if (r.winner || r.contract) m.won++; else if (r.status === '유찰') m.failed++; else m.wait++;
+    months.set(k, m);
+  }
+  const ms = [...months].sort((a, b) => a[0].localeCompare(b[0])).slice(-12);
+  const maxM = Math.max(1, ...ms.map(([, m]) => m.won + m.failed + m.wait));
+  const bars = ms.map(([k, m]) => {
+    const h = (v) => `${(v / maxM) * 100}%`;
+    return `<div class="mb" title="${k} · 낙찰 ${m.won} · 유찰 ${m.failed} · 대기 ${m.wait}"><div class="mb-col">
+      <i class="w" style="height:${h(m.wait)}"></i><i class="f" style="height:${h(m.failed)}"></i><i class="o" style="height:${h(m.won)}"></i></div>
+      <span>${k.slice(2).replace('.', '/')}</span><b>${m.won + m.failed + m.wait}</b></div>`;
+  }).join('');
+  // 회사별 수주 (계약 구성사 지분 기준, 없으면 낙찰자)
+  const co = new Map();
+  for (const r of items) {
+    const mem = r.contract?.members?.length ? r.contract.members : r.winner ? [{ ...r.winner, share: 100 }] : [];
+    const total = r.contract?.amount || r.winner?.amount || 0;
+    for (const m of mem) {
+      if (!m.bizno) continue;
+      const e = co.get(m.bizno) || { bizno: m.bizno, name: m.name, n: 0, amt: 0 };
+      e.n++; e.amt += (total * (m.share ?? 100)) / 100;
+      co.set(m.bizno, e);
+    }
+  }
+  const topCo = [...co.values()].sort((a, b) => b.amt - a.amt).slice(0, 6);
+  const maxCo = Math.max(1, ...topCo.map((x) => x.amt));
+  const org = new Map();
+  for (const r of items) { const e = org.get(r.org) || { name: r.org, n: 0, amt: 0 }; e.n++; e.amt += r.amount || 0; org.set(r.org, e); }
+  const topOrg = [...org.values()].sort((a, b) => b.n - a.n || b.amt - a.amt).slice(0, 6);
+  const maxOrg = Math.max(1, ...topOrg.map((x) => x.n));
+  const hbar = (list, val, max, label, link) => list.map((x, i) => `<${link ? `a href="#company/${esc(x.bizno)}"` : 'div'} class="hb">
+      <span class="hb-i">${i + 1}</span><span class="hb-n">${esc(short(x.name))}</span>
+      <span class="hb-bar"><i style="width:${(val(x) / max) * 100}%"></i></span><span class="hb-v">${label(x)}</span></${link ? 'a' : 'div'}>`).join('');
+  return `
+    <div class="dash-card wide"><div class="dash-h"><b>월별 결과</b><span class="legend"><i class="lg-o"></i>낙찰·계약 <i class="lg-f"></i>유찰 <i class="lg-w"></i>결과 대기</span></div><div class="mbars">${bars}</div></div>
+    <div class="dash-card"><div class="dash-h"><b>많이 따 간 회사</b><span>지분 기준 금액</span></div>${hbar(topCo, (x) => x.amt, maxCo, (x) => `${eok(x.amt)} · ${x.n}건`, true) || '<div class="note">아직 없어요.</div>'}</div>
+    <div class="dash-card"><div class="dash-h"><b>많이 발주한 기관</b><span>건수</span></div>${hbar(topOrg, (x) => x.n, maxOrg, (x) => `${x.n}건`, false)}</div>`;
 }
 
 function drawResults() {
@@ -197,37 +246,60 @@ function drawCompanyList() {
   if (!el.dataset.ready) {
     el.dataset.ready = '1';
     const all = data.companies.items;
+    const won = all.filter((c) => c.stats.wins).length;
     el.innerHTML = `
       <section class="hero"><h1>공고에 나온 업체 <em>${all.length}</em>곳</h1>
-        <p>참여·수주 이력과 함께한 회사, 겨룬 회사를 모았어요. 점을 누르면 그 회사로 가요.</p></section>
-      <section class="graph-card"><div class="graph-head"><b>관계도</b><span class="legend"><i class="lg-p"></i>컨소시엄 <i class="lg-r"></i>같은 공고에서 경쟁</span></div>
+        <p>수주한 회사 ${won}곳 · 컨소시엄으로 이어진 회사 ${all.filter((c) => c.partners.length).length}곳. 점을 누르면 그 회사로 가요.</p></section>
+      <section class="graph-card">
+        <div class="graph-head">
+          <div class="graph-title"><b>관계도</b><span class="legend"><i class="lg-p"></i>컨소시엄 <i class="lg-r"></i>같은 공고에서 경쟁 · 색은 함께 일하는 무리, 크기는 수주 규모</span></div>
+          <div class="graph-tools">
+            <div class="mini-search">${SEARCH}<input id="gq" type="search" placeholder="회사 찾기" aria-label="관계도에서 회사 찾기"></div>
+            <div class="seg" id="gMode"><button data-m="all" aria-pressed="true">경쟁 포함</button><button data-m="partner">컨소시엄만</button></div>
+            <button class="icon-btn" data-z="1.3" aria-label="확대">+</button><button class="icon-btn" data-z="0.77" aria-label="축소">−</button><button class="icon-btn" data-z="fit" aria-label="전체 보기">⤢</button>
+          </div>
+        </div>
         <div id="netGraph" class="net"></div></section>
       <div class="toolbar"><div class="inner">
         <div class="search">${SEARCH}<input type="search" id="cq" placeholder="회사명·대표자·사업자번호로 검색" aria-label="업체 검색"></div>
-        <div class="chips" id="cChips"><button class="chip" data-s="wins">수주 많은 순</button><button class="chip" data-s="bids">참여 많은 순</button>
-          <button class="chip" data-s="amount">수주액 순</button><button class="chip" data-s="recent">최근 활동 순</button></div></div></div>
-      <div class="count" id="cCount"></div><div id="cRows" class="list-grid"></div>`;
+        <div class="chips" id="cChips"><button class="chip" data-s="wins">수주 많은 순</button><button class="chip" data-s="amount">수주액 순</button>
+          <button class="chip" data-s="bids">참여 많은 순</button><button class="chip" data-s="rate">수주율 순</button><button class="chip" data-s="recent">최근 활동 순</button></div></div></div>
+      <div class="count" id="cCount"></div><div id="cRows"></div>`;
     $('cq').addEventListener('input', (e) => { cs.q = e.target.value.trim().toLowerCase(); drawCompanyRows(); });
     $('cChips').addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (b) { cs.sort = b.dataset.s; drawCompanyRows(); } });
-    drawNetwork($('netGraph'), all);
+    $('cRows').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-biz]'); if (tr && !e.target.closest('a')) location.hash = 'company/' + tr.dataset.biz; });
+    let mode = 'all', g = null;
+    const draw = async () => { g = await drawNetwork($('netGraph'), all, mode); };
+    $('gMode').addEventListener('click', (e) => { const b = e.target.closest('[data-m]'); if (!b) return; mode = b.dataset.m; $('gMode').querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', x === b)); draw(); });
+    $('gq').addEventListener('input', (e) => g?.find(e.target.value));
+    el.querySelectorAll('[data-z]').forEach((b) => b.addEventListener('click', () => (b.dataset.z === 'fit' ? g?.fit() : g?.zoomBy(Number(b.dataset.z)))));
+    draw();
   }
   drawCompanyRows();
 }
 
 function drawCompanyRows() {
   document.querySelectorAll('#cChips [data-s]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.s === cs.sort));
-  const key = { wins: (c) => c.stats.wins * 1000 + c.stats.bids, bids: (c) => c.stats.bids, amount: (c) => c.stats.wonAmount, recent: (c) => parseDeadline(c.stats.lastAt) || 0 }[cs.sort];
+  const rate = (c) => (c.stats.bids ? c.stats.wins / c.stats.bids : 0);
+  const key = { wins: (c) => c.stats.wins * 1e6 + c.stats.wonAmount / 1e6, bids: (c) => c.stats.bids, amount: (c) => c.stats.wonAmount, rate: (c) => (c.stats.bids >= 2 ? rate(c) * 1000 + c.stats.bids : rate(c)), recent: (c) => parseDeadline(c.stats.lastAt) || 0 }[cs.sort];
   const rows = data.companies.items
     .filter((c) => !cs.q || [c.name, c.ceo, c.bizno, c.basic?.region].join(' ').toLowerCase().includes(cs.q.replace(/-/g, '')))
     .sort((a, b) => key(b) - key(a));
+  const maxAmt = Math.max(1, ...rows.map((c) => c.stats.wonAmount));
   $('cCount').innerHTML = `<span><b>${rows.length}</b>곳</span>`;
-  $('cRows').innerHTML = rows.slice(0, 300).map((c) => `<a class="card co-card" href="#company/${esc(c.bizno)}">
-      <span class="icon i-${c.stats.wins ? 'map' : 'etc'}">${svg(ICON_CO)}</span>
-      <span class="body"><span class="title">${esc(c.name)}</span>
-        <span class="meta"><span>${esc(c.ceo || '')}</span>${c.basic?.region ? `<span class="dot">${esc(c.basic.region)}</span>` : ''}${c.nps?.length ? `<span class="dot">직원 ${c.nps[c.nps.length - 1].cnt}명</span>` : c.basic?.employees ? `<span class="dot">직원 ${c.basic.employees}명</span>` : ''}</span>
-        <span class="badges"><span class="badge">참여 ${c.stats.bids}</span>${c.stats.wins ? `<span class="badge st-ok">수주 ${c.stats.wins}</span>` : ''}${c.stats.partners ? `<span class="badge rg">파트너 ${c.stats.partners}</span>` : ''}</span></span>
-      <span class="side"><span class="amount">${c.stats.wonAmount ? eok(c.stats.wonAmount) : '-'}</span><span class="sub"><span class="alabel">수주액</span></span></span>
-    </a>`).join('') || emptyState('찾는 업체가 없어요', '이름이나 사업자번호를 확인해 보세요.');
+  if (!rows.length) { $('cRows').innerHTML = emptyState('찾는 업체가 없어요', '이름이나 사업자번호를 확인해 보세요.'); return; }
+  $('cRows').innerHTML = `<div class="board"><table class="lead">
+    <thead><tr><th class="num">#</th><th>회사</th><th class="num">참여</th><th class="num">수주</th><th>수주율</th><th>수주액</th><th class="num hide-s">파트너</th><th class="num hide-s">직원</th></tr></thead><tbody>
+    ${rows.slice(0, 300).map((c, i) => {
+      const r = rate(c), emp = c.nps?.length ? c.nps[c.nps.length - 1].cnt : c.basic?.employees;
+      return `<tr data-biz="${esc(c.bizno)}">
+        <td class="num rk">${i + 1}</td>
+        <td><a class="co" href="#company/${esc(c.bizno)}">${esc(c.name)}</a><small>${esc([c.basic?.region?.split(' ').slice(0, 2).join(' '), c.ceo].filter(Boolean).join(' · '))}</small></td>
+        <td class="num">${c.stats.bids}</td><td class="num">${c.stats.wins ? `<b class="ok">${c.stats.wins}</b>` : '<span class="mute">0</span>'}</td>
+        <td><span class="rate"><i style="width:${Math.round(r * 100)}%"></i></span><span class="rate-t">${Math.round(r * 100)}%</span></td>
+        <td><span class="amt-bar"><i style="width:${(c.stats.wonAmount / maxAmt) * 100}%"></i></span><span class="amt-t">${c.stats.wonAmount ? eok(c.stats.wonAmount) : '-'}</span></td>
+        <td class="num hide-s">${c.stats.partners || '<span class="mute">-</span>'}</td><td class="num hide-s">${emp ?? '<span class="mute">-</span>'}</td></tr>`;
+    }).join('')}</tbody></table></div>`;
 }
 
 function drawCompany(bizno) {
@@ -236,13 +308,14 @@ function drawCompany(bizno) {
   if (!c) { el.innerHTML = `<p class="back"><a href="#companies">← 업체 목록</a></p>${emptyState('업체를 찾지 못했어요', '목록에서 다시 골라 주세요.')}`; return; }
   const s = c.stats;
   const winRate = s.bids ? Math.round((s.wins / s.bids) * 100) : null;
+  const emp = c.nps?.length ? c.nps[c.nps.length - 1].cnt : c.basic?.employees;
   const tiles = [
     ['참여', `${s.bids}<small>건</small>`], ['수주', `${s.wins}<small>건</small>`],
     ['수주율', winRate != null ? `${winRate}<small>%</small>` : '-'], ['수주액(지분 기준)', s.wonAmount ? eok(s.wonAmount) : '-'],
   ];
   const info = [
     ['대표자', esc(c.ceo || '-')], ['사업자번호', bizFmt(c.bizno)],
-    c.basic?.opened && ['설립', esc(c.basic.opened)], c.basic?.address && ['주소', esc(c.basic.address)],
+    c.basic?.opened && ['설립', esc(c.basic.opened)], emp != null && ['직원', `${emp}명`], c.basic?.address && ['주소', esc(c.basic.address)],
     c.basic?.homepage && ['홈페이지', `<a href="${esc(/^https?:/.test(c.basic.homepage) ? c.basic.homepage : 'http://' + c.basic.homepage)}" target="_blank" rel="noopener">${esc(c.basic.homepage)}</a>`],
     c.industries?.length && ['등록 업종', c.industries.map((i) => `<span class="lic">${esc(i.name)}</span>`).join('')],
   ].filter(Boolean);
@@ -250,18 +323,21 @@ function drawCompany(bizno) {
     <p class="back"><a href="#companies">← 업체 목록</a></p>
     <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
     <section class="stats">${tiles.map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('')}</section>
-    <section class="panel"><div class="section-title">기본 정보</div><div class="facts">${info.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></section>
-    <section class="panel"><div class="section-title">직원 수 추이 <small>국민연금 가입자 기준</small></div>${npsChart(c)}</section>
-    <section class="panel"><div class="section-title">재무 <small>DART · 외부감사 대상만</small></div>${dartTable(c)}</section>
-    <section class="panel"><div class="section-title">관계도</div><div class="ego" id="egoGraph"></div>
+    <section class="panel"><div class="section-title">관계도 <small>컨소시엄 파트너와 그 파트너, 같은 공고에서 겨룬 회사</small></div><div class="net ego" id="egoGraph"></div>
       <div class="rel-cols">
         <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
         <div><div class="sub-title">같은 공고에서 겨룬 회사</div>${relList(c.rivals, '공고')}</div>
       </div></section>
+    <div class="two-col">
+      <section class="panel"><div class="section-title">기본 정보</div><div class="facts">${info.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></section>
+      <section class="panel"><div class="section-title">직원 수 추이 <small>국민연금 가입자 기준</small></div>${npsChart(c)}</section>
+    </div>
+    <section class="panel"><div class="section-title">재무 <small>DART · 외부감사 대상만</small></div>${dartTable(c)}</section>
     <section class="panel"><div class="section-title">참여 이력 ${c.history.length}건</div>${historyTable(c)}</section>`;
   drawEgo($('egoGraph'), c);
   window.scrollTo(0, 0);
 }
+
 
 function relList(list, unit, withShare) {
   if (!list?.length) return '<div class="note">아직 없어요.</div>';
@@ -313,80 +389,51 @@ function dartTable(c) {
 }
 
 // ---------- 그래프 ----------
-const NS = 'http://www.w3.org/2000/svg';
-// 한 회사를 가운데 두고, 안쪽 원에 컨소시엄 파트너, 바깥 원에 경쟁사를 놓는다.
-function drawEgo(el, c) {
-  const partners = (c.partners || []).slice(0, 10), rivals = (c.rivals || []).slice(0, 12);
-  if (!partners.length && !rivals.length) { el.innerHTML = '<div class="note">이어진 회사가 아직 없어요.</div>'; return; }
-  const W = 640, H = 420, cx = W / 2, cy = H / 2;
-  const nodes = [{ ...c, x: cx, y: cy, kind: 'me' }];
-  const ring = (list, r, kind, off) => list.forEach((p, i) => {
-    const a = off + (i / list.length) * Math.PI * 2;
-    nodes.push({ ...p, x: cx + Math.cos(a) * r * 1.35, y: cy + Math.sin(a) * r, kind });
-  });
-  ring(partners, 110, 'partner', -Math.PI / 2);
-  ring(rivals, 180, 'rival', -Math.PI / 2 + Math.PI / Math.max(rivals.length, 1));
-  const maxCount = Math.max(1, ...nodes.slice(1).map((n) => n.count || 1));
-  let s = `<svg viewBox="0 0 ${W} ${H}" class="graph" role="img" aria-label="${esc(c.name)} 관계도">`;
-  for (const n of nodes.slice(1)) s += `<line x1="${cx}" y1="${cy}" x2="${n.x}" y2="${n.y}" class="e-${n.kind}" stroke-width="${1 + (3 * (n.count || 1)) / maxCount}"/>`;
-  for (const n of nodes) {
-    const r = n.kind === 'me' ? 16 : 7 + (6 * (n.count || 1)) / maxCount;
-    const label = n.name.replace(/주식회사|\(주\)|㈜/g, '').trim();
-    s += `<a href="#company/${esc(n.bizno)}"><g class="n-${n.kind}"><circle cx="${n.x}" cy="${n.y}" r="${r}"/><text x="${n.x}" y="${n.y + r + 13}" text-anchor="middle">${esc(label.length > 10 ? label.slice(0, 10) + '…' : label)}</text><title>${esc(n.name)}${n.count ? ` · ${n.count}` : ''}</title></g></a>`;
-  }
-  el.innerHTML = s + '</svg>';
+const short = (n) => String(n || '').replace(/주식회사|\(주\)|㈜/g, '').trim();
+const scoreOf = (c) => c.stats.wins * 3 + Math.log10(1 + c.stats.wonAmount / 1e7) * 2 + c.stats.bids * 0.5;
+// 회사 → 그래프 점. 크기는 수주(건수·금액)와 참여로 정한다.
+function toNode(c, max) {
+  return { id: c.bizno, name: c.name, bids: c.stats.bids, wins: c.stats.wins, amountText: c.stats.wonAmount ? '수주 ' + eok(c.stats.wonAmount) : '', sub: c.basic?.region || '', size: Math.min(1, scoreOf(c) / max) };
 }
+const pairKey = (a, b) => (a < b ? a + '|' + b : b + '|' + a);
 
-// 활동이 많은 회사들의 전체 관계도. 간단한 힘 배치(force layout)로 자리를 잡는다.
-function drawNetwork(el, all) {
-  // 이어진 회사만 그린다: 컨소시엄은 모두, 경쟁은 두 번 이상 겨뤘거나 둘 다 자주 나오는 회사끼리.
+// 전체 관계도: 이어진 회사만. 컨소시엄은 모두, 경쟁은 두 번 이상 겨뤘거나 둘 다 자주 나오는 회사끼리.
+async function drawNetwork(el, all, mode = 'all') {
   const by = new Map(all.map((c) => [c.bizno, c]));
   const active = (b) => (by.get(b)?.stats.bids || 0) >= 3;
-  const raw = [];
+  const links = new Map();
   for (const c of all) {
-    for (const p of c.partners || []) if (by.has(p.bizno) && c.bizno < p.bizno) raw.push({ a: c.bizno, b: p.bizno, w: p.count, kind: 'partner' });
-    for (const p of c.rivals || []) if (by.has(p.bizno) && c.bizno < p.bizno && (p.count >= 2 || (active(c.bizno) && active(p.bizno)))) raw.push({ a: c.bizno, b: p.bizno, w: p.count, kind: 'rival' });
+    for (const p of c.partners || []) if (by.has(p.bizno)) links.set(pairKey(c.bizno, p.bizno) + '|p', { source: c.bizno, target: p.bizno, kind: 'partner', count: p.count });
+    if (mode === 'all') for (const p of c.rivals || []) if (by.has(p.bizno) && (p.count >= 2 || (active(c.bizno) && active(p.bizno)))) links.set(pairKey(c.bizno, p.bizno) + '|r', { source: c.bizno, target: p.bizno, kind: 'rival', count: p.count });
   }
   const deg = new Map();
-  for (const e of raw) for (const k of [e.a, e.b]) deg.set(k, (deg.get(k) || 0) + (e.kind === 'partner' ? 3 : 1));
-  const top = [...deg.keys()].map((b) => by.get(b))
-    .sort((x, y) => deg.get(y.bizno) + y.stats.wins * 2 + y.stats.bids - (deg.get(x.bizno) + x.stats.wins * 2 + x.stats.bids)).slice(0, 60);
-  const idx = new Map(top.map((c, i) => [c.bizno, i]));
-  const edges = raw.filter((e) => idx.has(e.a) && idx.has(e.b)).map((e) => ({ ...e, a: idx.get(e.a), b: idx.get(e.b) }));
-  if (top.length < 2) { el.innerHTML = '<div class="note">관계도를 그릴 만큼 이어진 업체가 아직 없어요.</div>'; return; }
-  const W = 900, H = 460;
-  // 처음 자리는 원 위에, 이후 반발력·스프링·중심 인력으로 다듬는다(결과는 매번 같다).
-  const N = top.map((c, i) => ({ c, x: W / 2 + Math.cos((i / top.length) * 6.283) * 180, y: H / 2 + Math.sin((i / top.length) * 6.283) * 160, vx: 0, vy: 0, r: 5 + Math.min(12, c.stats.bids + c.stats.wins * 2) }));
-  for (let it = 0; it < 320; it++) {
-    for (let i = 0; i < N.length; i++) for (let j = i + 1; j < N.length; j++) {
-      const a = N[i], b = N[j];
-      let dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy + 0.01;
-      const f = 2600 / d2, d = Math.sqrt(d2);
-      dx /= d; dy /= d;
-      a.vx += dx * f; a.vy += dy * f; b.vx -= dx * f; b.vy -= dy * f;
-    }
-    for (const e of edges) {
-      const a = N[e.a], b = N[e.b];
-      const dx = b.x - a.x, dy = b.y - a.y, d = Math.sqrt(dx * dx + dy * dy) + 0.01;
-      const k = (e.kind === 'partner' ? 0.04 : 0.012) * (d - (e.kind === 'partner' ? 60 : 110));
-      a.vx += (dx / d) * k; a.vy += (dy / d) * k; b.vx -= (dx / d) * k; b.vy -= (dy / d) * k;
-    }
-    for (const n of N) {
-      n.vx += (W / 2 - n.x) * 0.004; n.vy += (H / 2 - n.y) * 0.006;
-      n.x += Math.max(-8, Math.min(8, n.vx)); n.y += Math.max(-8, Math.min(8, n.vy));
-      n.vx *= 0.6; n.vy *= 0.6;
-      n.x = Math.max(40, Math.min(W - 40, n.x)); n.y = Math.max(24, Math.min(H - 30, n.y));
-    }
-  }
-  const maxW = Math.max(1, ...edges.map((e) => e.w));
-  let s = `<svg viewBox="0 0 ${W} ${H}" class="graph" role="img" aria-label="업체 관계도">`;
-  for (const e of edges.sort((x, y) => (x.kind === 'rival' ? -1 : 1))) s += `<line x1="${N[e.a].x}" y1="${N[e.a].y}" x2="${N[e.b].x}" y2="${N[e.b].y}" class="e-${e.kind}" stroke-width="${0.8 + (2.5 * e.w) / maxW}"/>`;
-  for (const n of N) {
-    const label = n.c.name.replace(/주식회사|\(주\)|㈜/g, '').trim();
-    s += `<a href="#company/${esc(n.c.bizno)}"><g class="n-${n.c.stats.wins ? 'win' : 'plain'}"><circle cx="${n.x}" cy="${n.y}" r="${n.r}"/><text x="${n.x}" y="${n.y + n.r + 12}" text-anchor="middle">${esc(label.length > 8 ? label.slice(0, 8) + '…' : label)}</text><title>${esc(n.c.name)} · 참여 ${n.c.stats.bids} · 수주 ${n.c.stats.wins}</title></g></a>`;
-  }
-  el.innerHTML = s + '</svg>';
+  for (const l of links.values()) for (const k of [l.source, l.target]) deg.set(k, (deg.get(k) || 0) + 1);
+  const pool = [...deg.keys()].map((b) => by.get(b));
+  const max = Math.max(1, ...pool.map(scoreOf));
+  const keep = new Set(pool.sort((a, b) => scoreOf(b) + deg.get(b.bizno) - (scoreOf(a) + deg.get(a.bizno))).slice(0, 140).map((c) => c.bizno));
+  const nodes = [...keep].map((b) => toNode(by.get(b), max));
+  const ls = [...links.values()].filter((l) => keep.has(l.source) && keep.has(l.target));
+  if (nodes.length < 2) { el.innerHTML = '<div class="note pad">관계도를 그릴 만큼 이어진 업체가 아직 없어요.</div>'; return null; }
+  const { networkGraph } = await import('./graph.js');
+  return networkGraph(el, { nodes, links: ls, height: Math.round(Math.min(640, window.innerHeight * 0.62, Math.max(340, el.clientWidth * 0.95))), onOpen: (id) => (location.hash = 'company/' + id) });
 }
+
+// 한 회사 중심: 파트너, 파트너의 파트너, 겨룬 회사(상위 14곳)
+async function drawEgo(el, c) {
+  const by = data.byBizno;
+  const set = new Set([c.bizno]);
+  const links = new Map();
+  const addP = (a, p) => { if (!by.has(p.bizno)) return; set.add(p.bizno); links.set(pairKey(a, p.bizno) + '|p', { source: a, target: p.bizno, kind: 'partner', count: p.count, share: p.share != null ? p.share + '%' : '' }); };
+  for (const p of c.partners || []) addP(c.bizno, p);
+  for (const p of c.partners || []) for (const q of by.get(p.bizno)?.partners || []) addP(p.bizno, q);
+  for (const r of (c.rivals || []).slice(0, 14)) { if (!by.has(r.bizno)) continue; set.add(r.bizno); links.set(pairKey(c.bizno, r.bizno) + '|r', { source: c.bizno, target: r.bizno, kind: 'rival', count: r.count }); }
+  if (set.size < 2) { el.innerHTML = '<div class="note pad">이어진 회사가 아직 없어요.</div>'; return; }
+  const list = [...set].map((b) => by.get(b));
+  const max = Math.max(1, ...list.map(scoreOf));
+  const { networkGraph } = await import('./graph.js');
+  networkGraph(el, { nodes: list.map((x) => toNode(x, max)), links: [...links.values()], focus: c.bizno, height: 420, onOpen: (id) => id !== c.bizno && (location.hash = 'company/' + id) });
+}
+
 
 // ---------- 메뉴 이동 ----------
 function route() {

@@ -376,6 +376,103 @@
     .tabs a { padding: 0 10px; font-size: 14px; }
     .panel { padding: 4px 16px 16px; }
   }
+  /* ---------- 관계도 (d3) ---------- */
+  .graph-head { gap: 10px; margin-bottom: 8px; }
+  .graph-title { display: grid; gap: 4px; }
+  .graph-title b { font-size: 17px; }
+  .graph-tools { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .mini-search { position: relative; }
+  .mini-search svg { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--muted); }
+  .mini-search input { height: 34px; width: 150px; border: 0; border-radius: 10px; background: var(--field); color: var(--text); padding: 0 10px 0 32px; font: inherit; font-size: 14px; outline: none; }
+  .mini-search input:focus { box-shadow: 0 0 0 2px var(--blue); }
+  .seg { display: inline-flex; background: var(--field); border-radius: 10px; padding: 3px; }
+  .seg button { border: 0; background: none; height: 28px; padding: 0 10px; border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--muted); cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--card); color: var(--text); box-shadow: var(--shadow); }
+  .icon-btn { width: 34px; height: 34px; border: 0; border-radius: 10px; background: var(--field); color: var(--sub); font-size: 17px; font-weight: 700; cursor: pointer; }
+  .icon-btn:hover { color: var(--text); background: var(--line); }
+  .net { position: relative; border-radius: 16px; background: var(--bg); overflow: hidden; }
+  .net.ego { background: var(--field); }
+  .ng-svg { display: block; width: 100%; height: auto; cursor: grab; touch-action: none; }
+  .ng-svg:active { cursor: grabbing; }
+  .ng-l { stroke-linecap: round; transition: opacity .15s; }
+  .ng-l.partner { stroke: var(--blue); stroke-opacity: .7; }
+  .ng-l.rival { stroke: var(--faint); stroke-opacity: .55; stroke-dasharray: 3 4; }
+  .ng-l.hi { stroke-opacity: 1; }
+  .ng-l.rival.hi { stroke: var(--sub); }
+  .ng-l.dim, .ng-n.dim { opacity: .12; }
+  .ng-n { cursor: pointer; transition: opacity .15s; }
+  .ng-n circle { stroke: var(--card); stroke-width: 2; }
+  .ng-n.won circle { stroke: var(--text); stroke-width: 2.5; }
+  .ng-n.focus circle { stroke: var(--blue); stroke-width: 4; }
+  .ng-n.hi circle { stroke: var(--blue); stroke-width: 4; }
+  .ng-n text { font-size: 11px; font-weight: 700; fill: var(--sub); paint-order: stroke; stroke: var(--bg); stroke-width: 3px; opacity: 0; pointer-events: none; }
+  .ng-n text.show, .ng-n.hi text, .ng-svg:not(:hover) .ng-n text.show { opacity: 1; }
+  .net.ego .ng-n text { stroke: var(--field); opacity: 1; }
+  .ng-n.dim text { opacity: 0 !important; }
+  .ng-tip { position: absolute; pointer-events: none; background: var(--card); border-radius: 12px; box-shadow: var(--shadow-up); padding: 10px 12px; font-size: 13px; max-width: 230px; display: grid; gap: 3px; transition: opacity .12s; z-index: 2; }
+  .ng-tip b { font-size: 14px; }
+  .ng-tip span, .ng-tip small { color: var(--muted); }
+  .ng-tip-row { display: flex; gap: 8px; font-weight: 600; }
+  .ng-tip-row span { color: var(--text); }
+  .ng-tip-l { color: var(--sub); }
+  .note.pad { padding: 40px 16px; text-align: center; }
+
+  /* ---------- 결과 한눈에 보기 ---------- */
+  .dash { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .dash-card { background: var(--card); border-radius: 20px; box-shadow: var(--shadow); padding: 16px 18px; min-width: 0; }
+  .dash-card.wide { grid-column: 1 / -1; }
+  .dash-h { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .dash-h b { font-size: 16px; }
+  .dash-h > span { font-size: 12px; color: var(--muted); }
+  .lg-o { background: var(--blue); } .lg-f { background: var(--red); opacity: .7; } .lg-w { background: var(--faint); }
+  .mbars { display: flex; align-items: flex-end; gap: 8px; height: 150px; }
+  .mb { flex: 1; min-width: 0; height: 100%; display: grid; grid-template-rows: 1fr auto auto; justify-items: center; gap: 3px; }
+  .mb-col { width: 100%; max-width: 36px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: 8px; overflow: hidden; background: var(--field); }
+  .mb-col i { display: block; width: 100%; }
+  .mb-col .o { background: var(--blue); } .mb-col .f { background: var(--red); opacity: .7; } .mb-col .w { background: var(--faint); }
+  .mb span { font-size: 11px; color: var(--muted); }
+  .mb b { font-size: 12px; font-variant-numeric: tabular-nums; }
+  .hb { display: grid; grid-template-columns: 18px minmax(0, 1.1fr) 1fr auto; gap: 8px; align-items: center; padding: 6px 0; text-decoration: none; color: var(--text); font-size: 14px; }
+  a.hb:hover .hb-n { color: var(--blue); }
+  .hb-i { color: var(--muted); font-weight: 700; font-size: 12px; }
+  .hb-n { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .hb-bar { height: 8px; border-radius: 999px; background: var(--field); overflow: hidden; }
+  .hb-bar i { display: block; height: 100%; background: var(--blue); border-radius: 999px; }
+  .hb-v { font-size: 12px; color: var(--sub); font-weight: 600; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  @media (max-width: 640px) { .dash { grid-template-columns: 1fr; } .mbars { gap: 4px; } }
+
+  /* ---------- 업체 순위표 ---------- */
+  .board { background: var(--card); border-radius: 20px; box-shadow: var(--shadow); overflow-x: auto; }
+  table.lead { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 620px; }
+  table.lead th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 14px 12px 10px; white-space: nowrap; border-bottom: 1px solid var(--line); }
+  table.lead td { padding: 11px 12px; border-top: 1px solid var(--line); vertical-align: middle; }
+  table.lead tbody tr { cursor: pointer; transition: background .12s; }
+  table.lead tbody tr:hover { background: var(--hover); }
+  table.lead .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  table.lead td:nth-child(5), table.lead td:nth-child(6) { white-space: nowrap; }
+  table.lead .rk { color: var(--muted); font-weight: 700; width: 36px; }
+  table.lead tbody tr:nth-child(-n+3) .rk { color: var(--blue); }
+  table.lead td small { display: block; color: var(--muted); font-size: 12px; margin-top: 1px; }
+  table.lead .co { font-weight: 700; }
+  .ok { color: var(--green); }
+  .mute { color: var(--faint); }
+  .rate, .amt-bar { display: inline-block; vertical-align: middle; width: 56px; height: 6px; border-radius: 999px; background: var(--field); overflow: hidden; margin-right: 8px; }
+  .rate i { display: block; height: 100%; background: var(--green); border-radius: 999px; }
+  .amt-bar { width: 72px; }
+  .amt-bar i { display: block; height: 100%; background: var(--blue); border-radius: 999px; }
+  .rate-t, .amt-t { font-variant-numeric: tabular-nums; font-weight: 600; font-size: 13px; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .two-col .panel { margin-top: 12px; }
+  @media (max-width: 640px) {
+    .hide-s { display: none; }
+    table.lead { min-width: 0; }
+    .rate { display: none; }
+    .amt-bar { width: 40px; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+    .graph-tools { width: 100%; }
+    .mini-search { flex: 1; }
+    .mini-search input { width: 100%; }
+  }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
