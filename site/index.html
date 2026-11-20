@@ -69,6 +69,7 @@
   .item .title { font-size: 16px; font-weight: 700; line-height: 1.4; }
   .item .org { color: var(--muted); font-size: 14px; margin-top: 2px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
   .tag { background: var(--blue-weak); color: var(--blue); border-radius: 6px; padding: 1px 7px; font-size: 12px; font-weight: 600; }
+  .tag.region { background: var(--gray-pill); color: var(--sub); }
   .item .right { text-align: right; white-space: nowrap; }
   .item .amount { font-size: 17px; font-weight: 800; font-variant-numeric: tabular-nums; }
   .item .due { color: var(--muted); font-size: 13px; margin-top: 4px; display: flex; gap: 6px; justify-content: flex-end; align-items: center; }
@@ -205,10 +206,11 @@ function render() {
       else due = `<span>${dueLabel(x._dl)} 마감</span><span class="dday ${days <= 3 ? 'soon' : ''}">D-${days}</span>`;
     }
     const tags = (x.keywords || []).slice(0, 2).map((k) => `<span class="tag">${esc(k)}</span>`).join('');
+    const region = x.regions && x.regions.length ? `<span class="tag region">${esc(x.regions.join('·'))} 업체만</span>` : '';
     return `<a class="item ${cls}" href="${esc(x.url)}" target="_blank" rel="noopener">
       <div>
         <div class="title">${esc(x.title)}</div>
-        <div class="org"><span>${esc(x.org)}</span>${tags}</div>
+        <div class="org"><span>${esc(x.org)}</span>${tags}${region}</div>
       </div>
       <div class="right">
         <div class="amount">${won(x.amount)}</div>

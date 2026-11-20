@@ -2,8 +2,8 @@ name: 공고 갱신 및 배포
 
 on:
   schedule:
-    # 한국시간 07시, 12시, 17시 (UTC 22시, 03시, 08시)
-    - cron: '0 22,3,8 * * *'
+    # 한국시간 07시, 12시, 17시 17분 (UTC 22시, 03시, 08시). 정각은 GitHub 예약이 몰려 크게 밀려서 피한다.
+    - cron: '17 22,3,8 * * *'
   workflow_dispatch:
   push:
     branches: [main]

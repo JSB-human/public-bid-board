@@ -12,6 +12,8 @@ import path from 'node:path';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'site', 'data', 'bids.json');
+const REGION_CACHE = path.join(ROOT, 'site', 'data', 'regions.json');
+const REGION_OPERATION = 'getBidPblancListInfoPrtcptPsblRgn02'; // 입찰공고 참가가능지역 조회
 const BASE = 'https://apis.data.go.kr/1230000/ad/BidPublicInfoService02';
 const OPERATION = 'getBidPblancListInfoServcPPSSrch02'; // 나라장터검색조건에 의한 입찰공고용역조회
 const ROWS = 100;
@@ -42,9 +44,9 @@ function kstStamp(date) {
   return `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}${p(d.getUTCHours())}${p(d.getUTCMinutes())}`;
 }
 
-async function callApi(params) {
+async function callApi(params, operation = OPERATION) {
   const qs = new URLSearchParams({ serviceKey: key, type: 'json', ...params });
-  const res = await fetch(`${BASE}/${OPERATION}?${qs}`);
+  const res = await fetch(`${BASE}/${operation}?${qs}`);
   const text = await res.text();
   let json;
   try {
@@ -132,10 +134,51 @@ try {
 const merged = new Map(existing.map((x) => [x.id, x]));
 for (const [id, row] of fetched) merged.set(id, { ...merged.get(id), ...row });
 
+// 참가가능지역(지역제한)을 공고별로 조회해 붙인다. 한 번 조회한 공고는 캐시에서 읽는다.
+const REGIONS = [
+  ['서울', /서울/], ['부산', /부산/], ['대구', /대구/], ['인천', /인천/], ['광주', /광주/], ['대전', /대전/],
+  ['울산', /울산/], ['세종', /세종/], ['경기', /경기/], ['강원', /강원/], ['충북', /충북|충청북/], ['충남', /충남|충청남/],
+  ['전북', /전북|전라북/], ['전남', /전남|전라남/], ['경북', /경북|경상북/], ['경남', /경남|경상남/], ['제주', /제주/],
+];
+function regionsOf(apiItems) {
+  const found = new Set();
+  for (const it of apiItems) {
+    const keys = Object.keys(it).filter((k) => /rgn/i.test(k));
+    for (const k of keys.length ? keys : Object.keys(it).filter((k) => !/ntce|dt$/i.test(k))) {
+      const v = String(it[k] ?? '');
+      for (const [name, re] of REGIONS) if (re.test(v)) found.add(name);
+    }
+  }
+  return [...found];
+}
+let regionCache = {};
+try { regionCache = JSON.parse(await readFile(REGION_CACHE, 'utf8')); } catch {}
+if (key) {
+  let shown = false, failed = 0, asked = 0;
+  for (const row of merged.values()) {
+    if (!wanted(row) || regionCache[row.id]) continue;
+    try {
+      const { items: rg } = await callApi({ inqryDiv: '2', bidNtceNo: row.id, numOfRows: '50', pageNo: '1' }, REGION_OPERATION);
+      asked++;
+      if (!shown && rg.length) { console.log('지역 응답 예시:', JSON.stringify(rg[0])); shown = true; }
+      regionCache[row.id] = { regions: regionsOf(rg) };
+    } catch (e) {
+      if (!failed++) console.warn('지역 조회 실패:', e.message);
+      if (failed >= 3) { console.warn('지역 조회를 중단합니다.'); break; }
+    }
+  }
+  console.log(`지역 조회: ${asked}건 성공, ${failed}건 실패`);
+  await mkdir(path.dirname(REGION_CACHE), { recursive: true });
+  await writeFile(REGION_CACHE, JSON.stringify(regionCache, null, 1) + '\n');
+}
+for (const row of merged.values()) if (regionCache[row.id]) row.regions = regionCache[row.id].regions;
+// 지역제한이 있는데 우리 지역이 포함되지 않으면 뺀다. 제한이 없거나 조회하지 못한 공고는 남긴다.
+const regionOk = (row) => !config.homeRegion || !row.regions?.length || row.regions.includes(config.homeRegion);
+
 // 마감이 오래 지난 공고는 지운다.
 const cutoff = Date.now() - (config.keepClosedDays || 14) * 86400 * 1000;
 const kept = [...merged.values()].filter((x) => {
-  if (!wanted(x)) return false;
+  if (!wanted(x) || !regionOk(x)) return false;
   if (!x.deadline) return true;
   const t = Date.parse(x.deadline.replace(' ', 'T') + '+09:00');
   return Number.isNaN(t) || t >= cutoff;

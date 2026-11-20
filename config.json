@@ -2,6 +2,7 @@
   "lookbackDays": 6,
   "keepClosedDays": 14,
   "industryCode": "1468",
+  "homeRegion": "서울",
   "maxAmount": 3000000000,
   "keywords": [
     "공간정보",
