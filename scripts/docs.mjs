@@ -17,7 +17,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BIDS = path.join(ROOT, 'site', 'data', 'bids.json');
 const TEXT_DIR = path.join(ROOT, 'cache', 'text'); // 공고별 원문 글자. 규칙을 고치면 다시 받지 않고 이것으로 다시 뽑는다.
 const MAX_BYTES = 30 * 1024 * 1024;
-const TEXT_VERSION = 3; // 2: HWP 읽기 추가, 3: kordoc 으로 읽기
+const TEXT_VERSION = 4; // 2: HWP 읽기 추가, 3: kordoc 으로 읽기, 4: e발주 제안요청서 읽기
 const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8'));
 
 // ---------- 파일에서 글자 꺼내기 ----------
@@ -28,7 +28,7 @@ function pdfText(file) {
   return execFileSync('pdftotext', ['-layout', '-enc', 'UTF-8', file, '-'], { maxBuffer: 64 * 1024 * 1024 }).toString('utf8');
 }
 
-async function download(url, file) {
+async function downloadOnce(url, file) {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), 60000);
   try {
@@ -114,17 +114,35 @@ async function textFromBuffer(ext, buf, localPdf) {
   return '';
 }
 
-async function textOf(item, work) {
+// e발주 첨부는 종류(kind)가 "제안요청서" 로 온다. 파일 이름에 그 말이 없어도 제안요청서로 본다.
+const rfpFile = (f) => /제안\s*요청|과업|규격/.test(f.kind || '') || isRfp(f.name);
+function chooseFiles(item) {
   const files = item.detail?.files || [];
-  const zipped = files.find((f) => extOf(f.name) === 'zip' && /제안|과업|규격/.test(f.name));
-  const chosen = [pick(files, isNotice), pick(files, isRfp) || zipped].filter(Boolean);
+  const zipped = files.find((f) => extOf(f.name) === 'zip' && (/제안|과업|규격/.test(f.name) || rfpFile(f)));
+  const rfps = files.filter((f) => rfpFile(f) && readable(f.name) && extOf(f.name) !== 'zip');
+  const rfp = rfps.sort((a, b) => rank(a.name) - rank(b.name))[0] || null;
+  const chosen = [pick(files.filter((f) => !rfpFile(f)), isNotice), rfp || zipped].filter(Boolean);
   // 공고문·제안요청서라는 이름이 없으면 읽을 수 있는 첫 파일
   if (!chosen.length) { const f = files.find((f) => readable(f.name)); if (f) chosen.push(f); }
+  return { files, zipped, chosen };
+}
+const sourceKey = (item) => chooseFiles(item).chosen.map((f) => f.url).join('|');
+
+async function download(url, file) {
+  for (let attempt = 1; ; attempt++) {
+    try { return await downloadOnce(url, file); }
+    catch (e) { if (attempt >= 3) throw e; await new Promise((r) => setTimeout(r, attempt * 3000)); }
+  }
+}
+
+async function textOf(item, work) {
+  const { files, zipped, chosen } = chooseFiles(item);
   const parts = [];
   for (const f of chosen) {
     const local = path.join(work, `${item.id}-${parts.length}.${extOf(f.name)}`);
     const buf = await download(f.url, local);
-    let name = f.name, text = '';
+    // 화면은 이름에 "제안/과업/규격" 이 있는지로 제안요청서를 알아본다. 이름에 없으면 앞에 붙인다.
+    let name = rfpFile(f) && !/제안|과업|규격/.test(f.name) ? `[제안요청서] ${f.name}` : f.name, text = '';
     if (extOf(f.name) === 'zip') {
       // 묶음 파일이면 안에서 제안요청서(없으면 첫 문서)를 꺼낸다.
       const inner = unzip(new Uint8Array(buf)).filter((e) => DOC_EXT.includes(extOf(e.name))).sort((a, b) => rank(a.name) - rank(b.name));
@@ -137,9 +155,9 @@ async function textOf(item, work) {
     } else {
       text = await textFromBuffer(extOf(f.name), buf, local);
     }
-    parts.push(`\n<<<${isRfp(name) || f === zipped ? 'RFP' : 'NOTICE'}:${name}>>>\n` + text);
+    parts.push(`\n<<<${isRfp(name) || rfpFile(f) || f === zipped ? 'RFP' : 'NOTICE'}:${name}>>>\n` + text);
   }
-  return { text: parts.join('\n'), files: parts.map((p) => p.match(/<<<[A-Z]+:(.*)>>>/)[1]), skipped: files.filter((f) => !readable(f.name)).map((f) => f.name) };
+  return { src: sourceKey(item), text: parts.join('\n'), files: parts.map((p) => p.match(/<<<[A-Z]+:(.*)>>>/)[1]), skipped: files.filter((f) => !readable(f.name)).map((f) => f.name) };
 }
 
 // ---------- 글자에서 정보 뽑기 ----------
@@ -317,6 +335,8 @@ for (const item of data.items) {
   } catch {}
   // 읽을 수 있는 형식이 늘어나면(버전이 오르면) 예전에 받아 둔 공고도 다시 읽는다.
   if (raw && (raw.v || 1) < TEXT_VERSION) raw = null;
+  // 읽을 파일이 바뀌었으면(나중에 제안요청서가 붙은 경우 등) 다시 읽는다.
+  if (raw && raw.src !== undefined && raw.src !== sourceKey(item)) raw = null;
   if (!raw && item.detail?.files?.length) {
     try {
       raw = { v: TEXT_VERSION, ...(await textOf(item, work)) };

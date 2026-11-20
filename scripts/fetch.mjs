@@ -14,6 +14,7 @@ const OUT = path.join(ROOT, 'site', 'data', 'bids.json');
 const REGION_CACHE = path.join(ROOT, 'site', 'data', 'regions.json');
 const REGION_OPERATION = 'getBidPblancListInfoPrtcptPsblRgn02'; // 입찰공고 참가가능지역 조회
 const LICENSE_OPERATION = 'getBidPblancListInfoLicenseLimit02'; // 입찰공고 면허제한정보 조회
+const EORDER_OPERATION = 'getBidPblancListInfoEorderAtchFileInfo02'; // 입찰공고 e발주(제안요청서) 첨부파일 조회
 const OPERATION = 'getBidPblancListInfoServcPPSSrch02'; // 나라장터검색조건에 의한 입찰공고용역조회
 const ROWS = 100;
 const callApi = (params, operation = OPERATION) => call(API.bid, operation, params);
@@ -103,11 +104,42 @@ if (key) {
   await mkdir(path.dirname(REGION_CACHE), { recursive: true });
   await writeFile(REGION_CACHE, JSON.stringify(regionCache, null, 1) + '\n');
 }
+// 제안요청서는 공고 첨부(ntceSpecFileNm)가 아니라 e발주(제안요청정보) 첨부로 따로 올라오는 일이 많다.
+// 마감 전 공고는 매번 다시 물어 나중에 붙은 제안요청서도 받는다. 마감된 공고는 캐시를 쓴다.
+if (key) {
+  let asked = 0, failed = 0, found = 0;
+  for (const row of merged.values()) {
+    if (!wanted(row)) continue;
+    const entry = regionCache[row.id] || (regionCache[row.id] = {});
+    const closed = row.deadline && Date.parse(row.deadline.replace(' ', 'T') + '+09:00') < Date.now();
+    if (entry.eorder && closed) continue;
+    try {
+      const { items: ef } = await callApi({ inqryDiv: '2', bidNtceNo: row.id, numOfRows: '50', pageNo: '1' }, EORDER_OPERATION);
+      entry.eorder = ef
+        .filter((x) => !x.bidNtceOrd || x.bidNtceOrd === (row.ord || '000'))
+        .map((x) => ({ name: String(x.eorderAtchFileNm || '').trim(), url: x.eorderAtchFileUrl, kind: String(x.eorderDocDivNm || '').trim() }))
+        .filter((x) => x.name && x.url);
+      if (entry.eorder.length) found++;
+      asked++;
+    } catch (e) {
+      if (!failed++) console.warn('e발주 첨부 조회 실패:', e.message);
+      if (failed >= 3) { console.warn('e발주 첨부 조회를 중단합니다.'); break; }
+    }
+  }
+  console.log(`e발주 첨부 조회: ${asked}건, 제안요청서 등 있음 ${found}건, 실패 ${failed}건`);
+  await writeFile(REGION_CACHE, JSON.stringify(regionCache, null, 1) + '\n');
+}
 for (const row of merged.values()) {
   const c = regionCache[row.id];
   if (!c) continue;
   if (c.regions) row.regions = c.regions;
   if (c.licenses) row.licenses = c.licenses;
+  if (c.eorder?.length && row.detail) {
+    // 제안요청서를 앞에 둔다. 같은 이름이 이미 있으면 한 번만.
+    const base = (row.detail.files || []).filter((f) => !f.kind);
+    const names = new Set(base.map((f) => f.name));
+    row.detail.files = [...c.eorder.filter((f) => !names.has(f.name)), ...base];
+  }
 }
 
 // 마감이 오래 지난 공고는 지운다.
