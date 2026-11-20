@@ -1,12 +1,12 @@
 {
- "updatedAt": "2026-11-20T06:09:16.440Z",
+ "updatedAt": "2026-11-20T06:13:51.151Z",
  "items": [
   {
    "bizno": "5308101983",
    "name": "주식회사 블루스카이",
    "ceo": "임재분",
    "stats": {
-    "bids": 5,
+    "bids": 8,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -283,7 +283,7 @@
    "name": "주식회사 프롬프트타운",
    "ceo": "서진욱",
    "stats": {
-    "bids": 4,
+    "bids": 7,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -565,7 +565,7 @@
    "name": "주식회사 투에니원센추리",
    "ceo": "김영국",
    "stats": {
-    "bids": 1,
+    "bids": 6,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -800,7 +800,7 @@
    "name": "주식회사 지넥스",
    "ceo": "신재욱",
    "stats": {
-    "bids": 2,
+    "bids": 5,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -1052,7 +1052,7 @@
    "name": "주식회사 데이타트렌드",
    "ceo": "표성수",
    "stats": {
-    "bids": 3,
+    "bids": 5,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -1451,7 +1451,7 @@
    "name": "주식회사 미래월드",
    "ceo": "장준형",
    "stats": {
-    "bids": 2,
+    "bids": 4,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -2011,7 +2011,7 @@
    "stats": {
     "bids": 3,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 196602000,
     "partners": 0,
     "lastAt": "2026-11-03 11:00:00"
    },
@@ -2104,7 +2104,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     },
     {
      "id": "R26BK01730521",
@@ -2805,7 +2805,7 @@
    "name": "주식회사 디오아이",
    "ceo": "문원준",
    "stats": {
-    "bids": 0,
+    "bids": 3,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -2969,7 +2969,7 @@
    "name": "주식회사 상록에스",
    "ceo": "정진홍",
    "stats": {
-    "bids": 1,
+    "bids": 3,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -3146,7 +3146,7 @@
    "name": "주식회사 타이드플로",
    "ceo": "차명건",
    "stats": {
-    "bids": 1,
+    "bids": 3,
     "wins": 1,
     "wonAmount": 26770000,
     "partners": 0,
@@ -3300,7 +3300,7 @@
    "stats": {
     "bids": 3,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 304000000,
     "partners": 0,
     "lastAt": "2026-10-07 11:00:00"
    },
@@ -3408,7 +3408,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -3904,9 +3904,9 @@
    "name": "(주)엔에스데블",
    "ceo": "이언주",
    "stats": {
-    "bids": 2,
+    "bids": 3,
     "wins": 2,
-    "wonAmount": 480000000,
+    "wonAmount": 960000000,
     "partners": 0,
     "lastAt": "2026-09-29 18:00:00"
    },
@@ -4014,7 +4014,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -4305,7 +4305,7 @@
    "name": "주식회사 포인정보",
    "ceo": "유희균",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -4477,7 +4477,7 @@
    "name": "반디에스앤씨 주식회사",
    "ceo": "김봉석",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -4684,7 +4684,7 @@
    "name": "소프트캣",
    "ceo": "박찬엽",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -5086,7 +5086,7 @@
    "name": "주식회사 에이엑스",
    "ceo": "신정우",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -5293,7 +5293,7 @@
    "name": "주식회사 달파",
    "ceo": "김도균",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -5931,7 +5931,7 @@
    "name": "(주)케이디엘",
    "ceo": "김동련",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -6083,7 +6083,7 @@
    "name": "주식회사 디윅스",
    "ceo": "안준형",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 1,
     "wonAmount": 0,
     "partners": 1,
@@ -6178,7 +6178,7 @@
      "won": true,
      "role": "도급업체",
      "share": 50,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -6222,7 +6222,7 @@
    "name": "주식회사 인피니에이아이",
    "ceo": "전태환",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -6409,7 +6409,7 @@
    "name": "바탕에비뉴 주식회사",
    "ceo": "조영수",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -6581,7 +6581,7 @@
    "name": "몬즈",
    "ceo": "홍재승",
    "stats": {
-    "bids": 0,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -6664,7 +6664,7 @@
    "name": "지깃테르",
    "ceo": "PAK VYACHESLAV",
    "stats": {
-    "bids": 0,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -6757,7 +6757,7 @@
    "name": "주식회사 쿠노소프트",
    "ceo": "조장관",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -6911,7 +6911,7 @@
    "stats": {
     "bids": 2,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 186300000,
     "partners": 0,
     "lastAt": "2026-10-21 11:00:00"
    },
@@ -6989,7 +6989,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     },
     {
      "id": "R26BK01721025",
@@ -7193,7 +7193,7 @@
    "name": "주식회사에이테크",
    "ceo": "허은정",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 1,
     "wonAmount": 105793710,
     "partners": 1,
@@ -7317,7 +7317,7 @@
    "name": "트래시스 (주)",
    "ceo": "양국승",
    "stats": {
-    "bids": 0,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -7444,7 +7444,7 @@
    "name": "(주)스톤인테그리티",
    "ceo": "석현수",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -7601,7 +7601,7 @@
    "name": "주식회사 에이다루트",
    "ceo": "김기수",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -7741,7 +7741,7 @@
    "name": "상상스토리 주식회사",
    "ceo": "김형섭",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 1,
     "wonAmount": 55000000,
     "partners": 0,
@@ -7913,9 +7913,9 @@
    "name": "주식회사 에이아이지씨",
    "ceo": "윤성원",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 2,
-    "wonAmount": 0,
+    "wonAmount": 309969445,
     "partners": 3,
     "lastAt": "2026-10-07 11:00:00"
    },
@@ -7993,7 +7993,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 51,
-     "contractAmount": 0
+     "contractAmount": null
     },
     {
      "id": "R26BK01714012",
@@ -8008,7 +8008,7 @@
      "won": true,
      "role": "도급업체",
      "share": 35,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -8054,7 +8054,7 @@
    "name": "엘티메트릭 주식회사",
    "ceo": "강인구",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 1,
     "wonAmount": 0,
     "partners": 1,
@@ -8134,7 +8134,7 @@
      "won": true,
      "role": "도급업체",
      "share": 49,
-     "contractAmount": 0
+     "contractAmount": null
     },
     {
      "id": "R26BK01730521",
@@ -8195,7 +8195,7 @@
    "stats": {
     "bids": 2,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 128144000,
     "partners": 0,
     "lastAt": "2026-10-02 11:00:00"
    },
@@ -8288,7 +8288,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -8400,7 +8400,7 @@
    "name": "(주)소다시스템",
    "ceo": "원종현",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -8529,7 +8529,7 @@
    "stats": {
     "bids": 2,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 319844059,
     "partners": 2,
     "lastAt": "2026-09-18 11:00:00"
    },
@@ -8607,7 +8607,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 45,
-     "contractAmount": 0
+     "contractAmount": null
     },
     {
      "id": "R26BK01714772",
@@ -8859,7 +8859,7 @@
    "name": "주식회사 에이아이데이타",
    "ceo": "이지환",
    "stats": {
-    "bids": 1,
+    "bids": 2,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -9911,7 +9911,7 @@
    "name": "주식회사 내일은개발",
    "ceo": "이응재",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -9982,7 +9982,7 @@
    "name": "주식회사 브레키랩",
    "ceo": "이재환",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -10053,7 +10053,7 @@
    "name": "모던테크",
    "ceo": "TSOGTJARGAL BAZARSAD",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -10165,7 +10165,7 @@
    "name": "(주)부용",
    "ceo": "신수범",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -10211,7 +10211,7 @@
    "name": "주식회사 에이아이쓰리",
    "ceo": "표철민",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -10341,7 +10341,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 408000000,
     "partners": 0,
     "lastAt": "2026-11-06 14:10:00"
    },
@@ -10363,7 +10363,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -10511,7 +10511,7 @@
    "name": "아이티펍 주식회사",
    "ceo": "장재원",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -10597,7 +10597,7 @@
    "name": "주식회사 팀모노리스",
    "ceo": "전종현",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -10683,7 +10683,7 @@
    "name": "디어라운드(주)",
    "ceo": "조현주",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -11412,7 +11412,7 @@
    "name": "주식회사 한국도시공간",
    "ceo": "이충헌",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -11493,7 +11493,7 @@
    "name": "(주)명시스템",
    "ceo": "이명희",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -11661,7 +11661,7 @@
    "name": "(주)오픈네트웍시스템",
    "ceo": "박봉균",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -11768,7 +11768,7 @@
    "name": "시버리솔루션스 주식회사",
    "ceo": "안경익",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -11829,7 +11829,7 @@
    "name": "주식회사 자유로운소프트",
    "ceo": "홍진희",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -12012,7 +12012,7 @@
    "name": "플리트소프트 주식회사",
    "ceo": "정성욱",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -12335,7 +12335,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 419540000,
     "partners": 0,
     "lastAt": "2026-10-29 11:00:00"
    },
@@ -12357,7 +12357,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -12427,7 +12427,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 314500000,
     "partners": 0,
     "lastAt": "2026-10-29 11:00:00"
    },
@@ -12449,7 +12449,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -12466,7 +12466,7 @@
    "name": "주식회사 시스어반",
    "ceo": "윤광진",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -12599,7 +12599,7 @@
    "name": "주식회사인정보기술",
    "ceo": "강동진",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -13412,7 +13412,7 @@
    "name": "(주)더크림유니언",
    "ceo": "이정훈",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -13612,7 +13612,7 @@
    "name": "주식회사 아이맥스소프트",
    "ceo": "조인상",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -13770,7 +13770,7 @@
    "name": "에이치지네트웍스 (HGNetworks)",
    "ceo": "조한기",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -13908,7 +13908,7 @@
    "name": "프로티앤에스(주)",
    "ceo": "최중락",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -13979,7 +13979,7 @@
    "name": "폿즈",
    "ceo": "박경준",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -14050,7 +14050,7 @@
    "name": "(주)제이앤씨시스템즈",
    "ceo": "홍찬호",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -14121,7 +14121,7 @@
    "name": "엠클라우드브리지(주)",
    "ceo": "이혁재",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -14281,7 +14281,7 @@
    "name": "에스앤에스",
    "ceo": "임민규",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 75270000,
     "partners": 1,
@@ -14323,7 +14323,7 @@
    "name": "주식회사 비에이소프트",
    "ceo": "박성진",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -14369,7 +14369,7 @@
    "name": "주식회사 지큐브시스템",
    "ceo": "이상용",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -14863,7 +14863,7 @@
    "name": "부팅 주식회사",
    "ceo": "홍용기",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -14906,7 +14906,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 101200000,
     "partners": 0,
     "lastAt": "2026-10-08 11:00:00"
    },
@@ -14928,7 +14928,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -15753,7 +15753,7 @@
    "name": "퓨처워크랩 주식회사",
    "ceo": "박은규",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -15884,7 +15884,7 @@
    "name": "주식회사 넥스트젠에이아이",
    "ceo": "김도경",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -16015,7 +16015,7 @@
    "name": "넷브리즈(주)",
    "ceo": "강정택",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -16146,7 +16146,7 @@
    "name": "주식회사 블루필",
    "ceo": "박광호",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -16277,7 +16277,7 @@
    "name": "주식회사 디아이앤씨",
    "ceo": "정충교",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -16408,7 +16408,7 @@
    "name": "주식회사 두아즈",
    "ceo": "김영태",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -16541,7 +16541,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 385000000,
     "partners": 0,
     "lastAt": "2026-10-01 11:00:00"
    },
@@ -16563,7 +16563,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -16704,7 +16704,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 367990000,
     "partners": 1,
     "lastAt": "2026-10-01 11:00:00"
    },
@@ -16726,7 +16726,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 50,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -17136,7 +17136,7 @@
    "name": "웅진보안시스템 주식회사",
    "ceo": "노종호",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 707850000,
     "partners": 2,
@@ -17184,7 +17184,7 @@
    "name": "주식회사 제이엔디",
    "ceo": "정철호",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 471900000,
     "partners": 2,
@@ -17375,7 +17375,7 @@
    "name": "주식회사 선주소프트",
    "ceo": "이석범",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -17426,7 +17426,7 @@
    "name": "제엔제이컨설팅 주식회사",
    "ceo": "정민주",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -17528,7 +17528,7 @@
    "name": "주은테크",
    "ceo": "황준원",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -17745,7 +17745,7 @@
    "name": "주식회사 진성이엔씨",
    "ceo": "진선미",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 450000000,
     "partners": 2,
@@ -17793,7 +17793,7 @@
    "name": "주식회사 성원공간정보",
    "ceo": "임민영",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 450000000,
     "partners": 2,
@@ -17933,7 +17933,7 @@
    "name": "주식회사 스마트뱅크",
    "ceo": "김기덕",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -18101,7 +18101,7 @@
    "name": "씨투씨피 주식회사",
    "ceo": "이창호",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 0,
     "partners": 2,
@@ -18125,7 +18125,7 @@
      "won": true,
      "role": "도급업체",
      "share": 20,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -18186,7 +18186,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 267800000,
     "partners": 1,
     "lastAt": "2026-09-17 11:00:00"
    },
@@ -18208,7 +18208,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 50.1,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -18273,7 +18273,7 @@
    "name": "주식회사 에프엠웍스",
    "ceo": "류정림",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 0,
     "partners": 1,
@@ -18297,7 +18297,7 @@
      "won": true,
      "role": "도급업체",
      "share": 49.9,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -18406,7 +18406,7 @@
    "name": "주식회사 아이원",
    "ceo": "김한수",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -18497,7 +18497,7 @@
    "name": "쿠도커뮤니케이션(주)",
    "ceo": "김용식",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -18588,7 +18588,7 @@
    "name": "신다시스 주식회사",
    "ceo": "성근우",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -18679,7 +18679,7 @@
    "name": "주식회사 메이크봇시스템즈",
    "ceo": "김동효",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -18770,7 +18770,7 @@
    "name": "(주)비즈스프링",
    "ceo": "이철승",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -18861,7 +18861,7 @@
    "name": "주식회사 드림아이디어소프트",
    "ceo": "이제환",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -19247,7 +19247,7 @@
    "name": "(주)레이드백",
    "ceo": "최혜민",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -19519,7 +19519,7 @@
    "name": "주식회사 유니바(UNIVA Corp.)",
    "ceo": "남명진",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 909312000,
     "partners": 1,
@@ -19563,7 +19563,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 341000000,
     "partners": 0,
     "lastAt": "2026-09-09 11:00:00"
    },
@@ -19585,7 +19585,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -19655,7 +19655,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 525964880,
     "partners": 2,
     "lastAt": "2026-09-08 12:00:00"
    },
@@ -19677,7 +19677,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 70,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -19701,7 +19701,7 @@
    "name": "주식회사 포티투마루",
    "ceo": "김동환",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 0,
     "partners": 2,
@@ -19725,7 +19725,7 @@
      "won": true,
      "role": "도급업체",
      "share": 20,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -19749,7 +19749,7 @@
    "name": "주식회사 어기야팩토리",
    "ceo": "최현우",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 1,
     "wonAmount": 0,
     "partners": 2,
@@ -19773,7 +19773,7 @@
      "won": true,
      "role": "도급업체",
      "share": 10,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [
@@ -21249,7 +21249,7 @@
    "name": "다온상사",
    "ceo": "김민지",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -21370,7 +21370,7 @@
    "name": "삼도",
    "ceo": "김수재",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -21491,7 +21491,7 @@
    "name": "주식회사 모아텍",
    "ceo": "김동섭",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -21612,7 +21612,7 @@
    "name": "대진",
    "ceo": "박상미",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -21733,7 +21733,7 @@
    "name": "주식회사 극동 아이.씨.엠",
    "ceo": "이영심",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -21854,7 +21854,7 @@
    "name": "모아상사",
    "ceo": "최중강",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -21977,7 +21977,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 147653000,
     "partners": 0,
     "lastAt": "2026-09-04 12:00:00"
    },
@@ -21999,7 +21999,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -22208,7 +22208,7 @@
    "name": "주식회사 인사이트에이아이",
    "ceo": "최성욱",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -22274,7 +22274,7 @@
    "name": "(주)스텝하우",
    "ceo": "황성욱",
    "stats": {
-    "bids": 0,
+    "bids": 1,
     "wins": 0,
     "wonAmount": 0,
     "partners": 0,
@@ -22357,7 +22357,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 172800000,
     "partners": 0,
     "lastAt": "2026-09-01 16:00:00"
    },
@@ -22379,7 +22379,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],
@@ -22433,7 +22433,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 285670000,
     "partners": 0,
     "lastAt": "2026-08-24 15:00:00"
    },
@@ -22455,7 +22455,7 @@
      "won": true,
      "role": "주계약업체",
      "share": 100,
-     "contractAmount": 0
+     "contractAmount": null
     }
    ],
    "partners": [],

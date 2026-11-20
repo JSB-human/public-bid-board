@@ -88,7 +88,13 @@
   .stat.orange .value { color: var(--orange); }
 
   /* 검색과 필터 (스크롤하면 위에 붙음) */
-  .toolbar { position: sticky; top: 56px; z-index: 9; background: var(--bg); padding: 16px 0 12px; margin: 0 -16px; }
+  /* 메뉴 */
+  header .tabs { display: flex; gap: 4px; height: 44px; align-items: stretch; justify-content: flex-start; }
+  .tabs a { display: flex; align-items: center; padding: 0 14px; font-size: 15px; font-weight: 700; color: var(--muted); text-decoration: none;
+    border-bottom: 2.5px solid transparent; transition: color .15s, border-color .15s; }
+  .tabs a:hover { color: var(--sub); }
+  .tabs a[aria-current="page"] { color: var(--text); border-bottom-color: var(--text); }
+  .toolbar { position: sticky; top: 100px; z-index: 9; background: var(--bg); padding: 16px 0 12px; margin: 0 -16px; }
   .toolbar .inner { padding: 0 16px; }
   .search { position: relative; }
   .search svg { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--muted); pointer-events: none; }
@@ -285,6 +291,91 @@
     .cond { grid-template-columns: 1fr; gap: 4px; }
     .cond .ck { padding-top: 0; }
   }
+  /* ---------- 마감·결과 / 업체 ---------- */
+  .list-grid { display: grid; gap: 10px; padding-bottom: 8px; }
+  .stat[role="presentation"] { cursor: default; }
+  .stat[role="presentation"]:hover { background: none; }
+  .badge.st-ok { background: var(--green-weak); color: var(--green); }
+  .badge.st-bad { background: var(--red-weak); color: var(--red); }
+  .badge.st-wait { background: var(--field); color: var(--muted); }
+  .who { font-size: 13px; font-weight: 700; color: var(--text); padding: 2px 0; }
+  .alabel { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .co { color: inherit; text-decoration: none; font-weight: 600; }
+  .co:hover { color: var(--blue); text-decoration: underline; }
+  td small, .mname small { display: block; font-size: 12px; color: var(--muted); font-weight: 400; }
+  .members { display: grid; gap: 6px; margin-top: 8px; }
+  .member { display: grid; grid-template-columns: 64px 1fr 150px 70px; gap: 10px; align-items: center; background: var(--field); border-radius: 12px; padding: 10px 12px; font-size: 14px; }
+  .role { white-space: nowrap; font-size: 12px; font-weight: 700; color: var(--sub); background: var(--card); border-radius: 6px; padding: 2px 6px; text-align: center; }
+  .role.lead { color: var(--blue-text); background: var(--blue-weak); }
+  .share { display: flex; align-items: center; gap: 8px; }
+  .share .bar { flex: 1; height: 8px; border-radius: 999px; background: var(--card); overflow: hidden; }
+  .share .bar i { display: block; height: 100%; background: var(--blue); border-radius: 999px; }
+  .share b { font-size: 13px; min-width: 36px; text-align: right; font-variant-numeric: tabular-nums; }
+  .mamt { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .reason { display: block; font-size: 12px; font-weight: 500; color: var(--muted); margin-top: 2px; }
+  .section-title small { font-weight: 500; margin-left: 6px; color: var(--faint); }
+  .rank-wrap { overflow-x: auto; border-radius: 12px; background: var(--field); }
+  .rank { width: 100%; min-width: 540px; border-collapse: collapse; font-size: 14px; }
+  .rank th { text-align: left; font-size: 12px; color: var(--muted); font-weight: 600; padding: 10px 12px; white-space: nowrap; }
+  .rank td { padding: 9px 12px; border-top: 1px solid var(--line); vertical-align: top; }
+  .rank .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .rank tr.win td { background: var(--green-weak); }
+  .rank .badge { white-space: nowrap; }
+  .rank tr.win td:first-child { box-shadow: inset 3px 0 0 var(--green); }
+  .cta-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .cta-row .cta { flex: 1; min-width: 180px; }
+  .cta.ghost { background: var(--field); color: var(--text); }
+  .co-card { display: grid; grid-template-columns: 44px 1fr auto; gap: 14px; padding: 18px 20px; text-decoration: none; color: inherit; align-items: start; }
+  .panel { background: var(--card); border-radius: 20px; box-shadow: var(--shadow); padding: 4px 20px 20px; margin-top: 12px; }
+  .facts { display: grid; grid-template-columns: 96px 1fr; gap: 8px 12px; font-size: 14px; }
+  .facts .k { color: var(--muted); }
+  .facts .v { color: var(--text); min-width: 0; overflow-wrap: anywhere; }
+  .facts .v a { color: var(--blue); }
+  .facts .lic { display: inline-block; margin: 0 4px 4px 0; }
+  .back { margin: 18px 4px 0; }
+  .back a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: 14px; }
+  .co-hero { padding-top: 10px; }
+  .sub-title { font-size: 13px; font-weight: 700; color: var(--sub); margin: 14px 0 8px; }
+  .rel-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .rel { display: grid; gap: 4px; }
+  .rel a { display: flex; justify-content: space-between; gap: 8px; text-decoration: none; color: var(--text); background: var(--field); border-radius: 10px; padding: 8px 12px; font-size: 14px; font-weight: 600; }
+  .rel a:hover { background: var(--line); }
+  .rel small { color: var(--muted); font-weight: 500; white-space: nowrap; }
+  .nps-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; }
+  .nps-head b { font-size: 22px; }
+  .nps-head .up { color: var(--green); font-weight: 700; font-size: 14px; }
+  .nps-head .down { color: var(--red); font-weight: 700; font-size: 14px; }
+  .spark { width: 100%; height: auto; display: block; }
+  .spark .line { fill: none; stroke: var(--blue); stroke-width: 2.5; stroke-linejoin: round; }
+  .spark .area { fill: var(--blue-weak); stroke: none; }
+  .spark circle { fill: var(--card); stroke: var(--blue); stroke-width: 2; }
+  .spark text { font-size: 12px; fill: var(--muted); }
+  .graph-card { background: var(--card); border-radius: 20px; box-shadow: var(--shadow); padding: 14px 16px 8px; margin-top: 4px; }
+  .graph-head { display: flex; justify-content: space-between; align-items: center; font-size: 14px; flex-wrap: wrap; gap: 6px; }
+  .legend { color: var(--muted); font-size: 12px; display: flex; align-items: center; gap: 6px; }
+  .legend i { display: inline-block; width: 18px; height: 3px; border-radius: 2px; margin-left: 6px; }
+  .lg-p { background: var(--blue); }
+  .lg-r { background: var(--faint); }
+  .graph { width: 100%; height: auto; display: block; }
+  .graph line.e-partner { stroke: var(--blue); stroke-opacity: .75; }
+  .graph line.e-rival { stroke: var(--faint); stroke-opacity: .55; stroke-dasharray: 4 4; }
+  .graph circle { stroke: var(--card); stroke-width: 2; transition: r .15s; }
+  .graph .n-me circle { fill: var(--text); }
+  .graph .n-partner circle, .graph .n-win circle { fill: var(--blue); }
+  .graph .n-rival circle, .graph .n-plain circle { fill: var(--faint); }
+  .graph text { font-size: 11px; fill: var(--sub); font-weight: 600; paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+  .graph a:hover circle { stroke: var(--blue); stroke-width: 3; }
+  .ego { background: var(--field); border-radius: 14px; }
+  @media (max-width: 640px) {
+    .member { grid-template-columns: auto 1fr; }
+    .member .share { grid-column: 1 / -1; }
+    .member .mamt { grid-column: 1 / -1; text-align: left; }
+    .rel-cols { grid-template-columns: 1fr; }
+    .co-card { grid-template-columns: 40px 1fr; padding: 16px; gap: 12px; }
+    .co-card .side { grid-column: 2; display: flex; gap: 8px; align-items: baseline; }
+    .tabs a { padding: 0 10px; font-size: 14px; }
+    .panel { padding: 4px 16px 16px; }
+  }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
@@ -294,9 +385,14 @@
     <div class="brand"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></i>공고 모음</div>
     <div class="updated" id="updated">불러오는 중</div>
   </div>
+  <nav class="wrap tabs" aria-label="메뉴">
+    <a href="#" data-tab="open">진행 중 공고</a>
+    <a href="#results" data-tab="results">마감·결과</a>
+    <a href="#companies" data-tab="companies">업체</a>
+  </nav>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="view-open">
   <section class="hero">
     <h1>지금 입찰할 수 있는<br>공공사업 <em id="heroCount">-</em>건</h1>
     <p>공간정보 · 데이터 · AI 분야 나라장터 용역 공고를 모았어요.</p>
@@ -338,7 +434,11 @@
   </footer>
 </main>
 
+<main class="wrap" id="view-results" hidden></main>
+<main class="wrap" id="view-companies" hidden></main>
+
 <script type="module" src="viewer.js"></script>
+<script type="module" src="insights.js"></script>
 <script>
 const state = { items: [], sort: 'amount', min: 0, only: null, open: new Set() };
 const $ = (id) => document.getElementById(id);

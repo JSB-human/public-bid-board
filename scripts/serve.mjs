@@ -14,7 +14,8 @@ createServer(async (req, res) => {
   if (!file.startsWith(SITE)) { res.writeHead(403).end(); return; }
   try {
     const body = await readFile(file);
-    res.writeHead(200, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream' }).end(body);
+    // 로컬 확인용이라 항상 새 파일을 주도록 캐시를 끈다.
+    res.writeHead(200, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store' }).end(body);
   } catch {
     res.writeHead(404).end('not found');
   }

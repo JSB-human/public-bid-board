@@ -55,7 +55,7 @@ for (const r of results) {
     if (!c || seen.has(b.bizno)) continue;
     seen.add(b.bizno);
     const m = members.find((x) => x.bizno === b.bizno);
-    c.history.push({ ...base, rank: b.rank, bidAmount: b.amount, rate: b.rate, won: winners.has(b.bizno), role: m?.role || '입찰', share: m?.share ?? null, contractAmount: m && r.contract?.amount != null && m.share != null ? Math.round((r.contract.amount * m.share) / 100) : null });
+    c.history.push({ ...base, rank: b.rank, bidAmount: b.amount, rate: b.rate, won: winners.has(b.bizno), role: m?.role || '입찰', share: m?.share ?? null, contractAmount: m && r.contract?.amount && m.share != null ? Math.round((r.contract.amount * m.share) / 100) : null });
     // 같은 공고에서 겨룬 회사
     for (const o of r.bidders) if (o.bizno && o.bizno !== b.bizno) bump(c.rivals, o, { bid: r.id });
   }
@@ -65,7 +65,7 @@ for (const r of results) {
     if (!c) continue;
     if (!seen.has(m.bizno)) {
       seen.add(m.bizno);
-      c.history.push({ ...base, rank: null, bidAmount: null, rate: null, won: true, role: m.role, share: m.share, contractAmount: r.contract.amount != null && m.share != null ? Math.round((r.contract.amount * m.share) / 100) : null });
+      c.history.push({ ...base, rank: null, bidAmount: null, rate: null, won: true, role: m.role, share: m.share, contractAmount: r.contract.amount && m.share != null ? Math.round((r.contract.amount * m.share) / 100) : null });
     }
     for (const o of members) if (o.bizno && o.bizno !== m.bizno) bump(c.partners, o, { bid: r.id, share: o.share });
   }
@@ -188,7 +188,8 @@ const out = ranked.map((c) => {
   return {
     bizno: c.bizno, name: k.basic?.name || c.name, ceo: k.basic?.ceo || c.ceo,
     stats: {
-      bids: h.filter((x) => x.rank != null).length, wins: wins.length,
+      // 참여: 대표사로 입찰했거나 컨소시엄 구성사로 들어간 공고 수
+      bids: h.length, wins: wins.length,
       wonAmount: wins.reduce((s, x) => s + (x.contractAmount ?? (x.rank === 1 ? x.bidAmount : 0) ?? 0), 0),
       partners: c.partners.size, lastAt: h[0]?.openedAt || null,
     },
