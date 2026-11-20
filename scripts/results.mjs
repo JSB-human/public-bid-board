@@ -199,6 +199,11 @@ const items = [...results.values()].sort((a, b) => String(b.openedAt || b.deadli
 await mkdir(path.dirname(OUT), { recursive: true });
 await mkdir(path.dirname(STATE), { recursive: true });
 await writeFile(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), source: '조달청 나라장터 낙찰정보·계약정보서비스', items }, null, 1) + '\n');
+// 아직 공고 정보도 못 채운 후보는 다음 실행으로 넘긴다
+state.pending = {};
+for (const [id, c] of candidates) if (!state.excluded[id] && !results.get(id)?.title) state.pending[id] = { ord: c.ord || '000', keyword: c.keyword };
+if (quotaHit) console.warn('오늘 낙찰정보 API 호출 한도를 다 써서 나머지는 다음 실행에서 이어 갑니다.');
+console.log(`다음 실행으로 넘긴 후보 ${Object.keys(state.pending).length}건`);
 await writeFile(STATE, JSON.stringify(state, null, 1) + '\n');
 const pending = order.length - done - excludedNow - failed;
 console.log(`결과: 이번에 ${done}건 채움, ${excludedNow}건 조건 밖, ${failed}건 실패, 남은 ${Math.max(0, pending)}건 | 저장 ${items.length}건 | API 호출 ${stats.calls}회`);
