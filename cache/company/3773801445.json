@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주은테크",
+  "ceo": "황준원",
+  "opened": "2026-03-19",
+  "region": "부산광역시 남구 대연동",
+  "address": "부산광역시 남구 용소로14번길 29 (대연동) 2층",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:33:33.002Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:33:33.413Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:33:34.088Z"
+ }
+}

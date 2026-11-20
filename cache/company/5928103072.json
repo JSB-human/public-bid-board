@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "씨투씨피 주식회사",
+  "ceo": "이창호",
+  "opened": "2024-02-05",
+  "region": "서울특별시 송파구 문정동",
+  "address": "서울특별시 송파구 충민로 66 (문정동) 가든파이브 라이프 제7층 티동 7032호",
+  "employees": 2,
+  "homepage": "www.c2cp.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:34:05.461Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:34:05.840Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:34:05.840Z"
+ }
+}

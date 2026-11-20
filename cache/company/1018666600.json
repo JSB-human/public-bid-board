@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 메이크봇시스템즈",
+  "ceo": "김동효",
+  "opened": "2011-11-01",
+  "region": "서울특별시 구로구 구로동",
+  "address": "서울특별시 구로구 디지털로34길 43 (구로동) 405-4325호",
+  "employees": 6,
+  "homepage": "http://www.cway.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:34:29.823Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:34:30.210Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:34:30.210Z"
+ }
+}
