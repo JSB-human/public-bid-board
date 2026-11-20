@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T01:41:44.062Z",
+ "updatedAt": "2026-11-20T01:44:04.952Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -14,7 +14,8 @@
     "공간정보"
    ],
    "posted": "2026-11-17 16:19:35",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01840253",
@@ -28,7 +29,8 @@
     "공간정보"
    ],
    "posted": "2026-11-18 17:23:20",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01830356",
@@ -42,7 +44,8 @@
     "도시계획정보"
    ],
    "posted": "2026-11-16 10:29:52",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01836607",
@@ -57,7 +60,8 @@
     "데이터허브"
    ],
    "posted": "2026-11-17 17:46:30",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01836025",
@@ -71,7 +75,8 @@
     "공간정보"
    ],
    "posted": "2026-11-18 10:16:01",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01838911",
@@ -85,7 +90,8 @@
     "공간정보"
    ],
    "posted": "2026-11-18 15:49:14",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01829857",
@@ -97,19 +103,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01829857&bidPbancOrd=000",
    "keywords": [
     "스마트도시"
-   ]
-  },
-  {
-   "id": "R26BK01837152",
-   "ord": "000",
-   "title": "2027년 빅데이터 시스템 통합 유지관리 용역",
-   "org": "제주특별자치도",
-   "amount": 217472727,
-   "deadline": "2026-11-30 16:00",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837152&bidPbancOrd=000",
-   "keywords": [
-    "빅데이터"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01832681",
@@ -124,7 +119,8 @@
     "생성형"
    ],
    "posted": "2026-11-16 14:35:48",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01835915",
@@ -138,7 +134,8 @@
     "공간정보"
    ],
    "posted": "2026-11-17 13:52:37",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01841479",
@@ -152,7 +149,8 @@
     "빅데이터"
    ],
    "posted": "2026-11-19 16:00:42",
-   "method": "일반경쟁"
+   "method": "일반경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01836070",
@@ -164,21 +162,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01836070&bidPbancOrd=000",
    "keywords": [
     "공간정보"
-   ]
-  },
-  {
-   "id": "R26BK01837030",
-   "ord": "000",
-   "title": "2027년 도시계획정보체계(UPIS)현행화 및 서비스 용역",
-   "org": "경상남도 김해시",
-   "amount": 154545455,
-   "deadline": "2026-12-01 10:00:00",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837030&bidPbancOrd=000",
-   "keywords": [
-    "도시계획정보"
    ],
-   "posted": "2026-11-18 09:35:18",
-   "method": "제한경쟁"
+   "regions": []
   },
   {
    "id": "R26BK01840245",
@@ -193,7 +178,8 @@
     "스마트도시"
    ],
    "posted": "2026-11-19 15:59:10",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01832175",
@@ -207,7 +193,8 @@
     "공간정보"
    ],
    "posted": "2026-11-16 16:02:49",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01834805",
@@ -221,7 +208,8 @@
     "빅데이터"
    ],
    "posted": "2026-11-18 14:18:29",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01842396",
@@ -235,7 +223,8 @@
     "빅데이터"
    ],
    "posted": "2026-11-19 15:05:12",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01830982",
@@ -249,7 +238,8 @@
     "공간정보"
    ],
    "posted": "2026-11-15 19:50:16",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01838165",
@@ -263,7 +253,8 @@
     "공간정보"
    ],
    "posted": "2026-11-18 14:16:43",
-   "method": "제한경쟁"
+   "method": "제한경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01840656",
@@ -277,7 +268,8 @@
     "공간정보"
    ],
    "posted": "2026-11-19 07:54:20",
-   "method": "일반경쟁"
+   "method": "일반경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01840321",
@@ -289,7 +281,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01840321&bidPbancOrd=000",
    "keywords": [
     "빅데이터"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01824268",
@@ -301,7 +294,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01824268&bidPbancOrd=000",
    "keywords": [
     "공간정보"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01831347",
@@ -315,7 +309,8 @@
     "AI"
    ],
    "posted": "2026-11-16 10:08:19",
-   "method": "일반경쟁"
+   "method": "일반경쟁",
+   "regions": []
   },
   {
    "id": "R26BK01832101",
@@ -327,21 +322,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832101&bidPbancOrd=000",
    "keywords": [
     "AI"
-   ]
-  },
-  {
-   "id": "R26BK01833663",
-   "ord": "000",
-   "title": "2027년 공간정보시스템 통합유지관리 용역",
-   "org": "경상남도 창원시",
-   "amount": 107390273,
-   "deadline": "2026-11-25 10:00:00",
-   "posted": "2026-11-17 10:43:34",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833663&bidPbancOrd=000",
-   "keywords": [
-    "공간정보"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01835143",
@@ -355,35 +337,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01835143&bidPbancOrd=000",
    "keywords": [
     "공간정보"
-   ]
-  },
-  {
-   "id": "R26BK01837995",
-   "ord": "000",
-   "title": "2027년 김해시 공간정보통합시스템 유지관리 용역",
-   "org": "경상남도 김해시",
-   "amount": 162360000,
-   "deadline": "2026-12-01 10:00:00",
-   "posted": "2026-11-19 10:34:27",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01837995&bidPbancOrd=000",
-   "keywords": [
-    "공간정보"
-   ]
-  },
-  {
-   "id": "R26BK01841899",
-   "ord": "000",
-   "title": "2027년 거제시 공간정보통합시스템 유지관리 용역",
-   "org": "경상남도 거제시",
-   "amount": 49409091,
-   "deadline": "2026-11-25 10:00:00",
-   "posted": "2026-11-19 13:36:46",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841899&bidPbancOrd=000",
-   "keywords": [
-    "공간정보"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01841573",
@@ -397,7 +352,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841573&bidPbancOrd=000",
    "keywords": [
     "공간정보"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01789176",
@@ -411,7 +367,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01789176&bidPbancOrd=000",
    "keywords": [
     "빅데이터"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01839165",
@@ -425,7 +382,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01839165&bidPbancOrd=000",
    "keywords": [
     "빅데이터"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01834827",
@@ -439,7 +397,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834827&bidPbancOrd=000",
    "keywords": [
     "AI"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01830366",
@@ -453,7 +412,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830366&bidPbancOrd=000",
    "keywords": [
     "드론"
-   ]
+   ],
+   "regions": []
   },
   {
    "id": "R26BK01843917",
@@ -467,21 +427,8 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01843917&bidPbancOrd=000",
    "keywords": [
     "빅데이터"
-   ]
-  },
-  {
-   "id": "R26BK01839353",
-   "ord": "000",
-   "title": "2027년 스마트도시 정보시스템 통합 유지관리 용역",
-   "org": "경상남도 김해시",
-   "amount": 396352727,
-   "deadline": "2026-12-03 10:00:00",
-   "posted": "2026-11-20 09:34:16",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01839353&bidPbancOrd=000",
-   "keywords": [
-    "스마트도시"
-   ]
+   ],
+   "regions": []
   }
  ]
 }
