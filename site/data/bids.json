@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T01:44:04.952Z",
+ "updatedAt": "2026-11-20T01:51:15.788Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -15,7 +15,42 @@
    ],
    "posted": "2026-11-17 16:19:35",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 1337484400,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "(재공고서) 용역_협상_SWO_국가_제한_국내_유지관리_1468_20억미만_공동이행_하도급사전승인_차등3점_자체.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836161&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(재공고서) 용역_협상_SWO_국가_제한_국내_유지관리_1468_20억미만_공동이행_하도급사전승인_차등3점_자체.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836161&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01840253",
@@ -30,7 +65,54 @@
    ],
    "posted": "2026-11-18 17:23:20",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "인천광역시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 563791000,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-23 09:00:00",
+    "opening": "2026-12-01 16:00:00",
+    "refNo": "인천광역시 공고 제2026-2357호",
+    "files": [
+     {
+      "name": "★(긴급)입찰공고문.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840253&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "★(긴급)입찰공고문.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840253&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(제안요청서_과업지시서 통합형)2027년 공간정보플랫폼 통합 유지관리_최종.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840253&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "물품공급기술지원협약서_엠투소프트_최종.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840253&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "물품공급기술지원협약서_올포랜드_최종.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840253&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01830356",
@@ -45,7 +127,46 @@
    ],
    "posted": "2026-11-16 10:29:52",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "서울특별시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 366284000,
+    "regDeadline": "2026-11-26 18:00",
+    "bidBegin": "2026-11-25 09:00:00",
+    "opening": "2026-11-27 17:00:00",
+    "refNo": "서울특별시 재무공고 제2026-2604호",
+    "files": [
+     {
+      "name": "입찰공고문(재공고).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830356&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고문(재공고).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830356&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830356&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01836607",
@@ -61,7 +182,46 @@
    ],
    "posted": "2026-11-17 17:46:30",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 367252950,
+    "regDeadline": "2026-12-07 18:00",
+    "bidBegin": "2026-12-04 10:00:00",
+    "opening": "2026-12-08 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "(공고서) 용역_협상_SWO_지방_제한_국내_유지관리_1468_5억미만_공동X,하도X,차등3점,부정당위탁_온서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836607&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(공고서) 용역_협상_SWO_지방_제한_국내_유지관리_1468_5억미만_공동X,하도X,차등3점,부정당위탁_온서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836607&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "네트워크 장비 구축·운영사업 추가특수조건(조달청지침)(제8258호)(20210615).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836607&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01836025",
@@ -76,7 +236,54 @@
    ],
    "posted": "2026-11-18 10:16:01",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "울산광역시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 363810900,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-25 10:00:00",
+    "opening": "2026-12-01 11:00:00",
+    "refNo": "울산광역시 공고 제2026-2168호",
+    "files": [
+     {
+      "name": "1. 용역 입찰공고(협상에의한계약) - 2027~2028년도 공간정보시스템 유지관리 용역(장기계속)_최종.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836025&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. 용역 입찰공고(협상에의한계약) - 2027~2028년도 공간정보시스템 유지관리 용역(장기계속)_최종.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836025&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2. 제안요청서 - 27~28년 공간정보시스템 유지관리 용역(수정).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836025&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "3. [붙임] 조달청 제안서 평가대행 집행기준(2027~2028년도 공간정보시스템 유지관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836025&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "4. 입찰참가등록 서식 - 2027~2028년도 공간정보시스템 유지관리 용역.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01836025&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01838911",
@@ -91,7 +298,38 @@
    ],
    "posted": "2026-11-18 15:49:14",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "DB구축 및 자료입력",
+     "공간정보DB구축서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 361152590,
+    "regDeadline": "2026-12-14 18:00",
+    "bidBegin": "2026-12-10 10:00:00",
+    "opening": "2026-12-15 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "입찰공고서_R26BK01838911.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01838911&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01829857",
@@ -104,7 +342,13 @@
    "keywords": [
     "스마트도시"
    ],
-   "regions": []
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01832681",
@@ -120,7 +364,58 @@
    ],
    "posted": "2026-11-16 14:35:48",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "패키지소프트웨어개발및도입서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "서울특별시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 234622000,
+    "regDeadline": "2026-11-26 18:00",
+    "bidBegin": "2026-11-25 10:00:00",
+    "opening": "2026-11-27 17:00:00",
+    "refNo": "서울특별시 재무공고 제2026-2616호",
+    "files": [
+     {
+      "name": "1. 입찰공고문_서울특별시 재무공고 제2026-2616호.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832681&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. 입찰공고문_서울특별시 재무공고 제2026-2616호.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832681&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2. 제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832681&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "3. 물품공급및기술지원협약서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832681&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(행안부예규) 지방자치단체 입찰시 낙찰자 결정기준(2026.11.2.).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832681&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(행안부예규) 지방자치단체 입찰 및 계약집행기준(2026.7.1.).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832681&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01835915",
@@ -135,7 +430,46 @@
    ],
    "posted": "2026-11-17 13:52:37",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "충청남도",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "직찰",
+    "joint": "(수기)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 232530000,
+    "regDeadline": null,
+    "bidBegin": null,
+    "opening": "2026-11-30 17:00:00",
+    "refNo": "운영지원과",
+    "files": [
+     {
+      "name": "입찰공고서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01835915&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01835915&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01835915&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01841479",
@@ -150,7 +484,46 @@
    ],
    "posted": "2026-11-19 16:00:42",
    "method": "일반경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "대구광역시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 199960000,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-23 10:00:00",
+    "opening": "2026-12-01 11:00:00",
+    "refNo": "대구광역시 공고 제2026-1654호",
+    "files": [
+     {
+      "name": "1. (긴급)입찰공고문(2027년도 빅데이터 통합플랫폼 운영 및 유지관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01841479&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. (긴급)입찰공고문(2027년도 빅데이터 통합플랫폼 운영 및 유지관리 용역).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01841479&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2. 제안요청서(2027년 빅데이터 통합플랫폼 운영 및 유지관리(수정2).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01841479&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01836070",
@@ -163,7 +536,21 @@
    "keywords": [
     "공간정보"
    ],
-   "regions": []
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(데이터베이스제작및검색서비스사업)/1470"
+    },
+    {
+     "group": "1",
+     "name": "측량업(기타-수치지도제작업)/5029"
+    },
+    {
+     "group": "1",
+     "name": "초경량비행장치사용사업/6039"
+    }
+   ]
   },
   {
    "id": "R26BK01840245",
@@ -179,7 +566,46 @@
    ],
    "posted": "2026-11-19 15:59:10",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 제주지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 171762200,
+    "regDeadline": "2026-12-07 18:00",
+    "bidBegin": "2026-12-04 10:00:00",
+    "opening": "2026-12-08 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "일반용역(내자) 구매입찰공고(지방, 중기간, 공동, 차등점수제).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840245&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "일반용역(내자) 구매입찰공고(지방, 중기간, 공동, 차등점수제).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840245&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서 등.zip",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840245&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01832175",
@@ -194,7 +620,50 @@
    ],
    "posted": "2026-11-16 16:02:49",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "한국국토정보공사",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 150500000,
+    "regDeadline": "2026-11-26 18:00",
+    "bidBegin": "2026-11-17 09:00:00",
+    "opening": "2026-11-27 11:00:00",
+    "refNo": "공간사업기획처-4179",
+    "files": [
+     {
+      "name": "(재)공고문(공간정보 품질관리시스템 운영 및 유지관리).hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832175&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서(2027년 공간정보품질관리시스템 운영 및 유지관리).hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832175&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "퇴직자 근무현황 확인서.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832175&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(재)공고문(공간정보 품질관리시스템 운영 및 유지관리).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01832175&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01834805",
@@ -209,7 +678,42 @@
    ],
    "posted": "2026-11-18 14:18:29",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 대전지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 148569920,
+    "regDeadline": "2026-12-08 18:00",
+    "bidBegin": "2026-12-07 10:00:00",
+    "opening": "2026-12-09 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "공고(2027년 아산시 통합빅데이터플랫폼 유지관리 및 분석사업).hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01834805&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "공고(2027년 아산시 통합빅데이터플랫폼 유지관리 및 분석사업).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01834805&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01842396",
@@ -224,7 +728,54 @@
    ],
    "posted": "2026-11-19 15:05:12",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "DB구축 및 자료입력",
+     "데이터서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "서울특별시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 127270000,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 17:00:00",
+    "refNo": "서울특별시 재무공고 제2026-2678호",
+    "files": [
+     {
+      "name": "1. 입찰공고문_서울특별시 재무공고 제2026-2678호.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842396&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. 입찰공고문_서울특별시 재무공고 제2026-2678호.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842396&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2. 제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842396&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(행안부예규) 지방자치단체 입찰시 낙찰자 결정기준(2026.11.2.).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842396&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(행안부예규) 지방자치단체 입찰 및 계약집행기준(2026.7.1.).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01842396&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01830982",
@@ -239,7 +790,58 @@
    ],
    "posted": "2026-11-15 19:50:16",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "경상북도",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 125151000,
+    "regDeadline": "2026-12-06 18:00",
+    "bidBegin": "2026-11-30 09:00:00",
+    "opening": "2026-12-07 18:00:00",
+    "refNo": "경상북도 공고 제2026 - 1982호",
+    "files": [
+     {
+      "name": "공고문[2027년도 공간정보시스템 통합유지보수 용역].hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830982&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "공고문[2027년도 공간정보시스템 통합유지보수 용역].pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830982&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서[2027년도 공간정보시스템 통합유지보수 용역].hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830982&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서[2027년도 공간정보시스템 통합유지보수 용역].pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830982&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "기술지원협약서[2027년도 공간정보시스템 통합유지보수 용역].pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01830982&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01838165",
@@ -254,7 +856,42 @@
    ],
    "posted": "2026-11-18 14:16:43",
    "method": "제한경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 경남지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 114396590,
+    "regDeadline": "2026-12-02 18:00",
+    "bidBegin": "2026-12-01 10:00:00",
+    "opening": "2026-12-03 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "공고서(지방_협상_대행_장기_공동_1468_기술지원).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01838165&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "공고서(지방_협상_대행_장기_공동_1468_기술지원).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01838165&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01840656",
@@ -269,7 +906,50 @@
    ],
    "posted": "2026-11-19 07:54:20",
    "method": "일반경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "충청남도 논산시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 109453700,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 18:00:00",
+    "refNo": "논산시 토지정보과-18314",
+    "files": [
+     {
+      "name": "입찰공고문[2027년 공간정보시스템 통합유지보수 용역] -재공고.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840656&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고문[2027년 공간정보시스템 통합유지보수 용역] -재공고.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840656&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서[2027년 공간정보시스템 통합유지보수 용역].hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01840656&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01840321",
@@ -282,7 +962,8 @@
    "keywords": [
     "빅데이터"
    ],
-   "regions": []
+   "regions": [],
+   "licenses": []
   },
   {
    "id": "R26BK01824268",
@@ -295,7 +976,13 @@
    "keywords": [
     "공간정보"
    ],
-   "regions": []
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01831347",
@@ -310,7 +997,42 @@
    ],
    "posted": "2026-11-16 10:08:19",
    "method": "일반경쟁",
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "정보시스템개발서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "(주)지에스티",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 77000000,
+    "regDeadline": "2026-11-26 18:00",
+    "bidBegin": "2026-11-16 10:30:00",
+    "opening": "2026-11-27 11:00:00",
+    "refNo": "GST-2026-003",
+    "files": [
+     {
+      "name": "(지에스티) 대시보드 제안요청서_20261116.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831347&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(지에스티) 대시보드 제안요청서_20261116.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831347&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01832101",
@@ -323,7 +1045,13 @@
    "keywords": [
     "AI"
    ],
-   "regions": []
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "학술.연구용역/1169"
+    }
+   ]
   },
   {
    "id": "R26BK01835143",
@@ -338,7 +1066,42 @@
    "keywords": [
     "공간정보"
    ],
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 156321180,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "재공고서(지방_협상_1468_공동_온서_유지관리)_의정부시.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01835143&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "재공고서(지방_협상_1468_공동_온서_유지관리)_의정부시.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01835143&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01841573",
@@ -353,7 +1116,46 @@
    "keywords": [
     "공간정보"
    ],
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "조달청 제주지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 229661220,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "재공고서_R26BK01841573(지방, 조평).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01841573&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "재공고서_R26BK01841573(지방, 조평).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01841573&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01789176",
@@ -368,7 +1170,46 @@
    "keywords": [
     "빅데이터"
    ],
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 183687060,
+    "regDeadline": "2026-12-02 18:00",
+    "bidBegin": "2026-12-01 10:00:00",
+    "opening": "2026-12-03 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "입찰공고서(지방_협상_1468_공동_온서_유지관리)_협약_고양시.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789176&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서(지방_협상_1468_공동_온서_유지관리)_협약_고양시.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01789176&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01839165",
@@ -383,7 +1224,58 @@
    "keywords": [
     "빅데이터"
    ],
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "대전광역시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)혼합방식",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 285000000,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 11:00:00",
+    "refNo": "대전광역시 공고 제2026-1968호",
+    "files": [
+     {
+      "name": "공고문(2027년 교통빅데이터플랫폼 운영관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01839165&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서(2027년 교통빅데이터플랫폼 운영관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01839165&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "공고문(2027년 교통빅데이터플랫폼 운영관리 용역).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01839165&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "학술.연구용역/1169"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    },
+    {
+     "group": "2",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    },
+    {
+     "group": "2",
+     "name": "엔지니어링사업(교통)/3581"
+    }
+   ]
   },
   {
    "id": "R26BK01834827",
@@ -398,7 +1290,42 @@
    "keywords": [
     "AI"
    ],
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 대구지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 1450518618,
+    "regDeadline": "2026-12-07 18:00",
+    "bidBegin": "2026-12-04 10:00:00",
+    "opening": "2026-12-08 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "공고서(국가SW,중기간,20억미만,발표,긴급,차등)_정보시스템유지관리서비스.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01834827&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "공고서(국가SW,중기간,20억미만,발표,긴급,차등)_정보시스템유지관리서비스.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01834827&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01830366",
@@ -413,7 +1340,13 @@
    "keywords": [
     "드론"
    ],
-   "regions": []
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   },
   {
    "id": "R26BK01843917",
@@ -428,7 +1361,50 @@
    "keywords": [
     "빅데이터"
    ],
-   "regions": []
+   "regions": [],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "소프트웨어유지및지원서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "서울특별시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 964499000,
+    "regDeadline": "2026-11-30 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-01 17:00:00",
+    "refNo": "서울특별시 재무공고 제2026-2690호",
+    "files": [
+     {
+      "name": "1. 입찰공고문.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843917&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. 입찰공고문.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843917&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2. 제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843917&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "3. 물품공급ㆍ기술지원협약서(9부).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01843917&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ]
   }
  ]
 }
