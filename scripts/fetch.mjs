@@ -162,7 +162,11 @@ try {
   existing = JSON.parse(await readFile(OUT, 'utf8')).items || [];
 } catch {}
 const merged = new Map(existing.map((x) => [x.id, x]));
-for (const [id, row] of fetched) merged.set(id, { ...merged.get(id), ...row });
+// 새 값이 비어 있으면 예전 값을 지우지 않는다.
+for (const [id, row] of fetched) {
+  const filled = Object.fromEntries(Object.entries(row).filter(([, v]) => v !== null && v !== ''));
+  merged.set(id, { ...merged.get(id), ...filled });
+}
 
 // 참가가능지역(지역제한)을 공고별로 조회해 붙인다. 한 번 조회한 공고는 캐시에서 읽는다.
 const REGIONS = [
