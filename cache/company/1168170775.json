@@ -9,7 +9,7 @@
   "homepage": "http://www.solideos.com",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-20T08:40:13.517Z"
+  "fetchedAt": "2026-11-20T09:50:08.842Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 299
   },
   "found": true,
-  "fetchedAt": "2026-11-20T08:40:16.339Z"
+  "fetchedAt": "2026-11-20T09:50:12.091Z"
  },
  "dart": {
   "corpCode": "01458949",
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-20T08:40:17.046Z"
+  "fetchedAt": "2026-11-20T09:50:12.824Z"
  }
 }

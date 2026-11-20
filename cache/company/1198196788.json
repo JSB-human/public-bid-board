@@ -9,7 +9,7 @@
   "homepage": "http://www.uplusit.com",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-20T08:40:17.244Z"
+  "fetchedAt": "2026-11-20T09:50:13.018Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 424
   },
   "found": true,
-  "fetchedAt": "2026-11-20T08:40:20.079Z"
+  "fetchedAt": "2026-11-20T09:50:15.935Z"
  },
  "dart": {
   "corpCode": "01291706",
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-20T08:40:20.776Z"
+  "fetchedAt": "2026-11-20T09:50:16.649Z"
  }
 }

@@ -9,7 +9,7 @@
   "homepage": "www.nextini.com",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-20T08:39:31.635Z"
+  "fetchedAt": "2026-11-20T09:49:27.187Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 78
   },
   "found": true,
-  "fetchedAt": "2026-11-20T08:39:34.487Z"
+  "fetchedAt": "2026-11-20T09:49:30.015Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-20T08:39:34.487Z"
+  "fetchedAt": "2026-11-20T09:49:30.015Z"
  }
 }

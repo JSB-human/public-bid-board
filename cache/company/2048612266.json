@@ -9,7 +9,7 @@
   "homepage": "http://www.misotech.net",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-20T08:40:59.259Z"
+  "fetchedAt": "2026-11-20T09:50:55.768Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 79
   },
   "found": true,
-  "fetchedAt": "2026-11-20T08:41:02.059Z"
+  "fetchedAt": "2026-11-20T09:50:58.581Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-20T08:41:02.059Z"
+  "fetchedAt": "2026-11-20T09:50:58.581Z"
  }
 }

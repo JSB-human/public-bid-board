@@ -9,7 +9,7 @@
   "homepage": "http://www.ideainfo.kr",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-20T08:41:11.321Z"
+  "fetchedAt": "2026-11-20T09:51:08.074Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 38
   },
   "found": true,
-  "fetchedAt": "2026-11-20T08:41:14.122Z"
+  "fetchedAt": "2026-11-20T09:51:10.928Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-20T08:41:14.122Z"
+  "fetchedAt": "2026-11-20T09:51:10.928Z"
  }
 }

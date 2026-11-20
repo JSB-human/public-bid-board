@@ -9,18 +9,18 @@
   "homepage": "https://bandalhome.com/",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-20T08:39:29.694Z"
+  "fetchedAt": "2026-11-20T09:49:25.167Z"
  },
  "industries": [],
  "nps": {
   "months": {},
   "found": false,
-  "fetchedAt": "2026-11-20T08:39:30.081Z"
+  "fetchedAt": "2026-11-20T09:49:25.551Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-20T08:39:31.447Z"
+  "fetchedAt": "2026-11-20T09:49:26.995Z"
  }
 }
