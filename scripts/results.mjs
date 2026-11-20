@@ -126,8 +126,9 @@ const order = [...candidates.entries()]
   .sort((a, b) => (b[0] > a[0] ? 1 : -1)); // 공고번호가 클수록 최근
 
 let done = 0, excludedNow = 0, failed = 0;
-for (const [id, c] of order) {
-  if (!budgetLeft()) break;
+// 공고 여러 건을 동시에 조회한다(config.concurrency, 기본 5). 한도·인증 오류가 나면 모두 멈춘다.
+let stop = false;
+async function processOne(id, c) {
   const rec = results.get(id) || { id, ord: c.ord || '000' };
   try {
     // 공고 정보 (진행 중 목록에서 왔으면 그대로, 아니면 공고번호로 조회)
@@ -136,7 +137,7 @@ for (const [id, c] of order) {
       if (!n) {
         const r = await callApi(API.bid, 'getBidPblancListInfoServc02', { inqryDiv: '2', bidNtceNo: id, numOfRows: '10', pageNo: '1' });
         const it = r.items.sort((a, b) => (b.bidNtceOrd || '').localeCompare(a.bidNtceOrd || ''))[0];
-        if (!it) { failed++; continue; }
+        if (!it) { failed++; return; }
         n = normalizeNotice(it, c.keyword);
       }
       Object.assign(rec, {
@@ -145,13 +146,13 @@ for (const [id, c] of order) {
         reNotice: !!n.detail?.reNotice, regions: n.regions,
       });
     }
-    if (!wanted(rec)) { state.excluded[id] = '조건'; excludedNow++; continue; }
+    if (!wanted(rec)) { state.excluded[id] = '조건'; excludedNow++; return; }
     // 지역제한
     if (!rec.regions) {
       const r = await callApi(API.bid, 'getBidPblancListInfoPrtcptPsblRgn02', { inqryDiv: '2', bidNtceNo: id, bidNtceOrd: rec.ord, numOfRows: '50', pageNo: '1' });
       rec.regions = regionsOf(r.items);
     }
-    if (!regionOk(rec)) { state.excluded[id] = '지역'; excludedNow++; continue; }
+    if (!regionOk(rec)) { state.excluded[id] = '지역'; excludedNow++; return; }
 
     // 개찰 상태: 기간 조회에서 받은 게 있으면 그대로 쓰고, 없을 때만 공고별로 묻는다
     if (c.open && c.open.status) Object.assign(rec, { status: c.open.status, openedAt: c.open.openedAt, participants: c.open.participants, note: c.open.note });
@@ -204,10 +205,18 @@ for (const [id, c] of order) {
     failed++;
     console.warn(`결과 조회 실패 ${id}: ${e.message}`);
     // 하루 한도를 넘겼으면 남은 공고도 모두 실패하니 여기서 멈추고 다음 실행에 잇는다
-    if (isQuota(e.message)) { quotaHit = true; break; }
-    if (/등록되지 않은|게이트웨이/.test(e.message)) break;
+    if (isQuota(e.message)) { quotaHit = true; stop = true; return; }
+    if (/등록되지 않은|게이트웨이/.test(e.message)) stop = true;
   }
 }
+const queue = [...order];
+const CONC = Math.max(1, config.concurrency ?? 5);
+await Promise.all(Array.from({ length: CONC }, async () => {
+  while (queue.length && !stop && !quotaHit && budgetLeft()) {
+    const [id, c] = queue.shift();
+    await processOne(id, c);
+  }
+}));
 
 // 조건에서 빠진 공고는 결과 목록에서도 뺀다(규칙이 바뀐 경우)
 for (const [id, r] of results) if (!wanted(r) || !regionOk(r)) results.delete(id);
