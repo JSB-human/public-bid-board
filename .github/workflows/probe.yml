@@ -11,4 +11,5 @@ jobs:
           node-version: 22
       - env:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
+          DART_API_KEY: ${{ secrets.DART_API_KEY }}
         run: node scripts/probe.mjs
