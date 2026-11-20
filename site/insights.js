@@ -61,13 +61,9 @@ async function renderResults() {
     $('rq').addEventListener('input', (e) => { rs.q = e.target.value.trim().toLowerCase(); rs.limit = 150; drawResults(); });
     $('rChips').addEventListener('click', (e) => { const b = e.target.closest('[data-f]'); if (b) { rs.filter = b.dataset.f; rs.limit = 150; drawResults(); } });
     $('rList').addEventListener('click', (e) => {
-      if (e.target.closest('.more-btn')) { rs.limit += 150; drawResults(); return; }
+      if (e.target.closest('.more-btn')) { appendResults(); return; }
       const h = e.target.closest('button.row');
-      if (!h) return;
-      const id = h.dataset.id;
-      if (wide()) rs.sel = id;
-      else rs.open.has(id) ? rs.open.delete(id) : rs.open.add(id);
-      drawResults();
+      if (h) selectResult(h.dataset.id);
     });
     window.addEventListener('layoutchange', () => { if (!root.hidden) drawResults(); });
   }
@@ -154,16 +150,74 @@ function drawResults() {
   $('rCount').innerHTML = `<span><b>${rows.length}</b>건</span>`;
   if (!rows.length) { $('rList').innerHTML = emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.'); $('rPane').innerHTML = ''; return; }
   if (W && !rows.some((r) => r.id === rs.sel)) rs.sel = rows[0].id;
-  // 고른 공고가 아직 안 보이는 뒤쪽에 있으면 거기까지 편다
+  // 수천 건을 한 번에 그리면 화면이 버벅인다. 처음엔 조금만 그리고, 끝에 닿을 때마다 이어 붙인다(무한 스크롤).
+  // 고른 공고가 뒤쪽에 있으면 거기까지 편다.
   const at = rows.findIndex((r) => r.id === rs.sel);
-  if (at >= rs.limit) rs.limit = at + 20;
-  $('rList').innerHTML = rows.slice(0, rs.limit).map((r) => resultRow(r, W)).join('') +
-    (rows.length > rs.limit ? `<button class="more-btn">${rows.length - rs.limit}건 더 보기</button>` : '');
-  const cur = W ? rows.find((r) => r.id === rs.sel) : null;
-  if ($('rPane').dataset.id !== (cur ? cur.id : '')) {
-    $('rPane').innerHTML = cur ? resultPane(cur) : '';
-    $('rPane').dataset.id = cur ? cur.id : '';
-    $('rPane').scrollTop = 0;
+  rView = { rows, shown: Math.min(rows.length, Math.max(R_CHUNK, at + 20)), W };
+  $('rList').innerHTML = rows.slice(0, rView.shown).map((r) => resultRow(r, W)).join('') + moreSentinel();
+  watchMore();
+  showPane(W ? rows.find((r) => r.id === rs.sel) : null);
+}
+
+const R_CHUNK = 60;
+let rView = { rows: [], shown: 0, W: false };
+let rObserver = null;
+const moreSentinel = () => (rView.shown < rView.rows.length
+  ? `<div class="more-sentinel"><button class="more-btn">${rView.rows.length - rView.shown}건 더 보기</button></div>` : '');
+
+function appendResults() {
+  const s = $('rList').querySelector('.more-sentinel');
+  if (!s) return;
+  const next = rView.rows.slice(rView.shown, rView.shown + R_CHUNK);
+  rView.shown += next.length;
+  s.insertAdjacentHTML('beforebegin', next.map((r) => resultRow(r, rView.W)).join(''));
+  if (rView.shown >= rView.rows.length) s.remove();
+  else s.querySelector('.more-btn').textContent = `${rView.rows.length - rView.shown}건 더 보기`;
+}
+
+// 목록 끝이 화면 가까이 오면 다음 묶음을 붙인다. 감시가 안 되는 환경에서는 "더 보기" 버튼으로 넘긴다.
+function watchMore() {
+  rObserver?.disconnect();
+  const s = $('rList').querySelector('.more-sentinel');
+  if (!s || !('IntersectionObserver' in window)) return;
+  rObserver = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) appendResults(); }, { rootMargin: '800px 0px' });
+  rObserver.observe(s);
+}
+// 감시가 늦거나 안 될 때를 위한 예비: 스크롤할 때 끝이 가까우면 붙인다(목록 칸 안 스크롤도 잡도록 capture).
+let rScrollTick = false;
+document.addEventListener('scroll', () => {
+  if (rScrollTick) return;
+  rScrollTick = true;
+  setTimeout(() => {
+    rScrollTick = false;
+    const s = document.querySelector('#rList .more-sentinel');
+    if (s && s.offsetParent && s.getBoundingClientRect().top < innerHeight + 800) appendResults();
+  }, 120);
+}, { capture: true, passive: true });
+
+function showPane(cur) {
+  if ($('rPane').dataset.id === (cur ? cur.id : '')) return;
+  $('rPane').innerHTML = cur ? resultPane(cur) : '';
+  $('rPane').dataset.id = cur ? cur.id : '';
+  $('rPane').scrollTop = 0;
+}
+
+// 줄을 누르면 목록 전체를 다시 그리지 않고 그 줄(넓은 화면이면 선택 표시와 오른쪽 상세)만 바꾼다.
+function selectResult(id) {
+  const r = rView.rows.find((x) => x.id === id);
+  if (!r) return;
+  const btnOf = (x) => $('rList').querySelector(`button.row[data-id="${CSS.escape(x)}"]`);
+  if (rView.W) {
+    const prev = rs.sel && btnOf(rs.sel);
+    if (prev) { prev.closest('article').classList.remove('sel'); prev.setAttribute('aria-current', 'false'); }
+    rs.sel = id;
+    const b = btnOf(id);
+    if (b) { b.closest('article').classList.add('sel'); b.setAttribute('aria-current', 'true'); }
+    showPane(r);
+  } else {
+    rs.open.has(id) ? rs.open.delete(id) : rs.open.add(id);
+    const b = btnOf(id);
+    if (b) b.closest('article').outerHTML = resultRow(r, false);
   }
 }
 
