@@ -50,18 +50,21 @@ for (const x of bids) {
 }
 
 // (나) 개찰 결과를 키워드로 훑기. 조회 기간 한도(7일) 때문에 6일씩 끊는다.
-const scanFrom = state.scannedTo ? state.scannedTo - DAY : now - BACKFILL_DAYS * DAY;
-const windows = [];
-for (let t = now; t > scanFrom; t -= 6 * DAY) windows.push([Math.max(scanFrom, t - 6 * DAY), t]);
-let scanned = 0, scanStoppedAt = null;
-outer: for (const [b, e] of windows) { // 최근 기간부터
+//  - 최근: 지난번 훑은 때부터 지금까지
+//  - 과거: config.backfillDays 까지 실행마다 조금씩 더 거슬러 간다(state.backfilledFrom).
+//    오래된 기간에서 결과가 계속 0이면 API 에 데이터가 없는 것으로 보고 멈춘다(state.dataStart).
+const BACKFILL_BUDGET = config.backfillCallsPerRun ?? 600;
+let scanned = 0;
+async function scanWindow(b, e) {
+  let rows = 0;
   for (const keyword of config.keywords) {
     for (let page = 1; ; page++) {
-      if (!budgetLeft()) { scanStoppedAt = e; break outer; }
+      if (!budgetLeft()) return null;
       const params = { inqryDiv: '1', inqryBgnDt: kstStamp(new Date(b)), inqryEndDt: kstStamp(new Date(e)), bidNtceNm: keyword, numOfRows: '100', pageNo: String(page) };
       if (config.industryCode) params.indstrytyCd = String(config.industryCode);
       let r;
       try { r = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', params); } catch (err) { console.warn('개찰 목록 실패:', err.message); break; }
+      rows += r.items.length;
       for (const it of r.items) {
         if (!wanted({ title: it.bidNtceNm, org: it.dminsttNm })) continue;
         add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword });
@@ -70,9 +73,30 @@ outer: for (const [b, e] of windows) { // 최근 기간부터
       if (page * 100 >= r.total || !r.items.length) break;
     }
   }
+  return rows;
 }
-// 다 훑었으면 다음엔 지금부터, 예산이 모자라 멈췄으면 거기서부터 다시
-state.scannedTo = scanStoppedAt === null ? now : (state.scannedTo ?? null);
+// 최근
+const recentFrom = state.scannedTo ? state.scannedTo - DAY : now - 6 * DAY;
+let recentOk = true;
+for (let t = now; t > recentFrom; t -= 6 * DAY) {
+  if ((await scanWindow(Math.max(recentFrom, t - 6 * DAY), t)) === null) { recentOk = false; break; }
+}
+if (recentOk) state.scannedTo = now;
+// 과거
+state.backfilledFrom ??= state.scannedTo ? now - 90 * DAY : now; // 처음 수집이 90일을 훑었다
+const target = Math.max(now - BACKFILL_DAYS * DAY, state.dataStart || 0);
+const backfillLimit = stats.calls + BACKFILL_BUDGET;
+let emptyRun = state.emptyRun || 0;
+while (state.backfilledFrom > target && stats.calls < backfillLimit && budgetLeft()) {
+  const e = state.backfilledFrom, b = Math.max(target, e - 6 * DAY);
+  const rows = await scanWindow(b, e);
+  if (rows === null) break;
+  state.backfilledFrom = b;
+  emptyRun = rows ? 0 : emptyRun + 1;
+  if (emptyRun >= 10) { state.dataStart = b; console.log('이보다 오래된 개찰 결과는 API 에 없어 보여 거슬러 가기를 멈춥니다:', new Date(b).toISOString().slice(0, 10)); break; }
+}
+state.emptyRun = emptyRun;
+console.log(`과거 훑기: ${new Date(state.backfilledFrom).toISOString().slice(0, 10)}까지 (목표 ${new Date(target).toISOString().slice(0, 10)})`);
 console.log(`개찰 목록 훑기: ${scanned}줄, 후보 ${candidates.size}건 (호출 ${stats.calls})`);
 
 // ---------- 2. 공고별 결과 채우기 ----------

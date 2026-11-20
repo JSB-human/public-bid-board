@@ -1,7 +1,7 @@
 {
   "lookbackDays": 6,
   "keepClosedDays": 14,
-  "backfillDays": 90,
+  "backfillDays": 1095,
   "maxCallsPerRun": 1500,
   "maxCompanyCallsPerRun": 800,
   "industryCode": "1468",
@@ -24,5 +24,6 @@
     "드론"
   ],
   "excludePattern": "교육|연수|부트캠프|캠프|행사|홍보|급식|청소|경비|감리|임차|보험|해외|경진대회|시상|콘텐츠|재해예방|기술지도|폐기물|인쇄|세탁|여행|전시|강사|RAID|AIS|양성|PMC|기뢰|작전|사이버|침해|보안|정보보호|관제|의료|병원|바이오|금형|사출|제조|반도체|전장부품|주행|항만|생육|학사|VR|하수|상수|배수|관로|용수|지하구조물|지하시설물|라이다 측량",
-  "excludeOrgPattern": "대학|산학협력단|국방|국군|병원|의료원|한전KDN"
+  "excludeOrgPattern": "대학|산학협력단|국방|국군|병원|의료원|한전KDN",
+  "backfillCallsPerRun": 600
 }
