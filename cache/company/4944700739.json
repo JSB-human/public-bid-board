@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "케이에이치 커머스",
+  "ceo": "윤석인",
+  "opened": "2021-05-14",
+  "region": "경상남도 창원시 마산회원구",
+  "address": "경상남도 창원시 마산회원구 내서읍 광려천북로 198-2  월드비즈타운",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:34.821Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:35.119Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:35.119Z"
+ }
+}

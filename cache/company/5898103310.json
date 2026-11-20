@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 오정",
+  "ceo": "김윤현",
+  "opened": "2023-10-24",
+  "region": "대전광역시 서구",
+  "address": "대전광역시 서구 갈마로219번길 47, 469호(괴정동, 위스퀘어빌딩)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:32.360Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:32.674Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:32.674Z"
+ }
+}

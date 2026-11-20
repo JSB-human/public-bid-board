@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "오성",
+  "ceo": "김영태",
+  "opened": "2021-09-24",
+  "region": "인천광역시 연수구",
+  "address": "인천광역시 연수구 함박뫼로84번길 14 (연수동) 201호",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:30.751Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:31.048Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:31.476Z"
+ }
+}

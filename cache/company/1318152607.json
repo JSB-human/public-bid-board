@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 극동 아이.씨.엠",
+  "ceo": "이영심",
+  "opened": "1999-12-13",
+  "region": "인천광역시 남동구",
+  "address": "인천광역시 남동구 은청로 4-7, 비동 2층 224호(고잔동, 남동공단산업용품상가)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:44.564Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:44.880Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:44.880Z"
+ }
+}

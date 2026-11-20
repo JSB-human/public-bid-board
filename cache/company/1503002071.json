@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "대진",
+  "ceo": "박상미",
+  "opened": "2025-10-28",
+  "region": "강원특별자치도 원주시 반곡동",
+  "address": "강원특별자치도 원주시 세계로 5 (반곡동) 203-4호",
+  "employees": 0,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:43.695Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:43.997Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:44.412Z"
+ }
+}

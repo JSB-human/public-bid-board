@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "도프에이아이(Dope-AI)",
+  "ceo": "홍바울",
+  "opened": "2022-05-06",
+  "region": "제주특별자치도 제주시 한경면 저지리",
+  "address": "제주특별자치도 제주시 한경면 명이1길 6-2 ",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:52.985Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:53.294Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:53.294Z"
+ }
+}

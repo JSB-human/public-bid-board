@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "모아테크",
+  "ceo": "김은아",
+  "opened": "2020-07-08",
+  "region": "대전광역시 서구",
+  "address": "대전광역시 서구 갈마로219번길 47, 위스퀘어빌딩 338호",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:31.622Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:31.924Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:32.207Z"
+ }
+}

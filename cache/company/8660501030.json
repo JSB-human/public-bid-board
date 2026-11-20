@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "서이과학교육",
+  "ceo": "목정수",
+  "opened": "2018-02-28",
+  "region": "서울특별시 양천구",
+  "address": "서울특별시 양천구 등촌로 46 (목동) 씨엔와이빌딩 2층",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:35.267Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:35.563Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:35.563Z"
+ }
+}

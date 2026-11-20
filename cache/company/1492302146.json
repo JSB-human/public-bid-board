@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "창성테크",
+  "ceo": "김용진",
+  "opened": "2025-06-09",
+  "region": "강원특별자치도 원주시 반곡동",
+  "address": "강원특별자치도 원주시 세계로 5, 203-A01호 (반곡동, YD프라자)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:36.164Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-20T06:46:36.624Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:37.189Z"
+ }
+}

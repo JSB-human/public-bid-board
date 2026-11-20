@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 유니바(UNIVA Corp.)",
+  "ceo": "남명진",
+  "opened": "2021-04-13",
+  "region": "대구광역시 달성군 현풍읍 상리",
+  "address": "대구광역시 달성군 현풍읍 테크노중앙대로 333, DGIST 산학협력관 306호",
+  "employees": 12,
+  "homepage": "univa.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:17.006Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:17.319Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:17.319Z"
+ }
+}

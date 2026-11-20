@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "삼도",
+  "ceo": "김수재",
+  "opened": "2025-10-28",
+  "region": "인천광역시 남동구 논현동",
+  "address": "인천광역시 남동구 논고개로68번길 34 (논현동, 논현센트럴뷰) 404동 1604호",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:42.342Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:42.646Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:42.794Z"
+ }
+}

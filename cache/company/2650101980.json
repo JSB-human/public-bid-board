@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "경기모아상사",
+  "ceo": "최현준",
+  "opened": "2020-04-02",
+  "region": "경기도 평택시",
+  "address": "경기도 평택시 중앙로 29 (통복동) 은호빌딩 579호",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:34.371Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:34.673Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:34.673Z"
+ }
+}

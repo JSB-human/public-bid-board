@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "모아상사",
+  "ceo": "최중강",
+  "opened": "2018-01-17",
+  "region": "인천광역시 미추홀구",
+  "address": "인천광역시 미추홀구 인하로 129(용현동)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:45.031Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:45.330Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:45.464Z"
+ }
+}

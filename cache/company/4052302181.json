@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "한일",
+  "ceo": "유현상",
+  "opened": "2025-11-06",
+  "region": "인천광역시 미추홀구 주안동",
+  "address": "인천광역시 미추홀구 주안로 75 (주안동) 4층 E30",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:37.335Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:37.823Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:38.878Z"
+ }
+}

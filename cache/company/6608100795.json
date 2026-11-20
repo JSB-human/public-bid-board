@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "제이소프트웨어 주식회사",
+  "ceo": "이재희",
+  "opened": "2017-11-02",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 테헤란로6길 30-0 (역삼동), 4층 432호(역삼동, 태암빌딩)",
+  "employees": 1,
+  "homepage": "www.jsoftware.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:52.517Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:52.831Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:52.831Z"
+ }
+}

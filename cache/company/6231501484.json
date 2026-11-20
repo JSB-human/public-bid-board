@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "다온상사",
+  "ceo": "김민지",
+  "opened": "2021-03-10",
+  "region": "충청남도 천안시 서북구",
+  "address": "충청남도 천안시 서북구 두정로 117(두정동,퓨전리더스주차빌딩) 2층 205-10호",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-20T06:46:41.889Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-20T06:46:42.185Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-20T06:46:42.185Z"
+ }
+}
