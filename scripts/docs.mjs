@@ -8,10 +8,10 @@
 
 import { readFile, writeFile, mkdir, readdir, rm, mkdtemp } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-import { inflateRawSync } from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 import { tmpdir } from 'node:os';
 import path from 'node:path';
+import { unzip, hwpxText, hwpText, hwpParaText } from '../site/hwp.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BIDS = path.join(ROOT, 'site', 'data', 'bids.json');
@@ -22,164 +22,7 @@ const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8')
 
 // ---------- 파일에서 글자 꺼내기 ----------
 
-// 아주 작은 ZIP 읽기 (중앙 디렉터리만 사용)
-function unzipEntries(buf) {
-  let eocd = -1;
-  for (let i = buf.length - 22; i >= Math.max(0, buf.length - 66000); i--) {
-    if (buf.readUInt32LE(i) === 0x06054b50) { eocd = i; break; }
-  }
-  if (eocd < 0) throw new Error('ZIP 형식이 아님');
-  const count = buf.readUInt16LE(eocd + 10);
-  let p = buf.readUInt32LE(eocd + 16);
-  const out = [];
-  for (let n = 0; n < count; n++) {
-    if (buf.readUInt32LE(p) !== 0x02014b50) break;
-    const flags = buf.readUInt16LE(p + 8);
-    const method = buf.readUInt16LE(p + 10);
-    const csize = buf.readUInt32LE(p + 20);
-    const nameLen = buf.readUInt16LE(p + 28), extraLen = buf.readUInt16LE(p + 30), commentLen = buf.readUInt16LE(p + 32);
-    const local = buf.readUInt32LE(p + 42);
-    const rawName = buf.subarray(p + 46, p + 46 + nameLen);
-    // 한국어 윈도우에서 만든 ZIP 은 파일 이름이 CP949 인 경우가 많다.
-    const name = flags & 0x800 ? rawName.toString('utf8') : new TextDecoder('euc-kr').decode(rawName);
-    out.push({
-      name,
-      read() {
-        const start = local + 30 + buf.readUInt16LE(local + 26) + buf.readUInt16LE(local + 28);
-        const data = buf.subarray(start, start + csize);
-        return method === 0 ? data : method === 8 ? inflateRawSync(data) : null;
-      },
-    });
-    p += 46 + nameLen + extraLen + commentLen;
-  }
-  return out;
-}
-
-function hwpxText(buf) {
-  const sections = unzipEntries(buf)
-    .filter((e) => /^Contents\/section\d+\.xml$/i.test(e.name))
-    .sort((a, b) => Number(a.name.match(/\d+/)[0]) - Number(b.name.match(/\d+/)[0]));
-  return sections.map((e) => {
-    const xml = e.read()?.toString('utf8') || '';
-    return xml
-      .replace(/<hp:tab[^>]*\/>/g, ' ')
-      .replace(/<\/hp:p>/g, '\n')
-      .replace(/<hp:t(?:\s[^>]*)?>([\s\S]*?)<\/hp:t>/g, (_, t) => '\u0001' + t + '\u0002')
-      .replace(/<[^>]+>/g, '')
-      .replace(/[^\u0001\u0002\n]*?\u0001([\s\S]*?)\u0002/g, '$1')
-      .replace(/\u0001|\u0002/g, '');
-  }).join('\n')
-    .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&');
-}
-
-// ---- 옛 한글(HWP 5.x) 파일 ----
-// HWP 는 MS 복합문서(CFB) 안에 BodyText/Section0, Section1 … 스트림이 있고,
-// 각 스트림은 (대개 압축된) 레코드 묶음이다. 문단 글자는 HWPTAG_PARA_TEXT(67) 레코드에 UTF-16 으로 들어 있다.
-
-function cfbStreams(buf) {
-  if (buf.readUInt32LE(0) !== 0xe011cfd0 || buf.readUInt32LE(4) !== 0xe11ab1a1) throw new Error('HWP(복합문서) 형식이 아님');
-  const secSize = 1 << buf.readUInt16LE(30);
-  const miniSize = 1 << buf.readUInt16LE(32);
-  const dirStart = buf.readInt32LE(48);
-  const miniCutoff = buf.readUInt32LE(56);
-  const miniFatStart = buf.readInt32LE(60);
-  let difatNext = buf.readInt32LE(68);
-  const sec = (n) => buf.subarray(512 + n * secSize, 512 + (n + 1) * secSize);
-  // FAT 섹터 목록: 헤더의 109개 + DIFAT 섹터 체인
-  const fatSectors = [];
-  for (let i = 0; i < 109; i++) { const s = buf.readInt32LE(76 + i * 4); if (s >= 0) fatSectors.push(s); }
-  for (let guard = 0; difatNext >= 0 && guard < 10000; guard++) {
-    const d = sec(difatNext);
-    for (let i = 0; i < secSize / 4 - 1; i++) { const s = d.readInt32LE(i * 4); if (s >= 0) fatSectors.push(s); }
-    difatNext = d.readInt32LE(secSize - 4);
-  }
-  const fat = [];
-  for (const s of fatSectors) { const d = sec(s); for (let i = 0; i < secSize / 4; i++) fat.push(d.readInt32LE(i * 4)); }
-  const chain = (start, table) => { const out = []; for (let s = start, g = 0; s >= 0 && g < 1e6; s = table[s], g++) out.push(s); return out; };
-  const readChain = (start) => Buffer.concat(chain(start, fat).map(sec));
-
-  const dir = readChain(dirStart);
-  const entries = [];
-  for (let off = 0; off + 128 <= dir.length; off += 128) {
-    const nameLen = dir.readUInt16LE(off + 64);
-    entries.push({
-      name: dir.subarray(off, off + Math.max(0, nameLen - 2)).toString('utf16le'),
-      type: dir[off + 66],
-      left: dir.readInt32LE(off + 68), right: dir.readInt32LE(off + 72), child: dir.readInt32LE(off + 76),
-      start: dir.readInt32LE(off + 116), size: dir.readUInt32LE(off + 120),
-    });
-  }
-  const root = entries[0];
-  const miniStream = root && root.start >= 0 ? readChain(root.start) : Buffer.alloc(0);
-  const miniFat = [];
-  if (miniFatStart >= 0) { const d = readChain(miniFatStart); for (let i = 0; i + 4 <= d.length; i += 4) miniFat.push(d.readInt32LE(i)); }
-  const readEntry = (e) => {
-    if (e.size < miniCutoff) {
-      return Buffer.concat(chain(e.start, miniFat).map((s) => miniStream.subarray(s * miniSize, (s + 1) * miniSize))).subarray(0, e.size);
-    }
-    return readChain(e.start).subarray(0, e.size);
-  };
-  // 디렉터리 트리를 따라 "저장소/스트림" 경로를 만든다.
-  const out = new Map();
-  const walk = (id, prefix, seen) => {
-    if (id < 0 || id >= entries.length || seen.has(id)) return;
-    seen.add(id);
-    const e = entries[id];
-    walk(e.left, prefix, seen);
-    walk(e.right, prefix, seen);
-    const p = prefix + e.name;
-    if (e.type === 2) out.set(p, () => readEntry(e));
-    else if (e.type === 1) walk(e.child, p + '/', seen);
-  };
-  if (root) walk(root.child, '', new Set());
-  return out;
-}
-
-// 문단 글자 레코드 하나를 글자로 바꾼다. 제어문자 중 일부는 8글자(16바이트) 자리를 차지한다.
-const HWP_WIDE_CTRL = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]);
-function hwpParaText(data) {
-  let s = '';
-  for (let i = 0; i + 1 < data.length; ) {
-    const c = data.readUInt16LE(i);
-    if (c < 32) {
-      if (c === 9) s += ' ';
-      else if (c === 10 || c === 13) s += '\n';
-      i += HWP_WIDE_CTRL.has(c) ? 16 : 2;
-    } else {
-      s += String.fromCharCode(c);
-      i += 2;
-    }
-  }
-  return s;
-}
-
-function hwpText(buf) {
-  const streams = cfbStreams(buf);
-  const header = streams.get('FileHeader')?.();
-  if (!header) throw new Error('HWP 헤더 없음');
-  const props = header.readUInt32LE(36);
-  if (props & 2) throw new Error('암호가 걸린 HWP');
-  if (props & 4) throw new Error('배포용 HWP(본문 암호화)');
-  const compressed = (props & 1) === 1;
-  const sections = [...streams.keys()]
-    .filter((k) => /^BodyText\/Section\d+$/.test(k))
-    .sort((a, b) => Number(a.match(/\d+$/)[0]) - Number(b.match(/\d+$/)[0]));
-  const paras = [];
-  for (const k of sections) {
-    let data = streams.get(k)();
-    if (compressed) data = inflateRawSync(data);
-    for (let off = 0; off + 4 <= data.length; ) {
-      const h = data.readUInt32LE(off);
-      const tag = h & 0x3ff;
-      let size = h >>> 20;
-      off += 4;
-      if (size === 0xfff) { size = data.readUInt32LE(off); off += 4; }
-      if (tag === 67) paras.push(hwpParaText(data.subarray(off, off + size)).replace(/\n+$/, ''));
-      off += size;
-    }
-  }
-  return paras.join('\n');
-}
+// 한글(HWP·HWPX)과 ZIP 읽기는 뷰어와 같은 코드를 쓴다.
 
 function pdfText(file) {
   return execFileSync('pdftotext', ['-layout', '-enc', 'UTF-8', file, '-'], { maxBuffer: 64 * 1024 * 1024 }).toString('utf8');
@@ -211,10 +54,10 @@ function pick(files, test) {
   const cand = files.filter((f) => test(f.name) && readable(f.name) && extOf(f.name) !== 'zip');
   return cand.sort((a, b) => rank(a.name) - rank(b.name))[0] || null;
 }
-function textFromBuffer(ext, buf, localPdf) {
+async function textFromBuffer(ext, buf, localPdf) {
   if (ext === 'pdf') return pdfText(localPdf);
-  if (ext === 'hwpx') return hwpxText(buf);
-  if (ext === 'hwp') return hwpText(buf);
+  if (ext === 'hwpx') return hwpxText(new Uint8Array(buf));
+  if (ext === 'hwp') return hwpText(new Uint8Array(buf));
   return '';
 }
 
@@ -231,15 +74,15 @@ async function textOf(item, work) {
     let name = f.name, text = '';
     if (extOf(f.name) === 'zip') {
       // 묶음 파일이면 안에서 제안요청서(없으면 첫 문서)를 꺼낸다.
-      const inner = unzipEntries(buf).filter((e) => DOC_EXT.includes(extOf(e.name))).sort((a, b) => rank(a.name) - rank(b.name));
+      const inner = unzip(new Uint8Array(buf)).filter((e) => DOC_EXT.includes(extOf(e.name))).sort((a, b) => rank(a.name) - rank(b.name));
       const e = inner.find((e) => isRfp(e.name)) || inner[0];
-      const data = e && e.read();
+      const data = e && (await e.read());
       if (!data) continue;
       name = f.name + ' › ' + e.name.split('/').pop();
       if (extOf(e.name) === 'pdf') await writeFile(local + '.pdf', data);
-      text = textFromBuffer(extOf(e.name), data, local + '.pdf');
+      text = await textFromBuffer(extOf(e.name), data, local + '.pdf');
     } else {
-      text = textFromBuffer(extOf(f.name), buf, local);
+      text = await textFromBuffer(extOf(f.name), buf, local);
     }
     parts.push(`\n<<<${isRfp(name) || f === zipped ? 'RFP' : 'NOTICE'}:${name}>>>\n` + text);
   }

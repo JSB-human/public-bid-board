@@ -186,14 +186,79 @@
   .note { font-size: 13px; color: var(--muted); margin-top: 6px; }
 
   .files { display: grid; gap: 6px; }
-  .file { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); background: var(--field);
-    border-radius: 12px; padding: 10px 12px; font-size: 14px; font-weight: 500; transition: background .15s; min-width: 0; }
-  .file:hover { background: var(--line); }
-  .file .ext { flex: none; font-size: 11px; font-weight: 800; padding: 3px 6px; border-radius: 6px; color: #fff; background: var(--faint); min-width: 38px; text-align: center; }
-  .file .ext.pdf { background: #f04452; }
-  .file .ext.hwp { background: #3182f6; }
-  .file .ext.xls { background: #03b26c; }
-  .file span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .file-row { display: flex; gap: 6px; min-width: 0; }
+  .file { flex: 1; min-width: 0; display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); background: var(--field);
+    border: 0; text-align: left; cursor: pointer; border-radius: 12px; padding: 10px 12px; font-size: 14px; font-weight: 500; transition: background .15s; }
+  .file:hover:not([disabled]) { background: var(--line); }
+  .file[disabled] { cursor: default; }
+  .ext { flex: none; font-size: 11px; font-weight: 800; padding: 3px 6px; border-radius: 6px; color: #fff; background: var(--faint); min-width: 38px; text-align: center; }
+  .ext.pdf { background: #f04452; }
+  .ext.hwp { background: #3182f6; }
+  .ext.xls { background: #03b26c; }
+  .fname { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .fview { flex: none; font-size: 13px; font-weight: 700; color: var(--blue); }
+  .fsize { flex: none; font-size: 12px; color: var(--muted); }
+  .file-dl { flex: none; width: 44px; display: grid; place-items: center; border-radius: 12px; background: var(--field); color: var(--sub); transition: background .15s; }
+  .file-dl:hover { background: var(--line); color: var(--text); }
+  .file-dl svg { width: 18px; height: 18px; }
+
+  /* 첨부파일 뷰어 */
+  .viewer { position: fixed; inset: 0; z-index: 50; display: none; }
+  .viewer.show { display: block; }
+  .v-backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, .5); animation: vfade .2s ease; }
+  .v-sheet { position: absolute; left: 50%; top: 4vh; transform: translateX(-50%); width: min(960px, calc(100vw - 32px)); height: 92vh;
+    background: var(--card); border-radius: 22px; display: flex; flex-direction: column; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.25); animation: vup .22s ease; }
+  @keyframes vfade { from { opacity: 0; } }
+  @keyframes vup { from { opacity: 0; transform: translate(-50%, 16px); } }
+  .v-head { flex: none; display: flex; align-items: center; gap: 10px; padding: 12px 12px 12px 18px; border-bottom: 1px solid var(--line); }
+  .v-title { flex: 1; min-width: 0; display: grid; }
+  .v-title b { font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .v-title small { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .v-title small:empty { display: none; }
+  .v-icon { flex: none; width: 40px; height: 40px; border: 0; border-radius: 12px; background: none; cursor: pointer; display: grid; place-items: center; color: var(--sub); }
+  .v-icon:hover { background: var(--field); color: var(--text); }
+  .v-icon[hidden], .v-page[hidden] { display: none; }
+  .v-icon svg { width: 22px; height: 22px; }
+  .v-dl { flex: none; display: inline-flex; align-items: center; gap: 6px; height: 40px; padding: 0 14px; border-radius: 12px; background: var(--blue); color: #fff;
+    text-decoration: none; font-weight: 700; font-size: 14px; }
+  .v-dl svg { width: 18px; height: 18px; }
+  .v-body { flex: 1; overflow: auto; background: var(--bg); outline: none; overscroll-behavior: contain; }
+  .v-page { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); background: rgba(25, 31, 40, .8); color: #fff;
+    font-size: 13px; font-weight: 700; padding: 6px 12px; border-radius: 999px; font-variant-numeric: tabular-nums; pointer-events: none; }
+  .v-pages { display: grid; gap: 12px; padding: 16px; max-width: 900px; margin: 0 auto; }
+  .v-pg { background: #fff; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.12); overflow: hidden; width: 100%; }
+  .v-pg canvas { display: block; width: 100%; height: auto; }
+  .v-note { max-width: 760px; margin: 16px auto 0; padding: 10px 14px; border-radius: 12px; background: var(--blue-weak); color: var(--blue-text); font-size: 13px; font-weight: 500; }
+  .v-text { max-width: 760px; margin: 12px auto 40px; background: var(--card); border-radius: 16px; padding: 28px 32px; box-shadow: var(--shadow); }
+  .v-text p { margin: 0 0 6px; font-size: 15px; line-height: 1.75; color: var(--text); overflow-wrap: anywhere; white-space: pre-wrap; }
+  .v-text td { border-color: color-mix(in srgb, var(--faint) 55%, transparent); }
+  .v-text p.h { font-weight: 700; margin-top: 14px; }
+  .v-gap { height: 10px; }
+  .v-doc p { white-space: normal; }
+  .v-tbl { overflow-x: auto; margin: 8px 0 14px; }
+  .v-tbl table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+  .v-tbl td { border: 1px solid var(--line); padding: 6px 8px; vertical-align: top; min-width: 48px; }
+  .v-tbl td p { margin: 0 0 2px; font-size: 13.5px; line-height: 1.6; }
+  .v-tbl .v-tbl { margin: 4px 0; }
+  .v-zip { max-width: 760px; margin: 12px auto 40px; padding: 0 0; }
+  .v-zip .file { background: var(--card); box-shadow: var(--shadow); }
+  .v-state { min-height: 60%; display: grid; place-content: center; justify-items: center; gap: 8px; padding: 40px 20px; text-align: center; color: var(--muted); }
+  .v-state b { color: var(--text); font-size: 16px; }
+  .v-spin { width: 32px; height: 32px; border-radius: 50%; border: 3px solid var(--line); border-top-color: var(--blue); animation: vspin .8s linear infinite; margin-bottom: 4px; }
+  @keyframes vspin { to { transform: rotate(360deg); } }
+  .v-progress { font-size: 13px; font-variant-numeric: tabular-nums; }
+  .v-btn { margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; height: 44px; padding: 0 16px; border-radius: 12px; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700; }
+  .v-btn svg { width: 18px; height: 18px; }
+  @media (max-width: 640px) {
+    .v-sheet { top: 0; left: 0; transform: none; width: 100%; height: 100%; border-radius: 0; animation: none; }
+    .v-head { padding: 8px 8px 8px 14px; gap: 8px; }
+    .v-dl span { display: none; }
+    .v-dl { width: 40px; padding: 0; justify-content: center; }
+    .v-pages { padding: 8px; gap: 8px; }
+    .v-text { padding: 20px 18px; border-radius: 0; margin: 12px 0 24px; }
+    .v-note { margin: 12px 12px 0; }
+    .v-zip { margin: 12px; }
+  }
 
   .cta { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 20px; height: 52px; border-radius: 14px;
     background: var(--blue); color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; transition: filter .15s; }
@@ -269,6 +334,7 @@
   </footer>
 </main>
 
+<script type="module" src="viewer.js"></script>
 <script>
 const state = { items: [], sort: 'amount', min: 0, only: null, open: new Set() };
 const $ = (id) => document.getElementById(id);
@@ -284,6 +350,7 @@ const ICONS = {
 const svg = (p, cls = '') => `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${p}</svg>`;
 const CHEV = '<path d="m6 9 6 6 6-6"/>';
 const OUT = '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>';
+const DOWN = '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>';
 
 function kindOf(x) {
   const s = (x.keywords || []).join(' ') + ' ' + x.title;
@@ -491,10 +558,19 @@ function detailHtml(x, now) {
       : '제안요청서가 첨부되지 않았고, 공고문에는 사업 내용이 따로 적혀 있지 않아요.'}</div>`;
   }
 
-  const files = (d.files || []).map((f) => {
+  // 누르면 사이트 안 뷰어로 열고, 오른쪽 버튼으로 바로 내려받는다.
+  const files = (d.files || []).map((f, i) => {
     const ext = (f.name.match(/\.([a-z0-9]+)$/i) || [, ''])[1].toLowerCase();
     const cls = ext === 'pdf' ? 'pdf' : /^hwp/.test(ext) ? 'hwp' : /^xls/.test(ext) ? 'xls' : '';
-    return `<a class="file" href="${esc(f.url)}" target="_blank" rel="noopener"><span class="ext ${cls}">${esc(ext.toUpperCase() || 'FILE')}</span><span>${esc(f.name.replace(/\.[a-z0-9]+$/i, ''))}</span></a>`;
+    const viewable = ['pdf', 'hwp', 'hwpx', 'zip'].includes(ext);
+    return `<div class="file-row">
+      <button class="file" data-view="${esc(x.id)}:${i}" ${viewable ? '' : 'disabled'}>
+        <span class="ext ${cls}">${esc(ext.toUpperCase() || 'FILE')}</span>
+        <span class="fname">${esc(f.name.replace(/\.[a-z0-9]+$/i, ''))}</span>
+        ${viewable ? `<span class="fview">${ext === 'zip' ? '목록' : '보기'}</span>` : ''}
+      </button>
+      <a class="file-dl" href="${esc(f.url)}" rel="noopener" aria-label="${esc(f.name)} 내려받기" title="내려받기">${svg(DOWN)}</a>
+    </div>`;
   }).join('');
 
   return `<div class="detail">
@@ -510,6 +586,14 @@ function detailHtml(x, now) {
 }
 
 $('list').addEventListener('click', (e) => {
+  const v = e.target.closest('[data-view]');
+  if (v) {
+    const [id, i] = v.dataset.view.split(':');
+    const f = state.items.find((x) => x.id === id)?.detail?.files?.[Number(i)];
+    if (f && window.openViewer) window.openViewer(f);
+    else if (f) window.open(f.url, '_blank', 'noopener');
+    return;
+  }
   const b = e.target.closest('button.head');
   if (!b) return;
   const id = b.dataset.id;
