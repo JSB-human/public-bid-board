@@ -37,8 +37,11 @@ if (target) {
 }
 // 4) 계약현황 용역 (검색조건, 최근 계약 중 공동계약)
 const day = (d) => kst(d).slice(0, 8);
-const cont = await call('ao/CntrctInfoService', 'getCntrctInfoListServcPPSSrch', { inqryDiv: '1', inqryBgnDate: day(new Date(end.getTime() - 30 * 86400e3)), inqryEndDate: day(end), cntrctNm: '공간정보' });
+const cont = await call('ao/CntrctInfoService', 'getCntrctInfoListServcPPSSrch', { inqryDiv: '1', inqryBgnDate: day(new Date(end.getTime() - 6 * 86400e3)), inqryEndDate: day(end), cntrctNm: "" });
 const joint = cont.filter((c) => c.cmmnCntrctYn === 'Y');
 console.log('계약 수:', cont.length, '공동계약:', joint.length);
 console.log('계약 예시(공동):', JSON.stringify(joint[0] || null));
 console.log('계약 예시(단독) corpList:', JSON.stringify((cont.find((c) => c.cmmnCntrctYn !== 'Y') || {}).corpList));
+console.log('계약 이름 예시:', JSON.stringify(cont.slice(0, 5).map((c) => [c.cntrctNm, c.cmmnCntrctYn, c.ntceNo])));
+const j2 = cont.filter((c) => c.cmmnCntrctYn === 'Y').slice(0, 3);
+for (const c of j2) console.log('공동 corpList:', c.cntrctNm, '|', c.ntceNo, '|', c.corpList);
