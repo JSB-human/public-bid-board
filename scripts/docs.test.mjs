@@ -1,6 +1,17 @@
 // 발췌 규칙 시험.  node scripts/docs.test.mjs
 import assert from 'node:assert/strict';
-import { conditions, parse, hwpParaText } from './docs.mjs';
+import { conditions, parse, hwpParaText, blocksToText } from './docs.mjs';
+
+// kordoc 블록 → 줄: 번호 상자 제목은 한 줄로, 칸 안 목록은 줄마다, 마크다운 표시는 걷어 낸다
+const cell = (text) => ({ text, colSpan: 1, rowSpan: 1 });
+const lines = blocksToText([
+  { type: 'table', table: { rows: 1, cols: 3, cells: [[cell('1'), cell(''), cell('사업일반')]] } },
+  { type: 'paragraph', text: 'ㅇ 사업대상 : 4종<sup>*</sup> 34식 ![image](a.png)' },
+  { type: 'table', table: { rows: 1, cols: 2, cells: [[cell('플랫폼 공통 기능'), cell('· 권한관리\n· 코드 관리')]] } },
+  { type: 'table', table: { rows: 1, cols: 1, cells: [[cell('글상자 첫 줄\n글상자 둘째 줄')]] } },
+]).split('\n');
+assert.deepEqual(lines, ['1 사업일반', 'ㅇ 사업대상 : 4종* 34식', '플랫폼 공통 기능 · 권한관리', '· 코드 관리', '글상자 첫 줄', '글상자 둘째 줄']);
+assert.deepEqual(conditions('직접생산확인증명서 (정보시스템유지관리서비스-8111189901)를 소지한 업체').direct.map((x) => x.name), ['정보시스템유지관리서비스']);
 
 // HWP 문단 레코드: 글자 + 탭(9, 8글자 자리) + 확장 제어문자(11, 8글자 자리) + 문단 끝(13)
 const u16 = (...codes) => Buffer.from(Uint16Array.from(codes).buffer);

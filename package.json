@@ -1,0 +1,9 @@
+{
+  "name": "public-bid-board",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "kordoc": "4.24.47",
+    "pdfjs-dist": "4.10.38"
+  }
+}

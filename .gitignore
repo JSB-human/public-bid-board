@@ -1,5 +1,5 @@
-node_modules/
-.claude/
 # 내부 검토 메모는 공개 저장소에 올리지 않는다
-사업목록_*.md
+.claude/
 .env
+node_modules/
+사업목록_*.md

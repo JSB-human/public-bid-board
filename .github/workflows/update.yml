@@ -26,6 +26,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+
+      - name: 문서 파서(kordoc) 설치
+        # OCR·이미지 같은 선택 기능과 설치 스크립트는 빼고 설치한다.
+        run: npm ci --omit=optional --ignore-scripts --no-audit --no-fund
 
       - name: 공고 수집
         env:

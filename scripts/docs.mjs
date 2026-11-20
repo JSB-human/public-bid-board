@@ -17,7 +17,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const BIDS = path.join(ROOT, 'site', 'data', 'bids.json');
 const TEXT_DIR = path.join(ROOT, 'cache', 'text'); // 공고별 원문 글자. 규칙을 고치면 다시 받지 않고 이것으로 다시 뽑는다.
 const MAX_BYTES = 30 * 1024 * 1024;
-const TEXT_VERSION = 2; // 2: HWP 읽기 추가
+const TEXT_VERSION = 3; // 2: HWP 읽기 추가, 3: kordoc 으로 읽기
 const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8'));
 
 // ---------- 파일에서 글자 꺼내기 ----------
@@ -54,7 +54,60 @@ function pick(files, test) {
   const cand = files.filter((f) => test(f.name) && readable(f.name) && extOf(f.name) !== 'zip');
   return cand.sort((a, b) => rank(a.name) - rank(b.name))[0] || null;
 }
+// kordoc(한국 문서 파서, MIT)으로 읽어 문단·제목·표 행을 한 줄씩 만든다.
+// 표 행은 칸을 빈칸으로 이어 한 줄로 만든다(번호 상자 제목 "1 | 사업일반" → "1 사업일반", 요구사항 표 → "SFR-001 이름").
+// kordoc 이 실패하면 예전 방식(pdftotext, 자체 한글 읽기)으로 읽는다.
+// kordoc 글에 섞인 마크다운·HTML 표시(그림, 위첨자 등)를 걷어 낸다.
+const plain = (s) => String(s ?? '')
+  .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+  .replace(/<br\s*\/?>/gi, '\n')
+  .replace(/<[^>]+>/g, '')
+  .replace(/\\([$*~_|\\])/g, '$1');
+
+function blocksToText(blocks) {
+  const out = [];
+  const cellText = (c) => plain(c?.text).trim();
+  for (const b of blocks || []) {
+    if (b.type === 'table' && b.table) {
+      const rows = b.table.cells || [];
+      // 한 칸짜리 표(글상자)는 안의 문단을 그대로 줄로 낸다
+      if ((b.table.cols || 0) <= 1) {
+        for (const r of rows) for (const c of r) out.push(...cellText(c).split('\n'));
+        continue;
+      }
+      // 칸의 첫 줄끼리 이어 한 줄을 만들고, 칸 안에 글머리 목록처럼 여러 줄이 있으면 그 뒤 줄들은 따로 낸다.
+      for (const r of rows) {
+        const heads = [], rest = [];
+        for (const c of r) {
+          const ls = cellText(c).split('\n').map((x) => x.trim()).filter(Boolean);
+          if (!ls.length || heads[heads.length - 1] === ls[0]) continue;
+          heads.push(ls[0]);
+          rest.push(...ls.slice(1));
+        }
+        if (heads.length) out.push(heads.join(' '), ...rest);
+      }
+    } else if (b.text && b.type !== 'image') {
+      out.push(...plain(b.text).split('\n').map((x) => x.trim()));
+    }
+  }
+  return out.join('\n');
+}
+
+let kordocLib = null;
+async function kordocText(buf) {
+  kordocLib ??= await import('kordoc');
+  const r = await kordocLib.parse(Buffer.from(buf), { ocr: false });
+  if (!r.success) throw new Error(r.error || 'kordoc 읽기 실패');
+  return blocksToText(r.blocks);
+}
+
 async function textFromBuffer(ext, buf, localPdf) {
+  try {
+    const t = await kordocText(buf);
+    if (t.trim()) return t;
+  } catch (e) {
+    console.warn(`kordoc 으로 못 읽어 예전 방식 사용 (${ext}): ${e.message}`);
+  }
   if (ext === 'pdf') return pdfText(localPdf);
   if (ext === 'hwpx') return hwpxText(new Uint8Array(buf));
   if (ext === 'hwp') return hwpText(new Uint8Array(buf));
@@ -99,7 +152,7 @@ function linesOf(text) {
 }
 
 // 번호나 기호로 시작하는 짧은 줄을 제목으로 본다.
-const HEAD_PREFIX = /^(?:[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.?|\d{1,2}(?:\.\d{1,2})*[.)]?|[가-하][.)]|[①-⑳]|[□■◇◆○●▶▣❍]|제\s*\d+\s*[장절조])\s*/;
+const HEAD_PREFIX = /^(?:[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.?|(?:I{1,3}|IV|V|VI{1,3}|IX|X)\.?(?=\s)|\d{1,2}(?:\.\d{1,2})*[.)]?|[가-하][.)]|[①-⑳]|[□■◇◆○●▶▣❍]|제\s*\d+\s*[장절조])\s*/;
 function headingMatch(line, re) {
   if (line.length > 40) return false;
   const body = line.replace(HEAD_PREFIX, '').replace(/[:：]\s*$/, '').trim();
@@ -123,7 +176,7 @@ function section(lines, re, maxLines, maxChars) {
       const l = lines[j];
       const body = l.replace(HEAD_PREFIX, '').replace(/^[^\p{L}\p{N}(]+/u, '').trim();
       if (out.length && ((l.length <= 30 && (STOP_RE.test(body) || headingMatch(l, BACK_RE) || headingMatch(l, SCOPE_RE)))
-        || (/^(?:[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.?|\d{1,2}\.)\s*/.test(l) && NEXT_RE.test(body)))) break;
+        || (/^(?:[ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ]+\.?|(?:I{1,3}|IV|V|VI{1,3}|IX|X)\.?\s|\d{1,2}\.)\s*/.test(l) && (NEXT_RE.test(body) || STOP_RE.test(body))))) break;
       if (/^<<</.test(l)) break;
       // 사업명·기간·예산 같은 개요 줄과 ※ 주석은 빼고, 그 줄이 이어진 다음 줄들도 글머리표가 나올 때까지 뺀다.
       if (NOISE_RE.test(body) || /^\s*※/.test(l)) { skipping = true; continue; }
@@ -183,7 +236,7 @@ function conditions(text) {
   if (/지역\s*의무\s*공동\s*도급|공동수급체\s*구성원\s*중[^.。]{0,40}지역\s*업체/.test(flat)) found.regionDuty = true;
 
   // 직접생산확인 품목: "○○서비스 … 8111159901" 같은 이름과 10자리 번호
-  for (const m of flat.matchAll(/([가-힣A-Za-z ]{2,24}?서비스)\s*[,(（:：\[\]【】]*\s*(?:세부\s*품명\s*번호|물품\s*분류\s*번호|세부품명|번호)?\s*[:：]?\s*(81\d{8})/g)) {
+  for (const m of flat.matchAll(/([가-힣A-Za-z ]{2,24}?서비스)\s*[,(（:：\[\]【】\-–]*\s*(?:세부\s*품명\s*번호|물품\s*분류\s*번호|세부품명|번호)?\s*[:：]?\s*(81\d{8})/g)) {
     const name = PRODUCTS[m[2]] || m[1].replace(/\s+/g, '').replace(/^.*(?:품명|및|또는|,)/, '');
     if (!found.direct.some((d) => d.code === m[2])) found.direct.push({ name, code: m[2] });
   }
@@ -243,7 +296,7 @@ function parse(text) {
   return { scope, background, ...conditions(text) };
 }
 
-export { parse, conditions, hwpxText, hwpText, hwpParaText };
+export { parse, conditions, hwpxText, hwpText, hwpParaText, blocksToText };
 
 // ---------- 실행 ----------
 // 다른 스크립트(시험 등)에서 불러올 때는 실행하지 않는다.
