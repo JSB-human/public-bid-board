@@ -44,7 +44,19 @@ function kstStamp(date) {
   return `${d.getUTCFullYear()}${p(d.getUTCMonth() + 1)}${p(d.getUTCDate())}${p(d.getUTCHours())}${p(d.getUTCMinutes())}`;
 }
 
+// 공공데이터포털은 가끔 "어플리케이션 에러"를 내므로 몇 번 다시 시도한다. 입력값 오류는 재시도하지 않는다.
 async function callApi(params, operation = OPERATION) {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      return await callApiOnce(params, operation);
+    } catch (e) {
+      if (attempt >= 4 || /API 오류 (06|07|08)/.test(e.message)) throw e;
+      await new Promise((r) => setTimeout(r, attempt * 3000));
+    }
+  }
+}
+
+async function callApiOnce(params, operation) {
   const qs = new URLSearchParams({ serviceKey: key, type: 'json', ...params });
   const res = await fetch(`${BASE}/${operation}?${qs}`);
   const text = await res.text();
