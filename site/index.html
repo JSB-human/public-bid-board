@@ -485,10 +485,10 @@ function detailHtml(x, now) {
       <ul class="scope">${items}</ul>
       <div class="note">${esc(src.replace(/\.[a-z0-9]+$/i, '').replace(/^\d+\.\s*/, '').replace(/^.*› /, ''))}에서 자동으로 발췌했어요.</div>`;
   } else if (doc.files) {
-    const hwp = (doc.skipped || []).some((f) => /\.hwp$/i.test(f));
-    scopeHtml = `<div class="section-title">사업 내용</div><div class="note">${hwp
-      ? '제안요청서가 한글(HWP) 파일이라 자동으로 읽지 못했어요. 첨부파일에서 확인하세요.'
-      : '공고문에 사업 내용이 따로 적혀 있지 않아요. 첨부파일에서 확인하세요.'}</div>`;
+    const hasRfp = (doc.files || []).some((f) => /제안|과업|규격/.test(f));
+    scopeHtml = `<div class="section-title">사업 내용</div><div class="note">${hasRfp
+      ? '제안요청서에서 사업 내용 부분을 찾지 못했어요. 첨부파일에서 확인하세요.'
+      : '제안요청서가 첨부되지 않았고, 공고문에는 사업 내용이 따로 적혀 있지 않아요.'}</div>`;
   }
 
   const files = (d.files || []).map((f) => {

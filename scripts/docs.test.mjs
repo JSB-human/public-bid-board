@@ -1,6 +1,15 @@
 // 발췌 규칙 시험.  node scripts/docs.test.mjs
 import assert from 'node:assert/strict';
-import { conditions, parse } from './docs.mjs';
+import { conditions, parse, hwpParaText } from './docs.mjs';
+
+// HWP 문단 레코드: 글자 + 탭(9, 8글자 자리) + 확장 제어문자(11, 8글자 자리) + 문단 끝(13)
+const u16 = (...codes) => Buffer.from(Uint16Array.from(codes).buffer);
+const rec = Buffer.concat([
+  Buffer.from('사업', 'utf16le'), u16(9, 0, 0, 0, 0, 0, 0, 9),
+  Buffer.from('범위', 'utf16le'), u16(11, 0x6c74, 0x6274, 0, 0, 0, 0, 11),
+  Buffer.from('끝', 'utf16le'), u16(13),
+]);
+assert.equal(hwpParaText(rec), '사업 범위끝\n');
 
 const region = (t) => conditions(t).regionReq;
 
