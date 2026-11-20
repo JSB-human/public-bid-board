@@ -35,10 +35,11 @@ export const num = (v) => (v !== undefined && v !== null && v !== '' && !Number.
 export const stats = { calls: 0 };
 
 // ---------- API 별 하루 호출 예산 ----------
-// 개발계정 한도: 입찰공고·낙찰·계약 1,000회, 조달업체·국민연금 10,000회 (하루, 한국시간 자정 초기화).
-// 운영계정으로 올리면 config.dailyLimits 에 새 한도를 적는다.
+// 하루 한도(한국시간 자정 초기화). 입찰공고·낙찰·계약은 2026-11-20 운영계정(하루 10만 회)으로 신청했다.
+// 승인 전에 한도를 넘으면 포털이 "요청제한" 오류를 내고, 그날은 그 API 를 멈춘다(아래 callApi).
+// 조달업체·국민연금은 개발계정 10,000회. 바뀌면 config.dailyLimits 로 덮는다.
 const NAMES = { [API.bid]: 'bid', [API.scsbid]: 'scsbid', [API.cntrct]: 'cntrct', [API.usr]: 'usr', [API.nps]: 'nps' };
-const LIMITS = { bid: 1000, scsbid: 1000, cntrct: 1000, usr: 10000, nps: 10000, ...(config.dailyLimits || {}) };
+const LIMITS = { bid: 100000, scsbid: 100000, cntrct: 100000, usr: 10000, nps: 10000, ...(config.dailyLimits || {}) };
 const USAGE = path.join(ROOT, 'cache', 'api-usage.json');
 const today = new Date(Date.now() + 9 * 3600e3).toISOString().slice(0, 10);
 let usage = { date: today, calls: {} };
