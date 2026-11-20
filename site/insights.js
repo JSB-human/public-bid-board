@@ -4,7 +4,7 @@
 const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
 const data = { results: null, companies: null, byBizno: new Map() };
-const rs = { q: '', filter: 'all', open: new Set() };
+const rs = { q: '', filter: 'all', open: new Set(), sel: null, limit: 150 };
 const cs = { q: '', sort: 'wins' };
 
 // ---------- 공용 ----------
@@ -44,27 +44,32 @@ async function renderResults() {
   if (!root.dataset.ready) {
     root.dataset.ready = '1';
     root.innerHTML = `
-      <section class="hero"><h1>마감된 공고와<br>누가 가져갔는지</h1>
+      <div class="top"><section class="hero"><h1>마감된 공고와<br>누가 가져갔는지</h1>
         <p>진행 중 목록과 같은 조건에 맞던 공고의 참여 업체·낙찰·계약 결과예요.</p></section>
-      <section class="stats" id="rStats"></section>
+      <section class="stats" id="rStats"></section></div>
       <section class="dash" id="rDash"></section>
-      <div class="toolbar"><div class="inner">
-        <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명으로 검색" aria-label="결과 검색"></div>
-        <div class="chips" id="rChips">
-          <button class="chip" data-f="all">전체</button><button class="chip" data-f="won">낙찰·계약</button>
-          <button class="chip" data-f="joint">공동계약</button><button class="chip" data-f="failed">유찰</button><button class="chip" data-f="wait">결과 대기</button>
-        </div></div></div>
-      <div class="count" id="rCount"></div><div id="rList" class="list-grid"></div>
+      <div class="split"><div class="col-list">
+        <div class="toolbar"><div class="inner">
+          <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명 검색" aria-label="결과 검색"></div>
+          <div class="chips" id="rChips">
+            <button class="chip" data-f="all">전체</button><button class="chip" data-f="won">낙찰·계약</button>
+            <button class="chip" data-f="joint">공동계약</button><button class="chip" data-f="failed">유찰</button><button class="chip" data-f="wait">결과 대기</button>
+          </div></div></div>
+        <div class="count" id="rCount"></div><div id="rList" class="rows"></div></div>
+        <aside class="pane" id="rPane" aria-label="고른 공고 결과"></aside></div>
       <footer id="rFoot"></footer>`;
-    $('rq').addEventListener('input', (e) => { rs.q = e.target.value.trim().toLowerCase(); drawResults(); });
-    $('rChips').addEventListener('click', (e) => { const b = e.target.closest('[data-f]'); if (b) { rs.filter = b.dataset.f; drawResults(); } });
+    $('rq').addEventListener('input', (e) => { rs.q = e.target.value.trim().toLowerCase(); rs.limit = 150; drawResults(); });
+    $('rChips').addEventListener('click', (e) => { const b = e.target.closest('[data-f]'); if (b) { rs.filter = b.dataset.f; rs.limit = 150; drawResults(); } });
     $('rList').addEventListener('click', (e) => {
-      const h = e.target.closest('button.head');
+      if (e.target.closest('.more-btn')) { rs.limit += 150; drawResults(); return; }
+      const h = e.target.closest('button.row');
       if (!h) return;
       const id = h.dataset.id;
-      rs.open.has(id) ? rs.open.delete(id) : rs.open.add(id);
+      if (wide()) rs.sel = id;
+      else rs.open.has(id) ? rs.open.delete(id) : rs.open.add(id);
       drawResults();
     });
+    window.addEventListener('layoutchange', () => { if (!root.hidden) drawResults(); });
   }
   try {
     const d = await load('results');
@@ -145,31 +150,66 @@ function drawResults() {
     }
     return true;
   });
+  const W = wide();
   $('rCount').innerHTML = `<span><b>${rows.length}</b>건</span>`;
-  $('rList').innerHTML = rows.length ? rows.map(resultCard).join('') : emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.');
+  if (!rows.length) { $('rList').innerHTML = emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.'); $('rPane').innerHTML = ''; return; }
+  if (W && !rows.some((r) => r.id === rs.sel)) rs.sel = rows[0].id;
+  // 고른 공고가 아직 안 보이는 뒤쪽에 있으면 거기까지 편다
+  const at = rows.findIndex((r) => r.id === rs.sel);
+  if (at >= rs.limit) rs.limit = at + 20;
+  $('rList').innerHTML = rows.slice(0, rs.limit).map((r) => resultRow(r, W)).join('') +
+    (rows.length > rs.limit ? `<button class="more-btn">${rows.length - rs.limit}건 더 보기</button>` : '');
+  const cur = W ? rows.find((r) => r.id === rs.sel) : null;
+  if ($('rPane').dataset.id !== (cur ? cur.id : '')) {
+    $('rPane').innerHTML = cur ? resultPane(cur) : '';
+    $('rPane').dataset.id = cur ? cur.id : '';
+    $('rPane').scrollTop = 0;
+  }
 }
 
-function resultCard(r) {
-  const open = rs.open.has(r.id);
+const leadOf = (r) => r.contract?.members?.[0] || r.winner;
+const whoOf = (r) => { const l = leadOf(r); return l ? short(l.name) + (r.contract?.members?.length > 1 ? ` 외 ${r.contract.members.length - 1}곳` : '') : ''; };
+const amountOf = (r) => [r.contract?.amount || r.winner?.amount || r.amount, r.contract?.amount ? '계약' : r.winner?.amount ? '낙찰' : '추정'];
+
+function resultRow(r, W) {
+  const on = W ? rs.sel === r.id : rs.open.has(r.id);
   const [st, cls] = statusOf(r);
   // 금액이 0 으로 등록된 계약(해외 사업 등)은 금액이 없는 것으로 본다.
-  const amount = r.contract?.amount || r.winner?.amount || r.amount;
-  const amountLabel = r.contract?.amount ? '계약' : r.winner?.amount ? '낙찰' : '추정';
-  const lead = r.contract?.members?.[0] || r.winner;
-  const who = lead ? `<span class="who">${esc(lead.name)}${r.contract?.members?.length > 1 ? ` 외 ${r.contract.members.length - 1}곳` : ''}</span>` : '';
-  const kind = kindOf(r);
-  return `<article class="card ${open ? 'open' : ''}">
-    <button class="head" data-id="${esc(r.id)}" aria-expanded="${open}">
-      <span class="icon i-${kind}">${svg(ICONS[kind])}</span>
-      <span class="body">
-        <span class="title">${esc(r.title)}</span>
-        <span class="meta"><span>${esc(r.org)}</span>${r.openedAt ? `<span class="dot">${shortDay(r.openedAt)} 개찰</span>` : ''}${r.participants ? `<span class="dot">${r.participants}곳 참여</span>` : ''}</span>
-        <span class="badges"><span class="badge st-${cls}">${st}</span>${r.contract?.joint ? '<span class="badge rg">공동계약</span>' : ''}${who}</span>
+  const [amount, amountLabel] = amountOf(r);
+  const who = whoOf(r);
+  return `<article class="item ${on ? (W ? 'sel' : 'open') : ''}">
+    <button class="row" data-id="${esc(r.id)}" ${W ? `aria-current="${on}"` : `aria-expanded="${on}"`}>
+      <span class="when st-${cls}"><b>${{ '개찰 완료': '개찰', '결과 대기': '대기' }[st] || esc(st)}</b><small>${shortDay(r.openedAt || r.deadline).replace(/^\d+\./, '').replace('.', '/')}</small></span>
+      <span class="rbody">
+        <span class="rtitle">${esc(r.title)}</span>
+        <span class="rmeta"><span>${esc(r.org)}${r.participants ? ` · ${r.participants}곳 참여` : ''}</span>${r.contract?.joint ? '<span class="badge rg">공동</span>' : ''}</span>
+        ${who ? `<span class="rwho">${esc(who)}</span>` : ''}
       </span>
-      <span class="side"><span class="amount">${won(amount)}</span><span class="sub"><span class="alabel">${amountLabel}</span>${svg(CHEV, 'chev')}</span></span>
+      <span class="rside"><b>${eok(amount)}</b><small>${amountLabel}</small></span>
     </button>
-    ${open ? resultDetail(r) : ''}
+    ${!W && on ? resultDetail(r) : ''}
   </article>`;
+}
+
+// 오른쪽 상세의 머리: 결과를 한 줄로
+function resultPane(r) {
+  const [st, cls] = statusOf(r);
+  const [amount, amountLabel] = amountOf(r);
+  const kind = kindOf(r), who = whoOf(r);
+  const checks = [
+    ['결과', who ? esc(who) : st, cls === 'ok' ? 'good' : cls === 'bad' ? 'bad' : ''],
+    r.participants != null && ['참여', r.participants + '곳', ''],
+    r.winner?.rate != null && ['투찰률', pct(r.winner.rate), ''],
+    r.contract && ['계약 형태', r.contract.joint ? `공동 ${r.contract.members?.length || ''}곳` : '단독', ''],
+  ].filter(Boolean);
+  return `<div class="pane-h">
+      <div class="pane-tags"><span class="badge"><i class="kd k-${kind}"></i>${KINDS[kind]}</span><span class="badge st-${cls}">${st}</span>${r.reNotice ? '<span class="badge re">재공고</span>' : ''}</div>
+      <h2>${esc(r.title)}</h2>
+      <div class="pane-org">${esc(r.org)}${r.openedAt ? ` · ${shortDay(r.openedAt)} 개찰` : ''}</div>
+      <div class="pane-amt"><b>${won(amount)}<small>${amountLabel}</small></b></div>
+    </div>
+    <div class="detail" style="padding-bottom:0"><div class="checks">${checks.map(([k, v, c]) => `<div class="check ${c}"><small>${k}</small><b>${v}</b></div>`).join('')}</div></div>
+    ${resultDetail(r)}`;
 }
 
 function resultDetail(r) {
@@ -217,8 +257,9 @@ function resultDetail(r) {
     r.deadline && ['입찰 마감', esc(dueLabel(parseDeadline(r.deadline)))],
   ].filter(Boolean);
   return `<div class="detail">
-    <div class="tiles">${facts.map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('')}</div>
     ${parts.join('')}
+    <div class="section-title">공고 정보</div>
+    <div class="tiles">${facts.map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('')}</div>
     <div class="cta-row">${links.join('')}</div>
   </div>`;
 }
@@ -310,6 +351,7 @@ function drawCompany(bizno) {
     <p class="back"><a href="#companies">← 업체 목록</a></p>
     <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
     <section class="stats">${tiles.map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('')}</section>
+    <section class="panel"><div class="section-title">참여 이력 ${c.history.length}건</div>${historyTable(c)}</section>
     <section class="panel"><div class="section-title panel-h"><span>관계도 <small>컨소시엄 파트너와 그 파트너, 같은 공고에서 겨룬 회사</small></span><a class="more" href="#galaxy/c:${esc(c.bizno)}">우주에서 보기 →</a></div><div class="net ego" id="egoGraph"></div>
       <div class="rel-cols">
         <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
@@ -320,7 +362,7 @@ function drawCompany(bizno) {
       <section class="panel"><div class="section-title">직원 수 추이 <small>국민연금 가입자 기준</small></div>${npsChart(c)}</section>
     </div>
     <section class="panel"><div class="section-title">재무 <small>DART · 외부감사 대상만</small></div>${dartTable(c)}</section>
-    <section class="panel"><div class="section-title">참여 이력 ${c.history.length}건</div>${historyTable(c)}</section>`;
+`;
   drawEgo($('egoGraph'), c);
   window.scrollTo(0, 0);
 }
@@ -442,12 +484,15 @@ document.addEventListener('click', (e) => {
   const a = e.target.closest('[data-goto]');
   if (!a) return;
   rs.open.add(a.dataset.goto);
+  rs.sel = a.dataset.goto;
   rs.q = '';
+  rs.filter = 'all';
   setTimeout(() => {
-    const card = document.querySelector(`#rList button.head[data-id="${CSS.escape(a.dataset.goto)}"]`);
-    card?.scrollIntoView({ block: 'start' });
-    window.scrollBy(0, -120);
-  }, 150);
+    if ($('rq')) $('rq').value = '';
+    if (data.results) drawResults();
+    const row = document.querySelector(`#rList button.row[data-id="${CSS.escape(a.dataset.goto)}"]`);
+    row?.scrollIntoView({ block: 'center' });
+  }, 200);
 });
 window.addEventListener('hashchange', () => { route(); if (!/^#company\//.test(location.hash)) window.scrollTo(0, 0); });
 route();
