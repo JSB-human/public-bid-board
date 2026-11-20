@@ -158,7 +158,8 @@ for (const c of ranked) {
             if (f.status !== '000') continue;
             const list = (f.list || []).filter((x) => x.fs_div === 'OFS' || !f.list.some((z) => z.fs_div === 'OFS'));
             const row = { year: y };
-            for (const a of ACCOUNTS) { const it = list.find((x) => x.account_nm === a); if (it) row[a] = num(String(it.thstrm_amount).replace(/,/g, '')); }
+            // 계정 이름이 "당기순이익(손실)"처럼 붙어 나오는 경우가 있어 앞부분으로 맞춘다.
+            for (const a of ACCOUNTS) { const it = list.find((x) => String(x.account_nm || '').replace(/\s/g, '').startsWith(a)); if (it) row[a] = num(String(it.thstrm_amount).replace(/,/g, '')); }
             if (Object.keys(row).length > 1) years.push(row);
           }
         }
