@@ -56,9 +56,10 @@ function build(companies, results) {
     linkedOrgs.add(e.org);
     links.push({ source: 'o:' + e.org, target: 'c:' + e.bizno, kind: e.win ? 'win' : 'bid', count: e.win || e.bid, bids: e.bid, amt: e.amt });
   }
+  const maxOrgN = Math.max(1, ...[...orgs.values()].map((o) => o.n));
   for (const o of orgs.values()) {
     if (!linkedOrgs.has(o.name)) continue; // 아무도 응찰하지 않은 기관은 이을 선이 없어 뺀다
-    nodes.set('o:' + o.name, { id: 'o:' + o.name, type: 'org', name: o.name, o, r: 3 + 1.7 * Math.sqrt(o.n) });
+    nodes.set('o:' + o.name, { id: 'o:' + o.name, type: 'org', name: o.name, o, r: 2.6 + 7 * Math.sqrt(o.n / maxOrgN) });
   }
   const seen = new Set();
   for (const c of companies) {
@@ -90,13 +91,13 @@ function glowTexture() {
   ctx.fillRect(0, 0, 128, 128);
   return (glowTex = new THREE.CanvasTexture(cv));
 }
-const SPHERE = new THREE.SphereGeometry(1, 20, 14);
+const SPHERE = new THREE.SphereGeometry(1, 14, 10);
 function starObject(n) {
   const color = n.type === 'org' ? C.org : n.won ? C.won : C.plain;
   const g = new THREE.Group();
   const mesh = new THREE.Mesh(SPHERE, new THREE.MeshBasicMaterial({ color, transparent: true }));
   mesh.scale.setScalar(n.r);
-  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture(), color, transparent: true, opacity: 0.3, blending: THREE.AdditiveBlending, depthWrite: false }));
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture(), color, transparent: true, opacity: 0.22, blending: THREE.AdditiveBlending, depthWrite: false }));
   glow.scale.setScalar(n.r * (n.type === 'org' ? 6 : n.won ? 5 : 3.2));
   glow.raycast = () => {};
   g.add(glow, mesh);
@@ -122,10 +123,11 @@ function starfield() {
     group.add(pts);
   }
   // 성운: 크고 옅은 색 구름 몇 덩이를 별 무리 사이와 뒤에 둔다
-  const clouds = [['#3f5efb', 520, 0.045], ['#ff5c8a', 460, 0.03], ['#18c5c5', 420, 0.028], ['#8b5cf6', 560, 0.04], ['#ffb04a', 380, 0.02], ['#3f5efb', 1500, 0.018], ['#b14bff', 1300, 0.014]];
+  // 화면을 덮는 반투명 구름은 겹칠수록 그리기가 무거워져서 몇 덩이만 둔다
+  const clouds = [['#3f5efb', 520, 0.05], ['#ff5c8a', 460, 0.035], ['#8b5cf6', 560, 0.045], ['#3f5efb', 1500, 0.02]];
   clouds.forEach(([color, size, opacity], i) => {
     const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: glowTexture(), color, transparent: true, opacity, blending: THREE.AdditiveBlending, depthWrite: false }));
-    const far = i >= 5, r = far ? 1200 : 120 + Math.random() * 160, t = (i / 5) * Math.PI * 2 + 0.6, y = (Math.random() - 0.5) * (far ? 900 : 220);
+    const far = i >= 3, r = far ? 1200 : 120 + Math.random() * 160, t = (i / 3) * Math.PI * 2 + 0.6, y = (Math.random() - 0.5) * (far ? 900 : 220);
     sp.position.set(r * Math.cos(t), y, r * Math.sin(t));
     sp.scale.setScalar(size * (far ? 1 : 1.6));
     sp.raycast = () => {};
@@ -140,7 +142,13 @@ export async function openGalaxy(el, { companies, results }) {
   // 처음에는 읽기 쉬운 쪽으로: 수주 관계만, 평면(지도처럼 끌어서 이동)
   const st = { mode: 'win', flat: true, rival: false, sel: null, hov: null };
   const Z = (n) => (st.flat ? 0 : n.z || 0);
-  let nbr = new Map(), shown = [], adj = new Map();
+  let nbr = new Map(), shown = [], adj = new Map(), linkN = 0;
+  // 한 화면에 띄우는 별 수의 위쪽 한계. 넘으면 규모가 큰 별부터 남긴다(데이터가 몇 년치 쌓여도 버티게).
+  const MAX_STARS = 300;
+  const forced = new Set(); // 목록·검색에서 골라 한계 밖인데도 띄운 별
+  let adjAll = new Map(), shownIds = new Set();
+  // 그리기 품질: 2 = 빛 번짐까지, 1 = 빛 번짐 끔, 0 = 흐르는 빛·곡선도 끄고 해상도도 낮춤. 느리면 스스로 내린다.
+  let quality = 2, manualFx = false, bloom = null, paused = false, cooling = true;
 
   el.innerHTML = `
     <div class="gx-canvas"></div>
@@ -151,6 +159,8 @@ export async function openGalaxy(el, { companies, results }) {
         <div class="gx-seg" role="group" aria-label="보기 범위"><button data-mode="win" aria-pressed="true">수주 관계만</button><button data-mode="all" aria-pressed="false">참여까지</button></div>
         <div class="gx-seg" role="group" aria-label="배치"><button data-dim="flat" aria-pressed="true">평면</button><button data-dim="3d" aria-pressed="false">입체</button></div>
         <button class="gx-btn" data-rival aria-pressed="false">경쟁선</button>
+        <button class="gx-btn" data-side aria-pressed="false">순위</button>
+        <button class="gx-btn" data-fx aria-pressed="true" title="빛 번짐·흐르는 빛 같은 꾸밈 효과. 느리면 꺼 보세요.">효과</button>
         <button class="gx-btn" data-fit>전체 보기</button>
       </div>
     </div>
@@ -181,22 +191,22 @@ export async function openGalaxy(el, { companies, results }) {
     .linkOpacity(1)
     .linkColor((l) => LINK[l.kind](isOn(l)))
     .linkWidth((l) => (l.kind === 'partner' ? 0.7 : l.kind === 'win' && active() && isOn(l) ? 0.5 : 0))
-    .linkCurvature((l) => (l.kind === 'rival' ? 0 : 0.16))
+    .linkCurvature((l) => (l.kind === 'rival' || quality === 0 || linkN > 600 ? 0 : 0.16))
     .linkCurveRotation((l) => l.rot)
-    .linkDirectionalParticles((l) => (l.kind !== 'win' || calm ? 0 : !active() ? 1 : isOn(l) ? Math.min(5, 2 + l.count) : 0))
+    .linkDirectionalParticles((l) => (l.kind !== 'win' || calm || quality === 0 ? 0 : !active() ? (linkN > 400 ? 0 : 1) : isOn(l) ? Math.min(5, 2 + l.count) : 0))
     .linkDirectionalParticleWidth((l) => (active() ? 1.6 : 1))
     .linkDirectionalParticleSpeed((l) => l.speed)
     .linkDirectionalParticleColor(() => '#bfe0ff')
     .warmupTicks(90)
     .cooldownTicks(160)
-    .onNodeHover((n) => { st.hov = n || null; box.style.cursor = n ? 'pointer' : ''; if (!st.sel) paint(); })
+    .onNodeHover((n) => { st.hov = n || null; box.style.cursor = n ? 'pointer' : ''; })
     .onNodeClick((n) => select(n))
     .onBackgroundClick(() => select(null));
 
   Graph.d3Force('link')
-    .distance((l) => ({ partner: 16, win: 34, bid: 58, rival: 90 }[l.kind] * (st.flat ? 1.7 : 1)))
+    .distance((l) => ({ partner: 16, win: 34, bid: 58, rival: 90 }[l.kind] * (st.flat ? 1.7 : 1) * (l.kind === 'partner' ? 1 : 1 + Math.sqrt(l.deg || 1) / 3)))
     .strength((l) => ({ partner: 0.9, win: 0.55, bid: 0.14, rival: 0.01 }[l.kind]));
-  Graph.d3Force('charge').strength(() => (st.flat ? -150 : -70));
+  Graph.d3Force('charge').strength(() => (st.flat ? -210 : -80));
   // 서로 이어지지 않은 무리가 멀리 흩어지지 않게 가운데로 살짝 당긴다.
   let simNodes = [];
   const gravity = (alpha) => { const g = (st.flat ? 0.02 : 0.035) * alpha; for (const n of simNodes) { n.vx -= n.x * g; n.vy -= n.y * g; if (n.z != null) n.vz -= n.z * g; } };
@@ -206,8 +216,25 @@ export async function openGalaxy(el, { companies, results }) {
   // 밝은 것만 은은하게 번지게 한다. 불러오지 못하면 없이 그린다.
   try {
     const { UnrealBloomPass } = await import('https://cdn.jsdelivr.net/npm/three@0.187.0/examples/jsm/postprocessing/UnrealBloomPass.js/+esm');
-    Graph.postProcessingComposer().addPass(new UnrealBloomPass(new THREE.Vector2(box.clientWidth || 800, box.clientHeight || 600), 0.8, 0.6, 0.3));
+    bloom = new UnrealBloomPass(new THREE.Vector2(box.clientWidth || 800, box.clientHeight || 600), 0.55, 0.5, 0.35);
   } catch (e) { console.warn('빛 번짐 효과를 불러오지 못했어요', e); }
+  let bloomOn = false;
+  function setQuality(v) {
+    quality = v;
+    const composer = Graph.postProcessingComposer();
+    if (bloom && (v === 2) !== bloomOn) { bloomOn = v === 2; bloomOn ? composer.addPass(bloom) : composer.removePass(bloom); }
+    // 고해상도 화면은 그릴 점이 4배라 가장 큰 부담이다. 1.5배까지만 쓰고, 가장 낮은 품질에서는 1배.
+    const pr = v === 0 ? 1 : Math.min(window.devicePixelRatio || 1, 1.5);
+    Graph.renderer().setPixelRatio(pr);
+    composer.setPixelRatio?.(pr);
+    const w = box.clientWidth, h = box.clientHeight;
+    if (w && h) { Graph.renderer().setSize(w, h); composer.setSize(w, h); }
+    Graph.linkCurvature(Graph.linkCurvature()).linkDirectionalParticles(Graph.linkDirectionalParticles());
+    const b = q('[data-fx]');
+    b.setAttribute('aria-pressed', v === 2);
+    b.textContent = v === 2 ? '효과' : v === 1 ? '효과 줄임' : '효과 끔';
+  }
+  setQuality(calm ? 1 : 2);
   // 멀리서 날아 들어오며 시작한다
   if (!calm) Graph.cameraPosition({ x: 0, y: 0, z: 1900 });
   Graph.numDimensions(2);
@@ -226,10 +253,22 @@ export async function openGalaxy(el, { companies, results }) {
   }
   syncControls();
   const stopSpin = () => { controls.autoRotate = false; hint.classList.add('off'); };
+  // 10초 동안 아무것도 안 하면 그리기를 멈추고(노트북 발열·배터리), 다시 움직이면 이어 그린다.
+  let idleT = 0, fpsFrom = 0, fpsN = 0;
+  function poke() {
+    if (paused) { paused = false; Graph.resumeAnimation(); fpsFrom = 0; }
+    clearTimeout(idleT);
+    idleT = setTimeout(() => {
+      // 자리 잡는 중이거나 처음 화면을 맞추기 전이면 멈추지 않고 조금 뒤에 다시 본다
+      if (cooling || !fitted) return poke();
+      if (!controls.autoRotate && !el.hidden) { paused = true; Graph.pauseAnimation(); }
+    }, 10000);
+  }
+  for (const ev of ['pointermove', 'pointerdown', 'wheel', 'keydown', 'touchstart']) el.addEventListener(ev, poke, { passive: true });
   box.addEventListener('pointerdown', stopSpin);
   box.addEventListener('wheel', stopSpin, { passive: true });
 
-  function active() { return st.sel || st.hov; }
+  function active() { return st.sel; }
   function isOn(l) {
     const a = active();
     return !a || idOf(l.source) === a.id || idOf(l.target) === a.id;
@@ -241,6 +280,23 @@ export async function openGalaxy(el, { companies, results }) {
     const ids = new Set();
     for (const l of links) if (l.kind !== 'rival') { ids.add(idOf(l.source)); ids.add(idOf(l.target)); }
     shown = [...ids].map((id) => nodeMap.get(id)).filter(Boolean);
+    // 옆 패널은 화면에 안 띄운 별까지 포함한 전체 관계로 채운다
+    adjAll = new Map();
+    for (const l of links) {
+      const a = idOf(l.source), b = idOf(l.target);
+      if (!ids.has(a) || !ids.has(b)) continue;
+      (adjAll.get(a) || adjAll.set(a, []).get(a)).push({ id: b, l });
+      (adjAll.get(b) || adjAll.set(b, []).get(b)).push({ id: a, l });
+    }
+    const total = shown.length;
+    if (total > MAX_STARS) {
+      const keep = new Set(shown.sort((a, b) => b.r - a.r).slice(0, MAX_STARS));
+      for (const n of shown) if (forced.has(n.id) || n === st.sel) keep.add(n);
+      shown = [...keep];
+      ids.clear();
+      for (const n of shown) ids.add(n.id);
+    }
+    shownIds = ids;
     const use = links.filter((l) => ids.has(idOf(l.source)) && ids.has(idOf(l.target))).map((l) => ({ ...l, source: idOf(l.source), target: idOf(l.target), rot: Math.random() * Math.PI * 2, speed: 0.003 + Math.random() * 0.004 }));
     nbr = new Map(shown.map((n) => [n.id, new Set()]));
     adj = new Map(shown.map((n) => [n.id, []]));
@@ -249,8 +305,17 @@ export async function openGalaxy(el, { companies, results }) {
       adj.get(l.source).push({ id: l.target, l }); adj.get(l.target).push({ id: l.source, l });
     }
     if (st.sel && !ids.has(st.sel.id)) { st.sel = null; drawPanel(); }
+    linkN = use.length;
+    const deg = new Map();
+    for (const l of use) { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); }
+    for (const l of use) l.deg = Math.max(deg.get(l.source), deg.get(l.target));
+    cooling = true;
+    const fresh = shown.filter((n) => !n.lb);
+    for (const n of fresh) makeLabel(n);
+    for (const n of fresh) { n.lw = n.lb.offsetWidth; n.lh = n.lb.offsetHeight; }
     Graph.graphData({ nodes: shown, links: use });
-    q('.gx-count').textContent = `별 ${shown.length}개 · 선 ${use.length}개${hiddenOrgs ? ` · 응찰 없던 기관 ${hiddenOrgs}곳은 빠졌어요` : ''}`;
+    q('.gx-count').textContent = `별 ${shown.length}개 · 선 ${use.length}개${total > MAX_STARS ? ` · 규모가 큰 ${MAX_STARS}개만 보여요(전체 ${total}개)` : hiddenOrgs ? ` · 응찰 없던 기관 ${hiddenOrgs}곳은 빠졌어요` : ''}`;
+    poke();
     paint();
   }
 
@@ -262,7 +327,7 @@ export async function openGalaxy(el, { companies, results }) {
       const on = !a || n === a || set?.has(n.id);
       n.g3.mesh.material.opacity = on ? 1 : 0.06;
       n.g3.glow.visible = on;
-      n.g3.glow.material.opacity = n === a ? 0.8 : 0.3;
+      n.g3.glow.material.opacity = n === a ? 0.8 : 0.22;
       n.g3.glow.scale.setScalar(n.g3.glowSize * (n === a ? 1.7 : 1));
     }
     Graph.linkColor(Graph.linkColor()).linkWidth(Graph.linkWidth()).linkDirectionalParticles(Graph.linkDirectionalParticles());
@@ -272,7 +337,7 @@ export async function openGalaxy(el, { companies, results }) {
   // 이름표: 화면에서 서로 겹치지 않는 것만 보인다. 큰 별과 가까운 별이 먼저 자리를 잡아서,
   // 멀리서는 굵직한 이름만, 다가가면 주변 이름이 차례로 나타난다. 고른 별이 있으면 그 별과 이웃만.
   const layer = q('.gx-labels');
-  for (const n of nodeMap.values()) {
+  function makeLabel(n) {
     const d = document.createElement('div');
     d.className = 'gx-lb ' + (n.type === 'org' ? 'org' : n.won ? 'won' : '') + (n.r > 6 ? ' big' : '');
     d.textContent = n.name.length > 16 ? n.name.slice(0, 16) + '…' : n.name;
@@ -280,7 +345,6 @@ export async function openGalaxy(el, { companies, results }) {
     layer.appendChild(d);
     n.lb = d;
   }
-  for (const n of nodeMap.values()) { n.lw = n.lb.offsetWidth; n.lh = n.lb.offsetHeight; }
   const baseText = (n) => (n.name.length > 16 ? n.name.slice(0, 16) + '…' : n.name);
   const relText = (l) => (l.kind === 'win' ? (l.amt ? eok(l.amt) : l.count + '건') + ' 수주' : l.kind === 'bid' ? '참여 ' + l.count + '번' : l.kind === 'partner' ? '컨소시엄 ' + l.count + '건' : '경쟁 ' + l.count + '번');
   let noted = [];
@@ -293,7 +357,7 @@ export async function openGalaxy(el, { companies, results }) {
     for (const x of adj.get(a.id) || []) if (!best.has(x.id) || rank[x.l.kind] < rank[best.get(x.id).kind]) best.set(x.id, x.l);
     for (const [id, l] of best) {
       const n = nodeMap.get(id);
-      if (!n) continue;
+      if (!n?.lb) continue;
       n.lb.innerHTML = `${esc(baseText(n))}<em class="${l.kind}">${esc(relText(l))}</em>`;
       n.lb.classList.add('rel');
       n.lw = n.lb.offsetWidth;
@@ -320,7 +384,7 @@ export async function openGalaxy(el, { companies, results }) {
       if (a && n !== a && !set?.has(n.id)) continue;
       const p = screen(n, cam, W, H, K);
       if (!p) continue;
-      cand.push({ n, x0: p.x - n.lw / 2 - 4, x1: p.x + n.lw / 2 + 4, y0: p.y - 2, y1: p.y + n.lh + 2, pr: (n === a ? 1e6 : 0) + n.r + 500 / p.d });
+      cand.push({ n, x0: p.x - n.lw / 2 - 4, x1: p.x + n.lw / 2 + 4, y0: p.y - 2, y1: p.y + n.lh + 2, pr: (n === a ? 1e6 : n === st.hov ? 1e5 : 0) + n.r + 500 / p.d });
     }
     cand.sort((p, q2) => q2.pr - p.pr);
     const next = [];
@@ -349,10 +413,19 @@ export async function openGalaxy(el, { companies, results }) {
   let last = 0, raf = 0;
   const loop = () => {
     raf = requestAnimationFrame(loop);
-    if (el.hidden || !el.offsetParent) return;
+    if (paused || el.hidden || !el.offsetParent) return;
     // 어느 이름표를 보일지는 0.15초마다 다시 고르고(프레임이 느려도 같은 간격), 그 사이에는 자리만 옮긴다
     const now = performance.now();
     if (now - last > 150) { last = now; labels(); } else move();
+    // 자리 잡기가 끝난 뒤 2초씩 재서 초당 30장이 안 나오면 효과를 한 단계 내린다
+    if (cooling || manualFx || quality === 0 || document.hidden) { fpsFrom = 0; return; }
+    if (!fpsFrom) { fpsFrom = now; fpsN = 0; return; }
+    fpsN++;
+    if (now - fpsFrom >= 2000) {
+      const fps = (fpsN * 1000) / (now - fpsFrom);
+      fpsFrom = 0;
+      if (fps < 30) setQuality(quality - 1);
+    }
   };
   loop();
 
@@ -372,6 +445,7 @@ export async function openGalaxy(el, { companies, results }) {
   }
   function select(n, fly = true) {
     st.sel = n || null;
+    poke();
     if (n) { stopSpin(); if (fly) flyTo(n); }
     el.querySelectorAll('.gx-rk').forEach((b) => b.classList.toggle('cur', !!n && b.dataset.go === n.id));
     drawPanel();
@@ -379,14 +453,14 @@ export async function openGalaxy(el, { companies, results }) {
   }
 
   // ---------- 옆 패널 ----------
-  const row = (id, name, meta, cls = '') => `<button class="gx-row" data-go="${esc(id)}"><i class="dot ${cls}"></i><span>${esc(name)}</span><small>${esc(meta)}</small></button>`;
+  const row = (id, name, meta, cls = '') => `<button class="gx-row${shownIds.has(id) ? '' : ' off'}" data-go="${esc(id)}" ${shownIds.has(id) ? '' : 'title="지금 화면에는 없는 별이에요. 누르면 불러와요."'}><i class="dot ${cls}"></i><span>${esc(name)}</span><small>${esc(meta)}</small></button>`;
   const sect = (title, rows) => (rows.length ? `<h3>${title}</h3><div class="gx-rows">${rows.join('')}</div>` : '');
   function drawPanel() {
     const n = st.sel;
     panel.hidden = !n;
     el.classList.toggle('has-panel', !!n);
     if (!n) return;
-    const near = (adj.get(n.id) || []).map((x) => ({ ...x, n: nodeMap.get(x.id) })).filter((x) => x.n);
+    const near = (adjAll.get(n.id) || []).map((x) => ({ ...x, n: nodeMap.get(x.id) })).filter((x) => x.n);
     const of = (kind) => near.filter((x) => x.l.kind === kind);
     let html;
     if (n.type === 'co') {
@@ -422,6 +496,7 @@ export async function openGalaxy(el, { companies, results }) {
   function focus(id) {
     const n = nodeMap.get(id);
     if (!n) return false;
+    if (!shown.includes(n)) { forced.add(id); apply(); }
     if (!shown.includes(n)) { st.mode = 'all'; syncTools(); apply(); }
     if (!shown.includes(n)) return false;
     // 자리가 아직 안 잡혔으면(막 넣은 별) 잠깐 기다렸다가 간다
@@ -482,7 +557,10 @@ export async function openGalaxy(el, { companies, results }) {
   q('.gx-tools').addEventListener('click', (e) => {
     const b = e.target.closest('button');
     if (!b) return;
-    if (b.dataset.mode) { st.mode = b.dataset.mode; fitted = false; syncTools(); apply(); } // 자리가 다시 잡히면 화면에 맞춘다
+    poke();
+    if ('side' in b.dataset) { const on = !el.classList.contains('side-on'); el.classList.toggle('side-on', on); b.setAttribute('aria-pressed', on); }
+    else if ('fx' in b.dataset) { manualFx = true; setQuality(quality === 2 ? 0 : 2); }
+    else if (b.dataset.mode) { st.mode = b.dataset.mode; fitted = false; syncTools(); apply(); } // 자리가 다시 잡히면 화면에 맞춘다
     else if (b.dataset.dim) {
       const flat = b.dataset.dim === 'flat';
       if (flat === st.flat) return;
@@ -492,24 +570,27 @@ export async function openGalaxy(el, { companies, results }) {
       // 배치를 새로 잡고, 정면에서 다시 본다
       Graph.cameraPosition({ x: 0, y: 0, z: 900 }, { x: 0, y: 0, z: 0 }, 0);
       Graph.d3Force('link').distance(Graph.d3Force('link').distance());
+      cooling = true;
       Graph.numDimensions(flat ? 2 : 3);
     }
     else if ('rival' in b.dataset) { st.rival = !st.rival; syncTools(); apply(); }
     else if ('fit' in b.dataset) { select(null); Graph.zoomToFit(calm ? 0 : 900, 50); }
   });
 
+  // 넓고 높은 화면에서만 순위 목록을 펼친 채로 시작한다
+  if (el.clientWidth >= 1000 && el.clientHeight >= 620) { el.classList.add('side-on'); q('[data-side]').setAttribute('aria-pressed', 'true'); }
   const size = () => { const w = box.clientWidth, h = box.clientHeight; if (w && h) Graph.width(w).height(h); };
   new ResizeObserver(size).observe(box);
   size();
   apply();
   let fitted = false;
   let first = true;
-  Graph.onEngineStop(() => { if (!fitted && !st.sel) Graph.zoomToFit(calm ? 0 : first ? 2200 : 900, 24); fitted = true; first = false; });
+  Graph.onEngineStop(() => { cooling = false; fpsFrom = 0; if (!fitted && !st.sel) Graph.zoomToFit(calm ? 0 : first ? 2200 : 900, 24); fitted = true; first = false; });
 
   return {
     focus,
-    pause() { Graph.pauseAnimation(); },
-    resume() { Graph.resumeAnimation(); size(); },
-    destroy() { cancelAnimationFrame(raf); Graph._destructor?.(); },
+    pause() { clearTimeout(idleT); paused = true; Graph.pauseAnimation(); },
+    resume() { size(); poke(); },
+    destroy() { cancelAnimationFrame(raf); clearTimeout(idleT); Graph._destructor?.(); },
   };
 }

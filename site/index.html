@@ -527,7 +527,7 @@
   .gx-lb.on { opacity: 1; pointer-events: auto; cursor: pointer; }
   .gx-lb em { font-style: normal; font-size: 11px; font-weight: 700; margin-left: 6px; padding: 1px 6px; border-radius: 999px; background: rgba(170, 182, 205, .22); color: #d5dceb; text-shadow: none; }
   .gx-lb em.win { background: rgba(90, 169, 255, .32); color: #d6eaff; } .gx-lb em.partner { background: rgba(255, 92, 138, .32); color: #ffd3df; }
-  .gx-side { position: absolute; z-index: 2; left: 16px; top: 68px; width: 244px; max-height: calc(100% - 68px - 74px); overflow: hidden auto; border-radius: 16px; padding: 12px 10px 8px; scrollbar-width: thin; }
+  .gx-side { position: absolute; z-index: 3; left: 16px; top: 68px; width: 244px; max-height: calc(100% - 68px - 74px); overflow: hidden auto; border-radius: 16px; padding: 12px 10px 8px; scrollbar-width: thin; }
   .gx-sum { margin: 0 4px 2px; font-size: 13px; line-height: 1.6; color: #b3bccd; }
   .gx-sum b.org { color: #ffc857; } .gx-sum b.won { color: #7fbcff; }
   .gx-side h3 { margin: 12px 4px 4px; font-size: 12px; font-weight: 700; color: #8a94a8; }
@@ -538,8 +538,11 @@
   .gx-rk small { flex: none; color: #9aa5ba; font-size: 12px; font-weight: 500; font-variant-numeric: tabular-nums; }
   .gx-rk i { position: absolute; left: 28px; bottom: 3px; height: 2px; max-width: calc(100% - 34px); border-radius: 2px; background: #5aa9ff; opacity: .8; }
   .gx-rk i.org { background: #ffc857; }
+  .gx-side { display: none; }
+  .side-on .gx-side { display: block; }
   @media (max-width: 1080px) { .has-panel .gx-side { display: none; } }
-  @media (max-width: 720px) { .gx-side { display: none; } }
+  .gx-row.off { opacity: .6; }
+  .gx-row.off small::after { content: " · 불러오기"; }
   .gx-lb.won { color: #e6eeff; } .gx-lb.org { color: #ffd98a; }
   .gx-lb.big { font-size: 14px; font-weight: 800; }
   .gx-lb.sel { font-size: 15px; font-weight: 800; color: #fff; }
