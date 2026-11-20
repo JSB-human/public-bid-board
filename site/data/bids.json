@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T16:51:36.635Z",
+ "updatedAt": "2026-11-20T01:41:44.062Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -453,6 +453,34 @@
    "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830366&bidPbancOrd=000",
    "keywords": [
     "드론"
+   ]
+  },
+  {
+   "id": "R26BK01843917",
+   "ord": "000",
+   "title": "2027년 서울교통 빅데이터 플랫폼 운영 및 유지관리",
+   "org": "서울특별시",
+   "amount": 876817273,
+   "deadline": "2026-12-01 16:00:00",
+   "posted": "2026-11-20 09:45:37",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01843917&bidPbancOrd=000",
+   "keywords": [
+    "빅데이터"
+   ]
+  },
+  {
+   "id": "R26BK01839353",
+   "ord": "000",
+   "title": "2027년 스마트도시 정보시스템 통합 유지관리 용역",
+   "org": "경상남도 김해시",
+   "amount": 396352727,
+   "deadline": "2026-12-03 10:00:00",
+   "posted": "2026-11-20 09:34:16",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01839353&bidPbancOrd=000",
+   "keywords": [
+    "스마트도시"
    ]
   }
  ]
