@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 알앤씨소프트",
+  "ceo": "류영택",
+  "opened": "2020-08-03",
+  "region": "부산광역시 해운대구",
+  "address": "부산광역시 해운대구 센텀중앙로 97, A 3403호 (재송동, 센텀스카이비즈)",
+  "employees": 12,
+  "homepage": "http://rncsoft.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:34:36.106Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T23:34:36.517Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:34:36.517Z"
+ }
+}

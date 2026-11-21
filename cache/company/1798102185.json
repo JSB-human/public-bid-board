@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 디오르마",
+  "ceo": "윤정숙",
+  "opened": "2021-01-11",
+  "region": "경기도 하남시",
+  "address": "경기도 하남시 미사강변한강로 155 (망월동) 미사강변 SKV1센터 524-2",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:31:46.131Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T23:31:46.542Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:31:46.542Z"
+ }
+}

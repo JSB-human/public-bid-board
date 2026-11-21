@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "네이버시스템 주식회사",
+  "ceo": "임병조",
+  "opened": "1998-05-01",
+  "region": "서울특별시 송파구",
+  "address": "서울특별시 송파구 중대로 135, 아이티벤처타워 동관 16층 1601 (가락동)",
+  "employees": 400,
+  "homepage": "www.neighbor21.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:31:36.265Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-21T23:31:36.896Z"
+ },
+ "dart": {
+  "corpCode": "00399001",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:31:39.662Z"
+ }
+}

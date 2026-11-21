@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 이르테크 (IIR TECH Inc.)",
+  "ceo": "곽용진",
+  "opened": "2015-07-01",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 계룡로 114-0 (봉명동) BYC유성빌딩 907호",
+  "employees": 10,
+  "homepage": "www.iirtech.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:32:07.369Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T23:32:07.779Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:32:07.779Z"
+ }
+}

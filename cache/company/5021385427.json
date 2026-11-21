@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "Tonc",
+  "ceo": "이병일",
+  "opened": "2001-06-14",
+  "region": "대구광역시 수성구",
+  "address": "대구광역시 수성구 동대구로 386, 5층 505호(범어동)",
+  "employees": 3,
+  "homepage": "www.tonc.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:34:16.603Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T23:34:17.002Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:34:17.002Z"
+ }
+}

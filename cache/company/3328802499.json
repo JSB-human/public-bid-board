@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 루트텍",
+  "ceo": "유재영",
+  "opened": "2022-04-24",
+  "region": "충청남도 천안시 동남구",
+  "address": "충청남도 천안시 동남구 문암로 140-0 (안서동)",
+  "employees": 0,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:31:35.207Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T23:31:36.001Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:31:36.055Z"
+ }
+}

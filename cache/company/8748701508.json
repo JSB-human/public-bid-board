@@ -1,0 +1,20 @@
+{
+ "basic": {
+  "name": "주식회사 에코데이터",
+  "ceo": "남형석",
+  "opened": "2019-12-01",
+  "region": "인천광역시 서구",
+  "address": "인천광역시 서구 정서진로 410-0 (오류동) 환경산업연구단지 C-303",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:34:36.715Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": true,
+  "fetchedAt": "2026-11-21T23:34:37.133Z"
+ }
+}

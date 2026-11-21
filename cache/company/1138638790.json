@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "피앤티컨설팅 주식회사",
+  "ceo": "박상길",
+  "opened": "2010-05-01",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 149, 9층 905호 (가산동,신한이노플렉스)",
+  "employees": 23,
+  "homepage": "www.npnt.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T23:32:14.336Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T23:32:14.771Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T23:32:14.771Z"
+ }
+}
