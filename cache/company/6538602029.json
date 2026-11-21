@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)트루피플",
+  "ceo": "황혜림",
+  "opened": "2020-11-05",
+  "region": "부산광역시 연제구",
+  "address": "부산광역시 연제구 월드컵대로 160, 6층606호",
+  "employees": 11,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T07:26:46.002Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T07:26:46.429Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T07:26:46.429Z"
+ }
+}

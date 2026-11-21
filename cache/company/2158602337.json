@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "지엔네텔(주)",
+  "ceo": "고시영",
+  "opened": "2001-01-10",
+  "region": "서울특별시 송파구",
+  "address": "서울특별시 송파구 성내천로22길 7 (마천동)",
+  "employees": 14,
+  "homepage": "gnnetel@gnnetel.co.kr",
+  "kinds": "물품,외자,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T07:26:35.790Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 3,
+   "202511": 3,
+   "202512": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-21T07:26:36.886Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T07:26:36.886Z"
+ }
+}

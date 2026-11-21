@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "아이티 월드((IT. WORLD)",
+  "ceo": "김영우",
+  "opened": "2022-05-23",
+  "region": "부산광역시 동래구",
+  "address": "부산광역시 동래구 여고로63번길 86-0 (사직동) 1층",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T07:26:10.149Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T07:26:10.565Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T07:26:10.565Z"
+ }
+}

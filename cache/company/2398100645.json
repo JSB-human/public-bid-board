@@ -1,0 +1,29 @@
+{
+ "basic": {
+  "name": "주식회사 글로벌브릿지",
+  "ceo": "김민규",
+  "opened": "2016-10-31",
+  "region": "인천광역시 연수구",
+  "address": "인천광역시 연수구 송도미래로 30, A동 1707호,1709호,1710호(송도동, 스마트밸리지식산업센터)",
+  "employees": 24,
+  "homepage": "http://globalbridge.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T07:27:41.009Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 24,
+   "202603": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-21T07:27:41.874Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T07:27:41.874Z"
+ }
+}

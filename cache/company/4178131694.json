@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 빛을 꿈꾸는 사람들",
+  "ceo": "김상희",
+  "opened": "2005-09-01",
+  "region": "전남광주통합특별시 여수시",
+  "address": "전남광주통합특별시 여수시 대통로 47-1,2층(화장동)",
+  "employees": 12,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T07:26:04.481Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T07:26:04.953Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T07:26:04.953Z"
+ }
+}

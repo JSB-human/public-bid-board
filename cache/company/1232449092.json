@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "Jsoft (제이소프트)",
+  "ceo": "강승희",
+  "opened": "1996-10-10",
+  "region": "서울특별시 서대문구",
+  "address": "서울특별시 서대문구 성산로 527 (대신동, 하늬솔빌딩) A동 4층 1호",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T07:25:19.703Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T07:25:20.120Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T07:25:20.120Z"
+ }
+}
