@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)아이티이앤씨",
+  "ceo": "이정희",
+  "opened": "2015-08-13",
+  "region": "경기도 화성시 영천동",
+  "address": "경기도 화성시 동탄대로23길 121 (영천동) 우미뉴브 1113호",
+  "employees": 7,
+  "homepage": "www.itenc.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-21T17:00:19.015Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-21T17:00:19.427Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-21T17:00:19.427Z"
+ }
+}
