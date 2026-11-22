@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "주식회사 신한아리스",
+  "ceo": "배상태",
+  "opened": "2000-01-01",
+  "region": "경기도 과천시",
+  "address": "경기도 과천시 과천대로7길 33, A동 1002호(갈현동, 디테크타워)",
+  "employees": 50,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T07:02:58.099Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202609": 98
+  },
+  "found": true,
+  "fetchedAt": "2026-11-22T07:02:58.603Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T07:02:58.603Z"
+ }
+}

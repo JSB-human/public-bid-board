@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "씨에스넷",
+  "ceo": "조연우",
+  "opened": "2008-07-08",
+  "region": "충청남도 당진시 읍내동",
+  "address": "충청남도 당진시 무수동로 256, 2층 317호(읍내동)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T07:02:50.681Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-22T07:02:50.996Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T07:02:50.996Z"
+ }
+}

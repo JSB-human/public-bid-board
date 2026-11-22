@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 산타웍스",
+  "ceo": "이은정",
+  "opened": "2017-09-15",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로33길 55, 1002호 (구로동,이앤씨벤처드림타워2차)",
+  "employees": 7,
+  "homepage": "http://santaworks.cokok.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T07:03:15.161Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-22T07:03:15.488Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T07:03:15.488Z"
+ }
+}

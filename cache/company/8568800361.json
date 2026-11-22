@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 우선기술",
+  "ceo": "정우영",
+  "opened": "2016-06-20",
+  "region": "서울특별시 강서구",
+  "address": "서울특별시 강서구 마곡중앙5로1길 20-0 (마곡동) 1012호",
+  "employees": 4,
+  "homepage": "www.first-tech.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T07:03:27.163Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 3,
+   "202602": 3,
+   "202603": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-22T07:03:27.992Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T07:03:27.992Z"
+ }
+}

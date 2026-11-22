@@ -7364,5 +7364,26 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01843726": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "소프트웨어 과업심의 결과서.pdf",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00060588&rfpOrd=000&rfpUntyAtchFileNo=33",
+    "kind": "기타문서"
+   },
+   {
+    "name": "제안요청서(용역)_조달청협의반영(최종공고용).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00060588&rfpOrd=000&rfpUntyAtchFileNo=29",
+    "kind": "제안요청서"
+   }
+  ]
  }
 }

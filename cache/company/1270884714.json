@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "위더스HR컨설팅",
+  "ceo": "남명희",
+  "opened": "1994-07-20",
+  "region": "경기도 의정부시",
+  "address": "경기도 의정부시 시민로 39, 대정프라자803 (의정부동)",
+  "employees": 27,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T07:04:23.743Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-22T07:04:24.093Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T07:04:24.093Z"
+ }
+}
