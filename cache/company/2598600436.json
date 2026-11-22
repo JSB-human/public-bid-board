@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 데이타이음",
+  "ceo": "이지환",
+  "opened": "2016-06-29",
+  "region": "세종특별자치시 세종특별자치시 집현동",
+  "address": "세종특별자치시  집현중앙7로 6 (집현동) A동 1207~1208호",
+  "employees": 42,
+  "homepage": "dataeum.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T23:42:16.929Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 68,
+   "202511": 66,
+   "202601": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-22T23:42:17.759Z"
+ },
+ "dart": {
+  "corpCode": "01830268",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T23:42:18.953Z"
+ }
+}

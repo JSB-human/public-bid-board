@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "(주)아이필넷",
+  "ceo": "김명선",
+  "opened": "2007-01-30",
+  "region": "경기도 성남시 수정구 수진동",
+  "address": "경기도 성남시 수정구 산성대로 95 (수진동)",
+  "employees": 5,
+  "homepage": "ifeelnet.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T23:41:47.675Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 6,
+   "202511": 6,
+   "202512": 6
+  },
+  "found": true,
+  "fetchedAt": "2026-11-22T23:41:48.572Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T23:41:48.714Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 위즈아이(WIZAI.Co.,LTD)",
+  "ceo": "구자용",
+  "opened": "2019-11-01",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 84, 1708호 (가산동, 에이스하이엔드타워8차)",
+  "employees": 32,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T23:43:15.766Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-22T23:43:16.091Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T23:43:16.091Z"
+ }
+}
