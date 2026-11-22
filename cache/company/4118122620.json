@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "유한회사 무궁화통신건설",
+  "ceo": "박수진",
+  "opened": "1999-11-11",
+  "region": "전남광주통합특별시 목포시",
+  "address": "전남광주통합특별시 목포시 고하대로719번길 14 (연산동)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T17:15:39.437Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-22T17:15:39.855Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T17:15:39.855Z"
+ }
+}

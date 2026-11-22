@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 연합시큐리티",
+  "ceo": "이윤희",
+  "opened": "2012-04-01",
+  "region": "충청북도 청주시 서원구",
+  "address": "충청북도 청주시 서원구 사직대로164번길 9-0 (사창동)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T17:16:11.708Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202607": 15,
+   "202608": 16,
+   "202609": 15
+  },
+  "found": true,
+  "fetchedAt": "2026-11-22T17:16:12.722Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T17:16:12.722Z"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "주식회사 케이앤아이",
+  "ceo": "김진영",
+  "opened": "2005-01-20",
+  "region": "인천광역시 서구",
+  "address": "인천광역시 서구 중봉대로 490, 7층 730호(청라동, 청라더리브티아모)",
+  "employees": 11,
+  "homepage": "www.knisystem.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-22T17:16:05.099Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-22T17:16:05.681Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-22T17:16:05.681Z"
+ }
+}
