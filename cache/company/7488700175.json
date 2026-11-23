@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 넥스인테크놀로지 (NexIn Technology Co., Ltd.)",
+  "ceo": "김대중",
+  "opened": "2015-08-07",
+  "region": "서울특별시 중구",
+  "address": "서울특별시 중구 세종대로 93-0 11층 1102호 (태평로2가, 광학빌딩)",
+  "employees": 24,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:18:29.692Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T02:18:30.024Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T02:18:30.024Z"
+ }
+}

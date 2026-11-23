@@ -1,0 +1,15 @@
+{
+ "basic": {
+  "name": "주식회사프리픽스",
+  "ceo": "김덕인",
+  "opened": "2021-03-19",
+  "region": "강원특별자치도 횡성군",
+  "address": "강원특별자치도 횡성군 둔내면 현천북3길 63-20",
+  "employees": 9,
+  "homepage": "www.prefix.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:19:11.867Z"
+ },
+ "industries": []
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 어바웃그룹(ABOUT GROUP)",
+  "ceo": "허석재",
+  "opened": "2019-10-22",
+  "region": "서울특별시 성동구",
+  "address": "서울특별시 성동구 성수일로 111, 512호(성수동1가, 선명스퀘어)",
+  "employees": 16,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:17:40.388Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T02:17:40.721Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T02:17:40.721Z"
+ }
+}

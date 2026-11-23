@@ -1,0 +1,31 @@
+{
+ "basic": {
+  "name": "주식회사 넷",
+  "ceo": "김주형",
+  "opened": "2013-01-24",
+  "region": "경기도 부천시 원미구",
+  "address": "경기도 부천시 원미구 평천로 655, 401동 14층 1403호(약대동, 부천테크노파크4단지)",
+  "employees": 13,
+  "homepage": "http://netcompany.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:17:24.339Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 7,
+   "202511": 7,
+   "202512": 6,
+   "202601": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T02:17:25.358Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T02:17:25.358Z"
+ }
+}

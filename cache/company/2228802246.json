@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "주식회사 데이터트리",
+  "ceo": "손현숙",
+  "opened": "2021-08-21",
+  "region": "인천광역시 부평구",
+  "address": "인천광역시 부평구 주부토로 236, 비동1517(갈산동, 인천테크노밸리유1센터)",
+  "employees": 9,
+  "homepage": "http://www.datatree21.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:17:34.664Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202609": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T02:17:35.177Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T02:17:35.177Z"
+ }
+}
