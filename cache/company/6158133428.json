@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 세진정보통신",
+  "ceo": "김선미",
+  "opened": "2003-06-04",
+  "region": "경상남도 김해시",
+  "address": "경상남도 김해시 칠산로291번길 16-5 (화목동)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:30:07.916Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:30:08.428Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:30:08.428Z"
+ }
+}

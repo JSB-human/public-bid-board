@@ -1,0 +1,33 @@
+{
+ "basic": {
+  "name": "(주)짙은",
+  "ceo": "이희성",
+  "opened": "2005-04-01",
+  "region": "경기도 고양시 덕양구",
+  "address": "경기도 고양시 덕양구 향동로 217, KB동 1009호~1011호(향동동, DMC플렉스데시앙)",
+  "employees": 14,
+  "homepage": "www.ziten.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:30:34.617Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 3,
+   "202511": 3,
+   "202512": 3,
+   "202601": 3,
+   "202602": 3,
+   "202605": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T07:30:36.271Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:30:36.271Z"
+ }
+}

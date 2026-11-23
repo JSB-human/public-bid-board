@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)데이타게이트코리아",
+  "ceo": "신현주",
+  "opened": "1995-06-15",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로 273, 에이스트윈타워2차 1203호 (구로동)",
+  "employees": 39,
+  "homepage": "www.datagate.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:30:38.013Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:30:38.466Z"
+ },
+ "dart": {
+  "corpCode": "00343659",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:30:39.869Z"
+ }
+}

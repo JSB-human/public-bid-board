@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "비전솔루션(주)",
+  "ceo": "고지호",
+  "opened": "2024-02-03",
+  "region": "전북특별자치도 전주시 완산구",
+  "address": "전북특별자치도 전주시 완산구 효자로 335-0 (중화산동2가) 3층",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:28:59.779Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:29:00.170Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:29:00.170Z"
+ }
+}

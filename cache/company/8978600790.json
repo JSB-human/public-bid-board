@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "로봇앤컴 주식회사",
+  "ceo": "이경일",
+  "opened": "2018-01-01",
+  "region": "서울특별시 광진구",
+  "address": "서울특별시 광진구 능동로3나길 26-0 (자양동), 102호",
+  "employees": 28,
+  "homepage": "http://robootncom.dothome.co.kr/",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:30:29.476Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:30:29.891Z"
+ },
+ "dart": {
+  "corpCode": "01823976",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:30:31.391Z"
+ }
+}

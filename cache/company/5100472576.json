@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "타임컴즈",
+  "ceo": "김동욱",
+  "opened": "2011-07-15",
+  "region": "경상북도 김천시",
+  "address": "경상북도 김천시 혁신8로 5, 5층 501호(율곡동, 율곡테크노밸리)",
+  "employees": 11,
+  "homepage": "http://timecoms.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:28:21.480Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:28:21.852Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:28:21.852Z"
+ }
+}

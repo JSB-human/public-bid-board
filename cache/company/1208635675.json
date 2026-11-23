@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)미디어그룹사람과숲",
+  "ceo": "한윤기",
+  "opened": "2002-04-02",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로31길 38-21 (구로동) 이앤씨3차 1201호",
+  "employees": 64,
+  "homepage": "http://www.humanf.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:30:16.350Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:30:16.749Z"
+ },
+ "dart": {
+  "corpCode": "01689239",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:30:17.510Z"
+ }
+}

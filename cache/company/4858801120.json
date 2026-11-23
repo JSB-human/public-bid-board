@@ -1,0 +1,33 @@
+{
+ "basic": {
+  "name": "주식회사 세찬아이앤씨",
+  "ceo": "전영걸",
+  "opened": "2019-01-02",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로26길 43,엘동 815호(구로동, 대륭포스트타워8차)",
+  "employees": 39,
+  "homepage": "https://www.sechaninc.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:28:44.776Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 49,
+   "202511": 37,
+   "202512": 36,
+   "202601": 13,
+   "202602": 6,
+   "202603": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T07:28:46.372Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:28:46.372Z"
+ }
+}
