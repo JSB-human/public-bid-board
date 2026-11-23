@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 맥스폼",
+  "ceo": "조형준",
+  "opened": "2022-02-01",
+  "region": "부산광역시 해운대구 중동",
+  "address": "부산광역시 해운대구 달맞이길 193 (중동) 에이동 2층 202호",
+  "employees": 1,
+  "homepage": "www.4wavetech.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:37.017Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:37.221Z"
+ }
+}

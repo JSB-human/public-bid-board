@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에스엠플러스정보통신",
+  "ceo": "왕성모",
+  "opened": "2008-01-22",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 벚꽃로 234-0 (가산동)",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:34.947Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:35.151Z"
+ }
+}

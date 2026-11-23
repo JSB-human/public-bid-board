@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주) 매그넷",
+  "ceo": "김종민",
+  "opened": "2006-03-01",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 당산로41길 11-0 (당산동4가) SK V1센터 W-602",
+  "employees": 35,
+  "homepage": "http://www.mag-net.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:48.786Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:49.188Z"
+ }
+}

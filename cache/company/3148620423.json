@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 엔에스이",
+  "ceo": "김대일",
+  "opened": "2011-01-01",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 가정로 218 508(가정동, 한국전자통신연구원)",
+  "employees": 51,
+  "homepage": "www.nsetec.com",
+  "kinds": "물품,외자,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:05.907Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:06.112Z"
+ }
+}

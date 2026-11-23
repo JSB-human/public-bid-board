@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "엘앤비소프트",
+  "ceo": "이창건",
+  "opened": "2017-01-25",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 디지털로 178, A동 10층 1014호(가산동, 가산퍼블릭)",
+  "employees": 1,
+  "homepage": "http://lnbsoft.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:00.941Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:01.147Z"
+ }
+}

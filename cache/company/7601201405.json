@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "안녕소프트",
+  "ceo": "유영선",
+  "opened": "2020-03-10",
+  "region": "인천광역시 연수구 송도동",
+  "address": "인천광역시 연수구 송도과학로 56 (송도동) 506호",
+  "employees": 2,
+  "homepage": "https://anyeong-soft.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:38.728Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:38.932Z"
+ }
+}

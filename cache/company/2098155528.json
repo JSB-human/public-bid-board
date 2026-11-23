@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 와이던스",
+  "ceo": "신윤수",
+  "opened": "2012-03-07",
+  "region": "전남광주통합특별시 여수시",
+  "address": "전남광주통합특별시 여수시 장성1길 18-1 (안산동), 2층",
+  "employees": 17,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:48.858Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:49.061Z"
+ }
+}

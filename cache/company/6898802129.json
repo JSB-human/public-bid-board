@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 지티소프트",
+  "ceo": "손호영",
+  "opened": "2021-10-06",
+  "region": "서울특별시 강남구 삼성동",
+  "address": "서울특별시 강남구 삼성로96길 6 (삼성동) 1310호",
+  "employees": 6,
+  "homepage": "gtsoft.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:29.125Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:29.329Z"
+ }
+}

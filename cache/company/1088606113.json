@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "이모션웨이브 주식회사",
+  "ceo": "장순철",
+  "opened": "2013-04-27",
+  "region": "경기도 용인시 수지구",
+  "address": "경기도 용인시 수지구 광교중앙로 338-0 (상현동) 광교우미뉴브 B동 111,112호",
+  "employees": 34,
+  "homepage": "www.emotionwave.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:31.189Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:31.404Z"
+ }
+}

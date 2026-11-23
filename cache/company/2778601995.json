@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 테디썸",
+  "ceo": "함영균",
+  "opened": "2021-02-10",
+  "region": "서울특별시 강남구 역삼동",
+  "address": "서울특별시 강남구 선릉로93길 15 (역삼동), 5층 518호",
+  "employees": 6,
+  "homepage": "http://teddysum.ai/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:31.625Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:31.829Z"
+ }
+}

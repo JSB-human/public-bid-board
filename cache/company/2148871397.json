@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 엠링크코리아",
+  "ceo": "권민제",
+  "opened": "2011-01-06",
+  "region": "서울특별시 서초구",
+  "address": "서울특별시 서초구 바우뫼로35길 3-0 (양재동) 가은빌딩 5층",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:59.005Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:59.211Z"
+ }
+}

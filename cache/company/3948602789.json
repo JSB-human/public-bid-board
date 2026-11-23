@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "블루맵 주식회사",
+  "ceo": "조경민",
+  "opened": "2022-01-01",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 은구비남로7번길 26, 2층(지족동)",
+  "employees": 17,
+  "homepage": "https://bluemap.dev",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:00.396Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:00.606Z"
+ }
+}

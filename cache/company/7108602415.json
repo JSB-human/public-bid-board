@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 지오큐브",
+  "ceo": "이경남",
+  "opened": "2021-07-15",
+  "region": "강원특별자치도 강릉시 회산동",
+  "address": "강원특별자치도 강릉시 회산로 372 (회산동), 2층 204호",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:54.355Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:54.563Z"
+ }
+}

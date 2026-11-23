@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 경포씨엔씨",
+  "ceo": "남기원",
+  "opened": "2002-10-01",
+  "region": "서울특별시 성동구 성수동2가",
+  "address": "서울특별시 성동구 성수일로12길 26 (성수동2가, 서울숲 코리아IT센터) 2층",
+  "employees": 134,
+  "homepage": "www.kpcnc.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:56.050Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01627992",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:58.032Z"
+ }
+}

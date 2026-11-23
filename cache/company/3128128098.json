@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 화성에어토탈",
+  "ceo": "박호균",
+  "opened": "1997-10-01",
+  "region": "대전광역시 동구 용운동",
+  "address": "대전광역시 동구 백룡로 68 (용운동) 3층",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:47.233Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:47.437Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 가온도시정보",
+  "ceo": "안수환",
+  "opened": "2014-01-23",
+  "region": "제주특별자치도 제주시",
+  "address": "제주특별자치도 제주시 부록서길 23, 101호 (화북이동)",
+  "employees": 11,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:33.741Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:33.944Z"
+ }
+}

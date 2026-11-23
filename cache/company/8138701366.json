@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 랩큐",
+  "ceo": "김한수",
+  "opened": "2019-07-22",
+  "region": "서울특별시 영등포구 양평동5가",
+  "address": "서울특별시 영등포구 양평로21길 26 (양평동5가), 1503호",
+  "employees": 4,
+  "homepage": "www.labq.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:57.561Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:57.774Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "두손 주식회사",
+  "ceo": "윤태호",
+  "opened": "2000-08-23",
+  "region": "경기도 구리시",
+  "address": "경기도 구리시 동구릉로431번길 45-2 DUSON",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:32.046Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:33.495Z"
+ }
+}

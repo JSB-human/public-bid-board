@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)디지털서커스",
+  "ceo": "이정호",
+  "opened": "2013-03-14",
+  "region": "서울특별시 도봉구",
+  "address": "서울특별시 도봉구 노해로67길 , B2 A-72호(창동, 한국빌딩)",
+  "employees": 7,
+  "homepage": "http://dcircus.com",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:43.750Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:43.954Z"
+ }
+}

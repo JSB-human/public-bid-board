@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 스마트웍스",
+  "ceo": "정훈",
+  "opened": "2014-01-16",
+  "region": "서울특별시 성동구",
+  "address": "서울특별시 성동구 연무장5가길 7-0 (성수동2가) 성수역현대테라스타워 W동 1108호",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:47.952Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:48.159Z"
+ }
+}

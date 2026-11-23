@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 드림정보",
+  "ceo": "정우진",
+  "opened": "2015-03-23",
+  "region": "세종특별자치시",
+  "address": "세종특별자치시  한누리대로 2264, 6층 601~605호(대평동, 씨티오브드림)",
+  "employees": 25,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:08.387Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:08.596Z"
+ }
+}

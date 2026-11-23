@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)엠티케이",
+  "ceo": "박다영",
+  "opened": "2021-06-24",
+  "region": "경기도 안산시 상록구",
+  "address": "경기도 안산시 상록구 건건1길 19-0, 2층 202호(건건동, 초원프라자)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:47.006Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:47.794Z"
+ }
+}

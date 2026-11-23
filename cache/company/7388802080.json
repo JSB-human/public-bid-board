@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이지태스크",
+  "ceo": "전혜진",
+  "opened": "2021-06-05",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 역삼로 221, 608호(역삼동)",
+  "employees": 17,
+  "homepage": "www.easytask.co.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:46.252Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:46.455Z"
+ }
+}

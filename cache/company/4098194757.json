@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "강부건설이엔지 주식회사",
+  "ceo": "배수경",
+  "opened": "2007-02-13",
+  "region": "전남광주통합특별시 해남군",
+  "address": "전남광주통합특별시 해남군 해남읍 중앙1로 477",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:22.460Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:22.689Z"
+ }
+}

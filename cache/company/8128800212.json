@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 서진정보기술",
+  "ceo": "정경애",
+  "opened": "2015-11-11",
+  "region": "충청남도 논산시",
+  "address": "충청남도 논산시 부창로 37, 2층 (부창동)",
+  "employees": 15,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:53.515Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:53.720Z"
+ }
+}

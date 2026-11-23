@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 토브업",
+  "ceo": "안계성",
+  "opened": "2019-01-09",
+  "region": "서울특별시 중구",
+  "address": "서울특별시 중구 다동길 5, 1201호(무교동, 광일빌딩)",
+  "employees": 6,
+  "homepage": "www.tovup.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:39.004Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:39.210Z"
+ }
+}

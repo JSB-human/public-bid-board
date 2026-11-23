@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 아이티케어",
+  "ceo": "이성희",
+  "opened": "2014-01-03",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 원신흥남로41번길 45-7, 1층(원신흥동)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:16.487Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:16.696Z"
+ }
+}

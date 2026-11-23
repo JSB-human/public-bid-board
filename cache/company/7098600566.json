@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)휴램프로",
+  "ceo": "이선희",
+  "opened": "2016-08-08",
+  "region": "강원특별자치도 춘천시 남산면 수동리",
+  "address": "강원특별자치도 춘천시 남산면 버들1길 130, 4층 (더존BI센터)",
+  "employees": 20,
+  "homepage": "www.hulam.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:07.964Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:08.170Z"
+ }
+}

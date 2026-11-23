@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "제이엔에스텍주식회사",
+  "ceo": "안종기",
+  "opened": "2010-10-16",
+  "region": "서울특별시 서초구",
+  "address": "서울특별시 서초구 방배천로2안길 37 (방배동,1층)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:21.008Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:21.213Z"
+ }
+}

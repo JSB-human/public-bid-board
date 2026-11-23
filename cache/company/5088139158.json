@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 경남물산",
+  "ceo": "정금연",
+  "opened": "2014-09-03",
+  "region": "경상북도 안동시",
+  "address": "경상북도 안동시 대석길 31, 2층(대석동)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:37.024Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:37.228Z"
+ }
+}

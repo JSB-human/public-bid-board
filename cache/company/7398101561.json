@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 네오플로우",
+  "ceo": "차영래",
+  "opened": "2019-08-08",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 디지털로 178, A동 1820호(가산동, 가산퍼블릭)",
+  "employees": 14,
+  "homepage": "www.neoflow.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:36.613Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:36.819Z"
+ }
+}

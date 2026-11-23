@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "신비텍",
+  "ceo": "장말례",
+  "opened": "2021-01-26",
+  "region": "경상남도 창원시 의창구",
+  "address": "경상남도 창원시 의창구 읍성로 110 (소답동)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:14.286Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:14.493Z"
+ }
+}

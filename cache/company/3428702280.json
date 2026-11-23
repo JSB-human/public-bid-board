@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 누리지오텍",
+  "ceo": "황옥봉",
+  "opened": "2021-12-01",
+  "region": "경상남도 진주시",
+  "address": "경상남도 진주시 동부로169번길 12-0 (충무공동)B동 803호",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:52.208Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:52.417Z"
+ }
+}

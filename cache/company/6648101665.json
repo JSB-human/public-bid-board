@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 슈타트",
+  "ceo": "김대욱",
+  "opened": "2020-01-15",
+  "region": "대구광역시 서구",
+  "address": "대구광역시 서구 와룡로 307, 618호(중리동, 디센터1976)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:13.174Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:13.380Z"
+ }
+}

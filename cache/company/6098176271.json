@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 케이엔아이씨",
+  "ceo": "남창현",
+  "opened": "2007-01-01",
+  "region": "경상남도 창원시 마산회원구",
+  "address": "경상남도 창원시 마산회원구 봉암공단13길 15-13 (봉암동),자유무역지역 3공구 나래관 2층",
+  "employees": 27,
+  "homepage": "WWW.KNINC.CO.KR",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:32.050Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:32.252Z"
+ }
+}

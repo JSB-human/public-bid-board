@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 텐소프트웍스",
+  "ceo": "김철형",
+  "opened": "2018-04-26",
+  "region": "서울특별시 강남구 삼성동",
+  "address": "서울특별시 강남구 봉은사로105길 54-5 (삼성동, 리버뷰빌), 202, 203호(현황상 4층 402호)",
+  "employees": 10,
+  "homepage": "https://tensoftworks.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:32.485Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:32.691Z"
+ }
+}

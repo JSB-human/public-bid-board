@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 콘트롤시비",
+  "ceo": "이준호",
+  "opened": "2016-10-21",
+  "region": "경기도 고양시 일산동구 성석동",
+  "address": "경기도 고양시 일산동구 고봉로 612 (성석동) 가동 2층",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:05.497Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:05.701Z"
+ }
+}

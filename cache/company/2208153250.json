@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "노아에이티에스 주식회사",
+  "ceo": "엄동현",
+  "opened": "1998-07-15",
+  "region": "서울특별시 종로구",
+  "address": "서울특별시 종로구 청계천로 41-0 (서린동, 영풍빌딩) 12층",
+  "employees": 137,
+  "homepage": "www.noaats.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:10.915Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00933197",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:12.028Z"
+ }
+}

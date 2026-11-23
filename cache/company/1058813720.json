@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 플럭시티",
+  "ceo": "윤재민",
+  "opened": "2015-01-07",
+  "region": "경기도 안양시 동안구 관양동",
+  "address": "경기도 안양시 동안구 벌말로 66 (관양동) A동 801,803,804호",
+  "employees": 53,
+  "homepage": "www.pluxity.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:26.644Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:26.848Z"
+ }
+}

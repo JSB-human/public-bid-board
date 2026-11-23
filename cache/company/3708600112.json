@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 힌트",
+  "ceo": "송영운",
+  "opened": "2015-06-18",
+  "region": "경기도 성남시 수정구",
+  "address": "경기도 성남시 수정구 금토로80번길 11,1107호 (금토동,판교제2테크노밸리 판교이노베이션랩))",
+  "employees": 13,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:35.358Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:35.566Z"
+ }
+}

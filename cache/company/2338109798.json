@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "구스텍 주식회사",
+  "ceo": "고중구",
+  "opened": "2017-04-01",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털2로 143-0 (가산동, 가산어반워크 2) 1120호,1121호",
+  "employees": 15,
+  "homepage": "koosstech.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:40.492Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:40.697Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "카파정보기술(주)",
+  "ceo": "이정필",
+  "opened": "2006-08-01",
+  "region": "서울특별시 마포구",
+  "address": "서울특별시 마포구 독막로 331 (도화동, 마스터즈타워) 17층 1707호",
+  "employees": 9,
+  "homepage": "www.hellokappa.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:50.675Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:50.880Z"
+ }
+}

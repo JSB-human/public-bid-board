@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 크리젠솔루션",
+  "ceo": "허선행",
+  "opened": "2006-07-01",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로 306-0 (구로동) 대륭포스트타워2차 1006호, 1007호",
+  "employees": 37,
+  "homepage": "www.crizen.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:40.907Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:41.118Z"
+ }
+}

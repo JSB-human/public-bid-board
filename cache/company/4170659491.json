@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "제이에스",
+  "ceo": "윤미경",
+  "opened": "2007-03-02",
+  "region": "전남광주통합특별시 여수시",
+  "address": "전남광주통합특별시 여수시 무선7길 28-4, 1층 1호(선원동)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:11.310Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:12.154Z"
+ }
+}

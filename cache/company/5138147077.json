@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "일월정밀주식회사",
+  "ceo": "김상익",
+  "opened": "2008-01-03",
+  "region": "경상북도 구미시",
+  "address": "경상북도 구미시 고아읍 농공단지길 35-28",
+  "employees": 41,
+  "homepage": "illw1793@naver.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:09.650Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:09.855Z"
+ }
+}

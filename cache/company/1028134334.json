@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "삼정회계법인",
+  "ceo": "김교태",
+  "opened": "1994-04-01",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 테헤란로 152 27층 역삼동, 강남파이낸스센터",
+  "employees": 3114,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:02.119Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00260116",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:03.624Z"
+ }
+}

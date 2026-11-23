@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 트위그팜",
+  "ceo": "백선호",
+  "opened": "2016-02-05",
+  "region": "서울특별시 서초구 서초동",
+  "address": "서울특별시 서초구 서운로26길 9, 4층(서초동, 펜타타워)",
+  "employees": 72,
+  "homepage": "www.twigfarm.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:47.724Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:47.930Z"
+ }
+}

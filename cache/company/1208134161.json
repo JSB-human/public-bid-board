@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 파코코리아인더스",
+  "ceo": "송재혁",
+  "opened": "1993-12-20",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 두산로 70, A동 1008~1011호,2510호,L104호(현대지식산업센터)",
+  "employees": 55,
+  "homepage": "www.parkor.co.kr",
+  "kinds": "물품,외자,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:42.107Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01362208",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:43.127Z"
+ }
+}

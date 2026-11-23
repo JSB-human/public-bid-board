@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "에이비프로 주식회사",
+  "ceo": "김잔디",
+  "opened": "2014-10-20",
+  "region": "서울특별시 광진구",
+  "address": "서울특별시 광진구 아차산로78길 44, 705호(광장동)",
+  "employees": 56,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:49.099Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:49.304Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "프로마션스 주식회사",
+  "ceo": "김경한",
+  "opened": "2021-06-09",
+  "region": "서울특별시 성동구",
+  "address": "서울특별시 성동구 무학봉15길 20, 3층 302호 (하왕십리동)",
+  "employees": 6,
+  "homepage": "www.promartians.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:15.964Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:16.197Z"
+ }
+}

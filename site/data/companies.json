@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T07:59:12.964Z",
+ "updatedAt": "2026-11-23T08:28:52.220Z",
  "items": [
   {
    "bizno": "1478602432",
@@ -616801,7 +616801,14 @@
     "partners": 0,
     "lastAt": "2026-04-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-01-01",
+    "region": "경상남도 창원시 마산합포구",
+    "address": "경상남도 창원시 마산합포구 합포로 250, 비동 601호(산호동, 선프라자)",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -616997,7 +617004,14 @@
     "partners": 0,
     "lastAt": "2026-04-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-07-21",
+    "region": "충청남도 당진시 대덕동",
+    "address": "충청남도 당진시 청룡길 16, 3층 302호 (대덕동)",
+    "employees": 18,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -617193,7 +617207,14 @@
     "partners": 0,
     "lastAt": "2026-03-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-11-20",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털1로 146-0 (가산동) 1212호",
+    "employees": 15,
+    "homepage": "www.bethesdasoft.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -617329,7 +617350,14 @@
     "partners": 0,
     "lastAt": "2026-03-25 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-04-12",
+    "region": "대전광역시 유성구 신성동",
+    "address": "대전광역시 유성구 유성대로1184번길 55, 301호 (신성동) ",
+    "employees": 42,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -617440,7 +617468,14 @@
     "partners": 0,
     "lastAt": "2026-03-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2003-03-24",
+    "region": "경기도 성남시 분당구 구미동",
+    "address": "경기도 성남시 분당구 성남대로43번길 10 (구미동, 하나EZ타워) 5층",
+    "employees": 200,
+    "homepage": "www.rnbsoft.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -617636,7 +617671,14 @@
     "partners": 2,
     "lastAt": "2026-03-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-03-27",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로33길 55 904호",
+    "employees": 52,
+    "homepage": "www.wooricnc.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -617795,7 +617837,14 @@
     "partners": 0,
     "lastAt": "2026-03-11 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-04-23",
+    "region": "인천광역시 남동구",
+    "address": "인천광역시 남동구 남동대로 353, 406,407,408호(남촌동, JK루체스타)",
+    "employees": 20,
+    "homepage": "http://www.pentagate.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -617991,7 +618040,14 @@
     "partners": 0,
     "lastAt": "2026-03-10 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-05-17",
+    "region": "경기도 평택시",
+    "address": "경기도 평택시 배미1길 20, 1층(합정동)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -618187,7 +618243,14 @@
     "partners": 0,
     "lastAt": "2026-03-10 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-02-07",
+    "region": "경기도 하남시",
+    "address": "경기도 하남시 하남대로 947, 제12층 제디-1203호(풍산동, 하남테크노밸리유1센터)",
+    "employees": 10,
+    "homepage": "www.iresolution.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -618383,7 +618446,14 @@
     "partners": 3,
     "lastAt": "2026-03-09 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-11-07",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 흥안대로439번길 20-0 (관양동)",
+    "employees": 68,
+    "homepage": "www.greentechinc.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -618513,7 +618583,14 @@
     "partners": 0,
     "lastAt": "2026-03-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-05-21",
+    "region": "서울특별시 중구",
+    "address": "서울특별시 중구 마른내로 140, 5층 (쌍림동,인쇄정보센터)",
+    "employees": 99,
+    "homepage": "www.dahami.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -618611,7 +618688,7 @@
   {
    "bizno": "1068117749",
    "name": "주식회사 시스원",
-   "ceo": "서일종",
+   "ceo": "김영주",
    "stats": {
     "bids": 5,
     "wins": 4,
@@ -618619,7 +618696,14 @@
     "partners": 2,
     "lastAt": "2026-03-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1982-10-15",
+    "region": "서울특별시 강서구",
+    "address": "서울특별시 강서구 마곡중앙14로 26-0 (마곡동)",
+    "employees": 350,
+    "homepage": "www.sysone.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -618778,7 +618862,14 @@
     "partners": 0,
     "lastAt": "2026-02-25 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2003-12-12",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 논현로 100 (개포동) 2층",
+    "employees": 57,
+    "homepage": "http://www.nnsp.co.kr/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -618974,7 +619065,14 @@
     "partners": 0,
     "lastAt": "2026-02-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-01-08",
+    "region": "전북특별자치도 전주시 완산구",
+    "address": "전북특별자치도 전주시 완산구 군자길 17-0 (평화동3가)",
+    "employees": 22,
+    "homepage": "www.gncom.co.kr",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -619090,7 +619188,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-10-01",
+    "region": "충청남도 서천군 서천읍 군사리",
+    "address": "충청남도 서천군 서천읍 충절로 146 , 2호",
+    "employees": 3,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -619286,7 +619391,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-05-10",
+    "region": "대전광역시 유성구 구암동",
+    "address": "대전광역시 유성구 동서대로5번길 19, 101호(구암동)",
+    "employees": 6,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -619482,7 +619594,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-12-14",
+    "region": "전남광주통합특별시 장성군",
+    "address": "전남광주통합특별시 장성군 황룡면 뱃나드리로 178,2층",
+    "employees": 5,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -619678,7 +619797,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2024-01-11",
+    "region": "충청남도 천안시 동남구",
+    "address": "충청남도 천안시 동남구 청수로 83(청수동)",
+    "employees": 5,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -619874,7 +620000,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2001-01-01",
+    "region": "부산광역시 수영구",
+    "address": "부산광역시 수영구 광서로10번길 21,  제일정보빌딩 2층 (광안동)",
+    "employees": 7,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -620070,7 +620203,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2003-03-01",
+    "region": "충청남도 공주시 금흥동",
+    "address": "충청남도 공주시 연수원길 37, 2층(금흥동)",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -620266,7 +620406,14 @@
     "partners": 1,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-05-06",
+    "region": "강원특별자치도 횡성군 우천면 법주리",
+    "address": "강원특별자치도 횡성군 우천면 우천제2농공단지로 65-83 ",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -620469,7 +620616,14 @@
     "partners": 1,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1999-05-03",
+    "region": "대전광역시 대덕구",
+    "address": "대전광역시 대덕구 대화로 120-0 (대화동) 가온비즈타워 902호",
+    "employees": 21,
+    "homepage": "https://metamore.kr/",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -620627,7 +620781,14 @@
     "partners": 0,
     "lastAt": "2026-02-12 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-03-19",
+    "region": "부산광역시 남구 대연동",
+    "address": "부산광역시 남구 유엔로 153-1 (대연동)",
+    "employees": 17,
+    "homepage": "www.ucnetworks.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -620823,7 +620984,14 @@
     "partners": 0,
     "lastAt": "2026-02-12 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-10-19",
+    "region": "부산광역시 해운대구",
+    "address": "부산광역시 해운대구 센텀중앙로 90, 본동 17층 1703호(재송동, 큐비이센텀)",
+    "employees": 6,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621019,7 +621187,14 @@
     "partners": 0,
     "lastAt": "2026-02-09 17:30:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-12-24",
+    "region": "경기도 수원시 영통구",
+    "address": "경기도 수원시 영통구 광교중앙로248번길 95-3, 601호 (하동)",
+    "employees": 95,
+    "homepage": "https://www.astkorea.net",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621190,7 +621365,14 @@
     "partners": 1,
     "lastAt": "2026-01-28 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-05-16",
+    "region": "경기도 용인시 수지구",
+    "address": "경기도 용인시 수지구 신수로 767-0 (동천동) 분당수지U타워 A동 1309~1311호",
+    "employees": 21,
+    "homepage": "www.eznix.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621292,7 +621474,14 @@
     "partners": 0,
     "lastAt": "2026-01-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-08-01",
+    "region": "경기도 용인시 기흥구",
+    "address": "경기도 용인시 기흥구 흥덕1로 13, 타워동 2901호, 2902호, 2903호, 2904호 (영덕동, 흥덕아이티밸리)",
+    "employees": 71,
+    "homepage": "http://www.insilicogen.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621428,7 +621617,14 @@
     "partners": 0,
     "lastAt": "2026-01-23 10:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-01-16",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 연무장5가길 7-0 (성수동2가) 성수역현대테라스타워 W동 1108호",
+    "employees": 7,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621624,7 +621820,14 @@
     "partners": 1,
     "lastAt": "2026-01-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1996-10-04",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 영신로 220, 1104호(영등포동8가, 케이엔케이디지털타워)",
+    "employees": 20,
+    "homepage": "www.solutek.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621762,7 +621965,14 @@
     "partners": 1,
     "lastAt": "2026-01-15 10:20:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-03-01",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 당산로41길 11-0 (당산동4가) SK V1센터 W-602",
+    "employees": 35,
+    "homepage": "http://www.mag-net.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -621925,7 +622135,14 @@
     "partners": 0,
     "lastAt": "2026-01-13 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-04-18",
+    "region": "경기도 군포시",
+    "address": "경기도 군포시 산본로323번길 26-22, 503-4호(산본동)",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622056,7 +622273,14 @@
     "partners": 0,
     "lastAt": "2025-12-30 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-02-27",
+    "region": "서울특별시 강서구",
+    "address": "서울특별시 강서구 하늘길 76-0 (과해동) 1층 4중대 식당 건물 중앙(과해동,일반건물보호구역)",
+    "employees": 6,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622252,7 +622476,14 @@
     "partners": 0,
     "lastAt": "2025-12-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-02-14",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 강남대로34길 69, 401호(양재동, 이화빌딩)",
+    "employees": 18,
+    "homepage": "www.cubensys.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622373,7 +622604,14 @@
     "partners": 0,
     "lastAt": "2025-12-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-08-01",
+    "region": "서울특별시 마포구",
+    "address": "서울특별시 마포구 독막로 331 (도화동, 마스터즈타워) 17층 1707호",
+    "employees": 9,
+    "homepage": "www.hellokappa.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622494,7 +622732,14 @@
     "partners": 1,
     "lastAt": "2025-12-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-01-23",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 경인로71길 70, 벽산디지털밸리 703호 (문래동5가)",
+    "employees": 84,
+    "homepage": "https://www.matth.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622617,7 +622862,14 @@
     "partners": 0,
     "lastAt": "2025-12-29 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-09-05",
+    "region": "서울특별시 금천구 가산동",
+    "address": "서울특별시 금천구 가산디지털1로 212 (가산동) 1505호 1501호 1502호(가산동, 코오롱디지털타워애스턴)",
+    "employees": 63,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622723,7 +622975,14 @@
     "partners": 0,
     "lastAt": "2025-12-26 17:30:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-12-01",
+    "region": "제주특별자치도 제주시",
+    "address": "제주특별자치도 제주시 중앙로 175-0 (이도일동), 3층",
+    "employees": 20,
+    "homepage": "www.globit.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -622849,7 +623108,14 @@
     "partners": 0,
     "lastAt": "2025-12-26 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-10-15",
+    "region": "경기도 파주시",
+    "address": "경기도 파주시 교하로505번길 경기 파주시 교하로505번길 64-3",
+    "employees": 19,
+    "homepage": "skcam.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -623037,7 +623303,7 @@
   {
    "bizno": "5138100034",
    "name": "주식회사 엠젠솔루션",
-   "ceo": "조상환",
+   "ceo": "이문두",
    "stats": {
     "bids": 5,
     "wins": 3,
@@ -623045,10 +623311,45 @@
     "partners": 1,
     "lastAt": "2025-12-24 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1973-09-21",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로34길 55, 1117호(구로동, 코오롱싸이언스밸리2차)",
+    "employees": 70,
+    "homepage": "www.mgensolutions.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 19899870404,
+     "영업이익": -7901264857,
+     "당기순이익": -19987640773,
+     "자산총계": 61803914322,
+     "부채총계": 24687416735,
+     "자본총계": 37116497587
+    },
+    {
+     "year": 2024,
+     "매출액": 35614676984,
+     "영업이익": 1560140089,
+     "당기순이익": 6861673809,
+     "자산총계": 74461550150,
+     "부채총계": 24623268245,
+     "자본총계": 49838281905
+    },
+    {
+     "year": 2023,
+     "매출액": 21049002726,
+     "영업이익": -4785281982,
+     "당기순이익": -16640610661,
+     "자산총계": 53963674192,
+     "부채총계": 14707399500,
+     "자본총계": 39256274692
+    }
+   ],
    "history": [
     {
      "id": "R25BK01243410",
@@ -623248,7 +623549,14 @@
     "partners": 2,
     "lastAt": "2025-12-24 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-01-05",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 동일로 275-0, 4층(송정동, 봉구통상빌딩)",
+    "employees": 10,
+    "homepage": "http://www.castware.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -623392,7 +623700,14 @@
     "partners": 0,
     "lastAt": "2025-12-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-04-13",
+    "region": "경기도 용인시 기흥구",
+    "address": "경기도 용인시 기흥구 신구로 60, 2층 211호(구갈동, 쥬피터빌딩)",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -623588,7 +623903,14 @@
     "partners": 0,
     "lastAt": "2025-12-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-03-11",
+    "region": "경기도 군포시",
+    "address": "경기도 군포시 고산로 695 ,605호(산본동)",
+    "employees": 12,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -623784,7 +624106,14 @@
     "partners": 2,
     "lastAt": "2025-12-23 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-03-17",
+    "region": "경기도 고양시 일산동구",
+    "address": "경기도 고양시 일산동구 호수로 358-39 706호(백석동,동문굿모닝타워1차)",
+    "employees": 14,
+    "homepage": "nabisystem.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -623920,7 +624249,7 @@
   {
    "bizno": "6168702880",
    "name": "에이원인포텍(주)",
-   "ceo": "박명순",
+   "ceo": "나정훈",
    "stats": {
     "bids": 5,
     "wins": 5,
@@ -623928,7 +624257,14 @@
     "partners": 1,
     "lastAt": "2025-12-23 12:30:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2023-10-05",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 은구비남로7번길 37-0 (지족동)",
+    "employees": 16,
+    "homepage": "www.aoneinfotech.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624036,7 +624372,14 @@
     "partners": 0,
     "lastAt": "2025-12-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-01-25",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 디지털로 178, A동 10층 1014호(가산동, 가산퍼블릭)",
+    "employees": 1,
+    "homepage": "http://lnbsoft.com/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624232,7 +624575,14 @@
     "partners": 2,
     "lastAt": "2025-12-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-12-01",
+    "region": "서울특별시 마포구 서교동",
+    "address": "서울특별시 마포구 양화로12길 8-13 (서교동) 제이원빌딩 1층",
+    "employees": 13,
+    "homepage": "www.dudaji.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624371,7 +624721,14 @@
     "partners": 1,
     "lastAt": "2025-12-22 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-01-14",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털1로 5, 914호(가산동, 대륭테크노타운20차)",
+    "employees": 9,
+    "homepage": "www.weroad.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624473,7 +624830,14 @@
     "partners": 1,
     "lastAt": "2025-12-19 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-04-04",
+    "region": "대구광역시 동구",
+    "address": "대구광역시 동구 율암로 149-56 (상매동)",
+    "employees": 16,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624586,7 +624950,14 @@
     "partners": 0,
     "lastAt": "2025-12-17 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-01-01",
+    "region": "경기도 용인시 기흥구",
+    "address": "경기도 용인시 기흥구 서천로201번길 14, 514호. 515호(농서동, 프리미엄원희캐슬)",
+    "employees": 8,
+    "homepage": "https://www.enb-solution.com/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624782,7 +625153,14 @@
     "partners": 0,
     "lastAt": "2025-12-17 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-04-22",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 흥안대로 415, 519호, 520호, 521호 (평촌동, 두산벤처다임)",
+    "employees": 15,
+    "homepage": "topenc.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -624978,7 +625356,14 @@
     "partners": 0,
     "lastAt": "2025-12-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-07-01",
+    "region": "경상북도 경산시",
+    "address": "경상북도 경산시 중앙로19길 39-1 (중방동)",
+    "employees": 17,
+    "homepage": "www.anyit.net",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -625079,7 +625464,14 @@
     "partners": 0,
     "lastAt": "2025-12-16 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-11-12",
+    "region": "충청북도 청주시 서원구",
+    "address": "충청북도 청주시 서원구 성화로 99",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -625275,7 +625667,14 @@
     "partners": 0,
     "lastAt": "2025-12-15 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-11-01",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 충민로 10, 9층 에스30-1호(문정동, 가든파이브툴)",
+    "employees": 31,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -625416,7 +625815,14 @@
     "partners": 0,
     "lastAt": "2025-12-15 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-02-04",
+    "region": "대전광역시 서구",
+    "address": "대전광역시 서구 대덕대로 239, 15층 (둔산동, 눈높이대전센타)",
+    "employees": 33,
+    "homepage": "www.ucinet.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -625537,10 +625943,45 @@
     "partners": 0,
     "lastAt": "2025-12-15 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1996-07-04",
+    "region": "서울특별시 마포구",
+    "address": "서울특별시 마포구 독막로 281-0 (대흥동)",
+    "employees": 406,
+    "homepage": "www.logisys.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 48541050274,
+     "영업이익": 2884427722,
+     "당기순이익": 3304917079,
+     "자산총계": 29868025186,
+     "부채총계": 8847312049,
+     "자본총계": 21020713137
+    },
+    {
+     "year": 2024,
+     "매출액": 42857277220,
+     "영업이익": 2391160785,
+     "당기순이익": 2413455525,
+     "자산총계": 28972433530,
+     "부채총계": 10242919926,
+     "자본총계": 18729513604
+    },
+    {
+     "year": 2023,
+     "매출액": 36454449393,
+     "영업이익": 545439693,
+     "당기순이익": 516014131,
+     "자산총계": 24679710436,
+     "부채총계": 7657247528,
+     "자본총계": 17022462908
+    }
+   ],
    "history": [
     {
      "id": "R25BK01198535",
@@ -625733,7 +626174,14 @@
     "partners": 3,
     "lastAt": "2025-12-12 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-03-23",
+    "region": "세종특별자치시",
+    "address": "세종특별자치시  한누리대로 2264, 6층 601~605호(대평동, 씨티오브드림)",
+    "employees": 25,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -625863,7 +626311,14 @@
     "partners": 0,
     "lastAt": "2025-12-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-01-20",
+    "region": "전남광주통합특별시 나주시",
+    "address": "전남광주통합특별시 나주시 그린로 357-0 스카이랜드빌딩 6층 601호",
+    "employees": 35,
+    "homepage": "www.kumhatech.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626059,7 +626514,14 @@
     "partners": 2,
     "lastAt": "2025-12-09 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-08-30",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 경인로 775-0 1동 218호(문래동3가, 에이스하이테크시티)",
+    "employees": 30,
+    "homepage": "www.n2m.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626183,7 +626645,14 @@
     "partners": 0,
     "lastAt": "2025-12-09 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2008-01-03",
+    "region": "경상북도 구미시",
+    "address": "경상북도 구미시 고아읍 농공단지길 35-28",
+    "employees": 41,
+    "homepage": "illw1793@naver.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626344,7 +626813,14 @@
     "partners": 0,
     "lastAt": "2025-12-09 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-11-16",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 충민로 52, 비동 8층 816 817 818 819호(문정동, 가든파이브웍스)",
+    "employees": 45,
+    "homepage": "www.bmwp.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626505,7 +626981,14 @@
     "partners": 0,
     "lastAt": "2025-12-09 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-07-08",
+    "region": "대구광역시 동구",
+    "address": "대구광역시 동구 안심뉴타운1로 20 (율암동)",
+    "employees": 30,
+    "homepage": "www.goldensys.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626621,7 +627104,14 @@
     "partners": 0,
     "lastAt": "2025-12-08 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-05-01",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 성수일로 89, 10층 1006호(성수동1가)",
+    "employees": 26,
+    "homepage": "http://www.stcreative.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626752,7 +627242,14 @@
     "partners": 0,
     "lastAt": "2025-12-05 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-03-02",
+    "region": "전남광주통합특별시 여수시",
+    "address": "전남광주통합특별시 여수시 무선7길 28-4, 1층 1호(선원동)",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -626948,7 +627445,14 @@
     "partners": 0,
     "lastAt": "2025-12-05 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1997-01-30",
+    "region": "전남광주통합특별시 순천시",
+    "address": "전남광주통합특별시 순천시 해룡면 매안로 83, 2층(유진빌딩)",
+    "employees": 11,
+    "homepage": "www.dsnw.net",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627144,7 +627648,14 @@
     "partners": 2,
     "lastAt": "2025-12-01 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-01-15",
+    "region": "대구광역시 서구",
+    "address": "대구광역시 서구 와룡로 307, 618호(중리동, 디센터1976)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627313,7 +627824,14 @@
     "partners": 1,
     "lastAt": "2025-12-01 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-03-19",
+    "region": "울산광역시 중구",
+    "address": "울산광역시 중구 종가로 406-21 (복산동) 비동 917호, 918호",
+    "employees": 12,
+    "homepage": "www.e-core.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627415,7 +627933,14 @@
     "partners": 0,
     "lastAt": "2025-11-27 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-02-10",
+    "region": "전북특별자치도 완주군",
+    "address": "전북특별자치도 완주군 삼례읍 테크노밸리로 96-70",
+    "employees": 19,
+    "homepage": "www.saenoon.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627531,7 +628056,14 @@
     "partners": 0,
     "lastAt": "2025-11-26 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-07-23",
+    "region": "대구광역시 수성구",
+    "address": "대구광역시 수성구 알파시티1로 232(대흥동)",
+    "employees": 89,
+    "homepage": "www.idatabank.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627642,7 +628174,14 @@
     "partners": 0,
     "lastAt": "2025-11-25 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-11-01",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로31길 53-0 (구로동) 606호",
+    "employees": 14,
+    "homepage": "",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627758,7 +628297,14 @@
     "partners": 0,
     "lastAt": "2025-11-21 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-05-28",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털2로 98, 1동817호 (가산동,IT캐슬)",
+    "employees": 20,
+    "homepage": "www.sjtn.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -627954,7 +628500,14 @@
     "partners": 1,
     "lastAt": "2025-11-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-01-03",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 원신흥남로41번길 45-7, 1층(원신흥동)",
+    "employees": 1,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -628067,7 +628620,14 @@
     "partners": 0,
     "lastAt": "2025-11-19 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-03-02",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 흥안대로 415(평촌동, 두산벤처다임) 1126호, 1127호, 1128호",
+    "employees": 41,
+    "homepage": "http://www.eps-ene.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -628178,7 +628738,14 @@
     "partners": 0,
     "lastAt": "2025-11-18 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-01-01",
+    "region": "전남광주통합특별시 나주시",
+    "address": "전남광주통합특별시 나주시 노안면 노안로 455-41",
+    "employees": 3,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -628374,7 +628941,14 @@
     "partners": 0,
     "lastAt": "2025-11-18 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1985-03-26",
+    "region": "서울특별시 용산구",
+    "address": "서울특별시 용산구 녹사평대로11길 44 ()",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -628570,7 +629144,14 @@
     "partners": 0,
     "lastAt": "2025-11-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-10-21",
+    "region": "부산광역시 동구",
+    "address": "부산광역시 동구 조방로49번길 29 (범일동)",
+    "employees": 3,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -628766,7 +629347,14 @@
     "partners": 0,
     "lastAt": "2025-10-27 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-03-02",
+    "region": "전남광주통합특별시 북구",
+    "address": "전남광주통합특별시 북구 첨단연신로91번길 20-5 (신용동), 401호, 402호",
+    "employees": 15,
+    "homepage": "http://www.sourcers.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -628907,7 +629495,14 @@
     "partners": 0,
     "lastAt": "2025-09-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-07-16",
+    "region": "경기도 과천시 갈현동",
+    "address": "경기도 과천시 과천대로5길 24 (갈현동)  제1동 오피스1507호",
+    "employees": 14,
+    "homepage": "www.gadukcns.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -629103,7 +629698,14 @@
     "partners": 0,
     "lastAt": "2025-09-12 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-04-16",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 아차산로7나길 18-0 (성수동2가, 성수 APEX CENTER)",
+    "employees": 7,
+    "homepage": "www.hubsystems.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -629214,7 +629816,14 @@
     "partners": 0,
     "lastAt": "2025-08-21 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-09-01",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 역삼로25길 7-0 (역삼동)",
+    "employees": 24,
+    "homepage": "http://metabuzz.co.kr/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -629400,7 +630009,14 @@
     "partners": 0,
     "lastAt": "2025-08-19 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-09-05",
+    "region": "인천광역시 남동구",
+    "address": "인천광역시 남동구 선수촌공원로17번길 1, 에이동 1006호(구월동)",
+    "employees": 7,
+    "homepage": "",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -629596,7 +630212,14 @@
     "partners": 0,
     "lastAt": "2025-08-18 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-11-07",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 역삼로 165-0 (역삼동) 해성빌딩 3층",
+    "employees": 30,
+    "homepage": "www.elgen.ai",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -629762,7 +630385,14 @@
     "partners": 1,
     "lastAt": "2025-08-12 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-06-01",
+    "region": "경기도 부천시 원미구",
+    "address": "경기도 부천시 원미구 조마루로385번길 92, 제11층 제1128호-제1130호(원미동, 부천테크노밸리유1센터)",
+    "employees": 25,
+    "homepage": "www.onion.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -629900,7 +630530,14 @@
     "partners": 1,
     "lastAt": "2025-07-09 11:30:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-07-01",
+    "region": "경기도 용인시 기흥구",
+    "address": "경기도 용인시 기흥구 흥덕1로 13, 32층(영덕동, 흥덕아이티밸리 타워동)",
+    "employees": 90,
+    "homepage": "www.fnctech.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -630008,7 +630645,14 @@
     "partners": 0,
     "lastAt": "2025-07-01 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2003-03-12",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털1로 168, A동 1310호 (가산동, 우림라이언스1차)",
+    "employees": 25,
+    "homepage": "www.sisystems.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -630159,7 +630803,14 @@
     "partners": 0,
     "lastAt": "2025-06-12 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-01-22",
+    "region": "서울특별시 마포구",
+    "address": "서울특별시 마포구 성미산로11길 15(성산동)",
+    "employees": 13,
+    "homepage": "hwasungeng7@hanmail.net",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -630355,7 +631006,14 @@
     "partners": 0,
     "lastAt": "2025-06-11 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-05-18",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 디지털로 178, B동 3층 314~315호(가산동, 현대지식산업센터 가산퍼블릭)",
+    "employees": 18,
+    "homepage": "http://www.nextguide.net",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -630551,7 +631209,14 @@
     "partners": 1,
     "lastAt": "2025-06-11 11:30:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-10-17",
+    "region": "인천광역시 부평구",
+    "address": "인천광역시 부평구 부평대로 283, 비동 903호(청천동, 부평우림라이온스밸리)",
+    "employees": 18,
+    "homepage": "https://www.sjmnc.kr/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -630669,7 +631334,14 @@
     "partners": 0,
     "lastAt": "2025-06-05 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-01-07",
+    "region": "경기도 안양시 동안구 관양동",
+    "address": "경기도 안양시 동안구 벌말로 66 (관양동) A동 801,803,804호",
+    "employees": 53,
+    "homepage": "www.pluxity.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -630860,7 +631532,14 @@
     "partners": 0,
     "lastAt": "2025-06-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1991-08-23",
+    "region": "강원특별자치도 춘천시",
+    "address": "강원특별자치도 춘천시 후석로 44 (석사동) 3층",
+    "employees": 130,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -631056,7 +631735,14 @@
     "partners": 0,
     "lastAt": "2025-05-30 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-11-02",
+    "region": "경상북도 경산시",
+    "address": "경상북도 경산시 펜타힐즈로 74-0 (중산동), 4층 408호(힐즈스퀘어1)",
+    "employees": 5,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -631232,7 +631918,14 @@
     "partners": 1,
     "lastAt": "2025-05-21 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-01-03",
+    "region": "부산광역시 남구 문현동",
+    "address": "부산광역시 남구 남동천로 128, 1동2101호 (문현동, 부산국제금융센터2)",
+    "employees": 20,
+    "homepage": "www.nprit.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -631420,7 +632113,14 @@
     "partners": 0,
     "lastAt": "2025-05-13 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-10-06",
+    "region": "서울특별시 강남구 삼성동",
+    "address": "서울특별시 강남구 삼성로96길 6 (삼성동) 1310호",
+    "employees": 6,
+    "homepage": "gtsoft.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -631586,7 +632286,14 @@
     "partners": 0,
     "lastAt": "2025-04-29 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-08-29",
+    "region": "서울특별시 강동구",
+    "address": "서울특별시 강동구 양재대로124길 32 (길동) 202호",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -631782,7 +632489,14 @@
     "partners": 0,
     "lastAt": "2025-04-29 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-07-01",
+    "region": "서울특별시 도봉구",
+    "address": "서울특별시 도봉구 마들로 731 (도봉동) 로앤로즈빌딩 2층 201호",
+    "employees": 3,
+    "homepage": "http://www.bigteam.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -631978,7 +632692,14 @@
     "partners": 0,
     "lastAt": "2025-04-25 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-10-01",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 갑동로 71-10 (갑동)",
+    "employees": 8,
+    "homepage": "http://www.timesys.co.kr",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -632089,7 +632810,14 @@
     "partners": 0,
     "lastAt": "2025-04-10 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2003-11-01",
+    "region": "경기도 군포시",
+    "address": "경기도 군포시 고산로148번길 17-0 (당정동) A동 3101-2호",
+    "employees": 7,
+    "homepage": "www.sjens.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -632285,7 +633013,14 @@
     "partners": 0,
     "lastAt": "2025-03-13 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-06-01",
+    "region": "경기도 하남시",
+    "address": "경기도 하남시 조정대로 150, 7층 770호(덕풍동, 아이테코)",
+    "employees": 5,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -632481,7 +633216,14 @@
     "partners": 0,
     "lastAt": "2025-02-17 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-03-31",
+    "region": "인천광역시 연수구",
+    "address": "인천광역시 연수구 송도과학로 32-0 (송도동) 송도테크노파크IT센터 S동1501호",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -632677,7 +633419,14 @@
     "partners": 0,
     "lastAt": "2025-01-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-08-23",
+    "region": "경기도 구리시",
+    "address": "경기도 구리시 동구릉로431번길 45-2 DUSON",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -632873,7 +633622,14 @@
     "partners": 0,
     "lastAt": "2024-12-24 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-04-17",
+    "region": "경상북도 김천시",
+    "address": "경상북도 김천시 혁신8로 5-0 301호 (율곡동, 율곡테크노밸리)",
+    "employees": 10,
+    "homepage": "www.leadon.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -633034,7 +633790,14 @@
     "partners": 0,
     "lastAt": "2024-12-24 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2008-05-04",
+    "region": "대전광역시 서구",
+    "address": "대전광역시 서구 청사서로 26  미래빌딩 901호 (월평동, 미래빌딩)",
+    "employees": 27,
+    "homepage": "http://www.irucore.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -633190,7 +633953,14 @@
     "partners": 0,
     "lastAt": "2024-12-20 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-11-16",
+    "region": "경기도 과천시",
+    "address": "경기도 과천시 뒷골1로 27-0 (과천동) 301호",
+    "employees": 20,
+    "homepage": "www.hansystem.net",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -633285,7 +634055,14 @@
     "partners": 0,
     "lastAt": "2024-12-19 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2008-01-22",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 벚꽃로 234-0 (가산동)",
+    "employees": 6,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -633481,7 +634258,14 @@
     "partners": 0,
     "lastAt": "2024-12-17 14:14:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-06-18",
+    "region": "경기도 성남시 수정구",
+    "address": "경기도 성남시 수정구 금토로80번길 11,1107호 (금토동,판교제2테크노밸리 판교이노베이션랩))",
+    "employees": 13,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -633677,7 +634461,14 @@
     "partners": 0,
     "lastAt": "2024-12-12 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-06-15",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로33길 48, 602호,603호(구로동, 대륭포스트타워7차)",
+    "employees": 11,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -633813,7 +634604,14 @@
     "partners": 0,
     "lastAt": "2024-12-11 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-06-16",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 양재천로15길 1, (제이애드빌딩 4층) (양재동)",
+    "employees": 19,
+    "homepage": "www.ellysys.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -634009,7 +634807,14 @@
     "partners": 0,
     "lastAt": "2024-10-24 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-02-25",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털1로 212, 505호(가산동, 코오롱디지털타워애스턴)",
+    "employees": 11,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -634205,7 +635010,14 @@
     "partners": 0,
     "lastAt": "2024-08-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-02-01",
+    "region": "부산광역시 해운대구 중동",
+    "address": "부산광역시 해운대구 달맞이길 193 (중동) 에이동 2층 202호",
+    "employees": 1,
+    "homepage": "www.4wavetech.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -634401,7 +635213,14 @@
     "partners": 0,
     "lastAt": "2024-05-31 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2001-08-01",
+    "region": "서울특별시 강남구 삼성동",
+    "address": "서울특별시 강남구 테헤란로 427 14층 114호 (삼성동)",
+    "employees": 11,
+    "homepage": "www.epart.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -634577,7 +635396,14 @@
     "partners": 0,
     "lastAt": "2024-05-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2023-01-02",
+    "region": "강원특별자치도 춘천시",
+    "address": "강원특별자치도 춘천시 남산면 보매기길 87-0",
+    "employees": 4,
+    "homepage": "www.roasolution.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -634773,7 +635599,14 @@
     "partners": 0,
     "lastAt": "2024-02-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-01-06",
+    "region": "경기도 광명시",
+    "address": "경기도 광명시 하안로 60, D동 디1412호,디1409호,디1408호(소하동, 광명테크노파크)",
+    "employees": 10,
+    "homepage": "www.hanatek.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -634969,7 +635802,14 @@
     "partners": 0,
     "lastAt": "2023-12-22 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-04-01",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털2로 143-0 (가산동, 가산어반워크 2) 1120호,1121호",
+    "employees": 15,
+    "homepage": "koosstech.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -636928,7 +637768,14 @@
     "partners": 0,
     "lastAt": "2026-09-21 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-07-01",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로 306-0 (구로동) 대륭포스트타워2차 1006호, 1007호",
+    "employees": 37,
+    "homepage": "www.crizen.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -637074,7 +637921,14 @@
     "partners": 0,
     "lastAt": "2026-09-10 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-04-19",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 뚝섬로1길 25-0 (성수동1가), 서울숲한라에코밸리 10층 1001,1002,1003,1004,1005호",
+    "employees": 101,
+    "homepage": "www.hnine.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -637255,7 +638109,14 @@
     "partners": 0,
     "lastAt": "2026-09-08 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-02-21",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로33길 11, 1302호, 1303호 (구로동,에이스테크노타워8차)",
+    "employees": 55,
+    "homepage": "www.unionplace.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -637411,7 +638272,14 @@
     "partners": 0,
     "lastAt": "2026-09-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-07-01",
+    "region": "서울특별시 강남구 대치동",
+    "address": "서울특별시 강남구 테헤란로 518 (대치동) 1층",
+    "employees": 26,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -637567,7 +638435,14 @@
     "partners": 0,
     "lastAt": "2026-09-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-10-05",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털2로 101, 제에이604호(가산동, 한라원앤원타워)",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -637728,7 +638603,14 @@
     "partners": 0,
     "lastAt": "2026-09-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-01-01",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 영신로 166, 9층 913호 (영등포동6가 반도아이비밸리)",
+    "employees": 81,
+    "homepage": "http://envalue.biz",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -637879,7 +638761,14 @@
     "partners": 0,
     "lastAt": "2026-09-03 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-10-01",
+    "region": "경기도 성남시 분당구 정자동",
+    "address": "경기도 성남시 분당구 정자일로 95 4층(정자동)",
+    "employees": 17,
+    "homepage": "https://cubig.ai/ ",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -638060,7 +638949,14 @@
     "partners": 0,
     "lastAt": "2026-09-01 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-06-05",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 역삼로 221, 608호(역삼동)",
+    "employees": 17,
+    "homepage": "www.easytask.co.kr",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -638446,7 +639342,14 @@
     "partners": 0,
     "lastAt": "2026-08-27 10:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-01-02",
+    "region": "전북특별자치도 전주시 덕진구",
+    "address": "전북특별자치도 전주시 덕진구 만성북로 63, 제3층 301호(만성동,베스트에버빌딩)",
+    "employees": 16,
+    "homepage": "www.dev-jitsu.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -638607,7 +639510,14 @@
     "partners": 1,
     "lastAt": "2026-08-24 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-10-08",
+    "region": "부산광역시 남구 문현동",
+    "address": "부산광역시 남구 남동천로 128 ,  609호 ,610호, 1711호, 1719호 (문현동, 부산국제금융센터)",
+    "employees": 11,
+    "homepage": "www.ircp.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -638735,7 +639645,14 @@
     "partners": 0,
     "lastAt": "2026-08-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-02-05",
+    "region": "서울특별시 서초구 서초동",
+    "address": "서울특별시 서초구 서운로26길 9, 4층(서초동, 펜타타워)",
+    "employees": 72,
+    "homepage": "www.twigfarm.net",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -638871,10 +639788,45 @@
     "partners": 1,
     "lastAt": "2026-08-20 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-03-17",
+    "region": "울산광역시 중구",
+    "address": "울산광역시 중구 종가8길 45(복산동)",
+    "employees": 95,
+    "homepage": "http://www.bellock.co.kr/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 35382252329,
+     "영업이익": 877307139,
+     "당기순이익": 2125074124,
+     "자산총계": 36205748025,
+     "부채총계": 8387885674,
+     "자본총계": 27817862351
+    },
+    {
+     "year": 2024,
+     "매출액": 30866527663,
+     "영업이익": -1964998714,
+     "당기순이익": -1191328401,
+     "자산총계": 39084603188,
+     "부채총계": 14387401675,
+     "자본총계": 24697201513
+    },
+    {
+     "year": 2023,
+     "매출액": 26394298398,
+     "영업이익": -366356900,
+     "당기순이익": -4590423737,
+     "자산총계": 36202750198,
+     "부채총계": 10760854705,
+     "자본총계": 25441895493
+    }
+   ],
    "history": [
     {
      "id": "R26BK01683718",
@@ -638969,7 +639921,14 @@
     "partners": 0,
     "lastAt": "2026-08-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2001-01-10",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 복용북로75번길 6-16 (복용동)",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -639060,7 +640019,14 @@
     "partners": 0,
     "lastAt": "2026-08-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2025-06-18",
+    "region": "충청북도 청주시 흥덕구 오송읍 봉산리",
+    "address": "충청북도 청주시 흥덕구 오송읍 봉산2길 28-10 ",
+    "employees": 1,
+    "homepage": "www.seohoinnotech.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -639166,7 +640132,14 @@
     "partners": 0,
     "lastAt": "2026-08-19 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-01-21",
+    "region": "충청남도 천안시 서북구 불당동",
+    "address": "충청남도 천안시 서북구 불당14로 48 (불당동), 충남창업마루나비 5층(불당동)",
+    "employees": 13,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -639327,10 +640300,45 @@
     "partners": 0,
     "lastAt": "2026-08-19 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-04-06",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 영등포로 272, 필링크 타워 (영등포동3가)",
+    "employees": 130,
+    "homepage": "www.ponylink.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 44542265846,
+     "영업이익": -16457645248,
+     "당기순이익": -7300800309,
+     "자산총계": 268993780336,
+     "부채총계": 61512996298,
+     "자본총계": 207480784038
+    },
+    {
+     "year": 2024,
+     "매출액": 60781215269,
+     "영업이익": -21111334702,
+     "당기순이익": -38942614780,
+     "자산총계": 246053963901,
+     "부채총계": 47234665348,
+     "자본총계": 198819298553
+    },
+    {
+     "year": 2023,
+     "매출액": 70506770725,
+     "영업이익": -6972453290,
+     "당기순이익": -12027155080,
+     "자산총계": 197990739641,
+     "부채총계": 49073252497,
+     "자본총계": 148917487144
+    }
+   ],
    "history": [
     {
      "id": "R26BK01626217",
@@ -639508,7 +640516,14 @@
     "partners": 0,
     "lastAt": "2026-08-18 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2024-10-12",
+    "region": "인천광역시 서해구 경서동",
+    "address": "인천광역시 서해구 정서진로 410, 본부동 2층 D222호(경서동)",
+    "employees": 6,
+    "homepage": "https://rainmaker.co.kr",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -639689,7 +640704,14 @@
     "partners": 0,
     "lastAt": "2026-08-18 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-10-20",
+    "region": "부산광역시 부산진구 양정동",
+    "address": "부산광역시 부산진구 중앙대로 979, 8층 전부 (양정동, 동성빌딩)",
+    "employees": 13,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -639870,7 +640892,14 @@
     "partners": 0,
     "lastAt": "2026-08-14 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-01-18",
+    "region": "서울특별시 송파구 오금동",
+    "address": "서울특별시 송파구 중대로 300 (오금동) 5층",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -639986,7 +641015,14 @@
     "partners": 0,
     "lastAt": "2026-08-13 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1999-10-13",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 새말로 125 ()",
+    "employees": 37,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640167,7 +641203,14 @@
     "partners": 2,
     "lastAt": "2026-08-13 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-07-22",
+    "region": "서울특별시 영등포구 양평동5가",
+    "address": "서울특별시 영등포구 양평로21길 26 (양평동5가), 1503호",
+    "employees": 4,
+    "homepage": "www.labq.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640296,7 +641339,14 @@
     "partners": 0,
     "lastAt": "2026-08-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-05-01",
+    "region": "강원특별자치도 춘천시 동면 만천리",
+    "address": "강원특별자치도 춘천시 동면 만천로 106-14 , 2층",
+    "employees": 7,
+    "homepage": "www.keco.co.kr",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640462,7 +641512,14 @@
     "partners": 0,
     "lastAt": "2026-08-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-04-19",
+    "region": "제주특별자치도 제주시 연동",
+    "address": "제주특별자치도 제주시 연오로 4 , 2층(연동)",
+    "employees": 0,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640628,7 +641685,14 @@
     "partners": 0,
     "lastAt": "2026-08-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-01-06",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 바우뫼로35길 3-0 (양재동) 가은빌딩 5층",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640729,7 +641793,14 @@
     "partners": 0,
     "lastAt": "2026-08-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-01-02",
+    "region": "서울특별시 금천구 가산동",
+    "address": "서울특별시 금천구 디지털로10길 37 (가산동) 1113~1114호",
+    "employees": 35,
+    "homepage": "www.hgworks.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640835,7 +641906,14 @@
     "partners": 1,
     "lastAt": "2026-08-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-05-22",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로30길 28, 마리오타워 406호 (구로동)",
+    "employees": 20,
+    "homepage": "http://www.greenecos.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -640938,7 +642016,14 @@
     "partners": 0,
     "lastAt": "2026-08-11 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-02-20",
+    "region": "서울특별시 용산구 한강로2가",
+    "address": "서울특별시 용산구 한강대로 69 (한강로2가, 용산푸르지오써밋) 302호",
+    "employees": 6,
+    "homepage": "www.dmtlabs.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -641079,7 +642164,14 @@
     "partners": 0,
     "lastAt": "2026-08-10 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-03-05",
+    "region": "경기도 성남시 수정구 시흥동",
+    "address": "경기도 성남시 수정구 대왕판교로 815 (시흥동), 462호",
+    "employees": 12,
+    "homepage": "https://mathaix.com/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -641200,7 +642292,14 @@
     "partners": 0,
     "lastAt": "2026-08-05 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-07-09",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 엘에스로 136, 비동 1202호(호계동)",
+    "employees": 25,
+    "homepage": "www.join-it.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -641381,7 +642480,14 @@
     "partners": 0,
     "lastAt": "2026-08-05 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-06-17",
+    "region": "경상남도 창원시 마산회원구",
+    "address": "경상남도 창원시 마산회원구 내서읍 광려천남로 59 (재)마산밸리 717호",
+    "employees": 32,
+    "homepage": "www.gentop.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -641562,7 +642668,14 @@
     "partners": 0,
     "lastAt": "2026-08-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1994-04-01",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 테헤란로 152 27층 역삼동, 강남파이낸스센터",
+    "employees": 3114,
+    "homepage": "",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -641693,7 +642806,14 @@
     "partners": 0,
     "lastAt": "2026-08-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2023-02-02",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 복용동로 43-0 (복용동) 도안더리브시그니처 F440호",
+    "employees": 6,
+    "homepage": "https://www.keyclops.com/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -641874,7 +642994,14 @@
     "partners": 0,
     "lastAt": "2026-07-31 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1991-07-23",
+    "region": "전북특별자치도 전주시 완산구",
+    "address": "전북특별자치도 전주시 완산구 천잠로 472,101호,201호 (효자동3가,대신빌딩)",
+    "employees": 19,
+    "homepage": "http://www.itdsn.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642055,7 +643182,14 @@
     "partners": 1,
     "lastAt": "2026-07-31 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-01-01",
+    "region": "경기도 고양시 덕양구",
+    "address": "경기도 고양시 덕양구 삼원로 63, 8층 에프826호(원흥동, 고양 아크비즈 지식산업센터)",
+    "employees": 13,
+    "homepage": "www.goks.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642153,7 +643287,14 @@
     "partners": 0,
     "lastAt": "2026-07-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-10-21",
+    "region": "경기도 고양시 일산동구 성석동",
+    "address": "경기도 고양시 일산동구 고봉로 612 (성석동) 가동 2층",
+    "employees": 3,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642309,7 +643450,14 @@
     "partners": 0,
     "lastAt": "2026-07-29 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-01-01",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 가정로 218 508(가정동, 한국전자통신연구원)",
+    "employees": 51,
+    "homepage": "www.nsetec.com",
+    "kinds": "물품,외자,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642420,7 +643568,14 @@
     "partners": 0,
     "lastAt": "2026-07-28 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-09-01",
+    "region": "경기도 성남시 분당구 삼평동",
+    "address": "경기도 성남시 분당구 판교역로 230 (삼평동) B동 515호",
+    "employees": 23,
+    "homepage": "https://reacting.kr/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642546,7 +643701,14 @@
     "partners": 0,
     "lastAt": "2026-07-28 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-11-01",
+    "region": "서울특별시 영등포구 여의도동",
+    "address": "서울특별시 영등포구 여의나루로 71,  제10층 제1005호,제1006호 (여의도동, 동화빌딩)",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642657,7 +643819,14 @@
     "partners": 0,
     "lastAt": "2026-07-27 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-08-08",
+    "region": "강원특별자치도 춘천시 남산면 수동리",
+    "address": "강원특별자치도 춘천시 남산면 버들1길 130, 4층 (더존BI센터)",
+    "employees": 20,
+    "homepage": "www.hulam.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642743,7 +643912,14 @@
     "partners": 0,
     "lastAt": "2026-07-27 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-12-20",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 논현로31길 41-0 (양재동), 2층",
+    "employees": 3,
+    "homepage": "",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642844,7 +644020,14 @@
     "partners": 0,
     "lastAt": "2026-07-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-02-17",
+    "region": "서울특별시 양천구",
+    "address": "서울특별시 양천구 목동동로 233-1, 1816호 (목동, 드림타워)",
+    "employees": 12,
+    "homepage": "www.needi.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -642930,7 +644113,14 @@
     "partners": 0,
     "lastAt": "2026-07-23 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1994-06-01",
+    "region": "충청북도 청주시 흥덕구",
+    "address": "충청북도 청주시 흥덕구 강내면 청주역로 188-4",
+    "employees": 29,
+    "homepage": "www.tapi.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643058,7 +644248,7 @@
   {
    "bizno": "2478101247",
    "name": "비욘드데이터 주식회사",
-   "ceo": "조성희",
+   "ceo": "박종화",
    "stats": {
     "bids": 4,
     "wins": 0,
@@ -643066,7 +644256,14 @@
     "partners": 0,
     "lastAt": "2026-07-23 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-09-09",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 밤고개로1길 30, 5층(수서동, 우곡빌딩)",
+    "employees": 22,
+    "homepage": "www.beyondata.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643237,7 +644434,14 @@
     "partners": 1,
     "lastAt": "2026-07-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-07-13",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 성수일로10길 32-0 (성수동2가) 창미빌딩 4층",
+    "employees": 8,
+    "homepage": "http://www.uforus.co.kr/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643360,7 +644564,14 @@
     "partners": 0,
     "lastAt": "2026-07-22 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2023-05-10",
+    "region": "경상남도 진주시",
+    "address": "경상남도 진주시 소호로 113, 진주 창업 혁신허브 403호(충무공동)",
+    "employees": 4,
+    "homepage": "www.mjict.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643541,7 +644752,14 @@
     "partners": 0,
     "lastAt": "2026-07-21 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-07-15",
+    "region": "서울특별시 종로구",
+    "address": "서울특별시 종로구 청계천로 41-0 (서린동, 영풍빌딩) 12층",
+    "employees": 137,
+    "homepage": "www.noaats.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643642,7 +644860,14 @@
     "partners": 3,
     "lastAt": "2026-07-20 18:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-11-09",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 상원1길 26, 806호(성수동1가, 서울숲에이타워)",
+    "employees": 53,
+    "homepage": "www.corners.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643777,7 +645002,14 @@
     "partners": 1,
     "lastAt": "2026-07-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-01-01",
+    "region": "경기도 성남시 수정구",
+    "address": "경기도 성남시 수정구 창업로 43, A동 7층 701,702호 (시흥동, GH판교글로벌비즈센터)",
+    "employees": 21,
+    "homepage": "www.aiblab.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -643880,7 +645112,14 @@
     "partners": 0,
     "lastAt": "2026-07-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-12-28",
+    "region": "충청북도 청주시 청원구",
+    "address": "충청북도 청주시 청원구 상당로 314, 349호(내덕동)",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644061,7 +645300,14 @@
     "partners": 0,
     "lastAt": "2026-07-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-01-26",
+    "region": "경상남도 창원시 의창구",
+    "address": "경상남도 창원시 의창구 읍성로 110 (소답동)",
+    "employees": 5,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644242,7 +645488,14 @@
     "partners": 0,
     "lastAt": "2026-07-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-05-10",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 반포대로 8, 5층 (서초동, 삼흥빌딩)",
+    "employees": 40,
+    "homepage": "www.brenex.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644423,7 +645676,14 @@
     "partners": 4,
     "lastAt": "2026-07-15 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2008-10-27",
+    "region": "강원특별자치도 원주시",
+    "address": "강원특별자치도 원주시 시청로 553, 3층 (관설동)",
+    "employees": 30,
+    "homepage": "www.shcns.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644539,7 +645799,14 @@
     "partners": 2,
     "lastAt": "2026-07-14 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-12-29",
+    "region": "경기도 고양시 일산동구 장항동",
+    "address": "경기도 고양시 일산동구 백마로 195 (장항동, SK엠시티타워) 사무동 6010호",
+    "employees": 11,
+    "homepage": "",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644638,7 +645905,14 @@
     "partners": 1,
     "lastAt": "2026-07-14 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-06-09",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 무학봉15길 20, 3층 302호 (하왕십리동)",
+    "employees": 6,
+    "homepage": "www.promartians.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644776,7 +646050,14 @@
     "partners": 1,
     "lastAt": "2026-07-09 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-12-16",
+    "region": "서울특별시 종로구 내수동",
+    "address": "서울특별시 종로구 새문안로3길 30 (내수동) 대우빌딩 복합동  601-2호",
+    "employees": 16,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644874,7 +646155,14 @@
     "partners": 0,
     "lastAt": "2026-07-09 10:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-09-21",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 당산로41길 11-0 (당산동4가)당산 SK V1센터 W동 1807,1808호",
+    "employees": 44,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -644985,7 +646273,14 @@
     "partners": 2,
     "lastAt": "2026-07-08 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-01-19",
+    "region": "경기도 성남시 수정구",
+    "address": "경기도 성남시 수정구 창업로 43-0 (시흥동) A동 407-410호 (판교글로벌비즈센터)",
+    "employees": 35,
+    "homepage": "http://www.enjoybt.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -645084,7 +646379,14 @@
     "partners": 0,
     "lastAt": "2026-07-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-04-08",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 송파대로28길 12, 밀리아나1차오피스텔 403 (가락동)",
+    "employees": 12,
+    "homepage": "www.kitcai.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -645265,7 +646567,14 @@
     "partners": 0,
     "lastAt": "2026-07-03 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-09-15",
+    "region": "충청북도 청주시 서원구 남이면 가마리",
+    "address": "충청북도 청주시 서원구 남이면 가마2길 3-14 ",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -645446,7 +646755,14 @@
     "partners": 0,
     "lastAt": "2026-07-03 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-07-01",
+    "region": "경기도 성남시 중원구",
+    "address": "경기도 성남시 중원구 둔촌대로 388, 제5층 제506호(상대원동, 크란츠테크노)",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -645627,7 +646943,14 @@
     "partners": 0,
     "lastAt": "2026-07-03 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-01-16",
+    "region": "충청남도 천안시 서북구 백석동",
+    "address": "충청남도 천안시 서북구 백석공단5길 6, 제10층 제케이1017호(백석동)",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -645808,7 +647131,14 @@
     "partners": 0,
     "lastAt": "2026-07-03 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-06-01",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 테크노4로 17, D동 616호 (관평동 대덕비즈센터)",
+    "employees": 25,
+    "homepage": "http://www.ubizit.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -645894,7 +647224,14 @@
     "partners": 1,
     "lastAt": "2026-07-01 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-12-02",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로26길 43, 엘1410-1411호(구로동, 대륭포스트타워8차)",
+    "employees": 36,
+    "homepage": "http://www.redsoft.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646082,7 +647419,14 @@
     "partners": 2,
     "lastAt": "2026-07-01 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-02-28",
+    "region": "서울특별시 송파구 문정동",
+    "address": "서울특별시 송파구 송이로32길 18 (문정동), 에코타워 2층",
+    "employees": 34,
+    "homepage": "www.tenopa.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646251,7 +647595,14 @@
     "partners": 1,
     "lastAt": "2026-06-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-06-01",
+    "region": "경기도 성남시 수정구",
+    "address": "경기도 성남시 수정구 금토로80번길 11, 11층 1101호(금토동, 판교이노베이션랩 )",
+    "employees": 28,
+    "homepage": "www.achimsoft.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646354,7 +647705,14 @@
     "partners": 0,
     "lastAt": "2026-06-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-10-16",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 방배천로2안길 37 (방배동,1층)",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646535,7 +647893,14 @@
     "partners": 3,
     "lastAt": "2026-06-29 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1995-05-10",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 삼성로 150-0 (대치동)",
+    "employees": 41,
+    "homepage": "www.krinfra.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646660,7 +648025,14 @@
     "partners": 1,
     "lastAt": "2026-06-29 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-01-15",
+    "region": "경기도 평택시",
+    "address": "경기도 평택시 현신로 185-0 (용이동)  상가101호",
+    "employees": 5,
+    "homepage": "http://www.snenc.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646768,7 +648140,14 @@
     "partners": 0,
     "lastAt": "2026-06-26 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-02-15",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 서초대로 356-0 (서초동) 서초지웰타워 1301호",
+    "employees": 43,
+    "homepage": "www.koiware.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -646869,10 +648248,45 @@
     "partners": 7,
     "lastAt": "2026-06-26 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1982-01-01",
+    "region": "경기도 성남시 분당구",
+    "address": "경기도 성남시 분당구 불정로 90 1층(정자동)",
+    "employees": 23598,
+    "homepage": "http://www.kt.com/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 19324024000000,
+     "영업이익": 1304973000000,
+     "당기순이익": 1061753000000,
+     "자산총계": 29677587000000,
+     "부채총계": 14451027000000,
+     "자본총계": 15226560000000
+    },
+    {
+     "year": 2024,
+     "매출액": 18579678000000,
+     "영업이익": 346489000000,
+     "당기순이익": 326916000000,
+     "자산총계": 29528880000000,
+     "부채총계": 15108740000000,
+     "자본총계": 14420140000000
+    },
+    {
+     "year": 2023,
+     "매출액": 18371437000000,
+     "영업이익": 1185392000000,
+     "당기순이익": 933337000000,
+     "자산총계": 30308919000000,
+     "부채총계": 15265380000000,
+     "자본총계": 15043539000000
+    }
+   ],
    "history": [
     {
      "id": "R26BK01555876",
@@ -647028,7 +648442,14 @@
     "partners": 1,
     "lastAt": "2026-06-25 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-09-10",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 법원로9길 26, 씨동 615호(문정동, 에이치비지니스파크)",
+    "employees": 19,
+    "homepage": "http://www.ictnet.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647136,7 +648557,14 @@
     "partners": 0,
     "lastAt": "2026-06-25 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-04-27",
+    "region": "경기도 용인시 수지구",
+    "address": "경기도 용인시 수지구 광교중앙로 338-0 (상현동) 광교우미뉴브 B동 111,112호",
+    "employees": 34,
+    "homepage": "www.emotionwave.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647317,7 +648745,14 @@
     "partners": 2,
     "lastAt": "2026-06-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-02-10",
+    "region": "서울특별시 강남구 역삼동",
+    "address": "서울특별시 강남구 선릉로93길 15 (역삼동), 5층 518호",
+    "employees": 6,
+    "homepage": "http://teddysum.ai/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647476,7 +648911,14 @@
     "partners": 0,
     "lastAt": "2026-06-23 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-01-01",
+    "region": "경상남도 창원시 마산회원구",
+    "address": "경상남도 창원시 마산회원구 봉암공단13길 15-13 (봉암동),자유무역지역 3공구 나래관 2층",
+    "employees": 27,
+    "homepage": "WWW.KNINC.CO.KR",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647567,7 +649009,14 @@
     "partners": 2,
     "lastAt": "2026-06-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-04-26",
+    "region": "서울특별시 강남구 삼성동",
+    "address": "서울특별시 강남구 봉은사로105길 54-5 (삼성동, 리버뷰빌), 202, 203호(현황상 4층 402호)",
+    "employees": 10,
+    "homepage": "https://tensoftworks.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647706,7 +649155,14 @@
     "partners": 1,
     "lastAt": "2026-06-23 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-07-11",
+    "region": "대전광역시 서구 도안동",
+    "address": "대전광역시 서구 도안북로93번길 20-5 (도안동), 리더스타워 6층 601호",
+    "employees": 7,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647804,7 +649260,14 @@
     "partners": 2,
     "lastAt": "2026-06-22 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-09-06",
+    "region": "경상북도 김천시",
+    "address": "경상북도 김천시 혁신로 303-0, 3층 301-1호 (율곡동,지텍지식산업센터)",
+    "employees": 25,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -647908,7 +649371,14 @@
     "partners": 0,
     "lastAt": "2026-06-17 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-01-23",
+    "region": "제주특별자치도 제주시",
+    "address": "제주특별자치도 제주시 부록서길 23, 101호 (화북이동)",
+    "employees": 11,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648089,7 +649559,14 @@
     "partners": 2,
     "lastAt": "2026-06-17 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1999-03-02",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 성수일로 77-0, 1107~1109호 (성수동1가)",
+    "employees": 29,
+    "homepage": "http://www.ongo.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648203,7 +649680,14 @@
     "partners": 0,
     "lastAt": "2026-06-16 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-10-10",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 학동로11길 20-7 (논현동)",
+    "employees": 110,
+    "homepage": "www.pulip.com",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648319,7 +649803,14 @@
     "partners": 1,
     "lastAt": "2026-06-16 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-12-09",
+    "region": "대전광역시 서구",
+    "address": "대전광역시 서구 둔산대로117번길 44, 1015호(만년동, 엑스포오피스텔1차)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648406,7 +649897,14 @@
     "partners": 0,
     "lastAt": "2026-06-15 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2001-04-03",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 대덕대로 593(도룡동, 대덕테크비즈센터 508호,509호,510호)",
+    "employees": 40,
+    "homepage": "www.iktg.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648486,7 +649984,14 @@
     "partners": 0,
     "lastAt": "2026-06-15 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-03-10",
+    "region": "인천광역시 연수구 송도동",
+    "address": "인천광역시 연수구 송도과학로 56 (송도동) 506호",
+    "employees": 2,
+    "homepage": "https://anyeong-soft.com/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648609,7 +650114,7 @@
   {
    "bizno": "1028207886",
    "name": "한국정보통신기술협회",
-   "ceo": "손승현",
+   "ceo": "송상훈",
    "stats": {
     "bids": 4,
     "wins": 4,
@@ -648617,7 +650122,14 @@
     "partners": 1,
     "lastAt": "2026-06-09 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1992-08-08",
+    "region": "경기도 성남시 분당구",
+    "address": "경기도 성남시 분당구 분당로 47 ()",
+    "employees": 313,
+    "homepage": "www.tta.or.kr",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648725,7 +650237,14 @@
     "partners": 1,
     "lastAt": "2026-06-09 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-10-19",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 시민대로 230, A동 2617호 (관양동)",
+    "employees": 24,
+    "homepage": "www.amisystems.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648818,7 +650337,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-10-19",
+    "region": "경기도 의정부시",
+    "address": "경기도 의정부시 평화로 794-0 (녹양동)",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -648999,7 +650525,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-03-02",
+    "region": "경기도 평택시 고덕동",
+    "address": "경기도 평택시 고덕중앙로 322, 4층 412-172호 (고덕동, 에이스에스타워)",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -649180,7 +650713,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-08-11",
+    "region": "전남광주통합특별시 장성군",
+    "address": "전남광주통합특별시 장성군 장성읍 영천로 191-1 , 2층",
+    "employees": 33,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -649361,7 +650901,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-11-27",
+    "region": "경상북도 포항시 남구 대잠동",
+    "address": "경상북도 포항시 남구 대이로9번길 2 (대잠동), 2층 202호",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -649542,7 +651089,14 @@
     "partners": 2,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-12-06",
+    "region": "경상북도 포항시 남구",
+    "address": "경상북도 포항시 남구 대이로 14, 112동 301호(대잠동, 트리니엔)",
+    "employees": 13,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -649735,7 +651289,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-01-26",
+    "region": "전북특별자치도 군산시 경장동",
+    "address": "전북특별자치도 군산시 번영로 41 (경장동)",
+    "employees": 26,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -649916,7 +651477,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-09-12",
+    "region": "전북특별자치도 김제시 요촌동",
+    "address": "전북특별자치도 김제시 남북로 177-1 (요촌동),2층",
+    "employees": 18,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -650097,7 +651665,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-11-06",
+    "region": "강원특별자치도 홍천군",
+    "address": "강원특별자치도 홍천군 홍천읍 홍천로 376, 402호",
+    "employees": 23,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -650278,7 +651853,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-11-22",
+    "region": "충청남도 천안시 서북구",
+    "address": "충청남도 천안시 서북구 두정상가8길 30-0 (두정동, 하이스타운) 9층 904호",
+    "employees": 18,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -650459,7 +652041,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-01-30",
+    "region": "경기도 남양주시",
+    "address": "경기도 남양주시 다산순환로 20, 4층 AA 04-051호(다산동, 다산현대프리미어캠퍼스)",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -650640,7 +652229,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1983-01-15",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 학의로 268, 안양메가밸리 604호 (관양동)",
+    "employees": 33,
+    "homepage": "sambooeng.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -650821,7 +652417,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-11-03",
+    "region": "전남광주통합특별시 순천시",
+    "address": "전남광주통합특별시 순천시 연향번영3길 31(연향동)",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -651002,7 +652605,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-03-16",
+    "region": "경상북도 경산시",
+    "address": "경상북도 경산시 하양읍 가마실길 50, 809호(경일대학교 산학협력관)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -651183,7 +652793,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-02-03",
+    "region": "경상남도 통영시",
+    "address": "경상남도 통영시 미나리4길 13-3 , 203호 (무전동)",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -651364,7 +652981,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-12-07",
+    "region": "경상남도 창원시 진해구",
+    "address": "경상남도 창원시 진해구 신항4로 41-28, 3층 306호(용원동, 신항주상가)",
+    "employees": 11,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -651545,7 +653169,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-05-21",
+    "region": "경기도 하남시",
+    "address": "경기도 하남시 미사강변중앙로 11, W315호 (풍산동)",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -651726,7 +653357,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-06-24",
+    "region": "경기도 안산시 상록구",
+    "address": "경기도 안산시 상록구 건건1길 19-0, 2층 202호(건건동, 초원프라자)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -651907,7 +653545,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-04-01",
+    "region": "경기도 여주시",
+    "address": "경기도 여주시 강변북로 283-0 (현암동) 8호",
+    "employees": 12,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -652088,7 +653733,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-07-31",
+    "region": "강원특별자치도 철원군",
+    "address": "강원특별자치도 철원군 갈말읍 삼부연로 52-1, 202호(이룸빌딩)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -652269,7 +653921,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-03-07",
+    "region": "전남광주통합특별시 여수시",
+    "address": "전남광주통합특별시 여수시 장성1길 18-1 (안산동), 2층",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -652450,7 +654109,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-09-05",
+    "region": "전남광주통합특별시 고흥군",
+    "address": "전남광주통합특별시 고흥군 고흥읍 고흥로 1841",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -652631,7 +654297,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-12-02",
+    "region": "경기도 하남시",
+    "address": "경기도 하남시 조정대로 150, 868호(덕풍동, 아이테코)",
+    "employees": 30,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -652812,7 +654485,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-09-01",
+    "region": "강원특별자치도 홍천군",
+    "address": "강원특별자치도 홍천군 홍천읍 홍천로 334-1, 2층",
+    "employees": 16,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -652993,7 +654673,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-11-02",
+    "region": "충청북도 청주시 흥덕구",
+    "address": "충청북도 청주시 흥덕구 가로수로 1065-1 (비하동)",
+    "employees": 18,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -653174,7 +654861,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-12-01",
+    "region": "경상남도 진주시",
+    "address": "경상남도 진주시 동부로169번길 12-0 (충무공동)B동 803호",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -653355,7 +655049,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-03-05",
+    "region": "경기도 파주시",
+    "address": "경기도 파주시 탄현면 방촌로995번길 18-65",
+    "employees": 11,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -653536,7 +655237,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-01-08",
+    "region": "경상남도 김해시",
+    "address": "경상남도 김해시 팔판로 26, 303호(관동동, 중원프라자)",
+    "employees": 18,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -653717,7 +655425,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-11-11",
+    "region": "충청남도 논산시",
+    "address": "충청남도 논산시 부창로 37, 2층 (부창동)",
+    "employees": 15,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -653898,7 +655613,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-01-02",
+    "region": "경상남도 거제시 옥포동",
+    "address": "경상남도 거제시 옥포로22길 42 (옥포동), 1층",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654071,7 +655793,7 @@
   {
    "bizno": "7108602415",
    "name": "주식회사 지오큐브",
-   "ceo": "최신우",
+   "ceo": "이경남",
    "stats": {
     "bids": 4,
     "wins": 0,
@@ -654079,7 +655801,14 @@
     "partners": 0,
     "lastAt": "2026-06-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2021-07-15",
+    "region": "강원특별자치도 강릉시 회산동",
+    "address": "강원특별자치도 강릉시 회산로 372 (회산동), 2층 204호",
+    "employees": 7,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654260,7 +655989,14 @@
     "partners": 7,
     "lastAt": "2026-06-05 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-07-23",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로30길 31, 906호(구로동, 코오롱디지털타워빌란트II)",
+    "employees": 9,
+    "homepage": "www.softgraphy.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654388,7 +656124,14 @@
     "partners": 5,
     "lastAt": "2026-06-04 10:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-07-01",
+    "region": "전남광주통합특별시 나주시",
+    "address": "전남광주통합특별시 나주시 남평읍 교원교촌길 91",
+    "employees": 6,
+    "homepage": "www.fusionit.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654505,7 +656248,14 @@
     "partners": 0,
     "lastAt": "2026-06-02 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-08-08",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 엑스포로446번길 38, 401호(문지동, 리더스빌딩)",
+    "employees": 22,
+    "homepage": "suredatalab.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654585,7 +656335,14 @@
     "partners": 0,
     "lastAt": "2026-06-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2002-10-01",
+    "region": "서울특별시 성동구 성수동2가",
+    "address": "서울특별시 성동구 성수일로12길 26 (성수동2가, 서울숲 코리아IT센터) 2층",
+    "employees": 134,
+    "homepage": "www.kpcnc.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654721,7 +656478,14 @@
     "partners": 5,
     "lastAt": "2026-05-29 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2008-09-01",
+    "region": "경기도 부천시",
+    "address": "경기도 부천시 길주로 63-0 (상동, 스타팰리스2) 303호",
+    "employees": 9,
+    "homepage": "http://www.bluespacemd.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654838,7 +656602,14 @@
     "partners": 0,
     "lastAt": "2026-05-27 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-05-31",
+    "region": "서울특별시 강서구",
+    "address": "서울특별시 강서구 양천로 401, B동 1104호(가양동, 강서한강자이타워)",
+    "employees": 14,
+    "homepage": "www.heartsolutions.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -654984,7 +656755,14 @@
     "partners": 0,
     "lastAt": "2026-05-22 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-02-12",
+    "region": "경기도 안양시 동안구 관양동",
+    "address": "경기도 안양시 동안구 학의로 282 (관양동) A타워, 1311호",
+    "employees": 11,
+    "homepage": "https://aibili.kr/",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655165,7 +656943,14 @@
     "partners": 1,
     "lastAt": "2026-05-21 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-09-26",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 논현로30길 38, 4층 (도곡동,신덕빌딩)",
+    "employees": 9,
+    "homepage": "www.creativesolution.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655252,7 +657037,14 @@
     "partners": 0,
     "lastAt": "2026-05-21 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1999-05-25",
+    "region": "서울특별시 중랑구",
+    "address": "서울특별시 중랑구 신내역로 111 (신내동) B동 323호(신내동,SK V1 센터)",
+    "employees": 7,
+    "homepage": "http://insound.co.kr/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655433,7 +657225,14 @@
     "partners": 2,
     "lastAt": "2026-05-19 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2022-01-01",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 은구비남로7번길 26, 2층(지족동)",
+    "employees": 17,
+    "homepage": "https://bluemap.dev",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655526,7 +657325,14 @@
     "partners": 0,
     "lastAt": "2026-05-19 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2008-07-24",
+    "region": "대전광역시 서구",
+    "address": "대전광역시 서구 갈마역로 14, 하이스트빌 203호 (둔산동)",
+    "employees": 14,
+    "homepage": "www.watosys.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655652,7 +657458,14 @@
     "partners": 0,
     "lastAt": "2026-05-19 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-09-01",
+    "region": "대구광역시 수성구",
+    "address": "대구광역시 수성구 알파시티1로31길 37, 2층(대흥동)",
+    "employees": 65,
+    "homepage": "www.spiretech.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655768,7 +657581,14 @@
     "partners": 0,
     "lastAt": "2026-05-15 14:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2001-11-10",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 선유로49길 23 (양평동4가) 아이에스비즈타워 2차 812호",
+    "employees": 39,
+    "homepage": "http://www.nexfron.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655879,7 +657699,14 @@
     "partners": 2,
     "lastAt": "2026-05-11 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-11-01",
+    "region": "경기도 안양시 동안구",
+    "address": "경기도 안양시 동안구 벌말로 126, 2307호 (관양동, 평촌오비즈타워)",
+    "employees": 17,
+    "homepage": "www.mangosystem.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -655978,7 +657805,14 @@
     "partners": 0,
     "lastAt": "2026-05-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-10-14",
+    "region": "부산광역시 해운대구",
+    "address": "부산광역시 해운대구 센텀중앙로 97, 에이동 에이-1610호(재송동, 센텀스카이비즈)",
+    "employees": 7,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656079,7 +657913,14 @@
     "partners": 0,
     "lastAt": "2026-05-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-03-27",
+    "region": "서울특별시 서대문구",
+    "address": "서울특별시 서대문구 북아현로11가길 46, 지2호(북아현동)",
+    "employees": 5,
+    "homepage": "http://devcrew.co.kr/",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656201,7 +658042,7 @@
   },
   {
    "bizno": "2118752128",
-   "name": "(주)미니게이트",
+   "name": "(주)미니게이트  ",
    "ceo": "정훈",
    "stats": {
     "bids": 4,
@@ -656210,7 +658051,14 @@
     "partners": 0,
     "lastAt": "2026-05-08 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-07-10",
+    "region": "서울특별시 강남구 역삼동",
+    "address": "서울특별시 강남구 역삼로17길 51 (역삼동) 1층, 2층, 4층, 지1층, 지2층(역삼동, 미드타운센터 역삼)",
+    "employees": 80,
+    "homepage": "http://www.minigate.net",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656391,7 +658239,14 @@
     "partners": 0,
     "lastAt": "2026-05-07 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1997-01-10",
+    "region": "서울특별시 서초구",
+    "address": "서울특별시 서초구 동산로 34, 환빌딩 2층, 지하 (양재동)",
+    "employees": 45,
+    "homepage": "www.screendc.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656572,7 +658427,14 @@
     "partners": 0,
     "lastAt": "2026-05-07 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2017-12-26",
+    "region": "부산광역시 동래구",
+    "address": "부산광역시 동래구 온천장로 109-0 (온천동) 3층 301호",
+    "employees": 12,
+    "homepage": "di-solution.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656678,7 +658540,14 @@
     "partners": 0,
     "lastAt": "2026-05-07 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1999-04-29",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 양평로21가길 19-0, 비동 6층(양평동5가)",
+    "employees": 100,
+    "homepage": "http://www.kitt.co.kr",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656789,7 +658658,14 @@
     "partners": 0,
     "lastAt": "2026-05-07 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-11-13",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 송파대로 167,  A동 810-1,810-2호",
+    "employees": 81,
+    "homepage": "",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -656925,7 +658801,14 @@
     "partners": 0,
     "lastAt": "2026-05-04 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-11-25",
+    "region": "부산광역시 해운대구",
+    "address": "부산광역시 해운대구 APEC로 17-0 , 3705호 (우동, 샌텀리더스마크)",
+    "employees": 8,
+    "homepage": "www.sejongimc.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -657036,10 +658919,36 @@
     "partners": 1,
     "lastAt": "2026-04-30 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-07-26",
+    "region": "서울특별시 강서구",
+    "address": "서울특별시 강서구 마곡중앙4로 62(마곡동)",
+    "employees": 55,
+    "homepage": "http://www.synapsoft.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 13472225245,
+     "영업이익": 4673775543,
+     "당기순이익": 5703045689,
+     "자산총계": 72078938796,
+     "부채총계": 2363447599,
+     "자본총계": 69715491197
+    },
+    {
+     "year": 2024,
+     "매출액": 13252818490,
+     "영업이익": 5074253584,
+     "당기순이익": 5990121681,
+     "자산총계": 69658753960,
+     "부채총계": 5636736100,
+     "자본총계": 64022017860
+    }
+   ],
    "history": [
     {
      "id": "R26BK01406021",
@@ -657224,7 +659133,14 @@
     "partners": 0,
     "lastAt": "2026-04-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-02-10",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 논현로127길 23-0 (논현동) 유심빌딩 4층",
+    "employees": 35,
+    "homepage": "http://www.digitalship.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -657350,7 +659266,14 @@
     "partners": 0,
     "lastAt": "2026-04-23 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-08-01",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 가산디지털1로 233, 1106호 (가산동, 에이스하이엔드타워9차)",
+    "employees": 5,
+    "homepage": "www.youlight.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -657436,7 +659359,14 @@
     "partners": 0,
     "lastAt": "2026-04-22 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2020-08-04",
+    "region": "충청북도 청주시 청원구",
+    "address": "충청북도 청주시 청원구 오창읍 중심상업로 32-13 , 7층 701-135(엔젤프리존)",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -657617,10 +659547,45 @@
     "partners": 0,
     "lastAt": "2026-04-21 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1992-02-10",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 테헤란로 301, 9층(역삼동,삼정빌딩)",
+    "employees": 200,
+    "homepage": "www.insunginfo.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 130876296605,
+     "영업이익": -686195491,
+     "당기순이익": -2122240419,
+     "자산총계": 128370846611,
+     "부채총계": 41645506768,
+     "자본총계": 86725339843
+    },
+    {
+     "year": 2024,
+     "매출액": 122098354481,
+     "영업이익": -6953007695,
+     "당기순이익": -7497504221,
+     "자산총계": 139729454961,
+     "부채총계": 51128946147,
+     "자본총계": 88600508814
+    },
+    {
+     "year": 2023,
+     "매출액": 154783825246,
+     "영업이익": 1530736090,
+     "당기순이익": 350441880,
+     "자산총계": 136505817943,
+     "부채총계": 63109476988,
+     "자본총계": 73396340955
+    }
+   ],
    "history": [
     {
      "id": "R26BK01456263",
@@ -657728,7 +659693,14 @@
     "partners": 0,
     "lastAt": "2026-04-21 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-11-21",
+    "region": "서울특별시 송파구",
+    "address": "서울특별시 송파구 충민로 66 엘-6148 (문정동)",
+    "employees": 22,
+    "homepage": "www.dev-ops.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -657819,7 +659791,14 @@
     "partners": 1,
     "lastAt": "2026-04-21 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-11-24",
+    "region": "서울특별시 성동구 성수동2가",
+    "address": "서울특별시 성동구 성수일로6길 33 (성수동2가), 아연디지털타워 6층",
+    "employees": 34,
+    "homepage": "www.businessinsight.co.kr",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -657942,7 +659921,14 @@
     "partners": 0,
     "lastAt": "2026-04-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2024-02-01",
+    "region": "전남광주통합특별시 영암군",
+    "address": "전남광주통합특별시 영암군 영암읍 중앙로 14, 1층 1호",
+    "employees": 5,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658123,7 +660109,14 @@
     "partners": 0,
     "lastAt": "2026-04-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-04-18",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 영동대로 511, 무역센터 501호 (삼성동)",
+    "employees": 55,
+    "homepage": "http://www.ec21.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658224,7 +660217,14 @@
     "partners": 0,
     "lastAt": "2026-04-17 19:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-01-21",
+    "region": "서울특별시 용산구",
+    "address": "서울특별시 용산구 한강대로104길 6-0 (동자동) 3층",
+    "employees": 11,
+    "homepage": "www.g3way.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658304,7 +660304,14 @@
     "partners": 0,
     "lastAt": "2026-04-15 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2011-11-17",
+    "region": "경기도 고양시 일산서구",
+    "address": "경기도 고양시 일산서구 중앙로 1574, 504호(대화동, 월드프라자)",
+    "employees": 13,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658410,7 +660417,14 @@
     "partners": 1,
     "lastAt": "2026-04-15 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-05-12",
+    "region": "서울특별시 용산구",
+    "address": "서울특별시 용산구 한강대로96길 36-0 (갈월동)",
+    "employees": 34,
+    "homepage": "www.mtcm.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658513,7 +660527,14 @@
     "partners": 1,
     "lastAt": "2026-04-10 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2004-11-14",
+    "region": "경상북도 영천시",
+    "address": "경상북도 영천시 조양길 120-0 (문내동)",
+    "employees": 20,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658701,7 +660722,14 @@
     "partners": 1,
     "lastAt": "2026-04-08 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-07-18",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로 242, 1203호(구로동,한화비즈메트로1차))",
+    "employees": 12,
+    "homepage": "www.irskorea.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -658869,7 +660897,14 @@
     "partners": 0,
     "lastAt": "2026-04-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2015-03-23",
+    "region": "부산광역시 동래구",
+    "address": "부산광역시 동래구 충렬대로446번길 67-0 (안락동, 안락 경동리인 아파트)상가동 307호",
+    "employees": 17,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -659050,7 +661085,14 @@
     "partners": 0,
     "lastAt": "2026-04-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-07-21",
+    "region": "강원특별자치도 강릉시",
+    "address": "강원특별자치도 강릉시 관솔길 22-9, 103호 (회산동)",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -659231,7 +661273,14 @@
     "partners": 0,
     "lastAt": "2026-04-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-04-09",
+    "region": "인천광역시 남동구 구월동",
+    "address": "인천광역시 남동구 선수촌공원로 33 (구월동) 401호",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -659412,7 +661461,14 @@
     "partners": 0,
     "lastAt": "2026-04-02 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2007-02-13",
+    "region": "전남광주통합특별시 해남군",
+    "address": "전남광주통합특별시 해남군 해남읍 중앙1로 477",
+    "employees": 3,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -659593,7 +661649,14 @@
     "partners": 2,
     "lastAt": "2026-03-31 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-05-01",
+    "region": "경기도 남양주시",
+    "address": "경기도 남양주시 다산순환로 20, E동 517,518,519호  (다산동, 현대프리미어캠퍼스))",
+    "employees": 15,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -659701,10 +661764,45 @@
     "partners": 1,
     "lastAt": "2026-03-31 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-12-29",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 여의대로 24,43층(여의도동,전국경제인연합회회관)",
+    "employees": 213,
+    "homepage": "www.finger.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 81357589691,
+     "영업이익": 1656090919,
+     "당기순이익": 544403875,
+     "자산총계": 60173346579,
+     "부채총계": 15305166031,
+     "자본총계": 44868180548
+    },
+    {
+     "year": 2024,
+     "매출액": 66833521344,
+     "영업이익": -200928669,
+     "당기순이익": -2156188469,
+     "자산총계": 56678748001,
+     "부채총계": 11575981223,
+     "자본총계": 45102766778
+    },
+    {
+     "year": 2023,
+     "매출액": 79439401325,
+     "영업이익": 4012530506,
+     "당기순이익": 4532577993,
+     "자산총계": 59631263637,
+     "부채총계": 9327138903,
+     "자본총계": 50304124734
+    }
+   ],
    "history": [
     {
      "id": "R26BK01391917",
@@ -659834,7 +661932,14 @@
     "partners": 0,
     "lastAt": "2026-03-31 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-01-22",
+    "region": "서울특별시 용산구",
+    "address": "서울특별시 용산구 한강대로57길 4-0 (한강로1가) 세화빌딩 302호",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -659980,7 +662085,14 @@
     "partners": 0,
     "lastAt": "2026-03-27 12:26:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-05-14",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 양평로 129(양평동5가) 5층",
+    "employees": 25,
+    "homepage": "www.utec.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660141,7 +662253,14 @@
     "partners": 0,
     "lastAt": "2026-03-27 12:26:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2018-07-17",
+    "region": "대구광역시 수성구",
+    "address": "대구광역시 수성구 상록로16길 41, (범어동, 27호)",
+    "employees": 10,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660252,7 +662371,14 @@
     "partners": 3,
     "lastAt": "2026-03-26 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2010-01-20",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로33길 11 에이스테크노타워8차 1402호",
+    "employees": 9,
+    "homepage": "www.2csolution.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660359,7 +662485,7 @@
   {
    "bizno": "1298638970",
    "name": "주식회사 이동의즐거움",
-   "ceo": "손민수",
+   "ceo": "이정환",
    "stats": {
     "bids": 4,
     "wins": 4,
@@ -660367,7 +662493,14 @@
     "partners": 0,
     "lastAt": "2026-03-25 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-11-01",
+    "region": "서울특별시 중구",
+    "address": "서울특별시 중구 청계천로 24, 제10층 제 1001호, 제 11층 제 1101호(다동, 케이스퀘어시티)",
+    "employees": 76,
+    "homepage": "www.myezl.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660447,10 +662580,45 @@
     "partners": 0,
     "lastAt": "2026-03-23 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-06-25",
+    "region": "서울특별시 성동구",
+    "address": "서울특별시 성동구 아차산로 126, 10층(성수동2가, 더리브세종타워)",
+    "employees": 141,
+    "homepage": "http://www.dreamsecurity.com/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
-   "dart": [],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 31330844845,
+     "영업이익": 1318517293,
+     "당기순이익": 3004561310,
+     "자산총계": 134469785808,
+     "부채총계": 57799978824,
+     "자본총계": 76669806984
+    },
+    {
+     "year": 2024,
+     "매출액": 30392276599,
+     "영업이익": 1002929116,
+     "당기순이익": 447134028,
+     "자산총계": 123351082608,
+     "부채총계": 50308956977,
+     "자본총계": 73042125631
+    },
+    {
+     "year": 2023,
+     "매출액": 30243554055,
+     "영업이익": 3576786955,
+     "당기순이익": 6568815173,
+     "자산총계": 134595974519,
+     "부채총계": 54457876225,
+     "자본총계": 80138098294
+    }
+   ],
    "history": [
     {
      "id": "R26BK01406137",
@@ -660543,7 +662711,14 @@
     "partners": 2,
     "lastAt": "2026-03-19 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-08-25",
+    "region": "대전광역시 유성구 지족동",
+    "address": "대전광역시 유성구 은구비남로7번길 22 , 4층(1층,4층,5층)(지족동) ",
+    "employees": 18,
+    "homepage": "www.ddit.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660667,7 +662842,14 @@
     "partners": 2,
     "lastAt": "2026-03-18 12:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1998-02-10",
+    "region": "부산광역시 동구",
+    "address": "부산광역시 동구 중앙대로308번길 3-6, 5층(초량동, 향군회관)",
+    "employees": 40,
+    "homepage": "www.edinet.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660766,7 +662948,14 @@
     "partners": 0,
     "lastAt": "2026-03-18 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-08-08",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 디지털로 178, A동 1820호(가산동, 가산퍼블릭)",
+    "employees": 14,
+    "homepage": "www.neoflow.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -660862,7 +663051,14 @@
     "partners": 0,
     "lastAt": "2026-03-17 13:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-09-03",
+    "region": "경상북도 안동시",
+    "address": "경상북도 안동시 대석길 31, 2층(대석동)",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661043,7 +663239,14 @@
     "partners": 0,
     "lastAt": "2026-03-13 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-06-11",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 63로 40, 라이프오피스텔 601호 (여의도동)",
+    "employees": 18,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661129,7 +663332,14 @@
     "partners": 1,
     "lastAt": "2026-03-13 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2023-05-15",
+    "region": "충청북도 청주시 흥덕구",
+    "address": "충청북도 청주시 흥덕구 상신로 133-7, 101호 (상신동)",
+    "employees": 6,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661216,7 +663426,14 @@
     "partners": 0,
     "lastAt": "2026-03-13 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2016-03-07",
+    "region": "대전광역시 유성구",
+    "address": "대전광역시 유성구 노은로 151-0 (지족동, 가나파로스빌II) 208호",
+    "employees": 13,
+    "homepage": "www.insightmining.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661397,7 +663614,14 @@
     "partners": 1,
     "lastAt": "2026-03-10 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-01-09",
+    "region": "서울특별시 중구",
+    "address": "서울특별시 중구 다동길 5, 1201호(무교동, 광일빌딩)",
+    "employees": 6,
+    "homepage": "www.tovup.com",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661520,7 +663744,14 @@
     "partners": 3,
     "lastAt": "2026-03-10 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-01-01",
+    "region": "서울특별시 강남구",
+    "address": "서울특별시 강남구 자곡로 174-10 (자곡동) 강남에이스타워 725호",
+    "employees": 8,
+    "homepage": "www.souldni.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661675,7 +663906,14 @@
     "partners": 1,
     "lastAt": "2026-03-10 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2001-04-25",
+    "region": "서울특별시 강남구 역삼동",
+    "address": "서울특별시 강남구 강남대로 308 (역삼동) 7층",
+    "employees": 215,
+    "homepage": "www.wezon.com",
+    "kinds": "물품,외자,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661838,7 +664076,14 @@
     "partners": 1,
     "lastAt": "2026-03-09 17:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1993-12-20",
+    "region": "서울특별시 금천구",
+    "address": "서울특별시 금천구 두산로 70, A동 1008~1011호,2510호,L104호(현대지식산업센터)",
+    "employees": 55,
+    "homepage": "www.parkor.co.kr",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -661936,7 +664181,14 @@
     "partners": 0,
     "lastAt": "2026-03-06 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-12-01",
+    "region": "경기도 과천시",
+    "address": "경기도 과천시 과천대로7길 33 (갈현동)  에이동 703호(갈현동, 디 테크 타워 과천)",
+    "employees": 66,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662067,7 +664319,14 @@
     "partners": 0,
     "lastAt": "2026-03-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-03-14",
+    "region": "서울특별시 도봉구",
+    "address": "서울특별시 도봉구 노해로67길 , B2 A-72호(창동, 한국빌딩)",
+    "employees": 7,
+    "homepage": "http://dcircus.com",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662158,7 +664417,14 @@
     "partners": 4,
     "lastAt": "2026-03-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2005-02-20",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 선유로9길 10, 1206호,1207호,1208호,1209호(문래동6가,문래에스케이브이원센터)",
+    "employees": 80,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662284,7 +664550,14 @@
     "partners": 0,
     "lastAt": "2026-03-04 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2023-02-21",
+    "region": "서울특별시 강남구 논현동",
+    "address": "서울특별시 강남구 봉은사로37길 5 (논현동), 캠프지빌딩 4층",
+    "employees": 32,
+    "homepage": "www.sscore.co.kr",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662400,7 +664673,14 @@
     "partners": 1,
     "lastAt": "2026-03-03 16:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2006-12-21",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 선유로 70, 우리벤처타운2 303호(문래동3가)",
+    "employees": 42,
+    "homepage": "http://www.joeunins.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662538,7 +664818,14 @@
     "partners": 0,
     "lastAt": "2026-02-24 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-11-01",
+    "region": "서울특별시 구로구",
+    "address": "서울특별시 구로구 디지털로26길 123, 309호 (구로동,지플러스타워)",
+    "employees": 10,
+    "homepage": "http://www.itb21.co.kr",
+    "kinds": "일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662719,7 +665006,14 @@
     "partners": 1,
     "lastAt": "2026-02-23 12:30:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2009-02-16",
+    "region": "서울특별시 중구",
+    "address": "서울특별시 중구 마장로 66, 5층(흥인동, 성은빌딩)",
+    "employees": 50,
+    "homepage": "http://www.hmic.co.kr",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662877,7 +665171,14 @@
     "partners": 6,
     "lastAt": "2026-02-20 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1997-10-01",
+    "region": "대전광역시 동구 용운동",
+    "address": "대전광역시 동구 백룡로 68 (용운동) 3층",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -662994,7 +665295,14 @@
     "partners": 5,
     "lastAt": "2026-02-20 15:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2012-03-31",
+    "region": "부산광역시 사상구",
+    "address": "부산광역시 사상구 모라로 22-0 (모라동) 부산벤처타워 1509호",
+    "employees": 44,
+    "homepage": "",
+    "kinds": "물품,외자,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -663116,7 +665424,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2014-10-20",
+    "region": "서울특별시 광진구",
+    "address": "서울특별시 광진구 아차산로78길 44, 705호(광장동)",
+    "employees": 56,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -663297,7 +665612,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2019-01-10",
+    "region": "대구광역시 달성군",
+    "address": "대구광역시 달성군 논공읍 비슬로366길 6, 1층",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -663478,7 +665800,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-11-27",
+    "region": "충청남도 공주시",
+    "address": "충청남도 공주시 반포면 밤고개길 84",
+    "employees": 4,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -663659,7 +665988,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "1999-11-15",
+    "region": "전북특별자치도 전주시 완산구",
+    "address": "전북특별자치도 전주시 완산구 하거마2길 22-4 (삼천동1가)",
+    "employees": 9,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -663840,7 +666176,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2000-08-09",
+    "region": "경기도 성남시 중원구",
+    "address": "경기도 성남시 중원구 둔촌대로 474, 선텍시티 913호 (상대원동)",
+    "employees": 40,
+    "homepage": "www.techwins.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -664021,7 +666364,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2003-01-02",
+    "region": "전남광주통합특별시 서구",
+    "address": "전남광주통합특별시 서구 풍서좌로299번길 17(세하동)",
+    "employees": 8,
+    "homepage": "",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],
@@ -664202,7 +666552,14 @@
     "partners": 0,
     "lastAt": "2026-02-20 11:00:00"
    },
-   "basic": null,
+   "basic": {
+    "opened": "2013-01-01",
+    "region": "경기도 남양주시",
+    "address": "경기도 남양주시 다산중앙로19번길 21, 에프932호(다산동)",
+    "employees": 50,
+    "homepage": "http://www.greenitkr.com/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
    "industries": [],
    "nps": [],
    "dart": [],

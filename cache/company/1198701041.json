@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 뉴컨",
+  "ceo": "윤정환",
+  "opened": "2014-10-17",
+  "region": "인천광역시 부평구",
+  "address": "인천광역시 부평구 부평대로 283, 비동 903호(청천동, 부평우림라이온스밸리)",
+  "employees": 18,
+  "homepage": "https://www.sjmnc.kr/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:26.028Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:26.435Z"
+ }
+}

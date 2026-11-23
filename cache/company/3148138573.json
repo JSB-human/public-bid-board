@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)이지정보통신",
+  "ceo": "황경구",
+  "opened": "2001-01-10",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 복용북로75번길 6-16 (복용동)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:50.645Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:50.853Z"
+ }
+}

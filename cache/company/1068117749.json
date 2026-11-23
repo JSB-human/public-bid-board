@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 시스원",
+  "ceo": "김영주",
+  "opened": "1982-10-15",
+  "region": "서울특별시 강서구",
+  "address": "서울특별시 강서구 마곡중앙14로 26-0 (마곡동)",
+  "employees": 350,
+  "homepage": "www.sysone.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:37.967Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00244163",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:38.973Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에이에스티홀딩스",
+  "ceo": "이동우",
+  "opened": "2013-12-24",
+  "region": "경기도 수원시 영통구",
+  "address": "경기도 수원시 영통구 광교중앙로248번길 95-3, 601호 (하동)",
+  "employees": 95,
+  "homepage": "https://www.astkorea.net",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:45.450Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "02036717",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:46.913Z"
+ }
+}

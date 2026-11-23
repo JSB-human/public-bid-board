@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)아이티퍼플",
+  "ceo": "탁순애",
+  "opened": "2019-06-01",
+  "region": "경기도 하남시",
+  "address": "경기도 하남시 조정대로 150, 7층 770호(덕풍동, 아이테코)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:31.213Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:31.419Z"
+ }
+}

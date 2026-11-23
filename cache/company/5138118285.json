@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이지닉스",
+  "ceo": "전종대",
+  "opened": "2000-05-16",
+  "region": "경기도 용인시 수지구",
+  "address": "경기도 용인시 수지구 신수로 767-0 (동천동) 분당수지U타워 A동 1309~1311호",
+  "employees": 21,
+  "homepage": "www.eznix.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:47.124Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:47.329Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 도담정보기술",
+  "ceo": "염준호",
+  "opened": "2017-11-22",
+  "region": "충청남도 천안시 서북구",
+  "address": "충청남도 천안시 서북구 두정상가8길 30-0 (두정동, 하이스타운) 9층 904호",
+  "employees": 18,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:43.586Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:43.796Z"
+ }
+}

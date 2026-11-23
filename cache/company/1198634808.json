@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 망고시스템",
+  "ceo": "이민파",
+  "opened": "2010-11-01",
+  "region": "경기도 안양시 동안구",
+  "address": "경기도 안양시 동안구 벌말로 126, 2307호 (관양동, 평촌오비즈타워)",
+  "employees": 17,
+  "homepage": "www.mangosystem.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:02.953Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:03.173Z"
+ }
+}

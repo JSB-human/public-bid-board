@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 포넷",
+  "ceo": "조대홍",
+  "opened": "2011-01-01",
+  "region": "전남광주통합특별시 나주시",
+  "address": "전남광주통합특별시 나주시 노안면 노안로 455-41",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:18.124Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:18.724Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사유티이씨",
+  "ceo": "윤형준",
+  "opened": "2010-05-14",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 양평로 129(양평동5가) 5층",
+  "employees": 25,
+  "homepage": "www.utec.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:28.112Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:28.317Z"
+ }
+}

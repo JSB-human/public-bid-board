@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "슈어데이터랩 주식회사",
+  "ceo": "최석주",
+  "opened": "2019-08-08",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 엑스포로446번길 38, 401호(문지동, 리더스빌딩)",
+  "employees": 22,
+  "homepage": "suredatalab.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:55.616Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:55.826Z"
+ }
+}

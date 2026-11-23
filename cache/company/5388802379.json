@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)한강공간정보",
+  "ceo": "고소영",
+  "opened": "2022-04-01",
+  "region": "경기도 여주시",
+  "address": "경기도 여주시 강변북로 283-0 (현암동) 8호",
+  "employees": 12,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:48.010Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:48.216Z"
+ }
+}

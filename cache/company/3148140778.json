@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)케이티지",
+  "ceo": "김갑성",
+  "opened": "2001-04-03",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 대덕대로 593(도룡동, 대덕테크비즈센터 508호,509호,510호)",
+  "employees": 40,
+  "homepage": "www.iktg.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:38.117Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:38.511Z"
+ }
+}

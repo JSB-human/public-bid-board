@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사정원이알텍",
+  "ceo": "윤순욱",
+  "opened": "2015-12-14",
+  "region": "전남광주통합특별시 장성군",
+  "address": "전남광주통합특별시 장성군 황룡면 뱃나드리로 178,2층",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:41.867Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:42.103Z"
+ }
+}

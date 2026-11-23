@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 태화기전",
+  "ceo": "이양우",
+  "opened": "2007-05-10",
+  "region": "대전광역시 유성구 구암동",
+  "address": "대전광역시 유성구 동서대로5번길 19, 101호(구암동)",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:41.250Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:41.645Z"
+ }
+}

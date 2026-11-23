@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)애니아이티",
+  "ceo": "윤봉혁",
+  "opened": "2004-07-01",
+  "region": "경상북도 경산시",
+  "address": "경상북도 경산시 중앙로19길 39-1 (중방동)",
+  "employees": 17,
+  "homepage": "www.anyit.net",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:03.469Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:03.676Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "세종지능경영원 주식회사",
+  "ceo": "김규일",
+  "opened": "2019-11-25",
+  "region": "부산광역시 해운대구",
+  "address": "부산광역시 해운대구 APEC로 17-0 , 3705호 (우동, 샌텀리더스마크)",
+  "employees": 8,
+  "homepage": "www.sejongimc.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:08.007Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:08.211Z"
+ }
+}

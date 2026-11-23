@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "신우산전",
+  "ceo": "최병의",
+  "opened": "2002-03-11",
+  "region": "경기도 군포시",
+  "address": "경기도 군포시 고산로 695 ,605호(산본동)",
+  "employees": 12,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:59.702Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:59.906Z"
+ }
+}

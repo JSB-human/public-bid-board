@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 남해지리정보",
+  "ceo": "황동기",
+  "opened": "2015-01-02",
+  "region": "경상남도 거제시 옥포동",
+  "address": "경상남도 거제시 옥포로22길 42 (옥포동), 1층",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:53.936Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:54.140Z"
+ }
+}

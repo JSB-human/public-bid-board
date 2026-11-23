@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 세온아이씨티",
+  "ceo": "박채린",
+  "opened": "2024-02-01",
+  "region": "전남광주통합특별시 영암군",
+  "address": "전남광주통합특별시 영암군 영암읍 중앙로 14, 1층 1호",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:17.614Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:17.821Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에이치나인",
+  "ceo": "최우식",
+  "opened": "2010-04-19",
+  "region": "서울특별시 성동구",
+  "address": "서울특별시 성동구 뚝섬로1길 25-0 (성수동1가), 서울숲한라에코밸리 10층 1001,1002,1003,1004,1005호",
+  "employees": 101,
+  "homepage": "www.hnine.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:41.325Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01736740",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:42.328Z"
+ }
+}

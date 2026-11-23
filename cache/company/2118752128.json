@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)미니게이트  ",
+  "ceo": "정훈",
+  "opened": "2004-07-10",
+  "region": "서울특별시 강남구 역삼동",
+  "address": "서울특별시 강남구 역삼로17길 51 (역삼동) 1층, 2층, 4층, 지1층, 지2층(역삼동, 미드타운센터 역삼)",
+  "employees": 80,
+  "homepage": "http://www.minigate.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:04.245Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00864888",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:05.271Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 녹담이엔씨",
+  "ceo": "전진아",
+  "opened": "2021-04-19",
+  "region": "제주특별자치도 제주시 연동",
+  "address": "제주특별자치도 제주시 연오로 4 , 2층(연동)",
+  "employees": 0,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:58.592Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:58.797Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 매쓰에이아이",
+  "ceo": "허준",
+  "opened": "2020-03-05",
+  "region": "경기도 성남시 수정구 시흥동",
+  "address": "경기도 성남시 수정구 대왕판교로 815 (시흥동), 462호",
+  "employees": 12,
+  "homepage": "https://mathaix.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:00.866Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:01.070Z"
+ }
+}

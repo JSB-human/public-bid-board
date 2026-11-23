@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 넥스프론",
+  "ceo": "황광신",
+  "opened": "2001-11-10",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 선유로49길 23 (양평동4가) 아이에스비즈타워 2차 812호",
+  "employees": 39,
+  "homepage": "http://www.nexfron.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:02.527Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:02.737Z"
+ }
+}

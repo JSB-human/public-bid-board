@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 충남인에스",
+  "ceo": "김소영",
+  "opened": "2024-01-11",
+  "region": "충청남도 천안시 동남구",
+  "address": "충청남도 천안시 동남구 청수로 83(청수동)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:42.318Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:42.528Z"
+ }
+}

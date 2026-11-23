@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 화신파워텍",
+  "ceo": "원종위",
+  "opened": "2002-12-02",
+  "region": "경기도 하남시",
+  "address": "경기도 하남시 조정대로 150, 868호(덕풍동, 아이테코)",
+  "employees": 30,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:49.707Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01737396",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:51.103Z"
+ }
+}

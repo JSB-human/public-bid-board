@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)디지탈씨오에스",
+  "ceo": "박정규",
+  "opened": "2004-09-21",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 당산로41길 11-0 (당산동4가)당산 SK V1센터 W동 1807,1808호",
+  "employees": 44,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:16.819Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:17.027Z"
+ }
+}

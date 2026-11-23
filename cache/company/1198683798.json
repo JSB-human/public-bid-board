@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 유니온플레이스",
+  "ceo": "전종욱",
+  "opened": "2014-02-21",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로33길 11, 1302호, 1303호 (구로동,에이스테크노타워8차)",
+  "employees": 55,
+  "homepage": "www.unionplace.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:42.535Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01839506",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:43.569Z"
+ }
+}

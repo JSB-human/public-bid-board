@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이씨이십일",
+  "ceo": "백현목",
+  "opened": "2000-04-18",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 영동대로 511, 무역센터 501호 (삼성동)",
+  "employees": 55,
+  "homepage": "http://www.ec21.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:18.034Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:18.238Z"
+ }
+}

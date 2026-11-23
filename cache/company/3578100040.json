@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 케이에코",
+  "ceo": "박정호",
+  "opened": "2015-05-01",
+  "region": "강원특별자치도 춘천시 동면 만천리",
+  "address": "강원특별자치도 춘천시 동면 만천로 106-14 , 2층",
+  "employees": 7,
+  "homepage": "www.keco.co.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:57.983Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:58.383Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "이에스피나인 주식회사",
+  "ceo": "양혈용",
+  "opened": "2022-10-20",
+  "region": "부산광역시 부산진구 양정동",
+  "address": "부산광역시 부산진구 중앙대로 979, 8층 전부 (양정동, 동성빌딩)",
+  "employees": 13,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:56.295Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:56.505Z"
+ }
+}

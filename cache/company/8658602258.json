@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 강원지아이에스",
+  "ceo": "최주현",
+  "opened": "2021-09-01",
+  "region": "강원특별자치도 홍천군",
+  "address": "강원특별자치도 홍천군 홍천읍 홍천로 334-1, 2층",
+  "employees": 16,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:51.319Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:51.527Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 데브크루",
+  "ceo": "손성윤",
+  "opened": "2018-03-27",
+  "region": "서울특별시 서대문구",
+  "address": "서울특별시 서대문구 북아현로11가길 46, 지2호(북아현동)",
+  "employees": 5,
+  "homepage": "http://devcrew.co.kr/",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:03.823Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:04.028Z"
+ }
+}

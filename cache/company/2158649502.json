@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "서진이엔에스(주)",
+  "ceo": "서준석",
+  "opened": "2003-11-01",
+  "region": "경기도 군포시",
+  "address": "경기도 군포시 고산로148번길 17-0 (당정동) A동 3101-2호",
+  "employees": 7,
+  "homepage": "www.sjens.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:30.797Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:31.003Z"
+ }
+}

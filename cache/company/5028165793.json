@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 데이타뱅크",
+  "ceo": "천윤우",
+  "opened": "2002-07-23",
+  "region": "대구광역시 수성구",
+  "address": "대구광역시 수성구 알파시티1로 232(대흥동)",
+  "employees": 89,
+  "homepage": "www.idatabank.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:14.424Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01217254",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:15.428Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)유씨네트웍스",
+  "ceo": "이수빈",
+  "opened": "2014-03-19",
+  "region": "부산광역시 남구 대연동",
+  "address": "부산광역시 남구 유엔로 153-1 (대연동)",
+  "employees": 17,
+  "homepage": "www.ucnetworks.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:44.611Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:44.818Z"
+ }
+}

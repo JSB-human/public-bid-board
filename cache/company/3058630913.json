@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "수영개발산업 주식회사",
+  "ceo": "최별규",
+  "opened": "2013-11-27",
+  "region": "충청남도 공주시",
+  "address": "충청남도 공주시 반포면 밤고개길 84",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:49.943Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:50.154Z"
+ }
+}

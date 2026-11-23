@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 다올플러스",
+  "ceo": "김나경",
+  "opened": "2020-11-02",
+  "region": "경상북도 경산시",
+  "address": "경상북도 경산시 펜타힐즈로 74-0 (중산동), 4층 408호(힐즈스퀘어1)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:28.291Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:28.495Z"
+ }
+}

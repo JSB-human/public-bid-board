@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "대신네트웍스주식회사",
+  "ceo": "왕선호",
+  "opened": "1991-07-23",
+  "region": "전북특별자치도 전주시 완산구",
+  "address": "전북특별자치도 전주시 완산구 천잠로 472,101호,201호 (효자동3가,대신빌딩)",
+  "employees": 19,
+  "homepage": "http://www.itdsn.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:04.259Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:04.852Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 하나텍시스템",
+  "ceo": "김승일",
+  "opened": "2010-01-06",
+  "region": "경기도 광명시",
+  "address": "경기도 광명시 하안로 60, D동 디1412호,디1409호,디1408호(소하동, 광명테크노파크)",
+  "employees": 10,
+  "homepage": "www.hanatek.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:38.300Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01841006",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:40.272Z"
+ }
+}

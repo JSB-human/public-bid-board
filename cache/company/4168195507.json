@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 아이지온",
+  "ceo": "강성학",
+  "opened": "2014-02-27",
+  "region": "서울특별시 강서구",
+  "address": "서울특별시 강서구 하늘길 76-0 (과해동) 1층 4중대 식당 건물 중앙(과해동,일반건물보호구역)",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:49.836Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:50.040Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 스튜디오랩",
+  "ceo": "강성훈",
+  "opened": "2021-07-01",
+  "region": "서울특별시 강남구 대치동",
+  "address": "서울특별시 강남구 테헤란로 518 (대치동) 1층",
+  "employees": 26,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:43.784Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:43.991Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "에이스코어 주식회사",
+  "ceo": "황대욱",
+  "opened": "2019-12-16",
+  "region": "서울특별시 종로구 내수동",
+  "address": "서울특별시 종로구 새문안로3길 30 (내수동) 대우빌딩 복합동  601-2호",
+  "employees": 16,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:16.404Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:16.610Z"
+ }
+}

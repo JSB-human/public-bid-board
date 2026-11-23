@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "완전정보통신 주식회사",
+  "ceo": "정현자",
+  "opened": "1999-11-15",
+  "region": "전북특별자치도 전주시 완산구",
+  "address": "전북특별자치도 전주시 완산구 하거마2길 22-4 (삼천동1가)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:50.359Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:50.566Z"
+ }
+}

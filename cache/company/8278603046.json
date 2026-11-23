@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 퍼스트스마트",
+  "ceo": "김기환",
+  "opened": "2022-12-28",
+  "region": "충청북도 청주시 청원구",
+  "address": "충청북도 청주시 청원구 상당로 314, 349호(내덕동)",
+  "employees": 17,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:13.860Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:14.073Z"
+ }
+}

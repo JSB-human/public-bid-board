@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 동서엔지니어링",
+  "ceo": "이익상",
+  "opened": "1991-08-23",
+  "region": "강원특별자치도 춘천시",
+  "address": "강원특별자치도 춘천시 후석로 44 (석사동) 3층",
+  "employees": 130,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:27.055Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01645563",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:28.065Z"
+ }
+}

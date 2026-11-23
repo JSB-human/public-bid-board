@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)동서이엔지",
+  "ceo": "신승준",
+  "opened": "2018-04-09",
+  "region": "인천광역시 남동구 구월동",
+  "address": "인천광역시 남동구 선수촌공원로 33 (구월동) 401호",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:22.040Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:22.244Z"
+ }
+}

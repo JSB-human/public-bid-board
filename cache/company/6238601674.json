@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 무성종합건설",
+  "ceo": "안중식",
+  "opened": "2020-08-11",
+  "region": "전남광주통합특별시 장성군",
+  "address": "전남광주통합특별시 장성군 장성읍 영천로 191-1 , 2층",
+  "employees": 33,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:40.859Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:41.256Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 큐빅",
+  "ceo": "배호",
+  "opened": "2021-10-01",
+  "region": "경기도 성남시 분당구 정자동",
+  "address": "경기도 성남시 분당구 정자일로 95 4층(정자동)",
+  "employees": 17,
+  "homepage": "https://cubig.ai/ ",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:45.840Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:46.046Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 13컴퍼니",
+  "ceo": "김희언",
+  "opened": "2013-12-20",
+  "region": "서울특별시 서초구",
+  "address": "서울특별시 서초구 논현로31길 41-0 (양재동), 2층",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:08.376Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:08.580Z"
+ }
+}

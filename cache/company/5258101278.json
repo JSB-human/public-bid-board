@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이앤비솔루션",
+  "ceo": "김선빈",
+  "opened": "2019-01-01",
+  "region": "경기도 용인시 기흥구",
+  "address": "경기도 용인시 기흥구 서천로201번길 14, 514호. 515호(농서동, 프리미엄원희캐슬)",
+  "employees": 8,
+  "homepage": "https://www.enb-solution.com/",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:02.605Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:02.812Z"
+ }
+}

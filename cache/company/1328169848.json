@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "흥덕지형정보(주)",
+  "ceo": "최광필",
+  "opened": "2007-01-30",
+  "region": "경기도 남양주시",
+  "address": "경기도 남양주시 다산순환로 20, 4층 AA 04-051호(다산동, 다산현대프리미어캠퍼스)",
+  "employees": 17,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:44.011Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:44.216Z"
+ }
+}

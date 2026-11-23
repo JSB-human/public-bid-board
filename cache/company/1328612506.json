@@ -1,0 +1,15 @@
+{
+ "basic": {
+  "name": "주식회사 그린아이티코리아",
+  "ceo": "강원식",
+  "opened": "2013-01-01",
+  "region": "경기도 남양주시",
+  "address": "경기도 남양주시 다산중앙로19번길 21, 에프932호(다산동)",
+  "employees": 50,
+  "homepage": "http://www.greenitkr.com/",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:51.594Z"
+ },
+ "industries": []
+}

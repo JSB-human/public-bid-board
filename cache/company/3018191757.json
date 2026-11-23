@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "첨단제어시스템(주)",
+  "ceo": "김정일",
+  "opened": "2006-09-15",
+  "region": "충청북도 청주시 서원구 남이면 가마리",
+  "address": "충청북도 청주시 서원구 남이면 가마2길 3-14 ",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:18.100Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:18.308Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 엔집",
+  "ceo": "박주홍",
+  "opened": "2018-07-17",
+  "region": "대구광역시 수성구",
+  "address": "대구광역시 수성구 상록로16길 41, (범어동, 27호)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:28.534Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:28.739Z"
+ }
+}

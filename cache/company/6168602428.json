@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 유앤",
+  "ceo": "김대영",
+  "opened": "2013-01-16",
+  "region": "충청남도 천안시 서북구 백석동",
+  "address": "충청남도 천안시 서북구 백석공단5길 6, 제10층 제케이1017호(백석동)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:18.932Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:19.140Z"
+ }
+}

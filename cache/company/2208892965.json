@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 코너스",
+  "ceo": "김동오",
+  "opened": "2014-11-09",
+  "region": "서울특별시 성동구",
+  "address": "서울특별시 성동구 상원1길 26, 806호(성수동1가, 서울숲에이타워)",
+  "employees": 53,
+  "homepage": "www.corners.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:12.239Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01828032",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:13.240Z"
+ }
+}

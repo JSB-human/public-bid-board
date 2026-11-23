@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 조은공간정보",
+  "ceo": "이현모",
+  "opened": "2019-01-08",
+  "region": "경상남도 김해시",
+  "address": "경상남도 김해시 팔판로 26, 303호(관동동, 중원프라자)",
+  "employees": 18,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:53.086Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:53.297Z"
+ }
+}

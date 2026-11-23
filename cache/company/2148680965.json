@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 위존",
+  "ceo": "박대현",
+  "opened": "2001-04-25",
+  "region": "서울특별시 강남구 역삼동",
+  "address": "서울특별시 강남구 강남대로 308 (역삼동) 7층",
+  "employees": 215,
+  "homepage": "www.wezon.com",
+  "kinds": "물품,외자,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:39.849Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01217494",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:41.903Z"
+ }
+}

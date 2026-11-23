@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 바능",
+  "ceo": "안세훈",
+  "opened": "2020-09-01",
+  "region": "경기도 성남시 분당구 삼평동",
+  "address": "경기도 성남시 분당구 판교역로 230 (삼평동) B동 515호",
+  "employees": 23,
+  "homepage": "https://reacting.kr/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:06.326Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:06.530Z"
+ }
+}

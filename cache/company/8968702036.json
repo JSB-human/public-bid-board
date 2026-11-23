@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 니드아이",
+  "ceo": "박수진",
+  "opened": "2021-02-17",
+  "region": "서울특별시 양천구",
+  "address": "서울특별시 양천구 목동동로 233-1, 1816호 (목동, 드림타워)",
+  "employees": 12,
+  "homepage": "www.needi.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:08.785Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:08.992Z"
+ }
+}

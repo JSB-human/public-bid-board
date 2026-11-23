@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 대광지오텍",
+  "ceo": "김민성",
+  "opened": "2015-03-02",
+  "region": "경기도 평택시 고덕동",
+  "address": "경기도 평택시 고덕중앙로 322, 4층 412-172호 (고덕동, 에이스에스타워)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:40.426Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:40.635Z"
+ }
+}

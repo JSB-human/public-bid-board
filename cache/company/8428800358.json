@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이너엔",
+  "ceo": "이정균",
+  "opened": "2016-06-15",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로33길 48, 602호,603호(구로동, 대륭포스트타워7차)",
+  "employees": 11,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:35.778Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:35.985Z"
+ }
+}

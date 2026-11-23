@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 투씨솔루션",
+  "ceo": "현종훈",
+  "opened": "2010-01-20",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로33길 11 에이스테크노타워8차 1402호",
+  "employees": 9,
+  "homepage": "www.2csolution.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:28.957Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:29.161Z"
+ }
+}

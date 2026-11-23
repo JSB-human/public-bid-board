@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "명진아이씨티 주식회사",
+  "ceo": "김명진",
+  "opened": "2023-05-10",
+  "region": "경상남도 진주시",
+  "address": "경상남도 진주시 소호로 113, 진주 창업 혁신허브 403호(충무공동)",
+  "employees": 4,
+  "homepage": "www.mjict.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:10.473Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:10.698Z"
+ }
+}

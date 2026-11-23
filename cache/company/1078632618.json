@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 알앤비소프트",
+  "ceo": "강응호",
+  "opened": "2003-03-24",
+  "region": "경기도 성남시 분당구 구미동",
+  "address": "경기도 성남시 분당구 성남대로43번길 10 (구미동, 하나EZ타워) 5층",
+  "employees": 200,
+  "homepage": "www.rnbsoft.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:31.853Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01010581",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:34.172Z"
+ }
+}

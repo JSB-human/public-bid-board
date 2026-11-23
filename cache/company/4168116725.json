@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "대신네트웍스(주)",
+  "ceo": "김진우",
+  "opened": "1997-01-30",
+  "region": "전남광주통합특별시 순천시",
+  "address": "전남광주통합특별시 순천시 해룡면 매안로 83, 2층(유진빌딩)",
+  "employees": 11,
+  "homepage": "www.dsnw.net",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:12.366Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:12.967Z"
+ }
+}

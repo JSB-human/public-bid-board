@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에스큐텍",
+  "ceo": "박익찬",
+  "opened": "2018-09-06",
+  "region": "경상북도 김천시",
+  "address": "경상북도 김천시 혁신로 303-0, 3층 301-1호 (율곡동,지텍지식산업센터)",
+  "employees": 25,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:33.325Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:33.528Z"
+ }
+}

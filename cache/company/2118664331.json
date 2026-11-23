@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 테크윈시스템",
+  "ceo": "김래진",
+  "opened": "2000-08-09",
+  "region": "경기도 성남시 중원구",
+  "address": "경기도 성남시 중원구 둔촌대로 474, 선텍시티 913호 (상대원동)",
+  "employees": 40,
+  "homepage": "www.techwins.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:50.771Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:50.977Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 보군",
+  "ceo": "김동국",
+  "opened": "1998-04-13",
+  "region": "경기도 용인시 기흥구",
+  "address": "경기도 용인시 기흥구 신구로 60, 2층 211호(구갈동, 쥬피터빌딩)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:59.287Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:59.495Z"
+ }
+}

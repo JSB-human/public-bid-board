@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 제이플래닛",
+  "ceo": "박만줄",
+  "opened": "2018-04-12",
+  "region": "대전광역시 유성구 신성동",
+  "address": "대전광역시 유성구 유성대로1184번길 55, 301호 (신성동) ",
+  "employees": 42,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:31.421Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:31.626Z"
+ }
+}

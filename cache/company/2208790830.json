@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 비즈니스인사이트",
+  "ceo": "안응주",
+  "opened": "2009-11-24",
+  "region": "서울특별시 성동구 성수동2가",
+  "address": "서울특별시 성동구 성수일로6길 33 (성수동2가), 아연디지털타워 6층",
+  "employees": 34,
+  "homepage": "www.businessinsight.co.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:16.387Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01457977",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:17.400Z"
+ }
+}

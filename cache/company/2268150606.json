@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)제이엠엔지니어링",
+  "ceo": "곽준수",
+  "opened": "2014-07-21",
+  "region": "강원특별자치도 강릉시",
+  "address": "강원특별자치도 강릉시 관솔길 22-9, 103호 (회산동)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:21.589Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:21.793Z"
+ }
+}

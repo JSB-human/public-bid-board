@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "제일정보통신주식회사",
+  "ceo": "허영근",
+  "opened": "2001-01-01",
+  "region": "부산광역시 수영구",
+  "address": "부산광역시 수영구 광서로10번길 21,  제일정보빌딩 2층 (광안동)",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:42.758Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:43.154Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)한국인프라",
+  "ceo": "김기영",
+  "opened": "1995-05-10",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 삼성로 150-0 (대치동)",
+  "employees": 41,
+  "homepage": "www.krinfra.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:21.420Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00377665",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:23.212Z"
+ }
+}

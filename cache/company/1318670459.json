@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 더원씨앤에스",
+  "ceo": "한재호",
+  "opened": "2015-03-23",
+  "region": "부산광역시 동래구",
+  "address": "부산광역시 동래구 충렬대로446번길 67-0 (안락동, 안락 경동리인 아파트)상가동 307호",
+  "employees": 17,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:21.167Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:21.373Z"
+ }
+}

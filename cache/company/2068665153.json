@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)우리씨앤씨",
+  "ceo": "김종민",
+  "opened": "2012-03-27",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로33길 55 904호",
+  "employees": 52,
+  "homepage": "www.wooricnc.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:34.383Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:34.587Z"
+ }
+}

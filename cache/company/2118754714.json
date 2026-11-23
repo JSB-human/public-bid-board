@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)엔투엠",
+  "ceo": "김형진",
+  "opened": "2004-08-30",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 경인로 775-0 1동 218호(문래동3가, 에이스하이테크시티)",
+  "employees": 30,
+  "homepage": "www.n2m.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:09.213Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:09.420Z"
+ }
+}

@@ -8442,5 +8442,241 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01849322": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   },
+   {
+    "group": "1",
+    "name": "측량업(기타-수치지도제작업)/5029"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "[붙임 2] (구매업무협의 사항 반영) 2027년 스마트 공간정보 플랫폼 유지관리 및 운영지원_제안요청서.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063385&rfpOrd=000&rfpUntyAtchFileNo=6",
+    "kind": "제안요청서"
+   },
+   {
+    "name": "[붙임 4] 물품공급 및 기술지원 협약서.pdf",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063385&rfpOrd=000&rfpUntyAtchFileNo=8",
+    "kind": "기타문서"
+   }
+  ]
+ },
+ "R26BK01847108": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01849562": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01849394": {
+  "regions": [
+   "서울",
+   "인천",
+   "경기"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848016": {
+  "regions": [
+   "경남"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848899": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(전자통합평가시스템 위탁운영(27-29년))_231123수정.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063062&rfpOrd=000&rfpUntyAtchFileNo=4",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01849247": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(국정관리시스템 위탁운영(27-29년))_261123수정.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063065&rfpOrd=000&rfpUntyAtchFileNo=4",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01848870": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "(수정)3. 제안요청서(2027년도 GNSS 전파교란 신호감시시스템 유지관리 용역).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065375&rfpOrd=000&rfpUntyAtchFileNo=4",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01847129": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "[붙임2] 제안요청서(궁능원 전산발권시스템 통합 유지관리)_수정본.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065301&rfpOrd=000&rfpUntyAtchFileNo=3",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01849444": {
+  "regions": [
+   "경남"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(2027년 교통신호시스템 유지관리 용역)_V2(조달).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063948&rfpOrd=000&rfpUntyAtchFileNo=8",
+    "kind": "제안요청서"
+   },
+   {
+    "name": "기술지원협약서(2027년 교통신호시스템 유지관리 용역).pdf",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063948&rfpOrd=000&rfpUntyAtchFileNo=10",
+    "kind": "기타문서"
+   }
+  ]
+ },
+ "R26BK01849786": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01849816": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   },
+   {
+    "group": "1",
+    "name": "개인정보 영향평가기관/6525"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "(붙임3)_지능형_AX_통합_고도화_사업_개인정보_영향평가_제안요청서.hwp",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065399&rfpOrd=000&rfpUntyAtchFileNo=1",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01849772": {
+  "regions": [
+   "인천"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01847841": {
+  "regions": [
+   "경남"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
  }
 }

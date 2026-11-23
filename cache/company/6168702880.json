@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "에이원인포텍(주)",
+  "ceo": "나정훈",
+  "opened": "2023-10-05",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 은구비남로7번길 37-0 (지족동)",
+  "employees": 16,
+  "homepage": "www.aoneinfotech.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:00.526Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:00.731Z"
+ }
+}

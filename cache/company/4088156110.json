@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)아이티벨리",
+  "ceo": "김종필",
+  "opened": "2003-01-02",
+  "region": "전남광주통합특별시 서구",
+  "address": "전남광주통합특별시 서구 풍서좌로299번길 17(세하동)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:51.184Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:51.388Z"
+ }
+}

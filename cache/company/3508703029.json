@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이지컨설팅",
+  "ceo": "홍세린",
+  "opened": "2022-12-29",
+  "region": "경기도 고양시 일산동구 장항동",
+  "address": "경기도 고양시 일산동구 백마로 195 (장항동, SK엠시티타워) 사무동 6010호",
+  "employees": 11,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:15.536Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:15.740Z"
+ }
+}

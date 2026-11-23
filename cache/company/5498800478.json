@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 비에이앤티",
+  "ceo": "임종훈",
+  "opened": "2016-11-01",
+  "region": "서울특별시 송파구",
+  "address": "서울특별시 송파구 충민로 10, 9층 에스30-1호(문정동, 가든파이브툴)",
+  "employees": 31,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:04.318Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:04.520Z"
+ }
+}

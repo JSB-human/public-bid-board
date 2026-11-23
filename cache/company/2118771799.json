@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)플립커뮤니케이션즈",
+  "ceo": "이병하",
+  "opened": "2005-10-10",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 학동로11길 20-7 (논현동)",
+  "employees": 110,
+  "homepage": "www.pulip.com",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:36.426Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01472082",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:37.463Z"
+ }
+}

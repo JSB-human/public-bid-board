@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "한국신재생에너지부울경협동조합",
+  "ceo": "반영현",
+  "opened": "2019-10-21",
+  "region": "부산광역시 동구",
+  "address": "부산광역시 동구 조방로49번길 29 (범일동)",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:19.345Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:19.551Z"
+ }
+}

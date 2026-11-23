@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "에스앤씨 주식회사",
+  "ceo": "이성종",
+  "opened": "2011-11-17",
+  "region": "경기도 고양시 일산서구",
+  "address": "경기도 고양시 일산서구 중앙로 1574, 504호(대화동, 월드프라자)",
+  "employees": 13,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:18.877Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:19.654Z"
+ }
+}

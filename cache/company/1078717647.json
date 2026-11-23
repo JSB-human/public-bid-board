@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 대산측지",
+  "ceo": "김목연",
+  "opened": "2009-03-05",
+  "region": "경기도 파주시",
+  "address": "경기도 파주시 탄현면 방촌로995번길 18-65",
+  "employees": 11,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:52.636Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:52.863Z"
+ }
+}

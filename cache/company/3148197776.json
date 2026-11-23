@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이루코어",
+  "ceo": "박범준",
+  "opened": "2008-05-04",
+  "region": "대전광역시 서구",
+  "address": "대전광역시 서구 청사서로 26  미래빌딩 901호 (월평동, 미래빌딩)",
+  "employees": 27,
+  "homepage": "http://www.irucore.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:34.119Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:34.325Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 소프트그래피",
+  "ceo": "송낙현",
+  "opened": "2012-07-23",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로30길 31, 906호(구로동, 코오롱디지털타워빌란트II)",
+  "employees": 9,
+  "homepage": "www.softgraphy.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:54.779Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:54.984Z"
+ }
+}

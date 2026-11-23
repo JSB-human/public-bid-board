@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)조은아이앤에스",
+  "ceo": "정형수",
+  "opened": "2006-12-21",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 선유로 70, 우리벤처타운2 303호(문래동3가)",
+  "employees": 42,
+  "homepage": "http://www.joeunins.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:45.792Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:45.995Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "합자회사 화인에스앤컴퍼니",
+  "ceo": "장주용",
+  "opened": "1985-03-26",
+  "region": "서울특별시 용산구",
+  "address": "서울특별시 용산구 녹사평대로11길 44 ()",
+  "employees": 20,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:18.931Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:19.135Z"
+ }
+}

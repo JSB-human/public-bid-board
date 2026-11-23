@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사정영",
+  "ceo": "최정현",
+  "opened": "2018-11-06",
+  "region": "강원특별자치도 홍천군",
+  "address": "강원특별자치도 홍천군 홍천읍 홍천로 376, 402호",
+  "employees": 23,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:43.169Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:43.372Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)화성이엔지",
+  "ceo": "김택환",
+  "opened": "2010-01-22",
+  "region": "서울특별시 마포구",
+  "address": "서울특별시 마포구 성미산로11길 15(성산동)",
+  "employees": 13,
+  "homepage": "hwasungeng7@hanmail.net",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:25.185Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:25.396Z"
+ }
+}

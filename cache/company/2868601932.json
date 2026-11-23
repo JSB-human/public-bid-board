@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 영원지리정보",
+  "ceo": "이용순",
+  "opened": "2020-11-27",
+  "region": "경상북도 포항시 남구 대잠동",
+  "address": "경상북도 포항시 남구 대이로9번길 2 (대잠동), 2층 202호",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:41.475Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:41.682Z"
+ }
+}

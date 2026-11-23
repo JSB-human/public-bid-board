@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 씨텍",
+  "ceo": "장필순",
+  "opened": "2012-03-31",
+  "region": "부산광역시 사상구",
+  "address": "부산광역시 사상구 모라로 22-0 (모라동) 부산벤처타워 1509호",
+  "employees": 44,
+  "homepage": "",
+  "kinds": "물품,외자,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:47.685Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01636413",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:48.875Z"
+ }
+}

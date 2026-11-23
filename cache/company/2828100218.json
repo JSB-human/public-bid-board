@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 위로드",
+  "ceo": "윤성숙",
+  "opened": "2016-01-14",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 5, 914호(가산동, 대륭테크노타운20차)",
+  "employees": 9,
+  "homepage": "www.weroad.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:01.773Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:01.979Z"
+ }
+}

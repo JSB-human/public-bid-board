@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)아이티뱅크",
+  "ceo": "조동수",
+  "opened": "2000-11-01",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로26길 123, 309호 (구로동,지플러스타워)",
+  "employees": 10,
+  "homepage": "http://www.itb21.co.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:46.202Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:46.607Z"
+ }
+}

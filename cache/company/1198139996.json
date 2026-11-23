@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사미래와도전",
+  "ceo": "이병철",
+  "opened": "2000-07-01",
+  "region": "경기도 용인시 기흥구",
+  "address": "경기도 용인시 기흥구 흥덕1로 13, 32층(영덕동, 흥덕아이티밸리 타워동)",
+  "employees": 90,
+  "homepage": "www.fnctech.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:23.565Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00969864",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:24.560Z"
+ }
+}

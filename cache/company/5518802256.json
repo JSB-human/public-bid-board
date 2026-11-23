@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 극동이앤씨",
+  "ceo": "국동성",
+  "opened": "2021-05-17",
+  "region": "경기도 평택시",
+  "address": "경기도 평택시 배미1길 20, 1층(합정동)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:35.221Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:35.622Z"
+ }
+}

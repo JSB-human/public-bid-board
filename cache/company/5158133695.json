@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)대국지아이에스",
+  "ceo": "김종환",
+  "opened": "2007-12-06",
+  "region": "경상북도 포항시 남구",
+  "address": "경상북도 포항시 남구 대이로 14, 112동 301호(대잠동, 트리니엔)",
+  "employees": 13,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:41.895Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:42.106Z"
+ }
+}

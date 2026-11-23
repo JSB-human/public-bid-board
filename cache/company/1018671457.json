@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)동녘",
+  "ceo": "나성준",
+  "opened": "2012-05-01",
+  "region": "경기도 남양주시",
+  "address": "경기도 남양주시 다산순환로 20, E동 517,518,519호  (다산동, 현대프리미어캠퍼스))",
+  "employees": 15,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:22.904Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:23.489Z"
+ }
+}

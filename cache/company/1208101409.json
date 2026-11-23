@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "삼부기술(주)",
+  "ceo": "조준희",
+  "opened": "1983-01-15",
+  "region": "경기도 안양시 동안구",
+  "address": "경기도 안양시 동안구 학의로 268, 안양메가밸리 604호 (관양동)",
+  "employees": 33,
+  "homepage": "sambooeng.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:44.432Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:44.638Z"
+ }
+}

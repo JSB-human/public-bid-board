@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)두드림정보",
+  "ceo": "이효근",
+  "opened": "1998-08-25",
+  "region": "대전광역시 유성구 지족동",
+  "address": "대전광역시 유성구 은구비남로7번길 22 , 4층(1층,4층,5층)(지족동) ",
+  "employees": 18,
+  "homepage": "www.ddit.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:35.379Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:35.990Z"
+ }
+}

@@ -11,5 +11,11 @@
   "hq": "본사",
   "fetchedAt": "2026-11-23T07:59:12.334Z"
  },
- "industries": []
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:28.311Z"
+ }
 }

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 와토시스",
+  "ceo": "송인준",
+  "opened": "2008-07-24",
+  "region": "대전광역시 서구",
+  "address": "대전광역시 서구 갈마역로 14, 하이스트빌 203호 (둔산동)",
+  "employees": 14,
+  "homepage": "www.watosys.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:00.847Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:01.051Z"
+ }
+}

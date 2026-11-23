@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 위레이저",
+  "ceo": "김현종",
+  "opened": "2020-01-21",
+  "region": "충청남도 천안시 서북구 불당동",
+  "address": "충청남도 천안시 서북구 불당14로 48 (불당동), 충남창업마루나비 5층(불당동)",
+  "employees": 13,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:51.473Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:51.678Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에스오넷",
+  "ceo": "박용복",
+  "opened": "2010-05-06",
+  "region": "강원특별자치도 횡성군 우천면 법주리",
+  "address": "강원특별자치도 횡성군 우천면 우천제2농공단지로 65-83 ",
+  "employees": 17,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:43.782Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:43.983Z"
+ }
+}

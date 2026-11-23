@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 대유정보통신",
+  "ceo": "서태교",
+  "opened": "2019-01-10",
+  "region": "대구광역시 달성군",
+  "address": "대구광역시 달성군 논공읍 비슬로366길 6, 1층",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:49.510Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:49.730Z"
+ }
+}

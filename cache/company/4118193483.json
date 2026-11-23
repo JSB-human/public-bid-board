@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "키클롭스 주식회사",
+  "ceo": "박재현",
+  "opened": "2023-02-02",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 복용동로 43-0 (복용동) 도안더리브시그니처 F440호",
+  "employees": 6,
+  "homepage": "https://www.keyclops.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:03.838Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:04.042Z"
+ }
+}

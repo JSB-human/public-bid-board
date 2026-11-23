@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "하트솔루션즈 주식회사",
+  "ceo": "김학부",
+  "opened": "2012-05-31",
+  "region": "서울특별시 강서구",
+  "address": "서울특별시 강서구 양천로 401, B동 1104호(가양동, 강서한강자이타워)",
+  "employees": 14,
+  "homepage": "www.heartsolutions.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:58.682Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:58.892Z"
+ }
+}

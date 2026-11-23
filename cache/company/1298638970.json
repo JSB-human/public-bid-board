@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이동의즐거움",
+  "ceo": "이정환",
+  "opened": "2009-11-01",
+  "region": "서울특별시 중구",
+  "address": "서울특별시 중구 청계천로 24, 제10층 제 1001호, 제 11층 제 1101호(다동, 케이스퀘어시티)",
+  "employees": 76,
+  "homepage": "www.myezl.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:29.375Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00804284",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:30.368Z"
+ }
+}

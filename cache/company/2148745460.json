@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 앤앤에스피",
+  "ceo": "김일용",
+  "opened": "2003-12-12",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 논현로 100 (개포동) 2층",
+  "employees": 57,
+  "homepage": "http://www.nnsp.co.kr/",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:39.185Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01924169",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:40.205Z"
+ }
+}

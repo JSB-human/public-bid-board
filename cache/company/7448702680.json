@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 다각인포텍",
+  "ceo": "박문순",
+  "opened": "2022-07-11",
+  "region": "대전광역시 서구 도안동",
+  "address": "대전광역시 서구 도안북로93번길 20-5 (도안동), 리더스타워 6층 601호",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:32.907Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:33.109Z"
+ }
+}

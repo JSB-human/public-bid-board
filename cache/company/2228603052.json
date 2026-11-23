@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 로아솔루션",
+  "ceo": "최준명",
+  "opened": "2023-01-02",
+  "region": "강원특별자치도 춘천시",
+  "address": "강원특별자치도 춘천시 남산면 보매기길 87-0",
+  "employees": 4,
+  "homepage": "www.roasolution.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:37.887Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:38.092Z"
+ }
+}

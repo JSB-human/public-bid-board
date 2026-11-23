@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 포디허브",
+  "ceo": "김희수",
+  "opened": "2022-03-16",
+  "region": "경상북도 경산시",
+  "address": "경상북도 경산시 하양읍 가마실길 50, 809호(경일대학교 산학협력관)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:45.307Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:45.511Z"
+ }
+}

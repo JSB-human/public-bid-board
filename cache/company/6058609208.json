@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)더웹스",
+  "ceo": "서봉균",
+  "opened": "2011-10-14",
+  "region": "부산광역시 해운대구",
+  "address": "부산광역시 해운대구 센텀중앙로 97, 에이동 에이-1610호(재송동, 센텀스카이비즈)",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:28:03.388Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:28:03.604Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "한국정보통신기술협회",
+  "ceo": "송상훈",
+  "opened": "1992-08-08",
+  "region": "경기도 성남시 분당구",
+  "address": "경기도 성남시 분당구 분당로 47 ()",
+  "employees": 313,
+  "homepage": "www.tta.or.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:39.147Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:39.353Z"
+ }
+}

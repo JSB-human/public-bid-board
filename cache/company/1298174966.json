@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사가덕씨엔에스",
+  "ceo": "서배선",
+  "opened": "2004-07-16",
+  "region": "경기도 과천시 갈현동",
+  "address": "경기도 과천시 과천대로5길 24 (갈현동)  제1동 오피스1507호",
+  "employees": 14,
+  "homepage": "www.gadukcns.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:26:20.190Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:26:20.397Z"
+ }
+}

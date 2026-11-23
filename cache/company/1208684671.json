@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 인실리코젠",
+  "ceo": "최남우",
+  "opened": "2005-08-01",
+  "region": "경기도 용인시 기흥구",
+  "address": "경기도 용인시 기흥구 흥덕1로 13, 타워동 2901호, 2902호, 2903호, 2904호 (영덕동, 흥덕아이티밸리)",
+  "employees": 71,
+  "homepage": "http://www.insilicogen.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:25:47.538Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:25:47.743Z"
+ }
+}

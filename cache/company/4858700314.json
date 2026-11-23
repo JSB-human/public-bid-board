@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 혜원이엔지",
+  "ceo": "이혜림",
+  "opened": "2016-01-26",
+  "region": "전북특별자치도 군산시 경장동",
+  "address": "전북특별자치도 군산시 번영로 41 (경장동)",
+  "employees": 26,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T08:27:42.320Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T08:27:42.532Z"
+ }
+}
