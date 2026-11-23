@@ -9,7 +9,7 @@ const data = { results: null, companies: null, byBizno: new Map() };
 const pending = {};
 const rs = { org: '', open: new Set(), sel: null };
 const resultSearch = new WeakMap();
-const cs = { q: '', sort: 'wins' };
+const cs = { q: '', sort: 'wins', limit: 300 };
 
 // ---------- 공용 ----------
 async function load(name) {
@@ -25,6 +25,8 @@ async function load(name) {
 }
 const shortDay = (s) => { const t = parseDeadline(s); if (t === null) return ''; const d = new Date(t + 9 * 3600000); return `${d.getUTCFullYear() % 100}.${d.getUTCMonth() + 1}.${d.getUTCDate()}`; };
 const eok = (n) => (n == null ? '-' : n >= 1e8 ? (n / 1e8).toFixed(n >= 1e10 ? 0 : 1) + '억' : Math.round(n / 1e4).toLocaleString('ko-KR') + '만');
+// 큰 합계는 조·억으로 끊어 읽기 쉽게 (13426억 → 1조 3,426억)
+const eokLong = (n) => { const e = Math.round(n / 1e8), jo = Math.floor(e / 1e4); return (jo ? `${jo}<small>조</small> ` : '') + `${(e % 1e4).toLocaleString('ko-KR')}<small>억</small>`; };
 const pct = (n) => (n == null ? '' : `${Number(n).toFixed(2).replace(/\.?0+$/, '')}%`);
 const bizFmt = (b) => (b && b.length === 10 ? `${b.slice(0, 3)}-${b.slice(3, 5)}-${b.slice(5)}` : b || '');
 const coLink = (bizno, name) => (bizno ? `<a class="co" href="#company/${esc(bizno)}">${esc(name)}</a>` : esc(name));
@@ -162,7 +164,7 @@ function renderResultStats() {
     ['공동계약', countText(totals.joint) + '<small>건</small>'],
     ['참여 수 확인', countText(totals.counted) + '<small>건</small>'],
     ['평균 참여', average],
-    ['계약금액 합계', totals.contractAmount ? eok(totals.contractAmount) : '-'],
+    ['계약금액 합계', totals.contractAmount ? eokLong(totals.contractAmount) : '-'],
   ].map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('');
   $('rDash').innerHTML = dashboard(items, $('rYear').value);
 }
@@ -179,7 +181,8 @@ function dashboard(items, year) {
     periods.set(key, p);
   }
   const periodRows = [...periods].sort((a, b) => b[0].localeCompare(a[0])).map(([key, p]) =>
-    `<tr><th scope="row">${key ? year ? `${Number(key.slice(5))}월` : `${esc(key)}년` : '미등록'}</th><td>${countText(p.total)}</td><td>${countText(p.won)}</td><td>${countText(p.failed)}</td><td>${countText(p.wait)}</td></tr>`).join('');
+    `<tr><th scope="row">${key ? year ? `${Number(key.slice(5))}월` : `${esc(key)}년` : '미등록'}</th><td>${countText(p.total)}</td><td>${countText(p.won)}</td><td>${countText(p.failed)}</td><td>${countText(p.wait)}</td>
+      <td class="pt-bar"><span class="pbar" title="낙찰·계약 ${countText(p.won)} · 유찰 ${countText(p.failed)} · 대기 ${countText(p.wait)}"><i class="o" style="flex:${p.won}"></i><i class="f" style="flex:${p.failed}"></i><i class="w" style="flex:${p.wait}"></i></span></td></tr>`).join('');
   // 회사별 수주 (계약 구성사 지분 기준, 없으면 낙찰자)
   const co = new Map();
   for (const r of items) {
@@ -203,7 +206,7 @@ function dashboard(items, year) {
       <span class="hb-bar"><i style="width:${(val(x) / max) * 100}%"></i></span><span class="hb-v">${label(x)}</span></${link ? 'a' : 'div'}>`).join('');
   return `
     <div class="dash-card wide"><div class="dash-h"><b>${year ? `${esc(year)}년 월별 결과` : '연도별 결과'}</b></div>
-      <table class="period-table"><thead><tr><th>기간</th><th>공고</th><th>낙찰·계약</th><th>유찰</th><th>대기</th></tr></thead><tbody>${periodRows}</tbody></table>
+      <table class="period-table"><thead><tr><th>기간</th><th>공고</th><th><i class="lgd o"></i>낙찰·계약</th><th><i class="lgd f"></i>유찰</th><th><i class="lgd w"></i>대기</th><th class="pt-bar" aria-label="결과 비율"></th></tr></thead><tbody>${periodRows}</tbody></table>
       <div class="note">개찰일 기준이며 개찰일이 없으면 입찰 마감일을 사용해요.</div></div>
     <div class="dash-card"><div class="dash-h"><b>많이 따 간 회사</b><span>지분 기준 금액</span></div>${hbar(topCo, (x) => x.amt, maxCo, (x) => `${eok(x.amt)} · ${x.n}건`, true) || '<div class="note">아직 없어요.</div>'}</div>
     <div class="dash-card"><div class="dash-h"><b>많이 발주한 기관</b><span>건수</span></div>${hbar(topOrg, (x) => x.n, maxOrg, (x) => `${x.n}건`, false)}</div>`;
@@ -332,6 +335,19 @@ function selectResult(id) {
     if (b) b.closest('article').outerHTML = resultRow(r, false);
   }
 }
+
+// 넓은 화면: 위·아래 화살표(또는 j·k)로 결과를 넘겨 본다. 아직 안 그린 줄이면 이어 붙이고 간다.
+document.addEventListener('keydown', (e) => {
+  if (!wide() || $('view-results').hidden || !(e.target instanceof Element) || e.target.closest('input, textarea, select') || document.querySelector('.viewer.show')) return;
+  const step = e.key === 'ArrowDown' || e.key === 'j' ? 1 : e.key === 'ArrowUp' || e.key === 'k' ? -1 : 0;
+  if (!step || !rView.rows.length || e.metaKey || e.ctrlKey || e.altKey) return;
+  const i = rView.rows.findIndex((r) => r.id === rs.sel), j = Math.max(0, Math.min(rView.rows.length - 1, i + step));
+  if (j === i) return;
+  e.preventDefault();
+  while (j >= rView.shown) appendResults();
+  selectResult(rView.rows[j].id);
+  $('rList').querySelector('.item.sel')?.scrollIntoView({ block: 'nearest' });
+});
 
 const leadOf = (r) => r.contract?.members?.[0] || r.winner;
 const whoOf = (r) => { const l = leadOf(r); return l ? short(l.name) + (r.contract?.members?.length > 1 ? ` 외 ${r.contract.members.length - 1}곳` : '') : ''; };
@@ -493,19 +509,19 @@ function drawCompanyList() {
     const all = data.companies.items;
     const won = all.filter((c) => c.stats.wins).length;
     el.innerHTML = `
-      <section class="hero"><h1>공고에 나온 업체 <em>${all.length}</em>곳</h1>
-        <p>수주한 회사 ${won}곳 · 컨소시엄으로 이어진 회사 ${all.filter((c) => c.partners.length).length}곳. 줄을 누르면 그 회사로 가요.</p></section>
+      <section class="hero"><h1>공고에 나온 업체 <em>${countText(all.length)}</em>곳</h1>
+        <p>수주한 회사 ${countText(won)}곳 · 컨소시엄으로 이어진 회사 ${countText(all.filter((c) => c.partners.length).length)}곳. 줄을 누르면 그 회사로 가요.</p></section>
       <a class="gx-teaser" href="#galaxy">
         <span class="gx-teaser-t"><b>관계도에서 한눈에 보기</b><span>업체와 발주기관을 별처럼 띄워, 누가 어디서 일을 받고 누구와 손잡는지 따라가 볼 수 있어요.</span></span>
         <span class="gx-teaser-go">열기 →</span></a>
       <div class="toolbar"><div class="inner">
-        <div class="search">${SEARCH}<input type="search" id="cq" placeholder="회사명·대표자·사업자번호로 검색" aria-label="업체 검색"></div>
+        <div class="search">${SEARCH}<input type="search" id="cq" placeholder="회사명·대표자·사업자번호로 검색" aria-label="업체 검색"><kbd aria-hidden="true">/</kbd></div>
         <div class="chips" id="cChips"><button class="chip" data-s="wins">수주 많은 순</button><button class="chip" data-s="amount">수주액 순</button>
           <button class="chip" data-s="bids">참여 많은 순</button><button class="chip" data-s="rate">수주율 순</button><button class="chip" data-s="recent">최근 활동 순</button></div></div></div>
       <div class="count" id="cCount"></div><div id="cRows"></div>`;
-    $('cq').addEventListener('input', (e) => { cs.q = e.target.value.trim().toLowerCase(); drawCompanyRows(); });
-    $('cChips').addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (b) { cs.sort = b.dataset.s; drawCompanyRows(); } });
-    $('cRows').addEventListener('click', (e) => { const tr = e.target.closest('tr[data-biz]'); if (tr && !e.target.closest('a')) location.hash = 'company/' + tr.dataset.biz; });
+    $('cq').addEventListener('input', (e) => { cs.q = e.target.value.trim().toLowerCase(); cs.limit = 300; drawCompanyRows(); });
+    $('cChips').addEventListener('click', (e) => { const b = e.target.closest('[data-s]'); if (b) { cs.sort = b.dataset.s; cs.limit = 300; drawCompanyRows(); } });
+    $('cRows').addEventListener('click', (e) => { if (e.target.closest('#cMore')) { cs.limit += 300; drawCompanyRows(); return; } const tr = e.target.closest('tr[data-biz]'); if (tr && !e.target.closest('a')) location.hash = 'company/' + tr.dataset.biz; });
   }
   drawCompanyRows();
 }
@@ -518,11 +534,11 @@ function drawCompanyRows() {
     .filter((c) => !cs.q || [c.name, c.ceo, c.bizno, c.basic?.region].join(' ').toLowerCase().includes(cs.q.replace(/-/g, '')))
     .sort((a, b) => key(b) - key(a));
   const maxAmt = Math.max(1, ...rows.map((c) => c.stats.wonAmount));
-  $('cCount').innerHTML = `<span><b>${rows.length}</b>곳</span>`;
+  $('cCount').innerHTML = `<span><b>${countText(rows.length)}</b>곳${rows.length > cs.limit ? ` 가운데 위 ${countText(cs.limit)}곳` : ''}</span>`;
   if (!rows.length) { $('cRows').innerHTML = emptyState('찾는 업체가 없어요', '이름이나 사업자번호를 확인해 보세요.'); return; }
   $('cRows').innerHTML = `<div class="board" tabindex="0" role="region" aria-label="업체 목록"><table class="lead">
     <thead><tr><th class="num">#</th><th>회사</th><th class="num">참여</th><th class="num">수주</th><th>수주율</th><th>수주액</th><th class="num hide-s">파트너</th><th class="num hide-s">직원</th></tr></thead><tbody>
-    ${rows.slice(0, 300).map((c, i) => {
+    ${rows.slice(0, cs.limit).map((c, i) => {
       const r = rate(c), emp = c.nps?.length ? c.nps[c.nps.length - 1].cnt : c.basic?.employees;
       return `<tr data-biz="${esc(c.bizno)}">
         <td class="num rk">${i + 1}</td>
@@ -531,7 +547,7 @@ function drawCompanyRows() {
         <td><span class="rate"><i style="width:${Math.round(r * 100)}%"></i></span><span class="rate-t">${Math.round(r * 100)}%</span></td>
         <td><span class="amt-bar"><i style="width:${(c.stats.wonAmount / maxAmt) * 100}%"></i></span><span class="amt-t">${c.stats.wonAmount ? eok(c.stats.wonAmount) : '-'}</span></td>
         <td class="num hide-s">${c.stats.partners || '<span class="mute">-</span>'}</td><td class="num hide-s">${emp ?? '<span class="mute">-</span>'}</td></tr>`;
-    }).join('')}</tbody></table></div>`;
+    }).join('')}</tbody></table></div>${rows.length > cs.limit ? `<button class="more-btn" id="cMore">${countText(Math.min(300, rows.length - cs.limit))}곳 더 보기 (남은 ${countText(rows.length - cs.limit)}곳)</button>` : ''}`;
 }
 
 function drawCompany(bizno) {
@@ -718,7 +734,7 @@ async function renderGalaxy() {
       root.innerHTML = '<div class="gx-state"><div class="v-spin"></div>별을 띄우는 중이에요</div>';
       galaxy = (async () => {
         const [c, r] = await Promise.all([load('companies'), load('results')]);
-        const { openGalaxy } = await import('./galaxy.js');
+        const { openGalaxy } = await import('./galaxy.js?v=20261123-rival');
         return openGalaxy(root, { companies: c.items, results: r.items });
       })();
     }

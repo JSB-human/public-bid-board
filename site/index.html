@@ -765,6 +765,9 @@
   #view-galaxy .dot { flex: none; width: 9px; height: 9px; border-radius: 50%; background: #8f9bb3; }
   #view-galaxy .dot.org { background: #ffc857; } #view-galaxy .dot.won { background: #5aa9ff; } #view-galaxy .dot.partner { background: #ff5c8a; }
   #view-galaxy .ln { width: 16px; height: 3px; border-radius: 2px; }
+  #view-galaxy .dot.rival { background: #ff8a3d; }
+  #view-galaxy .ln.dashed { background: repeating-linear-gradient(90deg, #ff8a3d 0 5px, transparent 5px 8px); border-radius: 0; }
+  .gx-lb em.rival { background: rgba(255, 138, 61, .3); color: #ffd9bf; }
   .gx-hint { position: absolute; left: 50%; bottom: 64px; transform: translateX(-50%); z-index: 2; font-size: 13px; color: #9aa5ba; white-space: nowrap; pointer-events: none; transition: opacity .6s; }
   .gx-hint.off { opacity: 0; }
   .gx-panel { position: absolute; z-index: 4; top: 68px; right: 16px; bottom: 16px; width: 330px; border-radius: 18px; padding: 18px 16px 16px; overflow: hidden auto; overscroll-behavior: contain;
@@ -1303,6 +1306,38 @@
     .board-split > .col-list { padding-top: 20px; }
     .board-toolbar { top: -20px; }
   }
+  /* ---------- 마감·결과 / 업체 다듬기 ---------- */
+  /* 탭을 옮겨도 위쪽 로고·메뉴 자리가 흔들리지 않게 폭을 맞춘다 */
+  @media (min-width: 1024px) { header .wrap, #view-companies { max-width: 1480px; } }
+  /* 기간별 결과: 숫자 옆에 낙찰·유찰·대기 비율 막대 */
+  .period-table th, .period-table td { padding: 8px 6px; }
+  .period-table tbody tr:last-child :is(th, td) { border-bottom: 0; }
+  .period-table tbody th { font-weight: 700; }
+  .lgd { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 5px; vertical-align: 1px; }
+  .lgd.o, .pbar .o { background: var(--blue); } .lgd.f, .pbar .f { background: var(--red); opacity: .75; } .lgd.w, .pbar .w { background: var(--faint); }
+  .period-table .pt-bar { width: 96px; padding-left: 12px; }
+  .pbar { display: flex; gap: 1px; width: 84px; height: 8px; border-radius: 999px; overflow: hidden; background: var(--field); margin-left: auto; }
+  .pbar i { min-width: 0; }
+  @media (max-width: 1279px) { .period-table .pt-bar { display: none; } }
+  /* 업체 목록: 표 머리가 검색 줄 아래에 붙어 따라온다 */
+  @media (min-width: 780px) {
+    #cRows table.lead thead th { top: calc(var(--header-h) + 124px); z-index: 2; box-shadow: 0 1px 0 var(--line); }
+    #cRows table.lead thead th:first-child { border-top-left-radius: var(--radius-card); }
+    #cRows table.lead thead th:last-child { border-top-right-radius: var(--radius-card); }
+  }
+  table.lead tbody tr:focus-within { background: var(--hover); }
+  #cRows .more-btn { margin-top: 12px; background: var(--card); box-shadow: var(--shadow); }
+  #cCount { padding: 4px 6px 10px; }
+  /* 업체 상세: 수주한 건은 알약으로, 협력(파랑)·경쟁(주황)은 색 점으로 구분 */
+  .company-history-scroll .rank .company-outcome.is-won { display: inline-block; margin-top: 3px; padding: 1px 8px; border-radius: 999px; background: var(--blue-weak); color: var(--blue-text); font-size: 12px; }
+  .company-history-scroll .rank .company-outcome.is-failed { display: inline-block; margin-top: 3px; padding: 1px 8px; border-radius: 999px; background: var(--red-weak); font-size: 12px; }
+  .company-relation-headings h3 { display: flex; align-items: center; gap: 6px; color: var(--blue-text); }
+  .company-relation-headings h3::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); }
+  .company-relation-headings h3 + h3 { color: light-dark(#b25f00, var(--orange)); }
+  .company-relation-headings h3 + h3::before { background: var(--orange); }
+  .company-relation-list a { border-radius: 8px; padding-left: 6px; margin-left: -6px; }
+  .company-relation-list a:hover { background: var(--hover); text-decoration: none; }
+  .company-history-scroll, .company-relation-lists { scrollbar-color: color-mix(in srgb, var(--faint) 70%, transparent) transparent; }
   /* 왼쪽 칸이 좁을 때 순위 카드의 이름이 한 글자로 잘리지 않게 막대를 뺀다 */
   @media (min-width: 780px) and (max-width: 1279px) {
     .board-split .hb { grid-template-columns: 18px minmax(0, 1fr) auto; }
@@ -1401,7 +1436,7 @@
 <main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
-<script type="module" src="insights.js?v=20261123-polish"></script>
+<script type="module" src="insights.js?v=20261123-polish2"></script>
 <script>
 const state = { items: [], only: null, day: null, open: new Set(), sel: null, orgYears: new Map() };
 // 넓은 화면에서는 목록 옆에 상세를 나란히 두고, 좁은 화면에서는 줄을 눌러 펼친다.
@@ -1532,7 +1567,7 @@ function renderStats() {
   const open = state.items.filter((x) => isOpen(x, now));
   const sum = open.reduce((a, x) => a + (x.amount || 0), 0);
   $('sOpen').innerHTML = open.length + '<small>건</small>';
-  $('sSum').innerHTML = (sum / 1e8).toFixed(1) + '<small>억</small>';
+  $('sSum').innerHTML = Math.round(sum / 1e8).toLocaleString('ko-KR') + '<small>억</small>';
   $('sSoon').innerHTML = open.filter((x) => isSoon(x, now)).length + '<small>건</small>';
   $('sRe').innerHTML = open.filter(isRe).length + '<small>건</small>';
 }
