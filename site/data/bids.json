@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T05:43:55.238Z",
+ "updatedAt": "2026-11-23T06:15:39.103Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -36281,6 +36281,271 @@
     "files": [
      "[붙임1] 입찰재공고문.pdf",
      "[붙임2] 제안요청서.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01848817",
+   "ord": "000",
+   "title": "2027년 국가공무원인재개발원 정보시스템·전산장비 유지관리 및 운영지원 사업",
+   "org": "인사혁신처 국가공무원인재개발원",
+   "amount": 2094545455,
+   "deadline": "2026-12-04 10:00:00",
+   "posted": "2026-11-23 15:04:56",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848817&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템",
+    "유지관리",
+    "전산"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 2318169200,
+    "regDeadline": "2026-12-03 18:00",
+    "bidBegin": "2026-12-02 10:00:00",
+    "opening": "2026-12-04 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "2027년 국가인재원 정보시스템·전산장비 유지관리 및 운영지원 사업 제안요청서(수정).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065358&rfpOrd=000&rfpUntyAtchFileNo=2",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "(재공고서) 2027년 국가공무원인재개발원 정보시스템·전산장비 유지관리 및 운영지원 사업.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848817&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "❍ 대상업무 : 국가인재원 정보시스템, 전산․보안장비 유지관리 및 운영지원",
+     "❍ 사용기관 : 국가공무원인재개발원",
+     "❍ 사 용 자 : 나라배움터(약 89만명) 및 원내 교육운영자",
+     "❍ 대 상",
+     "- 정보시스템(5개): 나라배움터, 학사관리(온라인평가), 대표홈페이지(국문ㆍ영문), 역량진단, 전자도서관",
+     "- 사무‧교육용 전산장비: 1,852대(PC 733대, 노트북 534대, 모니터 450대, 프린터 135)",
+     "- 보안장비 및 상용SW: 자체 운영서버, 정보보호시스템 등 69대",
+     "- 영상정보디스플레이(DID) 6대, 키오스크 1대"
+    ],
+    "background": [
+     "❍ 국가인재원 정보시스템의 안정적 유지관리를 통한 교육운영 지원",
+     "- 나라배움터·학사관리, 대표홈페이지 등 안정적인 시스템 운영을 통한 신속하고 체계적인 교육운영 지원",
+     "- 5개 정보시스템 노후장비 대‧개체에 따른 안정화와 성능 최적화",
+     "- 공동활용기관 이러닝 운영지원, 자체 및 타기관 이러닝 콘텐츠 변경 관리"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템유지관리서비스",
+      "code": "8111189901"
+     }
+    ],
+    "period": "2027.1.1.∼2028.12.31.",
+    "files": [
+     "(재공고서) 2027년 국가공무원인재개발원 정보시스템·전산장비 유지관리 및 운영지원 사업.pdf",
+     "2027년 국가인재원 정보시스템·전산장비 유지관리 및 운영지원 사업 제안요청서(수정).hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01847602",
+   "ord": "000",
+   "title": "2027년 지자체 합동평가시스템 유지관리",
+   "org": "한국지역정보개발원",
+   "amount": 548917273,
+   "deadline": "2026-12-10 10:00:00",
+   "posted": "2026-11-23 14:58:08",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847602&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 609197840,
+    "regDeadline": "2026-12-09 18:00",
+    "bidBegin": "2026-12-08 10:00:00",
+    "opening": "2026-12-10 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "붙임2_제안요청서(2027년 지자체 합동평가시스템 유지관리)_수정.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064061&rfpOrd=000&rfpUntyAtchFileNo=8",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "입찰공고서(국가_협상_수평_1468_직생(유지관리)_20억미만_차등(3)_공동_기술지원).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847602&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서(국가_협상_수평_1468_직생(유지관리)_20억미만_차등(3)_공동_기술지원).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847602&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "요구사항 분류 고유 번호 요구사항 명칭 품질 QUR-01 정보시스템 운영 전반에 대한 품질관리 요구사항 QUR-02 서비스 및 유지관리 품질관리 QUR-03 형상관리 및 백업관리 QUR-04 서비스 품질 향상을 위한 개선 조치 QUR-05 만족도 조사 실시 프로젝트 지원 PSR-01 유지관리 업무 인수인계 시 품질 유지 요구사항 PSR-02 시스템 기술지원 PSR-03 기술 이전 및 교육 지원 PSR-04 장애관리 PSR-05 하자보수 PSR-06 통합관리체계 구축‧운영 협조 유지관리 수행 요구사항 MPR-01 법·제도 변경 등 업무환경 변화에 따른 반영조치 MPR-02 사용자 요청에 따른 반영조치 MPR-03 지자체 합동평가시스템(VPS) 및 업무포털 운영관리 MPR-04 광역지자체평가서비스 운영관리 MPR-05 내고장알리미 누리집 운영관리 MPR-06 유지관리 대상 시스템 기능개선 MPR-07 정보시스템 원활한 이용을 위한 사용자 지원 MPR-08 헬프데스크의 체계적 운영 및 서비스 방안 제시 MPR-09 상용SW 유지관리 수행 MPR-10 유지관리 기술지원 MPR-11 유지관리의 용이성을 고려한 표준화 적용 유지관리 인력 요구사항 MHR-01 조직 및 인력운영 MHR-02 투입인력 운영 준수사항 MHR-03 투입인력 근무 요건 데이터 품질 DAR-01 데이터 표준 관리 요구사항 DAR-02 데이터 구조 관리 DAR-03 데이터 값 검증 DAR-04 데이터 관리체계 DAR-05 메타데이터 현행화 DAR-06 데이터 제공 및 운영 지원 DAR-07 데이터 품질 유지관리 수행 프로젝트 관리 PMR-01 보안관리 일반 요구사항 PMR-02 누출금지 대상정보 및 보안 위규 처리 PMR-03 참여인원 보안관리"
+    ],
+    "background": [],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027. 1. 1. ~ 12. 31.(12개월)",
+    "files": [
+     "입찰공고서(국가_협상_수평_1468_직생(유지관리)_20억미만_차등(3)_공동_기술지원).pdf",
+     "붙임2_제안요청서(2027년 지자체 합동평가시스템 유지관리)_수정.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01848917",
+   "ord": "000",
+   "title": "2027년 업무포털(EIP) 유지관리 및 기능개선사업",
+   "org": "재단법인 식생활안전관리원",
+   "amount": 366000000,
+   "deadline": "2026-12-04 10:00:00",
+   "posted": "2026-11-23 14:52:02",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848917&bidPbancOrd=000",
+   "keywords": [
+    "포털",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "재단법인 식생활안전관리원",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 402600000,
+    "regDeadline": "2026-12-03 09:00",
+    "bidBegin": "2026-11-23 15:00:00",
+    "opening": "2026-12-04 11:00:00",
+    "refNo": "2026-6호",
+    "files": [
+     {
+      "name": "(업무포털) 공고문.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848917&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(업무포털) 공고문.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848917&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(업무포털) 2027년 제안요청서.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848917&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "❍ 응용시스템 유지관리 및 기능개선",
+     "- 업무포털(EIP) 및 연계 프로그램: 인증(SSO), 그룹웨어(GW), 메일(Mail), 교육(LMS), 상용S/W 등 유지관리",
+     "- 운영 환경 변화(법·정책·행정해석 등)에 따른 기능 개선",
+     "- 현장업무 효율성 개선을 위한 반응형 웹 방식으로 개편(일부 메뉴)",
+     "- 전문기술 인력 배치 통한 안정적인 정보시스템 운영 지원(24×365무중단 운영)",
+     "❍ 전산 인프라 임대 및 유지관리",
+     "- 업무포털(EIP, 연계시스템포함)을 유지관리하기 위한 인프라 시스템의 임대(가상화) 및 인프라 장애 예방을 위한 정기 점검 및 상시 모니터링",
+     "- 고가용성 확보를 위한 시스템 유지관리(서버 OS 및 보안장비 최신 업데이트 패치)",
+     "- 업무포털을 유지하기 위한 상용 SW 라이선스 연장 및 관리",
+     "- 백업 관리 및 정기적인 DR 테스트를 통한 백업 데이터 무결성 확보 (정보시스템, 네트워크, 전산 인프라에 대한 자료 현행화)",
+     "❍ 정보보안 및 개인정보보호 관리 지원(업무망/대외망 분리)",
+     "- 사이버위협 대응 및 사이버안전센터 보안관제 등 운영 지원",
+     "- 정보보안 및 개인정보보호 감사, 현장점검, 모의훈련 등 운영 지원"
+    ],
+    "background": [
+     "❍ 업무포털(EIP)는 식생활안전관리원과 전국 지역센터(238개소)에서 근무하는 직원(2,800여명)의 행정·복무·업무 관리와 교육(LMS) 및 전자결재 기능 등 업무 수행 기초 플랫폼으로 운영 중",
+     "❍ 대내·외 정책 및 제도변화에 따라 시스템 기능개선 및 보완을 통해 업무 효율성을 제고하고, 환경변화에 능동적으로 대처하기 위한 유지관리 및 기능개선 필요",
+     "❍ 전국 지역센터 표준 업무 플랫폼 구축 및 사용자 편의성 개선을 위한 기능(현장업무를 위한 화면 재구성 – 모바일화)을 지속 반영 필요",
+     "❍ 체계적인 예방점검을 통해 정보시스템 관련 장애요인을 사전 점검 및 제거하여 24시간 365일 서비스 연속성 및 안정성 확보"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "소프트웨어유지및지원서비스",
+      "code": "8111229901"
+     },
+     {
+      "name": "정보시스템개발서비스",
+      "code": "8111159901"
+     },
+     {
+      "name": "패키지소프트웨어개발및도입서비스",
+      "code": "8111159801"
+     }
+    ],
+    "period": "계약일로부터 ~ `27. 12. 31. √ ’27. 1.",
+    "files": [
+     "(업무포털) 공고문.pdf",
+     "(업무포털) 2027년 제안요청서.hwp"
     ],
     "skipped": []
    }

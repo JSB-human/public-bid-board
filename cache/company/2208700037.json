@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 비타소프트",
+  "ceo": "홍순기",
+  "opened": "2004-11-25",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털2로 95-0 (가산동) 케이엠타워 1506호 1507호",
+  "employees": 60,
+  "homepage": "www.vitasoft.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:18:18.191Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T06:18:18.599Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:18:18.600Z"
+ }
+}

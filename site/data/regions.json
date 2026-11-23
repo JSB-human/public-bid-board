@@ -8106,5 +8106,111 @@
     "kind": "제안요청서"
    }
   ]
+ },
+ "R26BK01846828": {
+  "regions": [
+   "울산"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848817": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "2027년 국가인재원 정보시스템·전산장비 유지관리 및 운영지원 사업 제안요청서(수정).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065358&rfpOrd=000&rfpUntyAtchFileNo=2",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01847602": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "붙임2_제안요청서(2027년 지자체 합동평가시스템 유지관리)_수정.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064061&rfpOrd=000&rfpUntyAtchFileNo=8",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01848917": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848867": {
+  "regions": [
+   "전북"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848916": {
+  "regions": [
+   "전북"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848878": {
+  "regions": [
+   "인천"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
  }
 }

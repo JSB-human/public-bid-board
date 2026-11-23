@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 이지넥서스",
+  "ceo": "최영준",
+  "opened": "2014-10-04",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 205-27, 4층 426(가산동, 가산 에이원타워)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:16:57.306Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T06:16:57.707Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:16:57.707Z"
+ }
+}

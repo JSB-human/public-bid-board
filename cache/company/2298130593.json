@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 미코에이아이",
+  "ceo": "서철욱",
+  "opened": "1998-01-10",
+  "region": "경기도 성남시 분당구 수내동",
+  "address": "경기도 성남시 분당구 황새울로 246, A동 10,11층(수내동, 도담빌딩) ",
+  "employees": 264,
+  "homepage": "micoai.ai",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:17:49.438Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202607": 164,
+   "202608": 263,
+   "202609": 264
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T06:17:50.475Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:17:50.475Z"
+ }
+}

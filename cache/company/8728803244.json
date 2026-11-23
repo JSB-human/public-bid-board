@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "인테그로 주식회사(Integro Co., Ltd.)",
+  "ceo": "김상혁",
+  "opened": "2025-02-15",
+  "region": "대구광역시 중구 대봉동",
+  "address": "대구광역시 중구 동덕로 33, 11동 상가1호 (대봉동, 청운맨션)",
+  "employees": 13,
+  "homepage": "https://www.integro.work/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:19:25.759Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T06:19:26.158Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:19:26.158Z"
+ }
+}
