@@ -1,0 +1,29 @@
+{
+ "basic": {
+  "name": "(주)오픈브릭스",
+  "ceo": "이창수",
+  "opened": "2010-12-01",
+  "region": "경기도 하남시 덕풍동",
+  "address": "경기도 하남시 미사대로 520, 씨동 911호 (덕풍동, 현대지식산업센터 한강미사2차)",
+  "employees": 17,
+  "homepage": "www.openbricks.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:30:44.270Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202608": 16,
+   "202609": 16
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T06:30:45.093Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:30:45.093Z"
+ }
+}

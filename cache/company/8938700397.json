@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)에스원 공간정보",
+  "ceo": "김주훈",
+  "opened": "2016-02-01",
+  "region": "경기도 포천시",
+  "address": "경기도 포천시 신읍3길 10, 2층 201호 (신읍동)",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:31:29.908Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T06:31:30.316Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:31:30.316Z"
+ }
+}

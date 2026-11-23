@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "채움공간정보",
+  "ceo": "김국형",
+  "opened": "2021-01-19",
+  "region": "경기도 김포시",
+  "address": "경기도 김포시 태장로 751, 237호(장기동, 테라비즈타워)",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T06:31:33.675Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T06:31:34.070Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T06:31:34.070Z"
+ }
+}
