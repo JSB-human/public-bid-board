@@ -513,6 +513,8 @@ function drawCompany(bizno) {
   const c = data.byBizno.get(bizno);
   const el = $('cDetail');
   if (!c) { el.innerHTML = `<p class="back"><a href="#companies">← 업체 목록</a></p>${emptyState('업체를 찾지 못했어요', '목록에서 다시 골라 주세요.')}`; return; }
+  const region = c.basic?.region;
+  const kinds = c.basic?.kinds?.split(',').map((kind) => kind.trim()).filter(Boolean) || [];
   const emp = c.nps?.length ? c.nps[c.nps.length - 1].cnt : c.basic?.employees;
   const info = [
     ['대표자', esc(c.ceo || '-')], ['사업자번호', bizFmt(c.bizno)],
@@ -521,25 +523,30 @@ function drawCompany(bizno) {
     c.industries?.length && ['등록 업종', c.industries.map((i) => `<span class="lic">${esc(i.name)}</span>`).join('')],
   ].filter(Boolean);
   el.innerHTML = `
-    <p class="back"><a href="#companies">← 업체 목록</a></p>
-    <div class="company-header">
-      <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
-      <label class="company-period">실적 연도 <select class="year-pick" id="companyYear" aria-controls="companyMetrics companyHistoryRows"><option value="">전체 연도</option></select></label>
-    </div>
-    <section class="stats company-metrics" id="companyMetrics" aria-live="polite" aria-label="업체 실적"></section>
-    <div class="company-workspace">
-      <section class="panel company-basics"><h2>기본 정보</h2><dl class="company-facts">${info.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></section>
-      <section class="panel" id="companyHistory"><h2>참여 이력</h2><div id="companyHistoryRows"></div></section>
-      <section class="panel company-relations">
-        <div class="company-section-head"><h2>협력·경쟁 관계</h2><a class="more" href="#galaxy/c:${esc(c.bizno)}">전체 관계도 →</a></div>
-        <div class="rel-cols">
-          <div><h3>협력 업체</h3>${relList(c.partners, '협력 업체', true)}</div>
-          <div><h3>경쟁 업체</h3>${relList(c.rivals, '경쟁 업체')}</div>
+    <section class="company-hero" aria-labelledby="companyName">
+      <a class="company-back" href="#companies">← 업체 목록</a>
+      <div class="company-header">
+        <div class="company-identity">
+          <h1 id="companyName">${esc(c.name)}</h1>
+          <div class="company-meta">${region ? `<span>${esc(region)}</span>` : ''}${kinds.length ? `<span>${kinds.map(esc).join(' · ')}</span>` : ''}${!region && !kinds.length ? '<span>조달 등록 정보 없음</span>' : ''}</div>
         </div>
-        ${c.partners?.length || c.rivals?.length ? '<div class="net ego" id="egoGraph"></div>' : ''}
+        <label class="company-period">실적 연도 <select class="year-pick" id="companyYear" aria-controls="companyMetrics companyHistoryRows"><option value="">전체 연도</option></select></label>
+      </div>
+      <dl class="company-metrics" id="companyMetrics" aria-live="polite" aria-label="업체 실적"></dl>
+    </section>
+    <div class="company-workspace">
+      <section class="panel company-basics"><h2>기본 정보</h2><dl class="company-facts">${info.map(([k, v]) => `<div${k === '주소' || k === '등록 업종' ? ' class="wide-fact"' : ''}><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></section>
+      <section class="panel company-history" id="companyHistory"><h2>참여 이력</h2><div id="companyHistoryRows"></div></section>
+      <section class="panel company-relations">
+        <div class="company-section-head"><h2>협력·경쟁 관계</h2><a class="more" href="#galaxy/c:${esc(c.bizno)}">전체 관계도</a></div>
+        <div class="rel-cols">
+          <div class="company-partners"><h3>협력 업체</h3>${relList(c.partners, '협력 업체', true)}</div>
+          <div class="company-rivals"><h3>경쟁 업체</h3>${relList(c.rivals, '경쟁 업체')}</div>
+        </div>
+        ${c.partners?.length || c.rivals?.length ? '<div class="company-network"><div class="company-network-key"><span>주요 업체</span><span class="partner-key">협력</span><span class="rival-key">경쟁</span></div><div class="net ego" id="egoGraph"></div></div>' : ''}
       </section>
       <div class="company-records">
-        <section class="panel">
+        <section class="panel company-workforce">
           <div class="company-section-head"><h2>직원 수 추이</h2><span>국민연금 가입자 기준</span></div>
           ${npsChart(c)}
         </section>
@@ -554,12 +561,15 @@ function drawCompany(bizno) {
   const drawPerformance = () => {
     const rows = yearPick.value ? c.history.filter((h) => yearOf(resultDate(h)) === yearPick.value) : c.history;
     const { bids, wins, wonAmount } = companyHistoryStats(rows);
+    const rate = bids ? Math.round(wins / bids * 100) : null;
+    const amount = wonAmount ? eok(wonAmount) : '';
     const tiles = [
-      ['참여', `${countText(bids)}<small>건</small>`], ['수주', `${countText(wins)}<small>건</small>`],
-      ['수주율', bids ? `${Math.round(wins / bids * 100)}<small>%</small>` : '-'],
-      ['수주액(지분 기준)', wonAmount ? `<span title="${countText(wonAmount)}원">${eok(wonAmount)}</span>` : wins ? '-' : '0원'],
+      ['참여 건수', `<span>${countText(bids)}<small>건</small></span>`],
+      ['수주 건수', `<span>${countText(wins)}<small>건</small></span>`],
+      ['수주율', rate == null ? '–' : `<span>${rate}<small>%</small></span><span class="company-meter" aria-hidden="true"><i style="width:${rate}%"></i></span>`],
+      ['수주액 <span class="company-metric-basis">지분 기준</span>', amount ? `<span title="${countText(wonAmount)}원">${amount.slice(0, -1)}<small>${amount.slice(-1)} 원</small></span>` : wins ? '–' : '<span>0<small>원</small></span>'],
     ];
-    $('companyMetrics').innerHTML = tiles.map(([label, value]) => `<div class="stat" role="presentation"><div class="label">${label}</div><div class="value">${value}</div></div>`).join('');
+    $('companyMetrics').innerHTML = tiles.map(([label, value]) => `<div class="company-metric"><dt>${label}</dt><dd>${value}</dd></div>`).join('');
     $('companyHistoryRows').innerHTML = historyTable(rows);
   };
   yearPick.addEventListener('change', drawPerformance);
@@ -579,14 +589,15 @@ function relList(list, label, withShare) {
 
 function historyTable(rows) {
   if (!rows.length) return '<div class="note">이력이 없어요.</div>';
-  return `<div class="rank-wrap company-history-scroll" tabindex="0" role="region" aria-label="업체 참여 이력 목록"><table class="rank hist"><thead><tr><th scope="col">개찰</th><th scope="col">공고</th><th scope="col" class="history-desktop">역할·순위</th><th scope="col" class="num history-desktop">금액</th><th scope="col">결과</th></tr></thead><tbody>
+  return `<div class="rank-wrap company-history-scroll" tabindex="0" role="region" aria-label="업체 참여 이력 목록"><table class="rank hist"><thead><tr><th scope="col">개찰일</th><th scope="col">공고 및 발주기관</th><th scope="col" class="num history-amount">금액</th><th scope="col">결과</th></tr></thead><tbody>
     ${rows.map((h) => {
       const role = (h.rank != null ? `${h.rank}위` : esc(h.role || '')) + (h.share != null && h.share < 100 ? ` · ${h.share}%` : '');
-      const amount = h.contractAmount ? eok(h.contractAmount) : h.bidAmount ? eok(h.bidAmount) : '';
-      return `<tr class="${h.won ? 'win' : ''}"><td>${shortDay(h.openedAt) || '-'}</td>
-        <td><a class="co" href="#results" data-goto="${esc(h.id)}">${esc(h.title)}</a><small>${esc(h.org || '')}</small><small class="history-mobile-meta">${[role, amount].filter(Boolean).join(' · ')}</small></td>
-        <td class="history-desktop">${role}</td><td class="num history-desktop">${amount || '-'}</td>
-        <td>${h.won ? '<span class="badge st-ok">수주</span>' : h.status === '유찰' ? '<span class="badge st-bad">유찰</span>' : ''}</td></tr>`;
+      const amount = h.contractAmount || h.bidAmount;
+      const status = h.won ? '수주' : ['유찰', '재입찰'].includes(h.status) ? h.status : '참여';
+      return `<tr><td class="company-date">${shortDay(h.openedAt) || '–'}</td>
+        <td><a class="co" href="#results" data-goto="${esc(h.id)}">${esc(h.title)}</a><small class="company-bid-meta">${[esc(h.org || ''), role].filter(Boolean).join(' · ')}</small>${amount ? `<small class="history-mobile-amount">${eok(amount)} 원</small>` : ''}</td>
+        <td class="num history-amount">${amount ? `<span title="${countText(amount)}원">${eok(amount)}</span>` : '–'}</td>
+        <td><span class="company-outcome${h.won ? ' is-won' : status !== '참여' ? ' is-failed' : ''}">${status}</span></td></tr>`;
     }).join('')}
   </tbody></table></div>`;
 }
@@ -597,21 +608,21 @@ function npsChart(c) {
     const one = pts[0] ? `${pts[0].cnt}명 (${pts[0].ym.slice(0, 4)}.${pts[0].ym.slice(4)})` : c.basic?.employees ? `조달청 등록 직원 수 ${c.basic.employees}명` : '';
     return `<p class="note">${one ? esc(one) + ' · ' : ''}${pts.length ? '월별 기록 1건' : '국민연금 가입자 기록 없음'}</p>`;
   }
-  const W = 320, H = 76, P = 16;
-  // 세로축은 0부터 시작해 작은 변화를 부풀리지 않는다.
-  const max = Math.max(...pts.map((p) => p.cnt)), min = 0;
-  const span = Math.max(1, max - min);
-  const x = (i) => P + (i * (W - 2 * P)) / (pts.length - 1);
-  const y = (v) => H - P - ((v - min) / span) * (H - 2 * P);
+  const W = 360, H = 92, left = 50, right = W - 9, top = 11, bottom = H - 20;
+  const max = Math.max(1, ...pts.map((p) => p.cnt));
+  const x = (i) => left + i * (right - left) / (pts.length - 1);
+  const y = (v) => bottom - v / max * (bottom - top);
   const line = pts.map((p, i) => `${x(i)},${y(p.cnt)}`).join(' ');
   const first = pts[0].cnt, last = pts[pts.length - 1].cnt, diff = last - first;
-  return `<div class="nps-head"><b>${last}명</b><span class="${diff > 0 ? 'up' : diff < 0 ? 'down' : ''}">${diff > 0 ? '+' : ''}${diff}명 (${pts.length}개월)</span></div>
-    <svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="직원 수 추이">
-      <polyline points="${P},${H - P} ${line} ${W - P},${H - P}" class="area"/>
+  const start = pts[0].ym, end = pts[pts.length - 1].ym;
+  return `<div class="nps-head"><b>${countText(last)}<small>명</small></b><span class="${diff > 0 ? 'up' : diff < 0 ? 'down' : ''}">${diff > 0 ? '+' : ''}${countText(diff)}명 <span class="company-source">(${pts.length}개월)</span></span></div>
+    <svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="${start.slice(0, 4)}년 ${Number(start.slice(4))}월 ${first}명에서 ${end.slice(0, 4)}년 ${Number(end.slice(4))}월 ${last}명으로 변화">
+      ${[max, 0].map((tick) => `<line class="gridline" x1="${left}" x2="${right}" y1="${y(tick)}" y2="${y(tick)}"/><text x="${left - 6}" y="${y(tick) + 4}" text-anchor="end">${countText(tick)}명</text>`).join('')}
+      <polyline points="${left},${bottom} ${line} ${right},${bottom}" class="area"/>
       <polyline points="${line}" class="line"/>
-      ${pts.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.cnt)}" r="2.5"><title>${p.ym.slice(0, 4)}.${p.ym.slice(4)} ${p.cnt}명</title></circle>`).join('')}
-      <text x="${P}" y="${H - 3}">${pts[0].ym.slice(2, 4)}.${pts[0].ym.slice(4)}</text>
-      <text x="${W - P}" y="${H - 3}" text-anchor="end">${pts[pts.length - 1].ym.slice(2, 4)}.${pts[pts.length - 1].ym.slice(4)}</text>
+      ${pts.map((p, i) => `<circle${i === pts.length - 1 ? ' class="current"' : ''} cx="${x(i)}" cy="${y(p.cnt)}" r="${i === pts.length - 1 ? 3.5 : 2}"><title>${p.ym.slice(0, 4)}.${p.ym.slice(4)} ${p.cnt}명</title></circle>`).join('')}
+      <text x="${left}" y="${H - 3}">${start.slice(2, 4)}.${start.slice(4)}</text>
+      <text x="${right}" y="${H - 3}" text-anchor="end">${end.slice(2, 4)}.${end.slice(4)}</text>
     </svg>`;
 }
 
@@ -620,8 +631,11 @@ function dartTable(c) {
   if (!ys.length) return '<p class="note">확인된 DART 재무 공시가 없어요.</p>';
   const rows = ['매출액', '영업이익', '당기순이익', '자산총계', '부채총계', '자본총계'];
   const sorted = [...ys].sort((a, b) => a.year - b.year);
-  return `<div class="rank-wrap"><table class="rank" aria-label="연도별 공시 재무"><thead><tr><th scope="col">항목</th>${sorted.map((y) => `<th scope="col" class="num">${y.year}</th>`).join('')}</tr></thead><tbody>
-    ${rows.map((r) => `<tr><th scope="row">${r}</th>${sorted.map((y) => `<td class="num">${y[r] != null ? eok(y[r]) : '-'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  return `<div class="rank-wrap"><table class="rank" aria-label="연도별 공시 재무"><thead><tr><th scope="col">항목</th>${sorted.map((y) => `<th scope="col" class="num">${y.year}년</th>`).join('')}</tr></thead><tbody>
+    ${rows.map((r) => `<tr><th scope="row">${r}</th>${sorted.map((y) => {
+      const value = y[r];
+      return value == null ? '<td class="num">–</td>' : `<td class="num${value < 0 ? ' negative' : ''}" title="${countText(value)}원">${value < 0 ? '−' : ''}${value ? eok(Math.abs(value)) : '0원'}</td>`;
+    }).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
 // ---------- 그래프 ----------
@@ -631,23 +645,20 @@ const scoreOf = (c) => c.stats.wins * 3 + Math.log10(1 + c.stats.wonAmount / 1e7
 function toNode(c, max) {
   return { id: c.bizno, name: c.name, bids: c.stats.bids, wins: c.stats.wins, amountText: c.stats.wonAmount ? '수주 ' + eok(c.stats.wonAmount) : '', sub: c.basic?.region || '', size: Math.min(1, scoreOf(c) / max) };
 }
-const pairKey = (a, b) => (a < b ? a + '|' + b : b + '|' + a);
-
-// 한 회사 중심: 파트너, 파트너의 파트너, 겨룬 회사(상위 14곳)
+// 상세 화면은 협력·경쟁 상위 업체의 직접 관계를 보여 준다.
 async function drawEgo(el, c) {
   const by = data.byBizno;
-  const set = new Set([c.bizno]);
-  const links = new Map();
-  const addP = (a, p) => { if (!by.has(p.bizno)) return; set.add(p.bizno); links.set(pairKey(a, p.bizno) + '|p', { source: a, target: p.bizno, kind: 'partner', count: p.count, share: p.share != null ? p.share + '%' : '' }); };
-  for (const p of c.partners || []) addP(c.bizno, p);
-  for (const p of c.partners || []) for (const q of by.get(p.bizno)?.partners || []) addP(p.bizno, q);
-  for (const r of (c.rivals || []).slice(0, 14)) { if (!by.has(r.bizno)) continue; set.add(r.bizno); links.set(pairKey(c.bizno, r.bizno) + '|r', { source: c.bizno, target: r.bizno, kind: 'rival', count: r.count }); }
-  if (set.size < 2) { el.innerHTML = '<div class="note pad">이어진 회사가 아직 없어요.</div>'; return; }
-  const list = [...set].map((b) => by.get(b));
+  const links = [];
+  for (const [kind, entries] of [['partner', c.partners], ['rival', c.rivals]]) {
+    const top = (entries || []).filter((p) => p.bizno !== c.bizno && by.has(p.bizno)).slice(0, 4);
+    for (const p of top) links.push({ source: c.bizno, target: p.bizno, kind, count: p.count, share: p.share != null ? `${p.share}%` : '' });
+  }
+  if (!links.length) { el.innerHTML = '<div class="note pad">이어진 회사가 아직 없어요.</div>'; return; }
+  const list = [...new Set([c.bizno, ...links.map((link) => link.target)])].map((b) => by.get(b));
   const max = Math.max(1, ...list.map(scoreOf));
   const { networkGraph } = await import('./graph.js');
   if (!el.isConnected) return;
-  await networkGraph(el, { nodes: list.map((x) => toNode(x, max)), links: [...links.values()], focus: c.bizno, height: 152, onOpen: (id) => id !== c.bizno && (location.hash = 'company/' + id) });
+  await networkGraph(el, { nodes: list.map((x) => toNode(x, max)), links, focus: c.bizno, height: 136, onOpen: (id) => id !== c.bizno && (location.hash = 'company/' + id) });
 }
 
 
