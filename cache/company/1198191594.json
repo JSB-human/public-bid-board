@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 켐토피아",
+  "ceo": "박상희",
+  "opened": "2006-08-01",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로33길 48 (구로동) 대륭포스트타워7차",
+  "employees": 67,
+  "homepage": "http://www.chemtopia.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:49.325Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01558744",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:50.341Z"
+ }
+}

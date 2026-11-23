@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "디자인소설",
+  "ceo": "김진후",
+  "opened": "2021-05-03",
+  "region": "전남광주통합특별시 남구 행암동",
+  "address": "전남광주통합특별시 남구 행암도동길 9-16, 2층 201호 (행암동)",
+  "employees": 1,
+  "homepage": "http://www.designsosul.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:32.332Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:32.537Z"
+ }
+}

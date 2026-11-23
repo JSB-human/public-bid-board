@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 본정보",
+  "ceo": "김명호",
+  "opened": "2015-12-18",
+  "region": "서울특별시 강서구",
+  "address": "서울특별시 강서구 양천로 547, 1501호(가양동, 마스터밸류)",
+  "employees": 66,
+  "homepage": "http://www.boninfo.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:41.789Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01478697",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:42.796Z"
+ }
+}

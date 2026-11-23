@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 퀀텀소프트",
+  "ceo": "서현일",
+  "opened": "2015-08-06",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 대학로 82, 531-3(궁동, 인산빌딩)",
+  "employees": 1,
+  "homepage": "www.quantumsoft.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:40.646Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:40.851Z"
+ }
+}

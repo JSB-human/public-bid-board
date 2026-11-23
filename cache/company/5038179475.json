@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 유비엔",
+  "ceo": "안은기",
+  "opened": "2008-03-10",
+  "region": "대구광역시 수성구",
+  "address": "대구광역시 수성구 알파시티1로 160, 501호(대흥동, 소프트웨어융합테크비즈센터)",
+  "employees": 23,
+  "homepage": "http://ubncorp.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:33.581Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:33.784Z"
+ }
+}

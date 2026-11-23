@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 시스플랫",
+  "ceo": "한규성",
+  "opened": "1999-01-15",
+  "region": "전남광주통합특별시 북구 삼각동",
+  "address": "전남광주통합특별시 북구 안산로 75, 4층 4081호 (삼각동)",
+  "employees": 6,
+  "homepage": "www.sysplat.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:33.169Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:33.374Z"
+ }
+}

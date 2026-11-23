@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "프로지스트 주식회사",
+  "ceo": "김국화",
+  "opened": "2024-08-13",
+  "region": "서울특별시 서초구 반포동",
+  "address": "서울특별시 서초구 사평대로53길 27 (반포동) 3층 301호",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:44.251Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:44.454Z"
+ }
+}

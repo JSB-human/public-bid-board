@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 유현정보기술",
+  "ceo": "임유선",
+  "opened": "2018-12-19",
+  "region": "경기도 의정부시 민락동",
+  "address": "경기도 의정부시 배꽃길 7 (민락동) 센텀스퀘어 2동 902호",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:22.016Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:22.217Z"
+ }
+}

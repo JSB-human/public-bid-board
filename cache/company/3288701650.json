@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 다리소프트",
+  "ceo": "정만식",
+  "opened": "2020-01-10",
+  "region": "경기도 성남시 분당구 수내동",
+  "address": "경기도 성남시 분당구 황새울로258번길 37, 8층(흥국생명빌딩, 수내동)",
+  "employees": 44,
+  "homepage": "www.dareesoft.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:35.438Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:35.647Z"
+ }
+}

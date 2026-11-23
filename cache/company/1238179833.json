@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "동국지리정보 (주)",
+  "ceo": "노동옥",
+  "opened": "2002-07-05",
+  "region": "충청남도 예산군",
+  "address": "충청남도 예산군 덕산면 충의로 3-0, 201호",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:16.047Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:16.249Z"
+ }
+}

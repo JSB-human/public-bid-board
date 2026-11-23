@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)비시텍코리아",
+  "ceo": "임헌욱",
+  "opened": "2010-02-22",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 당산로29길 5-1. 302호(당산동3가, 삼일빌딩)",
+  "employees": 6,
+  "homepage": "www.bcteckorea.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:29.616Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:29.818Z"
+ }
+}

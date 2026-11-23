@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이화엔지니어링",
+  "ceo": "이성규",
+  "opened": "2014-02-01",
+  "region": "충청남도 당진시",
+  "address": "충청남도 당진시 먹거리길 42-36 (대덕동) 2층202호",
+  "employees": 15,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:12.617Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:12.874Z"
+ }
+}

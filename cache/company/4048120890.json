@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "유한회사 동방이노베이션",
+  "ceo": "김준식",
+  "opened": "2005-12-01",
+  "region": "전북특별자치도 정읍시",
+  "address": "전북특별자치도 정읍시 북면 북면공단2길 87-0",
+  "employees": 38,
+  "homepage": "",
+  "kinds": "물품,외자,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:33.780Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:33.984Z"
+ }
+}

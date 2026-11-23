@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 그린공간정보",
+  "ceo": "이성우",
+  "opened": "2002-11-06",
+  "region": "경상남도 창원시 의창구",
+  "address": "경상남도 창원시 의창구 용동로83번안길 7, 5층 508호",
+  "employees": 35,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:18.988Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:19.189Z"
+ }
+}

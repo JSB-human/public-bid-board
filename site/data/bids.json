@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T07:27:26.832Z",
+ "updatedAt": "2026-11-23T07:47:35.164Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -37496,6 +37496,283 @@
     "skipped": [
      "(산출내역서) 2027년 광주청사 행정정보통신망외 4종 유지관리 용역.xlsx"
     ]
+   }
+  },
+  {
+   "id": "R26BK01849575",
+   "ord": "000",
+   "title": "2027~2028년도 미추홀구 정보시스템 통합유지보수",
+   "org": "인천광역시 미추홀구",
+   "amount": 706985455,
+   "deadline": "2026-12-14 10:00:00",
+   "posted": "2026-11-23 16:39:21",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01849575&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "인천광역시 미추홀구",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 777684000,
+    "regDeadline": "2026-12-13 18:00",
+    "bidBegin": "2026-11-23 18:00:00",
+    "opening": "2026-12-14 11:00:00",
+    "refNo": "인천광역시 미추홀구 공고 제2026-1935호",
+    "files": [
+     {
+      "name": "1_공고문_2027~2028_정보시스템_통합유지보수.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849575&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2_조달청 제안서 평가대행 집행기준(27~28 미추홀구 정보시스템 통합유지보수) .hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849575&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "3_제안요청서(조달청반영)_(2027_2028년도 미추홀구 정보시스템 통합유지보수)_최종.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849575&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "4_단가산출서(2027_2028년도 정보시스템 통합유지보수).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849575&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "5_물품공급기술지원협약서(업체별).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849575&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "가. 유지보수 대상: 254개 품목 구분 수량 비고 하드웨어 서버,통합백업시스템 22 대표홈페이지, 통합DB, 통합 백업서버 등 네트워크 보안장비 등 90 스위치, 방화벽, 보안장비, 항온항습기 등 상용소프트웨어 102 SW(가상화서버, 백업, 보안) 홈페이지 개발 소프트웨어 36 36개 사이트(기능개선) 소프트웨어 상용 소프트웨어 3 DB암호화SW, 검색엔진, 웹 에디터 행정전산장비 1 행정전산장비 유지보수 인건비 산정 합 계 254"
+    ],
+    "background": [
+     "가. 정보시스템의 안정적 운영과 신속한 장애 대응을 위한 체계적인 유지관리 필요",
+     "나. 개별 유지관리의 중복을 해소하고 운영 효율성을 높이기 위한 통합 유지보수 추진"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027. 1. 1. ~ 2028. 12. 31.(2년, 장기계속계약)",
+    "files": [
+     "1_공고문_2027~2028_정보시스템_통합유지보수.pdf",
+     "3_제안요청서(조달청반영)_(2027_2028년도 미추홀구 정보시스템 통합유지보수)_최종.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01849496",
+   "ord": "000",
+   "title": "2027년 인천하늘수 자재관리시스템 유지관리 용역[협상]",
+   "org": "인천광역시 상수도사업본부 수도시설관리소",
+   "amount": 74803636,
+   "deadline": "2026-12-04 17:00:00",
+   "posted": "2026-11-23 16:29:56",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01849496&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "소프트웨어유지및지원서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "인천광역시 상수도사업본부",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 82284000,
+    "regDeadline": "2026-12-03 18:00",
+    "bidBegin": "2026-11-27 10:00:00",
+    "opening": "2026-12-04 18:00:00",
+    "refNo": "2026-1268",
+    "files": [
+     {
+      "name": "1.공고문-2026년 인천하늘수 자재관리시스템 유지관리 용역.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849496&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2.공내역서(2027년 인천하늘수 자재관리시스템 유지관리 용역).xlsx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849496&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "3.제안요청서(2027년 인천하늘수 자재관리시스템 유지관리 용역)_.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849496&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "4.수급업체 안전보건관리 수준평가 시행 안내문.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849496&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "5.기술지원 협약서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849496&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "라. 사 업 비 : 82,284천원 범위 내(부가세 포함)"
+    ],
+    "background": [],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "소프트웨어유지및지원서비스",
+      "code": "8111229901"
+     }
+    ],
+    "period": "2027. 1. 1. ~ 2027. 12. 31.",
+    "files": [
+     "1.공고문-2026년 인천하늘수 자재관리시스템 유지관리 용역.pdf",
+     "3.제안요청서(2027년 인천하늘수 자재관리시스템 유지관리 용역)_.hwpx"
+    ],
+    "skipped": [
+     "2.공내역서(2027년 인천하늘수 자재관리시스템 유지관리 용역).xlsx"
+    ]
+   }
+  },
+  {
+   "id": "R26BK01849556",
+   "ord": "000",
+   "title": "2027년 우리동네키움포털 운영 및 유지관리 용역",
+   "org": "서울특별시",
+   "amount": 347867273,
+   "deadline": "2026-12-04 16:00:00",
+   "posted": "2026-11-23 16:43:53",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01849556&bidPbancOrd=000",
+   "keywords": [
+    "포털",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "서울특별시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 382654000,
+    "regDeadline": "2026-12-03 18:00",
+    "bidBegin": "2026-12-02 09:00:00",
+    "opening": "2026-12-04 17:00:00",
+    "refNo": "서울특별시 재무공고 제2026-2718호",
+    "files": [
+     {
+      "name": "공고문(제2026-2718호).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849556&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "공고문(제2026-2718호).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849556&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849556&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "[개정전문] 지방자치단체 입찰시 낙찰자 결정기준(2026.11.2.시행).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849556&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "[개정전문] 지방자치단체 입찰 및 계약집행기준(2026.11.6.시행).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849556&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "ㅇ 콘텐츠 및 기능 보강",
+     "- 서울형 키즈카페 이용료 온라인 사전 결제 기능 도입",
+     "- 서울 아이 상상랜드 예약서비스 구현",
+     "- 관리자 운영관리 기능 강화",
+     "- 개인정보보호 및 시스템 보안 기능 강화",
+     "ㅇ 홈페이지 일반 유지관리 및 시스템의 안정적인 운영 지원",
+     "- 콘텐츠 현행화, 팝업 이미지 제작, 프로그램 기능 추가/보완, 각종 요구사항 처리",
+     "ㅇ 각종 시설 신규 운영 개시에 따른 온라인 서비스 제공",
+     "ㅇ 헬프데스크 운영",
+     "- 키움포털 이용자의 상담 안내 등을 위한 전담 인력 2명 상주",
+     "- 일반 사용자·자치구 담당자·시설 종사자 키움포털 이용안내 및 운영지원",
+     "ㅇ 각종 연계시스템과의 안정적 연계 운영"
+    ],
+    "background": [
+     "ㅇ 아이돌봄 관련 다양한 정보를 정확하고 신뢰성 있게 제공",
+     "ㅇ 키움센터, 서울형 키즈카페 예약서비스를 편리하게 제공하여 시민 만족도 향상",
+     "ㅇ 전문업체를 통한 효율적인 홈페이지 유지관리 체계 구축",
+     "ㅇ 콘텐츠 보강, 예약 기능 개선 등 수요자 중심의 서비스 지속 제공"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027. 1. 1. ~ 2027. 12. 31.(12개월)",
+    "files": [
+     "공고문(제2026-2718호).pdf",
+     "제안요청서.hwpx"
+    ],
+    "skipped": []
    }
   }
  ]

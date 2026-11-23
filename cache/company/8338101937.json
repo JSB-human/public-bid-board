@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 데이터코드",
+  "ceo": "전원영",
+  "opened": "2020-04-27",
+  "region": "서울특별시 마포구 염리동",
+  "address": "서울특별시 마포구 백범로36길 8-7 (염리동) 2층",
+  "employees": 3,
+  "homepage": "www.datacode.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:27.151Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:27.356Z"
+ }
+}

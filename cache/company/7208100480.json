@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 메이머스트",
+  "ceo": "박상현",
+  "opened": "2016-07-01",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 테헤란로 143,  3층(역삼동, 고운빌딩)",
+  "employees": 114,
+  "homepage": "https://www.maymust.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:03.476Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01467974",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:04.503Z"
+ }
+}

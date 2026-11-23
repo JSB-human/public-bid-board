@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)한국에스지티",
+  "ceo": "김미영",
+  "opened": "2005-10-01",
+  "region": "경기도 부천시 원미구 춘의동",
+  "address": "경기도 부천시 원미구 길주로411번길 20, 709호 (춘의동)",
+  "employees": 103,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:15.194Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:15.394Z"
+ }
+}

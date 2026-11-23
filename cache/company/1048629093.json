@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 포스젠",
+  "ceo": "이재홍",
+  "opened": "2010-06-22",
+  "region": "서울특별시 마포구 신공덕동",
+  "address": "서울특별시 마포구 백범로 202 (신공덕동, 마포케이씨씨웰츠타워) 4층 401호",
+  "employees": 35,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:33.373Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:33.573Z"
+ }
+}

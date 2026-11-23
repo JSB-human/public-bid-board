@@ -1,0 +1,29 @@
+{
+ "basic": {
+  "name": "주식회사 더블루캔버스",
+  "ceo": "조은화",
+  "opened": "2014-05-14",
+  "region": "서울특별시 강서구",
+  "address": "서울특별시 강서구 마곡중앙6로 66, 비동 917호 (마곡동, 퀸즈파크텐)",
+  "employees": 5,
+  "homepage": "https://specialog.co.kr/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:49:38.677Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202608": 3,
+   "202609": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T07:49:39.557Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:49:39.557Z"
+ }
+}

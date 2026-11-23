@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "코리아크레딧뷰로(주)",
+  "ceo": "이성욱",
+  "opened": "2005-10-01",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 국제금융로6길 15-0 (여의도동)",
+  "employees": 243,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:30.037Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "00571605",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:31.046Z"
+ }
+}

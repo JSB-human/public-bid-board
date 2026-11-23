@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 리마커블 소프트",
+  "ceo": "이균환",
+  "opened": "2014-03-10",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 선유로13길 25 에이스하이테크시티 2차 914호",
+  "employees": 28,
+  "homepage": "www.remarkablesoft.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:31.867Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:32.121Z"
+ }
+}

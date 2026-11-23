@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "영진기술 주식회사",
+  "ceo": "김영진",
+  "opened": "2013-06-28",
+  "region": "경기도 안산시 단원구",
+  "address": "경기도 안산시 단원구 산단로 296, 제5층 제540호(원시동, 대우테크노피아아파트형공장)",
+  "employees": 7,
+  "homepage": "www.youngjintech.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:51.570Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:51.988Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "대신네트웍스 주식회사",
+  "ceo": "김영식",
+  "opened": "1993-09-16",
+  "region": "경상남도 창원시 성산구",
+  "address": "경상남도 창원시 성산구 중앙대로 263, 409 (용호동)",
+  "employees": 55,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:34.199Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:34.807Z"
+ }
+}

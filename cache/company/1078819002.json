@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "이와이케이디에스 유한회사",
+  "ceo": "김정욱",
+  "opened": "2014-05-13",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 여의공원로 111-0 (여의도동, 여의도 태영빌딩)",
+  "employees": 7,
+  "homepage": "http://www.ey.com/kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:30.926Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:31.128Z"
+ }
+}

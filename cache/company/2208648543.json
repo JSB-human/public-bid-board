@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)에이케이플러스",
+  "ceo": "한상용",
+  "opened": "2002-10-02",
+  "region": "서울특별시 종로구",
+  "address": "서울특별시 종로구 종로 19 르메이에르 종로타운 905호",
+  "employees": 23,
+  "homepage": "www.akplus.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:06.740Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:06.943Z"
+ }
+}

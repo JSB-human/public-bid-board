@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 제주트윈",
+  "ceo": "이미희",
+  "opened": "2024-01-22",
+  "region": "제주특별자치도 제주시 도남동",
+  "address": "제주특별자치도 제주시 도남서길 34 (도남동) 301호",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:02.201Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:02.408Z"
+ }
+}

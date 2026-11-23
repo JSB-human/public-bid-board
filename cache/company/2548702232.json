@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 위드퍼스트",
+  "ceo": "엄보원",
+  "opened": "2021-04-05",
+  "region": "전남광주통합특별시 나주시 빛가람동",
+  "address": "전남광주통합특별시 나주시 문화로 244, 8층 801 802 803호 서담빌딩 8층(빛가람동) ",
+  "employees": 4,
+  "homepage": "withfirst.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:54.909Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:55.118Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "메가존 주식회사",
+  "ceo": "장지황",
+  "opened": "2001-03-31",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 논현로85길 46, 10층 (역삼동, 메가존빌딩)",
+  "employees": 512,
+  "homepage": "www.mz.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:43.011Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01073465",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:44.014Z"
+ }
+}

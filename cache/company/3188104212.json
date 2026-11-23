@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 와이넷",
+  "ceo": "이상훈",
+  "opened": "2014-10-01",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 테크노4로 17-0 (관평동) 대덕비즈센터 A동 201호,202호",
+  "employees": 39,
+  "homepage": "www.whynet.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:34.292Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "02022583",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:35.413Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이비즈타운",
+  "ceo": "황득수",
+  "opened": "2006-02-16",
+  "region": "서울특별시 영등포구 양평동1가",
+  "address": "서울특별시 영등포구 영등포로11길 9, F515호,F516호,F517호 (양평동1 가, 영등포자이타워)",
+  "employees": 18,
+  "homepage": "www.ebiztw.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:08.406Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01824045",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:09.459Z"
+ }
+}

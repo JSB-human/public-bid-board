@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 태산정보기술",
+  "ceo": "채연옥",
+  "opened": "2009-10-12",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 벚꽃로 278, 1312호(가산동, 에스제이테크노빌)",
+  "employees": 19,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:54.497Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:54.703Z"
+ }
+}

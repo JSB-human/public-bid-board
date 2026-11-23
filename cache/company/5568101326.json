@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에스엠소프트",
+  "ceo": "임성민",
+  "opened": "2019-03-01",
+  "region": "경기도 광주시",
+  "address": "경기도 광주시 중앙로 332 (송정동)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:10.941Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:11.143Z"
+ }
+}

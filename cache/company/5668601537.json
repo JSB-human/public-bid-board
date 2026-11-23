@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 크로스티앤씨",
+  "ceo": "서성민",
+  "opened": "2020-01-10",
+  "region": "서울특별시 서초구",
+  "address": "서울특별시 서초구 사평대로26길 26-4,  4층",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:29.212Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:29.411Z"
+ }
+}

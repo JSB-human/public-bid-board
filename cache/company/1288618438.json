@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 엔지스웨이",
+  "ceo": "최영재",
+  "opened": "2007-01-15",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 서부샛길 648-0 (가산동) 대륭테크노타운6차 1405호",
+  "employees": 16,
+  "homepage": "www.ngisway.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:48.906Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:49.109Z"
+ }
+}

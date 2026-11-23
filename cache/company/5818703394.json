@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이썸테크",
+  "ceo": "곽화섭",
+  "opened": "2024-12-30",
+  "region": "서울특별시 강남구 논현동",
+  "address": "서울특별시 강남구 도산대로24길 4 (논현동, ES힐스) 2층",
+  "employees": 132,
+  "homepage": "www.esumtech.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:59.731Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01989865",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:00.741Z"
+ }
+}

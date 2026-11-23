@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 넥스트드로우",
+  "ceo": "전봉진",
+  "opened": "2018-08-14",
+  "region": "인천광역시 미추홀구 주안동",
+  "address": "인천광역시 미추홀구 미추홀대로 , 2층 201호 (주안동, 메인프라자)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:23.680Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:23.880Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 한울지리정보",
+  "ceo": "조성진",
+  "opened": "2005-05-02",
+  "region": "전북특별자치도 전주시 덕진구 중동",
+  "address": "전북특별자치도 전주시 덕진구 오공로 43-34 (중동), 501호",
+  "employees": 15,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:16.866Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:17.067Z"
+ }
+}

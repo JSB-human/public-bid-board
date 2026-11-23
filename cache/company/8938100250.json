@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 아이티플랜",
+  "ceo": "송치호",
+  "opened": "2015-12-17",
+  "region": "대전광역시 유성구",
+  "address": "대전광역시 유성구 학하중앙로 125-0 , 302호(학하동)",
+  "employees": 20,
+  "homepage": "www.it-plan.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:53.679Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:53.879Z"
+ }
+}

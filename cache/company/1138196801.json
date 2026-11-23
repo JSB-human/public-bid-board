@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "엘에스웨어(주)",
+  "ceo": "김민수",
+  "opened": "2005-03-21",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 서부샛길 606-0 (가산동) 대성디폴리스 A동 18층",
+  "employees": 90,
+  "homepage": "www.lsware.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:24.922Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "02011675",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:26.919Z"
+ }
+}

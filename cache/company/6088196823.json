@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 한라지리정보",
+  "ceo": "전세민",
+  "opened": "2013-02-01",
+  "region": "대전광역시 유성구 학하동",
+  "address": "대전광역시 유성구 학하동로64번길 7-8 (학하동), 101호",
+  "employees": 14,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:21.200Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:21.402Z"
+ }
+}

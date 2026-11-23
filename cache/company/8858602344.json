@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "현공간정보 주식회사",
+  "ceo": "김현정",
+  "opened": "2021-12-17",
+  "region": "인천광역시 계양구",
+  "address": "인천광역시 계양구 계산새로87번길 5, 605호 (용종동, 레드몰1차)",
+  "employees": 13,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:11.369Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:11.572Z"
+ }
+}

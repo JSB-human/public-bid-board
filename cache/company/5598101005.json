@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 한울지오매틱스",
+  "ceo": "이정현",
+  "opened": "2018-01-20",
+  "region": "충청남도 천안시 동남구 봉명동",
+  "address": "충청남도 천안시 동남구 개목3길 21, 3층(봉명동)",
+  "employees": 30,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:19.397Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:19.597Z"
+ }
+}

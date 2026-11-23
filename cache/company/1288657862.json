@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사첨단공간정보",
+  "ceo": "황희령",
+  "opened": "2011-02-14",
+  "region": "전남광주통합특별시 순천시",
+  "address": "전남광주통합특별시 순천시 강남1길 4-4,504호 (장천동, 웰라이프)",
+  "employees": 20,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:17.321Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:17.525Z"
+ }
+}

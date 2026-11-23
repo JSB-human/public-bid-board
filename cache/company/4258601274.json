@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 다인코어",
+  "ceo": "강지호",
+  "opened": "2019-08-01",
+  "region": "대전광역시 유성구 용계동",
+  "address": "대전광역시 유성구 도안북로 54-45, 301호 (용계동, 산수빌딩)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:27.980Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:28.182Z"
+ }
+}

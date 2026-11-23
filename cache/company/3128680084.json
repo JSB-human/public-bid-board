@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 아이에이치컨설턴시",
+  "ceo": "이서영",
+  "opened": "2023-06-21",
+  "region": "대구광역시 수성구 대흥동",
+  "address": "대구광역시 수성구 알파시티1로42길 11 (대흥동), 1011호(태왕알파시티수성 지식산업센터)",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:51.157Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:51.359Z"
+ }
+}

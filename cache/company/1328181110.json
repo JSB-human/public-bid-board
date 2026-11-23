@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사지월드",
+  "ceo": "유형숙",
+  "opened": "2009-01-14",
+  "region": "경기도 포천시",
+  "address": "경기도 포천시 군내면 용정경제로1길 13-20, 9층 959호 (포천 웰플렉스 용정산단)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:13.496Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:14.571Z"
+ }
+}

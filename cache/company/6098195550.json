@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사대양기술단",
+  "ceo": "이동근",
+  "opened": "2010-09-27",
+  "region": "경상남도 창원시 성산구",
+  "address": "경상남도 창원시 성산구 삼정자로72번길 33 (성주동, 미래빌딩 404호)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:10.093Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:10.299Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이든티앤에스",
+  "ceo": "김연기",
+  "opened": "2009-04-27",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 국회대로62길 14(여의도동), 한국스카우트연맹회관 4층",
+  "employees": 118,
+  "homepage": "http://www.edentns.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:05.516Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01172678",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:06.529Z"
+ }
+}

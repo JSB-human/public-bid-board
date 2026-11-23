@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "씨엠제이씨(주)",
+  "ceo": "윤웅섭",
+  "opened": "2003-02-26",
+  "region": "서울특별시 서초구 양재동",
+  "address": "서울특별시 서초구 마방로 4, 2층 (양재동)",
+  "employees": 21,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:31.338Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01015018",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:33.165Z"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)금강지리정보",
+  "ceo": "김수정",
+  "opened": "2021-02-19",
+  "region": "강원특별자치도 고성군",
+  "address": "강원특별자치도 고성군 죽왕면 삼포민박촌2길 10, 2층",
+  "employees": 9,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:18.559Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:18.781Z"
+ }
+}

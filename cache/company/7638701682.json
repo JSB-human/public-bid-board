@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 아이오테크",
+  "ceo": "조성환",
+  "opened": "2020-02-11",
+  "region": "부산광역시 동구",
+  "address": "부산광역시 동구 중앙대로286번길 4, 3층(초량동, 거향빌딩)",
+  "employees": 20,
+  "homepage": "https://iotech2020.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:18.153Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:18.354Z"
+ }
+}

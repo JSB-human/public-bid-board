@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 사성공간정보",
+  "ceo": "오광희",
+  "opened": "2021-11-30",
+  "region": "전남광주통합특별시 장성군 남면 삼태리",
+  "address": "전남광주통합특별시 장성군 남면 나노산단5로 45 , 제5동 2층 202-1호",
+  "employees": 14,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:12.196Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:12.399Z"
+ }
+}

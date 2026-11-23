@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에이블그리드",
+  "ceo": "엄성용",
+  "opened": "2018-12-11",
+  "region": "경기도 광명시",
+  "address": "경기도 광명시 일직로 43 (일직동), GIDC C동 1407,1408,1409호",
+  "employees": 16,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:36.472Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:36.675Z"
+ }
+}

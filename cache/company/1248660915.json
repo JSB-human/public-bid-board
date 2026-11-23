@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 파나시아",
+  "ceo": "최영섭",
+  "opened": "2007-11-13",
+  "region": "충청남도 아산시",
+  "address": "충청남도 아산시 삼동로 80, 201호 (모종동)",
+  "employees": 109,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:19.803Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:20.574Z"
+ }
+}

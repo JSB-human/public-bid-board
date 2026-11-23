@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 이로엔지니어링",
+  "ceo": "이숙",
+  "opened": "2021-01-07",
+  "region": "제주특별자치도 제주시 노형동",
+  "address": "제주특별자치도 제주시 원노형로 82, 3층 303호 (노형동)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:10.508Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:10.725Z"
+ }
+}

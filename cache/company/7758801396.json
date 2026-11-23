@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 뎁스",
+  "ceo": "황욱철",
+  "opened": "2019-07-01",
+  "region": "경상남도 창원시 의창구 팔용동",
+  "address": "경상남도 창원시 의창구 차룡로48번길 52 (팔용동), 창원스마트혁신지원센터 203호",
+  "employees": 22,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:03.051Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:03.261Z"
+ }
+}

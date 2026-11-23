@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "(주)엠브이픽",
+  "ceo": "안진범",
+  "opened": "2019-01-01",
+  "region": "부산광역시 수영구",
+  "address": "부산광역시 수영구 수영로642번길 28-0 (광안동) 2~5층(엠브이픽빌딩)",
+  "employees": 19,
+  "homepage": "mvpick.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:44.666Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:44.872Z"
+ }
+}

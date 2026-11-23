@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "유한회사 아라기술공사",
+  "ceo": "서은미",
+  "opened": "2009-02-05",
+  "region": "전북특별자치도 임실군 임실읍 이도리",
+  "address": "전북특별자치도 임실군 임실읍 중동1길 2 ",
+  "employees": 40,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:22.850Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:23.059Z"
+ }
+}

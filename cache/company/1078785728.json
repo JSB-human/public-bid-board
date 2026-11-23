@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 에이치이앤티",
+  "ceo": "정용한",
+  "opened": "2013-01-17",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 양산로 84-0 (당산동2가)",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:41.081Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:41.286Z"
+ }
+}

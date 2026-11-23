@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 스마트큐브",
+  "ceo": "임지숙",
+  "opened": "2017-09-15",
+  "region": "전남광주통합특별시 나주시 빛가람동",
+  "address": "전남광주통합특별시 나주시 문화로 204, 302호,303호,304호 (빛가람동)",
+  "employees": 35,
+  "homepage": "www.smartcube-ar.com",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:35.859Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:36.261Z"
+ }
+}

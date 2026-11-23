@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 패스넷",
+  "ceo": "정정훈",
+  "opened": "2006-05-19",
+  "region": "경기도 군포시",
+  "address": "경기도 군포시 군포첨단산업2로 32 (부곡동)",
+  "employees": 60,
+  "homepage": "WWW.PASSNET.CO.KR",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:42.340Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": "01923939",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:44.120Z"
+ }
+}

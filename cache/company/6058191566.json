@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 네오텍",
+  "ceo": "최현덕",
+  "opened": "2008-12-16",
+  "region": "부산광역시 동구",
+  "address": "부산광역시 동구 중앙대로 263, 2002호 (초량동, 국제오피스텔)",
+  "employees": 19,
+  "homepage": "www.neotek.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:44.327Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:45.158Z"
+ }
+}

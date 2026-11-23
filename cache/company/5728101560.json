@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 도영이앤지",
+  "ceo": "전홍희",
+  "opened": "2019-06-14",
+  "region": "전북특별자치도 남원시",
+  "address": "전북특별자치도 남원시 비석길 210, 2층(동충동)",
+  "employees": 15,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:23.267Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:23.472Z"
+ }
+}

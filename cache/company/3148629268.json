@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "주식회사 커뮤",
+  "ceo": "김경환",
+  "opened": "2011-10-26",
+  "region": "대전광역시 유성구 관평동",
+  "address": "대전광역시 유성구 테크노중앙로 74, 4층(관평동, 신영빌딩)",
+  "employees": 60,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:50:55.325Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:50:55.528Z"
+ }
+}

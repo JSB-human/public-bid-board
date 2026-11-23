@@ -1,0 +1,21 @@
+{
+ "basic": {
+  "name": "유한회사 가온기술",
+  "ceo": "김미경",
+  "opened": "2016-02-02",
+  "region": "전북특별자치도 남원시",
+  "address": "전북특별자치도 남원시 향단로 53(하정동)",
+  "employees": 45,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:51:24.088Z"
+ },
+ "industries": [],
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:51:24.292Z"
+ }
+}
