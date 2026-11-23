@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "사단법인 해오름장애인협회",
+  "ceo": "노영주",
+  "opened": "2014-03-05",
+  "region": "서울특별시 중랑구",
+  "address": "서울특별시 중랑구 신내역로3길 40-36, 에이동 609호,610호(신내동, 신내데시앙플렉스)",
+  "employees": 13,
+  "homepage": "www.horapd.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T03:07:01.779Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T03:07:02.171Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T03:07:02.171Z"
+ }
+}

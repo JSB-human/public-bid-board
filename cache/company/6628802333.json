@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 아진정보기술",
+  "ceo": "최서윤",
+  "opened": "2021-10-15",
+  "region": "경상북도 김천시",
+  "address": "경상북도 김천시 거문들1길 12 (삼락동)",
+  "employees": 7,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T03:06:34.066Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 4,
+   "202511": 4,
+   "202605": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T03:06:35.037Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T03:06:35.037Z"
+ }
+}

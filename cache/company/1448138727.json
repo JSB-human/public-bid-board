@@ -1,0 +1,31 @@
+{
+ "basic": {
+  "name": "주식회사 상상티엔에스",
+  "ceo": "윤영애",
+  "opened": "2023-01-25",
+  "region": "경기도 파주시",
+  "address": "경기도 파주시 조리읍 매봉재길 99-63, 2층 201호",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T03:07:21.406Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202602": 8,
+   "202607": 3,
+   "202608": 8,
+   "202609": 5
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T03:07:22.582Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T03:07:22.582Z"
+ }
+}

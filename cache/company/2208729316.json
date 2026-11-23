@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "넥스엔정보기술 주식회사",
+  "ceo": "이영선",
+  "opened": "2006-04-24",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 언주로75길 19, 2층 203호 (역삼동, 역원빌딩)",
+  "employees": 19,
+  "homepage": "www.nexntech.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T03:07:39.257Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T03:07:39.636Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T03:07:39.636Z"
+ }
+}
