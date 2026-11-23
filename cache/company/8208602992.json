@@ -9,13 +9,13 @@
   "homepage": "",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:50:44.251Z"
+  "fetchedAt": "2026-11-23T07:58:14.921Z"
  },
  "industries": [],
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:50:44.454Z"
+  "fetchedAt": "2026-11-23T07:58:15.108Z"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T07:47:35.164Z",
+ "updatedAt": "2026-11-23T07:55:11.521Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -37771,6 +37771,74 @@
     "files": [
      "공고문(제2026-2718호).pdf",
      "제안요청서.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01849376",
+   "ord": "000",
+   "title": "2027년 국립중앙극장 정보서비스 유지관리",
+   "org": "문화체육관광부 국립중앙극장",
+   "amount": 61818182,
+   "deadline": "2026-12-08 10:00:00",
+   "posted": "2026-11-23 16:49:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01849376&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "문화체육관광부 국립중앙극장",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(엔지니어링)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 68000000,
+    "regDeadline": "2026-12-07 18:00",
+    "bidBegin": "2026-11-24 10:00:00",
+    "opening": "2026-12-08 11:00:00",
+    "refNo": "홍보팀-1484",
+    "files": [
+     {
+      "name": "입찰공고문_2027년 국립중앙극장 정보서비스 유지관리(재공고).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849376&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+     },
+     {
+      "name": "입찰공고문_2027년 국립중앙극장 정보서비스 유지관리(재공고).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01849376&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [],
+    "background": [],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027.1.1.~2027.12.31.",
+    "files": [
+     "입찰공고문_2027년 국립중앙극장 정보서비스 유지관리(재공고).pdf"
     ],
     "skipped": []
    }

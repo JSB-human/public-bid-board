@@ -9,7 +9,7 @@
   "homepage": "www.sjinc.co.kr",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:29.209Z"
+  "fetchedAt": "2026-11-23T07:57:03.909Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 70
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:49:32.285Z"
+  "fetchedAt": "2026-11-23T07:57:06.870Z"
  },
  "dart": {
   "corpCode": "01010891",
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:49:34.326Z"
+  "fetchedAt": "2026-11-23T07:57:08.788Z"
  }
 }

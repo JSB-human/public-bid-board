@@ -9,7 +9,7 @@
   "homepage": "www.jyoungsoft.com",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:50:28.051Z"
+  "fetchedAt": "2026-11-23T07:57:59.615Z"
  },
  "industries": [],
  "nps": {
@@ -26,12 +26,12 @@
    "202609": 19
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:50:30.715Z"
+  "fetchedAt": "2026-11-23T07:58:02.142Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:50:30.715Z"
+  "fetchedAt": "2026-11-23T07:58:02.142Z"
  }
 }

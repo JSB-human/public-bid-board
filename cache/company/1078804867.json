@@ -9,7 +9,7 @@
   "homepage": "www.duknsoft.com",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:50:10.017Z"
+  "fetchedAt": "2026-11-23T07:57:42.083Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 36
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:50:13.092Z"
+  "fetchedAt": "2026-11-23T07:57:44.932Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:50:13.092Z"
+  "fetchedAt": "2026-11-23T07:57:44.932Z"
  }
 }

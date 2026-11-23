@@ -9,7 +9,7 @@
   "homepage": "",
   "kinds": "일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:48:37.582Z"
+  "fetchedAt": "2026-11-23T07:56:13.824Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 5
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:48:41.157Z"
+  "fetchedAt": "2026-11-23T07:56:16.652Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:48:41.157Z"
+  "fetchedAt": "2026-11-23T07:56:16.652Z"
  }
 }

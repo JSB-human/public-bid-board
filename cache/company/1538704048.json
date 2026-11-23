@@ -9,7 +9,7 @@
   "homepage": "https://www.bbanana.ai/",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:07.020Z"
+  "fetchedAt": "2026-11-23T07:56:42.264Z"
  },
  "industries": [],
  "nps": {
@@ -20,12 +20,12 @@
    "202609": 4
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:49:08.336Z"
+  "fetchedAt": "2026-11-23T07:56:43.582Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:49:08.336Z"
+  "fetchedAt": "2026-11-23T07:56:43.582Z"
  }
 }

@@ -9,7 +9,7 @@
   "homepage": "http://www.sewonit.com",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:22.437Z"
+  "fetchedAt": "2026-11-23T07:56:57.530Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 14
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:49:25.622Z"
+  "fetchedAt": "2026-11-23T07:57:00.503Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:49:25.622Z"
+  "fetchedAt": "2026-11-23T07:57:00.503Z"
  }
 }

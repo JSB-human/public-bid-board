@@ -9,7 +9,7 @@
   "homepage": "https://unitical.co.kr",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:46.935Z"
+  "fetchedAt": "2026-11-23T07:57:20.910Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 14
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:49:50.956Z"
+  "fetchedAt": "2026-11-23T07:57:24.607Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:49:50.956Z"
+  "fetchedAt": "2026-11-23T07:57:24.607Z"
  }
 }

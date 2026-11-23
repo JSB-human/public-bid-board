@@ -9,7 +9,7 @@
   "homepage": "www.nanumsol.com",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:57.845Z"
+  "fetchedAt": "2026-11-23T07:57:30.922Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 25
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:50:00.939Z"
+  "fetchedAt": "2026-11-23T07:57:33.747Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:50:00.939Z"
+  "fetchedAt": "2026-11-23T07:57:33.747Z"
  }
 }

@@ -9,7 +9,7 @@
   "homepage": "www.idot4u.com",
   "kinds": "물품,일반용역,용역",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:15.367Z"
+  "fetchedAt": "2026-11-23T07:56:50.763Z"
  },
  "industries": [],
  "nps": {
@@ -27,12 +27,12 @@
    "202609": 23
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:49:18.253Z"
+  "fetchedAt": "2026-11-23T07:56:53.488Z"
  },
  "dart": {
   "corpCode": null,
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:49:18.253Z"
+  "fetchedAt": "2026-11-23T07:56:53.488Z"
  }
 }

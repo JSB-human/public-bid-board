@@ -9,7 +9,7 @@
   "homepage": "http://www.covision.co.kr",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:49:34.539Z"
+  "fetchedAt": "2026-11-23T07:57:08.982Z"
  },
  "industries": [],
  "nps": {
@@ -28,12 +28,12 @@
    "202609": 225
   },
   "found": true,
-  "fetchedAt": "2026-11-23T07:49:37.621Z"
+  "fetchedAt": "2026-11-23T07:57:12.124Z"
  },
  "dart": {
   "corpCode": "01309625",
   "listed": false,
   "years": [],
-  "fetchedAt": "2026-11-23T07:49:38.466Z"
+  "fetchedAt": "2026-11-23T07:57:12.857Z"
  }
 }

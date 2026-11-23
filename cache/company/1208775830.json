@@ -9,7 +9,7 @@
   "homepage": "www.simplatform.com",
   "kinds": "물품,일반용역,용역,공사",
   "hq": "본사",
-  "fetchedAt": "2026-11-23T07:50:45.513Z"
+  "fetchedAt": "2026-11-23T07:58:16.086Z"
  },
  "industries": [],
  "dart": {
@@ -35,6 +35,6 @@
     "자본총계": 2786512509
    }
   ],
-  "fetchedAt": "2026-11-23T07:50:47.455Z"
+  "fetchedAt": "2026-11-23T07:58:17.832Z"
  }
 }
