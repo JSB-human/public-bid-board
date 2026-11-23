@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "테라물라",
+  "ceo": "노정옥",
+  "opened": "2021-07-01",
+  "region": "경기도 하남시",
+  "address": "경기도 하남시 미사강변한강로 155-0 (망월동) 524-2",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:42:13.830Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T02:42:14.185Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T02:42:14.185Z"
+ }
+}

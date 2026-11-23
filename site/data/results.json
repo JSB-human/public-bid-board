@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T02:16:40.972Z",
+ "updatedAt": "2026-11-23T02:41:28.573Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
@@ -28,7 +28,7 @@
    ],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T02:16:40.657Z"
+   "checkedAt": "2026-11-23T02:41:28.538Z"
   },
   {
    "id": "R26BK01825240",
@@ -427,7 +427,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T02:16:40.951Z"
+   "checkedAt": "2026-11-23T02:41:28.550Z"
   },
   {
    "id": "R26BK01824094",
@@ -614,7 +614,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T02:16:40.934Z"
+   "checkedAt": "2026-11-23T02:41:28.540Z"
   },
   {
    "id": "R26BK01805039",
@@ -15460,9 +15460,29 @@
    "openedAt": "2026-08-28 15:00:00",
    "participants": 2,
    "note": "개찰완료",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 웨더피아",
+     "bizno": "1198178378",
+     "ceo": "임상욱",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 다비오",
+     "bizno": "1058768437",
+     "ceo": "박주흠",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    }
+   ],
    "final": false,
-   "checkedAt": "2026-11-22T23:41:04.474Z"
+   "checkedAt": "2026-11-22T23:41:04.474Z",
+   "openingKey": "1/0/0"
   },
   {
    "id": "R26BK01671234",
@@ -18979,9 +18999,74 @@
    "openedAt": "2026-08-21 18:00:00",
    "participants": 7,
    "note": "개찰완료",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "위드시스템(주)",
+     "bizno": "1018628756",
+     "ceo": "이형기",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 파란샘",
+     "bizno": "1438133020",
+     "ceo": "박정숙",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 3,
+     "name": "주식회사 임팩시스",
+     "bizno": "2218140156",
+     "ceo": "신승렬",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 4,
+     "name": "주식회사 니트로아이",
+     "bizno": "1358614177",
+     "ceo": "곽영진",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 5,
+     "name": "(주)애니모비",
+     "bizno": "1058702930",
+     "ceo": "홍창민",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": null,
+     "name": "주식회사 디엑시트",
+     "bizno": "2028602160",
+     "ceo": "장성민",
+     "amount": null,
+     "rate": null,
+     "note": "협상평가부적격자"
+    },
+    {
+     "rank": null,
+     "name": "주식회사 럿지",
+     "bizno": "3078803283",
+     "ceo": "노상우",
+     "amount": null,
+     "rate": null,
+     "note": "협상평가부적격자"
+    }
+   ],
    "final": false,
-   "checkedAt": "2026-11-22T23:41:03.220Z"
+   "checkedAt": "2026-11-22T23:41:03.220Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "R26BK01687607",
@@ -224188,9 +224273,29 @@
    "openedAt": "2026-01-15 18:00:00",
    "participants": 2,
    "note": "개찰완료",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "아이씨티웨이 주식회사",
+     "bizno": "1388172429",
+     "ceo": "조유복",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 자몽컴퍼니",
+     "bizno": "1378605882",
+     "ceo": "김상진",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-20T10:10:15.450Z"
+   "checkedAt": "2026-11-20T10:10:15.450Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "R26BK01270502",
@@ -438208,9 +438313,29 @@
    "openedAt": "2025-07-04 10:00:00",
    "participants": 2,
    "note": "개찰완료",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "(주)포씨소프트",
+     "bizno": "2118652456",
+     "ceo": "배정훈",
+     "amount": 104500000,
+     "rate": 94.774,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 백스포트",
+     "bizno": "5648101628",
+     "ceo": "신윤수",
+     "amount": 107800000,
+     "rate": 97.767,
+     "note": "정상"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-21T00:06:41.915Z"
+   "checkedAt": "2026-11-21T00:06:41.915Z",
+   "openingKey": "1/0/0"
   },
   {
    "id": "R25BK00939372",
@@ -527329,9 +527454,38 @@
    "openedAt": "2025-03-31 11:00:00",
    "participants": 3,
    "note": "개찰완료",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 넥스비원",
+     "bizno": "6498100634",
+     "ceo": "김태룡",
+     "amount": 44982000,
+     "rate": 98.281,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 씨와이",
+     "bizno": "7968600629",
+     "ceo": "조영득",
+     "amount": 45257400,
+     "rate": 98.883,
+     "note": "정상"
+    },
+    {
+     "rank": null,
+     "name": "주식회사 케이티엔티",
+     "bizno": "3148164047",
+     "ceo": "오성근",
+     "amount": 40083166,
+     "rate": 87.578,
+     "note": "낙찰하한선 미달"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-21T00:09:55.284Z"
+   "checkedAt": "2026-11-21T00:09:55.284Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "R25BK00729531",
@@ -747514,9 +747668,29 @@
    "openedAt": "2024-07-23 11:00:00",
    "participants": 2,
    "note": "",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 씨이기술",
+     "bizno": "1198603912",
+     "ceo": "정영훈",
+     "amount": 103950000,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "세원엔디이 (주)",
+     "bizno": "1238155791",
+     "ceo": "김현희",
+     "amount": 96600000,
+     "rate": null,
+     "note": "정상"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-21T16:57:44.201Z"
+   "checkedAt": "2026-11-21T16:57:44.201Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "20240715080",
@@ -770867,9 +771041,29 @@
    "openedAt": "2024-06-18 16:00:00",
    "participants": 2,
    "note": "",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 소프트아이텍",
+     "bizno": "3148136537",
+     "ceo": "이학수",
+     "amount": null,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": null,
+     "name": "(주)엔정보기술",
+     "bizno": "6108164135",
+     "ceo": "김종열",
+     "amount": null,
+     "rate": null,
+     "note": "협상평가부적격자"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-21T23:27:34.704Z"
+   "checkedAt": "2026-11-21T23:27:34.704Z",
+   "openingKey": "0/1/0"
   },
   {
    "id": "20240617456",
@@ -787624,9 +787818,92 @@
    "openedAt": "2024-05-28 11:00:00",
    "participants": 9,
    "note": "",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 럭스크레이티브",
+     "bizno": "7068602454",
+     "ceo": "이혜겸",
+     "amount": 21627659,
+     "rate": 89.059,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 블루스카이",
+     "bizno": "5308101983",
+     "ceo": "하아름",
+     "amount": 21692542,
+     "rate": 89.326,
+     "note": "정상"
+    },
+    {
+     "rank": 3,
+     "name": "(주)트루피플",
+     "bizno": "6538602029",
+     "ceo": "임재분",
+     "amount": 21757425,
+     "rate": 89.593,
+     "note": "정상"
+    },
+    {
+     "rank": 4,
+     "name": "주식회사 드림트루",
+     "bizno": "6968100886",
+     "ceo": "성기문",
+     "amount": 21822308,
+     "rate": 89.86,
+     "note": "정상"
+    },
+    {
+     "rank": 5,
+     "name": "주식회사 미래월드",
+     "bizno": "8598101754",
+     "ceo": "장준형",
+     "amount": 21887191,
+     "rate": 90.128,
+     "note": "정상"
+    },
+    {
+     "rank": 6,
+     "name": "주식회사 디오르마",
+     "bizno": "1798102185",
+     "ceo": "윤정숙",
+     "amount": 23853000,
+     "rate": 98.223,
+     "note": "정상"
+    },
+    {
+     "rank": 7,
+     "name": "(주)이노그리드",
+     "bizno": "2208736743",
+     "ceo": "김명진",
+     "amount": 23991000,
+     "rate": 98.791,
+     "note": "정상"
+    },
+    {
+     "rank": null,
+     "name": "주식회사 루트웰",
+     "bizno": "6768601611",
+     "ceo": "노덕권",
+     "amount": 24396000,
+     "rate": 100.459,
+     "note": "예가초과"
+    },
+    {
+     "rank": null,
+     "name": "주식회사데브스택",
+     "bizno": "6628800295",
+     "ceo": "장승욱",
+     "amount": 24400000,
+     "rate": 100.475,
+     "note": "예가초과"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-21T23:27:25.527Z"
+   "checkedAt": "2026-11-21T23:27:25.527Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "20240525517",
@@ -898420,9 +898697,20 @@
    "openedAt": "2023-12-22 17:00:00",
    "participants": 1,
    "note": "",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사리버앤씨",
+     "bizno": "1288636042",
+     "ceo": "최광태",
+     "amount": 81396000,
+     "rate": 100,
+     "note": "정상"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-22T06:59:16.729Z"
+   "checkedAt": "2026-11-22T06:59:16.729Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "20231238670",
@@ -922602,9 +922890,29 @@
    "openedAt": "2023-12-12 14:30:00",
    "participants": 2,
    "note": "",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 젠시스",
+     "bizno": "2118641963",
+     "ceo": "윤재철",
+     "amount": 94089600,
+     "rate": null,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "투앤원정보통신주식회사",
+     "bizno": "2148647194",
+     "ceo": "서승호",
+     "amount": 92664000,
+     "rate": null,
+     "note": "정상"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-22T07:01:23.689Z"
+   "checkedAt": "2026-11-22T07:01:23.689Z",
+   "openingKey": "1/0/0"
   },
   {
    "id": "20231148875",
@@ -927870,9 +928178,65 @@
    "openedAt": "2023-12-08 11:00:00",
    "participants": 6,
    "note": "",
-   "bidders": [],
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "(주)다큐멘테크",
+     "bizno": "2018164227",
+     "ceo": "임지연",
+     "amount": 36284800,
+     "rate": 88.792,
+     "note": "정상"
+    },
+    {
+     "rank": 2,
+     "name": "주식회사 엑스아이티",
+     "bizno": "2148703698",
+     "ceo": "이미훈",
+     "amount": 36352800,
+     "rate": 88.958,
+     "note": "정상"
+    },
+    {
+     "rank": 3,
+     "name": "(주)가산",
+     "bizno": "1308656094",
+     "ceo": "서택수",
+     "amount": 36458400,
+     "rate": 89.217,
+     "note": "정상"
+    },
+    {
+     "rank": null,
+     "name": "주식회사 드림트루",
+     "bizno": "6968100886",
+     "ceo": "성기문",
+     "amount": null,
+     "rate": null,
+     "note": "서류미제출"
+    },
+    {
+     "rank": null,
+     "name": "(주)에버비젼",
+     "bizno": "4098173825",
+     "ceo": "조광종",
+     "amount": null,
+     "rate": null,
+     "note": "서류미제출"
+    },
+    {
+     "rank": null,
+     "name": "안티고네 주식회사",
+     "bizno": "1198700703",
+     "ceo": "김준휘",
+     "amount": null,
+     "rate": null,
+     "note": "서류미제출"
+    }
+   ],
    "final": true,
-   "checkedAt": "2026-11-22T07:01:10.436Z"
+   "checkedAt": "2026-11-22T07:01:10.436Z",
+   "openingKey": "0/0/0"
   },
   {
    "id": "20231203749",

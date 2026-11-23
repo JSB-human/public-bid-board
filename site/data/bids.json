@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T02:15:56.879Z",
+ "updatedAt": "2026-11-23T02:40:29.687Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -34071,6 +34071,185 @@
     "skipped": [
      "산출내역서.xlsx"
     ]
+   }
+  },
+  {
+   "id": "R26BK01847265",
+   "ord": "000",
+   "title": "2027년 클라우드 기반 부동산종합공부시스템 유지관리 및 운영지원",
+   "org": "국토교통부",
+   "amount": 1816363636,
+   "deadline": "2026-12-24 10:00:00",
+   "posted": "2026-11-23 11:15:15",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847265&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 2010700400,
+    "regDeadline": "2026-12-23 18:00",
+    "bidBegin": "2026-12-22 10:00:00",
+    "opening": "2026-12-24 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "2. 과업 및 제안요청서(2027년 클라우드 기반 부동산종합공부시스템 유지관리 및 운영지원)_261119.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064080&rfpOrd=000&rfpUntyAtchFileNo=5",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "(공고서) 2027년 클라우드 기반 부동산종합공부시스템 유지관리 및 운영지원.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847265&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [],
+    "background": [
+     "○ 안정적인 부동산종합공부시스템 운영을 위한 사업추진 필요",
+     "- 클라우드 기반 부동산종합공부시스템(이하 “KRAS”)의 운영 등 정보화 환경변화에 적시 대응 필요",
+     "- 클라우드 기반 KRAS의 무중단 운영과 민원인·공무원 사용자 지원 등을 위한 시스템 운영관리 지원 필요",
+     "- 원활한 대국민 서비스와 행정 사무지원을 위해 전문 인력을 통한 종합적인 유지관리 및 운영지원체계 구성"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템유지관리서비스",
+      "code": "8111189901"
+     }
+    ],
+    "period": "2027. 1. 1.부터 ~ 2027. 12. 31.",
+    "files": [
+     "(공고서) 2027년 클라우드 기반 부동산종합공부시스템 유지관리 및 운영지원.pdf",
+     "2. 과업 및 제안요청서(2027년 클라우드 기반 부동산종합공부시스템 유지관리 및 운영지원)_261119.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01802525",
+   "ord": "001",
+   "title": "2027년 남양주도시공사 정보화시스템 통합유지관리 용역(협상에 의한 계약)",
+   "org": "남양주도시공사",
+   "amount": 480493636,
+   "deadline": "2026-11-30 10:00:00",
+   "posted": "2026-11-23 11:20:09",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01802525&bidPbancOrd=001",
+   "keywords": [
+    "시스템",
+    "정보화",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "변경공고",
+    "reNotice": false,
+    "noticeOrg": "남양주도시공사",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 528543000,
+    "regDeadline": "2026-11-27 18:00",
+    "bidBegin": "2026-11-23 19:00:00",
+    "opening": "2026-11-30 11:00:00",
+    "refNo": "Z015641",
+    "files": [
+     {
+      "name": "2027년 남양주도시공사 정보화시스템 통합유지 관리_과업내용서.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01802525&bidPbancOrd=001&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. (변경)공고문(2027년 남양주도시공사 정보화시스템 통합유지관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01802525&bidPbancOrd=001&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "1. (변경)공고문(2027년 남양주도시공사 정보화시스템 통합유지관리 용역).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01802525&bidPbancOrd=001&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "□ 체계적인 정보시스템(부대장비 포함) 통합 유지관리",
+     "○ 회원관리시스템의 안정적인 운영 유지보수",
+     "○ 그룹웨어 상의 new조직도의 안정적인 운영 유지보수",
+     "○ 각 센터에서 운영 중인 무인발권기 장애 발생 시 신속 대응",
+     "○ 정보시스템 상시 모니터링 및 예방점검",
+     "○ 전문 요원 상주를 통한 상시 유지관리 및 장애 대응 체계 제공",
+     "○ 시스템 통합 및 자원분배를 통한 전산 자원 현행화",
+     "○ 장애 발생 시 신속한 대응 조치 및 기술지원",
+     "○ 상용 및 응용프로그램 유지관리(패치 적용 등 기술지원)",
+     "○ 정기 또는 수시 정보시스템 백업 지원",
+     "○ 정보자원 현황 진단 및 재배치ㆍ재구성 등의 작업을 통한 시스템 향상 및 개선방안 제시",
+     "○ 정보시스템 재해복구 모의훈련(연 1회) 방안 마련 및 실시 지원",
+     "□ 정보보호 업무 수행",
+     "○ 정보보호 시스템 유지관리 및 기술지원"
+    ],
+    "background": [
+     "□ 現 「정보화시스템 통합유지관리 용역*」계약 만료(2026. 12. 31.)에 따른 차기 사업자 선정 필요",
+     "* 공사에서 운영 중인 정보시스템(HW, 상용SW, 응용프로그램, 네트워크, 보안장비 등)을 항상 최적의 상태로 유지 관리하기 위한 정기점검, 장애조치, 기술지원 등을 수행하는 사업",
+     "□ 공사 정보화시스템에 대한 지속적인 장애예방 활동과 신속한 장애조치를 통한 24시간 365일 안정적인 행정서비스 제공 기반 마련",
+     "□ 공사 정보화시스템은 남양주시민의 자료가 보관되어 사용자들이 상시 이용하는 시스템으로 항상 최적의 운영상태 유지를 위한 분야별 전문기술 지원이 필요"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템유지관리서비스",
+      "code": "8111189901"
+     },
+     {
+      "name": "소프트웨어유지및지원서비스",
+      "code": "8111229901"
+     }
+    ],
+    "period": "2027. 1. 1.~2027. 12. 31.",
+    "files": [
+     "1. (변경)공고문(2027년 남양주도시공사 정보화시스템 통합유지관리 용역).pdf",
+     "2027년 남양주도시공사 정보화시스템 통합유지 관리_과업내용서.hwp"
+    ],
+    "skipped": []
    }
   }
  ]

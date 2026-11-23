@@ -7623,5 +7623,35 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01847265": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "2. 과업 및 제안요청서(2027년 클라우드 기반 부동산종합공부시스템 유지관리 및 운영지원)_261119.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064080&rfpOrd=000&rfpUntyAtchFileNo=5",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01802525": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
  }
 }

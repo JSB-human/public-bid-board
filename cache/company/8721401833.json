@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "한숲",
+  "ceo": "한유리",
+  "opened": "2022-04-25",
+  "region": "대구광역시 북구",
+  "address": "대구광역시 북구 경진로1길 32-8, 102동 3층 301호(복현동, 뉴그랜파크)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T02:42:44.299Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T02:42:44.654Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T02:42:44.654Z"
+ }
+}
