@@ -145,6 +145,28 @@
     box-shadow: var(--shadow); padding: 0 16px 0 46px; font: inherit; font-size: 16px; outline: none; transition: box-shadow .15s; }
   .search input::placeholder { color: var(--faint); }
   .search input:focus { box-shadow: 0 0 0 2px var(--blue); }
+  .filter-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+  .filter-fields label { display: grid; gap: 3px; min-width: 0; color: var(--sub); font-size: 12px; font-weight: 700; }
+  .filter-fields select, .year-pick { width: 100%; min-width: 0; min-height: 38px; padding: 0 8px;
+    border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--text); font: inherit; font-size: 14px; }
+  .filter-fields select:focus-visible, .year-pick:focus-visible, .filter-more summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 1px; }
+  .filter-more { margin-top: 8px; }
+  .filter-more > summary { width: fit-content; padding: 4px 2px; color: var(--sub); font-size: 13px; font-weight: 700; cursor: pointer; }
+  .filter-foot { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 12px; }
+  .filter-foot .filter-more[open] { flex-basis: 100%; }
+  .filter-foot .toggle { margin: 4px 0 0; padding: 0; font-size: 13px; }
+  .list-overview { margin: 2px 0 8px; padding: 8px 10px; border-radius: 10px; background: var(--card); }
+  .list-overview > b { display: block; margin: 0 0 5px; font-size: 12px; color: var(--sub); }
+  .list-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px 8px; }
+  .list-metrics span { display: block; color: var(--sub); font-size: 11px; line-height: 1.25; }
+  .list-metrics strong { font-size: 15px; font-variant-numeric: tabular-nums; }
+  .history-heading { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 12px; margin: 20px 0 8px; }
+  .history-heading .section-title { margin: 0; }
+  .history-heading .year-pick { width: auto; }
+  .reg-time { color: var(--sub); font-size: 12px; }
+  .reg-time.soon { color: var(--blue-text); }
+  .reg-time.past { color: var(--red); }
+  .row-dates { display: flex; flex-wrap: wrap; column-gap: 8px; font-size: 12px; color: var(--sub); }
   .chips { display: flex; gap: 8px; margin-top: 12px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; align-items: center; }
   .chips::-webkit-scrollbar { display: none; }
   .chip { flex: none; border: 0; cursor: pointer; height: 36px; padding: 0 14px; border-radius: 999px; font-size: 14px; font-weight: 600;
@@ -160,6 +182,7 @@
 
   .count { padding: 4px 4px 10px; color: var(--muted); font-size: 14px; font-weight: 500; display: flex; justify-content: space-between; }
   .count b { color: var(--text); font-weight: 700; }
+  .count[hidden] { display: none; }
 
   /* 공고 카드 */
   #list { display: grid; gap: 10px; padding-bottom: 8px; }
@@ -498,6 +521,10 @@
   .mb-col .o { background: var(--blue); } .mb-col .f { background: var(--red); opacity: .7; } .mb-col .w { background: var(--faint); }
   .mb span { font-size: 11px; color: var(--muted); }
   .mb b { font-size: 12px; font-variant-numeric: tabular-nums; }
+  .period-table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  .period-table th, .period-table td { padding: 6px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+  .period-table th:first-child { text-align: left; }
+  .period-table thead { color: var(--sub); }
   .hb { display: grid; grid-template-columns: 18px minmax(0, 1.1fr) 1fr auto; gap: 8px; align-items: center; padding: 6px 0; text-decoration: none; color: var(--text); font-size: 14px; }
   a.hb:hover .hb-n { color: var(--blue); }
   .hb-i { color: var(--muted); font-weight: 700; font-size: 12px; }
@@ -718,6 +745,7 @@
     .pane .tiles { grid-template-columns: repeat(2, 1fr); }
     .pane-h + .detail > .cta { display: none; }
   }
+  .col-list .toolbar:has(.filter-more[open]) { position: static; }
   @media (min-width: 1040px) {
     .split { grid-template-columns: minmax(0, 40fr) minmax(0, 60fr); }
     /* 결과 요약 세 장을 한 줄에 놓아 목록이 빨리 보이게 */
@@ -769,20 +797,29 @@
         <div class="inner">
           <div class="search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input type="search" id="q" placeholder="사업명·발주기관 검색" aria-label="검색">
+            <input type="search" id="q" placeholder="사업명·발주기관·공고번호 검색" aria-label="공고 검색">
           </div>
-          <div class="kinds" id="kinds" role="group" aria-label="분야"></div>
-          <div class="chips" id="chips">
-            <button class="chip" data-sort="deadline">마감 빠른 순</button>
-            <button class="chip" data-sort="amount">금액 높은 순</button>
-            <span class="sep"></span>
-            <button class="chip" data-min="0">전체 금액</button>
-            <button class="chip" data-min="100000000">1억 이상</button>
-            <button class="chip" data-min="300000000">3억 이상</button>
+          <div class="filter-fields">
+            <label>분야 <select id="openKind"><option value="">전체 분야</option></select></label>
+            <label>공공조달 분류 <select id="openCategory"><option value="">전체 분류</option></select></label>
+          </div>
+          <div class="filter-foot">
+            <details class="filter-more" id="openMore">
+              <summary>상세 조건</summary>
+              <div class="filter-fields">
+                <label>계약 방법 <select id="openMethod"><option value="">전체 계약 방법</option></select></label>
+                <label>낙찰 방법 <select id="openAward"><option value="">전체 낙찰 방법</option></select></label>
+                <label>참가 지역 제한 <select id="openRegion"><option value="">전체 지역</option></select></label>
+                <label>참가등록 마감 <select id="openRegistration"><option value="">전체</option><option value="soon">3일 이내</option><option value="upcoming">마감 전</option><option value="past">마감 지남</option><option value="unknown">일시 정보 없음</option></select></label>
+                <label>추정가격 <select id="openMin"><option value="">전체 금액</option><option value="100000000">1억 이상</option><option value="300000000">3억 이상</option></select></label>
+                <label>정렬 <select id="openSort"><option value="deadline">입찰 마감 빠른 순</option><option value="registration">참가등록 마감 빠른 순</option><option value="amount">금액 높은 순</option></select></label>
+              </div>
+            </details>
             <label class="toggle">마감 전만 <input type="checkbox" id="open" checked></label>
           </div>
         </div>
       </div>
+      <div class="list-overview" id="openSummary" aria-live="polite"></div>
       <div class="count" id="count"></div>
       <div id="list" class="rows"></div>
     </div>
@@ -802,9 +839,9 @@
 <main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
-<script type="module" src="insights.js?v=20261123"></script>
+<script type="module" src="insights.js?v=20261123-history"></script>
 <script>
-const state = { items: [], sort: 'deadline', min: 0, only: null, day: null, kind: null, open: new Set(), sel: null };
+const state = { items: [], only: null, day: null, open: new Set(), sel: null, orgYears: new Map() };
 // 넓은 화면에서는 목록 옆에 상세를 나란히 두고, 좁은 화면에서는 줄을 눌러 펼친다.
 const WIDE = matchMedia('(min-width: 780px)');
 const wide = () => WIDE.matches;
@@ -812,7 +849,7 @@ const eokS = (n) => (n == null ? '-' : n >= 1e8 ? (n / 1e8).toFixed(n >= 1e10 ? 
 // 발주기관별 요약을 읽고 열려 있는 공고 상세에 붙인다.
 let past = null;
 let pastRequest = null;
-const KINDS = { ai: 'AI', map: '공간정보', data: '데이터', city: '스마트도시', etc: '기타' };
+const KINDS = { ai: 'AI', map: '공간정보', data: '데이터', city: '스마트도시', it: '정보시스템·SW', etc: '기타' };
 const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
 
@@ -830,10 +867,11 @@ const DOWN = '<path d="M12 4v11M7 10l5 5 5-5M5 20h14"/>';
 
 function kindOf(x) {
   const s = (x.keywords || []).join(' ') + ' ' + x.title;
-  if (/AI|인공지능|생성형/.test(s)) return 'ai';
+  if (/\bAI\b|인공지능|생성형/i.test(s)) return 'ai';
   if (/스마트도시|스마트시티|드론/.test(s)) return 'city';
   if (/공간정보|GIS|도시계획|3차원|디지털\s?트윈|지도/.test(s)) return 'map';
   if (/빅데이터|데이터/.test(s)) return 'data';
+  if (/시스템|플랫폼|정보화|소프트웨어|전산|홈페이지|\bSW\b|\bIT\b/i.test(s)) return 'it';
   return 'etc';
 }
 
@@ -850,6 +888,32 @@ function won(n) {
 function esc(s) {
   return String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
+const searchKey = (s) => String(s ?? '').normalize('NFKC').toLowerCase();
+const searchTerms = (s) => searchKey(s).trim().split(/\s+/).filter(Boolean);
+const yearOf = (s) => String(s || '').match(/^([0-9]{4})-/)?.[1] || '';
+const resultDate = (r) => r.openedAt || r.deadline || '';
+const categoryOf = (x) => (x.detail?.category || x.category || [])[0]?.trim() || '';
+const awardOf = (x) => (x.detail?.award || x.award || '').split('-')[0].trim();
+const regionsOfBid = (x) => [...new Set([...(x.regions || []), ...(x.doc?.regionReq || [])])];
+const countText = (n) => Number(n).toLocaleString('ko-KR');
+const yearsOf = (rows, date) => [...new Set(rows.map((r) => yearOf(date(r))).filter(Boolean))].sort().reverse();
+
+function setOptions(select, entries) {
+  const before = select.value;
+  select.replaceChildren(select.options[0], ...entries.map(([value, label]) => new Option(label, value)));
+  if ([...select.options].some((option) => option.value === before)) select.value = before;
+}
+
+function groupedOptions(values) {
+  const counts = new Map();
+  for (const value of values.filter(Boolean)) counts.set(value, (counts.get(value) || 0) + 1);
+  return [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko')).map(([value, n]) => [value, `${value} (${countText(n)})`]);
+}
+
+function listOverview(title, tiles) {
+  return `<b>${title}</b><div class="list-metrics">${tiles.map(([label, value]) => `<div><span>${label}</span><strong>${value}</strong></div>`).join('')}</div>`;
+}
+
 function kst(t) { return new Date(t + 9 * 3600000); }
 function dueLabel(t) {
   const d = kst(t);
@@ -865,16 +929,17 @@ function daysLeft(t, now) {
   return Math.round((Date.UTC(b.getUTCFullYear(), b.getUTCMonth(), b.getUTCDate()) - Date.UTC(a.getUTCFullYear(), a.getUTCMonth(), a.getUTCDate())) / DAY);
 }
 const isOpen = (x, now) => x._dl === null || x._dl >= now;
-const isSoon = (x, now) => x._dl !== null && x._dl >= now && x._dl - now <= 3 * DAY;
+const imminent = (t, now) => t !== null && t >= now && t - now <= 3 * DAY;
+const isSoon = (x, now) => imminent(x._bidDeadline, now);
 const isRe = (x) => !!(x.detail && x.detail.reNotice);
 const dayKey = (t) => { const d = kst(t); return d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0') + '-' + String(d.getUTCDate()).padStart(2, '0'); };
 
-// 마감 달력과 분야 단추. 마감 전 공고만 센다.
+// 입찰 마감시각이 있는 공고를 달력에 표시한다.
 function renderGlance() {
   const now = Date.now();
   const open = state.items.filter((x) => isOpen(x, now));
   const by = new Map();
-  for (const x of open) if (x._dl !== null) by.set(dayKey(x._dl), (by.get(dayKey(x._dl)) || 0) + 1);
+  for (const x of open) if (x._bidDeadline !== null) by.set(dayKey(x._bidDeadline), (by.get(dayKey(x._bidDeadline)) || 0) + 1);
   const WD = ['일', '월', '화', '수', '목', '금', '토'];
   let inRange = 0;
   const cells = Array.from({ length: 14 }, (_, i) => {
@@ -884,13 +949,20 @@ function renderGlance() {
     return `<button class="day ${i === 0 ? 'today' : ''} ${wd === 0 ? 'sun' : wd === 6 ? 'sat' : ''}" data-day="${key}" aria-pressed="${state.day === key}" ${n ? '' : 'disabled'}
       aria-label="${d.getUTCMonth() + 1}월 ${d.getUTCDate()}일 마감 ${n}건"><span class="wd">${i === 0 ? '오늘' : WD[wd]}</span><b>${date}</b><em class="${n && i <= 3 ? 'soon' : ''}">${n || '·'}</em></button>`;
   }).join('');
-  const later = open.filter((x) => x._dl !== null).length - inRange;
+  const later = open.filter((x) => x._bidDeadline !== null).length - inRange;
   $('cal').innerHTML = `<div class="cal-h"><b>마감 달력</b><span>앞으로 2주 ${inRange}건${later > 0 ? ` · 그 뒤 ${later}건` : ''}</span></div><div class="cal-days">${cells}</div>`;
+}
 
-  const count = {};
-  for (const x of open) count[kindOf(x)] = (count[kindOf(x)] || 0) + 1;
-  $('kinds').innerHTML = `<button class="chip" data-kind="" aria-pressed="${!state.kind}">전체 분야</button>` + Object.entries(KINDS).filter(([k]) => count[k])
-    .map(([k, name]) => `<button class="chip" data-kind="${k}" aria-pressed="${state.kind === k}"><i class="kd k-${k}"></i>${name}<b>${count[k]}</b></button>`).join('');
+function populateOpenFilters() {
+  const items = state.items;
+  setOptions($('openKind'), Object.entries(KINDS).map(([key, label]) => [key, label]));
+  setOptions($('openCategory'), groupedOptions(items.map(categoryOf)));
+  setOptions($('openMethod'), groupedOptions(items.map((x) => x.method)));
+  setOptions($('openAward'), groupedOptions(items.map(awardOf)));
+  const regions = groupedOptions(items.flatMap(regionsOfBid));
+  setOptions($('openRegion'), [
+    ['restricted', '지역 제한 있음'], ['unrestricted', '등록된 지역 제한 없음'], ...regions,
+  ]);
 }
 
 function renderStats() {
@@ -916,26 +988,37 @@ function loadOrgHistory() {
 }
 
 function render() {
-  const q = $('q').value.trim().toLowerCase();
+  const terms = searchTerms($('q').value);
   const openOnly = $('open').checked;
   const now = Date.now();
+  const kind = $('openKind').value, category = $('openCategory').value;
+  const method = $('openMethod').value, award = $('openAward').value, region = $('openRegion').value;
+  const registration = $('openRegistration').value, min = Number($('openMin').value), sort = $('openSort').value;
 
-  document.querySelectorAll('[data-sort]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.sort === state.sort));
-  document.querySelectorAll('[data-min]').forEach((b) => b.setAttribute('aria-pressed', Number(b.dataset.min) === state.min));
   document.querySelectorAll('[data-only]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.only === state.only));
 
   const rows = state.items.filter((x) => {
-    if (q && !(x.title + ' ' + x.org).toLowerCase().includes(q)) return false;
-    if (state.min && (x.amount ?? 0) < state.min) return false;
+    if (terms.length && !terms.every((term) => x._search.includes(term))) return false;
+    if (min && (x.amount ?? 0) < min) return false;
     if (openOnly && !isOpen(x, now)) return false;
     if (state.only === 'soon' && !isSoon(x, now)) return false;
     if (state.only === 're' && !isRe(x)) return false;
-    if (state.day && (x._dl === null || dayKey(x._dl) !== state.day)) return false;
-    if (state.kind && kindOf(x) !== state.kind) return false;
+    if (state.day && (x._bidDeadline === null || dayKey(x._bidDeadline) !== state.day)) return false;
+    if (kind && kindOf(x) !== kind || category && categoryOf(x) !== category) return false;
+    if (method && x.method !== method || award && awardOf(x) !== award) return false;
+    const regions = regionsOfBid(x);
+    if (region === 'restricted' && !regions.length) return false;
+    if (region === 'unrestricted' && (regions.length || !Array.isArray(x.regions))) return false;
+    if (region && region !== 'restricted' && region !== 'unrestricted' && !regions.includes(region)) return false;
+    if (registration === 'soon' && !imminent(x._regDeadline, now)) return false;
+    if (registration === 'upcoming' && (x._regDeadline === null || x._regDeadline < now)) return false;
+    if (registration === 'past' && (x._regDeadline === null || x._regDeadline >= now)) return false;
+    if (registration === 'unknown' && x._regDeadline !== null) return false;
     return true;
   });
   rows.sort((a, b) => {
-    const [av, bv, dir] = state.sort === 'amount' ? [a.amount, b.amount, -1] : [a._dl, b._dl, 1];
+    const [av, bv, dir] = sort === 'amount' ? [a.amount, b.amount, -1]
+      : sort === 'registration' ? [a._regDeadline, b._regDeadline, 1] : [a._bidDeadline, b._bidDeadline, 1];
     if (av == null && bv == null) return 0;
     if (av == null) return 1;
     if (bv == null) return -1;
@@ -943,14 +1026,21 @@ function render() {
   });
 
   document.querySelectorAll('[data-day]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.day === state.day));
-  document.querySelectorAll('[data-kind]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.kind === (state.kind || '')));
   const label = [
     state.only === 'soon' ? '3일 안에 마감' : state.only === 're' ? '재공고' : '',
     state.day ? Number(state.day.slice(5, 7)) + '월 ' + Number(state.day.slice(8)) + '일 마감' : '',
-    state.kind ? KINDS[state.kind] : '',
   ].filter(Boolean).join(' · ');
-  $('count').innerHTML = `<span><b>${rows.length}</b>건${label ? ' · ' + label : ''}</span>` +
-    (label ? '<button class="chip" id="clearOnly" style="height:28px;font-size:13px">필터 해제</button>' : '');
+  const moreCount = [method, award, region, registration, min, sort !== 'deadline'].filter(Boolean).length;
+  $('openMore').querySelector('summary').textContent = moreCount ? `상세 조건 (${moreCount})` : '상세 조건';
+  $('openSummary').innerHTML = listOverview('목록 요약', [
+    ['공고', `${countText(rows.length)}건`], ['입찰 3일 이내', `${countText(rows.filter((x) => isSoon(x, now)).length)}건`],
+    ['등록 3일 이내', `${countText(rows.filter((x) => imminent(x._regDeadline, now)).length)}건`],
+    ['등록 마감 지남', `${countText(rows.filter((x) => x._regDeadline !== null && x._regDeadline < now).length)}건`],
+  ]);
+  const active = label || kind || category || moreCount || terms.length || !openOnly;
+  $('count').hidden = !active;
+  $('count').innerHTML = `<span>${esc(label)}</span>` +
+    (active ? '<button class="chip" id="clearOnly" style="height:28px;font-size:13px">검색 조건 초기화</button>' : '');
 
   const W = wide();
   state.rows = rows;
@@ -987,6 +1077,14 @@ function tagsHtml(x) {
   return t.join('');
 }
 
+function registrationText(x, now) {
+  const t = x._regDeadline;
+  const tone = t === null ? '' : t < now ? 'past' : imminent(t, now) ? 'soon' : '';
+  const status = tone === 'past' ? ' · 지남' : tone === 'soon' ? (daysLeft(t, now) === 0 ? ' · 오늘' : ' · 임박') : '';
+  const label = t === null ? '일시 정보 없음' : shortDate(t) + status;
+  return `<span class="reg-time ${tone}">참가등록 마감 ${label}</span>`;
+}
+
 function rowHtml(x, now, W) {
   const kind = kindOf(x), on = W ? state.sel === x.id : state.open.has(x.id);
   const closed = x._dl !== null && x._dl < now;
@@ -996,6 +1094,7 @@ function rowHtml(x, now, W) {
       <span class="rbody">
         <span class="rtitle">${esc(x.title)}</span>
         <span class="rmeta"><span>${esc(x.org)}</span>${tagsHtml(x)}</span>
+        <span class="row-dates"><span>${x._bidDeadline !== null ? `입찰 마감 ${shortDate(x._bidDeadline)}` : x._dl !== null ? `개찰 ${shortDate(x._dl)}` : '입찰 마감 일시 미등록'}</span>${registrationText(x, now)}</span>
       </span>
       <span class="rside"><b>${eokS(x.amount)}</b><small><i class="kd k-${kind}"></i>${KINDS[kind]}</small></span>
     </button>
@@ -1014,7 +1113,8 @@ function paneHtml(x, now) {
   return `<div class="pane-h">
       <div class="pane-tags"><span class="badge"><i class="kd k-${kind}"></i>${KINDS[kind]}</span>${tagsHtml(x)}${dday}</div>
       <h2>${esc(x.title)}</h2>
-      <div class="pane-org">${esc(x.org)}${x._dl !== null ? ` · ${dueLabel(x._dl)} ${x._dlWord}` : ''}</div>
+      <div class="pane-org">${esc(x.org)}${x._dl !== null ? ` · ${x._dlWord === '개찰' ? '개찰' : '입찰 마감'} ${dueLabel(x._dl)}` : ''}</div>
+      ${registrationText(x, now)}
       <div class="pane-amt"><b>${won(x.amount)}<small>추정가격</small></b>
         <a class="cta" href="${esc(x.url)}" target="_blank" rel="noopener">나라장터 원문 ${svg(OUT)}</a></div>
     </div>${detailHtml(x, now)}`;
@@ -1037,19 +1137,30 @@ function checksHtml(x) {
 function orgHistoryHtml(x) {
   if (!past) return '';
   const h = past.get(x.org);
-  const head = '<div class="section-title">이 기관의 지난 공고 <small>같은 조건으로 모은 것만</small></div>';
-  if (!h) return head + '<div class="note">아직 모인 지난 공고가 없어요.</div>';
+  if (!h) return '<div class="section-title">이 기관의 지난 공고</div><div class="note">아직 모인 지난 공고가 없어요.</div>';
+  const years = Object.keys(h.years || {}).sort().reverse();
+  const selected = state.orgYears.get(x.org) || '';
+  return `<section class="org-history" data-org="${esc(x.org)}"><div class="history-heading">
+      <div class="section-title">이 기관의 지난 공고</div>
+      ${years.length ? `<select class="year-pick" data-org-year aria-label="발주기관 이력 연도"><option value="">전체 연도</option>${years.map((year) => `<option value="${esc(year)}" ${year === selected ? 'selected' : ''}>${esc(year)}년</option>`).join('')}</select>` : ''}
+    </div><div class="org-history-body">${orgHistoryBody(x.org, selected)}</div></section>`;
+}
+
+function orgHistoryBody(org, year) {
+  const all = past.get(org);
+  const h = all.years?.[year] || all;
   const list = h.recent.map((r) => {
     const [st, cls] = r.lead ? ['낙찰', 'ok'] : r.failed ? ['유찰', 'bad'] : ['대기', ''];
     const who = r.lead ? r.lead.name + (r.lead.others ? ` 외 ${r.lead.others}곳` : '') : r.failed ? '응찰 업체 없음 또는 부적격' : '결과 대기';
-    return `<a href="#results" data-goto="${esc(r.id)}"><span class="hs ${cls}">${st}</span><span class="ht"><b>${esc(r.title)}</b><small>${esc(who)}${r.participants ? ` · ${r.participants}곳 참여` : ''}</small></span><span class="ha">${eokS(r.amount)}</span></a>`;
+    return `<a href="#results" data-goto="${esc(r.id)}"><span class="hs ${cls}">${st}</span><span class="ht"><b>${esc(r.title)}</b><small>${r.date ? esc(r.date) + ' · ' : ''}${esc(who)}${r.participants ? ` · ${r.participants}곳 참여` : ''}</small></span><span class="ha">${eokS(r.amount)}</span></a>`;
   }).join('');
-  return `${head}<div class="checks">
+  return `<div class="checks">
       <div class="check"><small>지난 공고</small><b>${h.total}건</b></div>
       <div class="check ${h.won ? 'good' : ''}"><small>낙찰·계약</small><b>${h.won}건</b></div>
       <div class="check ${h.failed ? 'bad' : ''}"><small>유찰</small><b>${h.failed}건</b></div>
       <div class="check"><small>평균 참여</small><b>${h.average == null ? '-' : h.average.toFixed(1) + '곳'}</b></div>
-    </div><div class="orghist">${list}</div>`;
+    </div><div class="orghist">${list}</div>
+    <div class="note"><a href="#results?org=${encodeURIComponent(org)}${year ? `&amp;year=${encodeURIComponent(year)}` : ''}">이 기관의 결과 전체 보기</a></div>`;
 }
 
 function when(s) {
@@ -1180,6 +1291,12 @@ $('openSplit').addEventListener('click', (e) => {
   else if (state.open.has(id)) state.open.delete(id); else state.open.add(id);
   render();
 });
+$('openSplit').addEventListener('change', (e) => {
+  if (!e.target.matches('[data-org-year]')) return;
+  const history = e.target.closest('.org-history');
+  state.orgYears.set(history.dataset.org, e.target.value);
+  history.querySelector('.org-history-body').innerHTML = orgHistoryBody(history.dataset.org, e.target.value);
+});
 // 넓은 화면: 위·아래 화살표(또는 j·k)로 공고를 넘겨 본다
 document.addEventListener('keydown', (e) => {
   if (!wide() || $('view-open').hidden || e.target.closest('input, textarea, select') || document.querySelector('.viewer.show')) return;
@@ -1193,13 +1310,8 @@ document.addEventListener('keydown', (e) => {
   document.querySelector('#list .item.sel')?.scrollIntoView({ block: 'nearest' });
 });
 WIDE.addEventListener('change', () => { $('pane').dataset.id = '~'; render(); window.dispatchEvent(new Event('layoutchange')); });
-$('chips').addEventListener('click', (e) => {
-  const b = e.target.closest('button');
-  if (!b) return;
-  if (b.dataset.sort) state.sort = b.dataset.sort;
-  if (b.dataset.min !== undefined) state.min = Number(b.dataset.min);
-  render();
-});
+const openFilters = [...$('openSplit').querySelectorAll('.filter-fields select')];
+openFilters.forEach((select) => select.addEventListener('change', render));
 document.querySelector('.stats').addEventListener('click', (e) => {
   const b = e.target.closest('[data-only]');
   if (!b) return;
@@ -1207,18 +1319,19 @@ document.querySelector('.stats').addEventListener('click', (e) => {
   render();
 });
 $('count').addEventListener('click', (e) => {
-  if (e.target.id === 'clearOnly') { state.only = null; state.day = null; state.kind = null; render(); }
+  if (e.target.id !== 'clearOnly') return;
+  state.only = null;
+  state.day = null;
+  $('q').value = '';
+  $('open').checked = true;
+  for (const select of openFilters) select.selectedIndex = 0;
+  $('q').focus();
+  render();
 });
 $('cal').addEventListener('click', (e) => {
   const b = e.target.closest('[data-day]');
   if (!b || b.disabled) return;
   state.day = state.day === b.dataset.day ? null : b.dataset.day;
-  render();
-});
-$('kinds').addEventListener('click', (e) => {
-  const b = e.target.closest('[data-kind]');
-  if (!b) return;
-  state.kind = b.dataset.kind || null;
   render();
 });
 ['q', 'open'].forEach((id) => $(id).addEventListener('input', render));
@@ -1230,12 +1343,16 @@ fetch('data/bids.json', { cache: 'no-store' })
     state.items = (data.items || []).map((x) => {
       const dl = parseDeadline(x.deadline);
       const op = dl === null && x.detail ? parseDeadline(x.detail.opening) : null;
-      return { ...x, _dl: dl ?? op, _dlWord: dl === null && op !== null ? '개찰' : '마감' };
+      const search = [x.title, x.org, x.id, `${x.id}-${x.ord}`, x.method, ...(x.keywords || []),
+        ...(x.detail?.category || []), ...(x.licenses || []).map((l) => l.name), ...(x.doc?.direct || []).flatMap((p) => [p.name, p.code])];
+      return { ...x, _dl: dl ?? op, _bidDeadline: dl, _dlWord: dl === null && op !== null ? '개찰' : '마감',
+        _regDeadline: parseDeadline(x.detail?.regDeadline), _search: searchKey(search.join(' ')) };
     });
     const u = new Date(data.updatedAt);
     $('updated').textContent = Number.isNaN(u.getTime()) ? '-' :
       u.toLocaleString('ko-KR', { timeZone: 'Asia/Seoul', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }) + ' 갱신';
     $('source').textContent = '출처: ' + (data.source || '-');
+    populateOpenFilters();
     renderStats();
     renderGlance();
     render();

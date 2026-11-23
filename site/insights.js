@@ -5,7 +5,8 @@ const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
 const data = { results: null, companies: null, byBizno: new Map() };
 const pending = {};
-const rs = { q: '', filter: 'all', open: new Set(), sel: null, limit: 150 };
+const rs = { org: '', open: new Set(), sel: null };
+const resultSearch = new WeakMap();
 const cs = { q: '', sort: 'wins' };
 
 // ---------- 공용 ----------
@@ -50,24 +51,37 @@ async function renderResults() {
     root.innerHTML = `
       <details class="overview" id="resultOverview">
         <summary>마감·결과 통계</summary>
-        <div class="top"><section class="hero"><h1>마감·결과 통계</h1></section>
+        <div class="top"><section class="hero"><h1>마감·결과 통계</h1><p>현재 검색 조건으로 모은 공고를 집계해요.</p></section>
           <section class="stats" id="rStats"></section></div>
         <section class="dash" id="rDash"></section>
       </details>
       <div class="split"><div class="col-list">
         <div class="toolbar"><div class="inner">
-          <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명 검색" aria-label="결과 검색"></div>
-          <div class="chips" id="rChips">
-            <button class="chip" data-f="all">전체</button><button class="chip" data-f="won">낙찰·계약</button>
-            <button class="chip" data-f="joint">공동계약</button><button class="chip" data-f="failed">유찰</button><button class="chip" data-f="wait">결과 대기</button>
-          </div></div></div>
-        <div class="count" id="rCount"></div><div id="rList" class="rows"></div></div>
+          <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명·공고번호 검색" aria-label="결과 검색"></div>
+          <div class="filter-fields">
+            <label>개찰 연도 <select id="rYear"><option value="">전체 연도</option></select></label>
+            <label>결과 <select id="rStatus"><option value="">전체 결과</option><option value="won">낙찰·계약</option><option value="joint">공동계약</option><option value="failed">유찰</option><option value="wait">결과 대기</option><option value="rebid">재입찰</option></select></label>
+          </div>
+          <details class="filter-more" id="rMore"><summary>상세 조건</summary><div class="filter-fields">
+            <label>개찰 월 <select id="rMonth"><option value="">전체 월</option>${Array.from({ length: 12 }, (_, i) => `<option value="${String(i + 1).padStart(2, '0')}">${i + 1}월</option>`).join('')}</select></label>
+            <label>공공조달 분류 <select id="rCategory"><option value="">전체 분류</option></select></label>
+            <label>계약 방법 <select id="rMethod"><option value="">전체 계약 방법</option></select></label>
+          </div></details></div></div>
+        <div class="list-overview" id="rSummary" aria-live="polite"></div>
+        <div class="count" id="rCount" hidden></div><div id="rList" class="rows"></div></div>
         <aside class="pane" id="rPane" aria-label="고른 공고 결과"></aside></div>
       <footer id="rFoot"></footer>`;
-    $('rq').addEventListener('input', (e) => { rs.q = e.target.value.trim().toLowerCase(); rs.limit = 150; drawResults(); });
+    $('rq').addEventListener('input', drawResults);
+    resultSelects().forEach((el) => el.addEventListener('change', drawResults));
+    $('rCount').addEventListener('click', (e) => {
+      if (e.target.id !== 'rReset') return;
+      resetResultFilters();
+      history.replaceState(null, '', '#results');
+      $('rq').focus();
+      drawResults();
+    });
     $('resultOverview').addEventListener('toggle', renderResultStats);
     root.addEventListener('input', filterBidderList);
-    $('rChips').addEventListener('click', (e) => { const b = e.target.closest('[data-f]'); if (b) { rs.filter = b.dataset.f; rs.limit = 150; drawResults(); } });
     $('rList').addEventListener('click', (e) => {
       if (e.target.closest('.more-btn')) { appendResults(); return; }
       const h = e.target.closest('button.row');
@@ -77,52 +91,80 @@ async function renderResults() {
   }
   try {
     const d = await load('results');
+    if ($('rYear').options.length === 1) {
+      setOptions($('rYear'), yearsOf(d.items, resultDate).map((year) => [year, `${year}년`]));
+      setOptions($('rCategory'), groupedOptions(d.items.map(categoryOf)));
+      setOptions($('rMethod'), groupedOptions(d.items.map((r) => r.method)));
+    }
+    const params = new URLSearchParams(location.hash.split('?')[1] || '');
+    const org = params.get('org');
+    if (gotoResult) {
+      resetResultFilters();
+      $('rq').value = gotoResult;
+    } else if (org) {
+      resetResultFilters();
+      rs.org = org;
+      const year = params.get('year');
+      if (year && [...$('rYear').options].some((option) => option.value === year)) $('rYear').value = year;
+    } else rs.org = '';
     $('rFoot').textContent = `출처: ${d.source || '-'} · 갱신 ${d.updatedAt ? new Date(d.updatedAt).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' }) : '-'}`;
     drawResults();
-    renderResultStats();
   } catch (e) {
     $('rList').innerHTML = emptyState('아직 결과 데이터가 없어요', '다음 자동 갱신 때 모아요.');
   }
 }
 
+const resultSelects = () => ['rYear', 'rStatus', 'rMonth', 'rCategory', 'rMethod'].map($);
+
+function resetResultFilters() {
+  rs.org = '';
+  if (!$('rq')) return;
+  $('rq').value = '';
+  for (const select of resultSelects()) select.selectedIndex = 0;
+}
+
+const resultGroup = (r) => r.winner || r.contract ? 'won' : r.status === '유찰' ? 'failed' : 'wait';
+
+function resultTotals(items) {
+  const totals = { won: 0, failed: 0, wait: 0, joint: 0, contractAmount: 0, participants: 0, counted: 0 };
+  for (const r of items) {
+    totals[resultGroup(r)]++;
+    if (r.contract?.joint) totals.joint++;
+    if (Number.isFinite(r.contract?.amount)) totals.contractAmount += r.contract.amount;
+    if (Number.isFinite(r.participants)) { totals.participants += r.participants; totals.counted++; }
+  }
+  return totals;
+}
+
 function renderResultStats() {
-  const dash = $('rDash');
-  if (!$('resultOverview').open || !data.results || dash.hasChildNodes()) return;
-  const items = data.results.items;
-  const won = items.filter((r) => r.winner || r.contract).length;
-  const participation = items.filter((r) => r.participants);
-  const average = participation.length
-    ? (participation.reduce((sum, r) => sum + r.participants, 0) / participation.length).toFixed(1) + '<small>곳</small>'
+  if (!$('resultOverview').open || !data.results) return;
+  const items = rView.rows;
+  const totals = resultTotals(items);
+  const average = totals.counted
+    ? (totals.participants / totals.counted).toFixed(1) + '<small>곳</small>'
     : '-';
   $('rStats').innerHTML = [
-    ['마감 공고', items.length + '<small>건</small>'],
-    ['낙찰·계약', won + '<small>건</small>'],
-    ['유찰', items.filter((r) => r.status === '유찰').length + '<small>건</small>'],
+    ['공동계약', countText(totals.joint) + '<small>건</small>'],
+    ['참여 수 확인', countText(totals.counted) + '<small>건</small>'],
     ['평균 참여', average],
+    ['계약금액 합계', totals.contractAmount ? eok(totals.contractAmount) : '-'],
   ].map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('');
-  dash.innerHTML = dashboard(items);
+  $('rDash').innerHTML = dashboard(items, $('rYear').value);
 }
 
 // 한눈에 보기: 월별 결과, 많이 따 간 회사, 많이 발주한 기관
-function dashboard(items) {
-  const months = new Map();
+function dashboard(items, year) {
+  const periods = new Map();
   for (const r of items) {
-    const t = parseDeadline(r.openedAt || r.deadline);
-    if (t === null) continue;
-    const d = new Date(t + 9 * 3600000);
-    const k = `${d.getUTCFullYear()}.${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
-    const m = months.get(k) || { won: 0, failed: 0, wait: 0 };
-    if (r.winner || r.contract) m.won++; else if (r.status === '유찰') m.failed++; else m.wait++;
-    months.set(k, m);
+    const date = resultDate(r);
+    const key = yearOf(date) ? date.slice(0, year ? 7 : 4) : '';
+    const p = periods.get(key) || { total: 0, won: 0, failed: 0, wait: 0 };
+    p.total++;
+    p[resultGroup(r)]++;
+    periods.set(key, p);
   }
-  const ms = [...months].sort((a, b) => a[0].localeCompare(b[0])).slice(-12);
-  const maxM = Math.max(1, ...ms.map(([, m]) => m.won + m.failed + m.wait));
-  const bars = ms.map(([k, m]) => {
-    const h = (v) => `${(v / maxM) * 100}%`;
-    return `<div class="mb" title="${k} · 낙찰 ${m.won} · 유찰 ${m.failed} · 대기 ${m.wait}"><div class="mb-col">
-      <i class="w" style="height:${h(m.wait)}"></i><i class="f" style="height:${h(m.failed)}"></i><i class="o" style="height:${h(m.won)}"></i></div>
-      <span>${k.slice(2).replace('.', '/')}</span><b>${m.won + m.failed + m.wait}</b></div>`;
-  }).join('');
+  const periodRows = [...periods].sort((a, b) => b[0].localeCompare(a[0])).map(([key, p]) =>
+    `<tr><th scope="row">${key ? year ? `${Number(key.slice(5))}월` : `${esc(key)}년` : '미등록'}</th><td>${countText(p.total)}</td><td>${countText(p.won)}</td><td>${countText(p.failed)}</td><td>${countText(p.wait)}</td></tr>`).join('');
   // 회사별 수주 (계약 구성사 지분 기준, 없으면 낙찰자)
   const co = new Map();
   for (const r of items) {
@@ -145,42 +187,61 @@ function dashboard(items) {
       <span class="hb-i">${i + 1}</span><span class="hb-n">${esc(short(x.name))}</span>
       <span class="hb-bar"><i style="width:${(val(x) / max) * 100}%"></i></span><span class="hb-v">${label(x)}</span></${link ? 'a' : 'div'}>`).join('');
   return `
-    <div class="dash-card wide"><div class="dash-h"><b>월별 결과</b><span class="legend"><i class="lg-o"></i>낙찰·계약 <i class="lg-f"></i>유찰 <i class="lg-w"></i>결과 대기</span></div><div class="mbars">${bars}</div></div>
+    <div class="dash-card wide"><div class="dash-h"><b>${year ? `${esc(year)}년 월별 결과` : '연도별 결과'}</b></div>
+      <table class="period-table"><thead><tr><th>기간</th><th>공고</th><th>낙찰·계약</th><th>유찰</th><th>대기</th></tr></thead><tbody>${periodRows}</tbody></table>
+      <div class="note">개찰일 기준이며 개찰일이 없으면 입찰 마감일을 사용해요.</div></div>
     <div class="dash-card"><div class="dash-h"><b>많이 따 간 회사</b><span>지분 기준 금액</span></div>${hbar(topCo, (x) => x.amt, maxCo, (x) => `${eok(x.amt)} · ${x.n}건`, true) || '<div class="note">아직 없어요.</div>'}</div>
     <div class="dash-card"><div class="dash-h"><b>많이 발주한 기관</b><span>건수</span></div>${hbar(topOrg, (x) => x.n, maxOrg, (x) => `${x.n}건`, false)}</div>`;
 }
 
 function drawResults() {
   const items = data.results?.items || [];
-  document.querySelectorAll('#rChips [data-f]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.f === rs.filter));
+  const [year, status, month, category, method] = resultSelects().map((el) => el.value);
+  const terms = searchTerms($('rq').value);
   const rows = items.filter((r) => {
-    if (rs.filter === 'won' && !(r.winner || r.contract)) return false;
-    if (rs.filter === 'joint' && !r.contract?.joint) return false;
-    if (rs.filter === 'failed' && r.status !== '유찰') return false;
-    if (rs.filter === 'wait' && (r.winner || r.contract || r.status === '유찰')) return false;
-    if (rs.q) {
-      const hay = [r.title, r.org, r.winner?.name, ...(r.bidders || []).map((b) => b.name), ...(r.contract?.members || []).map((m) => m.name)].join(' ').toLowerCase();
-      if (!hay.includes(rs.q)) return false;
+    const date = resultDate(r);
+    if (year && yearOf(date) !== year || month && date.slice(5, 7) !== month) return false;
+    if (rs.org && r.org !== rs.org || category && categoryOf(r) !== category || method && r.method !== method) return false;
+    if (status === 'joint' && !r.contract?.joint) return false;
+    if (status === 'rebid' && r.status !== '재입찰') return false;
+    if (status && status !== 'joint' && status !== 'rebid' && resultGroup(r) !== status) return false;
+    if (terms.length) {
+      if (!resultSearch.has(r)) resultSearch.set(r, searchKey([
+        r.title, r.org, r.id, `${r.id}-${r.ord}`, categoryOf(r), r.winner?.name,
+        ...(r.bidders || []).map((b) => b.name), ...(r.contract?.members || []).map((m) => m.name),
+      ].join(' ')));
+      if (!terms.every((term) => resultSearch.get(r).includes(term))) return false;
     }
     return true;
   });
   const W = wide();
-  $('rCount').innerHTML = `<span><b>${rows.length}</b>건</span>`;
+  const moreCount = [month, category, method].filter(Boolean).length;
+  $('rMore').querySelector('summary').textContent = moreCount ? `상세 조건 (${moreCount})` : '상세 조건';
+  const totals = resultTotals(rows);
+  $('rSummary').innerHTML = listOverview(`${year ? `${esc(year)}년 ` : '전체 연도 '}${month ? `${Number(month)}월 ` : ''}목록 요약`, [
+    ['공고', `${countText(rows.length)}건`], ['낙찰·계약', `${countText(totals.won)}건`],
+    ['유찰', `${countText(totals.failed)}건`], ['결과 대기', `${countText(totals.wait)}건`],
+  ]);
+  const active = !!(terms.length || year || status || moreCount || rs.org);
+  $('rCount').hidden = !active;
+  $('rCount').innerHTML = `<span>${esc(rs.org)}</span>${active ? '<button class="chip" id="rReset" style="height:28px;font-size:13px">검색 조건 초기화</button>' : ''}`;
   if (!rows.length) {
     $('rList').innerHTML = emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.');
     rView = { rows, shown: 0, W };
     watchMore();
     showPane(null);
+    renderResultStats();
     return;
   }
   if (W && !rows.some((r) => r.id === rs.sel)) rs.sel = rows[0].id;
   // 수천 건을 한 번에 그리면 화면이 버벅인다. 처음엔 조금만 그리고, 끝에 닿을 때마다 이어 붙인다(무한 스크롤).
-  // 고른 공고가 뒤쪽에 있으면 거기까지 편다.
+  // 선택한 공고가 첫 묶음에 가까우면 함께 표시한다.
   const at = rows.findIndex((r) => r.id === rs.sel);
-  rView = { rows, shown: Math.min(rows.length, Math.max(R_CHUNK, at + 20)), W };
+  rView = { rows, shown: Math.min(rows.length, at < R_CHUNK * 2 ? Math.max(R_CHUNK, at + 20) : R_CHUNK), W };
   $('rList').innerHTML = rows.slice(0, rView.shown).map((r) => resultRow(r, W)).join('') + moreSentinel();
   watchMore();
   showPane(W ? rows.find((r) => r.id === rs.sel) : null);
+  renderResultStats();
   if (gotoResult && !$('view-results').hidden) {
     $('rList').querySelector(`button.row[data-id="${CSS.escape(gotoResult)}"]`)?.scrollIntoView({ block: 'center' });
     gotoResult = null;
@@ -461,7 +522,10 @@ function drawCompany(bizno) {
     <p class="back"><a href="#companies">← 업체 목록</a></p>
     <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
     <section class="stats">${tiles.map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('')}</section>
-    <section class="panel"><div class="section-title">참여 이력 ${c.history.length}건</div>${historyTable(c)}</section>
+    <section class="panel" id="companyHistory"><div class="history-heading">
+      <div class="section-title">참여 이력</div>
+      <select class="year-pick" id="companyYear" aria-label="참여 이력 연도"><option value="">전체 연도</option></select>
+    </div><div id="companyHistoryRows"></div></section>
     <section class="panel"><div class="section-title panel-h"><span>관계도 <small>컨소시엄 파트너와 그 파트너, 같은 공고에서 겨룬 회사</small></span><a class="more" href="#galaxy/c:${esc(c.bizno)}">우주에서 보기 →</a></div><div class="net ego" id="egoGraph"></div>
       <div class="rel-cols">
         <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
@@ -473,6 +537,14 @@ function drawCompany(bizno) {
     </div>
     <section class="panel"><div class="section-title">재무 <small>DART · 외부감사 대상만</small></div>${dartTable(c)}</section>
 `;
+  const yearPick = $('companyYear');
+  setOptions(yearPick, yearsOf(c.history, resultDate).map((year) => [year, `${year}년`]));
+  const drawHistory = () => {
+    const rows = yearPick.value ? c.history.filter((h) => yearOf(resultDate(h)) === yearPick.value) : c.history;
+    $('companyHistoryRows').innerHTML = `<div class="note">참여 ${countText(rows.length)}건 · 수주 ${countText(rows.filter((h) => h.won).length)}건</div>${historyTable(rows)}`;
+  };
+  yearPick.addEventListener('change', drawHistory);
+  drawHistory();
   drawEgo($('egoGraph'), c);
   window.scrollTo(0, 0);
 }
@@ -483,10 +555,10 @@ function relList(list, unit, withShare) {
   return `<div class="rel">${list.map((p) => `<a href="#company/${esc(p.bizno)}"><span>${esc(p.name)}</span><small>${p.count}${unit === '공고' ? '번' : '건'}${withShare && p.share != null ? ` · 지분 ${p.share}%` : ''}</small></a>`).join('')}</div>`;
 }
 
-function historyTable(c) {
-  if (!c.history.length) return '<div class="note">이력이 없어요.</div>';
+function historyTable(rows) {
+  if (!rows.length) return '<div class="note">이력이 없어요.</div>';
   return `<div class="rank-wrap"><table class="rank hist"><thead><tr><th>개찰</th><th>공고</th><th>역할·순위</th><th class="num">금액</th><th>결과</th></tr></thead><tbody>
-    ${c.history.map((h) => `<tr class="${h.won ? 'win' : ''}"><td>${shortDay(h.openedAt)}</td>
+    ${rows.map((h) => `<tr class="${h.won ? 'win' : ''}"><td>${shortDay(h.openedAt) || '-'}</td>
       <td><a class="co" href="#results" data-goto="${esc(h.id)}">${esc(h.title)}</a><small>${esc(h.org || '')}</small></td>
       <td>${h.rank != null ? `${h.rank}위` : esc(h.role || '')}${h.share != null && h.share < 100 ? ` · ${h.share}%` : ''}</td>
       <td class="num">${h.contractAmount ? eok(h.contractAmount) : h.bidAmount ? eok(h.bidAmount) : '-'}</td>
@@ -597,10 +669,11 @@ document.addEventListener('click', (e) => {
   gotoResult = a.dataset.goto;
   rs.open.add(gotoResult);
   rs.sel = gotoResult;
-  rs.q = '';
-  rs.filter = 'all';
-  if ($('rq')) $('rq').value = '';
-  if (data.results && !$('view-results').hidden) drawResults();
+  if (data.results && !$('view-results').hidden) {
+    resetResultFilters();
+    $('rq').value = gotoResult;
+    drawResults();
+  }
 });
 window.addEventListener('hashchange', () => { route(); if (!/^#company\//.test(location.hash)) window.scrollTo(0, 0); });
 route();
