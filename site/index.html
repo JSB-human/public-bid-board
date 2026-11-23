@@ -965,7 +965,8 @@
 
   /* 통계·달력(늘 펼쳐 둔다) */
   .board-workspace > .overview { margin: 0 0 16px; }
-  .board-workspace > .overview > summary { display: none; }
+  .board-workspace > .overview > summary, .overview.board-overview > summary { display: none; }
+  .board-split .overview { margin: 0 0 16px; }
   .board-overview-content { margin: 0; padding: 0; border: 0; background: none; display: grid; gap: 12px; }
   .board-overview-content .stats, .board-overview-content .cal { box-shadow: var(--shadow); margin: 0; }
   .board-overview-content .dash { margin: 0; }
@@ -1106,6 +1107,62 @@
   .company-basics { margin-top: 16px; padding: 18px 22px; border: 0; border-radius: var(--radius-card); background: var(--card); box-shadow: var(--shadow); }
   .company-facts { font-size: 14px; gap: 6px 20px; }
   .board-overview-content > * { min-width: 0; }
+
+  /* ---------- 목록 카드와 한 줄 구성 ---------- */
+  .board-split > .col-list { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+  .list-card { background: var(--card); border-radius: var(--radius-card); box-shadow: var(--shadow); padding: 18px 8px 8px; }
+  .board-overview-content .stat { padding: 12px 14px; }
+  .board-overview-content .stat .value { font-size: 20px; }
+  .board-split .dash { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .board-split .dash-card.wide { grid-column: 1 / -1; }
+  .kd.k-it { background: #5b6cf0; }
+
+  .row { grid-template-columns: 56px minmax(0, 1fr) auto; align-items: center; gap: 14px; }
+  .when { height: 56px; border-radius: 14px; background: var(--field); color: var(--text); display: grid; place-content: center; text-align: center; gap: 0; }
+  .when b { font-size: 16px; font-weight: 800; line-height: 1.2; font-variant-numeric: tabular-nums; letter-spacing: -.03em; }
+  .when small { font-size: 12px; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .when.soon { background: var(--red-weak); color: var(--red); }
+  .when.soon small { color: var(--red); opacity: .75; }
+  .when.today { background: var(--red); color: #fff; }
+  .when.today small { color: #fff; opacity: .85; }
+  .when.past { color: var(--muted); }
+  .when.st-ok { background: var(--blue-weak); color: var(--blue-text); }
+  .when.st-bad { background: var(--red-weak); color: var(--red); }
+  .when.st-wait, .when.st-none { color: var(--sub); }
+  .rbody { gap: 3px; }
+  .rmeta { gap: 10px; font-size: 14px; color: var(--sub); }
+  .rkind { flex: none; display: inline-flex; align-items: center; gap: 5px; color: var(--muted); font-size: 13px; }
+  .rkind .kd { width: 6px; height: 6px; }
+  .rflags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 3px; }
+  .flag { font-size: 12px; font-weight: 700; line-height: 1.7; padding: 0 8px; border-radius: 6px; background: var(--field); color: var(--sub); white-space: nowrap; }
+  .flag.warn { background: var(--orange-weak); color: light-dark(#b25f00, var(--orange)); }
+  .flag.bad { background: var(--red-weak); color: var(--red); }
+  .flag.re { background: var(--orange-weak); color: light-dark(#b25f00, var(--orange)); }
+  .flag.rg { background: var(--blue-weak); color: var(--blue-text); }
+  .rwho { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--text); min-width: 0; }
+  .rside { align-self: center; }
+  .rside b { font-size: 17px; }
+  .item.closed .when b { color: var(--muted); }
+
+  /* ---------- 넓은 화면: 페이지는 고정, 왼쪽(요약·검색·목록)과 오른쪽(상세)이 따로 스크롤 ---------- */
+  @media (min-width: 1024px) and (min-height: 640px) {
+    body:has(#view-open:not([hidden])), body:has(#view-results:not([hidden])) { height: 100svh; overflow: hidden; }
+    #view-open, #view-results, body:has(#view-open:not([hidden])) > header .wrap, body:has(#view-results:not([hidden])) > header .wrap { max-width: 1480px; }
+    .board-split .board-filters { grid-template-columns: minmax(0, 1fr); }
+    .board-split .board-primary-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .board-split .board-primary-filters label { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; }
+    .board-split .board-primary-filters select { width: 100%; }
+    .board-workspace, .board-workspace:has(.board-options details[open]) { display: block; padding-top: 0; height: calc(100svh - var(--header-h)); }
+    .board-workspace > .board-split, .board-workspace:has(.board-options details[open]) > .board-split {
+      height: 100%; margin: 0; display: grid; grid-template-columns: minmax(0, 46fr) minmax(0, 54fr); gap: 20px; align-items: stretch; }
+    .board-split > .col-list { display: block; min-height: 0; overflow: hidden auto; overscroll-behavior: contain; padding: 24px 6px 24px 2px; scrollbar-width: thin; }
+    .board-split > .pane { position: static; top: auto; height: auto; max-height: none; min-height: 0; margin: 24px 0; overflow: hidden auto; overscroll-behavior: contain; }
+    .board-toolbar { position: sticky; top: -24px; margin: 0 -6px 0 -2px; padding: 12px 6px 12px 2px; }
+    .board-page-head { margin-bottom: 16px; }
+    .board-workspace > .overview, .board-split .overview { margin-bottom: 8px; }
+    .board-split .rows { overflow: visible; }
+    .board-split > .col-list > footer { padding: 20px 4px 0; }
+  }
   @media (max-width: 779px) {
     .board-toolbar { position: static; }
     .board-overview-content .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1133,6 +1190,8 @@
 
 <main class="wrap" id="view-open" aria-label="진행 중 공고">
   <div class="board-workspace">
+    <div class="split board-split" id="openSplit">
+      <section class="col-list" aria-labelledby="openListTitle">
     <div class="board-page-head"><h1>진행 중 공고</h1><p>공간정보 · 데이터 · AI 분야 나라장터 용역 공고를 모았어요.</p></div>
             <details class="overview board-overview" id="openOverview" open>
               <summary>공고 통계·마감 달력</summary>
@@ -1172,23 +1231,23 @@
             <label class="toggle">마감 전만 <input type="checkbox" id="open" checked></label>
       </div>
     </div>
-    <div class="split board-split" id="openSplit">
-      <section class="col-list" aria-labelledby="openListTitle">
+<div class="list-card">
         <div class="board-list-head"><h2 id="openListTitle">공고 목록</h2><span id="openListCount" aria-live="polite"></span></div>
         <div class="list-overview" id="openSummary"></div>
         <div class="count" id="count"></div>
         <div id="list" class="rows" tabindex="0" role="region" aria-label="진행 중 공고 목록"></div>
-      </section>
-      <aside class="pane board-detail" id="pane" aria-label="고른 공고"></aside>
-    </div>
-  </div>
-
+      </div>
   <footer>
     금액은 추정가격(부가세 제외)이에요. 참가자격과 마감 시각은 나라장터 원문에서 꼭 확인하세요.<br>
     <span id="source"></span><br>
     파일 보기: <a href="https://github.com/edwardkim/rhwp" target="_blank" rel="noopener">rhwp</a>(한글, MIT) ·
     <a href="https://mozilla.github.io/pdf.js/" target="_blank" rel="noopener">PDF.js</a>(PDF, Apache-2.0)
   </footer>
+      </section>
+      <aside class="pane board-detail" id="pane" aria-label="고른 공고"></aside>
+    </div>
+  </div>
+
 </main>
 
 <main class="wrap" id="view-results" aria-label="마감·결과" hidden></main>
@@ -1196,7 +1255,7 @@
 <main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
-<script type="module" src="insights.js?v=20261123-toss"></script>
+<script type="module" src="insights.js?v=20261123-split"></script>
 <script>
 const state = { items: [], only: null, day: null, open: new Set(), sel: null, orgYears: new Map() };
 // 넓은 화면에서는 목록 옆에 상세를 나란히 두고, 좁은 화면에서는 줄을 눌러 펼친다.
@@ -1445,17 +1504,32 @@ function registrationText(x, now) {
 function rowHtml(x, now, W) {
   const kind = kindOf(x), on = W ? state.sel === x.id : state.open.has(x.id);
   const closed = x._dl !== null && x._dl < now;
-  const { tone } = registrationSchedule(x, now);
-  const status = closed ? '<span class="board-status">마감</span>' : tone === 'past' ? '<span class="board-status bad">등록 마감 지남</span>'
-    : tone === 'soon' ? '<span class="board-status warn">등록 임박</span>' : `<span class="board-status">${KINDS[kind]}</span>`;
+  // 왼쪽 칸: 입찰 마감까지 남은 날. 목록을 훑을 때 가장 먼저 보는 값이라 크게 둔다.
+  let when = '<b>미정</b><small>마감일</small>', whenCls = '';
+  if (x._dl !== null) {
+    const n = daysLeft(x._dl, now), d = kst(x._dl);
+    const md = `${d.getUTCMonth() + 1}/${d.getUTCDate()}`;
+    const hm = `${String(d.getUTCHours()).padStart(2, '0')}:${String(d.getUTCMinutes()).padStart(2, '0')}`;
+    if (closed) { when = `<b>마감</b><small>${md}</small>`; whenCls = 'past'; }
+    else if (n === 0) { when = `<b>오늘</b><small>${hm}</small>`; whenCls = 'today'; }
+    else { when = `<b>D-${n}</b><small>${md}</small>`; whenCls = x._dl - now <= 3 * DAY ? 'soon' : ''; }
+  }
+  // 아래 줄에는 챙겨야 할 표시만 둔다: 참가등록 마감 임박·지남, 재공고, 지역 제한.
+  const reg = registrationSchedule(x, now);
+  const flags = [];
+  if (!closed && reg.tone === 'soon') flags.push(`<span class="flag warn">참가등록 ${shortDate(x._regDeadline)}까지</span>`);
+  if (!closed && reg.tone === 'past') flags.push('<span class="flag bad">참가등록 마감 지남</span>');
+  if (isRe(x)) flags.push('<span class="flag re">재공고</span>');
+  if (x.regions && x.regions.length) flags.push(`<span class="flag rg">${esc(x.regions.join('·'))}만</span>`);
   return `<article class="item ${on ? (W ? 'sel' : 'open') : ''} ${closed ? 'closed' : ''}">
     <button class="row" data-id="${esc(x.id)}" ${W ? `aria-current="${on}"` : `aria-expanded="${on}"`}>
+      <span class="when ${whenCls}">${when}</span>
       <span class="rbody">
         <span class="rtitle">${esc(x.title)}</span>
-        <span class="rmeta"><span>${esc(x.org)}</span>${tagsHtml(x)}</span>
-        <span class="row-dates"><span>${x._bidDeadline !== null ? `입찰 마감 ${shortDate(x._bidDeadline)}` : x._dl !== null ? `개찰 ${shortDate(x._dl)}` : '입찰 마감 일시 미등록'}</span>${registrationText(x, now)}</span>
+        <span class="rmeta"><span>${esc(x.org)}</span><span class="rkind"><i class="kd k-${kind}"></i>${KINDS[kind]}</span></span>
+        ${flags.length ? `<span class="rflags">${flags.join('')}</span>` : ''}
       </span>
-      <span class="rside"><b>${eokS(x.amount)}</b>${status}</span>
+      <span class="rside"><b>${eokS(x.amount)}</b><small>추정가격</small></span>
     </button>
     ${!W && on ? detailHtml(x, now) : ''}
   </article>`;

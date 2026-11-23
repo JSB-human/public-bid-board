@@ -53,6 +53,8 @@ async function renderResults() {
     root.dataset.ready = '1';
     root.innerHTML = `
       <div class="board-workspace">
+        <div class="split board-split">
+          <section class="col-list" aria-labelledby="resultListTitle">
         <div class="board-page-head"><h1>마감·결과</h1><p>진행 중 목록과 같은 조건에 맞던 공고의 참여 업체·낙찰·계약 결과예요.</p></div>
           <details class="overview board-overview" id="resultOverview" open>
             <summary>마감·결과 통계</summary>
@@ -75,17 +77,15 @@ async function renderResults() {
           </div></details>
           </div>
         </div>
-        <div class="split board-split">
-          <section class="col-list" aria-labelledby="resultListTitle">
+<div class="list-card">
             <div class="board-list-head"><h2 id="resultListTitle">결과 목록</h2><span id="resultListCount" aria-live="polite"></span></div>
             <div class="list-overview" id="rSummary"></div>
             <div class="count" id="rCount" hidden></div>
             <div id="rList" class="rows" tabindex="0" role="region" aria-label="마감 공고 목록"></div>
-          </section>
+          </div><footer id="rFoot"></footer></section>
           <aside class="pane board-detail" id="rPane" aria-label="고른 공고 결과"></aside>
         </div>
-      </div>
-      <footer id="rFoot"></footer>`;
+      </div>`;
     $('rq').addEventListener('input', drawResults);
     resultSelects().forEach((el) => el.addEventListener('change', drawResults));
     $('rCount').addEventListener('click', (e) => {
@@ -343,15 +343,18 @@ function resultRow(r, W) {
   // 금액이 0 으로 등록된 계약(해외 사업 등)은 금액이 없는 것으로 본다.
   const [amount, amountLabel] = amountOf(r);
   const who = whoOf(r);
-  const date = r.openedAt ? `개찰 ${shortDay(r.openedAt)}` : r.deadline ? `입찰 마감 ${shortDay(r.deadline)}` : '';
+  // 왼쪽 칸: 결과(낙찰·유찰·계약…)와 개찰일. 오른쪽: 금액. 가운데 셋째 줄: 누가 가져갔는지.
+  const day = shortDay(r.openedAt || r.deadline).replace(/^\d+\./, '').replace('.', '/');
+  const shortSt = { '개찰 완료': '개찰', '결과 대기': '대기', '재입찰': '재입찰' }[st] || st;
   return `<article class="item ${on ? (W ? 'sel' : 'open') : ''}">
     <button class="row" data-id="${esc(r.id)}" ${W ? `aria-current="${on}"` : `aria-expanded="${on}"`}>
+      <span class="when st-${cls || 'none'}"><b>${esc(shortSt)}</b><small>${day}</small></span>
       <span class="rbody">
         <span class="rtitle">${esc(r.title)}</span>
-        <span class="rmeta"><span>${esc(r.org)}</span>${r.contract?.joint ? '<span class="badge rg">공동</span>' : ''}</span>
-        <span class="row-dates">${[date, r.participants != null ? `${r.participants}곳 참여` : '', esc(who)].filter(Boolean).join(' · ')}</span>
+        <span class="rmeta"><span>${esc(r.org)}</span>${r.participants != null ? `<span class="rkind">${r.participants}곳 참여</span>` : ''}</span>
+        ${who ? `<span class="rwho">${esc(who)}${r.contract?.joint ? '<span class="flag rg">공동</span>' : ''}</span>` : ''}
       </span>
-      <span class="rside"><b>${eok(amount)}</b><span class="board-status ${cls === 'ok' ? 'good' : cls === 'bad' ? 'bad' : ''}">${esc(st)}</span><small>${amountLabel}</small></span>
+      <span class="rside"><b>${eok(amount)}</b><small>${amountLabel}</small></span>
     </button>
     ${!W && on ? resultDetail(r) : ''}
   </article>`;
