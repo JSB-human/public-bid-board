@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "써드맨",
+  "ceo": "여승민",
+  "opened": "2023-03-20",
+  "region": "서울특별시 종로구 종로1가",
+  "address": "서울특별시 종로구 종로 19 (종로1가) 르메이에르종로타운 A동 910호",
+  "employees": 4,
+  "homepage": "http://3rdman.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T03:39:42.397Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T03:39:42.766Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T03:39:42.766Z"
+ }
+}
