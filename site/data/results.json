@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T04:48:30.973Z",
+ "updatedAt": "2026-11-23T05:45:14.370Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
@@ -26,9 +26,13 @@
     "인천",
     "경기"
    ],
-   "status": "개찰 전",
-   "final": false,
-   "checkedAt": "2026-11-23T04:48:30.264Z"
+   "status": "유찰",
+   "final": true,
+   "checkedAt": "2026-11-23T05:45:14.098Z",
+   "openedAt": "2026-11-23 14:00:00",
+   "participants": 2,
+   "note": "단독응찰",
+   "openingKey": "1/0/0"
   },
   {
    "id": "R26BK01825240",
@@ -427,7 +431,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T04:48:30.950Z"
+   "checkedAt": "2026-11-23T05:45:14.325Z"
   },
   {
    "id": "R26BK01824094",
@@ -614,7 +618,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T04:48:30.925Z"
+   "checkedAt": "2026-11-23T05:45:14.352Z"
   },
   {
    "id": "R26BK01805039",

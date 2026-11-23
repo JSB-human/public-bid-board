@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "일광정보통신",
+  "ceo": "정재성",
+  "opened": "1997-01-14",
+  "region": "경상북도 영천시",
+  "address": "경상북도 영천시 칠백로 885-25(작산동, 2층)",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T05:48:01.812Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T05:48:02.297Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T05:48:02.297Z"
+ }
+}

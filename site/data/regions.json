@@ -7878,5 +7878,233 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01848732": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848610": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848489": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848565": {
+  "regions": [
+   "인천"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848451": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01846623": {
+  "regions": [
+   "충북"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(2027년 청원구 정보통신시스템 통합유지보수) (수정).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00062311&rfpOrd=000&rfpUntyAtchFileNo=10",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01846640": {
+  "regions": [
+   "충북"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(2027년 서원구 정보통신시스템 통합유지관리)-수정완료.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063084&rfpOrd=000&rfpUntyAtchFileNo=7",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01848571": {
+  "regions": [
+   "서울"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848663": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848821": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01846801": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   },
+   {
+    "group": "1",
+    "name": "통신판매업/4403"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848684": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848618": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848832": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848695": {
+  "regions": [
+   "인천"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848514": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01846647": {
+  "regions": [
+   "충북"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(2027년 흥덕구 정보통신장비 및 방송장비 통합유지관리)(구매업무협의 반영).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063250&rfpOrd=000&rfpUntyAtchFileNo=26",
+    "kind": "제안요청서"
+   }
+  ]
  }
 }
