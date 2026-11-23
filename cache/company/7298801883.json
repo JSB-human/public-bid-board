@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 벨류라인",
+  "ceo": "차준범",
+  "opened": "2020-09-10",
+  "region": "경기도 용인시 기흥구",
+  "address": "경기도 용인시 기흥구 동백중앙로 191 (중동) 8층 에이 8117호",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:50:15.699Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:50:16.043Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:50:16.043Z"
+ }
+}

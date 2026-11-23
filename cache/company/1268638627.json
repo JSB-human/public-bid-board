@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)테라테코",
+  "ceo": "홍명진",
+  "opened": "2011-03-10",
+  "region": "경기도 김포시",
+  "address": "경기도 김포시 김포한강10로133번길 127, 9층 935호 (구래동, 디원시티지식산업센터)",
+  "employees": 8,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:48:45.345Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:48:45.699Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:48:45.700Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "메디케이시스템",
+  "ceo": "김헌성",
+  "opened": "2017-09-06",
+  "region": "전북특별자치도 전주시 완산구",
+  "address": "전북특별자치도 전주시 완산구 아중로 33, 신산업융복합지식산업센터 203호",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:50:58.621Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:50:58.951Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:50:58.951Z"
+ }
+}
