@@ -48,10 +48,12 @@ async function renderResults() {
   if (!root.dataset.ready) {
     root.dataset.ready = '1';
     root.innerHTML = `
-      <div class="top"><section class="hero"><h1>마감된 공고와<br>누가 가져갔는지</h1>
-        <p>진행 중 목록과 같은 조건에 맞던 공고의 참여 업체·낙찰·계약 결과예요.</p></section>
-      <section class="stats" id="rStats"></section></div>
-      <section class="dash" id="rDash"></section>
+      <details class="overview" id="resultOverview">
+        <summary>마감·결과 통계</summary>
+        <div class="top"><section class="hero"><h1>마감·결과 통계</h1></section>
+          <section class="stats" id="rStats"></section></div>
+        <section class="dash" id="rDash"></section>
+      </details>
       <div class="split"><div class="col-list">
         <div class="toolbar"><div class="inner">
           <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명 검색" aria-label="결과 검색"></div>
@@ -63,6 +65,8 @@ async function renderResults() {
         <aside class="pane" id="rPane" aria-label="고른 공고 결과"></aside></div>
       <footer id="rFoot"></footer>`;
     $('rq').addEventListener('input', (e) => { rs.q = e.target.value.trim().toLowerCase(); rs.limit = 150; drawResults(); });
+    $('resultOverview').addEventListener('toggle', renderResultStats);
+    root.addEventListener('input', filterBidderList);
     $('rChips').addEventListener('click', (e) => { const b = e.target.closest('[data-f]'); if (b) { rs.filter = b.dataset.f; rs.limit = 150; drawResults(); } });
     $('rList').addEventListener('click', (e) => {
       if (e.target.closest('.more-btn')) { appendResults(); return; }
@@ -73,20 +77,30 @@ async function renderResults() {
   }
   try {
     const d = await load('results');
-    const items = d.items;
-    const won = items.filter((r) => r.winner || r.contract).length;
-    $('rStats').innerHTML = [
-      ['마감 공고', items.length + '<small>건</small>'],
-      ['낙찰·계약', won + '<small>건</small>'],
-      ['유찰', items.filter((r) => r.status === '유찰').length + '<small>건</small>'],
-      ['평균 참여', (() => { const p = items.filter((r) => r.participants); return p.length ? (p.reduce((s, r) => s + r.participants, 0) / p.length).toFixed(1) + '<small>곳</small>' : '-'; })()],
-    ].map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('');
-    $('rDash').innerHTML = dashboard(items);
     $('rFoot').textContent = `출처: ${d.source || '-'} · 갱신 ${d.updatedAt ? new Date(d.updatedAt).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' }) : '-'}`;
     drawResults();
+    renderResultStats();
   } catch (e) {
     $('rList').innerHTML = emptyState('아직 결과 데이터가 없어요', '다음 자동 갱신 때 모아요.');
   }
+}
+
+function renderResultStats() {
+  const dash = $('rDash');
+  if (!$('resultOverview').open || !data.results || dash.hasChildNodes()) return;
+  const items = data.results.items;
+  const won = items.filter((r) => r.winner || r.contract).length;
+  const participation = items.filter((r) => r.participants);
+  const average = participation.length
+    ? (participation.reduce((sum, r) => sum + r.participants, 0) / participation.length).toFixed(1) + '<small>곳</small>'
+    : '-';
+  $('rStats').innerHTML = [
+    ['마감 공고', items.length + '<small>건</small>'],
+    ['낙찰·계약', won + '<small>건</small>'],
+    ['유찰', items.filter((r) => r.status === '유찰').length + '<small>건</small>'],
+    ['평균 참여', average],
+  ].map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('');
+  dash.innerHTML = dashboard(items);
 }
 
 // 한눈에 보기: 월별 결과, 많이 따 간 회사, 많이 발주한 기관
@@ -281,6 +295,23 @@ function resultPane(r) {
     ${resultDetail(r)}`;
 }
 
+const bidderNameKey = (name) => String(name ?? '').normalize('NFKC').toLowerCase().replace(/\s+/g, '');
+
+function filterBidderList(e) {
+  if (!e.target.matches('[data-bidder-search]')) return;
+  const list = e.target.closest('.bidder-list');
+  const query = bidderNameKey(e.target.value);
+  const rows = list.querySelectorAll('[data-bidder-name]');
+  let matchCount = 0;
+  for (const row of rows) {
+    row.hidden = !row.dataset.bidderName.includes(query);
+    if (!row.hidden) matchCount++;
+  }
+  list.querySelector('.bidder-count').textContent = query ? `${matchCount}곳 / 전체 ${rows.length}곳` : `${rows.length}곳`;
+  list.querySelector('.rank-wrap').hidden = !matchCount;
+  list.querySelector('.bidder-empty').hidden = !!matchCount;
+}
+
 function resultDetail(r) {
   const parts = [];
   if (r.contract) {
@@ -309,12 +340,19 @@ function resultDetail(r) {
   }
   if (r.bidders?.length) {
     const winBiz = new Set([r.winner?.bizno, ...(r.contract?.members || []).map((m) => m.bizno)].filter(Boolean));
-    parts.push(`<div class="section-title">참여 업체 ${r.bidders.length}곳 <small>입찰은 대표사 이름으로 나와요</small></div>
+    parts.push(`<section class="bidder-list">
+      <div class="bidder-header">
+        <h3>참여 업체 <span class="bidder-count" aria-live="polite">${r.bidders.length}곳</span></h3>
+        <div class="search bidder-search">${SEARCH}<input type="search" data-bidder-search placeholder="업체명 검색" aria-label="참여 업체명 검색"></div>
+      </div>
       <div class="rank-wrap"><table class="rank"><thead><tr><th>순위</th><th>업체</th><th class="num">투찰금액</th><th class="num">투찰률</th><th>비고</th></tr></thead><tbody>
-      ${r.bidders.map((b) => `<tr class="${winBiz.has(b.bizno) ? 'win' : ''}"><td>${b.rank ?? '-'}</td><td>${coLink(b.bizno, b.name)}<small>${esc(b.ceo || '')}</small></td>
+      ${r.bidders.map((b) => `<tr data-bidder-name="${esc(bidderNameKey(b.name))}" class="${winBiz.has(b.bizno) ? 'win' : ''}"><td>${b.rank ?? '-'}</td><td>${coLink(b.bizno, b.name)}<small>${esc(b.ceo || '')}</small></td>
         <td class="num">${b.amount != null ? b.amount.toLocaleString('ko-KR') : '-'}</td><td class="num">${pct(b.rate)}</td><td>${esc(b.note || '')}</td></tr>`).join('')}
       </tbody></table></div>
-      ${/협상/.test(r.award || '') ? '<div class="note">협상에 의한 계약이라 가격 순위와 실제 낙찰자가 다를 수 있어요.</div>' : ''}`);
+      <div class="note bidder-empty" hidden>일치하는 업체가 없어요.</div>
+      <div class="note">입찰은 대표사 이름으로 나와요.</div>
+      ${/협상/.test(r.award || '') ? '<div class="note">협상에 의한 계약이라 가격 순위와 실제 낙찰자가 다를 수 있어요.</div>' : ''}
+      </section>`);
   } else if (r.participants > 0) {
     parts.push('<div class="note">나라장터 참여 업체 명단 확인 중이에요.</div>');
   } else if (!r.bidders && r.status !== '유찰') {
