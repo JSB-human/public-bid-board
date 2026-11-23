@@ -7663,5 +7663,50 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01847398": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01827570": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "긴급입찰사유서_2027년 영상자료정보관리시스템(AMS) 유지관리.hwp",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064149&rfpOrd=000&rfpUntyAtchFileNo=8",
+    "kind": "기타문서"
+   },
+   {
+    "name": "제안요청서_2027년 영상자료정보관리시스템(AMS) 유지관리(수정).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064149&rfpOrd=000&rfpUntyAtchFileNo=6",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01848224": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
  }
 }

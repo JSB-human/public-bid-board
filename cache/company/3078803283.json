@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 럿지",
+  "ceo": "노상우",
+  "opened": "2024-11-04",
+  "region": "인천광역시 연수구 송도동",
+  "address": "인천광역시 연수구 인천타워대로 323 (송도동) 에이동 20층 2001,2002,2003,2 004,2005,2006호 A - 317(송도동, 송도 센트로드)",
+  "employees": 1,
+  "homepage": "https://info.ludgi.ai/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:06:22.516Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:06:22.843Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:06:22.843Z"
+ }
+}

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T03:38:04.631Z",
+ "updatedAt": "2026-11-23T04:05:10.114Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -34338,6 +34338,283 @@
     "files": [
      "1. 입찰공고문_「청정수소 인증정보시스템 고도화 사업」_재공고.pdf",
      "2. 제안요청서_청정수소 인증정보시스템 고도화 사업_최종.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01847398",
+   "ord": "000",
+   "title": "2027~2028년 노원구 스마트도시통합운영센터 통합유지관리 용역",
+   "org": "서울특별시 노원구",
+   "amount": 1354272727,
+   "posted": "2026-11-23 13:01:31",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847398&bidPbancOrd=000",
+   "keywords": [
+    "스마트도시",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "기타",
+     "기타기술용역"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "서울특별시 노원구",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(엔지니어링)",
+    "bidMethod": "직찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 80,
+    "priceRate": 20,
+    "budget": 1489700000,
+    "regDeadline": null,
+    "bidBegin": null,
+    "opening": "2026-12-04 17:00:00",
+    "refNo": "서울특별시 노원구 공고 제2026-228호",
+    "files": [
+     {
+      "name": "공고문-2027~2028년 스마트도시통합운영센터 통합유지관리 용역.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847398&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=05"
+     },
+     {
+      "name": "공고문-2027~2028년 스마트도시통합운영센터 통합유지관리 용역.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847398&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=05"
+     },
+     {
+      "name": "6.제안요청서(2027~2028년_스마트도시통합운영센터_통합유지관리_용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847398&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=05"
+     },
+     {
+      "name": "7.과업지시서(2027~2028년 스마트도시통합운영센터 통합유지관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847398&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=05"
+     },
+     {
+      "name": "2.긴급공고사유서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847398&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=05"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "가. 유지관리대상 설비 및 기기의 유지관리 일체(점검, 설정, 설치, 제거, 수리 등)",
+     "나. 시스템 장애 발생 시 신속한 복구 및 문제 발생 시 대책 강구",
+     "다. 유지관리대상의 원활한 운영과 안정적인 서비스 제공을 위한 점검실시",
+     "라. 소모성 자재비 ‧ 수리비 및 경미한 이전설치는 유지관리 계약금에 포함",
+     "마. 로컬 부문 - CCTV 2,815대 (무상유지관리 기간이 경과된 CCTV)",
+     "1) 카메라, 하우징, 영상 비디오서버 등",
+     "2) 관련 부대설비 : 비상벨, 스피커, 실외함체, 폴대 등",
+     "바. 관제센터 내부 센터장비 유지관리",
+     "1) 서버 및 스토리지",
+     "2) 통합관제프로그램 등 CCTV 운영관련 각종 시스템",
+     "3) DID, UPS, 항온항습기 등 부대설비 등",
+     "사. 스마트시티통합플랫폼 관련 시스템 및 시설물 유지관리 등"
+    ],
+    "background": [],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [],
+    "period": "2027.01.01.~2028.12.31.(2년/장기계속계약)",
+    "files": [
+     "공고문-2027~2028년 스마트도시통합운영센터 통합유지관리 용역.pdf",
+     "6.제안요청서(2027~2028년_스마트도시통합운영센터_통합유지관리_용역).hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01827570",
+   "ord": "000",
+   "title": "2027년 영상자료정보관리시스템(AMS) 유지관리",
+   "org": "한국영상자료원",
+   "amount": 159754545,
+   "deadline": "2026-12-08 10:00:00",
+   "posted": "2026-11-23 12:58:24",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01827570&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 177375540,
+    "regDeadline": "2026-12-07 18:00",
+    "bidBegin": "2026-12-04 10:00:00",
+    "opening": "2026-12-08 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "긴급입찰사유서_2027년 영상자료정보관리시스템(AMS) 유지관리.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064149&rfpOrd=000&rfpUntyAtchFileNo=8",
+      "kind": "기타문서"
+     },
+     {
+      "name": "제안요청서_2027년 영상자료정보관리시스템(AMS) 유지관리(수정).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064149&rfpOrd=000&rfpUntyAtchFileNo=6",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "입찰공고서(한국영상자료원)_국가_중기간_유지관리_수평_SW_1468_공동_하도급지킴이.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01827570&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서(한국영상자료원)_국가_중기간_유지관리_수평_SW_1468_공동_하도급지킴이.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01827570&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "- 영상자료정보관리시스템(AMS) 유지관리",
+     "- 검색엔진, OCR 등 관련 소프트웨어 유지관리",
+     "- 기관메타관리시스템 등 연계 시스템 유지관리 및 기술지원",
+     "- 시스템 운영환경 변화에 따른 기술지원 및 운영 대응"
+    ],
+    "background": [
+     "□ 그간의 추진경과",
+     "- (2024) 1차년도 - 하드웨어 및 소프트웨어 장비 도입",
+     "- (2025) 2차년도 - 영상자료정보관리시스템 개발",
+     "- (2026) 3차년도 - 기관홈페이지 및 한국영화데이터베이스(KMDb) 개발"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "",
+    "files": [
+     "입찰공고서(한국영상자료원)_국가_중기간_유지관리_수평_SW_1468_공동_하도급지킴이.pdf",
+     "제안요청서_2027년 영상자료정보관리시스템(AMS) 유지관리(수정).hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01848224",
+   "ord": "000",
+   "title": "2027년 충남관광 홈페이지 기능고도화 및 유지관리사업",
+   "org": "충청남도",
+   "amount": 104545455,
+   "posted": "2026-11-23 12:59:55",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848224&bidPbancOrd=000",
+   "keywords": [
+    "홈페이지",
+    "고도화",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "정보시스템개발서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "충청남도",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "직찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 115000000,
+    "regDeadline": null,
+    "bidBegin": null,
+    "opening": "2026-12-04 18:00:00",
+    "refNo": "운영지원과",
+    "files": [
+     {
+      "name": "입찰공고서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848224&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848224&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848224&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "운영환경 구성",
+     "외부 LLM 서비스 이용 요건",
+     "공통 준수 사항",
+     "AI 관광비서 챗봇 사용자 화면 구축",
+     "RAG 기반 답변 생성 기능 구축",
+     "외부 LLM API 연계",
+     "챗봇 관리자 기능 구축",
+     "야간관광 콘텐츠 구축",
+     "충남관광 홈페이지 유지관리",
+     "시범운영 및 기능 보완",
+     "기타 요구사항",
+     "성능일반",
+     "응답시간",
+     "처리량"
+    ],
+    "background": [
+     "가. 생성형 AI 기반 대화형 관광안내 서비스 도입으로 관광정보 접근성 제고",
+     "- 충남관광 보유 관광DB를 기반으로 RAG(검색증강생성) 방식의 AI 관광비서 챗봇을 구축하여 24시간 대화형 관광안내 제공",
+     "- ‘대한민국 AI 수도 충남’정책 부합하는 관광분야 AI 서비스 선도 모델 마련",
+     "나. 야간관광 콘텐츠 보강 및 충남관광 홈페이지의 안정적 운영"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템개발서비스",
+      "code": "8111159901"
+     }
+    ],
+    "period": "2027. 1. 1.~ 2027. 12. 31.",
+    "files": [
+     "입찰공고서.pdf",
+     "제안요청서.hwpx"
     ],
     "skipped": []
    }

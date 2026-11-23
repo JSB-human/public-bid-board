@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 모르제",
+  "ceo": "박영수",
+  "opened": "2020-04-10",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털2로 166, 906호(가산동, 에이스 K1타워)",
+  "employees": 4,
+  "homepage": "www.morget.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:07:17.295Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:07:17.655Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:07:17.655Z"
+ }
+}

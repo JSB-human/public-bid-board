@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 닷익스펜더(Dot.Expander Co.,Ltd.)",
+  "ceo": "오성훈",
+  "opened": "2013-07-17",
+  "region": "서울특별시 성북구",
+  "address": "서울특별시 성북구 장위로19길 25, 202 (장위동)",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:05:59.074Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:05:59.415Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:05:59.415Z"
+ }
+}

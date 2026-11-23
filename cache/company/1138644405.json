@@ -1,0 +1,31 @@
+{
+ "basic": {
+  "name": "주식회사 유비젠에스엔티",
+  "ceo": "윤영숙",
+  "opened": "2010-12-15",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 226-0 (가산동, 에이스하이엔드타워5) 1304호",
+  "employees": 104,
+  "homepage": "www.ubzen.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:05:47.760Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 27,
+   "202511": 20,
+   "202512": 17,
+   "202603": 6
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T04:05:50.276Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:05:50.276Z"
+ }
+}
