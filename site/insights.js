@@ -528,20 +528,26 @@ function drawCompany(bizno) {
     </div>
     <section class="stats company-metrics" id="companyMetrics" aria-live="polite" aria-label="업체 실적"></section>
     <div class="company-workspace">
+      <section class="panel company-basics"><h2>기본 정보</h2><dl class="company-facts">${info.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></section>
       <section class="panel" id="companyHistory"><h2>참여 이력</h2><div id="companyHistoryRows"></div></section>
-      <aside class="panel company-extras" aria-label="업체 정보">
-        <h2>업체 정보</h2>
-        <details open><summary>기본 정보</summary><div class="facts">${info.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></details>
-        <details id="companyRelations"><summary>협력·경쟁 관계</summary>
-          <div class="note"><a class="more" href="#galaxy/c:${esc(c.bizno)}">전체 관계도 보기 →</a></div>
-          <div class="net ego" id="egoGraph"></div><div class="rel-cols">
-            <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
-            <div><div class="sub-title">같은 공고에서 겨룬 회사</div>${relList(c.rivals, '공고')}</div>
-          </div>
-        </details>
-        <details><summary>직원 수 추이</summary><div class="note">국민연금 가입자 기준</div>${npsChart(c)}</details>
-        <details><summary>재무</summary><div class="note">DART 공시 기준</div>${dartTable(c)}</details>
-      </aside>
+      <section class="panel company-relations">
+        <div class="company-section-head"><h2>협력·경쟁 관계</h2><a class="more" href="#galaxy/c:${esc(c.bizno)}">전체 관계도 →</a></div>
+        <div class="rel-cols">
+          <div><h3>협력 업체</h3>${relList(c.partners, '협력 업체', true)}</div>
+          <div><h3>경쟁 업체</h3>${relList(c.rivals, '경쟁 업체')}</div>
+        </div>
+        ${c.partners?.length || c.rivals?.length ? '<div class="net ego" id="egoGraph"></div>' : ''}
+      </section>
+      <div class="company-records">
+        <section class="panel">
+          <div class="company-section-head"><h2>직원 수 추이</h2><span>국민연금 가입자 기준</span></div>
+          ${npsChart(c)}
+        </section>
+        <section class="panel company-finance">
+          <div class="company-section-head"><h2>재무</h2><span>DART 공시 기준</span></div>
+          ${dartTable(c)}
+        </section>
+      </div>
     </div>`;
   const yearPick = $('companyYear');
   setOptions(yearPick, yearsOf(c.history, resultDate).map((year) => [year, `${year}년`]));
@@ -558,18 +564,17 @@ function drawCompany(bizno) {
   };
   yearPick.addEventListener('change', drawPerformance);
   drawPerformance();
-  $('companyRelations').addEventListener('toggle', function loadGraph() {
-    if (!this.open) return;
-    this.removeEventListener('toggle', loadGraph);
-    drawEgo($('egoGraph'), c);
+  const graph = $('egoGraph');
+  if (graph) drawEgo(graph, c).catch(() => {
+    graph.innerHTML = '<div class="note">관계도를 불러오지 못했어요.</div>';
   });
   window.scrollTo(0, 0);
 }
 
 
-function relList(list, unit, withShare) {
-  if (!list?.length) return '<div class="note">아직 없어요.</div>';
-  return `<div class="rel">${list.map((p) => `<a href="#company/${esc(p.bizno)}"><span>${esc(p.name)}</span><small>${p.count}${unit === '공고' ? '번' : '건'}${withShare && p.share != null ? ` · 지분 ${p.share}%` : ''}</small></a>`).join('')}</div>`;
+function relList(list, label, withShare) {
+  if (!list?.length) return '<div class="note">기록 없음</div>';
+  return `<div class="rel" role="region" aria-label="${label} 목록" tabindex="0">${list.map((p) => `<a href="#company/${esc(p.bizno)}"><span>${esc(p.name)}</span><small>${p.count}건${withShare && p.share != null ? ` · 지분 ${p.share}%` : ''}</small></a>`).join('')}</div>`;
 }
 
 function historyTable(rows) {
@@ -590,9 +595,9 @@ function npsChart(c) {
   const pts = c.nps || [];
   if (pts.length < 2) {
     const one = pts[0] ? `${pts[0].cnt}명 (${pts[0].ym.slice(0, 4)}.${pts[0].ym.slice(4)})` : c.basic?.employees ? `조달청 등록 직원 수 ${c.basic.employees}명` : '';
-    return `<div class="note">${one ? esc(one) + ' · ' : ''}${pts.length ? '추이를 그리려면 몇 달치가 더 필요해요.' : '국민연금 가입 사업장에서 찾지 못했어요(3인 미만 법인 등).'}</div>`;
+    return `<p class="note">${one ? esc(one) + ' · ' : ''}${pts.length ? '월별 기록 1건' : '국민연금 가입자 기록 없음'}</p>`;
   }
-  const W = 640, H = 160, P = 28;
+  const W = 320, H = 76, P = 16;
   // 세로축은 0부터 시작해 작은 변화를 부풀리지 않는다.
   const max = Math.max(...pts.map((p) => p.cnt)), min = 0;
   const span = Math.max(1, max - min);
@@ -604,19 +609,19 @@ function npsChart(c) {
     <svg class="spark" viewBox="0 0 ${W} ${H}" role="img" aria-label="직원 수 추이">
       <polyline points="${P},${H - P} ${line} ${W - P},${H - P}" class="area"/>
       <polyline points="${line}" class="line"/>
-      ${pts.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.cnt)}" r="3.5"><title>${p.ym.slice(0, 4)}.${p.ym.slice(4)} ${p.cnt}명</title></circle>`).join('')}
-      <text x="${P}" y="${H - 6}">${pts[0].ym.slice(2, 4)}.${pts[0].ym.slice(4)}</text>
-      <text x="${W - P}" y="${H - 6}" text-anchor="end">${pts[pts.length - 1].ym.slice(2, 4)}.${pts[pts.length - 1].ym.slice(4)}</text>
+      ${pts.map((p, i) => `<circle cx="${x(i)}" cy="${y(p.cnt)}" r="2.5"><title>${p.ym.slice(0, 4)}.${p.ym.slice(4)} ${p.cnt}명</title></circle>`).join('')}
+      <text x="${P}" y="${H - 3}">${pts[0].ym.slice(2, 4)}.${pts[0].ym.slice(4)}</text>
+      <text x="${W - P}" y="${H - 3}" text-anchor="end">${pts[pts.length - 1].ym.slice(2, 4)}.${pts[pts.length - 1].ym.slice(4)}</text>
     </svg>`;
 }
 
 function dartTable(c) {
   const ys = c.dart || [];
-  if (!ys.length) return '<div class="note">DART 공시 재무가 없어요. 외부감사 대상이 아닌 회사는 공시하지 않아요.</div>';
+  if (!ys.length) return '<p class="note">확인된 DART 재무 공시가 없어요.</p>';
   const rows = ['매출액', '영업이익', '당기순이익', '자산총계', '부채총계', '자본총계'];
   const sorted = [...ys].sort((a, b) => a.year - b.year);
-  return `<div class="rank-wrap"><table class="rank"><thead><tr><th></th>${sorted.map((y) => `<th class="num">${y.year}</th>`).join('')}</tr></thead><tbody>
-    ${rows.map((r) => `<tr><td>${r}</td>${sorted.map((y) => `<td class="num">${y[r] != null ? eok(y[r]) : '-'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  return `<div class="rank-wrap"><table class="rank" aria-label="연도별 공시 재무"><thead><tr><th scope="col">항목</th>${sorted.map((y) => `<th scope="col" class="num">${y.year}</th>`).join('')}</tr></thead><tbody>
+    ${rows.map((r) => `<tr><th scope="row">${r}</th>${sorted.map((y) => `<td class="num">${y[r] != null ? eok(y[r]) : '-'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
 }
 
 // ---------- 그래프 ----------
@@ -641,7 +646,8 @@ async function drawEgo(el, c) {
   const list = [...set].map((b) => by.get(b));
   const max = Math.max(1, ...list.map(scoreOf));
   const { networkGraph } = await import('./graph.js');
-  networkGraph(el, { nodes: list.map((x) => toNode(x, max)), links: [...links.values()], focus: c.bizno, height: 420, onOpen: (id) => id !== c.bizno && (location.hash = 'company/' + id) });
+  if (!el.isConnected) return;
+  await networkGraph(el, { nodes: list.map((x) => toNode(x, max)), links: [...links.values()], focus: c.bizno, height: 152, onOpen: (id) => id !== c.bizno && (location.hash = 'company/' + id) });
 }
 
 
