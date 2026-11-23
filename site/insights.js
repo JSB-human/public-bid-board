@@ -52,27 +52,39 @@ async function renderResults() {
   if (!root.dataset.ready) {
     root.dataset.ready = '1';
     root.innerHTML = `
-      <details class="overview" id="resultOverview">
-        <summary>마감·결과 통계</summary>
-        <div class="top"><section class="hero"><h1>마감·결과 통계</h1><p>현재 검색 조건으로 모은 공고를 집계해요.</p></section>
-          <section class="stats" id="rStats"></section></div>
-        <section class="dash" id="rDash"></section>
-      </details>
-      <div class="split"><div class="col-list">
-        <div class="toolbar"><div class="inner">
+      <div class="board-workspace">
+        <div class="board-page-head"><h1>마감·결과</h1></div>
+        <div class="toolbar board-toolbar">
+          <div class="board-filters">
           <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명·공고번호 검색" aria-label="결과 검색"></div>
-          <div class="filter-fields">
+          <div class="filter-fields board-primary-filters">
             <label>개찰 연도 <select id="rYear"><option value="">전체 연도</option></select></label>
             <label>결과 <select id="rStatus"><option value="">전체 결과</option><option value="won">낙찰·계약</option><option value="joint">공동계약</option><option value="failed">유찰</option><option value="wait">결과 대기</option><option value="rebid">재입찰</option></select></label>
           </div>
+          </div>
+          <div class="filter-foot board-options">
           <details class="filter-more" id="rMore"><summary>상세 조건</summary><div class="filter-fields">
             <label>개찰 월 <select id="rMonth"><option value="">전체 월</option>${Array.from({ length: 12 }, (_, i) => `<option value="${String(i + 1).padStart(2, '0')}">${i + 1}월</option>`).join('')}</select></label>
             <label>공공조달 분류 <select id="rCategory"><option value="">전체 분류</option></select></label>
             <label>계약 방법 <select id="rMethod"><option value="">전체 계약 방법</option></select></label>
-          </div></details></div></div>
-        <div class="list-overview" id="rSummary" aria-live="polite"></div>
-        <div class="count" id="rCount" hidden></div><div id="rList" class="rows" tabindex="0" role="region" aria-label="마감 공고 목록"></div></div>
-        <aside class="pane" id="rPane" aria-label="고른 공고 결과"></aside></div>
+          </div></details>
+          <details class="overview board-overview" id="resultOverview">
+            <summary>마감·결과 통계</summary>
+            <div class="board-overview-content"><section class="stats" id="rStats" aria-label="검색 조건의 공고 통계"></section>
+              <section class="dash" id="rDash"></section></div>
+          </details>
+          </div>
+        </div>
+        <div class="split board-split">
+          <section class="col-list" aria-labelledby="resultListTitle">
+            <div class="board-list-head"><h2 id="resultListTitle">결과 목록</h2><span id="resultListCount" aria-live="polite"></span></div>
+            <div class="list-overview" id="rSummary"></div>
+            <div class="count" id="rCount" hidden></div>
+            <div id="rList" class="rows" tabindex="0" role="region" aria-label="마감 공고 목록"></div>
+          </section>
+          <aside class="pane board-detail" id="rPane" aria-label="고른 공고 결과"></aside>
+        </div>
+      </div>
       <footer id="rFoot"></footer>`;
     $('rq').addEventListener('input', drawResults);
     resultSelects().forEach((el) => el.addEventListener('change', drawResults));
@@ -221,8 +233,9 @@ function drawResults() {
   const moreCount = [month, category, method].filter(Boolean).length;
   $('rMore').querySelector('summary').textContent = moreCount ? `상세 조건 (${moreCount})` : '상세 조건';
   const totals = resultTotals(rows);
-  $('rSummary').innerHTML = listOverview(`${year ? `${esc(year)}년 ` : '전체 연도 '}${month ? `${Number(month)}월 ` : ''}목록 요약`, [
-    ['공고', `${countText(rows.length)}건`], ['낙찰·계약', `${countText(totals.won)}건`],
+  $('resultListCount').textContent = `${countText(rows.length)}건`;
+  $('rSummary').innerHTML = listOverview('', [
+    ['낙찰·계약', `${countText(totals.won)}건`],
     ['유찰', `${countText(totals.failed)}건`], ['결과 대기', `${countText(totals.wait)}건`],
   ]);
   const active = !!(terms.length || year || status || moreCount || rs.org);
@@ -330,15 +343,15 @@ function resultRow(r, W) {
   // 금액이 0 으로 등록된 계약(해외 사업 등)은 금액이 없는 것으로 본다.
   const [amount, amountLabel] = amountOf(r);
   const who = whoOf(r);
+  const date = r.openedAt ? `개찰 ${shortDay(r.openedAt)}` : r.deadline ? `입찰 마감 ${shortDay(r.deadline)}` : '';
   return `<article class="item ${on ? (W ? 'sel' : 'open') : ''}">
     <button class="row" data-id="${esc(r.id)}" ${W ? `aria-current="${on}"` : `aria-expanded="${on}"`}>
-      <span class="when st-${cls}"><b>${{ '개찰 완료': '개찰', '결과 대기': '대기' }[st] || esc(st)}</b><small>${shortDay(r.openedAt || r.deadline).replace(/^\d+\./, '').replace('.', '/')}</small></span>
       <span class="rbody">
         <span class="rtitle">${esc(r.title)}</span>
-        <span class="rmeta"><span>${esc(r.org)}${r.participants ? ` · ${r.participants}곳 참여` : ''}</span>${r.contract?.joint ? '<span class="badge rg">공동</span>' : ''}</span>
-        ${who ? `<span class="rwho">${esc(who)}</span>` : ''}
+        <span class="rmeta"><span>${esc(r.org)}</span>${r.contract?.joint ? '<span class="badge rg">공동</span>' : ''}</span>
+        <span class="row-dates">${[date, r.participants != null ? `${r.participants}곳 참여` : '', esc(who)].filter(Boolean).join(' · ')}</span>
       </span>
-      <span class="rside"><b>${eok(amount)}</b><small>${amountLabel}</small></span>
+      <span class="rside"><b>${eok(amount)}</b><span class="board-status ${cls === 'ok' ? 'good' : cls === 'bad' ? 'bad' : ''}">${esc(st)}</span><small>${amountLabel}</small></span>
     </button>
     ${!W && on ? resultDetail(r) : ''}
   </article>`;
@@ -348,9 +361,9 @@ function resultRow(r, W) {
 function resultPane(r) {
   const [st, cls] = statusOf(r);
   const [amount, amountLabel] = amountOf(r);
-  const kind = kindOf(r), who = whoOf(r);
+  const kind = kindOf(r), lead = leadOf(r);
+  const companies = r.contract?.members?.length || 0;
   const checks = [
-    ['결과', who ? esc(who) : st, cls === 'ok' ? 'good' : cls === 'bad' ? 'bad' : ''],
     r.participants != null && ['참여', r.participants + '곳', ''],
     r.winner?.rate != null && ['투찰률', pct(r.winner.rate), ''],
     r.contract && ['계약 형태', r.contract.joint ? `공동 ${r.contract.members?.length || ''}곳` : '단독', ''],
@@ -359,9 +372,12 @@ function resultPane(r) {
       <div class="pane-tags"><span class="badge"><i class="kd k-${kind}"></i>${KINDS[kind]}</span><span class="badge st-${cls}">${st}</span>${r.reNotice ? '<span class="badge re">재공고</span>' : ''}</div>
       <h2>${esc(r.title)}</h2>
       <div class="pane-org">${esc(r.org)}${r.openedAt ? ` · ${shortDay(r.openedAt)} 개찰` : ''}</div>
-      <div class="pane-amt"><b>${won(amount)}<small>${amountLabel}</small></b></div>
+      <div class="board-key-facts">
+        <div><small>${amountLabel === '추정' ? '추정가격' : `${amountLabel}금액`}</small><b>${won(amount)}</b></div>
+        <div><small>${lead ? (r.contract ? '계약 업체' : '낙찰 업체') : '개찰 결과'}</small><b>${lead ? coLink(lead.bizno, lead.name) + (companies > 1 ? ` 외 ${companies - 1}곳` : '') : esc(st)}</b></div>
+      </div>
     </div>
-    <div class="detail" style="padding-bottom:0"><div class="checks">${checks.map(([k, v, c]) => `<div class="check ${c}"><small>${k}</small><b>${v}</b></div>`).join('')}</div></div>
+    ${checks.length ? `<div class="detail" style="padding-bottom:0"><div class="checks">${checks.map(([k, v, c]) => `<div class="check ${c}"><small>${k}</small><b>${v}</b></div>`).join('')}</div></div>` : ''}
     ${resultDetail(r)}`;
 }
 
@@ -384,6 +400,7 @@ function filterBidderList(e) {
 
 function resultDetail(r) {
   const parts = [];
+  const outcome = [];
   if (r.contract) {
     const k = r.contract;
     const members = (k.members || []).map((m) => `<div class="member">
@@ -392,7 +409,7 @@ function resultDetail(r) {
         <span class="share"><span class="bar"><i style="width:${Math.max(2, m.share ?? 0)}%"></i></span><b>${m.share ?? '-'}%</b></span>
         <span class="mamt">${k.amount && m.share != null ? eok((k.amount * m.share) / 100) : ''}</span>
       </div>`).join('');
-    parts.push(`<div class="section-title">계약 ${k.joint ? '· 공동계약' : ''}</div>
+    outcome.push(`<div class="section-title">계약 ${k.joint ? '· 공동계약' : ''}</div>
       <div class="tiles">
         <div class="tile"><div class="k">계약금액</div><div class="v">${k.amount ? won(k.amount) : '등록 안 됨'}</div></div>
         <div class="tile"><div class="k">계약일</div><div class="v">${esc(k.date || '-')}</div></div>
@@ -400,13 +417,13 @@ function resultDetail(r) {
       </div>
       <div class="members">${members}</div>`);
   } else if (r.winner) {
-    parts.push(`<div class="section-title">낙찰</div><div class="tiles">
+    outcome.push(`<div class="section-title">낙찰</div><div class="tiles">
       <div class="tile"><div class="k">낙찰 업체</div><div class="v">${coLink(r.winner.bizno, r.winner.name)}</div></div>
       <div class="tile"><div class="k">낙찰금액 · 투찰률</div><div class="v">${won(r.winner.amount)} · ${pct(r.winner.rate)}</div></div></div>
       <div class="note">계약이 등록되면 컨소시엄 구성사와 지분이 함께 나와요.</div>`);
   }
   if (r.status === '유찰') {
-    parts.push(`<div class="section-title">유찰</div><div class="note">${esc(r.note || '응찰 업체가 없거나 조건을 갖춘 업체가 없어 유찰됐어요.')}</div>`);
+    outcome.push(`<div class="section-title">유찰</div><div class="note">${esc(r.note || '응찰 업체가 없거나 조건을 갖춘 업체가 없어 유찰됐어요.')}</div>`);
   }
   if (r.bidders?.length) {
     const winBiz = new Set([r.winner?.bizno, ...(r.contract?.members || []).map((m) => m.bizno)].filter(Boolean));
@@ -437,7 +454,7 @@ function resultDetail(r) {
     r.deadline && ['입찰 마감', esc(dueLabel(parseDeadline(r.deadline)))],
   ].filter(Boolean);
   return `<div class="detail">
-    ${parts.join('')}
+    ${(r.bidders?.length ? [...parts, ...outcome] : [...outcome, ...parts]).join('')}
     <div class="section-title">공고 정보</div>
     <div class="tiles">${facts.map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('')}</div>
     <div class="cta-row">${links.join('')}</div>
@@ -534,41 +551,43 @@ function drawCompany(bizno) {
     c.industries?.length && ['등록 업종', c.industries.map((i) => `<span class="lic">${esc(i.name)}</span>`).join('')],
   ].filter(Boolean);
   el.innerHTML = `
-    <div class="company-header">
+    <div class="company-header board-page-head">
       <div class="company-identity">
-        <a class="company-back" href="#companies">← 업체 목록</a>
         <h1 id="companyName">${esc(c.name)}</h1>
         <div class="company-meta">${region ? `<span>${esc(region)}</span>` : ''}${kinds.length ? `<span>${kinds.map(esc).join(' · ')}</span>` : ''}${!region && !kinds.length ? '<span>조달 등록 정보 없음</span>' : ''}</div>
       </div>
-      <label class="company-period">실적 연도 <select class="year-pick" id="companyYear" aria-controls="companyPerformance companyHistoryRows"><option value="">전체 연도</option></select></label>
+      <div class="company-identity-actions">
+        <a class="company-back" href="#companies">← 업체 목록</a>
+        <label class="company-period">실적 연도 <select class="year-pick" id="companyYear" aria-controls="companyPerformance companyHistoryRows"><option value="">전체 연도</option></select></label>
+      </div>
     </div>
     <section class="company-hero" aria-label="조달 실적 요약">
       <div id="companyPerformance" aria-live="polite">
-        <p class="company-amount-label"><span id="companyPeriodLabel">전체</span> 수주액</p>
-        <p class="company-amount" id="companyWonAmount"></p>
-        <p class="company-amount-basis">업체 지분 기준</p>
+        <div class="company-primary-stat">
+          <p class="company-amount-label"><span id="companyPeriodLabel">전체</span> 수주액</p>
+          <p class="company-amount" id="companyWonAmount"></p>
+          <p class="company-amount-basis">업체 지분 기준</p>
+        </div>
         <dl class="company-metrics" id="companyMetrics" aria-label="업체 실적"></dl>
       </div>
       ${companyAwardTrend(yearlyStats, data.companies.updatedAt)}
     </section>
-    <div class="company-workspace">
-      <div class="company-column">
+    <div class="company-workspace board-split">
         <section class="company-history" id="companyHistory">
-          <div class="company-section-head"><h2>참여 이력</h2><span id="companyHistoryCount"></span></div>
+          <div class="company-section-head board-list-head"><h2>참여 이력</h2><span id="companyHistoryCount"></span></div>
           <div id="companyHistoryRows"></div>
         </section>
-        <section class="company-workforce">
-          <div class="company-section-head"><h2>직원 수 추이</h2><span>국민연금 가입자 기준</span></div>
-          ${npsChart(c)}
-        </section>
-      </div>
-      <div class="company-column">
+      <div class="company-column board-detail" aria-label="업체 정보" role="region">
         <section class="company-relations">
           <div class="company-section-head"><h2>협력·경쟁 업체</h2><a class="more" href="#galaxy/c:${esc(c.bizno)}">전체 관계도</a></div>
           <div class="company-relation-headings"><h3 id="companyPartners">협력 업체</h3><h3 id="companyRivals">경쟁 업체</h3></div>
           <div class="company-relation-lists" aria-label="전체 기간 협력·경쟁 업체 목록" role="region" tabindex="0">
             ${relList(c.partners, 'companyPartners', true)}${relList(c.rivals, 'companyRivals')}
           </div>
+        </section>
+        <section class="company-workforce">
+          <div class="company-section-head"><h2>직원 수 추이</h2><span>국민연금 가입자 기준</span></div>
+          ${npsChart(c)}
         </section>
         <section class="company-finance">
           <div class="company-section-head"><h2>재무</h2><span>DART 공시 · 억 원</span></div>
@@ -605,14 +624,14 @@ function drawCompany(bizno) {
 function companyAwardTrend(yearlyStats, updatedAt) {
   if (!yearlyStats.size) return '<p class="note">연도별 수주액을 확인할 수 없어요.</p>';
   const values = [...yearlyStats].map(([year, stats]) => [year, stats.wonAmount]);
-  const scale = 1.22 * Math.max(1, ...values.map(([, amount]) => amount));
+  const scale = 1.6 * Math.max(1, ...values.map(([, amount]) => amount));
   const snapshot = Date.parse(updatedAt);
   const date = Number.isFinite(snapshot) ? new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric' }).format(snapshot) : '';
   const labels = values.map(([year, amount]) => `${year}년 ${countText(amount)}원`).join(', ');
-  return `<figure class="company-awards"><figcaption><strong>연도별 수주액</strong><span>억 원</span></figcaption>
+  return `<figure class="company-awards"><figcaption><strong>연도별 수주액</strong><span>억 원${date ? ` · ${esc(date)} 기준` : ''}</span></figcaption>
     <div class="company-award-bars" role="img" aria-label="연도별 수주액. ${esc(labels)}" style="--award-count:${values.length}">
       ${values.map(([year, amount]) => `<div class="company-award-bar" data-year="${esc(year)}" title="${countText(amount)}원"><div class="company-award-track"><div class="company-award-fill" style="--award-height:${amount / scale * 100}%"><b>${companyEokNumber(amount)}</b></div></div><span>${esc(year)}</span></div>`).join('')}
-    </div>${date ? `<p class="company-chart-date">${esc(date)} 기준</p>` : ''}</figure>`;
+    </div></figure>`;
 }
 
 function companyEokNumber(amount) {
