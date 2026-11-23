@@ -63,7 +63,7 @@ async function renderResults() {
           </details>
         <div class="toolbar board-toolbar">
           <div class="board-filters">
-          <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명·공고번호 검색" aria-label="결과 검색"></div>
+          <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명·공고번호 검색" aria-label="결과 검색"><kbd aria-hidden="true">/</kbd></div>
           <div class="filter-fields board-primary-filters">
             <label>개찰 연도 <select id="rYear"><option value="">전체 연도</option></select></label>
             <label>결과 <select id="rStatus"><option value="">전체 결과</option><option value="won">낙찰·계약</option><option value="joint">공동계약</option><option value="failed">유찰</option><option value="wait">결과 대기</option><option value="rebid">재입찰</option></select></label>
