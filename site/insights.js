@@ -4,17 +4,21 @@
 const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
 const data = { results: null, companies: null, byBizno: new Map() };
+const pending = {};
 const rs = { q: '', filter: 'all', open: new Set(), sel: null, limit: 150 };
 const cs = { q: '', sort: 'wins' };
 
 // ---------- 공용 ----------
 async function load(name) {
   if (data[name]) return data[name];
-  const r = await fetch(`data/${name}.json`, { cache: 'no-store' });
-  if (!r.ok) throw new Error('HTTP ' + r.status);
-  data[name] = await r.json();
-  if (name === 'companies') for (const c of data.companies.items) data.byBizno.set(c.bizno, c);
-  return data[name];
+  pending[name] ??= fetch(`data/${name}.json`, { cache: 'no-store' })
+    .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then((payload) => {
+      if (name === 'companies') for (const c of payload.items) data.byBizno.set(c.bizno, c);
+      return (data[name] = payload);
+    })
+    .finally(() => { delete pending[name]; });
+  return pending[name];
 }
 const shortDay = (s) => { const t = parseDeadline(s); if (t === null) return ''; const d = new Date(t + 9 * 3600000); return `${d.getUTCFullYear() % 100}.${d.getUTCMonth() + 1}.${d.getUTCDate()}`; };
 const eok = (n) => (n == null ? '-' : n >= 1e8 ? (n / 1e8).toFixed(n >= 1e10 ? 0 : 1) + '억' : Math.round(n / 1e4).toLocaleString('ko-KR') + '만');
@@ -148,7 +152,13 @@ function drawResults() {
   });
   const W = wide();
   $('rCount').innerHTML = `<span><b>${rows.length}</b>건</span>`;
-  if (!rows.length) { $('rList').innerHTML = emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.'); $('rPane').innerHTML = ''; return; }
+  if (!rows.length) {
+    $('rList').innerHTML = emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.');
+    rView = { rows, shown: 0, W };
+    watchMore();
+    showPane(null);
+    return;
+  }
   if (W && !rows.some((r) => r.id === rs.sel)) rs.sel = rows[0].id;
   // 수천 건을 한 번에 그리면 화면이 버벅인다. 처음엔 조금만 그리고, 끝에 닿을 때마다 이어 붙인다(무한 스크롤).
   // 고른 공고가 뒤쪽에 있으면 거기까지 편다.
@@ -157,11 +167,16 @@ function drawResults() {
   $('rList').innerHTML = rows.slice(0, rView.shown).map((r) => resultRow(r, W)).join('') + moreSentinel();
   watchMore();
   showPane(W ? rows.find((r) => r.id === rs.sel) : null);
+  if (gotoResult && !$('view-results').hidden) {
+    $('rList').querySelector(`button.row[data-id="${CSS.escape(gotoResult)}"]`)?.scrollIntoView({ block: 'center' });
+    gotoResult = null;
+  }
 }
 
 const R_CHUNK = 60;
 let rView = { rows: [], shown: 0, W: false };
 let rObserver = null;
+let gotoResult = null;
 const moreSentinel = () => (rView.shown < rView.rows.length
   ? `<div class="more-sentinel"><button class="more-btn">${rView.rows.length - rView.shown}건 더 보기</button></div>` : '');
 
@@ -532,21 +547,19 @@ function route() {
   document.querySelectorAll('.tabs [data-tab]').forEach((a) => (a.dataset.tab === tab ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current')));
   if (tab === 'results') renderResults();
   if (tab === 'companies') renderCompanies();
+  if (tab === 'open') loadOrgHistory();
 }
 // 업체 이력에서 공고를 누르면 결과 화면에서 그 공고를 펼친다.
 document.addEventListener('click', (e) => {
   const a = e.target.closest('[data-goto]');
   if (!a) return;
-  rs.open.add(a.dataset.goto);
-  rs.sel = a.dataset.goto;
+  gotoResult = a.dataset.goto;
+  rs.open.add(gotoResult);
+  rs.sel = gotoResult;
   rs.q = '';
   rs.filter = 'all';
-  setTimeout(() => {
-    if ($('rq')) $('rq').value = '';
-    if (data.results) drawResults();
-    const row = document.querySelector(`#rList button.row[data-id="${CSS.escape(a.dataset.goto)}"]`);
-    row?.scrollIntoView({ block: 'center' });
-  }, 200);
+  if ($('rq')) $('rq').value = '';
+  if (data.results && !$('view-results').hidden) drawResults();
 });
 window.addEventListener('hashchange', () => { route(); if (!/^#company\//.test(location.hash)) window.scrollTo(0, 0); });
 route();

@@ -17,6 +17,7 @@ const DAY = 86400e3;
 const BACKFILL_DAYS = config.backfillDays ?? 90;
 const MAX_CALLS = config.maxCallsPerRun ?? 1500;
 const FINAL_AFTER_DAYS = 120; // 개찰 뒤 이만큼 지나도 계약이 안 보이면 더 찾지 않는다
+const BIDDERS_PAGE_SIZE = 200;
 
 const readJson = async (f, d) => { try { return JSON.parse(await readFile(f, 'utf8')); } catch { return d; } };
 if (!apiKey) { console.warn('DATA_GO_KR_KEY 가 없어 결과 수집을 건너뜁니다.'); process.exit(0); }
@@ -47,6 +48,47 @@ for (const [id, v] of Object.entries(state.pending)) add(id, v);
 // 하루 호출 한도를 넘으면 이번 실행의 조회를 멈춘다
 let quotaHit = false;
 const isQuota = (m) => /요청제한|LIMITED_NUMBER|오류 22/.test(m);
+
+async function fetchBidders(id, ord) {
+  const items = [];
+  const pageStarts = new Set();
+  let total = 0;
+  for (let page = 1; ; page++) {
+    if (!budgetLeft()) throw new Error('이번 실행의 API 호출 예산을 다 썼습니다.');
+    const r = await callApi(API.scsbid, 'getOpengResultListInfoOpengCompt', {
+      bidNtceNo: id, bidNtceOrd: ord, numOfRows: String(BIDDERS_PAGE_SIZE), pageNo: String(page),
+    });
+    total = Math.max(total, r.total);
+    if (r.items.length) {
+      const first = JSON.stringify(r.items[0]);
+      if (pageStarts.has(first)) throw new Error('참여 업체 페이지가 반복되었습니다.');
+      pageStarts.add(first);
+      items.push(...r.items);
+    }
+    if (total && items.length < total && !r.items.length) throw new Error(`참여 업체 ${items.length}/${total}행만 받았습니다.`);
+    if (total ? items.length >= total : r.items.length < BIDDERS_PAGE_SIZE) break;
+  }
+  const lastRound = items.reduce((m, x) => (x.rbidNo || '') > m ? x.rbidNo : m, '');
+  return items
+    .filter((x) => (x.rbidNo || '') === lastRound)
+    .map((x) => ({ rank: num(x.opengRank), name: (x.prcbdrNm || '').trim(), bizno: (x.prcbdrBizno || '').replace(/\D/g, ''), ceo: (x.prcbdrCeoNm || '').trim(), amount: num(x.bidprcAmt), rate: num(x.bidprcrt), note: (x.rmrk || '').trim() }))
+    .sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999));
+}
+
+// 이전에 첫 페이지만 저장된 결과는 수집이 끝난 공고도 명단만 다시 조회한다.
+for (const r of results.values()) {
+  if (quotaHit || !budgetLeft()) break;
+  if (!(r.participants > BIDDERS_PAGE_SIZE && r.bidders?.length === BIDDERS_PAGE_SIZE && r.status === '개찰완료')) continue;
+  try {
+    const bidders = await fetchBidders(r.id, r.ord);
+    if (bidders.length < r.participants) throw new Error(`참여 업체 ${bidders.length}/${r.participants}곳만 받았습니다.`);
+    r.bidders = bidders;
+    console.log(`참여 업체 재수집 ${r.id}: ${bidders.length}곳`);
+  } catch (e) {
+    console.warn(`참여 업체 재수집 실패 ${r.id}: ${e.message}`);
+    if (isQuota(e.message)) quotaHit = true;
+  }
+}
 
 // (가) 진행 중 목록에 있던 공고 중 마감이 지난 것
 const bids = (await readJson(BIDS, { items: [] })).items;
@@ -170,12 +212,7 @@ async function processOne(id, c) {
 
     // 참여 업체 순위
     if (rec.status === '개찰완료' && !rec.bidders) {
-      const r = await callApi(API.scsbid, 'getOpengResultListInfoOpengCompt', { bidNtceNo: id, bidNtceOrd: rec.ord, numOfRows: '200', pageNo: '1' });
-      const lastRound = r.items.reduce((m, x) => ((x.rbidNo || '') > m ? x.rbidNo : m), '');
-      rec.bidders = r.items
-        .filter((x) => (x.rbidNo || '') === lastRound)
-        .map((x) => ({ rank: num(x.opengRank), name: (x.prcbdrNm || '').trim(), bizno: (x.prcbdrBizno || '').replace(/\D/g, ''), ceo: (x.prcbdrCeoNm || '').trim(), amount: num(x.bidprcAmt), rate: num(x.bidprcrt), note: (x.rmrk || '').trim() }))
-        .sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999));
+      rec.bidders = await fetchBidders(id, rec.ord);
     }
     // 낙찰자
     if (rec.status === '개찰완료' && !rec.winner) {

@@ -782,8 +782,9 @@ const state = { items: [], sort: 'deadline', min: 0, only: null, day: null, kind
 const WIDE = matchMedia('(min-width: 780px)');
 const wide = () => WIDE.matches;
 const eokS = (n) => (n == null ? '-' : n >= 1e8 ? (n / 1e8).toFixed(n >= 1e10 ? 0 : 1) + '억' : Math.round(n / 1e4).toLocaleString('ko-KR') + '만');
-// 발주기관별 지난 공고 결과 (마감·결과 데이터). 늦게 도착하면 그때 상세를 다시 그린다.
+// 발주기관별 요약을 읽고 열려 있는 공고 상세에 붙인다.
 let past = null;
+let pastRequest = null;
 const KINDS = { ai: 'AI', map: '공간정보', data: '데이터', city: '스마트도시', etc: '기타' };
 const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
@@ -876,6 +877,18 @@ function renderStats() {
   $('sRe').innerHTML = open.filter(isRe).length + '<small>건</small>';
 }
 
+function loadOrgHistory() {
+  if (pastRequest || past || !state.items.length || $('view-open').hidden) return;
+  pastRequest = fetch('data/org-history.json', { cache: 'no-store' })
+    .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then((entries) => {
+      past = new Map(entries);
+      if (!$('view-open').hidden) render();
+    })
+    .catch(() => {})
+    .finally(() => { pastRequest = null; });
+}
+
 function render() {
   const q = $('q').value.trim().toLowerCase();
   const openOnly = $('open').checked;
@@ -918,6 +931,7 @@ function render() {
   if (!rows.length) {
     $('list').innerHTML = '<div class="empty"><b>조건에 맞는 공고가 없어요</b>검색어나 필터를 바꿔 보세요.</div>';
     $('pane').innerHTML = '';
+    $('pane').dataset.id = '';
     return;
   }
   if (W && !rows.some((x) => x.id === state.sel)) state.sel = rows[0].id;
@@ -997,23 +1011,19 @@ function checksHtml(x) {
 // 같은 기관이 전에 낸 공고가 어떻게 끝났는지
 function orgHistoryHtml(x) {
   if (!past) return '';
-  const rs = past.get(x.org) || [];
+  const h = past.get(x.org);
   const head = '<div class="section-title">이 기관의 지난 공고 <small>같은 조건으로 모은 것만</small></div>';
-  if (!rs.length) return head + '<div class="note">아직 모인 지난 공고가 없어요.</div>';
-  const wonN = rs.filter((r) => r.winner || r.contract).length, failN = rs.filter((r) => r.status === '유찰').length;
-  const withP = rs.filter((r) => r.participants);
-  const avg = withP.length ? (withP.reduce((a, r) => a + r.participants, 0) / withP.length).toFixed(1) + '곳' : '-';
-  const list = rs.slice(0, 5).map((r) => {
-    const lead = r.contract?.members?.[0] || r.winner;
-    const [st, cls] = lead ? ['낙찰', 'ok'] : r.status === '유찰' ? ['유찰', 'bad'] : ['대기', ''];
-    const who = lead ? lead.name + (r.contract?.members?.length > 1 ? ` 외 ${r.contract.members.length - 1}곳` : '') : r.status === '유찰' ? '응찰 업체 없음 또는 부적격' : '결과 대기';
-    return `<a href="#results" data-goto="${esc(r.id)}"><span class="hs ${cls}">${st}</span><span class="ht"><b>${esc(r.title)}</b><small>${esc(who)}${r.participants ? ` · ${r.participants}곳 참여` : ''}</small></span><span class="ha">${eokS(r.contract?.amount || r.winner?.amount || r.amount)}</span></a>`;
+  if (!h) return head + '<div class="note">아직 모인 지난 공고가 없어요.</div>';
+  const list = h.recent.map((r) => {
+    const [st, cls] = r.lead ? ['낙찰', 'ok'] : r.failed ? ['유찰', 'bad'] : ['대기', ''];
+    const who = r.lead ? r.lead.name + (r.lead.others ? ` 외 ${r.lead.others}곳` : '') : r.failed ? '응찰 업체 없음 또는 부적격' : '결과 대기';
+    return `<a href="#results" data-goto="${esc(r.id)}"><span class="hs ${cls}">${st}</span><span class="ht"><b>${esc(r.title)}</b><small>${esc(who)}${r.participants ? ` · ${r.participants}곳 참여` : ''}</small></span><span class="ha">${eokS(r.amount)}</span></a>`;
   }).join('');
   return `${head}<div class="checks">
-      <div class="check"><small>지난 공고</small><b>${rs.length}건</b></div>
-      <div class="check ${wonN ? 'good' : ''}"><small>낙찰·계약</small><b>${wonN}건</b></div>
-      <div class="check ${failN ? 'bad' : ''}"><small>유찰</small><b>${failN}건</b></div>
-      <div class="check"><small>평균 참여</small><b>${avg}</b></div>
+      <div class="check"><small>지난 공고</small><b>${h.total}건</b></div>
+      <div class="check ${h.won ? 'good' : ''}"><small>낙찰·계약</small><b>${h.won}건</b></div>
+      <div class="check ${h.failed ? 'bad' : ''}"><small>유찰</small><b>${h.failed}건</b></div>
+      <div class="check"><small>평균 참여</small><b>${h.average == null ? '-' : h.average.toFixed(1) + '곳'}</b></div>
     </div><div class="orghist">${list}</div>`;
 }
 
@@ -1200,17 +1210,9 @@ fetch('data/bids.json', { cache: 'no-store' })
     renderStats();
     renderGlance();
     render();
+    loadOrgHistory();
   })
   .catch((err) => { $('count').textContent = '데이터를 불러오지 못했어요: ' + err.message; });
-fetch('data/results.json')
-  .then((r) => (r.ok ? r.json() : null))
-  .then((d) => {
-    if (!d) return;
-    past = new Map();
-    for (const r of d.items || []) { if (!past.has(r.org)) past.set(r.org, []); past.get(r.org).push(r); }
-    if (state.items.length) render();
-  })
-  .catch(() => {});
 </script>
 </body>
 </html>

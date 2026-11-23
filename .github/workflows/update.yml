@@ -53,6 +53,9 @@ jobs:
           DATA_GO_KR_KEY: ${{ secrets.DATA_GO_KR_KEY }}
         run: node scripts/results.mjs
 
+      - name: 발주기관 이력 요약 생성
+        run: node scripts/org-history.mjs
+
       - name: 업체 정보 정리 (이력·관계·직원 수·재무)
         continue-on-error: true
         env:
