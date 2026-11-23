@@ -28,6 +28,7 @@ const eok = (n) => (n == null ? '-' : n >= 1e8 ? (n / 1e8).toFixed(n >= 1e10 ? 0
 const pct = (n) => (n == null ? '' : `${Number(n).toFixed(2).replace(/\.?0+$/, '')}%`);
 const bizFmt = (b) => (b && b.length === 10 ? `${b.slice(0, 3)}-${b.slice(3, 5)}-${b.slice(5)}` : b || '');
 const coLink = (bizno, name) => (bizno ? `<a class="co" href="#company/${esc(bizno)}">${esc(name)}</a>` : esc(name));
+const short = (name) => String(name || '').replace(/주식회사|\(주\)|㈜/g, '').trim();
 const SEARCH = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>';
 const ICON_CO = '<path d="M3 21h18M6 21V5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v16M15 9h3a1 1 0 0 1 1 1v11M9 8h2M9 12h2M9 16h2"/>';
 
@@ -624,7 +625,7 @@ function relList(list, label, withShare) {
   if (!list?.length) return '<div class="note">기록 없음</div>';
   return `<ul class="company-relation-list" aria-labelledby="${label}">${list.map((p) => {
     const note = `${p.name} · ${p.count}건${withShare && p.share != null ? ` · 지분 ${p.share}%` : ''}`;
-    const name = String(p.name).replace(/주식회사|\(주\)|㈜/g, '').trim() || p.name;
+    const name = short(p.name) || p.name;
     return `<li><a href="#company/${esc(p.bizno)}" aria-label="${esc(note)}" title="${esc(note)}"><span>${esc(name)}</span><small>${countText(p.count)}건</small></a></li>`;
   }).join('')}</ul>`;
 }
