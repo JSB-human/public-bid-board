@@ -53,7 +53,12 @@ async function renderResults() {
     root.dataset.ready = '1';
     root.innerHTML = `
       <div class="board-workspace">
-        <div class="board-page-head"><h1>마감·결과</h1></div>
+        <div class="board-page-head"><h1>마감·결과</h1><p>진행 중 목록과 같은 조건에 맞던 공고의 참여 업체·낙찰·계약 결과예요.</p></div>
+          <details class="overview board-overview" id="resultOverview" open>
+            <summary>마감·결과 통계</summary>
+            <div class="board-overview-content"><section class="stats" id="rStats" aria-label="검색 조건의 공고 통계"></section>
+              <section class="dash" id="rDash"></section></div>
+          </details>
         <div class="toolbar board-toolbar">
           <div class="board-filters">
           <div class="search">${SEARCH}<input type="search" id="rq" placeholder="사업명·발주기관·업체명·공고번호 검색" aria-label="결과 검색"></div>
@@ -68,11 +73,6 @@ async function renderResults() {
             <label>공공조달 분류 <select id="rCategory"><option value="">전체 분류</option></select></label>
             <label>계약 방법 <select id="rMethod"><option value="">전체 계약 방법</option></select></label>
           </div></details>
-          <details class="overview board-overview" id="resultOverview">
-            <summary>마감·결과 통계</summary>
-            <div class="board-overview-content"><section class="stats" id="rStats" aria-label="검색 조건의 공고 통계"></section>
-              <section class="dash" id="rDash"></section></div>
-          </details>
           </div>
         </div>
         <div class="split board-split">

@@ -938,6 +938,182 @@
     .board-options .overview > summary { font-size: 12px; }
     .board-split .row { padding-inline: 8px; }
   }
+
+  /* ================= 토스 스타일 정리 =================
+     위의 "작업 화면"(초록·테두리·작은 글씨) 구조는 그대로 두고, 색과 면·글씨 크기·간격만 다시 잡는다.
+     회색 바탕 위에 흰 카드, 파란 강조, 넉넉한 여백. */
+  :root {
+    --board-accent: var(--blue);
+    --board-on-accent: #fff;
+    --board-muted: var(--muted);
+    --board-line: var(--line);
+    --board-well: var(--field);
+    --board-tint: var(--blue-weak);
+    --board-warning: var(--orange);
+    --board-danger: var(--red);
+    --radius-card: 22px;
+  }
+  body:not(.space) { background: var(--bg); }
+  body:not(.space) > header { background: var(--header-bg); box-shadow: none; }
+  body:not(.space) .tabs a[aria-current="page"] { color: var(--text); border-bottom-color: var(--text); }
+
+  /* 머리말 */
+  .board-workspace, #cDetail { padding-top: 28px; }
+  .board-page-head { margin: 0 4px 18px; }
+  .board-page-head h1 { font-size: clamp(26px, 3vw, 32px); font-weight: 800; letter-spacing: -.035em; }
+  .board-page-head p { margin: 8px 0 0; color: var(--sub); font-size: 15px; }
+
+  /* 통계·달력(늘 펼쳐 둔다) */
+  .board-workspace > .overview { margin: 0 0 16px; }
+  .board-workspace > .overview > summary { display: none; }
+  .board-overview-content { margin: 0; padding: 0; border: 0; background: none; display: grid; gap: 12px; }
+  .board-overview-content .stats, .board-overview-content .cal { box-shadow: var(--shadow); margin: 0; }
+  .board-overview-content .dash { margin: 0; }
+  .dash-card { border-radius: var(--radius-card); }
+
+  /* 검색·필터 */
+  .board-toolbar { position: sticky; top: var(--header-h); z-index: 9; margin: 0 -16px; padding: 10px 16px 12px; background: var(--bg); }
+  .board-filters { align-items: center; gap: 10px; }
+  .board-toolbar .search input { height: 50px; padding-left: 46px; border: 0; border-radius: 16px; box-shadow: var(--shadow); font-size: 16px; }
+  .board-toolbar .search input::placeholder { color: var(--faint); }
+  .board-toolbar .search svg { left: 16px; width: 20px; height: 20px; }
+  .board-toolbar .search input:focus { outline: 0; box-shadow: 0 0 0 2px var(--blue); }
+  .board-primary-filters { gap: 8px; }
+  .board-primary-filters label, .board-options .filter-fields label { color: var(--muted); font-size: 13px; font-weight: 600; }
+  .board-primary-filters label { gap: 8px; }
+  .board-toolbar .filter-fields select { height: 50px; min-height: 50px; padding: 0 36px 0 14px; border: 0; border-radius: 16px; background-color: var(--card);
+    box-shadow: var(--shadow); font-size: 15px; font-weight: 600; color: var(--text); cursor: pointer;
+    appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238b95a1' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; }
+  .board-toolbar .filter-fields select:focus-visible { outline: 0; box-shadow: 0 0 0 2px var(--blue); }
+  .board-primary-filters select { width: clamp(130px, 14vw, 180px); }
+  .board-options { margin-top: 10px; gap: 8px 16px; align-items: center; }
+  .filter-more > summary { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 14px; border-radius: 999px; background: var(--card);
+    box-shadow: var(--shadow); color: var(--sub); font-size: 14px; font-weight: 600; list-style: none; }
+  .filter-more > summary::-webkit-details-marker { display: none; }
+  .filter-more > summary::after { content: ""; width: 6px; height: 6px; border: solid currentColor; border-width: 0 1.6px 1.6px 0; transform: translateY(-2px) rotate(45deg); }
+  .filter-more[open] > summary { background: var(--text); color: var(--card); }
+  .filter-more[open] > summary::after { transform: translateY(1px) rotate(225deg); }
+  .board-options .filter-more[open] > .filter-fields { margin: 12px 0 2px; gap: 10px; }
+  .board-options .filter-fields label { display: grid; gap: 6px; }
+  .board-options .filter-fields select { height: 44px; min-height: 44px; border-radius: 12px; font-size: 14px; }
+  .board-options .toggle { font-size: 14px; }
+  .board-options .toggle input:checked { background: var(--blue); }
+
+  /* 목록 + 상세 두 칸 */
+  .board-workspace .board-split { margin-top: 4px; gap: 16px; }
+  .board-split > .col-list { background: var(--card); border-radius: var(--radius-card); box-shadow: var(--shadow); padding: 18px 8px 8px; }
+  .board-list-head { padding: 0 12px; margin-bottom: 10px; align-items: center; }
+  .board-list-head h2 { font-size: 17px; font-weight: 800; }
+  .board-list-head > span { font-size: 14px; font-weight: 700; color: var(--blue); }
+  .board-split .list-overview { margin: 0 12px 10px; padding: 0; background: none; }
+  .board-split .list-metrics { display: flex; flex-wrap: wrap; gap: 6px; }
+  .board-split .list-metrics > div { display: inline-flex; align-items: baseline; gap: 5px; padding: 6px 10px; border-radius: 10px; background: var(--field); }
+  .board-split .list-metrics span { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .board-split .list-metrics strong { font-size: 13px; font-weight: 800; }
+  .board-split .count { padding: 0 12px 8px; }
+  .rows { border-top: 0; gap: 2px; padding-bottom: 0; }
+  .item { border-bottom: 0; border-radius: 16px; }
+  .row { padding: 14px 12px; gap: 12px; border-radius: 16px; transition: background .15s; }
+  .row:hover { background: var(--hover); }
+  .item.sel > .row, .item.open > .row { background: var(--blue-weak); box-shadow: none; }
+  .row:focus-visible { outline: 2px solid var(--blue); }
+  .rbody { gap: 4px; }
+  .rtitle { font-size: 16px; font-weight: 700; line-height: 1.45; }
+  .rmeta { font-size: 13px; }
+  .row-dates, .reg-time { font-size: 13px; }
+  .rside { gap: 5px; }
+  .rside b { font-size: 17px; font-weight: 800; }
+  .rside small { font-size: 12px; }
+  .board-status { padding: 3px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+  .more-btn { width: 100%; min-height: 48px; margin-top: 6px; border: 0; border-radius: 14px; background: var(--field); color: var(--sub); font-size: 15px; }
+  .more-btn:hover { color: var(--text); }
+
+  /* 오른쪽 상세 */
+  .board-detail { border: 0; border-radius: var(--radius-card); box-shadow: var(--shadow); }
+  .pane-h { padding: 24px 24px 12px; }
+  .pane-h h2 { margin: 10px 0 4px; font-size: 22px; font-weight: 800; line-height: 1.35; }
+  .pane-org { font-size: 14px; }
+  .pane-tags .badge { border-radius: 999px; padding: 4px 10px; }
+  .board-key-facts { gap: 10px; padding: 0; margin-top: 16px; background: none; }
+  .board-key-facts > * { padding: 12px 14px; border-radius: 14px; background: var(--field); }
+  .board-key-facts small { font-size: 12px; }
+  .board-key-facts b { font-size: 16px; font-weight: 700; margin-top: 2px; }
+  .board-key-facts a.co { color: var(--blue-text); text-decoration: none; }
+  .pane-amt { margin-top: 16px; }
+  .pane-amt b { font-size: 26px; font-weight: 800; letter-spacing: -.03em; }
+  .pane-amt b small { font-size: 13px; }
+  .pane-amt .cta { height: 40px; min-height: 40px; padding: 0 14px; border-radius: 12px; background: var(--blue); color: #fff; text-decoration: none; font-size: 14px; font-weight: 700; }
+  .board-split .detail { padding: 0 24px 24px; }
+  .board-split .cta { border-radius: 14px; }
+  .board-split .qualification { border: 0; border-radius: 16px; padding: 16px 18px; background: var(--field); }
+  .board-split .summary { border-radius: 16px; }
+  .board-split .bidder-search input { border: 0; background: var(--field); border-radius: 12px; }
+  .board-split .bidder-list a.co { color: var(--blue-text); }
+  .section-title { font-size: 14px; margin: 24px 0 10px; color: var(--sub); }
+
+  /* 넓은 화면: 페이지 전체가 스크롤되고, 오른쪽 상세는 화면에 붙어 따라온다 */
+  @media (min-width: 780px) and (min-height: 680px) {
+    .board-workspace, .board-workspace:has(.board-options details[open]) { display: block; height: auto; }
+    .board-workspace > .board-split, .board-workspace:has(.board-options details[open]) > .board-split { height: auto; align-items: start; }
+    .board-split > .col-list { display: block; }
+    .board-split .rows { overflow: visible; }
+  }
+  @media (min-width: 780px) {
+    .board-split > .pane { position: sticky; top: calc(var(--header-h) + 84px); max-height: calc(100svh - var(--header-h) - 100px); overflow: hidden auto; }
+  }
+
+  /* 업체 목록 */
+  #cRows .board { max-height: none; overflow: visible; border-radius: var(--radius-card); }
+
+  /* 업체 상세 */
+  #cDetail { --profile-bar: light-dark(#c9e2ff, #2c4a73); }
+  .company-header { margin: 0 4px 18px; }
+  .company-back { font-size: 14px; color: var(--sub); }
+  .company-meta { font-size: 14px; margin-top: 8px; }
+  .company-period { font-size: 14px; }
+  .company-period select { height: 40px; border: 0; border-radius: 12px; box-shadow: var(--shadow); font-weight: 600; }
+  .company-hero { border: 0; border-radius: var(--radius-card); background: var(--card); box-shadow: var(--shadow); padding: 24px 28px; gap: 20px 32px; }
+  .company-hero .company-amount-label { font-size: 14px; }
+  .company-amount { font-size: clamp(34px, 4.5vw, 48px); font-weight: 800; }
+  .company-hero .company-amount-basis { font-size: 13px; }
+  .company-metrics { padding-left: 24px; gap: 12px; }
+  .company-metrics dt { font-size: 13px; }
+  .company-metrics dd { font-size: clamp(20px, 2.4vw, 26px); font-weight: 800; }
+  .company-awards figcaption { font-size: 14px; font-weight: 700; }
+  .company-awards figcaption span { font-size: 12px; font-weight: 500; }
+  .company-award-bar { grid-template-rows: 72px auto; font-size: 12px; }
+  .company-award-fill { border-radius: 6px 6px 0 0; }
+  .company-award-fill b { font-size: 12px; }
+  .company-workspace { margin-top: 16px; gap: 16px; }
+  .company-history { background: var(--card); border-radius: var(--radius-card); box-shadow: var(--shadow); padding: 22px 20px 12px; min-width: 0; }
+  .company-column.board-detail { padding: 22px 22px 18px; gap: 22px; }
+  .company-column > section + section { padding-top: 22px; }
+  .company-section-head h2, .company-column .company-section-head h2 { font-size: 17px; font-weight: 800; }
+  .company-section-head > span, .company-source, .company-section-head a { font-size: 13px; }
+  .company-section-head { margin-bottom: 10px; }
+  .company-history-scroll { max-height: min(70svh, 640px); border-top: 0; }
+  .company-history-scroll .rank th { font-size: 12px; padding: 6px 8px; }
+  .company-history-scroll .rank td { padding: 10px 8px; font-size: 14px; }
+  .company-history-scroll .rank small { font-size: 13px; }
+  .company-relation-headings h3 { font-size: 14px; }
+  .company-relation-lists { max-height: 220px; }
+  .company-relation-list a { min-height: 34px; font-size: 14px; }
+  .company-workforce .nps-head b { font-size: 32px; }
+  .company-workforce .spark { height: 84px; }
+  .company-finance .rank { font-size: 14px; }
+  .company-finance .rank :is(th, td) { padding: 8px 10px; }
+  .company-basics { margin-top: 16px; padding: 18px 22px; border: 0; border-radius: var(--radius-card); background: var(--card); box-shadow: var(--shadow); }
+  .company-facts { font-size: 14px; gap: 6px 20px; }
+  .board-overview-content > * { min-width: 0; }
+  @media (max-width: 779px) {
+    .board-toolbar { position: static; }
+    .board-overview-content .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .board-toolbar .filter-fields select, .board-toolbar .search input { height: 46px; min-height: 46px; }
+    .board-primary-filters select { width: 100%; }
+    .company-hero { padding: 20px; }
+    .company-metrics { padding-left: 0; border-left: 0; }
+  }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
 </style>
 </head>
@@ -957,7 +1133,19 @@
 
 <main class="wrap" id="view-open" aria-label="진행 중 공고">
   <div class="board-workspace">
-    <div class="board-page-head"><h1>진행 중 공고</h1></div>
+    <div class="board-page-head"><h1>진행 중 공고</h1><p>공간정보 · 데이터 · AI 분야 나라장터 용역 공고를 모았어요.</p></div>
+            <details class="overview board-overview" id="openOverview" open>
+              <summary>공고 통계·마감 달력</summary>
+              <div class="board-overview-content">
+                <section class="stats" aria-label="진행 중 공고 통계">
+                  <button class="stat" disabled><div class="label">진행 중</div><div class="value" id="sOpen">-</div></button>
+                  <button class="stat" disabled><div class="label">추정가격 합계</div><div class="value" id="sSum">-</div></button>
+                  <button class="stat red" data-only="soon" aria-pressed="false"><div class="label">3일 안에 마감</div><div class="value" id="sSoon">-</div></button>
+                  <button class="stat orange" data-only="re" aria-pressed="false"><div class="label">재공고</div><div class="value" id="sRe">-</div></button>
+                </section>
+                <section class="cal" id="cal" aria-label="마감 달력"></section>
+              </div>
+            </details>
     <div class="toolbar board-toolbar" id="openToolbar">
       <div class="board-filters">
           <div class="search">
@@ -982,18 +1170,6 @@
               </div>
             </details>
             <label class="toggle">마감 전만 <input type="checkbox" id="open" checked></label>
-            <details class="overview board-overview" id="openOverview">
-              <summary>공고 통계·마감 달력</summary>
-              <div class="board-overview-content">
-                <section class="stats" aria-label="진행 중 공고 통계">
-                  <button class="stat" disabled><div class="label">진행 중</div><div class="value" id="sOpen">-</div></button>
-                  <button class="stat" disabled><div class="label">추정가격 합계</div><div class="value" id="sSum">-</div></button>
-                  <button class="stat red" data-only="soon" aria-pressed="false"><div class="label">3일 안에 마감</div><div class="value" id="sSoon">-</div></button>
-                  <button class="stat orange" data-only="re" aria-pressed="false"><div class="label">재공고</div><div class="value" id="sRe">-</div></button>
-                </section>
-                <section class="cal" id="cal" aria-label="마감 달력"></section>
-              </div>
-            </details>
       </div>
     </div>
     <div class="split board-split" id="openSplit">
@@ -1020,7 +1196,7 @@
 <main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
-<script type="module" src="insights.js?v=20261123-board-unified"></script>
+<script type="module" src="insights.js?v=20261123-toss"></script>
 <script>
 const state = { items: [], only: null, day: null, open: new Set(), sel: null, orgYears: new Map() };
 // 넓은 화면에서는 목록 옆에 상세를 나란히 두고, 좁은 화면에서는 줄을 눌러 펼친다.
