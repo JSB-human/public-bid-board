@@ -1,0 +1,15 @@
+{
+ "basic": {
+  "name": "(주) 유비텍",
+  "ceo": "이동묵",
+  "opened": "2010-11-11",
+  "region": "대구광역시 동구",
+  "address": "대구광역시 동구 이노밸리로 321,  301호 302호(신서동)",
+  "employees": 33,
+  "homepage": "www.ubi-tec.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:03:47.294Z"
+ },
+ "industries": []
+}

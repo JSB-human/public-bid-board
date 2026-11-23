@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 비아이티 (BIT Co.,Ltd.)",
+  "ceo": "김성도",
+  "opened": "2020-01-29",
+  "region": "경기도 시흥시",
+  "address": "경기도 시흥시 월곶중앙로70번안길 6 (월곶동), 403호 (월곶동, 풍림빌딩)",
+  "employees": 10,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T07:01:16.564Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T07:01:16.950Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T07:01:16.950Z"
+ }
+}
