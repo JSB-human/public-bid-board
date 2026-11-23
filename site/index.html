@@ -427,6 +427,57 @@
   .back { margin: 18px 4px 0; }
   .back a { color: var(--sub); text-decoration: none; font-weight: 600; font-size: 14px; }
   .co-hero { padding-top: 10px; }
+  .company-header { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 12px 24px; }
+  .company-header .co-hero { min-width: 0; padding-bottom: 12px; }
+  .company-header h1 { overflow-wrap: anywhere; }
+  .company-period { display: grid; align-items: center; grid-template-columns: auto minmax(108px, auto); gap: 7px; color: var(--sub); padding-bottom: 12px; font-size: 13px; font-weight: 700; }
+  .company-metrics .stat { min-width: 0; }
+  .company-metrics .value { font-size: clamp(17px, 2.2vw, 24px); }
+  .company-workspace { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; align-items: start; margin-top: 12px; }
+  .company-workspace > .panel { margin: 0; padding: 12px; min-width: 0; }
+  .company-workspace h2 { margin: 0 0 8px; font-size: 16px; line-height: 1.5; }
+  .company-history-scroll { max-height: min(48svh, 460px); overflow: auto; overscroll-behavior-y: contain; }
+  .company-history-scroll:focus-visible, .rows:focus-visible, #cRows .board:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .company-history-scroll .rank { min-width: 0; table-layout: fixed; border-collapse: separate; border-spacing: 0; }
+  .company-history-scroll th, #cRows .board th { position: sticky; top: 0; z-index: 1; background: var(--card); box-shadow: 0 1px 0 var(--line); }
+  .company-history-scroll th:first-child { width: 76px; }
+  .company-history-scroll th:nth-child(3) { width: 94px; }
+  .company-history-scroll th:nth-child(4) { width: 86px; }
+  .company-history-scroll th:last-child { width: 64px; }
+  .company-history-scroll td { overflow-wrap: anywhere; }
+  .company-history-scroll td:first-child { white-space: nowrap; }
+  .company-history-scroll .history-mobile-meta { display: none; }
+  .company-extras { max-height: min(60svh, 560px); overflow: auto; }
+  .company-extras details { border-top: 1px solid var(--line); padding: 8px 0; }
+  .company-extras summary { color: var(--sub); font-size: 14px; font-weight: 700; cursor: pointer; }
+  .company-extras details > .facts, .company-extras details > .note, .company-extras details > .rank-wrap { margin-top: 8px; }
+  .company-extras .facts > div { min-width: 0; overflow-wrap: anywhere; }
+  .company-extras .rel-cols { grid-template-columns: minmax(0, 1fr); }
+  .company-extras .rank { min-width: 260px; }
+  .company-extras .net { margin-top: 8px; }
+  #cRows .board { max-height: min(58svh, 580px); overflow: auto; overscroll-behavior-y: contain; }
+  @media (min-width: 1000px) {
+    .company-workspace { grid-template-columns: minmax(0, 1fr) minmax(270px, 30%); }
+  }
+  @media (min-width: 1000px) and (min-height: 680px) {
+    #cDetail:not([hidden]) { display: flex; flex-direction: column; height: calc(100svh - var(--header-h) - 20px); }
+    #cDetail > :not(.company-workspace) { flex: none; }
+    .company-workspace { flex: 1 1 auto; min-height: 0; grid-template-rows: minmax(0, 1fr); }
+    #companyHistory { display: flex; flex-direction: column; max-height: 100%; }
+    #companyHistoryRows { display: flex; flex-direction: column; min-height: 0; }
+    .company-history-scroll { max-height: 580px; }
+    .company-extras { max-height: min(100%, 560px); }
+  }
+  @media (max-width: 640px) {
+    .company-header { gap: 0 12px; }
+    .company-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .company-history-scroll .history-desktop { display: none; }
+    .company-history-scroll .history-mobile-meta { display: block; }
+    .company-history-scroll .rank :is(th, td) { padding: 8px 6px; }
+    .company-history-scroll th:first-child { width: 64px; }
+    .company-history-scroll th:last-child { width: 48px; }
+    .company-extras { max-height: none; }
+  }
   .sub-title { font-size: 13px; font-weight: 700; color: var(--sub); margin: 14px 0 8px; }
   .rel-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .rel { display: grid; gap: 4px; }
@@ -746,6 +797,13 @@
     .pane-h + .detail > .cta { display: none; }
   }
   .col-list .toolbar:has(.filter-more[open]) { position: static; }
+  @media (min-width: 780px) and (min-height: 680px) {
+    #view-open > .split, #view-results > .split { height: calc(100svh - var(--header-h) - 64px); align-items: stretch; }
+    .split > .col-list { display: flex; flex-direction: column; min-height: 0; }
+    .split .toolbar { position: static; }
+    .split .rows { flex: 1 1 auto; min-height: 96px; overflow: auto; grid-auto-rows: max-content; align-content: start; padding: 2px 8px 8px 2px; overscroll-behavior-y: contain; }
+    .split > .pane { position: static; max-height: none; min-height: 0; }
+  }
   @media (min-width: 1040px) {
     .split { grid-template-columns: minmax(0, 40fr) minmax(0, 60fr); }
     /* 결과 요약 세 장을 한 줄에 놓아 목록이 빨리 보이게 */
@@ -821,7 +879,7 @@
       </div>
       <div class="list-overview" id="openSummary" aria-live="polite"></div>
       <div class="count" id="count"></div>
-      <div id="list" class="rows"></div>
+      <div id="list" class="rows" tabindex="0" role="region" aria-label="진행 중 공고 목록"></div>
     </div>
     <aside class="pane" id="pane" aria-label="고른 공고"></aside>
   </div>
@@ -839,7 +897,7 @@
 <main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
-<script type="module" src="insights.js?v=20261123-history"></script>
+<script type="module" src="insights.js?v=20261123-company"></script>
 <script>
 const state = { items: [], only: null, day: null, open: new Set(), sel: null, orgYears: new Map() };
 // 넓은 화면에서는 목록 옆에 상세를 나란히 두고, 좁은 화면에서는 줄을 눌러 펼친다.
@@ -994,6 +1052,9 @@ function render() {
   const kind = $('openKind').value, category = $('openCategory').value;
   const method = $('openMethod').value, award = $('openAward').value, region = $('openRegion').value;
   const registration = $('openRegistration').value, min = Number($('openMin').value), sort = $('openSort').value;
+  const list = $('list');
+  const criteria = JSON.stringify([terms, openOnly, kind, category, method, award, region, registration, min, sort, state.only, state.day]);
+  if (list.dataset.criteria !== criteria) { list.dataset.criteria = criteria; list.scrollTop = 0; }
 
   document.querySelectorAll('[data-only]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.only === state.only));
 

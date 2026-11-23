@@ -12,6 +12,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import path from 'node:path';
 import { ROOT, config, API, apiKey, num, stats, callApi, corpKey, budgetLeft as apiBudget, usageOf, saveUsage } from './lib.mjs';
 import { unzip } from '../site/hwp.js';
+import { companyHistoryStats } from '../site/company-stats.js';
 
 const RESULTS = path.join(ROOT, 'site', 'data', 'results.json');
 const OUT = path.join(ROOT, 'site', 'data', 'companies.json');
@@ -186,14 +187,12 @@ const top = (map, n) => [...map.values()].sort((a, b) => b.count - a.count).slic
   .map((e) => ({ bizno: e.bizno, name: e.name, count: e.count, share: e.shares?.length ? Math.round(e.shares.reduce((s, x) => s + x, 0) / e.shares.length) : undefined }));
 const out = ranked.map((c) => {
   const h = c.history.sort((a, b) => String(b.openedAt || '').localeCompare(String(a.openedAt || '')));
-  const wins = h.filter((x) => x.won);
   const k = c.cache || {};
   return {
     bizno: c.bizno, name: k.basic?.name || c.name, ceo: k.basic?.ceo || c.ceo,
     stats: {
       // 참여: 대표사로 입찰했거나 컨소시엄 구성사로 들어간 공고 수
-      bids: h.length, wins: wins.length,
-      wonAmount: wins.reduce((s, x) => s + (x.contractAmount ?? (x.rank === 1 ? x.bidAmount : 0) ?? 0), 0),
+      ...companyHistoryStats(h),
       partners: c.partners.size, lastAt: h[0]?.openedAt || null,
     },
     basic: k.basic && !k.basic.missing ? { opened: k.basic.opened, region: k.basic.region, address: k.basic.address, employees: k.basic.employees, homepage: k.basic.homepage, kinds: k.basic.kinds } : null,

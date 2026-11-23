@@ -1,6 +1,8 @@
 // "마감·결과"와 "업체" 화면. 진행 중 공고 화면(index.html 안 스크립트)의 공용 함수
 // (esc, won, svg, ICONS, kindOf, parseDeadline, dueLabel …)를 같이 쓴다.
 
+import { companyHistoryStats } from './company-stats.js';
+
 const $ = (id) => document.getElementById(id);
 const DAY = 86400000;
 const data = { results: null, companies: null, byBizno: new Map() };
@@ -68,7 +70,7 @@ async function renderResults() {
             <label>계약 방법 <select id="rMethod"><option value="">전체 계약 방법</option></select></label>
           </div></details></div></div>
         <div class="list-overview" id="rSummary" aria-live="polite"></div>
-        <div class="count" id="rCount" hidden></div><div id="rList" class="rows"></div></div>
+        <div class="count" id="rCount" hidden></div><div id="rList" class="rows" tabindex="0" role="region" aria-label="마감 공고 목록"></div></div>
         <aside class="pane" id="rPane" aria-label="고른 공고 결과"></aside></div>
       <footer id="rFoot"></footer>`;
     $('rq').addEventListener('input', drawResults);
@@ -225,6 +227,7 @@ function drawResults() {
   const active = !!(terms.length || year || status || moreCount || rs.org);
   $('rCount').hidden = !active;
   $('rCount').innerHTML = `<span>${esc(rs.org)}</span>${active ? '<button class="chip" id="rReset" style="height:28px;font-size:13px">검색 조건 초기화</button>' : ''}`;
+  $('rList').scrollTop = 0;
   if (!rows.length) {
     $('rList').innerHTML = emptyState('조건에 맞는 결과가 없어요', '검색어나 필터를 바꿔 보세요.');
     rView = { rows, shown: 0, W };
@@ -270,7 +273,9 @@ function watchMore() {
   rObserver?.disconnect();
   const s = $('rList').querySelector('.more-sentinel');
   if (!s || !('IntersectionObserver' in window)) return;
-  rObserver = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) appendResults(); }, { rootMargin: '800px 0px' });
+  const list = $('rList');
+  const root = getComputedStyle(list).overflowY === 'auto' ? list : null;
+  rObserver = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) appendResults(); }, { root, rootMargin: '800px 0px' });
   rObserver.observe(s);
 }
 // 감시가 늦거나 안 될 때를 위한 예비: 스크롤할 때 끝이 가까우면 붙인다(목록 칸 안 스크롤도 잡도록 capture).
@@ -281,7 +286,10 @@ document.addEventListener('scroll', () => {
   setTimeout(() => {
     rScrollTick = false;
     const s = document.querySelector('#rList .more-sentinel');
-    if (s && s.offsetParent && s.getBoundingClientRect().top < innerHeight + 800) appendResults();
+    if (!s?.offsetParent) return;
+    const list = $('rList');
+    const bottom = getComputedStyle(list).overflowY === 'auto' ? list.getBoundingClientRect().bottom : innerHeight;
+    if (s.getBoundingClientRect().top < bottom + 800) appendResults();
   }, 120);
 }, { capture: true, passive: true });
 
@@ -487,7 +495,7 @@ function drawCompanyRows() {
   const maxAmt = Math.max(1, ...rows.map((c) => c.stats.wonAmount));
   $('cCount').innerHTML = `<span><b>${rows.length}</b>곳</span>`;
   if (!rows.length) { $('cRows').innerHTML = emptyState('찾는 업체가 없어요', '이름이나 사업자번호를 확인해 보세요.'); return; }
-  $('cRows').innerHTML = `<div class="board"><table class="lead">
+  $('cRows').innerHTML = `<div class="board" tabindex="0" role="region" aria-label="업체 목록"><table class="lead">
     <thead><tr><th class="num">#</th><th>회사</th><th class="num">참여</th><th class="num">수주</th><th>수주율</th><th>수주액</th><th class="num hide-s">파트너</th><th class="num hide-s">직원</th></tr></thead><tbody>
     ${rows.slice(0, 300).map((c, i) => {
       const r = rate(c), emp = c.nps?.length ? c.nps[c.nps.length - 1].cnt : c.basic?.employees;
@@ -505,13 +513,7 @@ function drawCompany(bizno) {
   const c = data.byBizno.get(bizno);
   const el = $('cDetail');
   if (!c) { el.innerHTML = `<p class="back"><a href="#companies">← 업체 목록</a></p>${emptyState('업체를 찾지 못했어요', '목록에서 다시 골라 주세요.')}`; return; }
-  const s = c.stats;
-  const winRate = s.bids ? Math.round((s.wins / s.bids) * 100) : null;
   const emp = c.nps?.length ? c.nps[c.nps.length - 1].cnt : c.basic?.employees;
-  const tiles = [
-    ['참여', `${s.bids}<small>건</small>`], ['수주', `${s.wins}<small>건</small>`],
-    ['수주율', winRate != null ? `${winRate}<small>%</small>` : '-'], ['수주액(지분 기준)', s.wonAmount ? eok(s.wonAmount) : '-'],
-  ];
   const info = [
     ['대표자', esc(c.ceo || '-')], ['사업자번호', bizFmt(c.bizno)],
     c.basic?.opened && ['설립', esc(c.basic.opened)], emp != null && ['직원', `${emp}명`], c.basic?.address && ['주소', esc(c.basic.address)],
@@ -520,32 +522,47 @@ function drawCompany(bizno) {
   ].filter(Boolean);
   el.innerHTML = `
     <p class="back"><a href="#companies">← 업체 목록</a></p>
-    <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
-    <section class="stats">${tiles.map(([k, v]) => `<div class="stat" role="presentation"><div class="label">${k}</div><div class="value">${v}</div></div>`).join('')}</section>
-    <section class="panel" id="companyHistory"><div class="history-heading">
-      <div class="section-title">참여 이력</div>
-      <select class="year-pick" id="companyYear" aria-label="참여 이력 연도"><option value="">전체 연도</option></select>
-    </div><div id="companyHistoryRows"></div></section>
-    <section class="panel"><div class="section-title panel-h"><span>관계도 <small>컨소시엄 파트너와 그 파트너, 같은 공고에서 겨룬 회사</small></span><a class="more" href="#galaxy/c:${esc(c.bizno)}">우주에서 보기 →</a></div><div class="net ego" id="egoGraph"></div>
-      <div class="rel-cols">
-        <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
-        <div><div class="sub-title">같은 공고에서 겨룬 회사</div>${relList(c.rivals, '공고')}</div>
-      </div></section>
-    <div class="two-col">
-      <section class="panel"><div class="section-title">기본 정보</div><div class="facts">${info.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></section>
-      <section class="panel"><div class="section-title">직원 수 추이 <small>국민연금 가입자 기준</small></div>${npsChart(c)}</section>
+    <div class="company-header">
+      <section class="hero co-hero"><h1>${esc(c.name)}</h1><p>${[c.basic?.region, c.basic?.kinds].filter(Boolean).map(esc).join(' · ') || '조달 등록 정보 없음'}</p></section>
+      <label class="company-period">실적 연도 <select class="year-pick" id="companyYear" aria-controls="companyMetrics companyHistoryRows"><option value="">전체 연도</option></select></label>
     </div>
-    <section class="panel"><div class="section-title">재무 <small>DART · 외부감사 대상만</small></div>${dartTable(c)}</section>
-`;
+    <section class="stats company-metrics" id="companyMetrics" aria-live="polite" aria-label="업체 실적"></section>
+    <div class="company-workspace">
+      <section class="panel" id="companyHistory"><h2>참여 이력</h2><div id="companyHistoryRows"></div></section>
+      <aside class="panel company-extras" aria-label="업체 정보">
+        <h2>업체 정보</h2>
+        <details open><summary>기본 정보</summary><div class="facts">${info.map(([k, v]) => `<div class="k">${k}</div><div class="v">${v}</div>`).join('')}</div></details>
+        <details id="companyRelations"><summary>협력·경쟁 관계</summary>
+          <div class="note"><a class="more" href="#galaxy/c:${esc(c.bizno)}">전체 관계도 보기 →</a></div>
+          <div class="net ego" id="egoGraph"></div><div class="rel-cols">
+            <div><div class="sub-title">함께한 회사 (컨소시엄)</div>${relList(c.partners, '공동계약', true)}</div>
+            <div><div class="sub-title">같은 공고에서 겨룬 회사</div>${relList(c.rivals, '공고')}</div>
+          </div>
+        </details>
+        <details><summary>직원 수 추이</summary><div class="note">국민연금 가입자 기준</div>${npsChart(c)}</details>
+        <details><summary>재무</summary><div class="note">DART 공시 기준</div>${dartTable(c)}</details>
+      </aside>
+    </div>`;
   const yearPick = $('companyYear');
   setOptions(yearPick, yearsOf(c.history, resultDate).map((year) => [year, `${year}년`]));
-  const drawHistory = () => {
+  const drawPerformance = () => {
     const rows = yearPick.value ? c.history.filter((h) => yearOf(resultDate(h)) === yearPick.value) : c.history;
-    $('companyHistoryRows').innerHTML = `<div class="note">참여 ${countText(rows.length)}건 · 수주 ${countText(rows.filter((h) => h.won).length)}건</div>${historyTable(rows)}`;
+    const { bids, wins, wonAmount } = companyHistoryStats(rows);
+    const tiles = [
+      ['참여', `${countText(bids)}<small>건</small>`], ['수주', `${countText(wins)}<small>건</small>`],
+      ['수주율', bids ? `${Math.round(wins / bids * 100)}<small>%</small>` : '-'],
+      ['수주액(지분 기준)', wonAmount ? `<span title="${countText(wonAmount)}원">${eok(wonAmount)}</span>` : wins ? '-' : '0원'],
+    ];
+    $('companyMetrics').innerHTML = tiles.map(([label, value]) => `<div class="stat" role="presentation"><div class="label">${label}</div><div class="value">${value}</div></div>`).join('');
+    $('companyHistoryRows').innerHTML = historyTable(rows);
   };
-  yearPick.addEventListener('change', drawHistory);
-  drawHistory();
-  drawEgo($('egoGraph'), c);
+  yearPick.addEventListener('change', drawPerformance);
+  drawPerformance();
+  $('companyRelations').addEventListener('toggle', function loadGraph() {
+    if (!this.open) return;
+    this.removeEventListener('toggle', loadGraph);
+    drawEgo($('egoGraph'), c);
+  });
   window.scrollTo(0, 0);
 }
 
@@ -557,12 +574,15 @@ function relList(list, unit, withShare) {
 
 function historyTable(rows) {
   if (!rows.length) return '<div class="note">이력이 없어요.</div>';
-  return `<div class="rank-wrap"><table class="rank hist"><thead><tr><th>개찰</th><th>공고</th><th>역할·순위</th><th class="num">금액</th><th>결과</th></tr></thead><tbody>
-    ${rows.map((h) => `<tr class="${h.won ? 'win' : ''}"><td>${shortDay(h.openedAt) || '-'}</td>
-      <td><a class="co" href="#results" data-goto="${esc(h.id)}">${esc(h.title)}</a><small>${esc(h.org || '')}</small></td>
-      <td>${h.rank != null ? `${h.rank}위` : esc(h.role || '')}${h.share != null && h.share < 100 ? ` · ${h.share}%` : ''}</td>
-      <td class="num">${h.contractAmount ? eok(h.contractAmount) : h.bidAmount ? eok(h.bidAmount) : '-'}</td>
-      <td>${h.won ? '<span class="badge st-ok">수주</span>' : h.status === '유찰' ? '<span class="badge st-bad">유찰</span>' : ''}</td></tr>`).join('')}
+  return `<div class="rank-wrap company-history-scroll" tabindex="0" role="region" aria-label="업체 참여 이력 목록"><table class="rank hist"><thead><tr><th scope="col">개찰</th><th scope="col">공고</th><th scope="col" class="history-desktop">역할·순위</th><th scope="col" class="num history-desktop">금액</th><th scope="col">결과</th></tr></thead><tbody>
+    ${rows.map((h) => {
+      const role = (h.rank != null ? `${h.rank}위` : esc(h.role || '')) + (h.share != null && h.share < 100 ? ` · ${h.share}%` : '');
+      const amount = h.contractAmount ? eok(h.contractAmount) : h.bidAmount ? eok(h.bidAmount) : '';
+      return `<tr class="${h.won ? 'win' : ''}"><td>${shortDay(h.openedAt) || '-'}</td>
+        <td><a class="co" href="#results" data-goto="${esc(h.id)}">${esc(h.title)}</a><small>${esc(h.org || '')}</small><small class="history-mobile-meta">${[role, amount].filter(Boolean).join(' · ')}</small></td>
+        <td class="history-desktop">${role}</td><td class="num history-desktop">${amount || '-'}</td>
+        <td>${h.won ? '<span class="badge st-ok">수주</span>' : h.status === '유찰' ? '<span class="badge st-bad">유찰</span>' : ''}</td></tr>`;
+    }).join('')}
   </tbody></table></div>`;
 }
 
