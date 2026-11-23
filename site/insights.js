@@ -304,6 +304,9 @@ function resultDetail(r) {
       <div class="tile"><div class="k">낙찰금액 · 투찰률</div><div class="v">${won(r.winner.amount)} · ${pct(r.winner.rate)}</div></div></div>
       <div class="note">계약이 등록되면 컨소시엄 구성사와 지분이 함께 나와요.</div>`);
   }
+  if (r.status === '유찰') {
+    parts.push(`<div class="section-title">유찰</div><div class="note">${esc(r.note || '응찰 업체가 없거나 조건을 갖춘 업체가 없어 유찰됐어요.')}</div>`);
+  }
   if (r.bidders?.length) {
     const winBiz = new Set([r.winner?.bizno, ...(r.contract?.members || []).map((m) => m.bizno)].filter(Boolean));
     parts.push(`<div class="section-title">참여 업체 ${r.bidders.length}곳 <small>입찰은 대표사 이름으로 나와요</small></div>
@@ -312,9 +315,9 @@ function resultDetail(r) {
         <td class="num">${b.amount != null ? b.amount.toLocaleString('ko-KR') : '-'}</td><td class="num">${pct(b.rate)}</td><td>${esc(b.note || '')}</td></tr>`).join('')}
       </tbody></table></div>
       ${/협상/.test(r.award || '') ? '<div class="note">협상에 의한 계약이라 가격 순위와 실제 낙찰자가 다를 수 있어요.</div>' : ''}`);
-  } else if (r.status === '유찰') {
-    parts.push(`<div class="section-title">유찰</div><div class="note">${esc(r.note || '응찰 업체가 없거나 조건을 갖춘 업체가 없어 유찰됐어요.')}</div>`);
-  } else if (!r.bidders) {
+  } else if (r.participants > 0) {
+    parts.push('<div class="note">나라장터 참여 업체 명단 확인 중이에요.</div>');
+  } else if (!r.bidders && r.status !== '유찰') {
     parts.push('<div class="note">아직 개찰 결과가 등록되지 않았어요.</div>');
   }
   const links = [`<a class="cta" href="${esc(r.url)}" target="_blank" rel="noopener">나라장터 공고 보기 ${svg(OUT)}</a>`];

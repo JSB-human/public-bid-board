@@ -55,11 +55,12 @@ export async function saveUsage() {
 }
 
 // 공공데이터포털은 가끔 "어플리케이션 에러"를 내므로 몇 번 다시 시도한다. 입력값 오류는 재시도하지 않는다.
-export async function callApi(base, operation, params) {
+export async function callApi(base, operation, params, { allowNoData = false } = {}) {
   for (let attempt = 1; ; attempt++) {
     try {
       return await callApiOnce(base, operation, params);
     } catch (e) {
+      if (allowNoData && /^API 오류 0?3:/.test(e.message)) return { items: [], total: 0 };
       // 하루 한도를 넘었으면 오늘은 이 API 를 더 부르지 않는다.
       // 원래 메시지("요청제한…")는 그대로 둔다. results.mjs 가 이 글자로 한도 초과를 알아챈다.
       if (/요청제한|LIMITED_NUMBER|22:/.test(e.message)) { usage.calls[apiName(base)] = LIMITS[apiName(base)]; throw e; }

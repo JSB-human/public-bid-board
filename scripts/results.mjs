@@ -17,7 +17,9 @@ const DAY = 86400e3;
 const BACKFILL_DAYS = config.backfillDays ?? 90;
 const MAX_CALLS = config.maxCallsPerRun ?? 1500;
 const FINAL_AFTER_DAYS = 120; // 개찰 뒤 이만큼 지나도 계약이 안 보이면 더 찾지 않는다
-const BIDDERS_PAGE_SIZE = 200;
+const RESULT_PAGE_SIZE = 200;
+const BIDDER_RECHECK = DAY;
+const CONC = Math.max(1, config.concurrency ?? 5);
 
 const readJson = async (f, d) => { try { return JSON.parse(await readFile(f, 'utf8')); } catch { return d; } };
 if (!apiKey) { console.warn('DATA_GO_KR_KEY 가 없어 결과 수집을 건너뜁니다.'); process.exit(0); }
@@ -25,8 +27,20 @@ if (!apiKey) { console.warn('DATA_GO_KR_KEY 가 없어 결과 수집을 건너�
 const data = await readJson(OUT, { items: [] });
 const results = new Map(data.items.map((x) => [x.id, x]));
 const state = await readJson(STATE, { scannedTo: null, excluded: {} });
+const bidderChecks = state.bidderChecks ??= {};
 const now = Date.now();
 const budgetLeft = () => stats.calls < MAX_CALLS;
+
+const openingOf = (it) => ({
+  ord: it.bidNtceOrd, classification: it.bidClsfcNo, round: it.rbidNo,
+  status: it.progrsDivCdNm || '', openedAt: it.opengDt || null,
+  participants: num(it.prtcptCnum), note: (it.opengRsltNtcCntnts || '').trim(),
+});
+const hasOpeningKey = (o) => [o?.ord, o?.classification, o?.round].every((v) => v != null && v !== '');
+const openingKey = (o) => [o.ord, o.classification, o.round].map((v) => String(v).replace(/^0+(?=\d)/, '')).join('/');
+const compareOpening = (a, b) => (parseKst(a.openedAt) || 0) - (parseKst(b.openedAt) || 0)
+  || String(a.ord ?? '').localeCompare(String(b.ord ?? ''), undefined, { numeric: true })
+  || String(a.round ?? '').localeCompare(String(b.round ?? ''), undefined, { numeric: true });
 
 // 회사 목록 "[순번^역할^단독/공동^회사명^대표^국가^지분^…^^사업자번호],[…]" 을 나눈다.
 function parseCorpList(s) {
@@ -41,7 +55,12 @@ function parseCorpList(s) {
 
 // ---------- 1. 후보 모으기 ----------
 const candidates = new Map(); // id → { ord, title, org, keyword }
-const add = (id, v) => { if (id && !state.excluded[id]) candidates.set(id, { ...candidates.get(id), ...v }); };
+const add = (id, v) => {
+  if (!id || state.excluded[id]) return;
+  const prev = candidates.get(id);
+  if (prev?.open && v.open && compareOpening(prev.open, v.open) > 0) v = { ...v, open: prev.open };
+  candidates.set(id, { ...prev, ...v });
+};
 // 지난 실행에서 찾았지만 아직 못 채운 공고 (하루 호출 한도 때문에 여러 날에 걸쳐 채운다)
 state.pending ||= {};
 for (const [id, v] of Object.entries(state.pending)) add(id, v);
@@ -49,46 +68,95 @@ for (const [id, v] of Object.entries(state.pending)) add(id, v);
 let quotaHit = false;
 const isQuota = (m) => /요청제한|LIMITED_NUMBER|오류 22/.test(m);
 
-async function fetchBidders(id, ord) {
+async function fetchResultRows(operation, params) {
   const items = [];
   const pageStarts = new Set();
   let total = 0;
   for (let page = 1; ; page++) {
     if (!budgetLeft()) throw new Error('이번 실행의 API 호출 예산을 다 썼습니다.');
-    const r = await callApi(API.scsbid, 'getOpengResultListInfoOpengCompt', {
-      bidNtceNo: id, bidNtceOrd: ord, numOfRows: String(BIDDERS_PAGE_SIZE), pageNo: String(page),
-    });
+    const r = await callApi(API.scsbid, operation, {
+      ...params, numOfRows: String(RESULT_PAGE_SIZE), pageNo: String(page),
+    }, { allowNoData: true });
     total = Math.max(total, r.total);
     if (r.items.length) {
       const first = JSON.stringify(r.items[0]);
-      if (pageStarts.has(first)) throw new Error('참여 업체 페이지가 반복되었습니다.');
+      if (pageStarts.has(first)) throw new Error('개찰 결과 페이지가 반복되었습니다.');
       pageStarts.add(first);
       items.push(...r.items);
     }
-    if (total && items.length < total && !r.items.length) throw new Error(`참여 업체 ${items.length}/${total}행만 받았습니다.`);
-    if (total ? items.length >= total : r.items.length < BIDDERS_PAGE_SIZE) break;
+    if (total && items.length < total && !r.items.length) throw new Error(`개찰 결과 ${items.length}/${total}행만 받았습니다.`);
+    if (total ? items.length >= total : r.items.length < RESULT_PAGE_SIZE) break;
   }
-  const lastRound = items.reduce((m, x) => (x.rbidNo || '') > m ? x.rbidNo : m, '');
+  return items;
+}
+
+async function fetchOpenings(id) {
+  const rows = await fetchResultRows('getOpengResultListInfoServcPPSSrch', { inqryDiv: '3', bidNtceNo: id });
+  return rows.filter((x) => x.bidNtceNo === id).map(openingOf);
+}
+
+async function fetchBidders(id, opening) {
+  const { ord, classification, round } = opening;
+  const items = await fetchResultRows('getOpengResultListInfoOpengCompt', {
+    bidNtceNo: id, bidNtceOrd: ord, bidClsfcNo: classification, rbidNo: round,
+  });
+  const key = openingKey(opening);
   return items
-    .filter((x) => (x.rbidNo || '') === lastRound)
+    .filter((x) => x.bidNtceNo === id && openingKey(openingOf(x)) === key && String(x.prcbdrNm || '').trim())
     .map((x) => ({ rank: num(x.opengRank), name: (x.prcbdrNm || '').trim(), bizno: (x.prcbdrBizno || '').replace(/\D/g, ''), ceo: (x.prcbdrCeoNm || '').trim(), amount: num(x.bidprcAmt), rate: num(x.bidprcrt), note: (x.rmrk || '').trim() }))
     .sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999));
 }
 
-// 이전에 첫 페이지만 저장된 결과는 수집이 끝난 공고도 명단만 다시 조회한다.
-for (const r of results.values()) {
-  if (quotaHit || !budgetLeft()) break;
-  if (!(r.participants > BIDDERS_PAGE_SIZE && r.bidders?.length === BIDDERS_PAGE_SIZE && r.status === '개찰완료')) continue;
-  try {
-    const bidders = await fetchBidders(r.id, r.ord);
-    if (bidders.length < r.participants) throw new Error(`참여 업체 ${bidders.length}/${r.participants}곳만 받았습니다.`);
-    r.bidders = bidders;
-    console.log(`참여 업체 재수집 ${r.id}: ${bidders.length}곳`);
-  } catch (e) {
-    console.warn(`참여 업체 재수집 실패 ${r.id}: ${e.message}`);
-    if (isQuota(e.message)) quotaHit = true;
+const needsBidders = (r) => (r.status === '개찰완료' ? r.participants !== 0 : ['유찰', '재입찰'].includes(r.status) && r.participants > 0)
+  && (!r.bidders?.length || r.bidders.length < r.participants);
+const bidderCheckDue = (r) => needsBidders(r) && now - (bidderChecks[r.id]?.at || 0) >= BIDDER_RECHECK;
+
+async function updateBidders(r, opening) {
+  if (!hasOpeningKey(opening)) {
+    // 정정공고 차수와 실제 개찰 차수가 다를 수 있으므로 개찰시각·상태·참여 수를 대조한다.
+    const rows = await fetchOpenings(r.id);
+    const matching = new Map(rows.filter((o) => hasOpeningKey(o) && o.status === r.status
+      && parseKst(o.openedAt) === parseKst(r.openedAt) && (r.participants == null || o.participants === r.participants))
+      .map((o) => [openingKey(o), o]));
+    opening = matching.get(r.openingKey) || (matching.size === 1 ? matching.values().next().value : null);
   }
+  if (!opening) {
+    bidderChecks[r.id] = { at: now, outcome: 'opening-unconfirmed' };
+    return 'opening-unconfirmed';
+  }
+  const bidders = await fetchBidders(r.id, opening);
+  if (bidders.length > (r.bidders?.length || 0) && (r.participants == null || bidders.length <= r.participants)) {
+    r.bidders = bidders;
+    r.openingKey = openingKey(opening);
+  }
+  if (!needsBidders(r)) {
+    delete bidderChecks[r.id];
+    return 'restored';
+  }
+  const outcome = bidders.length > r.participants ? 'count-mismatch' : bidders.length ? 'partial' : 'empty';
+  bidderChecks[r.id] = { at: now, outcome };
+  return outcome;
 }
+
+// 결과 수집을 끝낸 공고도 명단이 비어 있으면 하루 뒤 다시 확인한다.
+const bidderQueue = [...results.values()].filter(bidderCheckDue);
+const bidderAudit = {};
+await Promise.all(Array.from({ length: CONC }, async () => {
+  while (bidderQueue.length && !quotaHit && budgetLeft()) {
+    const r = bidderQueue.shift();
+    const summary = bidderAudit[r.status] ??= {};
+    try {
+      const outcome = await updateBidders(r);
+      summary[outcome] = (summary[outcome] || 0) + 1;
+      if (outcome === 'restored') console.log(`참여 업체 재수집 ${r.id}: ${r.bidders.length}곳 (개찰 ${r.openingKey})`);
+    } catch (e) {
+      summary.error = (summary.error || 0) + 1;
+      console.warn(`참여 업체 재수집 실패 ${r.id}: ${e.message}`);
+      if (isQuota(e.message)) quotaHit = true;
+    }
+  }
+}));
+console.log(`참여 업체 원본 재조회: ${JSON.stringify(bidderAudit)} | 남은 후보 ${bidderQueue.length}건`);
 
 // (가) 진행 중 목록에 있던 공고 중 마감이 지난 것
 const bids = (await readJson(BIDS, { items: [] })).items;
@@ -117,7 +185,7 @@ async function scanWindow(b, e) {
     for (const it of r.items) {
       const keyword = kwMatch(it.bidNtceNm);
       if (!keyword || !wanted({ title: it.bidNtceNm, org: it.dminsttNm })) continue;
-      add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword, open: { status: it.progrsDivCdNm || '', openedAt: it.opengDt || null, participants: num(it.prtcptCnum), note: (it.opengRsltNtcCntnts || '').trim(), rbid: it.rbidNo || '' } });
+      add(it.bidNtceNo, { ord: it.bidNtceOrd || '000', keyword, open: openingOf(it) });
       scanned++;
     }
     if (page * 100 >= r.total || !r.items.length) break;
@@ -196,24 +264,23 @@ async function processOne(id, c) {
     }
     if (!regionOk(rec)) { state.excluded[id] = '지역'; excludedNow++; return; }
 
-    // 개찰 상태: 기간 조회에서 받은 게 있으면 그대로 쓰고, 없을 때만 공고별로 묻는다
-    if (c.open && c.open.status) Object.assign(rec, { status: c.open.status, openedAt: c.open.openedAt, participants: c.open.participants, note: c.open.note });
-    else {
-    const op = await callApi(API.scsbid, 'getOpengResultListInfoServcPPSSrch', { inqryDiv: '3', bidNtceNo: id, numOfRows: '20', pageNo: '1' });
-    const o = op.items.sort((a, b) => (b.rbidNo || '').localeCompare(a.rbidNo || ''))[0];
-    if (o) {
-      rec.status = o.progrsDivCdNm || '';
-      rec.openedAt = o.opengDt || null;
-      rec.participants = num(o.prtcptCnum);
-      rec.note = (o.opengRsltNtcCntnts || '').trim();
+    // 개찰 상태: 기간 조회에서 받은 게 있으면 그대로 쓰고, 없을 때만 공고별로 묻는다.
+    const opening = c.open?.status ? c.open : (await fetchOpenings(id)).sort(compareOpening).at(-1);
+    if (opening) {
+      const key = hasOpeningKey(opening) ? openingKey(opening) : null;
+      if (rec.status && (rec.status !== opening.status || rec.openedAt !== opening.openedAt || (key && rec.openingKey && key !== rec.openingKey))) {
+        delete rec.bidders;
+        delete rec.openingKey;
+        delete bidderChecks[id];
+      }
+      const { status, openedAt, participants, note } = opening;
+      Object.assign(rec, { status, openedAt, participants, note });
+      if (key) rec.openingKey = key;
     } else if (!rec.status) rec.status = '개찰 전';
-    }
     if (c.win && !rec.winner) rec.winner = c.win;
 
     // 참여 업체 순위
-    if (rec.status === '개찰완료' && !rec.bidders) {
-      rec.bidders = await fetchBidders(id, rec.ord);
-    }
+    if (bidderCheckDue(rec)) await updateBidders(rec, opening);
     // 낙찰자
     if (rec.status === '개찰완료' && !rec.winner) {
       const r = await callApi(API.scsbid, 'getScsbidListSttusServcPPSSrch', { inqryDiv: '3', bidNtceNo: id, numOfRows: '10', pageNo: '1' });
@@ -247,7 +314,6 @@ async function processOne(id, c) {
   }
 }
 const queue = [...order];
-const CONC = Math.max(1, config.concurrency ?? 5);
 await Promise.all(Array.from({ length: CONC }, async () => {
   while (queue.length && !stop && !quotaHit && budgetLeft()) {
     const [id, c] = queue.shift();
