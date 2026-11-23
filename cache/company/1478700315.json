@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 빅베넷",
+  "ceo": "최상수",
+  "opened": "2016-03-14",
+  "region": "서울특별시 구로구 구로동",
+  "address": "서울특별시 구로구 디지털로26길 123 (구로동) 제5층 제501호, 502호",
+  "employees": 37,
+  "homepage": "www.ontwins.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:30:30.316Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202607": 37,
+   "202608": 35,
+   "202609": 35
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T04:30:31.190Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:30:31.191Z"
+ }
+}

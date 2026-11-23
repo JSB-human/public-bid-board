@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "우전에스피 주식회사",
+  "ceo": "김창갑",
+  "opened": "2012-03-29",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 여의서로 43, 1207호(여의도동 한서리버파크)",
+  "employees": 8,
+  "homepage": "https://www.uzonsp.com/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:30:42.797Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:30:43.172Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:30:43.172Z"
+ }
+}

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T04:05:10.114Z",
+ "updatedAt": "2026-11-23T04:27:51.129Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -9709,26 +9709,26 @@
    }
   },
   {
-   "id": "R26BK01831904",
+   "id": "R26BK01848308",
    "ord": "000",
    "title": "2027년 공사장소음 모니터링시스템 유지관리 용역",
    "org": "서울특별시 보건환경연구원",
    "amount": 54550218,
-   "deadline": "2026-11-20 10:00:00",
-   "posted": "2026-11-16 11:24:16",
+   "deadline": "2026-11-27 10:00:00",
+   "posted": "2026-11-23 13:19:40",
    "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831904&bidPbancOrd=000",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848308&bidPbancOrd=000",
    "keywords": [
     "시스템",
     "유지관리"
    ],
    "detail": {
     "category": [
-     "수리",
-     "의료및실험기기수리서비스"
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
     ],
-    "kind": "등록공고",
-    "reNotice": false,
+    "kind": "재공고",
+    "reNotice": true,
     "noticeOrg": "서울특별시 보건환경연구원",
     "award": "소액수의견적-소액수의견적(2인 이상 견적 제출)",
     "bidMethod": "전자입찰",
@@ -9736,22 +9736,22 @@
     "techRate": null,
     "priceRate": null,
     "budget": 60005240,
-    "regDeadline": "2026-11-19 18:00",
-    "bidBegin": "2026-11-18 10:00:00",
-    "opening": "2026-11-20 11:00:00",
-    "refNo": "보환 제2026-140호",
+    "regDeadline": "2026-11-26 18:00",
+    "bidBegin": "2026-11-25 10:00:00",
+    "opening": "2026-11-27 13:00:00",
+    "refNo": "보환 제2026-157호",
     "files": [
      {
-      "name": "공고문_2027년 공사장소음 모니터링시스템 유지관리 용역.hwpx",
-      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831904&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+      "name": "재공고문_2027년 공사장소음 모니터링시스템 유지관리 용역.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848308&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
      },
      {
       "name": "과업내용서_2027년 공사장소음 모니터링시스템 유지관리 용역.hwpx",
-      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831904&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848308&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
      },
      {
-      "name": "공고문_2027년 공사장소음 모니터링시스템 유지관리 용역.pdf",
-      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01831904&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+      "name": "재공고문_2027년 공사장소음 모니터링시스템 유지관리 용역.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848308&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
      }
     ]
    },
@@ -9782,7 +9782,7 @@
     "direct": [],
     "period": "",
     "files": [
-     "공고문_2027년 공사장소음 모니터링시스템 유지관리 용역.pdf",
+     "재공고문_2027년 공사장소음 모니터링시스템 유지관리 용역.pdf",
      "과업내용서_2027년 공사장소음 모니터링시스템 유지관리 용역.hwpx"
     ],
     "skipped": []
@@ -34615,6 +34615,364 @@
     "files": [
      "입찰공고서.pdf",
      "제안요청서.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01845930",
+   "ord": "000",
+   "title": "한국어능력시험(TOPIK) 통합형 AI 디지털 평가플랫폼 구축정보화전략계획(ISP) 수립 용역",
+   "org": "교육부 국립국제교육원",
+   "amount": 490909091,
+   "deadline": "2027-01-06 10:00:00",
+   "posted": "2026-11-23 13:14:34",
+   "method": "일반경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01845930&bidPbancOrd=000",
+   "keywords": [
+    "AI",
+    "플랫폼",
+    "정보화",
+    "디지털"
+   ],
+   "detail": {
+    "category": [
+     "ICT사업 컨설팅",
+     "정보화전략계획서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 544855400,
+    "regDeadline": "2027-01-05 18:00",
+    "bidBegin": "2027-01-04 10:00:00",
+    "opening": "2027-01-06 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "(최종)한국어능력시험 통합형 AI 디지털 평가플랫폼 구축을 위한 ISP 수립 제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063891&rfpOrd=000&rfpUntyAtchFileNo=7",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "입찰공고서-1468_ISP(국가_일반_온서_공동).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01845930&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서-1468_ISP(국가_일반_온서_공동).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01845930&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "◦ 한국어능력시험 통합형 AI‧디지털 평가플랫폼 구축 ISP 수립",
+     "□ 낙찰자 결정방법 : 협상에 의한 계약(기술평가: 조달청)"
+    ],
+    "background": [],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "계약 후 ~ 150일(약 5개월)",
+    "files": [
+     "입찰공고서-1468_ISP(국가_일반_온서_공동).pdf",
+     "(최종)한국어능력시험 통합형 AI 디지털 평가플랫폼 구축을 위한 ISP 수립 제안요청서.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01846727",
+   "ord": "000",
+   "title": "2027년 HPC 이노베이션 허브 클러스터 시스템 유지보수",
+   "org": "한국정보통신기술협회",
+   "amount": 218181818,
+   "deadline": "2026-12-15 10:00:00",
+   "posted": "2026-11-23 13:13:48",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01846727&bidPbancOrd=000",
+   "keywords": [
+    "시스템"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 242134000,
+    "regDeadline": "2026-12-14 18:00",
+    "bidBegin": "2026-12-11 10:00:00",
+    "opening": "2026-12-15 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "[붙임3] 평가표.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064175&rfpOrd=000&rfpUntyAtchFileNo=7",
+      "kind": "기타문서"
+     },
+     {
+      "name": "[붙임2] 제안요청서.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064175&rfpOrd=000&rfpUntyAtchFileNo=4",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "입찰공고서(국가_협상_수평_1468(유지관리)0036_20억미만_공불_기술지원협약).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846727&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서(국가_협상_수평_1468(유지관리)0036_20억미만_공불_기술지원협약).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01846727&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "○ 수행장소: 판교 창조경제밸리 HPC 이노베이션 허브"
+    ],
+    "background": [
+     "○ ‘HPC 이노베이션 허브’ 과제의 서비스 제공 시 클러스터 시스템의 중단 없는 운영과 효율적인 장애처리 체계를 확보 하고자 함",
+     "○ 유지보수 계약 체결을 통해 클러스터 시스템의 주기적인 상시 점검을 수행하고, 장애 발생시 빠른 시간 내에 대응하는 지원 체계를 구축하여 시스템의 안정적 운영 기반을 마련함"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027년 1월 1일 ~ 2027년 12월 31일",
+    "files": [
+     "입찰공고서(국가_협상_수평_1468(유지관리)0036_20억미만_공불_기술지원협약).pdf",
+     "[붙임2] 제안요청서.hwp"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01847876",
+   "ord": "000",
+   "title": "2027 온(On)시스템 고도화 및 유지보수",
+   "org": "충청남도교육청 충청남도교육청교육과정평가정보원",
+   "amount": 523042727,
+   "deadline": "2026-12-14 10:00:00",
+   "posted": "2026-11-23 13:23:21",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847876&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "고도화"
+   ],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "정보시스템개발서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "충청남도교육청 충청남도교육청교육과정평가정보원",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 575347000,
+    "regDeadline": "2026-12-13 18:00",
+    "bidBegin": "2026-12-10 09:00:00",
+    "opening": "2026-12-22 17:00:00",
+    "refNo": "제2026-15호",
+    "files": [
+     {
+      "name": "제안요청서(온(On)시스템 고도화 및 유지보수)(1).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847876&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서(온(On)시스템 고도화 및 유지보수)(1).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01847876&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "구 분 사업범위 고도화 학력향상지원센터 - 초등 온채움 기초학력 종합지원 시스템 책임지원 고도화 (책임지원 시스템)",
+     "- 중등 온채움 기초학력 종합지원 시스템 책임지원 고도화 초/중등 - 온채움 기초학력 종합지원 시스템 메뉴 순서, 안내 슬라이드와 온채움 기초학력 종합지원 시스템 문구, 경로 안내 변경",
+     "- 정밀진단, 학생관리, 학습수준 진단, 결과, 성장기록, 저해요인 진단 고도화",
+     "- 각종 화면 확대/축소 개선",
+     "- 회원 구분 및 권한 개선 초/중등 - 이력관리, 채점결과 링크 기간 선택 고도화 온평가 컴퓨터 기반 문제은행 시스템",
+     "- (초등) 시험문제 복사, 교사용 시험 응시 미리보기 개선 기능",
+     "- 학생별 Raw Data 제공 기능, 평가 문제지 복사 기능 구현",
+     "- 단원별 성취 결과 제공, 빅데이터 기능, QR 접속 기능. 일괄채점 개선",
+     "- 수준별 문항 동시 배포 기능 구현",
+     "- 문항출제 에디터 기능 개발",
+     "- 학생 자율 모드 기능 개발",
+     "- A.I 활용 교과 평가 자동 작성 기능, AI 오답 분석·유사문항 추천 구현",
+     "- 오답노트 기능 개발",
+     "- 국어, 수학 평가현황 학급별, 학생별 종합의견 서술(중등)"
+    ],
+    "background": [
+     "ㅇ 온(On) 시스템의 개선 요구를 반영하여 시스템 기능 보완으로 사용자 편의성 증대 및 맞춤형 지원 강화",
+     "ㅇ 온(On) 시스템을 고도화하여 기초학력 종합지원, 한글 해득 진단 및 보정, 컴퓨터 기반 평가 문제 은행 제공, 문해력 향상을 위한 독서 및 작문 시스템 개선 역량 강화 필요",
+     "ㅇ 충남교육정보 공공 클라우드상의 시스템 운영 효율성 향상",
+     "ㅇ 초/중등 온평가, 온(누리)한글, 학력향상지원센터(책임지원시스템), 14개 지원청 학습종합클리닉센터 누리집, 온글 시스템의 전문적, 안정적, 체계화된 유지관리"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템개발서비스",
+      "code": "8111159901"
+     },
+     {
+      "name": "소프트웨어유지및지원서비스",
+      "code": "8111229901"
+     },
+     {
+      "name": "인터넷지원개발서비스",
+      "code": "8111219901"
+     }
+    ],
+    "period": "계약일로부터 ~ 2027.12.31.",
+    "files": [
+     "제안요청서(온(On)시스템 고도화 및 유지보수)(1).pdf"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01848002",
+   "ord": "000",
+   "title": "세계제주인센터 재외도민 교류협력플랫폼 구축 용역(장기계속계약)",
+   "org": "사단법인 세계제주인센터",
+   "amount": 275454545,
+   "posted": "2026-11-23 13:10:21",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848002&bidPbancOrd=000",
+   "keywords": [
+    "플랫폼"
+   ],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "정보시스템개발서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "사단법인 세계제주인센터",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "직찰/우편",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 103000000,
+    "regDeadline": null,
+    "bidBegin": null,
+    "opening": "2026-12-07 10:00:00",
+    "refNo": "(사)세계제주인센터 공고 제2026-01호",
+    "files": [
+     {
+      "name": "[공고문] 재외도민 교류협력플랫폼 구축 용역(장기계속계약).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848002&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "[과업지시서] 재외도민 교류협력플랫폼 구축(1차) 용역.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848002&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "[별지1] 제안서 제출(참가) 신청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848002&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(패키지소프트웨어개발.공급사업)/1426"
+    },
+    {
+     "group": "2",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    },
+    {
+     "group": "3",
+     "name": "소프트웨어사업자(디지털콘텐츠개발서비스사업)/1469"
+    },
+    {
+     "group": "4",
+     "name": "소프트웨어사업자(데이터베이스제작및검색서비스사업)/1470"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "1. 기획 및 설계",
+     "가. 요구사항 분석 및 상세화",
+     "나. 정보구조(IA) 및 메뉴 체계 설계: 플랫폼 콘텐츠 영역(커뮤니티·정보·교류 프로그램·비즈 니스·미디어·행정 서비스)을 반영하되, 1차 구축 범위와 향후 확장 메뉴를 구분하여 설계",
+     "다. 화면설계서(와이어프레임) 및 기능명세서 작성, 발주기관 승인 후 디자인·개발 착수",
+     "2. UI/UX 디자인",
+     "가. 세계제주인센터 BI 및 제주 고유 이미지(바다·오름·해녀 등)를 반영한 메인 및 서브 페이지 디자인 (메인 시안 2종 이상 제시)",
+     "나. PC·태블릿·모바일 등 다양한 화면 크기에 대응하는 반응형 웹으로 구현하되, 모바일 화면을 우선 설계",
+     "다. 글자 크기 조절, 고대비 등 세대 포용형 이용 편의 기능 제공",
+     "라. 「한국형 웹 콘텐츠 접근성 지침(KWCAG)」 최신 버전을 준수",
+     "3. 기능 개발 다음 기능을 개발하며, 세부 사항은 요구사항 정의 단계에서 발주기관과 협의하여 확정한다. 영역 기능 세부 요구사항 회원·인증 회원가입·로그인 이메일 가입 및 소셜 로그인(구글·카카오 등) 지원, 비밀번호 찾기, 회원 탈퇴 재외제주도민 인증 증빙자료 업로드 또는 재외도민회 추천에 의한 인증 신청, 관리자 승인 절차, 인증 회원 표시 프로필 관리 거주 국가·도시, 출신 지역(읍·면·동), 세대, 직업 분야, 소속 도민회, 자기소개 등 등록, 항목별 공개 범위를 본인이 설정 개인정보 동의 필수·선택 수집항목 분리 동의, 마케팅·알림 수신 동의 관리 커뮤니티 커뮤니티 게시판 국가·지역별, 세대별 게시판, 글·댓글·이미지 첨부, 공감, 신고 기능 (만남의 광장) 재외도민회 그룹 공간 도민회별 전용 페이지(공지사항, 회원 게시판, 행사 갤러리, 회원 명부), 도민회 관리자 권한 부여 재외도민회 조직 DB 국가·지역별 도민회 목록, 대표자·연락처, 정기 행사 등 정보 관리, 도민회 담당자가 직접 수정 가능 자랑스런 재외제주도민 인물 프로필·인터뷰 아카이브, 추천 접수 및 관리자 검토 후 게시 회원 검색 공개 설정 범위 내에서 거주 국가, 출신 지역, 직업 분야별 회원 검색 제주 정보 정보 콘텐츠 관리 제주도정 소식, 경제·투자·관광, 교육·장학 정보 게시 구조 및 포털 카테고리 관리 행정·민원 안내 국적·병무·건강보험·국민연금·4·3 피해 보상 등 민원 유형별 절차·서류·관련 기관 링크 안내 페이지 제주 문화 콘텐츠 제주어·해녀·4·3·오름 등 문화 콘텐츠 게시 및 영상(외부 영상 플랫폼) 연동 교류 통합 이벤트 캘린더 세계제주인대회, 향토학교, 도민회 행사, 제주 주요 행사를 하나의 캘린더로 제공"
+    ],
+    "background": [
+     "○ 세계제주인센터는 세계제주인대회조직위원회에서 출발하여 상시적 재외도민 네트워크 기관으로 전환을 추진 중이나, 현행 홈페이지는 대회 안내·공지사항·보도자료 제공 수준에 머물러 있음.",
+     "○ 국내외 디아스포라 플랫폼 분석 결과, ① 상시 운영 체계 ② 차세대 특화 콘텐츠 ③ 경제적 가치 창출 ④ 행정 편의성의 4대 요소를 균형 있게 갖춘 플랫폼이 필요함."
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [],
+    "period": "계약일로부터 2027. 10.",
+    "files": [
+     "[공고문] 재외도민 교류협력플랫폼 구축 용역(장기계속계약).pdf",
+     "[과업지시서] 재외도민 교류협력플랫폼 구축(1차) 용역.pdf"
     ],
     "skipped": []
    }

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "헤이준 주식회사",
+  "ceo": "송영식",
+  "opened": "2017-08-08",
+  "region": "경기도 광명시",
+  "address": "경기도 광명시 양지로 21 (일직동) , 2115호 티타워동",
+  "employees": 8,
+  "homepage": "www.iheyjun.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:30:49.040Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:30:49.384Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:30:49.384Z"
+ }
+}

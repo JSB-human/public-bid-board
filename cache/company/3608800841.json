@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 이노그루",
+  "ceo": "변원",
+  "opened": "2018-03-06",
+  "region": "서울특별시 강남구",
+  "address": "서울특별시 강남구 봉은사로49길 7, 5층 (논현동, 대양빌딩)",
+  "employees": 13,
+  "homepage": "innogru.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:30:56.756Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202510": 11,
+   "202511": 9,
+   "202512": 8
+  },
+  "found": true,
+  "fetchedAt": "2026-11-23T04:30:57.623Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:30:57.623Z"
+ }
+}

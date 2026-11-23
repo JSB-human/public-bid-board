@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "클로버랩스",
+  "ceo": "박상훈",
+  "opened": "2016-03-01",
+  "region": "서울특별시 영등포구 당산동3가",
+  "address": "서울특별시 영등포구 양산로 91, 1112호(당산동3가, 리드원센터)",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-23T04:28:39.052Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-23T04:28:39.380Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-23T04:28:39.380Z"
+ }
+}
