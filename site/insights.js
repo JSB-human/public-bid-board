@@ -375,12 +375,7 @@ function resultPane(r) {
       <div class="pane-tags"><span class="badge"><i class="kd k-${kind}"></i>${KINDS[kind]}</span><span class="badge st-${cls}">${st}</span>${r.reNotice ? '<span class="badge re">재공고</span>' : ''}</div>
       <h2>${esc(r.title)}</h2>
       <div class="pane-org">${esc(r.org)}${r.openedAt ? ` · ${shortDay(r.openedAt)} 개찰` : ''}</div>
-      <div class="board-key-facts">
-        <div><small>${amountLabel === '추정' ? '추정가격' : `${amountLabel}금액`}</small><b>${won(amount)}</b></div>
-        <div><small>${lead ? (r.contract ? '계약 업체' : '낙찰 업체') : '개찰 결과'}</small><b>${lead ? coLink(lead.bizno, lead.name) + (companies > 1 ? ` 외 ${companies - 1}곳` : '') : esc(st)}</b></div>
-      </div>
     </div>
-    ${checks.length ? `<div class="detail" style="padding-bottom:0"><div class="checks">${checks.map(([k, v, c]) => `<div class="check ${c}"><small>${k}</small><b>${v}</b></div>`).join('')}</div></div>` : ''}
     ${resultDetail(r)}`;
 }
 
@@ -420,10 +415,8 @@ function resultDetail(r) {
       </div>
       <div class="members">${members}</div>`);
   } else if (r.winner) {
-    outcome.push(`<div class="section-title">낙찰</div><div class="tiles">
-      <div class="tile"><div class="k">낙찰 업체</div><div class="v">${coLink(r.winner.bizno, r.winner.name)}</div></div>
-      <div class="tile"><div class="k">낙찰금액 · 투찰률</div><div class="v">${won(r.winner.amount)} · ${pct(r.winner.rate)}</div></div></div>
-      <div class="note">계약이 등록되면 컨소시엄 구성사와 지분이 함께 나와요.</div>`);
+    // 낙찰 업체·금액은 위 한눈에 칸에 이미 있다. 여기서는 계약 전이라는 것만 알린다.
+    outcome.push(`<div class="note">${coLink(r.winner.bizno, r.winner.name)}가 ${won(r.winner.amount)}(투찰률 ${pct(r.winner.rate)})에 낙찰됐어요. 계약이 등록되면 컨소시엄 구성사와 지분이 함께 나와요.</div>`);
   }
   if (r.status === '유찰') {
     outcome.push(`<div class="section-title">유찰</div><div class="note">${esc(r.note || '응찰 업체가 없거나 조건을 갖춘 업체가 없어 유찰됐어요.')}</div>`);
@@ -456,11 +449,22 @@ function resultDetail(r) {
     r.award && ['낙찰방법', esc(r.award.replace(/^협상에의한계약-/, ''))],
     r.deadline && ['입찰 마감', esc(dueLabel(parseDeadline(r.deadline)))],
   ].filter(Boolean);
+  // 한눈에: 금액 · 누가 가져갔나 · 몇 곳이 들어왔나
+  const [st, cls] = statusOf(r);
+  const [amount, amountLabel] = amountOf(r);
+  const lead = leadOf(r), companies = r.contract?.members?.length || 0;
+  const keyrow = `<div class="keyrow">
+      <div class="kf kf-amt"><small>${amountLabel === '추정' ? '추정가격' : `${amountLabel}금액`}</small><b>${won(amount)}</b>${amountLabel !== '추정' && r.amount ? `<span>추정 ${eok(r.amount)}</span>` : ''}</div>
+      <div class="kf ${cls === 'bad' ? 'soon' : ''}"><small>${lead ? (r.contract ? '계약 업체' : '낙찰 업체') : '결과'}</small><b class="kf-who">${lead ? coLink(lead.bizno, short(lead.name)) : esc(st)}</b><span>${companies > 1 ? `공동 ${companies}곳` : lead ? esc(st) : ''}</span></div>
+      <div class="kf"><small>참여</small><b>${r.participants != null ? r.participants + '곳' : '-'}</b><span>${r.winner?.rate != null ? '투찰률 ' + pct(r.winner.rate) : ''}</span></div>
+    </div>
+    <div class="pane-actions">${links.join('')}</div>`;
   return `<div class="detail">
-    ${(r.bidders?.length ? [...parts, ...outcome] : [...outcome, ...parts]).join('')}
-    <div class="section-title">공고 정보</div>
+    ${keyrow}
+    ${outcome.length ? `<h3 class="psec">누가 가져갔나요</h3>${outcome.join('').replace(/<div class="section-title">[^<]*<\/div>/g, '')}` : ''}
+    ${parts.join('')}
+    <h3 class="psec">공고 정보</h3>
     <div class="tiles">${facts.map(([k, v]) => `<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`).join('')}</div>
-    <div class="cta-row">${links.join('')}</div>
   </div>`;
 }
 

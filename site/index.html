@@ -1144,6 +1144,55 @@
   .rside b { font-size: 17px; }
   .item.closed .when b { color: var(--muted); }
 
+  /* ---------- 상세: 한눈에 → 들어갈 수 있나 → 무슨 사업 → 평가·계약 → 일정·첨부 ---------- */
+  .keyrow { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, 1fr); gap: 8px; margin-top: 4px; }
+  .kf { border-radius: 16px; background: var(--field); padding: 12px 14px; min-width: 0; display: grid; gap: 1px; }
+  .kf small { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .kf b { font-size: 20px; font-weight: 800; letter-spacing: -.03em; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; line-height: 1.3; }
+  .kf span { font-size: 13px; color: var(--sub); font-variant-numeric: tabular-nums; }
+  .kf-amt { background: var(--blue-weak); }
+  .kf-amt b { color: var(--blue-text); }
+  .kf.soon { background: var(--red-weak); } .kf.soon b { color: var(--red); }
+  .kf.today { background: var(--red); } .kf.today :is(b, small, span) { color: #fff; }
+  .kf.past b { color: var(--muted); }
+  .pane-actions { display: flex; gap: 8px; margin-top: 10px; }
+  .pane-actions .cta { flex: 1; margin: 0; height: 48px; border: 0; cursor: pointer; font: inherit; font-size: 15px; font-weight: 700; }
+  .board-split .pane-actions .cta.ghost, .pane-actions .cta.ghost { background: var(--field); color: var(--text); }
+  .board-split .bidder-header { margin: 28px 0 10px; }
+  .bidder-header h3 { font-size: 17px; font-weight: 800; }
+  .kf-who a.co { color: var(--blue-text); text-decoration: none; }
+  .detail .members { margin-top: 8px; }
+  .psec { margin: 28px 0 10px; font-size: 17px; font-weight: 800; letter-spacing: -.02em; color: var(--text); }
+  .elig-list { display: grid; border-radius: 16px; background: var(--field); padding: 4px 14px; }
+  .elig { display: grid; grid-template-columns: 22px 96px minmax(0, 1fr); align-items: start; gap: 8px; padding: 11px 0; font-size: 14px; }
+  .elig + .elig { border-top: 1px solid color-mix(in srgb, var(--faint) 35%, transparent); }
+  .ei { width: 20px; height: 20px; border-radius: 50%; background: var(--faint); margin-top: 1px; position: relative; }
+  .ei::after { content: ""; position: absolute; left: 50%; top: 50%; width: 6px; height: 6px; border-radius: 50%; background: var(--card); transform: translate(-50%, -50%); }
+  .elig.ok .ei { background: var(--blue); }
+  .elig.ok .ei::after { width: 8px; height: 4px; border-radius: 0; background: none; border: solid #fff; border-width: 0 0 2px 2px; transform: translate(-50%, -70%) rotate(-45deg); }
+  .elig.warn .ei { background: var(--orange); }
+  .elig.warn .ei::after { content: "!"; width: auto; height: auto; background: none; color: #fff; font-size: 13px; font-weight: 900; line-height: 1; }
+  .ek { color: var(--muted); font-weight: 600; padding-top: 1px; }
+  .ev { font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+  .ev .lics { gap: 4px; }
+  .ev .lic { background: var(--card); padding: 4px 8px; font-size: 13px; }
+  .ev .lic small { color: var(--muted); font-weight: 500; }
+  .detail .summary .period { display: inline-block; margin-top: 6px; font-size: 14px; color: var(--sub); }
+  .detail .summary .period b { color: var(--text); }
+  .detail .scope { margin-top: 10px; }
+  .ratio-wrap { border-radius: 16px; background: var(--field); padding: 12px 14px; margin-bottom: 8px; }
+  .ratio-wrap .ratio-legend { margin: 0 0 8px; font-size: 13px; color: var(--sub); }
+  .ratio-wrap .ratio-legend b { color: var(--text); font-size: 15px; }
+  .ratio-wrap .ratio { margin: 0; height: 10px; }
+  .detail .timeline { border-radius: 16px; background: var(--field); padding: 8px 14px; }
+  .detail .step::before { background: color-mix(in srgb, var(--faint) 50%, transparent); }
+  @media (max-width: 520px) {
+    .keyrow { grid-template-columns: 1fr 1fr; }
+    .kf-amt { grid-column: 1 / -1; }
+    .elig { grid-template-columns: 22px minmax(0, 1fr); }
+    .elig .ev { grid-column: 2; }
+  }
+
   /* ---------- 넓은 화면: 페이지는 고정, 왼쪽(요약·검색·목록)과 오른쪽(상세)이 따로 스크롤 ---------- */
   @media (min-width: 1024px) and (min-height: 640px) {
     body:has(#view-open:not([hidden])), body:has(#view-results:not([hidden])) { height: 100svh; overflow: hidden; }
@@ -1255,7 +1304,7 @@
 <main id="view-galaxy" hidden></main>
 
 <script type="module" src="viewer.js"></script>
-<script type="module" src="insights.js?v=20261123-split"></script>
+<script type="module" src="insights.js?v=20261123-detail"></script>
 <script>
 const state = { items: [], only: null, day: null, open: new Set(), sel: null, orgYears: new Map() };
 // 넓은 화면에서는 목록 옆에 상세를 나란히 두고, 좁은 화면에서는 줄을 눌러 펼친다.
@@ -1545,15 +1594,9 @@ function paneHtml(x, now) {
     dday = x._dl < now ? '<span class="dday">마감</span>' : n === 0 ? `<span class="dday today">오늘 ${x._dlWord}</span>` : `<span class="dday ${x._dl - now <= 3 * DAY ? 'soon' : ''}">D-${n}</span>`;
   }
   return `<div class="pane-h">
-      <div class="pane-tags"><span class="badge"><i class="kd k-${kind}"></i>${KINDS[kind]}</span>${tagsHtml(x)}${dday}</div>
+      <div class="pane-tags"><span class="badge"><i class="kd k-${kind}"></i>${KINDS[kind]}</span>${tagsHtml(x)}</div>
       <h2>${esc(x.title)}</h2>
-      <div class="pane-org">${esc(x.org)}</div>
-      <div class="board-key-facts">
-        <div><small>${x._dlWord === '개찰' ? '개찰' : '입찰 마감'}</small><b>${x._dl !== null ? shortDate(x._dl) : '일시 정보 없음'}</b></div>
-        <div class="reg-time ${registration.tone}"><small>참가등록 마감</small><b>${registration.label}</b></div>
-      </div>
-      <div class="pane-amt"><b>${won(x.amount)}<small>추정가격</small></b>
-        <a class="cta" href="${esc(x.url)}" target="_blank" rel="noopener">나라장터 원문 ${svg(OUT)}</a></div>
+      <div class="pane-org">${esc(x.org)} · ${esc(x.id)}</div>
     </div>${detailHtml(x, now)}`;
 }
 
@@ -1698,17 +1741,64 @@ function detailHtml(x, now) {
     </div>`;
   }).join('');
 
+  // ① 한눈에: 금액·입찰 마감·참가등록 마감, 바로 할 일(제안요청서 보기·원문)
+  const ddayOf = (t) => {
+    if (t === null) return ['미등록', '', ''];
+    const n = daysLeft(t, now);
+    if (t < now) return ['지남', shortDate(t), 'past'];
+    if (n === 0) return ['오늘', shortDate(t), 'today'];
+    return [`D-${n}`, shortDate(t), t - now <= 3 * DAY ? 'soon' : ''];
+  };
+  const [bidD, bidAt, bidTone] = ddayOf(x._dl);
+  const [regD, regAt, regTone] = ddayOf(x._regDeadline);
+  const rfpIdx = (d.files || []).findIndex((f) => (/제안\s*요청|과업|규격/.test(f.kind || '') || /제안\s*요청|과업\s*(지시|내용)|규격서/.test(f.name)) && /\.(pdf|hwpx?|zip)$/i.test(f.name));
+  const keyrow = `<div class="keyrow">
+      <div class="kf kf-amt"><small>추정가격</small><b>${won(x.amount)}</b>${d.budget != null ? `<span>배정예산 ${eokS(d.budget)}</span>` : ''}</div>
+      <div class="kf ${bidTone}"><small>${x._dlWord === '개찰' ? '개찰' : '입찰 마감'}</small><b>${bidD}</b><span>${bidAt}</span></div>
+      <div class="kf ${regTone}"><small>참가등록 마감</small><b>${regD}</b><span>${regAt}</span></div>
+    </div>
+    <div class="pane-actions">
+      ${rfpIdx >= 0 ? `<button class="cta" data-view="${esc(x.id)}:${rfpIdx}">제안요청서 보기</button>` : ''}
+      <a class="cta ${rfpIdx >= 0 ? 'ghost' : ''}" href="${esc(x.url)}" target="_blank" rel="noopener">나라장터 원문 ${svg(OUT)}</a>
+    </div>`;
+
+  // ② 들어갈 수 있나요: 참가 조건을 한 목록으로. ✓ 문제없음 · ! 확인 필요 · 회색 정보
+  const elig = [];
+  const addE = (k, v, tone = '') => elig.push(`<div class="elig ${tone}"><span class="ei" aria-hidden="true"></span><span class="ek">${k}</span><span class="ev">${v}</span></div>`);
+  const req = [...new Set([...(x.regions || []), ...(doc.regionReq || [])])];
+  if (x.regions || doc.regionReq?.length) addE('참가 지역', req.length ? esc(req.join('·')) + ' 업체만' : '제한 없음', req.length && !req.includes('서울') ? 'warn' : 'ok');
+  const lic = (x.licenses || []).map(({ name }) => { const [, l, c] = name.match(/^(.*?)\s*\/\s*(\d+)$/) || [null, name, '']; return `<span class="lic">${esc(l)}${c ? ` <small>${esc(c)}</small>` : ''}</span>`; }).join('');
+  addE('면허·업종', lic ? `<span class="lics">${lic}</span>` : '등록 정보 없음');
+  const prods = (doc.direct || []).map((p) => `<span class="lic">${esc(p.name)}${p.code ? ` <small>${esc(p.code)}</small>` : ''}</span>`).join('');
+  addE('직접생산확인', prods ? `<span class="lics">${prods}</span>` : '공고문에서 확인', prods ? 'warn' : '');
+  if (d.joint) { const j = d.joint.replace(/^\((전자|없음)\)/, ''); addE('공동수급', esc(j), /불허|불가/.test(j) ? '' : 'ok'); }
+  if (doc.regionDuty) addE('지역업체 공동수급', '의무', 'warn');
+
+  // ③ 무슨 사업인가요 ④ 평가·계약
+  const facts = [];
+  const fact = (k, v) => { if (v) facts.push(`<div class="tile"><div class="k">${k}</div><div class="v">${v}</div></div>`); };
+  fact('계약 방법', esc(x.method));
+  fact('낙찰 방법', esc((d.award || '').replace(/^협상에의한계약-/, '')));
+  fact('분류', esc((d.category || []).join(' › ')));
+  fact('배정예산 (부가세 포함)', d.budget != null ? won(d.budget) : '');
+  const ratio = d.techRate != null && d.priceRate != null
+    ? `<div class="ratio-wrap"><div class="ratio-legend"><span>기술 <b>${d.techRate}</b></span><span>가격 <b>${d.priceRate}</b></span></div>
+        <div class="ratio"><span style="flex:${d.techRate}"></span><span style="flex:${d.priceRate}"></span></div></div>` : '';
+
   return `<div class="detail">
-    ${qualification}
-    ${checksHtml(x)}
-    <p class="summary">${summaryHtml(x)}</p>
-    ${scopeHtml}
-    <div class="section-title">핵심 정보</div>
-    <div class="tiles">${tiles.join('')}</div>
+    ${keyrow}
+    <h3 class="psec">들어갈 수 있나요</h3>
+    <div class="elig-list">${elig.join('')}</div>
+    <div class="note">최종 참가자격은 나라장터 원문에서 꼭 확인하세요.</div>
+    <h3 class="psec">무슨 사업인가요</h3>
+    <p class="summary">${summaryHtml(x)}${doc.period ? `<br><span class="period">사업기간 <b>${esc(doc.period)}</b></span>` : ''}</p>
+    ${scopeHtml.replace('<div class="section-title">사업 내용</div>', '')}
+    <h3 class="psec">평가·계약</h3>
+    ${ratio}
+    <div class="tiles">${facts.join('')}</div>
+    ${timeline.replace('<div class="section-title">일정</div>', '<h3 class="psec">일정</h3>')}
+    ${files ? `<h3 class="psec">첨부파일</h3><div class="files">${files}</div>` : ''}
     ${orgHistoryHtml(x)}
-    ${timeline}
-    ${files ? `<div class="section-title">첨부파일</div><div class="files">${files}</div>` : ''}
-    ${cta}
   </div>`;
 }
 
