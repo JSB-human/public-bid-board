@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T21:35:04.693Z",
+ "updatedAt": "2026-11-24T10:10:54.008Z",
  "items": [
   {
    "bizno": "1478602432",
@@ -17751,11 +17751,11 @@
    "name": "주식회사 지티아이씨",
    "ceo": "방소영",
    "stats": {
-    "bids": 136,
-    "wins": 38,
+    "bids": 137,
+    "wins": 39,
     "wonAmount": 9197710000,
-    "partners": 21,
-    "lastAt": "2026-08-19 11:00:00"
+    "partners": 25,
+    "lastAt": "2026-11-11 11:00:00"
    },
    "basic": {
     "opened": "2016-05-23",
@@ -17818,6 +17818,21 @@
    ],
    "dart": [],
    "history": [
+    {
+     "id": "R26BK01736987",
+     "title": "국세청 AI 시스템 구축 ISMP 수립",
+     "org": "국세청",
+     "amount": 1401818182,
+     "openedAt": "2026-11-11 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": null,
+     "rate": null,
+     "won": true,
+     "role": "도급업체",
+     "share": 10,
+     "contractAmount": null
+    },
     {
      "id": "R26BK01664434",
      "title": "감사자료분석시스템 재구축을 위한 정보화전략계획 용역",
@@ -19879,6 +19894,30 @@
      "share": 20
     },
     {
+     "bizno": "2028132975",
+     "name": "주식회사 아이티센엔텍",
+     "count": 1,
+     "share": 40
+    },
+    {
+     "bizno": "1028142945",
+     "name": "주식회사 케이티",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "1198196788",
+     "name": "주식회사 유플러스아이티",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "8308801918",
+     "name": "주식회사 업스테이지",
+     "count": 1,
+     "share": 20
+    },
+    {
      "bizno": "1198191594",
      "name": "주식회사 켐토피아",
      "count": 1,
@@ -19953,30 +19992,6 @@
     {
      "bizno": "2118698485",
      "name": "(주)와이즈넛",
-     "count": 1,
-     "share": 10
-    },
-    {
-     "bizno": "2288105280",
-     "name": "주식회사 유큐브",
-     "count": 1,
-     "share": 20
-    },
-    {
-     "bizno": "1208175992",
-     "name": "구우정보기술(주)",
-     "count": 1,
-     "share": 67
-    },
-    {
-     "bizno": "6138114177",
-     "name": "주식회사코넥",
-     "count": 1,
-     "share": 19
-    },
-    {
-     "bizno": "3178105687",
-     "name": "(주)한신정보기술",
      "count": 1,
      "share": 10
     }
@@ -92611,6 +92626,1099 @@
    ]
   },
   {
+   "bizno": "1198196788",
+   "name": "주식회사 유플러스아이티",
+   "ceo": "김상하",
+   "stats": {
+    "bids": 55,
+    "wins": 25,
+    "wonAmount": 26281309860,
+    "partners": 15,
+    "lastAt": "2026-11-11 11:00:00"
+   },
+   "basic": {
+    "opened": "2007-03-09",
+    "region": "서울특별시 영등포구",
+    "address": "서울특별시 영등포구 양평로21길 26, 908-909호 (양평동5가, 선유도역1차아이에스비즈타워)",
+    "employees": 226,
+    "homepage": "http://www.uplusit.com",
+    "kinds": "물품,일반용역,용역,공사"
+   },
+   "industries": [],
+   "nps": [
+    {
+     "ym": "202510",
+     "cnt": 426
+    },
+    {
+     "ym": "202511",
+     "cnt": 423
+    },
+    {
+     "ym": "202512",
+     "cnt": 422
+    },
+    {
+     "ym": "202601",
+     "cnt": 403
+    },
+    {
+     "ym": "202602",
+     "cnt": 409
+    },
+    {
+     "ym": "202603",
+     "cnt": 413
+    },
+    {
+     "ym": "202604",
+     "cnt": 427
+    },
+    {
+     "ym": "202605",
+     "cnt": 440
+    },
+    {
+     "ym": "202606",
+     "cnt": 445
+    },
+    {
+     "ym": "202607",
+     "cnt": 441
+    },
+    {
+     "ym": "202608",
+     "cnt": 402
+    },
+    {
+     "ym": "202609",
+     "cnt": 424
+    }
+   ],
+   "dart": [],
+   "history": [
+    {
+     "id": "R26BK01736987",
+     "title": "국세청 AI 시스템 구축 ISMP 수립",
+     "org": "국세청",
+     "amount": 1401818182,
+     "openedAt": "2026-11-11 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": null,
+     "rate": null,
+     "won": true,
+     "role": "도급업체",
+     "share": 20,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01660250",
+     "title": "「국립생태원 생태정보시스템 최적화 및 G-클라우드 이관」 사업",
+     "org": "국립생태원",
+     "amount": 1469090909,
+     "openedAt": "2026-09-03 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 1470700000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01664686",
+     "title": "환경 민원 AI 지원 서비스 구축",
+     "org": "기후에너지환경부",
+     "amount": 400000000,
+     "openedAt": "2026-09-01 11:00:00",
+     "status": "개찰완료",
+     "rank": 5,
+     "bidAmount": 396000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01680131",
+     "title": "업무자동화(RPA) 고도화 사업",
+     "org": "신용보증재단중앙회",
+     "amount": 593213636,
+     "openedAt": "2026-08-14 13:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 642720000,
+     "rate": 99.996,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01627014",
+     "title": "연구행정 효율화를 위한 AI기반 서비스 구축 사업",
+     "org": "한국과학기술기획평가원",
+     "amount": 1077272727,
+     "openedAt": "2026-08-11 11:00:00",
+     "status": "개찰완료",
+     "rank": 5,
+     "bidAmount": 1179200000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01622572",
+     "title": "인공지능(AI) Agent 기반의 범정부『심사·심의·검토』업무 지원 시스템 개발",
+     "org": "한국지능정보사회진흥원",
+     "amount": 1634929145,
+     "openedAt": "2026-07-09 13:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1770422060,
+     "rate": 99.967,
+     "won": true,
+     "role": "주계약업체",
+     "share": 50,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01522340",
+     "title": "보증드림 시스템 고도화 용역",
+     "org": "신용보증재단중앙회",
+     "amount": 1586596364,
+     "openedAt": "2026-06-30 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1745200000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01544413",
+     "title": "이륜자동차 공공데이터 개방",
+     "org": "한국지능정보사회진흥원",
+     "amount": 938930205,
+     "openedAt": "2026-06-24 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1012000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01504467",
+     "title": "AI 기반 과기정통부 특화 행정서비스(AI-NEXT) 구축",
+     "org": "과학기술정보통신부",
+     "amount": 1105454545,
+     "openedAt": "2026-06-02 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1214784000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 60,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01419416",
+     "title": "하이원리조트 모바일 앱 통합예약시스템 구축 용역",
+     "org": "(주)강원랜드",
+     "amount": 1025958627,
+     "openedAt": "2026-05-12 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1122000000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01506350",
+     "title": "혁신조달 확대를 위한 범부처 통합 혁신플랫폼 강화사업",
+     "org": "조달청",
+     "amount": 1045454545,
+     "openedAt": "2026-05-08 12:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1127115000,
+     "rate": 99.502,
+     "won": true,
+     "role": "주계약업체",
+     "share": 57.1,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01461971",
+     "title": "경기 AI 학습데이터 통합 관리체계 도입 사업",
+     "org": "경기도",
+     "amount": 1718854545,
+     "openedAt": "2026-04-30 18:00:00",
+     "status": "개찰완료",
+     "rank": 4,
+     "bidAmount": 1886500000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01477757",
+     "title": "2026년 소상공인 손실보상시스템 운영 유지관리 용역",
+     "org": "소상공인시장진흥공단",
+     "amount": 1551818182,
+     "openedAt": "2026-04-22 13:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1681000000,
+     "rate": 99.976,
+     "won": true,
+     "role": "주계약업체",
+     "share": 45,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01456121",
+     "title": "26년 모바일 홈택스 고도화 구축 사업",
+     "org": "국세청",
+     "amount": 1737272727,
+     "openedAt": "2026-04-14 16:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1882000000,
+     "rate": 99.979,
+     "won": true,
+     "role": "주계약업체",
+     "share": 55,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01271887",
+     "title": "정신건강 복지서비스 정보시스템 유지관리 용역 사업",
+     "org": "국민건강보험공단",
+     "amount": 853507273,
+     "openedAt": "2026-02-23 13:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 938300000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 938300000
+    },
+    {
+     "id": "R26BK01275445",
+     "title": "아이돌봄사 국가자격 관리시스템 구축 사업",
+     "org": "성평등가족부",
+     "amount": 2830909091,
+     "openedAt": "2026-02-10 11:00:00",
+     "status": "개찰완료",
+     "rank": 6,
+     "bidAmount": 3110800000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK01249285",
+     "title": "(수의시담) 2026년 정보시스템 통합 유지보수 용역",
+     "org": "재단법인 한국국학진흥원",
+     "amount": 218181818,
+     "openedAt": "2025-12-26 13:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 227000000,
+     "rate": 99.561,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 227000000
+    },
+    {
+     "id": "R25BK01227066",
+     "title": "2026년 온라인행정심판시스템 유지관리 및 위탁용역",
+     "org": "국민권익위원회",
+     "amount": 1650000000,
+     "openedAt": "2025-12-16 17:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1796850000,
+     "rate": 100,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK01102256",
+     "title": "2026년 한국문화예술위원회 정보시스템 통합유지보수",
+     "org": "한국문화예술위원회",
+     "amount": 879545455,
+     "openedAt": "2025-12-03 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": 954800000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK01128397",
+     "title": "2026년 고향사랑e음 유지관리",
+     "org": "한국지역정보개발원",
+     "amount": 2547260000,
+     "openedAt": "2025-11-28 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 2772000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00944976",
+     "title": "KAC 생성형 AI 서비스 시범 구축 용역",
+     "org": "한국공항공사",
+     "amount": 743050000,
+     "openedAt": "2025-08-04 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": 742500000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00960115",
+     "title": "원스톱 행정심판 시스템 고도화 사업",
+     "org": "국민권익위원회",
+     "amount": 1072568182,
+     "openedAt": "2025-07-29 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1179800000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 68,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00937201",
+     "title": "에이전틱 AI 기반의 전국민 맞춤형 민원상담",
+     "org": "한국지능정보사회진흥원",
+     "amount": 925454545,
+     "openedAt": "2025-07-24 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 940000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00915212",
+     "title": "생성형 AI 기반 국세 상담 지원 서비스",
+     "org": "한국지능정보사회진흥원",
+     "amount": 1009090909,
+     "openedAt": "2025-07-15 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": null,
+     "rate": null,
+     "won": true,
+     "role": "도급업체",
+     "share": 20,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00951756",
+     "title": "25년 빅데이터·정보분석시스템 증설 사업",
+     "org": "국세청",
+     "amount": 2783185455,
+     "openedAt": "2025-07-10 11:30:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": null,
+     "rate": null,
+     "won": true,
+     "role": "도급업체",
+     "share": 15,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00879252",
+     "title": "2025년 사회서비스 바우처 시스템 기능개선",
+     "org": "한국사회보장정보원",
+     "amount": 1745454545,
+     "openedAt": "2025-06-26 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1918081000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00832987",
+     "title": "과학기술 ONEST 지식포털 구축사업",
+     "org": "국가과학기술연구회",
+     "amount": 2723874545,
+     "openedAt": "2025-06-13 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": 2948000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00820873",
+     "title": "청년 고용 올케어 플랫폼 구축 사업",
+     "org": "한국고용정보원",
+     "amount": 1551818182,
+     "openedAt": "2025-05-30 11:00:00",
+     "status": "개찰완료",
+     "rank": 4,
+     "bidAmount": 1689930000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00821150",
+     "title": "AI기반 예산·결산 분석 지원시스템 구축사업",
+     "org": "경기도 의회사무처",
+     "amount": 304545455,
+     "openedAt": "2025-05-20 17:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 330000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00742561",
+     "title": "2025년도 취약노인지원 및 장애인건강보건관리시스템 유지관리",
+     "org": "한국사회보장정보원",
+     "amount": 440909091,
+     "openedAt": "2025-04-22 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 484515000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00741978",
+     "title": "ESS 통합관리시스템 고도화 구축 용역",
+     "org": "한국전기안전공사",
+     "amount": 299090909,
+     "openedAt": "2025-04-22 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 280000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00741179",
+     "title": "플랫폼 통합 및 데이터관리시스템 구축사업 용역",
+     "org": "주식회사한국중소벤처기업유통원",
+     "amount": 1147727273,
+     "openedAt": "2025-04-15 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1185800000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00601342",
+     "title": "ODA 통합정보포털 개편",
+     "org": "국무조정실",
+     "amount": 1580909091,
+     "openedAt": "2025-03-05 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 1738000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R25BK00592506",
+     "title": "스마트 규제행정시스템 구축",
+     "org": "국무조정실",
+     "amount": 1141818182,
+     "openedAt": "2025-02-26 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1067600000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20241213812",
+     "title": "2025~2026년 도시정보센터 정보시스템 통합유지관리",
+     "org": "경기도 파주시",
+     "amount": 2612960909,
+     "openedAt": "2024-12-20 15:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 2330000000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 60,
+     "contractAmount": 1398000000
+    },
+    {
+     "id": "20241122664",
+     "title": "2025년 행정정보시스템 유지관리 및 기능개선",
+     "org": "새만금개발청",
+     "amount": 302278182,
+     "openedAt": "2024-12-13 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 325855880,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20241107784",
+     "title": "25~26년 청렴포털 유지관리 및 위탁운영",
+     "org": "국민권익위원회",
+     "amount": 2298181818,
+     "openedAt": "2024-12-10 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 2502720000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20241207140",
+     "title": "2025년 온라인행정심판시스템 유지관리 및 위탁운영",
+     "org": "국민권익위원회",
+     "amount": 887272727,
+     "openedAt": "2024-12-09 15:01:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 966000000,
+     "rate": 99.979,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": null
+    },
+    {
+     "id": "20241143135",
+     "title": "25~26년 권익행정 정보시스템 유지관리 및 위탁운영",
+     "org": "국민권익위원회",
+     "amount": 1769090909,
+     "openedAt": "2024-12-02 15:01:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1926540000,
+     "rate": 100,
+     "won": true,
+     "role": "주계약업체",
+     "share": 72,
+     "contractAmount": 1387108800
+    },
+    {
+     "id": "20240928054",
+     "title": "2025년 세무종합시스템 운영 및 유지관리 용역",
+     "org": "서울특별시",
+     "amount": 1805693636,
+     "openedAt": "2024-11-12 17:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 1837000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240924092",
+     "title": "생태계 기후대응 통합정보관리시스템 구축(2차) 용역",
+     "org": "국립생태원",
+     "amount": 1818181818,
+     "openedAt": "2024-10-29 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 1998000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20241003756",
+     "title": "2025년 재외동포협력센터 정보시스템 및 인프라 통합 운영,유지보수 사업",
+     "org": "재외동포협력센터",
+     "amount": 876363636,
+     "openedAt": "2024-10-25 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 954360000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240902041",
+     "title": "조사연구 관리시스템 구축 용역",
+     "org": "국가유산진흥원",
+     "amount": 464000000,
+     "openedAt": "2024-09-26 18:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 485000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240724379",
+     "title": "통합형 임금직무정보시스템(KOnet) 구축 사업",
+     "org": "한국고용정보원",
+     "amount": 1165454545,
+     "openedAt": "2024-08-21 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1280000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240728550",
+     "title": "디지털 지방의정 표준플랫폼 구축(1차)",
+     "org": "한국지역정보개발원",
+     "amount": 937490909,
+     "openedAt": "2024-08-20 11:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": 1021900000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240735976",
+     "title": "차세대 사회적기업 정보시스템 구축 2단계 용역",
+     "org": "한국사회적기업진흥원",
+     "amount": 1727272727,
+     "openedAt": "2024-08-13 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": 1824000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240718975",
+     "title": "경영정보시스템 통합유지관리 용역",
+     "org": "충청남도개발공사",
+     "amount": 886990909,
+     "openedAt": "2024-07-16 15:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 958690000,
+     "rate": 99.744,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 1078526000
+    },
+    {
+     "id": "20240511264",
+     "title": "차세대 올바로(Allbaro)시스템 구축(1차)",
+     "org": "한국환경공단",
+     "amount": 2673636364,
+     "openedAt": "2024-06-05 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 2940000000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240433448",
+     "title": "지능형 헌법재판시스템 구축 4단계 사업",
+     "org": "헌법재판소",
+     "amount": 939854545,
+     "openedAt": "2024-05-21 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 935000000,
+     "rate": null,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240501428",
+     "title": "형사사법 통계시스템 차세대KICS 대응 개발 사업",
+     "org": "법무부",
+     "amount": 838181818,
+     "openedAt": "2024-05-08 14:10:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 907000000,
+     "rate": 99.878,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240446274",
+     "title": "온라인행정시스템 인프라 전환에 따른 AP 컨버전 및 DB 마이그레이션",
+     "org": "국민권익위원회",
+     "amount": 496363636,
+     "openedAt": "2024-05-02 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 537300000,
+     "rate": 99.905,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20240345679",
+     "title": "2024년 정보시스템 및 인프라 통합운영유지보수사업",
+     "org": "재외동포협력센터",
+     "amount": 914545455,
+     "openedAt": "2024-04-17 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 998000000,
+     "rate": null,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20231234762",
+     "title": "형사사법 통계시스템 유지관리사업(2024년)",
+     "org": "법무부",
+     "amount": 1256363636,
+     "openedAt": "2023-12-21 16:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1361270000,
+     "rate": 100,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20231224239",
+     "title": "2024년 온라인행정심판시스템 유지관리 및 위탁운영",
+     "org": "국민권익위원회",
+     "amount": 918181818,
+     "openedAt": "2023-12-14 16:01:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 994850000,
+     "rate": 100,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "20231211859",
+     "title": "24년 권익행정 정보시스템 유지관리 및 위탁운영",
+     "org": "국민권익위원회",
+     "amount": 1973636364,
+     "openedAt": "2023-12-11 16:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 2136264000,
+     "rate": 99.898,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    }
+   ],
+   "partners": [
+    {
+     "bizno": "3148136537",
+     "name": "주식회사 소프트아이텍",
+     "count": 4,
+     "share": 24
+    },
+    {
+     "bizno": "8978602240",
+     "name": "주식회사 사미텍",
+     "count": 2,
+     "share": 40
+    },
+    {
+     "bizno": "1448105508",
+     "name": "(주)엠에스시스템즈",
+     "count": 2,
+     "share": 35
+    },
+    {
+     "bizno": "2028132975",
+     "name": "주식회사 아이티센엔텍",
+     "count": 1,
+     "share": 40
+    },
+    {
+     "bizno": "1028142945",
+     "name": "주식회사 케이티",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "1078841902",
+     "name": "주식회사 지티아이씨",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "8308801918",
+     "name": "주식회사 업스테이지",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "2118729587",
+     "name": "(주)비인텍",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "3148633286",
+     "name": "주식회사 이데아인포",
+     "count": 1,
+     "share": 43
+    },
+    {
+     "bizno": "3788600038",
+     "name": "주식회사 엠케이정보기술",
+     "count": 1,
+     "share": 40
+    },
+    {
+     "bizno": "1138643065",
+     "name": "주식회사 에이다루트",
+     "count": 1,
+     "share": 32
+    },
+    {
+     "bizno": "7248101517",
+     "name": "(주)퍼블릭에이아이",
+     "count": 1,
+     "share": 50
+    },
+    {
+     "bizno": "6748801017",
+     "name": "오케스트로 주식회사",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "2158637817",
+     "name": "(주)스마트비전",
+     "count": 1,
+     "share": 40
+    },
+    {
+     "bizno": "7408802123",
+     "name": "주식회사 티와이엘",
+     "count": 1,
+     "share": 28
+    }
+   ],
+   "rivals": [
+    {
+     "bizno": "2288105280",
+     "name": "주식회사 유큐브",
+     "count": 5
+    },
+    {
+     "bizno": "4208600611",
+     "name": "주식회사 클라모스",
+     "count": 4
+    },
+    {
+     "bizno": "1138643065",
+     "name": "주식회사 에이다루트",
+     "count": 3
+    },
+    {
+     "bizno": "2148627427",
+     "name": "(주)한국이디에스",
+     "count": 3
+    },
+    {
+     "bizno": "2118698485",
+     "name": "(주)와이즈넛",
+     "count": 3
+    },
+    {
+     "bizno": "2118669582",
+     "name": "(주)브이티더블유",
+     "count": 3
+    },
+    {
+     "bizno": "5358101635",
+     "name": "주식회사 웨이버스",
+     "count": 2
+    },
+    {
+     "bizno": "1478602432",
+     "name": "(주)나라원시스템",
+     "count": 2
+    },
+    {
+     "bizno": "1078655270",
+     "name": "주식회사 유알피",
+     "count": 2
+    },
+    {
+     "bizno": "3018181109",
+     "name": "(주)에니아",
+     "count": 2
+    },
+    {
+     "bizno": "8128801619",
+     "name": "주식회사 엑소텍",
+     "count": 2
+    },
+    {
+     "bizno": "1058608825",
+     "name": "(주)다이퀘스트",
+     "count": 2
+    },
+    {
+     "bizno": "1428135665",
+     "name": "주식회사 프람트테크놀로지",
+     "count": 2
+    },
+    {
+     "bizno": "4968602770",
+     "name": "주식회사 디디팩토리",
+     "count": 2
+    },
+    {
+     "bizno": "2118697088",
+     "name": "(주)가온아이",
+     "count": 2
+    },
+    {
+     "bizno": "1228125877",
+     "name": "오상자이엘 주식회사",
+     "count": 2
+    },
+    {
+     "bizno": "7338101035",
+     "name": "올거나이즈코리아 주식회사",
+     "count": 2
+    },
+    {
+     "bizno": "1298650144",
+     "name": "주식회사 케이브레인컴퍼니",
+     "count": 2
+    },
+    {
+     "bizno": "1058630782",
+     "name": "주식회사 퓨텍소프트",
+     "count": 2
+    },
+    {
+     "bizno": "1438133020",
+     "name": "주식회사 파란샘",
+     "count": 1
+    }
+   ]
+  },
+  {
    "bizno": "1388172429",
    "name": "아이씨티웨이 주식회사",
    "ceo": "조유복",
@@ -97796,1060 +98904,6 @@
      "bizno": "2208168277",
      "name": "영성미디어주식회사",
      "count": 3
-    }
-   ]
-  },
-  {
-   "bizno": "1198196788",
-   "name": "주식회사 유플러스아이티",
-   "ceo": "김상하",
-   "stats": {
-    "bids": 54,
-    "wins": 24,
-    "wonAmount": 26281309860,
-    "partners": 11,
-    "lastAt": "2026-09-03 11:00:00"
-   },
-   "basic": {
-    "opened": "2007-03-09",
-    "region": "서울특별시 영등포구",
-    "address": "서울특별시 영등포구 양평로21길 26, 908-909호 (양평동5가, 선유도역1차아이에스비즈타워)",
-    "employees": 226,
-    "homepage": "http://www.uplusit.com",
-    "kinds": "물품,일반용역,용역,공사"
-   },
-   "industries": [],
-   "nps": [
-    {
-     "ym": "202510",
-     "cnt": 426
-    },
-    {
-     "ym": "202511",
-     "cnt": 423
-    },
-    {
-     "ym": "202512",
-     "cnt": 422
-    },
-    {
-     "ym": "202601",
-     "cnt": 403
-    },
-    {
-     "ym": "202602",
-     "cnt": 409
-    },
-    {
-     "ym": "202603",
-     "cnt": 413
-    },
-    {
-     "ym": "202604",
-     "cnt": 427
-    },
-    {
-     "ym": "202605",
-     "cnt": 440
-    },
-    {
-     "ym": "202606",
-     "cnt": 445
-    },
-    {
-     "ym": "202607",
-     "cnt": 441
-    },
-    {
-     "ym": "202608",
-     "cnt": 402
-    },
-    {
-     "ym": "202609",
-     "cnt": 424
-    }
-   ],
-   "dart": [],
-   "history": [
-    {
-     "id": "R26BK01660250",
-     "title": "「국립생태원 생태정보시스템 최적화 및 G-클라우드 이관」 사업",
-     "org": "국립생태원",
-     "amount": 1469090909,
-     "openedAt": "2026-09-03 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 1470700000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01664686",
-     "title": "환경 민원 AI 지원 서비스 구축",
-     "org": "기후에너지환경부",
-     "amount": 400000000,
-     "openedAt": "2026-09-01 11:00:00",
-     "status": "개찰완료",
-     "rank": 5,
-     "bidAmount": 396000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01680131",
-     "title": "업무자동화(RPA) 고도화 사업",
-     "org": "신용보증재단중앙회",
-     "amount": 593213636,
-     "openedAt": "2026-08-14 13:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 642720000,
-     "rate": 99.996,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01627014",
-     "title": "연구행정 효율화를 위한 AI기반 서비스 구축 사업",
-     "org": "한국과학기술기획평가원",
-     "amount": 1077272727,
-     "openedAt": "2026-08-11 11:00:00",
-     "status": "개찰완료",
-     "rank": 5,
-     "bidAmount": 1179200000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01622572",
-     "title": "인공지능(AI) Agent 기반의 범정부『심사·심의·검토』업무 지원 시스템 개발",
-     "org": "한국지능정보사회진흥원",
-     "amount": 1634929145,
-     "openedAt": "2026-07-09 13:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1770422060,
-     "rate": 99.967,
-     "won": true,
-     "role": "주계약업체",
-     "share": 50,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01522340",
-     "title": "보증드림 시스템 고도화 용역",
-     "org": "신용보증재단중앙회",
-     "amount": 1586596364,
-     "openedAt": "2026-06-30 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1745200000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01544413",
-     "title": "이륜자동차 공공데이터 개방",
-     "org": "한국지능정보사회진흥원",
-     "amount": 938930205,
-     "openedAt": "2026-06-24 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1012000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01504467",
-     "title": "AI 기반 과기정통부 특화 행정서비스(AI-NEXT) 구축",
-     "org": "과학기술정보통신부",
-     "amount": 1105454545,
-     "openedAt": "2026-06-02 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1214784000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 60,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01419416",
-     "title": "하이원리조트 모바일 앱 통합예약시스템 구축 용역",
-     "org": "(주)강원랜드",
-     "amount": 1025958627,
-     "openedAt": "2026-05-12 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1122000000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01506350",
-     "title": "혁신조달 확대를 위한 범부처 통합 혁신플랫폼 강화사업",
-     "org": "조달청",
-     "amount": 1045454545,
-     "openedAt": "2026-05-08 12:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1127115000,
-     "rate": 99.502,
-     "won": true,
-     "role": "주계약업체",
-     "share": 57.1,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01461971",
-     "title": "경기 AI 학습데이터 통합 관리체계 도입 사업",
-     "org": "경기도",
-     "amount": 1718854545,
-     "openedAt": "2026-04-30 18:00:00",
-     "status": "개찰완료",
-     "rank": 4,
-     "bidAmount": 1886500000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01477757",
-     "title": "2026년 소상공인 손실보상시스템 운영 유지관리 용역",
-     "org": "소상공인시장진흥공단",
-     "amount": 1551818182,
-     "openedAt": "2026-04-22 13:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1681000000,
-     "rate": 99.976,
-     "won": true,
-     "role": "주계약업체",
-     "share": 45,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01456121",
-     "title": "26년 모바일 홈택스 고도화 구축 사업",
-     "org": "국세청",
-     "amount": 1737272727,
-     "openedAt": "2026-04-14 16:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1882000000,
-     "rate": 99.979,
-     "won": true,
-     "role": "주계약업체",
-     "share": 55,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01271887",
-     "title": "정신건강 복지서비스 정보시스템 유지관리 용역 사업",
-     "org": "국민건강보험공단",
-     "amount": 853507273,
-     "openedAt": "2026-02-23 13:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 938300000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": 938300000
-    },
-    {
-     "id": "R26BK01275445",
-     "title": "아이돌봄사 국가자격 관리시스템 구축 사업",
-     "org": "성평등가족부",
-     "amount": 2830909091,
-     "openedAt": "2026-02-10 11:00:00",
-     "status": "개찰완료",
-     "rank": 6,
-     "bidAmount": 3110800000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK01249285",
-     "title": "(수의시담) 2026년 정보시스템 통합 유지보수 용역",
-     "org": "재단법인 한국국학진흥원",
-     "amount": 218181818,
-     "openedAt": "2025-12-26 13:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 227000000,
-     "rate": 99.561,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": 227000000
-    },
-    {
-     "id": "R25BK01227066",
-     "title": "2026년 온라인행정심판시스템 유지관리 및 위탁용역",
-     "org": "국민권익위원회",
-     "amount": 1650000000,
-     "openedAt": "2025-12-16 17:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1796850000,
-     "rate": 100,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK01102256",
-     "title": "2026년 한국문화예술위원회 정보시스템 통합유지보수",
-     "org": "한국문화예술위원회",
-     "amount": 879545455,
-     "openedAt": "2025-12-03 11:00:00",
-     "status": "개찰완료",
-     "rank": null,
-     "bidAmount": 954800000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK01128397",
-     "title": "2026년 고향사랑e음 유지관리",
-     "org": "한국지역정보개발원",
-     "amount": 2547260000,
-     "openedAt": "2025-11-28 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 2772000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00944976",
-     "title": "KAC 생성형 AI 서비스 시범 구축 용역",
-     "org": "한국공항공사",
-     "amount": 743050000,
-     "openedAt": "2025-08-04 11:00:00",
-     "status": "개찰완료",
-     "rank": null,
-     "bidAmount": 742500000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00960115",
-     "title": "원스톱 행정심판 시스템 고도화 사업",
-     "org": "국민권익위원회",
-     "amount": 1072568182,
-     "openedAt": "2025-07-29 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1179800000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 68,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00937201",
-     "title": "에이전틱 AI 기반의 전국민 맞춤형 민원상담",
-     "org": "한국지능정보사회진흥원",
-     "amount": 925454545,
-     "openedAt": "2025-07-24 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 940000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00915212",
-     "title": "생성형 AI 기반 국세 상담 지원 서비스",
-     "org": "한국지능정보사회진흥원",
-     "amount": 1009090909,
-     "openedAt": "2025-07-15 11:00:00",
-     "status": "개찰완료",
-     "rank": null,
-     "bidAmount": null,
-     "rate": null,
-     "won": true,
-     "role": "도급업체",
-     "share": 20,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00951756",
-     "title": "25년 빅데이터·정보분석시스템 증설 사업",
-     "org": "국세청",
-     "amount": 2783185455,
-     "openedAt": "2025-07-10 11:30:00",
-     "status": "개찰완료",
-     "rank": null,
-     "bidAmount": null,
-     "rate": null,
-     "won": true,
-     "role": "도급업체",
-     "share": 15,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00879252",
-     "title": "2025년 사회서비스 바우처 시스템 기능개선",
-     "org": "한국사회보장정보원",
-     "amount": 1745454545,
-     "openedAt": "2025-06-26 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1918081000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00832987",
-     "title": "과학기술 ONEST 지식포털 구축사업",
-     "org": "국가과학기술연구회",
-     "amount": 2723874545,
-     "openedAt": "2025-06-13 11:00:00",
-     "status": "개찰완료",
-     "rank": null,
-     "bidAmount": 2948000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00820873",
-     "title": "청년 고용 올케어 플랫폼 구축 사업",
-     "org": "한국고용정보원",
-     "amount": 1551818182,
-     "openedAt": "2025-05-30 11:00:00",
-     "status": "개찰완료",
-     "rank": 4,
-     "bidAmount": 1689930000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00821150",
-     "title": "AI기반 예산·결산 분석 지원시스템 구축사업",
-     "org": "경기도 의회사무처",
-     "amount": 304545455,
-     "openedAt": "2025-05-20 17:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 330000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00742561",
-     "title": "2025년도 취약노인지원 및 장애인건강보건관리시스템 유지관리",
-     "org": "한국사회보장정보원",
-     "amount": 440909091,
-     "openedAt": "2025-04-22 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 484515000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00741978",
-     "title": "ESS 통합관리시스템 고도화 구축 용역",
-     "org": "한국전기안전공사",
-     "amount": 299090909,
-     "openedAt": "2025-04-22 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 280000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00741179",
-     "title": "플랫폼 통합 및 데이터관리시스템 구축사업 용역",
-     "org": "주식회사한국중소벤처기업유통원",
-     "amount": 1147727273,
-     "openedAt": "2025-04-15 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1185800000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00601342",
-     "title": "ODA 통합정보포털 개편",
-     "org": "국무조정실",
-     "amount": 1580909091,
-     "openedAt": "2025-03-05 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 1738000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R25BK00592506",
-     "title": "스마트 규제행정시스템 구축",
-     "org": "국무조정실",
-     "amount": 1141818182,
-     "openedAt": "2025-02-26 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1067600000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20241213812",
-     "title": "2025~2026년 도시정보센터 정보시스템 통합유지관리",
-     "org": "경기도 파주시",
-     "amount": 2612960909,
-     "openedAt": "2024-12-20 15:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 2330000000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 60,
-     "contractAmount": 1398000000
-    },
-    {
-     "id": "20241122664",
-     "title": "2025년 행정정보시스템 유지관리 및 기능개선",
-     "org": "새만금개발청",
-     "amount": 302278182,
-     "openedAt": "2024-12-13 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 325855880,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20241107784",
-     "title": "25~26년 청렴포털 유지관리 및 위탁운영",
-     "org": "국민권익위원회",
-     "amount": 2298181818,
-     "openedAt": "2024-12-10 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 2502720000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20241207140",
-     "title": "2025년 온라인행정심판시스템 유지관리 및 위탁운영",
-     "org": "국민권익위원회",
-     "amount": 887272727,
-     "openedAt": "2024-12-09 15:01:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 966000000,
-     "rate": 99.979,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": null
-    },
-    {
-     "id": "20241143135",
-     "title": "25~26년 권익행정 정보시스템 유지관리 및 위탁운영",
-     "org": "국민권익위원회",
-     "amount": 1769090909,
-     "openedAt": "2024-12-02 15:01:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1926540000,
-     "rate": 100,
-     "won": true,
-     "role": "주계약업체",
-     "share": 72,
-     "contractAmount": 1387108800
-    },
-    {
-     "id": "20240928054",
-     "title": "2025년 세무종합시스템 운영 및 유지관리 용역",
-     "org": "서울특별시",
-     "amount": 1805693636,
-     "openedAt": "2024-11-12 17:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 1837000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240924092",
-     "title": "생태계 기후대응 통합정보관리시스템 구축(2차) 용역",
-     "org": "국립생태원",
-     "amount": 1818181818,
-     "openedAt": "2024-10-29 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 1998000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20241003756",
-     "title": "2025년 재외동포협력센터 정보시스템 및 인프라 통합 운영,유지보수 사업",
-     "org": "재외동포협력센터",
-     "amount": 876363636,
-     "openedAt": "2024-10-25 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 954360000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240902041",
-     "title": "조사연구 관리시스템 구축 용역",
-     "org": "국가유산진흥원",
-     "amount": 464000000,
-     "openedAt": "2024-09-26 18:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 485000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240724379",
-     "title": "통합형 임금직무정보시스템(KOnet) 구축 사업",
-     "org": "한국고용정보원",
-     "amount": 1165454545,
-     "openedAt": "2024-08-21 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1280000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240728550",
-     "title": "디지털 지방의정 표준플랫폼 구축(1차)",
-     "org": "한국지역정보개발원",
-     "amount": 937490909,
-     "openedAt": "2024-08-20 11:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": 1021900000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240735976",
-     "title": "차세대 사회적기업 정보시스템 구축 2단계 용역",
-     "org": "한국사회적기업진흥원",
-     "amount": 1727272727,
-     "openedAt": "2024-08-13 11:00:00",
-     "status": "개찰완료",
-     "rank": null,
-     "bidAmount": 1824000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240718975",
-     "title": "경영정보시스템 통합유지관리 용역",
-     "org": "충청남도개발공사",
-     "amount": 886990909,
-     "openedAt": "2024-07-16 15:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 958690000,
-     "rate": 99.744,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": 1078526000
-    },
-    {
-     "id": "20240511264",
-     "title": "차세대 올바로(Allbaro)시스템 구축(1차)",
-     "org": "한국환경공단",
-     "amount": 2673636364,
-     "openedAt": "2024-06-05 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 2940000000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240433448",
-     "title": "지능형 헌법재판시스템 구축 4단계 사업",
-     "org": "헌법재판소",
-     "amount": 939854545,
-     "openedAt": "2024-05-21 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 935000000,
-     "rate": null,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240501428",
-     "title": "형사사법 통계시스템 차세대KICS 대응 개발 사업",
-     "org": "법무부",
-     "amount": 838181818,
-     "openedAt": "2024-05-08 14:10:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 907000000,
-     "rate": 99.878,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240446274",
-     "title": "온라인행정시스템 인프라 전환에 따른 AP 컨버전 및 DB 마이그레이션",
-     "org": "국민권익위원회",
-     "amount": 496363636,
-     "openedAt": "2024-05-02 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 537300000,
-     "rate": 99.905,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20240345679",
-     "title": "2024년 정보시스템 및 인프라 통합운영유지보수사업",
-     "org": "재외동포협력센터",
-     "amount": 914545455,
-     "openedAt": "2024-04-17 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 998000000,
-     "rate": null,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20231234762",
-     "title": "형사사법 통계시스템 유지관리사업(2024년)",
-     "org": "법무부",
-     "amount": 1256363636,
-     "openedAt": "2023-12-21 16:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1361270000,
-     "rate": 100,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20231224239",
-     "title": "2024년 온라인행정심판시스템 유지관리 및 위탁운영",
-     "org": "국민권익위원회",
-     "amount": 918181818,
-     "openedAt": "2023-12-14 16:01:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 994850000,
-     "rate": 100,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "20231211859",
-     "title": "24년 권익행정 정보시스템 유지관리 및 위탁운영",
-     "org": "국민권익위원회",
-     "amount": 1973636364,
-     "openedAt": "2023-12-11 16:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 2136264000,
-     "rate": 99.898,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    }
-   ],
-   "partners": [
-    {
-     "bizno": "3148136537",
-     "name": "주식회사 소프트아이텍",
-     "count": 4,
-     "share": 24
-    },
-    {
-     "bizno": "8978602240",
-     "name": "주식회사 사미텍",
-     "count": 2,
-     "share": 40
-    },
-    {
-     "bizno": "1448105508",
-     "name": "(주)엠에스시스템즈",
-     "count": 2,
-     "share": 35
-    },
-    {
-     "bizno": "2118729587",
-     "name": "(주)비인텍",
-     "count": 1,
-     "share": 10
-    },
-    {
-     "bizno": "3148633286",
-     "name": "주식회사 이데아인포",
-     "count": 1,
-     "share": 43
-    },
-    {
-     "bizno": "3788600038",
-     "name": "주식회사 엠케이정보기술",
-     "count": 1,
-     "share": 40
-    },
-    {
-     "bizno": "1138643065",
-     "name": "주식회사 에이다루트",
-     "count": 1,
-     "share": 32
-    },
-    {
-     "bizno": "7248101517",
-     "name": "(주)퍼블릭에이아이",
-     "count": 1,
-     "share": 50
-    },
-    {
-     "bizno": "6748801017",
-     "name": "오케스트로 주식회사",
-     "count": 1,
-     "share": 10
-    },
-    {
-     "bizno": "2158637817",
-     "name": "(주)스마트비전",
-     "count": 1,
-     "share": 40
-    },
-    {
-     "bizno": "7408802123",
-     "name": "주식회사 티와이엘",
-     "count": 1,
-     "share": 28
-    }
-   ],
-   "rivals": [
-    {
-     "bizno": "2288105280",
-     "name": "주식회사 유큐브",
-     "count": 5
-    },
-    {
-     "bizno": "4208600611",
-     "name": "주식회사 클라모스",
-     "count": 4
-    },
-    {
-     "bizno": "1138643065",
-     "name": "주식회사 에이다루트",
-     "count": 3
-    },
-    {
-     "bizno": "2148627427",
-     "name": "(주)한국이디에스",
-     "count": 3
-    },
-    {
-     "bizno": "2118698485",
-     "name": "(주)와이즈넛",
-     "count": 3
-    },
-    {
-     "bizno": "2118669582",
-     "name": "(주)브이티더블유",
-     "count": 3
-    },
-    {
-     "bizno": "5358101635",
-     "name": "주식회사 웨이버스",
-     "count": 2
-    },
-    {
-     "bizno": "1478602432",
-     "name": "(주)나라원시스템",
-     "count": 2
-    },
-    {
-     "bizno": "1078655270",
-     "name": "주식회사 유알피",
-     "count": 2
-    },
-    {
-     "bizno": "3018181109",
-     "name": "(주)에니아",
-     "count": 2
-    },
-    {
-     "bizno": "8128801619",
-     "name": "주식회사 엑소텍",
-     "count": 2
-    },
-    {
-     "bizno": "1058608825",
-     "name": "(주)다이퀘스트",
-     "count": 2
-    },
-    {
-     "bizno": "1428135665",
-     "name": "주식회사 프람트테크놀로지",
-     "count": 2
-    },
-    {
-     "bizno": "4968602770",
-     "name": "주식회사 디디팩토리",
-     "count": 2
-    },
-    {
-     "bizno": "2118697088",
-     "name": "(주)가온아이",
-     "count": 2
-    },
-    {
-     "bizno": "1228125877",
-     "name": "오상자이엘 주식회사",
-     "count": 2
-    },
-    {
-     "bizno": "7338101035",
-     "name": "올거나이즈코리아 주식회사",
-     "count": 2
-    },
-    {
-     "bizno": "1298650144",
-     "name": "주식회사 케이브레인컴퍼니",
-     "count": 2
-    },
-    {
-     "bizno": "1058630782",
-     "name": "주식회사 퓨텍소프트",
-     "count": 2
-    },
-    {
-     "bizno": "1438133020",
-     "name": "주식회사 파란샘",
-     "count": 1
     }
    ]
   },
@@ -420717,7 +420771,7 @@
    "stats": {
     "bids": 10,
     "wins": 6,
-    "wonAmount": 404176300,
+    "wonAmount": 464676300,
     "partners": 0,
     "lastAt": "2026-11-04 13:00:00"
    },
@@ -420808,9 +420862,9 @@
      "bidAmount": null,
      "rate": null,
      "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 60500000
     },
     {
      "id": "R26BK01495177",
@@ -587230,7 +587284,7 @@
    "ceo": "최주선",
    "stats": {
     "bids": 5,
-    "wins": 0,
+    "wins": 1,
     "wonAmount": 0,
     "partners": 0,
     "lastAt": "2026-11-13 11:00:00"
@@ -587306,9 +587360,9 @@
      "rank": 1,
      "bidAmount": null,
      "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
      "contractAmount": null
     },
     {
@@ -587473,6 +587527,288 @@
      "bizno": "7368602265",
      "name": "다담시스 주식회사",
      "count": 2
+    }
+   ]
+  },
+  {
+   "bizno": "1028142945",
+   "name": "주식회사 케이티",
+   "ceo": "박윤영",
+   "stats": {
+    "bids": 5,
+    "wins": 3,
+    "wonAmount": 2668738600,
+    "partners": 11,
+    "lastAt": "2026-11-11 11:00:00"
+   },
+   "basic": {
+    "opened": "1982-01-01",
+    "region": "경기도 성남시 분당구",
+    "address": "경기도 성남시 분당구 불정로 90 1층(정자동)",
+    "employees": 23598,
+    "homepage": "http://www.kt.com/",
+    "kinds": "물품,일반용역,용역,공사"
+   },
+   "industries": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 14188
+    },
+    {
+     "ym": "202512",
+     "cnt": 14173
+    },
+    {
+     "ym": "202601",
+     "cnt": 14179
+    },
+    {
+     "ym": "202602",
+     "cnt": 14146
+    },
+    {
+     "ym": "202603",
+     "cnt": 14095
+    },
+    {
+     "ym": "202604",
+     "cnt": 14007
+    },
+    {
+     "ym": "202605",
+     "cnt": 6
+    },
+    {
+     "ym": "202606",
+     "cnt": 6
+    },
+    {
+     "ym": "202607",
+     "cnt": 6
+    },
+    {
+     "ym": "202608",
+     "cnt": 6
+    },
+    {
+     "ym": "202609",
+     "cnt": 6
+    },
+    {
+     "ym": "202610",
+     "cnt": 6
+    }
+   ],
+   "dart": [
+    {
+     "year": 2025,
+     "매출액": 19324024000000,
+     "영업이익": 1304973000000,
+     "당기순이익": 1061753000000,
+     "자산총계": 29677587000000,
+     "부채총계": 14451027000000,
+     "자본총계": 15226560000000
+    },
+    {
+     "year": 2024,
+     "매출액": 18579678000000,
+     "영업이익": 346489000000,
+     "당기순이익": 326916000000,
+     "자산총계": 29528880000000,
+     "부채총계": 15108740000000,
+     "자본총계": 14420140000000
+    },
+    {
+     "year": 2023,
+     "매출액": 18371437000000,
+     "영업이익": 1185392000000,
+     "당기순이익": 933337000000,
+     "자산총계": 30308919000000,
+     "부채총계": 15265380000000,
+     "자본총계": 15043539000000
+    }
+   ],
+   "history": [
+    {
+     "id": "R26BK01736987",
+     "title": "국세청 AI 시스템 구축 ISMP 수립",
+     "org": "국세청",
+     "amount": 1401818182,
+     "openedAt": "2026-11-11 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": null,
+     "rate": null,
+     "won": true,
+     "role": "도급업체",
+     "share": 10,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01555876",
+     "title": "국가정보자원관리원 혁신 정보화 전략계획(ISP) 수립",
+     "org": "한국지능정보사회진흥원",
+     "amount": 1364502241,
+     "openedAt": "2026-06-26 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1275808600,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 30,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01357934",
+     "title": "방위사업 관리 등을 위한 생성형 AI 서비스 ISP",
+     "org": "방위사업청",
+     "amount": 356363636,
+     "openedAt": "2026-03-17 11:00:00",
+     "status": "개찰완료",
+     "rank": 2,
+     "bidAmount": 384160000,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01262966",
+     "title": "차세대 119통합시스템 구축 ISMP 수립",
+     "org": "소방청",
+     "amount": 1266363636,
+     "openedAt": "2026-02-10 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1392930000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 38,
+     "contractAmount": null
+    },
+    {
+     "id": "20240623158",
+     "title": "대한지방행정공제회 AI기반 스마트 컨택센터 구축 용역",
+     "org": "대한지방행정공제회",
+     "amount": 2300000000,
+     "openedAt": "2024-07-04 15:00:00",
+     "status": "개찰완료",
+     "rank": 3,
+     "bidAmount": null,
+     "rate": null,
+     "won": false,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    }
+   ],
+   "partners": [
+    {
+     "bizno": "2118669582",
+     "name": "(주)브이티더블유",
+     "count": 2,
+     "share": 25
+    },
+    {
+     "bizno": "2028132975",
+     "name": "주식회사 아이티센엔텍",
+     "count": 1,
+     "share": 40
+    },
+    {
+     "bizno": "1198196788",
+     "name": "주식회사 유플러스아이티",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "1078841902",
+     "name": "주식회사 지티아이씨",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "8308801918",
+     "name": "주식회사 업스테이지",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "4088118945",
+     "name": "대신정보통신 주식회사",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "3148184913",
+     "name": "세림티에스지 주식회사",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "1298631394",
+     "name": "네이버클라우드 주식회사",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "6138114177",
+     "name": "주식회사코넥",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "1298176829",
+     "name": "주식회사 넥스트아이앤아이",
+     "count": 1,
+     "share": 12
+    },
+    {
+     "bizno": "2158711279",
+     "name": "주식회사 엠티데이타",
+     "count": 1,
+     "share": 10
+    }
+   ],
+   "rivals": [
+    {
+     "bizno": "1108128774",
+     "name": "삼성에스디에스 주식회사",
+     "count": 2
+    },
+    {
+     "bizno": "2348109525",
+     "name": "주식회사 컨셉위드인사이트",
+     "count": 1
+    },
+    {
+     "bizno": "4638101723",
+     "name": "주식회사 데이타트렌드",
+     "count": 1
+    },
+    {
+     "bizno": "1168119477",
+     "name": "주식회사 엘지씨엔에스",
+     "count": 1
+    },
+    {
+     "bizno": "2208168054",
+     "name": "(주)이씨에스텔레콤",
+     "count": 1
+    },
+    {
+     "bizno": "1168153835",
+     "name": "(주)브리지텍",
+     "count": 1
+    },
+    {
+     "bizno": "2158158684",
+     "name": "주식회사 넥서스커뮤니티",
+     "count": 1
     }
    ]
   },
@@ -610597,7 +610933,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 51
+    },
+    {
+     "ym": "202512",
+     "cnt": 49
+    },
+    {
+     "ym": "202601",
+     "cnt": 48
+    },
+    {
+     "ym": "202602",
+     "cnt": 49
+    },
+    {
+     "ym": "202603",
+     "cnt": 49
+    },
+    {
+     "ym": "202604",
+     "cnt": 47
+    },
+    {
+     "ym": "202605",
+     "cnt": 45
+    },
+    {
+     "ym": "202606",
+     "cnt": 45
+    },
+    {
+     "ym": "202607",
+     "cnt": 45
+    },
+    {
+     "ym": "202608",
+     "cnt": 44
+    },
+    {
+     "ym": "202609",
+     "cnt": 45
+    },
+    {
+     "ym": "202610",
+     "cnt": 45
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -610800,7 +611185,56 @@
     "kinds": "물품,외자,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 20
+    },
+    {
+     "ym": "202512",
+     "cnt": 20
+    },
+    {
+     "ym": "202601",
+     "cnt": 20
+    },
+    {
+     "ym": "202602",
+     "cnt": 20
+    },
+    {
+     "ym": "202603",
+     "cnt": 19
+    },
+    {
+     "ym": "202604",
+     "cnt": 19
+    },
+    {
+     "ym": "202605",
+     "cnt": 18
+    },
+    {
+     "ym": "202606",
+     "cnt": 18
+    },
+    {
+     "ym": "202607",
+     "cnt": 18
+    },
+    {
+     "ym": "202608",
+     "cnt": 19
+    },
+    {
+     "ym": "202609",
+     "cnt": 18
+    },
+    {
+     "ym": "202610",
+     "cnt": 18
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -611003,7 +611437,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 19
+    },
+    {
+     "ym": "202512",
+     "cnt": 19
+    },
+    {
+     "ym": "202601",
+     "cnt": 19
+    },
+    {
+     "ym": "202602",
+     "cnt": 24
+    },
+    {
+     "ym": "202603",
+     "cnt": 26
+    },
+    {
+     "ym": "202604",
+     "cnt": 25
+    },
+    {
+     "ym": "202605",
+     "cnt": 26
+    },
+    {
+     "ym": "202606",
+     "cnt": 24
+    },
+    {
+     "ym": "202607",
+     "cnt": 22
+    },
+    {
+     "ym": "202608",
+     "cnt": 23
+    },
+    {
+     "ym": "202609",
+     "cnt": 24
+    },
+    {
+     "ym": "202610",
+     "cnt": 24
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -611206,7 +611689,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 7
+    },
+    {
+     "ym": "202512",
+     "cnt": 7
+    },
+    {
+     "ym": "202601",
+     "cnt": 7
+    },
+    {
+     "ym": "202602",
+     "cnt": 7
+    },
+    {
+     "ym": "202603",
+     "cnt": 7
+    },
+    {
+     "ym": "202604",
+     "cnt": 7
+    },
+    {
+     "ym": "202605",
+     "cnt": 7
+    },
+    {
+     "ym": "202606",
+     "cnt": 7
+    },
+    {
+     "ym": "202607",
+     "cnt": 7
+    },
+    {
+     "ym": "202608",
+     "cnt": 7
+    },
+    {
+     "ym": "202609",
+     "cnt": 7
+    },
+    {
+     "ym": "202610",
+     "cnt": 7
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -611409,7 +611941,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 25
+    },
+    {
+     "ym": "202512",
+     "cnt": 25
+    },
+    {
+     "ym": "202601",
+     "cnt": 21
+    },
+    {
+     "ym": "202602",
+     "cnt": 23
+    },
+    {
+     "ym": "202603",
+     "cnt": 24
+    },
+    {
+     "ym": "202604",
+     "cnt": 24
+    },
+    {
+     "ym": "202605",
+     "cnt": 24
+    },
+    {
+     "ym": "202606",
+     "cnt": 23
+    },
+    {
+     "ym": "202607",
+     "cnt": 22
+    },
+    {
+     "ym": "202608",
+     "cnt": 23
+    },
+    {
+     "ym": "202609",
+     "cnt": 23
+    },
+    {
+     "ym": "202610",
+     "cnt": 23
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -611612,7 +612193,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 12
+    },
+    {
+     "ym": "202512",
+     "cnt": 12
+    },
+    {
+     "ym": "202601",
+     "cnt": 17
+    },
+    {
+     "ym": "202602",
+     "cnt": 16
+    },
+    {
+     "ym": "202603",
+     "cnt": 15
+    },
+    {
+     "ym": "202604",
+     "cnt": 13
+    },
+    {
+     "ym": "202605",
+     "cnt": 12
+    },
+    {
+     "ym": "202606",
+     "cnt": 11
+    },
+    {
+     "ym": "202607",
+     "cnt": 11
+    },
+    {
+     "ym": "202608",
+     "cnt": 10
+    },
+    {
+     "ym": "202609",
+     "cnt": 10
+    },
+    {
+     "ym": "202610",
+     "cnt": 10
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -611815,7 +612445,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 70
+    },
+    {
+     "ym": "202512",
+     "cnt": 69
+    },
+    {
+     "ym": "202601",
+     "cnt": 68
+    },
+    {
+     "ym": "202602",
+     "cnt": 70
+    },
+    {
+     "ym": "202603",
+     "cnt": 72
+    },
+    {
+     "ym": "202604",
+     "cnt": 71
+    },
+    {
+     "ym": "202605",
+     "cnt": 65
+    },
+    {
+     "ym": "202606",
+     "cnt": 66
+    },
+    {
+     "ym": "202607",
+     "cnt": 66
+    },
+    {
+     "ym": "202608",
+     "cnt": 69
+    },
+    {
+     "ym": "202609",
+     "cnt": 69
+    },
+    {
+     "ym": "202610",
+     "cnt": 70
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -612018,7 +612697,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 40
+    },
+    {
+     "ym": "202512",
+     "cnt": 31
+    },
+    {
+     "ym": "202601",
+     "cnt": 37
+    },
+    {
+     "ym": "202602",
+     "cnt": 39
+    },
+    {
+     "ym": "202603",
+     "cnt": 39
+    },
+    {
+     "ym": "202604",
+     "cnt": 40
+    },
+    {
+     "ym": "202605",
+     "cnt": 39
+    },
+    {
+     "ym": "202606",
+     "cnt": 40
+    },
+    {
+     "ym": "202607",
+     "cnt": 40
+    },
+    {
+     "ym": "202608",
+     "cnt": 39
+    },
+    {
+     "ym": "202609",
+     "cnt": 37
+    },
+    {
+     "ym": "202610",
+     "cnt": 38
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -612221,7 +612949,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 41
+    },
+    {
+     "ym": "202512",
+     "cnt": 41
+    },
+    {
+     "ym": "202601",
+     "cnt": 38
+    },
+    {
+     "ym": "202602",
+     "cnt": 28
+    },
+    {
+     "ym": "202603",
+     "cnt": 29
+    },
+    {
+     "ym": "202604",
+     "cnt": 29
+    },
+    {
+     "ym": "202605",
+     "cnt": 28
+    },
+    {
+     "ym": "202606",
+     "cnt": 28
+    },
+    {
+     "ym": "202607",
+     "cnt": 28
+    },
+    {
+     "ym": "202608",
+     "cnt": 27
+    },
+    {
+     "ym": "202609",
+     "cnt": 26
+    },
+    {
+     "ym": "202610",
+     "cnt": 27
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -612424,7 +613201,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 13
+    },
+    {
+     "ym": "202512",
+     "cnt": 12
+    },
+    {
+     "ym": "202601",
+     "cnt": 12
+    },
+    {
+     "ym": "202602",
+     "cnt": 12
+    },
+    {
+     "ym": "202603",
+     "cnt": 12
+    },
+    {
+     "ym": "202604",
+     "cnt": 12
+    },
+    {
+     "ym": "202605",
+     "cnt": 11
+    },
+    {
+     "ym": "202606",
+     "cnt": 11
+    },
+    {
+     "ym": "202607",
+     "cnt": 11
+    },
+    {
+     "ym": "202608",
+     "cnt": 12
+    },
+    {
+     "ym": "202609",
+     "cnt": 11
+    },
+    {
+     "ym": "202610",
+     "cnt": 11
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -612627,7 +613453,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 10
+    },
+    {
+     "ym": "202512",
+     "cnt": 10
+    },
+    {
+     "ym": "202601",
+     "cnt": 9
+    },
+    {
+     "ym": "202602",
+     "cnt": 9
+    },
+    {
+     "ym": "202603",
+     "cnt": 11
+    },
+    {
+     "ym": "202604",
+     "cnt": 11
+    },
+    {
+     "ym": "202605",
+     "cnt": 11
+    },
+    {
+     "ym": "202606",
+     "cnt": 13
+    },
+    {
+     "ym": "202607",
+     "cnt": 13
+    },
+    {
+     "ym": "202608",
+     "cnt": 12
+    },
+    {
+     "ym": "202609",
+     "cnt": 12
+    },
+    {
+     "ym": "202610",
+     "cnt": 12
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -612830,7 +613705,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 27
+    },
+    {
+     "ym": "202512",
+     "cnt": 27
+    },
+    {
+     "ym": "202601",
+     "cnt": 23
+    },
+    {
+     "ym": "202602",
+     "cnt": 24
+    },
+    {
+     "ym": "202603",
+     "cnt": 24
+    },
+    {
+     "ym": "202604",
+     "cnt": 23
+    },
+    {
+     "ym": "202605",
+     "cnt": 22
+    },
+    {
+     "ym": "202606",
+     "cnt": 22
+    },
+    {
+     "ym": "202607",
+     "cnt": 21
+    },
+    {
+     "ym": "202608",
+     "cnt": 21
+    },
+    {
+     "ym": "202609",
+     "cnt": 21
+    },
+    {
+     "ym": "202610",
+     "cnt": 21
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -613236,7 +614160,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 10
+    },
+    {
+     "ym": "202512",
+     "cnt": 10
+    },
+    {
+     "ym": "202601",
+     "cnt": 10
+    },
+    {
+     "ym": "202602",
+     "cnt": 10
+    },
+    {
+     "ym": "202603",
+     "cnt": 10
+    },
+    {
+     "ym": "202604",
+     "cnt": 10
+    },
+    {
+     "ym": "202605",
+     "cnt": 10
+    },
+    {
+     "ym": "202606",
+     "cnt": 11
+    },
+    {
+     "ym": "202607",
+     "cnt": 9
+    },
+    {
+     "ym": "202608",
+     "cnt": 11
+    },
+    {
+     "ym": "202609",
+     "cnt": 12
+    },
+    {
+     "ym": "202610",
+     "cnt": 13
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -613439,7 +614412,16 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202609",
+     "cnt": 6
+    },
+    {
+     "ym": "202610",
+     "cnt": 6
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -613845,7 +614827,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 21
+    },
+    {
+     "ym": "202512",
+     "cnt": 21
+    },
+    {
+     "ym": "202601",
+     "cnt": 24
+    },
+    {
+     "ym": "202602",
+     "cnt": 26
+    },
+    {
+     "ym": "202603",
+     "cnt": 25
+    },
+    {
+     "ym": "202604",
+     "cnt": 26
+    },
+    {
+     "ym": "202605",
+     "cnt": 23
+    },
+    {
+     "ym": "202606",
+     "cnt": 22
+    },
+    {
+     "ym": "202607",
+     "cnt": 23
+    },
+    {
+     "ym": "202608",
+     "cnt": 22
+    },
+    {
+     "ym": "202609",
+     "cnt": 22
+    },
+    {
+     "ym": "202610",
+     "cnt": 22
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614048,7 +615079,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 92
+    },
+    {
+     "ym": "202512",
+     "cnt": 92
+    },
+    {
+     "ym": "202601",
+     "cnt": 90
+    },
+    {
+     "ym": "202602",
+     "cnt": 90
+    },
+    {
+     "ym": "202603",
+     "cnt": 91
+    },
+    {
+     "ym": "202604",
+     "cnt": 92
+    },
+    {
+     "ym": "202605",
+     "cnt": 95
+    },
+    {
+     "ym": "202606",
+     "cnt": 94
+    },
+    {
+     "ym": "202607",
+     "cnt": 96
+    },
+    {
+     "ym": "202608",
+     "cnt": 95
+    },
+    {
+     "ym": "202609",
+     "cnt": 94
+    },
+    {
+     "ym": "202610",
+     "cnt": 94
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614156,7 +615236,48 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 3
+    },
+    {
+     "ym": "202602",
+     "cnt": 3
+    },
+    {
+     "ym": "202603",
+     "cnt": 4
+    },
+    {
+     "ym": "202604",
+     "cnt": 8
+    },
+    {
+     "ym": "202605",
+     "cnt": 4
+    },
+    {
+     "ym": "202606",
+     "cnt": 5
+    },
+    {
+     "ym": "202607",
+     "cnt": 4
+    },
+    {
+     "ym": "202608",
+     "cnt": 4
+    },
+    {
+     "ym": "202609",
+     "cnt": 4
+    },
+    {
+     "ym": "202610",
+     "cnt": 7
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614289,7 +615410,52 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 27
+    },
+    {
+     "ym": "202512",
+     "cnt": 30
+    },
+    {
+     "ym": "202601",
+     "cnt": 30
+    },
+    {
+     "ym": "202602",
+     "cnt": 29
+    },
+    {
+     "ym": "202603",
+     "cnt": 29
+    },
+    {
+     "ym": "202604",
+     "cnt": 28
+    },
+    {
+     "ym": "202605",
+     "cnt": 31
+    },
+    {
+     "ym": "202606",
+     "cnt": 32
+    },
+    {
+     "ym": "202607",
+     "cnt": 32
+    },
+    {
+     "ym": "202608",
+     "cnt": 32
+    },
+    {
+     "ym": "202610",
+     "cnt": 33
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614472,7 +615638,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 31
+    },
+    {
+     "ym": "202512",
+     "cnt": 31
+    },
+    {
+     "ym": "202601",
+     "cnt": 31
+    },
+    {
+     "ym": "202602",
+     "cnt": 31
+    },
+    {
+     "ym": "202603",
+     "cnt": 31
+    },
+    {
+     "ym": "202604",
+     "cnt": 31
+    },
+    {
+     "ym": "202605",
+     "cnt": 31
+    },
+    {
+     "ym": "202606",
+     "cnt": 32
+    },
+    {
+     "ym": "202607",
+     "cnt": 32
+    },
+    {
+     "ym": "202608",
+     "cnt": 33
+    },
+    {
+     "ym": "202609",
+     "cnt": 33
+    },
+    {
+     "ym": "202610",
+     "cnt": 33
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614592,7 +615807,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 6
+    },
+    {
+     "ym": "202512",
+     "cnt": 0
+    },
+    {
+     "ym": "202601",
+     "cnt": 6
+    },
+    {
+     "ym": "202602",
+     "cnt": 6
+    },
+    {
+     "ym": "202603",
+     "cnt": 5
+    },
+    {
+     "ym": "202604",
+     "cnt": 4
+    },
+    {
+     "ym": "202605",
+     "cnt": 5
+    },
+    {
+     "ym": "202606",
+     "cnt": 5
+    },
+    {
+     "ym": "202607",
+     "cnt": 5
+    },
+    {
+     "ym": "202608",
+     "cnt": 5
+    },
+    {
+     "ym": "202609",
+     "cnt": 5
+    },
+    {
+     "ym": "202610",
+     "cnt": 3
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614795,7 +616059,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 11
+    },
+    {
+     "ym": "202512",
+     "cnt": 12
+    },
+    {
+     "ym": "202601",
+     "cnt": 10
+    },
+    {
+     "ym": "202602",
+     "cnt": 12
+    },
+    {
+     "ym": "202603",
+     "cnt": 11
+    },
+    {
+     "ym": "202604",
+     "cnt": 12
+    },
+    {
+     "ym": "202605",
+     "cnt": 12
+    },
+    {
+     "ym": "202606",
+     "cnt": 12
+    },
+    {
+     "ym": "202607",
+     "cnt": 13
+    },
+    {
+     "ym": "202608",
+     "cnt": 14
+    },
+    {
+     "ym": "202609",
+     "cnt": 15
+    },
+    {
+     "ym": "202610",
+     "cnt": 15
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -614908,7 +616221,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 8
+    },
+    {
+     "ym": "202512",
+     "cnt": 8
+    },
+    {
+     "ym": "202601",
+     "cnt": 8
+    },
+    {
+     "ym": "202602",
+     "cnt": 8
+    },
+    {
+     "ym": "202603",
+     "cnt": 8
+    },
+    {
+     "ym": "202604",
+     "cnt": 8
+    },
+    {
+     "ym": "202605",
+     "cnt": 8
+    },
+    {
+     "ym": "202606",
+     "cnt": 8
+    },
+    {
+     "ym": "202607",
+     "cnt": 8
+    },
+    {
+     "ym": "202608",
+     "cnt": 8
+    },
+    {
+     "ym": "202609",
+     "cnt": 8
+    },
+    {
+     "ym": "202610",
+     "cnt": 8
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -615241,7 +616603,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 297
+    },
+    {
+     "ym": "202512",
+     "cnt": 297
+    },
+    {
+     "ym": "202601",
+     "cnt": 300
+    },
+    {
+     "ym": "202602",
+     "cnt": 302
+    },
+    {
+     "ym": "202603",
+     "cnt": 298
+    },
+    {
+     "ym": "202604",
+     "cnt": 291
+    },
+    {
+     "ym": "202605",
+     "cnt": 291
+    },
+    {
+     "ym": "202606",
+     "cnt": 293
+    },
+    {
+     "ym": "202607",
+     "cnt": 291
+    },
+    {
+     "ym": "202608",
+     "cnt": 290
+    },
+    {
+     "ym": "202609",
+     "cnt": 292
+    },
+    {
+     "ym": "202610",
+     "cnt": 296
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -615379,7 +616790,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 12
+    },
+    {
+     "ym": "202512",
+     "cnt": 12
+    },
+    {
+     "ym": "202601",
+     "cnt": 12
+    },
+    {
+     "ym": "202602",
+     "cnt": 12
+    },
+    {
+     "ym": "202603",
+     "cnt": 11
+    },
+    {
+     "ym": "202604",
+     "cnt": 12
+    },
+    {
+     "ym": "202605",
+     "cnt": 15
+    },
+    {
+     "ym": "202606",
+     "cnt": 15
+    },
+    {
+     "ym": "202607",
+     "cnt": 16
+    },
+    {
+     "ym": "202608",
+     "cnt": 17
+    },
+    {
+     "ym": "202609",
+     "cnt": 19
+    },
+    {
+     "ym": "202610",
+     "cnt": 19
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -615582,7 +617042,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 20
+    },
+    {
+     "ym": "202512",
+     "cnt": 20
+    },
+    {
+     "ym": "202601",
+     "cnt": 20
+    },
+    {
+     "ym": "202602",
+     "cnt": 20
+    },
+    {
+     "ym": "202603",
+     "cnt": 20
+    },
+    {
+     "ym": "202604",
+     "cnt": 20
+    },
+    {
+     "ym": "202605",
+     "cnt": 20
+    },
+    {
+     "ym": "202606",
+     "cnt": 19
+    },
+    {
+     "ym": "202607",
+     "cnt": 18
+    },
+    {
+     "ym": "202608",
+     "cnt": 17
+    },
+    {
+     "ym": "202609",
+     "cnt": 16
+    },
+    {
+     "ym": "202610",
+     "cnt": 16
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -615988,7 +617497,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 11
+    },
+    {
+     "ym": "202512",
+     "cnt": 11
+    },
+    {
+     "ym": "202601",
+     "cnt": 10
+    },
+    {
+     "ym": "202602",
+     "cnt": 11
+    },
+    {
+     "ym": "202603",
+     "cnt": 11
+    },
+    {
+     "ym": "202604",
+     "cnt": 10
+    },
+    {
+     "ym": "202605",
+     "cnt": 10
+    },
+    {
+     "ym": "202606",
+     "cnt": 9
+    },
+    {
+     "ym": "202607",
+     "cnt": 7
+    },
+    {
+     "ym": "202608",
+     "cnt": 6
+    },
+    {
+     "ym": "202609",
+     "cnt": 7
+    },
+    {
+     "ym": "202610",
+     "cnt": 7
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -616126,7 +617684,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 4
+    },
+    {
+     "ym": "202512",
+     "cnt": 4
+    },
+    {
+     "ym": "202601",
+     "cnt": 4
+    },
+    {
+     "ym": "202602",
+     "cnt": 4
+    },
+    {
+     "ym": "202603",
+     "cnt": 4
+    },
+    {
+     "ym": "202604",
+     "cnt": 4
+    },
+    {
+     "ym": "202605",
+     "cnt": 4
+    },
+    {
+     "ym": "202606",
+     "cnt": 3
+    },
+    {
+     "ym": "202607",
+     "cnt": 3
+    },
+    {
+     "ym": "202608",
+     "cnt": 3
+    },
+    {
+     "ym": "202609",
+     "cnt": 3
+    },
+    {
+     "ym": "202610",
+     "cnt": 3
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -616269,7 +617876,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 21
+    },
+    {
+     "ym": "202512",
+     "cnt": 22
+    },
+    {
+     "ym": "202601",
+     "cnt": 18
+    },
+    {
+     "ym": "202602",
+     "cnt": 19
+    },
+    {
+     "ym": "202603",
+     "cnt": 19
+    },
+    {
+     "ym": "202604",
+     "cnt": 19
+    },
+    {
+     "ym": "202605",
+     "cnt": 20
+    },
+    {
+     "ym": "202606",
+     "cnt": 21
+    },
+    {
+     "ym": "202607",
+     "cnt": 21
+    },
+    {
+     "ym": "202608",
+     "cnt": 23
+    },
+    {
+     "ym": "202609",
+     "cnt": 23
+    },
+    {
+     "ym": "202610",
+     "cnt": 23
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -616472,7 +618128,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 55
+    },
+    {
+     "ym": "202512",
+     "cnt": 54
+    },
+    {
+     "ym": "202601",
+     "cnt": 54
+    },
+    {
+     "ym": "202602",
+     "cnt": 55
+    },
+    {
+     "ym": "202603",
+     "cnt": 59
+    },
+    {
+     "ym": "202604",
+     "cnt": 61
+    },
+    {
+     "ym": "202605",
+     "cnt": 62
+    },
+    {
+     "ym": "202606",
+     "cnt": 64
+    },
+    {
+     "ym": "202607",
+     "cnt": 64
+    },
+    {
+     "ym": "202608",
+     "cnt": 66
+    },
+    {
+     "ym": "202609",
+     "cnt": 67
+    },
+    {
+     "ym": "202610",
+     "cnt": 67
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -616638,7 +618343,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 22
+    },
+    {
+     "ym": "202512",
+     "cnt": 22
+    },
+    {
+     "ym": "202601",
+     "cnt": 23
+    },
+    {
+     "ym": "202602",
+     "cnt": 24
+    },
+    {
+     "ym": "202603",
+     "cnt": 25
+    },
+    {
+     "ym": "202604",
+     "cnt": 28
+    },
+    {
+     "ym": "202605",
+     "cnt": 28
+    },
+    {
+     "ym": "202606",
+     "cnt": 28
+    },
+    {
+     "ym": "202607",
+     "cnt": 29
+    },
+    {
+     "ym": "202608",
+     "cnt": 32
+    },
+    {
+     "ym": "202609",
+     "cnt": 31
+    },
+    {
+     "ym": "202610",
+     "cnt": 32
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -616849,7 +618603,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 44
+    },
+    {
+     "ym": "202512",
+     "cnt": 43
+    },
+    {
+     "ym": "202601",
+     "cnt": 41
+    },
+    {
+     "ym": "202602",
+     "cnt": 41
+    },
+    {
+     "ym": "202603",
+     "cnt": 38
+    },
+    {
+     "ym": "202604",
+     "cnt": 39
+    },
+    {
+     "ym": "202605",
+     "cnt": 41
+    },
+    {
+     "ym": "202606",
+     "cnt": 38
+    },
+    {
+     "ym": "202607",
+     "cnt": 38
+    },
+    {
+     "ym": "202608",
+     "cnt": 36
+    },
+    {
+     "ym": "202609",
+     "cnt": 37
+    },
+    {
+     "ym": "202610",
+     "cnt": 37
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -616977,7 +618780,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 7
+    },
+    {
+     "ym": "202512",
+     "cnt": 7
+    },
+    {
+     "ym": "202601",
+     "cnt": 7
+    },
+    {
+     "ym": "202602",
+     "cnt": 7
+    },
+    {
+     "ym": "202603",
+     "cnt": 7
+    },
+    {
+     "ym": "202604",
+     "cnt": 7
+    },
+    {
+     "ym": "202605",
+     "cnt": 7
+    },
+    {
+     "ym": "202606",
+     "cnt": 7
+    },
+    {
+     "ym": "202607",
+     "cnt": 7
+    },
+    {
+     "ym": "202608",
+     "cnt": 7
+    },
+    {
+     "ym": "202609",
+     "cnt": 7
+    },
+    {
+     "ym": "202610",
+     "cnt": 6
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -617095,7 +618947,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 85
+    },
+    {
+     "ym": "202512",
+     "cnt": 89
+    },
+    {
+     "ym": "202601",
+     "cnt": 87
+    },
+    {
+     "ym": "202602",
+     "cnt": 90
+    },
+    {
+     "ym": "202603",
+     "cnt": 93
+    },
+    {
+     "ym": "202604",
+     "cnt": 90
+    },
+    {
+     "ym": "202605",
+     "cnt": 87
+    },
+    {
+     "ym": "202606",
+     "cnt": 96
+    },
+    {
+     "ym": "202607",
+     "cnt": 97
+    },
+    {
+     "ym": "202608",
+     "cnt": 105
+    },
+    {
+     "ym": "202609",
+     "cnt": 127
+    },
+    {
+     "ym": "202610",
+     "cnt": 133
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -617293,7 +619194,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 38
+    },
+    {
+     "ym": "202512",
+     "cnt": 38
+    },
+    {
+     "ym": "202601",
+     "cnt": 38
+    },
+    {
+     "ym": "202602",
+     "cnt": 37
+    },
+    {
+     "ym": "202603",
+     "cnt": 35
+    },
+    {
+     "ym": "202604",
+     "cnt": 39
+    },
+    {
+     "ym": "202605",
+     "cnt": 36
+    },
+    {
+     "ym": "202606",
+     "cnt": 37
+    },
+    {
+     "ym": "202607",
+     "cnt": 40
+    },
+    {
+     "ym": "202608",
+     "cnt": 39
+    },
+    {
+     "ym": "202609",
+     "cnt": 38
+    },
+    {
+     "ym": "202610",
+     "cnt": 38
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -617458,7 +619408,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 13
+    },
+    {
+     "ym": "202512",
+     "cnt": 13
+    },
+    {
+     "ym": "202601",
+     "cnt": 14
+    },
+    {
+     "ym": "202602",
+     "cnt": 15
+    },
+    {
+     "ym": "202603",
+     "cnt": 15
+    },
+    {
+     "ym": "202604",
+     "cnt": 15
+    },
+    {
+     "ym": "202605",
+     "cnt": 15
+    },
+    {
+     "ym": "202606",
+     "cnt": 15
+    },
+    {
+     "ym": "202607",
+     "cnt": 15
+    },
+    {
+     "ym": "202608",
+     "cnt": 15
+    },
+    {
+     "ym": "202609",
+     "cnt": 15
+    },
+    {
+     "ym": "202610",
+     "cnt": 15
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -617661,7 +619660,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 39
+    },
+    {
+     "ym": "202512",
+     "cnt": 39
+    },
+    {
+     "ym": "202601",
+     "cnt": 35
+    },
+    {
+     "ym": "202602",
+     "cnt": 39
+    },
+    {
+     "ym": "202603",
+     "cnt": 39
+    },
+    {
+     "ym": "202604",
+     "cnt": 38
+    },
+    {
+     "ym": "202605",
+     "cnt": 39
+    },
+    {
+     "ym": "202606",
+     "cnt": 38
+    },
+    {
+     "ym": "202607",
+     "cnt": 37
+    },
+    {
+     "ym": "202608",
+     "cnt": 36
+    },
+    {
+     "ym": "202609",
+     "cnt": 36
+    },
+    {
+     "ym": "202610",
+     "cnt": 36
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -617779,7 +619827,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 11
+    },
+    {
+     "ym": "202512",
+     "cnt": 13
+    },
+    {
+     "ym": "202601",
+     "cnt": 12
+    },
+    {
+     "ym": "202602",
+     "cnt": 13
+    },
+    {
+     "ym": "202603",
+     "cnt": 13
+    },
+    {
+     "ym": "202604",
+     "cnt": 11
+    },
+    {
+     "ym": "202605",
+     "cnt": 10
+    },
+    {
+     "ym": "202606",
+     "cnt": 10
+    },
+    {
+     "ym": "202607",
+     "cnt": 8
+    },
+    {
+     "ym": "202608",
+     "cnt": 8
+    },
+    {
+     "ym": "202609",
+     "cnt": 9
+    },
+    {
+     "ym": "202610",
+     "cnt": 8
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -617982,7 +620079,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 19
+    },
+    {
+     "ym": "202512",
+     "cnt": 18
+    },
+    {
+     "ym": "202601",
+     "cnt": 18
+    },
+    {
+     "ym": "202602",
+     "cnt": 21
+    },
+    {
+     "ym": "202603",
+     "cnt": 23
+    },
+    {
+     "ym": "202604",
+     "cnt": 23
+    },
+    {
+     "ym": "202605",
+     "cnt": 23
+    },
+    {
+     "ym": "202606",
+     "cnt": 23
+    },
+    {
+     "ym": "202607",
+     "cnt": 24
+    },
+    {
+     "ym": "202608",
+     "cnt": 24
+    },
+    {
+     "ym": "202609",
+     "cnt": 21
+    },
+    {
+     "ym": "202610",
+     "cnt": 21
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -618137,7 +620283,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 15
+    },
+    {
+     "ym": "202512",
+     "cnt": 16
+    },
+    {
+     "ym": "202601",
+     "cnt": 15
+    },
+    {
+     "ym": "202602",
+     "cnt": 15
+    },
+    {
+     "ym": "202603",
+     "cnt": 14
+    },
+    {
+     "ym": "202604",
+     "cnt": 13
+    },
+    {
+     "ym": "202605",
+     "cnt": 13
+    },
+    {
+     "ym": "202606",
+     "cnt": 15
+    },
+    {
+     "ym": "202607",
+     "cnt": 14
+    },
+    {
+     "ym": "202608",
+     "cnt": 13
+    },
+    {
+     "ym": "202609",
+     "cnt": 13
+    },
+    {
+     "ym": "202610",
+     "cnt": 13
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -618584,7 +620779,52 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 5
+    },
+    {
+     "ym": "202512",
+     "cnt": 5
+    },
+    {
+     "ym": "202601",
+     "cnt": 4
+    },
+    {
+     "ym": "202602",
+     "cnt": 4
+    },
+    {
+     "ym": "202603",
+     "cnt": 4
+    },
+    {
+     "ym": "202604",
+     "cnt": 3
+    },
+    {
+     "ym": "202605",
+     "cnt": 3
+    },
+    {
+     "ym": "202606",
+     "cnt": 3
+    },
+    {
+     "ym": "202608",
+     "cnt": 4
+    },
+    {
+     "ym": "202609",
+     "cnt": 3
+    },
+    {
+     "ym": "202610",
+     "cnt": 3
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -618794,7 +621034,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 6
+    },
+    {
+     "ym": "202512",
+     "cnt": 6
+    },
+    {
+     "ym": "202601",
+     "cnt": 6
+    },
+    {
+     "ym": "202602",
+     "cnt": 7
+    },
+    {
+     "ym": "202603",
+     "cnt": 7
+    },
+    {
+     "ym": "202604",
+     "cnt": 7
+    },
+    {
+     "ym": "202605",
+     "cnt": 7
+    },
+    {
+     "ym": "202606",
+     "cnt": 6
+    },
+    {
+     "ym": "202607",
+     "cnt": 7
+    },
+    {
+     "ym": "202608",
+     "cnt": 7
+    },
+    {
+     "ym": "202609",
+     "cnt": 7
+    },
+    {
+     "ym": "202610",
+     "cnt": 7
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -618952,7 +621241,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 51
+    },
+    {
+     "ym": "202512",
+     "cnt": 51
+    },
+    {
+     "ym": "202601",
+     "cnt": 48
+    },
+    {
+     "ym": "202602",
+     "cnt": 0
+    },
+    {
+     "ym": "202603",
+     "cnt": 50
+    },
+    {
+     "ym": "202604",
+     "cnt": 52
+    },
+    {
+     "ym": "202605",
+     "cnt": 55
+    },
+    {
+     "ym": "202606",
+     "cnt": 53
+    },
+    {
+     "ym": "202607",
+     "cnt": 59
+    },
+    {
+     "ym": "202608",
+     "cnt": 62
+    },
+    {
+     "ym": "202609",
+     "cnt": 61
+    },
+    {
+     "ym": "202610",
+     "cnt": 60
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -619155,7 +621493,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 21
+    },
+    {
+     "ym": "202512",
+     "cnt": 22
+    },
+    {
+     "ym": "202601",
+     "cnt": 19
+    },
+    {
+     "ym": "202602",
+     "cnt": 19
+    },
+    {
+     "ym": "202603",
+     "cnt": 19
+    },
+    {
+     "ym": "202604",
+     "cnt": 19
+    },
+    {
+     "ym": "202605",
+     "cnt": 19
+    },
+    {
+     "ym": "202606",
+     "cnt": 19
+    },
+    {
+     "ym": "202607",
+     "cnt": 19
+    },
+    {
+     "ym": "202608",
+     "cnt": 18
+    },
+    {
+     "ym": "202609",
+     "cnt": 19
+    },
+    {
+     "ym": "202610",
+     "cnt": 19
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -619285,7 +621672,52 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 64
+    },
+    {
+     "ym": "202512",
+     "cnt": 64
+    },
+    {
+     "ym": "202601",
+     "cnt": 64
+    },
+    {
+     "ym": "202602",
+     "cnt": 67
+    },
+    {
+     "ym": "202603",
+     "cnt": 69
+    },
+    {
+     "ym": "202605",
+     "cnt": 68
+    },
+    {
+     "ym": "202606",
+     "cnt": 69
+    },
+    {
+     "ym": "202607",
+     "cnt": 69
+    },
+    {
+     "ym": "202608",
+     "cnt": 70
+    },
+    {
+     "ym": "202609",
+     "cnt": 70
+    },
+    {
+     "ym": "202610",
+     "cnt": 70
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -619453,7 +621885,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 51
+    },
+    {
+     "ym": "202512",
+     "cnt": 51
+    },
+    {
+     "ym": "202601",
+     "cnt": 51
+    },
+    {
+     "ym": "202602",
+     "cnt": 50
+    },
+    {
+     "ym": "202603",
+     "cnt": 50
+    },
+    {
+     "ym": "202604",
+     "cnt": 51
+    },
+    {
+     "ym": "202605",
+     "cnt": 51
+    },
+    {
+     "ym": "202606",
+     "cnt": 48
+    },
+    {
+     "ym": "202607",
+     "cnt": 45
+    },
+    {
+     "ym": "202608",
+     "cnt": 44
+    },
+    {
+     "ym": "202609",
+     "cnt": 40
+    },
+    {
+     "ym": "202610",
+     "cnt": 37
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -619611,7 +622092,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 21
+    },
+    {
+     "ym": "202512",
+     "cnt": 21
+    },
+    {
+     "ym": "202601",
+     "cnt": 18
+    },
+    {
+     "ym": "202602",
+     "cnt": 18
+    },
+    {
+     "ym": "202603",
+     "cnt": 18
+    },
+    {
+     "ym": "202604",
+     "cnt": 18
+    },
+    {
+     "ym": "202605",
+     "cnt": 18
+    },
+    {
+     "ym": "202606",
+     "cnt": 18
+    },
+    {
+     "ym": "202607",
+     "cnt": 18
+    },
+    {
+     "ym": "202608",
+     "cnt": 18
+    },
+    {
+     "ym": "202609",
+     "cnt": 18
+    },
+    {
+     "ym": "202610",
+     "cnt": 18
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -619814,7 +622344,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 13
+    },
+    {
+     "ym": "202512",
+     "cnt": 13
+    },
+    {
+     "ym": "202601",
+     "cnt": 14
+    },
+    {
+     "ym": "202602",
+     "cnt": 13
+    },
+    {
+     "ym": "202603",
+     "cnt": 13
+    },
+    {
+     "ym": "202604",
+     "cnt": 13
+    },
+    {
+     "ym": "202605",
+     "cnt": 12
+    },
+    {
+     "ym": "202606",
+     "cnt": 12
+    },
+    {
+     "ym": "202607",
+     "cnt": 12
+    },
+    {
+     "ym": "202608",
+     "cnt": 11
+    },
+    {
+     "ym": "202609",
+     "cnt": 10
+    },
+    {
+     "ym": "202610",
+     "cnt": 10
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -620017,7 +622596,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 7
+    },
+    {
+     "ym": "202512",
+     "cnt": 7
+    },
+    {
+     "ym": "202601",
+     "cnt": 7
+    },
+    {
+     "ym": "202602",
+     "cnt": 7
+    },
+    {
+     "ym": "202603",
+     "cnt": 7
+    },
+    {
+     "ym": "202604",
+     "cnt": 7
+    },
+    {
+     "ym": "202605",
+     "cnt": 6
+    },
+    {
+     "ym": "202606",
+     "cnt": 6
+    },
+    {
+     "ym": "202607",
+     "cnt": 6
+    },
+    {
+     "ym": "202608",
+     "cnt": 6
+    },
+    {
+     "ym": "202609",
+     "cnt": 6
+    },
+    {
+     "ym": "202610",
+     "cnt": 6
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -620220,7 +622848,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 30
+    },
+    {
+     "ym": "202512",
+     "cnt": 32
+    },
+    {
+     "ym": "202601",
+     "cnt": 31
+    },
+    {
+     "ym": "202602",
+     "cnt": 32
+    },
+    {
+     "ym": "202603",
+     "cnt": 32
+    },
+    {
+     "ym": "202604",
+     "cnt": 32
+    },
+    {
+     "ym": "202605",
+     "cnt": 32
+    },
+    {
+     "ym": "202606",
+     "cnt": 31
+    },
+    {
+     "ym": "202607",
+     "cnt": 32
+    },
+    {
+     "ym": "202608",
+     "cnt": 32
+    },
+    {
+     "ym": "202609",
+     "cnt": 31
+    },
+    {
+     "ym": "202610",
+     "cnt": 31
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -620363,7 +623040,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 43
+    },
+    {
+     "ym": "202512",
+     "cnt": 42
+    },
+    {
+     "ym": "202601",
+     "cnt": 42
+    },
+    {
+     "ym": "202602",
+     "cnt": 40
+    },
+    {
+     "ym": "202603",
+     "cnt": 40
+    },
+    {
+     "ym": "202604",
+     "cnt": 42
+    },
+    {
+     "ym": "202605",
+     "cnt": 41
+    },
+    {
+     "ym": "202606",
+     "cnt": 41
+    },
+    {
+     "ym": "202607",
+     "cnt": 40
+    },
+    {
+     "ym": "202608",
+     "cnt": 40
+    },
+    {
+     "ym": "202609",
+     "cnt": 43
+    },
+    {
+     "ym": "202610",
+     "cnt": 42
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -620481,7 +623207,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 198
+    },
+    {
+     "ym": "202512",
+     "cnt": 206
+    },
+    {
+     "ym": "202601",
+     "cnt": 205
+    },
+    {
+     "ym": "202602",
+     "cnt": 210
+    },
+    {
+     "ym": "202603",
+     "cnt": 212
+    },
+    {
+     "ym": "202604",
+     "cnt": 219
+    },
+    {
+     "ym": "202605",
+     "cnt": 220
+    },
+    {
+     "ym": "202606",
+     "cnt": 223
+    },
+    {
+     "ym": "202607",
+     "cnt": 236
+    },
+    {
+     "ym": "202608",
+     "cnt": 233
+    },
+    {
+     "ym": "202609",
+     "cnt": 223
+    },
+    {
+     "ym": "202610",
+     "cnt": 225
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -620684,7 +623459,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 40
+    },
+    {
+     "ym": "202512",
+     "cnt": 39
+    },
+    {
+     "ym": "202601",
+     "cnt": 36
+    },
+    {
+     "ym": "202602",
+     "cnt": 36
+    },
+    {
+     "ym": "202603",
+     "cnt": 35
+    },
+    {
+     "ym": "202604",
+     "cnt": 36
+    },
+    {
+     "ym": "202605",
+     "cnt": 35
+    },
+    {
+     "ym": "202606",
+     "cnt": 33
+    },
+    {
+     "ym": "202607",
+     "cnt": 33
+    },
+    {
+     "ym": "202608",
+     "cnt": 33
+    },
+    {
+     "ym": "202609",
+     "cnt": 19
+    },
+    {
+     "ym": "202610",
+     "cnt": 15
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -620850,7 +623674,52 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 22
+    },
+    {
+     "ym": "202512",
+     "cnt": 23
+    },
+    {
+     "ym": "202601",
+     "cnt": 23
+    },
+    {
+     "ym": "202602",
+     "cnt": 25
+    },
+    {
+     "ym": "202603",
+     "cnt": 24
+    },
+    {
+     "ym": "202604",
+     "cnt": 24
+    },
+    {
+     "ym": "202605",
+     "cnt": 24
+    },
+    {
+     "ym": "202606",
+     "cnt": 26
+    },
+    {
+     "ym": "202607",
+     "cnt": 25
+    },
+    {
+     "ym": "202608",
+     "cnt": 24
+    },
+    {
+     "ym": "202610",
+     "cnt": 25
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -621053,7 +623922,28 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202601",
+     "cnt": 3
+    },
+    {
+     "ym": "202602",
+     "cnt": 3
+    },
+    {
+     "ym": "202603",
+     "cnt": 3
+    },
+    {
+     "ym": "202604",
+     "cnt": 3
+    },
+    {
+     "ym": "202605",
+     "cnt": 3
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -621256,7 +624146,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 28
+    },
+    {
+     "ym": "202512",
+     "cnt": 31
+    },
+    {
+     "ym": "202601",
+     "cnt": 33
+    },
+    {
+     "ym": "202602",
+     "cnt": 33
+    },
+    {
+     "ym": "202603",
+     "cnt": 32
+    },
+    {
+     "ym": "202604",
+     "cnt": 30
+    },
+    {
+     "ym": "202605",
+     "cnt": 32
+    },
+    {
+     "ym": "202606",
+     "cnt": 32
+    },
+    {
+     "ym": "202607",
+     "cnt": 32
+    },
+    {
+     "ym": "202608",
+     "cnt": 30
+    },
+    {
+     "ym": "202609",
+     "cnt": 30
+    },
+    {
+     "ym": "202610",
+     "cnt": 29
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -621459,7 +624398,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 93
+    },
+    {
+     "ym": "202512",
+     "cnt": 92
+    },
+    {
+     "ym": "202601",
+     "cnt": 83
+    },
+    {
+     "ym": "202602",
+     "cnt": 84
+    },
+    {
+     "ym": "202603",
+     "cnt": 82
+    },
+    {
+     "ym": "202604",
+     "cnt": 82
+    },
+    {
+     "ym": "202605",
+     "cnt": 86
+    },
+    {
+     "ym": "202606",
+     "cnt": 79
+    },
+    {
+     "ym": "202607",
+     "cnt": 77
+    },
+    {
+     "ym": "202608",
+     "cnt": 79
+    },
+    {
+     "ym": "202609",
+     "cnt": 85
+    },
+    {
+     "ym": "202610",
+     "cnt": 83
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -621596,7 +624584,56 @@
     "kinds": "물품,일반용역,용역"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 49
+    },
+    {
+     "ym": "202512",
+     "cnt": 55
+    },
+    {
+     "ym": "202601",
+     "cnt": 55
+    },
+    {
+     "ym": "202602",
+     "cnt": 57
+    },
+    {
+     "ym": "202603",
+     "cnt": 60
+    },
+    {
+     "ym": "202604",
+     "cnt": 57
+    },
+    {
+     "ym": "202605",
+     "cnt": 55
+    },
+    {
+     "ym": "202606",
+     "cnt": 54
+    },
+    {
+     "ym": "202607",
+     "cnt": 57
+    },
+    {
+     "ym": "202608",
+     "cnt": 56
+    },
+    {
+     "ym": "202609",
+     "cnt": 56
+    },
+    {
+     "ym": "202610",
+     "cnt": 56
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -621709,7 +624746,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 289
+    },
+    {
+     "ym": "202512",
+     "cnt": 293
+    },
+    {
+     "ym": "202601",
+     "cnt": 315
+    },
+    {
+     "ym": "202602",
+     "cnt": 336
+    },
+    {
+     "ym": "202603",
+     "cnt": 347
+    },
+    {
+     "ym": "202604",
+     "cnt": 346
+    },
+    {
+     "ym": "202605",
+     "cnt": 337
+    },
+    {
+     "ym": "202606",
+     "cnt": 332
+    },
+    {
+     "ym": "202607",
+     "cnt": 330
+    },
+    {
+     "ym": "202608",
+     "cnt": 328
+    },
+    {
+     "ym": "202609",
+     "cnt": 323
+    },
+    {
+     "ym": "202610",
+     "cnt": 342
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -621875,7 +624961,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 41
+    },
+    {
+     "ym": "202512",
+     "cnt": 40
+    },
+    {
+     "ym": "202601",
+     "cnt": 0
+    },
+    {
+     "ym": "202602",
+     "cnt": 97
+    },
+    {
+     "ym": "202603",
+     "cnt": 92
+    },
+    {
+     "ym": "202604",
+     "cnt": 94
+    },
+    {
+     "ym": "202605",
+     "cnt": 94
+    },
+    {
+     "ym": "202606",
+     "cnt": 94
+    },
+    {
+     "ym": "202607",
+     "cnt": 95
+    },
+    {
+     "ym": "202608",
+     "cnt": 96
+    },
+    {
+     "ym": "202609",
+     "cnt": 97
+    },
+    {
+     "ym": "202610",
+     "cnt": 98
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -622078,7 +625213,56 @@
     "kinds": "물품,외자,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 34
+    },
+    {
+     "ym": "202512",
+     "cnt": 32
+    },
+    {
+     "ym": "202601",
+     "cnt": 35
+    },
+    {
+     "ym": "202602",
+     "cnt": 35
+    },
+    {
+     "ym": "202603",
+     "cnt": 34
+    },
+    {
+     "ym": "202604",
+     "cnt": 33
+    },
+    {
+     "ym": "202605",
+     "cnt": 34
+    },
+    {
+     "ym": "202606",
+     "cnt": 35
+    },
+    {
+     "ym": "202607",
+     "cnt": 35
+    },
+    {
+     "ym": "202608",
+     "cnt": 35
+    },
+    {
+     "ym": "202609",
+     "cnt": 35
+    },
+    {
+     "ym": "202610",
+     "cnt": 35
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -622201,7 +625385,56 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202511",
+     "cnt": 17
+    },
+    {
+     "ym": "202512",
+     "cnt": 17
+    },
+    {
+     "ym": "202601",
+     "cnt": 22
+    },
+    {
+     "ym": "202602",
+     "cnt": 21
+    },
+    {
+     "ym": "202603",
+     "cnt": 19
+    },
+    {
+     "ym": "202604",
+     "cnt": 4
+    },
+    {
+     "ym": "202605",
+     "cnt": 19
+    },
+    {
+     "ym": "202606",
+     "cnt": 18
+    },
+    {
+     "ym": "202607",
+     "cnt": 15
+    },
+    {
+     "ym": "202608",
+     "cnt": 15
+    },
+    {
+     "ym": "202609",
+     "cnt": 14
+    },
+    {
+     "ym": "202610",
+     "cnt": 16
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -622404,7 +625637,48 @@
     "kinds": "물품,일반용역,용역,공사"
    },
    "industries": [],
-   "nps": [],
+   "nps": [
+    {
+     "ym": "202601",
+     "cnt": 12
+    },
+    {
+     "ym": "202602",
+     "cnt": 12
+    },
+    {
+     "ym": "202603",
+     "cnt": 10
+    },
+    {
+     "ym": "202604",
+     "cnt": 12
+    },
+    {
+     "ym": "202605",
+     "cnt": 16
+    },
+    {
+     "ym": "202606",
+     "cnt": 16
+    },
+    {
+     "ym": "202607",
+     "cnt": 14
+    },
+    {
+     "ym": "202608",
+     "cnt": 0
+    },
+    {
+     "ym": "202609",
+     "cnt": 14
+    },
+    {
+     "ym": "202610",
+     "cnt": 15
+    }
+   ],
    "dart": [],
    "history": [
     {
@@ -639471,6 +642745,222 @@
    ]
   },
   {
+   "bizno": "8308801918",
+   "name": "주식회사 업스테이지",
+   "ceo": "김성훈",
+   "stats": {
+    "bids": 4,
+    "wins": 4,
+    "wonAmount": 5699100000,
+    "partners": 9,
+    "lastAt": "2026-11-11 11:00:00"
+   },
+   "basic": null,
+   "industries": [],
+   "nps": [],
+   "dart": [],
+   "history": [
+    {
+     "id": "R26BK01736987",
+     "title": "국세청 AI 시스템 구축 ISMP 수립",
+     "org": "국세청",
+     "amount": 1401818182,
+     "openedAt": "2026-11-11 11:00:00",
+     "status": "개찰완료",
+     "rank": null,
+     "bidAmount": null,
+     "rate": null,
+     "won": true,
+     "role": "도급업체",
+     "share": 20,
+     "contractAmount": null
+    },
+    {
+     "id": "R26BK01659837",
+     "title": "AI 기반 수능 영어 자동 문항 생성 기능 개발",
+     "org": "한국교육과정평가원",
+     "amount": 2863636364,
+     "openedAt": "2026-09-10 12:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 3118500000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 3118500000
+    },
+    {
+     "id": "R26BK01559189",
+     "title": "소상공인 AI 학습 데이터셋 및 서비스 구축",
+     "org": "소상공인시장진흥공단",
+     "amount": 1766000000,
+     "openedAt": "2026-07-07 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 1942600000,
+     "rate": null,
+     "won": true,
+     "role": "주계약업체",
+     "share": 65.7,
+     "contractAmount": null
+    },
+    {
+     "id": "20240813021",
+     "title": "2024년 뉴스빅데이터 분석시스템 고도화 사업",
+     "org": "한국언론진흥재단",
+     "amount": 587272727,
+     "openedAt": "2024-08-27 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 638000000,
+     "rate": null,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    }
+   ],
+   "partners": [
+    {
+     "bizno": "2028132975",
+     "name": "주식회사 아이티센엔텍",
+     "count": 1,
+     "share": 40
+    },
+    {
+     "bizno": "1028142945",
+     "name": "주식회사 케이티",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "1198196788",
+     "name": "주식회사 유플러스아이티",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "1078841902",
+     "name": "주식회사 지티아이씨",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "1138802132",
+     "name": "주식회사 아티피셜 소사이어티",
+     "count": 1,
+     "share": 100
+    },
+    {
+     "bizno": "8158702319",
+     "name": "주식회사 디윅스",
+     "count": 1,
+     "share": 100
+    },
+    {
+     "bizno": "6318603620",
+     "name": "오케스트로 클라우드 주식회사",
+     "count": 1,
+     "share": 100
+    },
+    {
+     "bizno": "1138622298",
+     "name": "주식회사 에코아이티",
+     "count": 1,
+     "share": 11
+    },
+    {
+     "bizno": "2158772878",
+     "name": "주식회사 플리토",
+     "count": 1,
+     "share": 23
+    }
+   ],
+   "rivals": [
+    {
+     "bizno": "7068602890",
+     "name": "플리트소프트 주식회사",
+     "count": 2
+    },
+    {
+     "bizno": "1018669359",
+     "name": "아이헤이트플라잉버그스 주식회사",
+     "count": 1
+    },
+    {
+     "bizno": "1208755358",
+     "name": "주식회사 시선에이아이",
+     "count": 1
+    },
+    {
+     "bizno": "1208633565",
+     "name": "주식회사 아이스크림미디어",
+     "count": 1
+    },
+    {
+     "bizno": "5868802378",
+     "name": "주식회사 클라비",
+     "count": 1
+    },
+    {
+     "bizno": "2158711279",
+     "name": "주식회사 엠티데이타",
+     "count": 1
+    },
+    {
+     "bizno": "1298650144",
+     "name": "주식회사 케이브레인컴퍼니",
+     "count": 1
+    },
+    {
+     "bizno": "2158607972",
+     "name": "주식회사 피씨엔",
+     "count": 1
+    },
+    {
+     "bizno": "3148165556",
+     "name": "(주)코어테크놀로지",
+     "count": 1
+    },
+    {
+     "bizno": "2148858206",
+     "name": "주식회사 에이치나인",
+     "count": 1
+    },
+    {
+     "bizno": "1258701916",
+     "name": "주식회사 아로",
+     "count": 1
+    },
+    {
+     "bizno": "4638101723",
+     "name": "주식회사 데이타트렌드",
+     "count": 1
+    },
+    {
+     "bizno": "4508800071",
+     "name": "주식회사 엠큐닉",
+     "count": 1
+    },
+    {
+     "bizno": "8078100564",
+     "name": "주식회사 알프레드",
+     "count": 1
+    },
+    {
+     "bizno": "1078615583",
+     "name": "(주)플랜투비즈니스컨설팅",
+     "count": 1
+    },
+    {
+     "bizno": "4578102412",
+     "name": "포체인스 주식회사",
+     "count": 1
+    }
+   ]
+  },
+  {
    "bizno": "3318101353",
    "name": "마인드로직 주식회사",
    "ceo": "김진욱",
@@ -651237,200 +654727,6 @@
     {
      "bizno": "8348802582",
      "name": "주식회사 세이코어",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "bizno": "1028142945",
-   "name": "주식회사 케이티",
-   "ceo": "박윤영",
-   "stats": {
-    "bids": 4,
-    "wins": 2,
-    "wonAmount": 2668738600,
-    "partners": 7,
-    "lastAt": "2026-06-26 11:00:00"
-   },
-   "basic": {
-    "opened": "1982-01-01",
-    "region": "경기도 성남시 분당구",
-    "address": "경기도 성남시 분당구 불정로 90 1층(정자동)",
-    "employees": 23598,
-    "homepage": "http://www.kt.com/",
-    "kinds": "물품,일반용역,용역,공사"
-   },
-   "industries": [],
-   "nps": [],
-   "dart": [
-    {
-     "year": 2025,
-     "매출액": 19324024000000,
-     "영업이익": 1304973000000,
-     "당기순이익": 1061753000000,
-     "자산총계": 29677587000000,
-     "부채총계": 14451027000000,
-     "자본총계": 15226560000000
-    },
-    {
-     "year": 2024,
-     "매출액": 18579678000000,
-     "영업이익": 346489000000,
-     "당기순이익": 326916000000,
-     "자산총계": 29528880000000,
-     "부채총계": 15108740000000,
-     "자본총계": 14420140000000
-    },
-    {
-     "year": 2023,
-     "매출액": 18371437000000,
-     "영업이익": 1185392000000,
-     "당기순이익": 933337000000,
-     "자산총계": 30308919000000,
-     "부채총계": 15265380000000,
-     "자본총계": 15043539000000
-    }
-   ],
-   "history": [
-    {
-     "id": "R26BK01555876",
-     "title": "국가정보자원관리원 혁신 정보화 전략계획(ISP) 수립",
-     "org": "한국지능정보사회진흥원",
-     "amount": 1364502241,
-     "openedAt": "2026-06-26 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1275808600,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 30,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01357934",
-     "title": "방위사업 관리 등을 위한 생성형 AI 서비스 ISP",
-     "org": "방위사업청",
-     "amount": 356363636,
-     "openedAt": "2026-03-17 11:00:00",
-     "status": "개찰완료",
-     "rank": 2,
-     "bidAmount": 384160000,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    },
-    {
-     "id": "R26BK01262966",
-     "title": "차세대 119통합시스템 구축 ISMP 수립",
-     "org": "소방청",
-     "amount": 1266363636,
-     "openedAt": "2026-02-10 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1392930000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 38,
-     "contractAmount": null
-    },
-    {
-     "id": "20240623158",
-     "title": "대한지방행정공제회 AI기반 스마트 컨택센터 구축 용역",
-     "org": "대한지방행정공제회",
-     "amount": 2300000000,
-     "openedAt": "2024-07-04 15:00:00",
-     "status": "개찰완료",
-     "rank": 3,
-     "bidAmount": null,
-     "rate": null,
-     "won": false,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    }
-   ],
-   "partners": [
-    {
-     "bizno": "2118669582",
-     "name": "(주)브이티더블유",
-     "count": 2,
-     "share": 25
-    },
-    {
-     "bizno": "4088118945",
-     "name": "대신정보통신 주식회사",
-     "count": 1,
-     "share": 10
-    },
-    {
-     "bizno": "3148184913",
-     "name": "세림티에스지 주식회사",
-     "count": 1,
-     "share": 20
-    },
-    {
-     "bizno": "1298631394",
-     "name": "네이버클라우드 주식회사",
-     "count": 1,
-     "share": 10
-    },
-    {
-     "bizno": "6138114177",
-     "name": "주식회사코넥",
-     "count": 1,
-     "share": 20
-    },
-    {
-     "bizno": "1298176829",
-     "name": "주식회사 넥스트아이앤아이",
-     "count": 1,
-     "share": 12
-    },
-    {
-     "bizno": "2158711279",
-     "name": "주식회사 엠티데이타",
-     "count": 1,
-     "share": 10
-    }
-   ],
-   "rivals": [
-    {
-     "bizno": "1108128774",
-     "name": "삼성에스디에스 주식회사",
-     "count": 2
-    },
-    {
-     "bizno": "2348109525",
-     "name": "주식회사 컨셉위드인사이트",
-     "count": 1
-    },
-    {
-     "bizno": "4638101723",
-     "name": "주식회사 데이타트렌드",
-     "count": 1
-    },
-    {
-     "bizno": "1168119477",
-     "name": "주식회사 엘지씨엔에스",
-     "count": 1
-    },
-    {
-     "bizno": "2208168054",
-     "name": "(주)이씨에스텔레콤",
-     "count": 1
-    },
-    {
-     "bizno": "1168153835",
-     "name": "(주)브리지텍",
-     "count": 1
-    },
-    {
-     "bizno": "2158158684",
-     "name": "주식회사 넥서스커뮤니티",
      "count": 1
     }
    ]
@@ -692619,7 +695915,7 @@
     "bids": 3,
     "wins": 3,
     "wonAmount": 1000500000,
-    "partners": 3,
+    "partners": 7,
     "lastAt": "2026-11-11 11:00:00"
    },
    "basic": {
@@ -692722,8 +696018,8 @@
      "bidAmount": null,
      "rate": null,
      "won": true,
-     "role": "입찰",
-     "share": null,
+     "role": "주계약업체",
+     "share": 40,
      "contractAmount": null
     },
     {
@@ -692758,6 +696054,30 @@
     }
    ],
    "partners": [
+    {
+     "bizno": "1028142945",
+     "name": "주식회사 케이티",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "1198196788",
+     "name": "주식회사 유플러스아이티",
+     "count": 1,
+     "share": 20
+    },
+    {
+     "bizno": "1078841902",
+     "name": "주식회사 지티아이씨",
+     "count": 1,
+     "share": 10
+    },
+    {
+     "bizno": "8308801918",
+     "name": "주식회사 업스테이지",
+     "count": 1,
+     "share": 20
+    },
     {
      "bizno": "1108128774",
      "name": "삼성에스디에스 주식회사",
@@ -695693,183 +699013,6 @@
     {
      "bizno": "1678801673",
      "name": "주식회사 엘앤비소프트",
-     "count": 1
-    }
-   ]
-  },
-  {
-   "bizno": "8308801918",
-   "name": "주식회사 업스테이지",
-   "ceo": "김성훈",
-   "stats": {
-    "bids": 3,
-    "wins": 3,
-    "wonAmount": 5699100000,
-    "partners": 5,
-    "lastAt": "2026-09-10 12:00:00"
-   },
-   "basic": null,
-   "industries": [],
-   "nps": [],
-   "dart": [],
-   "history": [
-    {
-     "id": "R26BK01659837",
-     "title": "AI 기반 수능 영어 자동 문항 생성 기능 개발",
-     "org": "한국교육과정평가원",
-     "amount": 2863636364,
-     "openedAt": "2026-09-10 12:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 3118500000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 100,
-     "contractAmount": 3118500000
-    },
-    {
-     "id": "R26BK01559189",
-     "title": "소상공인 AI 학습 데이터셋 및 서비스 구축",
-     "org": "소상공인시장진흥공단",
-     "amount": 1766000000,
-     "openedAt": "2026-07-07 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 1942600000,
-     "rate": null,
-     "won": true,
-     "role": "주계약업체",
-     "share": 65.7,
-     "contractAmount": null
-    },
-    {
-     "id": "20240813021",
-     "title": "2024년 뉴스빅데이터 분석시스템 고도화 사업",
-     "org": "한국언론진흥재단",
-     "amount": 587272727,
-     "openedAt": "2024-08-27 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 638000000,
-     "rate": null,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    }
-   ],
-   "partners": [
-    {
-     "bizno": "1138802132",
-     "name": "주식회사 아티피셜 소사이어티",
-     "count": 1,
-     "share": 100
-    },
-    {
-     "bizno": "8158702319",
-     "name": "주식회사 디윅스",
-     "count": 1,
-     "share": 100
-    },
-    {
-     "bizno": "6318603620",
-     "name": "오케스트로 클라우드 주식회사",
-     "count": 1,
-     "share": 100
-    },
-    {
-     "bizno": "1138622298",
-     "name": "주식회사 에코아이티",
-     "count": 1,
-     "share": 11
-    },
-    {
-     "bizno": "2158772878",
-     "name": "주식회사 플리토",
-     "count": 1,
-     "share": 23
-    }
-   ],
-   "rivals": [
-    {
-     "bizno": "7068602890",
-     "name": "플리트소프트 주식회사",
-     "count": 2
-    },
-    {
-     "bizno": "1018669359",
-     "name": "아이헤이트플라잉버그스 주식회사",
-     "count": 1
-    },
-    {
-     "bizno": "1208755358",
-     "name": "주식회사 시선에이아이",
-     "count": 1
-    },
-    {
-     "bizno": "1208633565",
-     "name": "주식회사 아이스크림미디어",
-     "count": 1
-    },
-    {
-     "bizno": "5868802378",
-     "name": "주식회사 클라비",
-     "count": 1
-    },
-    {
-     "bizno": "2158711279",
-     "name": "주식회사 엠티데이타",
-     "count": 1
-    },
-    {
-     "bizno": "1298650144",
-     "name": "주식회사 케이브레인컴퍼니",
-     "count": 1
-    },
-    {
-     "bizno": "2158607972",
-     "name": "주식회사 피씨엔",
-     "count": 1
-    },
-    {
-     "bizno": "3148165556",
-     "name": "(주)코어테크놀로지",
-     "count": 1
-    },
-    {
-     "bizno": "2148858206",
-     "name": "주식회사 에이치나인",
-     "count": 1
-    },
-    {
-     "bizno": "1258701916",
-     "name": "주식회사 아로",
-     "count": 1
-    },
-    {
-     "bizno": "4638101723",
-     "name": "주식회사 데이타트렌드",
-     "count": 1
-    },
-    {
-     "bizno": "4508800071",
-     "name": "주식회사 엠큐닉",
-     "count": 1
-    },
-    {
-     "bizno": "8078100564",
-     "name": "주식회사 알프레드",
-     "count": 1
-    },
-    {
-     "bizno": "1078615583",
-     "name": "(주)플랜투비즈니스컨설팅",
-     "count": 1
-    },
-    {
-     "bizno": "4578102412",
-     "name": "포체인스 주식회사",
      "count": 1
     }
    ]
@@ -764298,6 +767441,62 @@
    ]
   },
   {
+   "bizno": "3148146957",
+   "name": "성한 주식회사",
+   "ceo": "윤홍익",
+   "stats": {
+    "bids": 2,
+    "wins": 2,
+    "wonAmount": 224400000,
+    "partners": 0,
+    "lastAt": "2026-11-24 13:00:00"
+   },
+   "basic": null,
+   "industries": [],
+   "nps": [],
+   "dart": [],
+   "history": [
+    {
+     "id": "R26BK01841029",
+     "title": "AI 컴퓨팅센터 계획 수립",
+     "org": "국가보안기술연구소",
+     "amount": 81818182,
+     "openedAt": "2026-11-24 13:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 88200000,
+     "rate": 99.142,
+     "won": true,
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 88200000
+    },
+    {
+     "id": "20241108922",
+     "title": "2024년 통합자동제어설비유지관리 용역",
+     "org": "농촌진흥청 국립농업과학원",
+     "amount": 140000000,
+     "openedAt": "2024-11-19 11:00:00",
+     "status": "개찰완료",
+     "rank": 1,
+     "bidAmount": 136200000,
+     "rate": null,
+     "won": true,
+     "role": "입찰",
+     "share": null,
+     "contractAmount": null
+    }
+   ],
+   "partners": [],
+   "rivals": [
+    {
+     "bizno": "3058150966",
+     "name": "에스텍아이앤씨 주식회사",
+     "count": 1
+    }
+   ]
+  },
+  {
    "bizno": "1028133897",
    "name": "(주)지오시스템",
    "ceo": "강무형",
@@ -764324,9 +767523,9 @@
      "bidAmount": 29300000,
      "rate": 98.749,
      "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 29300000
     },
     {
      "id": "R25BK01159265",
@@ -764372,8 +767571,8 @@
    "ceo": "이상연",
    "stats": {
     "bids": 2,
-    "wins": 1,
-    "wonAmount": 193700000,
+    "wins": 2,
+    "wonAmount": 433400000,
     "partners": 1,
     "lastAt": "2026-11-18 12:00:00"
    },
@@ -764392,7 +767591,7 @@
      "rank": 1,
      "bidAmount": 239700000,
      "rate": 99.983,
-     "won": false,
+     "won": true,
      "role": "입찰",
      "share": null,
      "contractAmount": null
@@ -861009,7 +864208,7 @@
    "stats": {
     "bids": 1,
     "wins": 1,
-    "wonAmount": 0,
+    "wonAmount": 149292000,
     "partners": 0,
     "lastAt": "2026-11-03 11:00:00"
    },
@@ -861085,9 +864284,9 @@
      "bidAmount": null,
      "rate": null,
      "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
+     "role": "주계약업체",
+     "share": 100,
+     "contractAmount": 149292000
     }
    ],
    "partners": [],
@@ -971068,47 +974267,6 @@
    ],
    "partners": [],
    "rivals": []
-  },
-  {
-   "bizno": "3148146957",
-   "name": "성한 주식회사",
-   "ceo": "윤홍익",
-   "stats": {
-    "bids": 1,
-    "wins": 1,
-    "wonAmount": 136200000,
-    "partners": 0,
-    "lastAt": "2024-11-19 11:00:00"
-   },
-   "basic": null,
-   "industries": [],
-   "nps": [],
-   "dart": [],
-   "history": [
-    {
-     "id": "20241108922",
-     "title": "2024년 통합자동제어설비유지관리 용역",
-     "org": "농촌진흥청 국립농업과학원",
-     "amount": 140000000,
-     "openedAt": "2024-11-19 11:00:00",
-     "status": "개찰완료",
-     "rank": 1,
-     "bidAmount": 136200000,
-     "rate": null,
-     "won": true,
-     "role": "입찰",
-     "share": null,
-     "contractAmount": null
-    }
-   ],
-   "partners": [],
-   "rivals": [
-    {
-     "bizno": "3058150966",
-     "name": "에스텍아이앤씨 주식회사",
-     "count": 1
-    }
-   ]
   },
   {
    "bizno": "3058150966",

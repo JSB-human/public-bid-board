@@ -1,7 +1,98 @@
 {
- "updatedAt": "2026-11-23T21:32:17.817Z",
+ "updatedAt": "2026-11-24T10:07:39.382Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
+  {
+   "id": "R26BK01841029",
+   "ord": "000",
+   "title": "AI 컴퓨팅센터 계획 수립",
+   "org": "국가보안기술연구소",
+   "amount": 81818182,
+   "deadline": "2026-11-24 12:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01841029&bidPbancOrd=000",
+   "keywords": [
+    "AI"
+   ],
+   "award": "수의시담-수의시담",
+   "category": [
+    "기타",
+    "기타사업지원서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰완료",
+   "openedAt": "2026-11-24 13:00:00",
+   "participants": 1,
+   "note": "",
+   "openingKey": "0/0/0",
+   "winner": {
+    "name": "성한 주식회사",
+    "bizno": "3148146957",
+    "ceo": "윤홍익",
+    "amount": 88200000,
+    "rate": 99.142,
+    "date": "2026-11-24"
+   },
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "성한 주식회사",
+     "bizno": "3148146957",
+     "ceo": "윤홍익",
+     "amount": 88200000,
+     "rate": 99.142,
+     "note": "정상"
+    }
+   ],
+   "contract": {
+    "no": "R26TE20145756",
+    "name": "AI 컴퓨팅센터 계획 수립",
+    "date": null,
+    "amount": 88200000,
+    "thisYear": 88200000,
+    "joint": false,
+    "method": "수의계약",
+    "reason": "재공고입찰등과 수의계약",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02464235&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "성한 주식회사",
+      "ceo": "윤홍익",
+      "share": 100,
+      "bizno": "3148146957"
+     }
+    ]
+   },
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:32.246Z"
+  },
+  {
+   "id": "R26BK01761954",
+   "ord": "001",
+   "title": "정보시스템 통합유지보수",
+   "org": "한국청소년상담복지개발원",
+   "amount": 1321140909,
+   "deadline": "2026-11-24 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01761954&bidPbancOrd=001",
+   "keywords": [
+    "정보시스템",
+    "시스템"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-24T10:07:34.247Z"
+  },
   {
    "id": "R26BK01833786",
    "ord": "001",
@@ -113,7 +204,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:12.093Z",
+   "checkedAt": "2026-11-24T10:07:32.687Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "(주)서울정보시스템",
@@ -274,9 +365,30 @@
     "rate": 98.749,
     "date": "2026-11-20"
    },
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:10.845Z",
-   "openingKey": "0/0/0"
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:32.678Z",
+   "openingKey": "0/0/0",
+   "contract": {
+    "no": "R26TE20147561",
+    "name": "처분시설 GPS 수신기 유지관리 용역",
+    "date": null,
+    "amount": 29300000,
+    "thisYear": 858550,
+    "joint": false,
+    "method": "수의계약",
+    "reason": "재공고입찰등과 수의계약",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02460329&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "(주)지오시스템",
+      "ceo": "강무형",
+      "share": 100,
+      "bizno": "1028133897"
+     }
+    ]
+   }
   },
   {
    "id": "R26BK01829881",
@@ -300,7 +412,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-18 12:00:00",
    "participants": 1,
-   "note": "전자시담 개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -313,8 +425,16 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:11.784Z",
-   "openingKey": "0/1/0"
+   "checkedAt": "2026-11-24T10:07:32.946Z",
+   "openingKey": "0/1/0",
+   "winner": {
+    "name": "주식회사 필베러",
+    "bizno": "2668802042",
+    "ceo": "이상연",
+    "amount": 239700000,
+    "rate": 99.983,
+    "date": "2026-11-24"
+   }
   },
   {
    "id": "R26BK01815758",
@@ -442,7 +562,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T21:32:11.024Z"
+   "checkedAt": "2026-11-24T10:07:32.683Z"
   },
   {
    "id": "R26BK01824094",
@@ -606,7 +726,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:11.783Z",
+   "checkedAt": "2026-11-24T10:07:32.920Z",
    "openingKey": "0/0/0"
   },
   {
@@ -630,7 +750,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-23T21:32:11.692Z"
+   "checkedAt": "2026-11-24T10:07:32.465Z"
   },
   {
    "id": "R26BK01805039",
@@ -728,7 +848,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:12.161Z",
+   "checkedAt": "2026-11-24T10:07:33.332Z",
    "openingKey": "0/1/0"
   },
   {
@@ -753,7 +873,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-13 11:00:00",
    "participants": 4,
-   "note": "개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -792,9 +912,38 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:12.256Z",
-   "openingKey": "0/1/0"
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:33.377Z",
+   "openingKey": "0/1/0",
+   "winner": {
+    "name": "주식회사 원테크시스템",
+    "bizno": "1318672006",
+    "ceo": "최주선",
+    "amount": 174900000,
+    "rate": null,
+    "date": "2026-11-24"
+   },
+   "contract": {
+    "no": "R26TE20147184",
+    "name": "2027년 스마트도시 기반시설 유지관리 용역",
+    "date": null,
+    "amount": 0,
+    "thisYear": 174900000,
+    "joint": false,
+    "method": "제한경쟁",
+    "reason": "중소벤처기업부장관이 지정 공고한 물품",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02464246&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "주식회사 원테크시스템",
+      "ceo": "최주선",
+      "share": 100,
+      "bizno": "1318672006"
+     }
+    ]
+   }
   },
   {
    "id": "R26BK01764593",
@@ -840,7 +989,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.501Z",
+   "checkedAt": "2026-11-24T10:07:34.432Z",
    "openingKey": "0/1/0"
   },
   {
@@ -913,7 +1062,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:12.818Z",
+   "checkedAt": "2026-11-24T10:07:33.610Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1088,7 +1237,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:12.345Z",
+   "checkedAt": "2026-11-24T10:07:33.589Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1290,8 +1439,8 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:14.467Z",
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:35.104Z",
    "openingKey": "1/1/0",
    "winner": {
     "name": "주식회사 아이티센엔텍",
@@ -1300,6 +1449,59 @@
     "amount": 1541845800,
     "rate": null,
     "date": "2026-11-23"
+   },
+   "contract": {
+    "no": "R26TE20136408",
+    "name": "국세청 AI 시스템 구축 ISMP 수립",
+    "date": null,
+    "amount": 0,
+    "thisYear": 1541845800,
+    "joint": true,
+    "method": "일반경쟁",
+    "reason": "협상에 의한 계약",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02460819&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "공동",
+      "name": "주식회사 아이티센엔텍",
+      "ceo": "신장호",
+      "share": 40,
+      "bizno": "2028132975"
+     },
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "주식회사 케이티",
+      "ceo": "박윤영",
+      "share": 10,
+      "bizno": "1028142945"
+     },
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "주식회사 유플러스아이티",
+      "ceo": "김상하",
+      "share": 20,
+      "bizno": "1198196788"
+     },
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "주식회사 지티아이씨",
+      "ceo": "방소영",
+      "share": 10,
+      "bizno": "1078841902"
+     },
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "주식회사 업스테이지",
+      "ceo": "김성훈",
+      "share": 20,
+      "bizno": "8308801918"
+     }
+    ]
    }
   },
   {
@@ -1381,7 +1583,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:11.589Z",
+   "checkedAt": "2026-11-24T10:07:33.339Z",
    "openingKey": "0/0/0"
   },
   {
@@ -1790,7 +1992,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.319Z",
+   "checkedAt": "2026-11-24T10:07:34.045Z",
    "openingKey": "0/1/0"
   },
   {
@@ -2230,7 +2432,7 @@
     "date": "2026-11-13"
    },
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.273Z",
+   "checkedAt": "2026-11-24T10:07:35.163Z",
    "openingKey": "0/0/0"
   },
   {
@@ -2311,8 +2513,8 @@
      "note": "협상평가부적격자"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:12.939Z",
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:33.761Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "주식회사 비즈데이터",
@@ -2321,6 +2523,27 @@
     "amount": 149292000,
     "rate": null,
     "date": "2026-11-23"
+   },
+   "contract": {
+    "no": "R26TE20152551",
+    "name": "한국해양과학기술원 연구·행정 지원 AI Agent 개발 및 적용",
+    "date": null,
+    "amount": 149292000,
+    "thisYear": 149292000,
+    "joint": false,
+    "method": "제한경쟁",
+    "reason": "중소벤처기업부장관이 지정.고시한 제품",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02466114&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "주식회사 비즈데이터",
+      "ceo": "김태진",
+      "share": 100,
+      "bizno": "2648135854"
+     }
+    ]
    }
   },
   {
@@ -2403,7 +2626,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.564Z",
+   "checkedAt": "2026-11-24T10:07:33.990Z",
    "openingKey": "0/0/0"
   },
   {
@@ -2486,7 +2709,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.942Z",
+   "checkedAt": "2026-11-24T10:07:34.924Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3127,7 +3350,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.329Z",
+   "checkedAt": "2026-11-24T10:07:34.260Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3201,7 +3424,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.381Z",
+   "checkedAt": "2026-11-24T10:07:34.295Z",
    "openingKey": "1/0/0"
   },
   {
@@ -3256,8 +3479,8 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:13.909Z",
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:34.474Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "주식회사 지티시큐",
@@ -3266,6 +3489,27 @@
     "amount": 60500000,
     "rate": null,
     "date": "2026-11-23"
+   },
+   "contract": {
+    "no": "R26TE20143578",
+    "name": "범정부 AI 공통기반 구현(2차) 개인정보 영향평가",
+    "date": null,
+    "amount": 60500000,
+    "thisYear": 60500000,
+    "joint": false,
+    "method": "제한경쟁",
+    "reason": "[판로지원법 시행령] 소기업,소상공인제한",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02456460&ctrtChgOrd=00&prcmBsneSeCd=조070003&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "주식회사 지티시큐",
+      "ceo": "박휘문",
+      "share": 100,
+      "bizno": "7938602782"
+     }
+    ]
    }
   },
   {
@@ -3845,7 +4089,7 @@
     "date": "2026-10-21"
    },
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.691Z",
+   "checkedAt": "2026-11-24T10:07:34.671Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4104,7 +4348,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.125Z",
+   "checkedAt": "2026-11-24T10:07:35.106Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4755,7 +4999,7 @@
     "date": "2026-11-09"
    },
    "final": false,
-   "checkedAt": "2026-11-23T21:32:13.862Z",
+   "checkedAt": "2026-11-24T10:07:34.731Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4966,7 +5210,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.263Z",
+   "checkedAt": "2026-11-24T10:07:35.137Z",
    "openingKey": "1/0/0"
   },
   {
@@ -6825,7 +7069,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.695Z",
+   "checkedAt": "2026-11-24T10:07:35.790Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6965,7 +7209,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.762Z",
+   "checkedAt": "2026-11-24T10:07:36.917Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7558,7 +7802,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.825Z",
+   "checkedAt": "2026-11-24T10:07:35.783Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7749,7 +7993,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.832Z",
+   "checkedAt": "2026-11-24T10:07:35.775Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8143,7 +8387,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:14.546Z",
+   "checkedAt": "2026-11-24T10:07:35.574Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9687,7 +9931,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.715Z",
+   "checkedAt": "2026-11-24T10:07:38.098Z",
    "openingKey": "0/0/0"
   },
   {
@@ -10245,7 +10489,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.864Z",
+   "checkedAt": "2026-11-24T10:07:38.229Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11243,7 +11487,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.026Z",
+   "checkedAt": "2026-11-24T10:07:35.837Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12565,7 +12809,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.949Z",
+   "checkedAt": "2026-11-24T10:07:36.957Z",
    "openingKey": "0/0/0"
   },
   {
@@ -13725,7 +13969,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.188Z",
+   "checkedAt": "2026-11-24T10:07:36.207Z",
    "openingKey": "0/0/0"
   },
   {
@@ -14456,7 +14700,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.060Z",
+   "checkedAt": "2026-11-24T10:07:36.214Z",
    "openingKey": "0/0/0"
   },
   {
@@ -14862,7 +15106,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.113Z",
+   "checkedAt": "2026-11-24T10:07:36.242Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15642,7 +15886,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:17.802Z",
+   "checkedAt": "2026-11-24T10:07:39.363Z",
    "openingKey": "1/0/0"
   },
   {
@@ -15724,7 +15968,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.667Z",
+   "checkedAt": "2026-11-24T10:07:36.862Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16440,7 +16684,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.758Z",
+   "checkedAt": "2026-11-24T10:07:36.888Z",
    "openingKey": "0/0/3"
   },
   {
@@ -17478,7 +17722,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.386Z",
+   "checkedAt": "2026-11-24T10:07:36.275Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17661,7 +17905,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.196Z",
+   "checkedAt": "2026-11-24T10:07:36.223Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17861,7 +18105,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.785Z",
+   "checkedAt": "2026-11-24T10:07:37.076Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19231,7 +19475,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.326Z",
+   "checkedAt": "2026-11-24T10:07:37.579Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19434,7 +19678,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.311Z",
+   "checkedAt": "2026-11-24T10:07:37.547Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20082,7 +20326,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.027Z",
+   "checkedAt": "2026-11-24T10:07:37.309Z",
    "openingKey": "0/0/0"
   },
   {
@@ -22473,7 +22717,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.354Z",
+   "checkedAt": "2026-11-24T10:07:37.627Z",
    "openingKey": "0/0/0"
   },
   {
@@ -23312,7 +23556,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.696Z",
+   "checkedAt": "2026-11-24T10:07:38.019Z",
    "openingKey": "0/0/0"
   },
   {
@@ -23420,7 +23664,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.593Z",
+   "checkedAt": "2026-11-24T10:07:38.003Z",
    "openingKey": "0/0/0"
   },
   {
@@ -23831,7 +24075,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:15.423Z",
+   "checkedAt": "2026-11-24T10:07:36.636Z",
    "openingKey": "0/0/0"
   },
   {
@@ -26724,7 +26968,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.507Z",
+   "checkedAt": "2026-11-24T10:07:37.804Z",
    "openingKey": "0/0/0"
   },
   {
@@ -28293,7 +28537,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.884Z",
+   "checkedAt": "2026-11-24T10:07:38.218Z",
    "openingKey": "0/0/0"
   },
   {
@@ -30805,7 +31049,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:17.518Z",
+   "checkedAt": "2026-11-24T10:07:38.897Z",
    "openingKey": "0/0/0"
   },
   {
@@ -33325,7 +33569,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:17.052Z",
+   "checkedAt": "2026-11-24T10:07:38.447Z",
    "openingKey": "0/0/0"
   },
   {
@@ -33416,7 +33660,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:17.295Z",
+   "checkedAt": "2026-11-24T10:07:38.770Z",
    "openingKey": "0/0/0"
   },
   {
@@ -35050,7 +35294,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:17.225Z",
+   "checkedAt": "2026-11-24T10:07:38.685Z",
    "openingKey": "1/0/0"
   },
   {
@@ -36675,7 +36919,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-23T21:32:16.956Z",
+   "checkedAt": "2026-11-24T10:07:38.429Z",
    "openingKey": "0/0/0"
   },
   {
@@ -39933,8 +40177,8 @@
      "note": "예가초과"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:17.401Z",
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:38.854Z",
    "openingKey": "0/0/0"
   },
   {
@@ -40548,8 +40792,8 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-23T21:32:17.671Z",
+   "final": true,
+   "checkedAt": "2026-11-24T10:07:39.117Z",
    "openingKey": "0/0/0"
   },
   {
