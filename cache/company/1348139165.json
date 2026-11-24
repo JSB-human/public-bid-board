@@ -17,5 +17,13 @@
   "listed": false,
   "years": [],
   "fetchedAt": "2026-11-23T08:25:59.495Z"
+ },
+ "nps": {
+  "months": {
+   "202511": 3,
+   "202512": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-24T22:35:41.495Z"
  }
 }

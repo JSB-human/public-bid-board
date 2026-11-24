@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T10:07:39.382Z",
+ "updatedAt": "2026-11-24T22:34:29.553Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
@@ -91,7 +91,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.247Z"
+   "checkedAt": "2026-11-24T22:34:24.982Z"
   },
   {
    "id": "R26BK01833786",
@@ -204,7 +204,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:32.687Z",
+   "checkedAt": "2026-11-24T22:34:23.916Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "(주)서울정보시스템",
@@ -425,7 +425,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:32.946Z",
+   "checkedAt": "2026-11-24T22:34:23.904Z",
    "openingKey": "0/1/0",
    "winner": {
     "name": "주식회사 필베러",
@@ -562,7 +562,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-24T10:07:32.683Z"
+   "checkedAt": "2026-11-24T22:34:24.040Z"
   },
   {
    "id": "R26BK01824094",
@@ -726,7 +726,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:32.920Z",
+   "checkedAt": "2026-11-24T22:34:24.167Z",
    "openingKey": "0/0/0"
   },
   {
@@ -750,7 +750,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-24T10:07:32.465Z"
+   "checkedAt": "2026-11-24T22:34:23.685Z"
   },
   {
    "id": "R26BK01805039",
@@ -848,7 +848,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:33.332Z",
+   "checkedAt": "2026-11-24T22:34:24.528Z",
    "openingKey": "0/1/0"
   },
   {
@@ -989,7 +989,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.432Z",
+   "checkedAt": "2026-11-24T22:34:25.290Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1062,7 +1062,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:33.610Z",
+   "checkedAt": "2026-11-24T22:34:24.669Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1237,7 +1237,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:33.589Z",
+   "checkedAt": "2026-11-24T22:34:24.545Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1583,7 +1583,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:33.339Z",
+   "checkedAt": "2026-11-24T22:34:24.310Z",
    "openingKey": "0/0/0"
   },
   {
@@ -1992,7 +1992,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.045Z",
+   "checkedAt": "2026-11-24T22:34:24.942Z",
    "openingKey": "0/1/0"
   },
   {
@@ -2432,7 +2432,7 @@
     "date": "2026-11-13"
    },
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.163Z",
+   "checkedAt": "2026-11-24T22:34:25.763Z",
    "openingKey": "0/0/0"
   },
   {
@@ -2626,7 +2626,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:33.990Z",
+   "checkedAt": "2026-11-24T22:34:24.789Z",
    "openingKey": "0/0/0"
   },
   {
@@ -2709,7 +2709,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.924Z",
+   "checkedAt": "2026-11-24T22:34:25.628Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3350,7 +3350,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.260Z",
+   "checkedAt": "2026-11-24T22:34:25.152Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3424,7 +3424,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.295Z",
+   "checkedAt": "2026-11-24T22:34:25.178Z",
    "openingKey": "1/0/0"
   },
   {
@@ -4089,7 +4089,7 @@
     "date": "2026-10-21"
    },
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.671Z",
+   "checkedAt": "2026-11-24T22:34:25.346Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4348,7 +4348,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.106Z",
+   "checkedAt": "2026-11-24T22:34:25.795Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4999,7 +4999,7 @@
     "date": "2026-11-09"
    },
    "final": false,
-   "checkedAt": "2026-11-24T10:07:34.731Z",
+   "checkedAt": "2026-11-24T22:34:25.549Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5210,7 +5210,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.137Z",
+   "checkedAt": "2026-11-24T22:34:25.929Z",
    "openingKey": "1/0/0"
   },
   {
@@ -7069,7 +7069,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.790Z",
+   "checkedAt": "2026-11-24T22:34:26.257Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7209,7 +7209,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.917Z",
+   "checkedAt": "2026-11-24T22:34:27.450Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7802,7 +7802,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.783Z",
+   "checkedAt": "2026-11-24T22:34:26.420Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7993,7 +7993,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.775Z",
+   "checkedAt": "2026-11-24T22:34:26.378Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8387,7 +8387,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.574Z",
+   "checkedAt": "2026-11-24T22:34:26.178Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9931,7 +9931,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.098Z",
+   "checkedAt": "2026-11-24T22:34:28.608Z",
    "openingKey": "0/0/0"
   },
   {
@@ -10489,7 +10489,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.229Z",
+   "checkedAt": "2026-11-24T22:34:28.662Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11487,7 +11487,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:35.837Z",
+   "checkedAt": "2026-11-24T22:34:26.571Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12809,7 +12809,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.957Z",
+   "checkedAt": "2026-11-24T22:34:27.614Z",
    "openingKey": "0/0/0"
   },
   {
@@ -13969,7 +13969,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.207Z",
+   "checkedAt": "2026-11-24T22:34:26.787Z",
    "openingKey": "0/0/0"
   },
   {
@@ -14700,7 +14700,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.214Z",
+   "checkedAt": "2026-11-24T22:34:26.667Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15106,7 +15106,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.242Z",
+   "checkedAt": "2026-11-24T22:34:26.804Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15886,7 +15886,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:39.363Z",
+   "checkedAt": "2026-11-24T22:34:29.531Z",
    "openingKey": "1/0/0"
   },
   {
@@ -15968,7 +15968,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.862Z",
+   "checkedAt": "2026-11-24T22:34:27.424Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16684,7 +16684,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.888Z",
+   "checkedAt": "2026-11-24T22:34:27.442Z",
    "openingKey": "0/0/3"
   },
   {
@@ -17722,7 +17722,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.275Z",
+   "checkedAt": "2026-11-24T22:34:26.993Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17905,7 +17905,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.223Z",
+   "checkedAt": "2026-11-24T22:34:26.821Z",
    "openingKey": "0/0/0"
   },
   {
@@ -18105,7 +18105,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:37.076Z",
+   "checkedAt": "2026-11-24T22:34:27.573Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19475,7 +19475,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:37.579Z",
+   "checkedAt": "2026-11-24T22:34:28.114Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19678,7 +19678,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:37.547Z",
+   "checkedAt": "2026-11-24T22:34:28.142Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20326,7 +20326,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:37.309Z",
+   "checkedAt": "2026-11-24T22:34:27.865Z",
    "openingKey": "0/0/0"
   },
   {
@@ -22717,7 +22717,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:37.627Z",
+   "checkedAt": "2026-11-24T22:34:28.208Z",
    "openingKey": "0/0/0"
   },
   {
@@ -23556,7 +23556,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.019Z",
+   "checkedAt": "2026-11-24T22:34:28.547Z",
    "openingKey": "0/0/0"
   },
   {
@@ -23664,7 +23664,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.003Z",
+   "checkedAt": "2026-11-24T22:34:28.485Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24075,7 +24075,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:36.636Z",
+   "checkedAt": "2026-11-24T22:34:27.088Z",
    "openingKey": "0/0/0"
   },
   {
@@ -26968,7 +26968,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:37.804Z",
+   "checkedAt": "2026-11-24T22:34:28.263Z",
    "openingKey": "0/0/0"
   },
   {
@@ -28537,7 +28537,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.218Z",
+   "checkedAt": "2026-11-24T22:34:28.753Z",
    "openingKey": "0/0/0"
   },
   {
@@ -31049,7 +31049,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.897Z",
+   "checkedAt": "2026-11-24T22:34:29.380Z",
    "openingKey": "0/0/0"
   },
   {
@@ -33569,7 +33569,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.447Z",
+   "checkedAt": "2026-11-24T22:34:28.949Z",
    "openingKey": "0/0/0"
   },
   {
@@ -33660,7 +33660,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.770Z",
+   "checkedAt": "2026-11-24T22:34:29.249Z",
    "openingKey": "0/0/0"
   },
   {
@@ -35294,7 +35294,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.685Z",
+   "checkedAt": "2026-11-24T22:34:29.069Z",
    "openingKey": "1/0/0"
   },
   {
@@ -36919,7 +36919,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T10:07:38.429Z",
+   "checkedAt": "2026-11-24T22:34:28.904Z",
    "openingKey": "0/0/0"
   },
   {

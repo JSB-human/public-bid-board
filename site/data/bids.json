@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T10:04:06.494Z",
+ "updatedAt": "2026-11-24T22:33:39.177Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -46037,6 +46037,211 @@
      "제안요청서.hwpx"
     ],
     "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01850549",
+   "ord": "000",
+   "title": "교과용 도서 자동 점검 시스템 프로토타입 개발",
+   "org": "한국교육과정평가원",
+   "amount": 272727273,
+   "deadline": "2027-01-05 11:00:00",
+   "posted": "2026-11-25 00:11:05",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01850549&bidPbancOrd=000",
+   "keywords": [
+    "시스템"
+   ],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "정보시스템개발서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "한국교육과정평가원",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 300000000,
+    "regDeadline": "2027-01-04 18:00",
+    "bidBegin": "2026-12-31 10:00:00",
+    "opening": "2027-01-05 12:00:00",
+    "refNo": "구매계약부-4908",
+    "files": [
+     {
+      "name": "입찰공고문(변환).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고문.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "제안요청서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "조세포탈 관련 확인서약서.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "청렴계약 입찰특별유의서.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     },
+     {
+      "name": "청렴공정계약 특수조건 및 이행서약서, 인권경영 및 안전보건확보 이행서약서.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+     },
+     {
+      "name": "협상에의한계약체결기준(2026.03.23.).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01850549&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "□ AI 기반 자동 점검 시스템 프로토타입 개발",
+     "❍ 학습용 데이터 구성 및 정제",
+     "- 발주기관이 제공하는 교과용 도서 검정 관련 원천데이터를 수집, 점검 목적에 따른 데이터셋 구성 방안 수립",
+     "- AI 학습에 활용할 수 있도록 원천데이터를 가공하는 데이터셋 가공 기능 구현",
+     "- 오류 유형에 따른 교정 기준 및 수정안 도출 규칙 정의",
+     "- 기존 검정 결과인 “수정·보완권고서” 최소 1,500건을 포함하여 자동 점검을 위한 충분한 AI 학습데이터셋 구성과 이를 활용한 학습체계 구축",
+     "❍ AI 모델 개발",
+     "- 한국어 표기 및 표현 오류를 탐지하는 AI 모델 개발",
+     "- 영어 문법 및 어휘 사용의 오류를 탐지하는 AI 모델 개발",
+     "- 영어 교육과정에 따른 어휘 검색 기능 구현",
+     "- AI 점검 모델 성능평가 및 평가 결과에 따른 보완 수행",
+     "- 특정 이미지(국가상징물 등)에 대한 검정대상도서의 오류 사항을 탐지하는 AI 모델 개발",
+     "❍ 프로토타입 시스템 구현",
+     "- 개발된 AI 모델과 점검 규칙을 적용한 자동 검사 기능 구현"
+    ],
+    "background": [
+     "□ 기존 교과용 도서 검정 체계의 효율성을 높이기 위해 AI 기반의 자동 점검 시스템 도입에 대한 필요성 제기",
+     "❍ 한국어 기반 맞춤법 검사 등 관련 분야 AI 활용 기술의 발달로 자동 점검에 대한 효과성이 높아진 상황",
+     "❍ 교과용 도서 검정 기초 조사 과정에서 연구위원의 검정을 사전 점검과 리포팅을 통해 지원하는 AI 모델의 효과성 검증이 필요",
+     "❍ 관련 데이터를 학습시켜 검정의 정합성을 향상시키는 AI 모델에 대한 다양한 관점에서의 성능 검증이 필요"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템개발서비스",
+      "code": "8111159901"
+     }
+    ],
+    "period": "계약체결일 ~ 2027년 5월 31일",
+    "files": [
+     "입찰공고문(변환).pdf",
+     "제안요청서.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01848583",
+   "ord": "000",
+   "title": "2027년 의정부시 대표 홈페이지 유지관리 용역",
+   "org": "경기도 의정부시",
+   "amount": 44250000,
+   "deadline": "2026-12-08 10:00:00",
+   "posted": "2026-11-24 21:09:22",
+   "method": "일반경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848583&bidPbancOrd=000",
+   "keywords": [
+    "홈페이지",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "소프트웨어유지및지원서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "경기도 의정부시",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 48675000,
+    "regDeadline": "2026-12-07 18:00",
+    "bidBegin": "2026-12-04 10:00:00",
+    "opening": "2026-12-08 11:00:00",
+    "refNo": "의정부시 공고 제2026-2243호  ",
+    "files": [
+     {
+      "name": "제안요청서(2027년 의정부시 대표 홈페이지 유지관리 용역).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848583&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "[完] 공고문(2027년 의정부시 대표 홈페이지 유지관리 용역)_수정.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848583&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "(붙임) 2027년 의정부시 대표 홈페이지 유지관리 용역 산출내역서.xlsx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01848583&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "❍ 홈페이지 운영 및 콘텐츠 유지관리",
+     "- 2027년 1월 1일 정식 운영 개시 예정인 홈페이지의 운영 및 유지관리",
+     "- 365일 24시간 중단없는 홈페이지 운영",
+     "- 콘텐츠 신규 제작·수정·보완 등 홈페이지 콘텐츠 현행화",
+     "- AI 검색·챗봇 등 AI 서비스 유지관리, 장애 대응 및 기술지원 수행",
+     "- 시민 홍보 활성화를 위한 배너 제작",
+     "- 각종 정책·지침 및 현안 업무 관련 등 발생 이슈에 따른 프로그램 유지관리",
+     "- 필요 시 데이터 개방을 위한 API 제공 및 외부시스템 연계 구현",
+     "- 신규 장비 도입 또는 교체 등 서비스 환경 변경 시 이전에 따른 기술 지원",
+     "- 기타 과업 수행 중 발생하는 홈페이지 프로그램 오류 개선 및 보완 등",
+     "- 클라우드 인프라 운영업체(MSP)와 협력하여 홈페이지 운영 및 장애 대응에 필요한 기술지원 수행",
+     "❍ 웹접근성, 호환성, 웹표준 적용 및 개발보안, 개인정보보호 준수",
+     "- 한국형 웹 콘텐츠 접근성 지침(방송통신표준) 준수",
+     "- 전자정부서비스 호환성 준수지침(행정안전부고시) 준수"
+    ],
+    "background": [
+     "❍ 365일 중단 없는 의정부시 대표 홈페이지 운영관리 체계 구축",
+     "❍ 시민의 개선 요구사항에 적극 대처하여 홈페이지 이용 만족도 제고",
+     "❍ 신규 콘텐츠 및 배너 제작으로 정확하고 신속한 자료 제공",
+     "❍ 장애인과 고령자 등 모든 계층이 정보를 공유할 수 있도록 웹 접근성 및 호환성 준수"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027. 1. 1. ~ 2027. 12. 31.",
+    "files": [
+     "[完] 공고문(2027년 의정부시 대표 홈페이지 유지관리 용역)_수정.pdf",
+     "제안요청서(2027년 의정부시 대표 홈페이지 유지관리 용역).hwpx"
+    ],
+    "skipped": [
+     "(붙임) 2027년 의정부시 대표 홈페이지 유지관리 용역 산출내역서.xlsx"
+    ]
    }
   }
  ]
