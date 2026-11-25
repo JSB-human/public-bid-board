@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(유)신성시엔시",
+  "ceo": "김관식",
+  "opened": "2010-07-13",
+  "region": "전북특별자치도 군산시",
+  "address": "전북특별자치도 군산시 서흥안길 137-3 (서흥남동)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-25T08:49:26.454Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-25T08:49:26.901Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-25T08:49:26.901Z"
+ }
+}
