@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T08:49:17.341Z",
+ "updatedAt": "2026-11-25T19:25:56.963Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
@@ -1026,7 +1026,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-25T08:49:16.790Z"
+   "checkedAt": "2026-11-25T19:25:52.850Z"
   },
   {
    "id": "R26BK01833786",
@@ -1139,7 +1139,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:23.916Z",
+   "checkedAt": "2026-11-25T19:25:51.858Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "(주)서울정보시스템",
@@ -1359,8 +1359,8 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-24T22:34:23.904Z",
+   "final": true,
+   "checkedAt": "2026-11-25T19:25:51.864Z",
    "openingKey": "0/1/0",
    "winner": {
     "name": "주식회사 필베러",
@@ -1369,6 +1369,35 @@
     "amount": 239700000,
     "rate": 99.983,
     "date": "2026-11-24"
+   },
+   "contract": {
+    "no": "R26TE20199724",
+    "name": "2026년 교통단속관리시스템(TEMS) 기능개선 사업",
+    "date": null,
+    "amount": 0,
+    "thisYear": 239700000,
+    "joint": true,
+    "method": "수의계약",
+    "reason": "재공고입찰등과 수의계약",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02466512&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "공동",
+      "name": "주식회사 필베러",
+      "ceo": "이상연",
+      "share": 51,
+      "bizno": "2668802042"
+     },
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "유티정보 주식회사",
+      "ceo": "길기순",
+      "share": 49,
+      "bizno": "1248184571"
+     }
+    ]
    }
   },
   {
@@ -1497,7 +1526,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-25T08:49:16.756Z"
+   "checkedAt": "2026-11-25T19:25:51.856Z"
   },
   {
    "id": "R26BK01824094",
@@ -1661,7 +1690,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:24.167Z",
+   "checkedAt": "2026-11-25T19:25:52.066Z",
    "openingKey": "0/0/0"
   },
   {
@@ -1685,7 +1714,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-25T08:49:16.554Z"
+   "checkedAt": "2026-11-25T19:25:51.677Z"
   },
   {
    "id": "R26BK01805039",
@@ -1783,7 +1812,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:24.528Z",
+   "checkedAt": "2026-11-25T19:25:52.433Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1924,7 +1953,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.290Z",
+   "checkedAt": "2026-11-25T19:25:53.063Z",
    "openingKey": "0/1/0"
   },
   {
@@ -1975,7 +2004,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-12 11:00:00",
    "participants": 2,
-   "note": "개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -1996,9 +2025,46 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-24T22:34:24.669Z",
-   "openingKey": "0/1/0"
+   "final": true,
+   "checkedAt": "2026-11-25T19:25:52.462Z",
+   "openingKey": "0/1/0",
+   "winner": {
+    "name": "주식회사 이노팸",
+    "bizno": "2048651274",
+    "ceo": "이임평",
+    "amount": 225400000,
+    "rate": null,
+    "date": "2026-11-25"
+   },
+   "contract": {
+    "no": "R26TA0246750300",
+    "name": "2027년 Geo-AI 플랫폼 SW, HW 유지관리 용역",
+    "date": "2026-11-25",
+    "amount": 0,
+    "thisYear": 225400000,
+    "joint": true,
+    "method": "제한경쟁",
+    "reason": "중소벤처기업부장관이 지정 공고한 물품",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02467503&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "(주)유비즈정보기술",
+      "ceo": "김병철",
+      "share": 10.5,
+      "bizno": "6168154799"
+     },
+     {
+      "role": "주계약업체",
+      "type": "공동",
+      "name": "주식회사 이노팸",
+      "ceo": "이임평",
+      "share": 89.5,
+      "bizno": "2048651274"
+     }
+    ]
+   }
   },
   {
    "id": "R26BK01777492",
@@ -2172,7 +2238,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:24.545Z",
+   "checkedAt": "2026-11-25T19:25:52.428Z",
    "openingKey": "0/1/0"
   },
   {
@@ -2518,7 +2584,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:24.310Z",
+   "checkedAt": "2026-11-25T19:25:52.237Z",
    "openingKey": "0/0/0"
   },
   {
@@ -2927,7 +2993,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:24.942Z",
+   "checkedAt": "2026-11-25T19:25:52.807Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3367,7 +3433,7 @@
     "date": "2026-11-13"
    },
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.763Z",
+   "checkedAt": "2026-11-25T19:25:53.535Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3561,7 +3627,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:24.789Z",
+   "checkedAt": "2026-11-25T19:25:52.670Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3644,7 +3710,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.628Z",
+   "checkedAt": "2026-11-25T19:25:53.406Z",
    "openingKey": "0/1/0"
   },
   {
@@ -4285,7 +4351,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.152Z",
+   "checkedAt": "2026-11-25T19:25:52.993Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4359,7 +4425,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.178Z",
+   "checkedAt": "2026-11-25T19:25:53.003Z",
    "openingKey": "1/0/0"
   },
   {
@@ -5024,7 +5090,7 @@
     "date": "2026-10-21"
    },
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.346Z",
+   "checkedAt": "2026-11-25T19:25:53.170Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5283,7 +5349,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.795Z",
+   "checkedAt": "2026-11-25T19:25:53.590Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5934,7 +6000,7 @@
     "date": "2026-11-09"
    },
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.549Z",
+   "checkedAt": "2026-11-25T19:25:53.359Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6145,7 +6211,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:25.929Z",
+   "checkedAt": "2026-11-25T19:25:53.622Z",
    "openingKey": "1/0/0"
   },
   {
@@ -8004,7 +8070,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.257Z",
+   "checkedAt": "2026-11-25T19:25:53.976Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8144,7 +8210,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.450Z",
+   "checkedAt": "2026-11-25T19:25:55.093Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8737,7 +8803,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.420Z",
+   "checkedAt": "2026-11-25T19:25:54.157Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8928,7 +8994,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.378Z",
+   "checkedAt": "2026-11-25T19:25:54.106Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9322,7 +9388,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.178Z",
+   "checkedAt": "2026-11-25T19:25:53.934Z",
    "openingKey": "0/0/0"
   },
   {
@@ -10866,7 +10932,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.608Z",
+   "checkedAt": "2026-11-25T19:25:56.050Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11424,7 +11490,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.662Z",
+   "checkedAt": "2026-11-25T19:25:56.079Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12422,7 +12488,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.571Z",
+   "checkedAt": "2026-11-25T19:25:54.202Z",
    "openingKey": "0/0/0"
   },
   {
@@ -13744,7 +13810,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.614Z",
+   "checkedAt": "2026-11-25T19:25:55.137Z",
    "openingKey": "0/0/0"
   },
   {
@@ -14904,7 +14970,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.787Z",
+   "checkedAt": "2026-11-25T19:25:54.471Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15635,7 +15701,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.667Z",
+   "checkedAt": "2026-11-25T19:25:54.334Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16041,7 +16107,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.804Z",
+   "checkedAt": "2026-11-25T19:25:54.509Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16821,7 +16887,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:29.531Z",
+   "checkedAt": "2026-11-25T19:25:56.949Z",
    "openingKey": "1/0/0"
   },
   {
@@ -16903,7 +16969,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.424Z",
+   "checkedAt": "2026-11-25T19:25:55.039Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17619,7 +17685,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.442Z",
+   "checkedAt": "2026-11-25T19:25:55.073Z",
    "openingKey": "0/0/3"
   },
   {
@@ -18657,7 +18723,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.993Z",
+   "checkedAt": "2026-11-25T19:25:54.564Z",
    "openingKey": "0/0/0"
   },
   {
@@ -18840,7 +18906,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:26.821Z",
+   "checkedAt": "2026-11-25T19:25:54.526Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19040,7 +19106,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.573Z",
+   "checkedAt": "2026-11-25T19:25:55.069Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20410,7 +20476,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.114Z",
+   "checkedAt": "2026-11-25T19:25:55.654Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20613,7 +20679,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.142Z",
+   "checkedAt": "2026-11-25T19:25:55.660Z",
    "openingKey": "0/0/0"
   },
   {
@@ -21261,7 +21327,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.865Z",
+   "checkedAt": "2026-11-25T19:25:55.413Z",
    "openingKey": "0/0/0"
   },
   {
@@ -23652,7 +23718,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.208Z",
+   "checkedAt": "2026-11-25T19:25:55.676Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24491,7 +24557,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.547Z",
+   "checkedAt": "2026-11-25T19:25:56.034Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24599,7 +24665,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.485Z",
+   "checkedAt": "2026-11-25T19:25:55.994Z",
    "openingKey": "0/0/0"
   },
   {
@@ -25010,7 +25076,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:27.088Z",
+   "checkedAt": "2026-11-25T19:25:54.706Z",
    "openingKey": "0/0/0"
   },
   {
@@ -27903,7 +27969,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.263Z",
+   "checkedAt": "2026-11-25T19:25:55.706Z",
    "openingKey": "0/0/0"
   },
   {
@@ -29472,7 +29538,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.753Z",
+   "checkedAt": "2026-11-25T19:25:56.234Z",
    "openingKey": "0/0/0"
   },
   {
@@ -31984,7 +32050,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:29.380Z",
+   "checkedAt": "2026-11-25T19:25:56.817Z",
    "openingKey": "0/0/0"
   },
   {
@@ -34504,7 +34570,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.949Z",
+   "checkedAt": "2026-11-25T19:25:56.408Z",
    "openingKey": "0/0/0"
   },
   {
@@ -34595,7 +34661,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:29.249Z",
+   "checkedAt": "2026-11-25T19:25:56.628Z",
    "openingKey": "0/0/0"
   },
   {
@@ -36229,7 +36295,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:29.069Z",
+   "checkedAt": "2026-11-25T19:25:56.449Z",
    "openingKey": "1/0/0"
   },
   {
@@ -37854,7 +37920,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-24T22:34:28.904Z",
+   "checkedAt": "2026-11-25T19:25:56.362Z",
    "openingKey": "0/0/0"
   },
   {
@@ -941255,7 +941321,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-25T08:49:16.357Z"
+   "checkedAt": "2026-11-25T19:25:51.675Z"
   }
  ]
 }

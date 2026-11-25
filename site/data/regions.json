@@ -12153,5 +12153,249 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01856878": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857050": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01856930": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857292": {
+  "regions": [
+   "경기"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01856869": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01856281": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065723&rfpOrd=000&rfpUntyAtchFileNo=4",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01856899": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01855547": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(수정).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065685&rfpOrd=000&rfpUntyAtchFileNo=2",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01856471": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서(2027년 연천군 통신시스템 통합유지관리).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065741&rfpOrd=000&rfpUntyAtchFileNo=3",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01857099": {
+  "regions": [
+   "충북"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857266": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857298": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857319": {
+  "regions": [
+   "경기"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01856580": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01856943": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857059": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857169": {
+  "regions": [
+   "경기"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "2",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "2",
+    "name": "소프트웨어사업자(패키지소프트웨어개발.공급사업)/1426"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
  }
 }
