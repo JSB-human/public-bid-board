@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T03:40:15.331Z",
+ "updatedAt": "2026-11-26T04:41:42.514Z",
  "source": "조달청 나라장터 입찰공고정보서비스",
  "items": [
   {
@@ -54008,6 +54008,387 @@
     "files": [
      "입찰공고문.pdf",
      "제안요청서(공고용).hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01857402",
+   "ord": "000",
+   "title": "2027년 노원구립도서관 정보시스템 통합유지관리",
+   "org": "노원문화재단 도서관기획실",
+   "amount": 199138182,
+   "deadline": "2026-12-10 10:00:00",
+   "posted": "2026-11-26 13:17:49",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01857402&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 221224270,
+    "regDeadline": "2026-12-09 18:00",
+    "bidBegin": "2026-12-08 10:00:00",
+    "opening": "2026-12-10 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "2027년_제안요청서_노원구립도서관정보시스템통합유지관리_최종.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064694&rfpOrd=000&rfpUntyAtchFileNo=11",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "물품공급및기술지원협약서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064694&rfpOrd=000&rfpUntyAtchFileNo=13",
+      "kind": "기타문서"
+     },
+     {
+      "name": "입찰공고서(지방_협상_1468+0036_공동_온서).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01857402&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "입찰공고서(지방_협상_1468+0036_공동_온서).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01857402&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "정보통신공사업/0036"
+    },
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "○ 전산시스템 및 부대장비 관리",
+     "- 각종 서버 : Windows, Linux계열 등의 각종 서버",
+     "- 주변 장비 : 스토리지, 백업, KVM 등의 각종 시스템 지원 장치",
+     "- 부대 장비 : 항온항습기, UPS등",
+     "- 보안 장비 : 방화벽, IPS, 웹방화벽, DB보안, 서버접근제어 등",
+     "- 네트워크 장비 : 백본스위치, 워크그룹스위치 등",
+     "- 시스템 S/W : Nutanix AHV, DBMS, 백업S/W 등 시스템 운영 S/W",
+     "- 도서정보관리 S/W 및 RFID 관련 장비",
+     "- 이용자관리 S/W",
+     "- 홈페이지 서비스 및 모바일시스템",
+     "○ 정기점검 및 장애 예방, 장애 조치",
+     "- 매월 정기 점검 실시 및 수시 점검",
+     "- 장애 예방 활동 및 장애 시 복구",
+     "○ 각종 기술 지원"
+    ],
+    "background": [
+     "○ 노원구립도서관의 주요 정보시스템에 대한 유지관리 사업을 통합하여 전문 업체에 일괄용역 함으로써 체계적 유지관리 기반 마련",
+     "○ 전산장비의 장애예방 강화 및 장애 발생 시 신속한 조치로 전산, 정보 시스템의 서비스 품질 제고",
+     "○ 전산시스템의 유지관리 체계를 통합ㆍ단일화하여 시스템 연계 및 통합 등에 신속하고 총괄적인 지원서비스를 마련하여 수준 높은 행정전산시스템 제공"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "2027. 1. 1. ~ 2027. 12. 31.",
+    "files": [
+     "입찰공고서(지방_협상_1468+0036_공동_온서).pdf",
+     "2027년_제안요청서_노원구립도서관정보시스템통합유지관리_최종.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01858540",
+   "ord": "000",
+   "title": "2027년 무선침입장지시스템 유지관리",
+   "org": "경찰청",
+   "amount": 37045454,
+   "deadline": "2026-12-07 10:00:00",
+   "posted": "2026-11-26 12:58:51",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01858540&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "경찰청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 40750000,
+    "regDeadline": "2026-12-06 18:00",
+    "bidBegin": "2026-12-03 10:00:00",
+    "opening": "2026-12-07 11:00:00",
+    "refNo": "2026110212449857",
+    "files": [
+     {
+      "name": "261110 무선침입방지시스템 유지관리 제안요청서(2027년)-제안요청서 추가 수정(나라장터 등록).hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065800&rfpOrd=000&rfpUntyAtchFileNo=1",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "261102 재공고서 2027년 무선침입방지시스템 유지관리 (시스템유지관리서비스_1468_중기간경쟁).hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858540&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "261102 재공고서 2027년 무선침입방지시스템 유지관리 (시스템유지관리서비스_1468_중기간경쟁).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858540&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "구 분 설 명 요구 사항수 유지관리 수행 사용자 만족도 향상을 위해 사업기간 중 각 업무 시스템 별 성능 향상 및 안정적 운영을 위한 유지관리 요구 사항 7 요구사항 [MPR] 유지관리 인력 사업 수행과 관련한 조직구성, 인력관리, 계약관리에 대한 요구사항 2 요구사항 [MHR] 품질 요구사항 [QUR] 사업 수행내용의 품질 향상과 관련한 요구사항 3 보안 요구사항 [SER] 사업수행 중 보안준수를 위한 요구사항 2 제약사항 [COR] 사전에 파악된 기술, 표준, 업무, 법제도 등과 관련된 제약조건 파악 3 프로젝트 관리 유지관리 사업의 성공적 수행을 위한 사업수행 요구사항 7 요구사항 [PMR] 프로젝트 지원 시스템 운영 및 유지관리에 필요한 교육 계획 등 지원 요구사항 2 요구사항 [PSR]",
+     "- 「소프트웨어사업 계약 및 관리감독에 관한 지침」의 별지 8호서식 참조"
+    ],
+    "background": [],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "정보시스템유지관리서비스",
+      "code": "8111189901"
+     }
+    ],
+    "period": "‘27. 1. 1. ~ ’27. 12. 31.",
+    "files": [
+     "261102 재공고서 2027년 무선침입방지시스템 유지관리 (시스템유지관리서비스_1468_중기간경쟁).pdf",
+     "261110 무선침입방지시스템 유지관리 제안요청서(2027년)-제안요청서 추가 수정(나라장터 등록).hwp"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01858112",
+   "ord": "000",
+   "title": "2027년 성별영향평가시스템(GIA) 운영 및 유지관리",
+   "org": "성평등가족부",
+   "amount": 100909091,
+   "deadline": "2026-12-09 10:00:00",
+   "posted": "2026-11-26 13:13:03",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01858112&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "detail": {
+    "category": [
+     "운영 및 유지관리",
+     "정보시스템유지관리서비스"
+    ],
+    "kind": "재공고",
+    "reNotice": true,
+    "noticeOrg": "조달청 서울지방조달청",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(전자)공동이행",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 112153600,
+    "regDeadline": "2026-12-08 18:00",
+    "bidBegin": "2026-12-07 10:00:00",
+    "opening": "2026-12-09 11:00:00",
+    "refNo": "",
+    "files": [
+     {
+      "name": "261111 제안요청서(2027년 성별영향평가시스템 운영 및 유지관리)-.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065783&rfpOrd=000&rfpUntyAtchFileNo=1",
+      "kind": "제안요청서"
+     },
+     {
+      "name": "261111 기술지원협약서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065783&rfpOrd=000&rfpUntyAtchFileNo=3",
+      "kind": "기타문서"
+     },
+     {
+      "name": "R26BK01858112-000 재공고서(국가+1468+중기간+공동+수평+유지관리+기술지원확약).hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858112&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "R26BK01858112-000 재공고서(국가+1468+중기간+공동+수평+유지관리+기술지원확약).pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858112&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "○ 지침 변경 사항 등 반영",
+     "○ GIA시스템 환경관리, 기능 개선, 시스템 관리현황 보고",
+     "○ 이용자 교육 및 매뉴얼 최신화",
+     "○ 기타(성평등족부에서 지시하는 업무 수행 등)"
+    ],
+    "background": [
+     "○ 성별영향평가(GIA)시스템의 유지관리, 보안강화 및 기능개선을 통해 성별영향평가 업무의 효율을 제고",
+     "○‘27년 성별영향평가 지침 개정 내용 및 이용자 요구사항 등을 반영하여 GIA시스템을 최적화함으로써 정보지원체계 내실화",
+     "○ 성별영향평가법 제18조 제2항(정보지원체계 구축·운영)에 따라 시스템 구축"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "12개월(2027.1.1.~2027.12.31.) *",
+    "files": [
+     "R26BK01858112-000 재공고서(국가+1468+중기간+공동+수평+유지관리+기술지원확약).pdf",
+     "261111 제안요청서(2027년 성별영향평가시스템 운영 및 유지관리)-.hwpx"
+    ],
+    "skipped": []
+   }
+  },
+  {
+   "id": "R26BK01858485",
+   "ord": "000",
+   "title": "연구비 통합모듈 연계 및 기능개선 고도화 용역",
+   "org": "재단법인 한국나노기술원",
+   "amount": 63854545,
+   "deadline": "2026-12-07 14:00:00",
+   "posted": "2026-11-26 13:11:22",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01858485&bidPbancOrd=000",
+   "keywords": [
+    "고도화"
+   ],
+   "detail": {
+    "category": [
+     "SW 및 시스템 개발",
+     "정보시스템개발서비스"
+    ],
+    "kind": "등록공고",
+    "reNotice": false,
+    "noticeOrg": "재단법인 한국나노기술원",
+    "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+    "bidMethod": "전자입찰",
+    "joint": "(없음)공동수급불허",
+    "techRate": 90,
+    "priceRate": 10,
+    "budget": 70240000,
+    "regDeadline": "2026-12-06 18:00",
+    "bidBegin": "2026-11-26 16:00:00",
+    "opening": "2026-12-07 15:00:00",
+    "refNo": "공고 제2026-44호",
+    "files": [
+     {
+      "name": "2 입찰공고문(연구비 통합몯퓰 연계 및 기능개선 고도화 용역) 최종.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=1&prcmBsneSeCd=03"
+     },
+     {
+      "name": "2 입찰공고문(연구비 통합몯퓰 연계 및 기능개선 고도화 용역) 최종.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=2&prcmBsneSeCd=03"
+     },
+     {
+      "name": "3 입찰 및 제안평가 안내_통합연구모듈 고도화1.0.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=3&prcmBsneSeCd=03"
+     },
+     {
+      "name": "4 제안요청서(과업지시서)_연구비 모듈 고도화1.1.hwpx",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=4&prcmBsneSeCd=03"
+     },
+     {
+      "name": "5-1 입찰관련서식.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=5&prcmBsneSeCd=03"
+     },
+     {
+      "name": "긴급입찰사유서_연구비통합모듈연계및기능개선.hwp",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=6&prcmBsneSeCd=03"
+     },
+     {
+      "name": "6-2 소프트웨어사업_영향평가_검토결과서_v1.0.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=7&prcmBsneSeCd=03"
+     },
+     {
+      "name": "소프트웨어개발사업 적정 사업기간 산정서.pdf",
+      "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadFile.do?bidPbancNo=R26BK01858485&bidPbancOrd=000&fileType=&fileSeq=8&prcmBsneSeCd=03"
+     }
+    ]
+   },
+   "regions": [],
+   "licenses": [
+    {
+     "group": "1",
+     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+    }
+   ],
+   "doc": {
+    "scope": [
+     "□ 연구비통합관리시스템 통합연계모듈 설치, 데이터 연계용 스키마 구성 및 인터페이스 테이블 구축",
+     "□ 연구비 연계 업무 통합 운영 환경 고도화",
+     "○ 과제정보 및 비목 매핑",
+     "○ 연구비 카드 정보 및 사용 내역",
+     "○ 집행내역 전송 처리 및 확인번호 송수신 관리",
+     "○ 집행내역 재처리 및 집행내역 모니터링 등",
+     "○ 증빙파일 송수신 관리",
+     "○ 연구비 사용 내역 송수신 관리",
+     "□ 연구 행정 데이터(PDF) 연계 최적화 및 PDF 파일 통합 관리체계 구축",
+     "○ 연구 행정 데이터(PDF)와 기 운영중인 기간계 시스템의 연계 최적화",
+     "○ PDF 변환 내역 및 재변환 기능 등 PDF파일 통합 관리체계"
+    ],
+    "background": [
+     "○ ’26년 말 통합Ezbaro·RCMS의 기존 연계 모듈 일몰에 따른 대응책 마련",
+     "○ 분산된 연구비 관리 시스템 (이지바로, RCMS)으로 인한 행정업무 중복 및 효율 저하 문제를 해소하기 위한 연구비 관리 창구 단일화 필요",
+     "- 현재 이지바로와 RCMS의 과제 정보, 집행 정보, 증빙 전송 등 개별 프로세스로 존재",
+     "- 이에 따라 데이터베이스, 사용자 인터페이스(UI), 업무 프로세스 등 통합 필요"
+    ],
+    "regionReq": [],
+    "regionEvidence": "",
+    "regionDuty": false,
+    "direct": [
+     {
+      "name": "직접생산확인 필요(품목은 원문 확인)",
+      "code": ""
+     }
+    ],
+    "period": "계약일로부터 3개월",
+    "files": [
+     "2 입찰공고문(연구비 통합몯퓰 연계 및 기능개선 고도화 용역) 최종.pdf",
+     "4 제안요청서(과업지시서)_연구비 모듈 고도화1.1.hwpx"
     ],
     "skipped": []
    }

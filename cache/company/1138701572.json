@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(유)시티지시스템",
+  "ceo": "백동오",
+  "opened": "2018-03-13",
+  "region": "인천광역시 계양구",
+  "address": "인천광역시 계양구 하느재로 14, 604호 (계산동, 나드리상가)",
+  "employees": 5,
+  "homepage": "http://ctgs.g2works.kr/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T04:44:40.636Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T04:44:40.978Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T04:44:40.978Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 아이피캠프 (IP Camp)",
+  "ceo": "석욱민",
+  "opened": "2018-04-16",
+  "region": "경상남도 사천시",
+  "address": "경상남도 사천시 용현면 선진공원길 102, 산학협동연구단지 208호",
+  "employees": 10,
+  "homepage": "www.ipcamp.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T04:44:26.835Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T04:44:27.185Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T04:44:27.185Z"
+ }
+}

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T03:41:29.175Z",
+ "updatedAt": "2026-11-26T04:42:54.859Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
@@ -22,9 +22,24 @@
    ],
    "reNotice": true,
    "regions": [],
-   "status": "개찰 전",
+   "status": "개찰완료",
    "final": false,
-   "checkedAt": "2026-11-26T03:41:28.125Z"
+   "checkedAt": "2026-11-26T04:42:54.840Z",
+   "openedAt": "2026-11-26 12:00:00",
+   "participants": 1,
+   "note": "전자시담 개찰완료",
+   "openingKey": "0/1/0",
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "주식회사 그렉터",
+     "bizno": "3448100364",
+     "ceo": "신동원",
+     "amount": 135498090,
+     "rate": 99.324,
+     "note": "정상"
+    }
+   ]
   },
   {
    "id": "R26BK01842381",
@@ -1343,7 +1358,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T03:41:28.911Z"
+   "checkedAt": "2026-11-26T04:42:54.422Z"
   },
   {
    "id": "R26BK01833786",
@@ -1843,7 +1858,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T03:41:28.714Z"
+   "checkedAt": "2026-11-26T04:42:54.429Z"
   },
   {
    "id": "R26BK01824094",
@@ -2031,7 +2046,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T03:41:28.519Z"
+   "checkedAt": "2026-11-26T04:42:54.443Z"
   },
   {
    "id": "R26BK01805039",
@@ -941638,7 +941653,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T03:41:28.319Z"
+   "checkedAt": "2026-11-26T04:42:54.409Z"
   }
  ]
 }

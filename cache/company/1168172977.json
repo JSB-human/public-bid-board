@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "딜로이트컨설팅유한회사",
+  "ceo": "이석장",
+  "opened": "1999-04-01",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 국제금융로 10-0  6층( 서울국제금융센터 원아이에프씨 빌딩 )",
+  "employees": 213,
+  "homepage": "https://www.deloitteconsulting.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T04:44:57.349Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T04:44:57.706Z"
+ },
+ "dart": {
+  "corpCode": "01537088",
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T04:44:58.987Z"
+ }
+}

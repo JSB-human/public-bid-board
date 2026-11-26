@@ -12685,5 +12685,83 @@
    }
   ],
   "eorder": []
+ },
+ "R26BK01857402": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "2027년_제안요청서_노원구립도서관정보시스템통합유지관리_최종.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064694&rfpOrd=000&rfpUntyAtchFileNo=11",
+    "kind": "제안요청서"
+   },
+   {
+    "name": "물품공급및기술지원협약서.pdf",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00064694&rfpOrd=000&rfpUntyAtchFileNo=13",
+    "kind": "기타문서"
+   }
+  ]
+ },
+ "R26BK01858540": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "261110 무선침입방지시스템 유지관리 제안요청서(2027년)-제안요청서 추가 수정(나라장터 등록).hwp",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065800&rfpOrd=000&rfpUntyAtchFileNo=1",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01858112": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "261111 제안요청서(2027년 성별영향평가시스템 운영 및 유지관리)-.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065783&rfpOrd=000&rfpUntyAtchFileNo=1",
+    "kind": "제안요청서"
+   },
+   {
+    "name": "261111 기술지원협약서.pdf",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065783&rfpOrd=000&rfpUntyAtchFileNo=3",
+    "kind": "기타문서"
+   }
+  ]
+ },
+ "R26BK01858485": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "4 제안요청서(과업지시서)_연구비 모듈 고도화1.1.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065797&rfpOrd=000&rfpUntyAtchFileNo=5",
+    "kind": "제안요청서"
+   }
+  ]
  }
 }

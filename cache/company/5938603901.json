@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)휴먼아이티코리아",
+  "ceo": "지미영",
+  "opened": "2025-02-05",
+  "region": "서울특별시 금천구 독산동",
+  "address": "서울특별시 금천구 벚꽃로 30 (독산동, 금천 롯데캐슬 골드파크 2차), 205동 1층 127호 A실",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T04:45:05.475Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T04:45:05.835Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T04:45:05.835Z"
+ }
+}
