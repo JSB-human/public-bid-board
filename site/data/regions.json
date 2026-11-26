@@ -10048,7 +10048,7 @@
   "eorder": [
    {
     "name": "[붙임2] 전통건축수리기술진흥재단 통합 업무시스템 구축 용역 제안요청서v3.hwp",
-    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065573&rfpOrd=000&rfpUntyAtchFileNo=3",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065786&rfpOrd=000&rfpUntyAtchFileNo=1",
     "kind": "제안요청서"
    }
   ]
@@ -12391,6 +12391,294 @@
     "group": "2",
     "name": "소프트웨어사업자(패키지소프트웨어개발.공급사업)/1426"
    },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01851028": {
+  "regions": [
+   "인천"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01855415": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01858117": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857573": {
+  "regions": [
+   "경남"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "긴급입찰 사유서(2027년 정보시스템 통합 유지관리 용역).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063947&rfpOrd=000&rfpUntyAtchFileNo=34",
+    "kind": "기타문서"
+   },
+   {
+    "name": "제안요청서(2027년 정보시스템 통합 유지관리 용역).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063947&rfpOrd=000&rfpUntyAtchFileNo=31",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01857612": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857616": {
+  "regions": [
+   "인천"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857479": {
+  "regions": [
+   "광주",
+   "전남"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063638&rfpOrd=000&rfpUntyAtchFileNo=7",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01857644": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01848678": {
+  "regions": [
+   "울산"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857636": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857812": {
+  "regions": [
+   "서울"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01857963": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "붙임4_1. 제안요청서.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065777&rfpOrd=000&rfpUntyAtchFileNo=2",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01858054": {
+  "regions": [
+   "경남"
+  ],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": []
+ },
+ "R26BK01839850": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "정보통신공사업/0036"
+   },
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "기술지원 협약서(2027년 무안청사 행정통신시스템 유지보수).pdf",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063375&rfpOrd=000&rfpUntyAtchFileNo=31",
+    "kind": "기타문서"
+   },
+   {
+    "name": "2027년 행정통신시스템 유지보수 용역 과업지시서-예산 확정 전.hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063375&rfpOrd=000&rfpUntyAtchFileNo=32",
+    "kind": "기타문서"
+   },
+   {
+    "name": "27년 무안청사 행정통신시스템 유지보수 용역 제안요청서(수정).hwpx",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00063375&rfpOrd=000&rfpUntyAtchFileNo=29",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01858067": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "[붙임2] 전통건축수리기술진흥재단 통합 업무시스템 구축 용역 제안요청서v3.hwp",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065782&rfpOrd=000&rfpUntyAtchFileNo=1",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01857967": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "4. 제안요청서(이집트 디지털 헤리티지 센터 자료관리 시스템 성능 개선).hwp",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065780&rfpOrd=000&rfpUntyAtchFileNo=1",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01857783": {
+  "regions": [],
+  "licenses": [
+   {
+    "group": "1",
+    "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
+   }
+  ],
+  "eorder": [
+   {
+    "name": "제안요청서_2027년 센터 홈페이지(모바일 앱) 유지관리 및 개발.hwp",
+    "url": "https://www.g2b.go.kr/pn/pnp/pnpe/UntyAtchFile/downloadRfpFile.do?rfpNo=R26DH00065768&rfpOrd=000&rfpUntyAtchFileNo=1",
+    "kind": "제안요청서"
+   }
+  ]
+ },
+ "R26BK01858135": {
+  "regions": [
+   "서울",
+   "인천",
+   "경기"
+  ],
+  "licenses": [
    {
     "group": "1",
     "name": "소프트웨어사업자(컴퓨터관련서비스사업)/1468"
