@@ -1,0 +1,29 @@
+{
+ "basic": {
+  "name": "주식회사 범산",
+  "ceo": "변동희",
+  "opened": "2008-08-20",
+  "region": "경기도 고양시 일산서구",
+  "address": "경기도 고양시 일산서구 일산로 662, 503호 (대화동, 하나로프라자)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T14:37:45.578Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 4,
+   "202512": 4
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T14:37:46.504Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T14:37:46.504Z"
+ }
+}

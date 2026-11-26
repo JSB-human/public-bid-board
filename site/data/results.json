@@ -1,7 +1,55 @@
 {
- "updatedAt": "2026-11-26T04:42:54.859Z",
+ "updatedAt": "2026-11-26T14:37:29.332Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
+  {
+   "id": "R26BK01859226",
+   "ord": "000",
+   "title": "외국인력상담센터 상담시스템 통합 유지관리 용역",
+   "org": "한국산업인력공단",
+   "amount": 63434518,
+   "deadline": "2026-11-26 16:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01859226&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "수의시담-수의시담",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-26T14:37:23.529Z"
+  },
+  {
+   "id": "R26BK01798220",
+   "ord": "001",
+   "title": "2027년도 내부 업무 통합시스템 유지관리",
+   "org": "지방공기업평가원",
+   "amount": 77640909,
+   "deadline": "2026-11-26 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01798220&bidPbancOrd=001",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-26T14:37:24.242Z"
+  },
   {
    "id": "R26BK01854528",
    "ord": "000",
@@ -1358,7 +1406,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T04:42:54.422Z"
+   "checkedAt": "2026-11-26T14:37:25.050Z"
   },
   {
    "id": "R26BK01833786",
@@ -1471,7 +1519,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:51.858Z",
+   "checkedAt": "2026-11-26T14:37:24.238Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "(주)서울정보시스템",
@@ -1858,7 +1906,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T04:42:54.429Z"
+   "checkedAt": "2026-11-26T14:37:23.712Z"
   },
   {
    "id": "R26BK01824094",
@@ -2009,7 +2057,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-16 18:30:00",
    "participants": 1,
-   "note": "전자시담 개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -2022,8 +2070,16 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:52.066Z",
-   "openingKey": "0/0/0"
+   "checkedAt": "2026-11-26T14:37:24.608Z",
+   "openingKey": "0/0/0",
+   "winner": {
+    "name": "주식회사 다비오",
+    "bizno": "1058768437",
+    "ceo": "박주흠",
+    "amount": 424710000,
+    "rate": 99.931,
+    "date": "2026-11-26"
+   }
   },
   {
    "id": "R26BK01823711",
@@ -2046,7 +2102,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T04:42:54.443Z"
+   "checkedAt": "2026-11-26T14:37:24.055Z"
   },
   {
    "id": "R26BK01805039",
@@ -2144,7 +2200,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:52.433Z",
+   "checkedAt": "2026-11-26T14:37:24.644Z",
    "openingKey": "0/1/0"
   },
   {
@@ -2285,7 +2341,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.063Z",
+   "checkedAt": "2026-11-26T14:37:25.420Z",
    "openingKey": "0/1/0"
   },
   {
@@ -2548,7 +2604,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-11 11:00:00",
    "participants": 2,
-   "note": "개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -2569,9 +2625,38 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-25T19:25:52.428Z",
-   "openingKey": "0/1/0"
+   "final": true,
+   "checkedAt": "2026-11-26T14:37:24.866Z",
+   "openingKey": "0/1/0",
+   "winner": {
+    "name": "주식회사 올포랜드",
+    "bizno": "4028162555",
+    "ceo": "김병기",
+    "amount": 123950000,
+    "rate": null,
+    "date": "2026-11-26"
+   },
+   "contract": {
+    "no": "R26TA0247307800",
+    "name": "(긴급)(협상)2027년 용인행정 디지털트윈 플랫폼 유지관리 용역",
+    "date": "2026-11-26",
+    "amount": 0,
+    "thisYear": 123950000,
+    "joint": false,
+    "method": "제한경쟁",
+    "reason": "중소벤처기업부장관이 지정 공고한 물품",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02473078&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "주식회사 올포랜드",
+      "ceo": "김병기",
+      "share": 100,
+      "bizno": "4028162555"
+     }
+    ]
+   }
   },
   {
    "id": "R26BK01795787",
@@ -2916,7 +3001,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:52.237Z",
+   "checkedAt": "2026-11-26T14:37:24.308Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3325,7 +3410,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:52.807Z",
+   "checkedAt": "2026-11-26T14:37:24.896Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3765,7 +3850,7 @@
     "date": "2026-11-13"
    },
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.535Z",
+   "checkedAt": "2026-11-26T14:37:25.796Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3959,7 +4044,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:52.670Z",
+   "checkedAt": "2026-11-26T14:37:24.829Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4042,7 +4127,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.406Z",
+   "checkedAt": "2026-11-26T14:37:25.640Z",
    "openingKey": "0/1/0"
   },
   {
@@ -4683,7 +4768,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:52.993Z",
+   "checkedAt": "2026-11-26T14:37:25.206Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4757,7 +4842,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.003Z",
+   "checkedAt": "2026-11-26T14:37:25.224Z",
    "openingKey": "1/0/0"
   },
   {
@@ -5422,7 +5507,7 @@
     "date": "2026-10-21"
    },
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.170Z",
+   "checkedAt": "2026-11-26T14:37:25.272Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5681,7 +5766,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.590Z",
+   "checkedAt": "2026-11-26T14:37:25.812Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6332,7 +6417,7 @@
     "date": "2026-11-09"
    },
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.359Z",
+   "checkedAt": "2026-11-26T14:37:25.586Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6543,7 +6628,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.622Z",
+   "checkedAt": "2026-11-26T14:37:25.863Z",
    "openingKey": "1/0/0"
   },
   {
@@ -8402,7 +8487,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.976Z",
+   "checkedAt": "2026-11-26T14:37:26.223Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8542,7 +8627,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.093Z",
+   "checkedAt": "2026-11-26T14:37:27.376Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9135,7 +9220,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.157Z",
+   "checkedAt": "2026-11-26T14:37:26.406Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9326,7 +9411,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.106Z",
+   "checkedAt": "2026-11-26T14:37:26.395Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9720,7 +9805,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:53.934Z",
+   "checkedAt": "2026-11-26T14:37:26.178Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11264,7 +11349,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.050Z",
+   "checkedAt": "2026-11-26T14:37:28.347Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11822,7 +11907,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.079Z",
+   "checkedAt": "2026-11-26T14:37:28.404Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12820,7 +12905,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.202Z",
+   "checkedAt": "2026-11-26T14:37:26.451Z",
    "openingKey": "0/0/0"
   },
   {
@@ -14142,7 +14227,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.137Z",
+   "checkedAt": "2026-11-26T14:37:27.434Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15302,7 +15387,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.471Z",
+   "checkedAt": "2026-11-26T14:37:26.779Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16033,7 +16118,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.334Z",
+   "checkedAt": "2026-11-26T14:37:26.602Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16439,7 +16524,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.509Z",
+   "checkedAt": "2026-11-26T14:37:26.781Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17219,7 +17304,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.949Z",
+   "checkedAt": "2026-11-26T14:37:29.314Z",
    "openingKey": "1/0/0"
   },
   {
@@ -17301,7 +17386,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.039Z",
+   "checkedAt": "2026-11-26T14:37:27.377Z",
    "openingKey": "0/0/0"
   },
   {
@@ -18017,7 +18102,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.073Z",
+   "checkedAt": "2026-11-26T14:37:27.369Z",
    "openingKey": "0/0/3"
   },
   {
@@ -19055,7 +19140,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.564Z",
+   "checkedAt": "2026-11-26T14:37:26.839Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19238,7 +19323,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.526Z",
+   "checkedAt": "2026-11-26T14:37:26.796Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19438,7 +19523,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.069Z",
+   "checkedAt": "2026-11-26T14:37:27.366Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20808,7 +20893,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.654Z",
+   "checkedAt": "2026-11-26T14:37:27.958Z",
    "openingKey": "0/0/0"
   },
   {
@@ -21011,7 +21096,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.660Z",
+   "checkedAt": "2026-11-26T14:37:27.957Z",
    "openingKey": "0/0/0"
   },
   {
@@ -21659,7 +21744,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.413Z",
+   "checkedAt": "2026-11-26T14:37:27.755Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24050,7 +24135,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.676Z",
+   "checkedAt": "2026-11-26T14:37:27.968Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24889,7 +24974,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.034Z",
+   "checkedAt": "2026-11-26T14:37:28.707Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24997,7 +25082,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.994Z",
+   "checkedAt": "2026-11-26T14:37:28.345Z",
    "openingKey": "0/0/0"
   },
   {
@@ -25408,7 +25493,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:54.706Z",
+   "checkedAt": "2026-11-26T14:37:26.982Z",
    "openingKey": "0/0/0"
   },
   {
@@ -28301,7 +28386,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:55.706Z",
+   "checkedAt": "2026-11-26T14:37:28.016Z",
    "openingKey": "0/0/0"
   },
   {
@@ -29870,7 +29955,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.234Z",
+   "checkedAt": "2026-11-26T14:37:28.545Z",
    "openingKey": "0/0/0"
   },
   {
@@ -32382,7 +32467,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.817Z",
+   "checkedAt": "2026-11-26T14:37:29.304Z",
    "openingKey": "0/0/0"
   },
   {
@@ -34902,7 +34987,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.408Z",
+   "checkedAt": "2026-11-26T14:37:28.725Z",
    "openingKey": "0/0/0"
   },
   {
@@ -34993,7 +35078,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.628Z",
+   "checkedAt": "2026-11-26T14:37:29.015Z",
    "openingKey": "0/0/0"
   },
   {
@@ -36627,7 +36712,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-25T19:25:56.449Z",
+   "checkedAt": "2026-11-26T14:37:28.922Z",
    "openingKey": "1/0/0"
   },
   {
@@ -38251,8 +38336,8 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-25T19:25:56.362Z",
+   "final": true,
+   "checkedAt": "2026-11-26T14:37:28.740Z",
    "openingKey": "0/0/0"
   },
   {
@@ -941653,7 +941738,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T04:42:54.409Z"
+   "checkedAt": "2026-11-26T14:37:24.056Z"
   }
  ]
 }

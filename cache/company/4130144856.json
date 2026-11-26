@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "고흥컴퓨터랜드",
+  "ceo": "이석래",
+  "opened": "1999-05-21",
+  "region": "전남광주통합특별시 고흥군",
+  "address": "전남광주통합특별시 고흥군 고흥읍 봉동주공길 12",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T14:39:40.871Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T14:39:41.248Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T14:39:41.248Z"
+ }
+}

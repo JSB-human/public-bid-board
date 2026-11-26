@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 알림시스템",
+  "ceo": "김현자",
+  "opened": "2005-08-09",
+  "region": "경기도 의왕시 이동",
+  "address": "경기도 의왕시 오봉산단1로 12, 705호(이동, 에이스하이테크비전21)",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T14:38:06.306Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T14:38:06.698Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T14:38:06.698Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 원포인트 듀오",
+  "ceo": "이인환",
+  "opened": "2014-08-14",
+  "region": "서울특별시 강북구",
+  "address": "서울특별시 강북구 덕릉로40길 74, 701호(번동, 강북전자공단)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,외자,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T14:37:35.015Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T14:37:35.405Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T14:37:35.405Z"
+ }
+}

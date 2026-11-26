@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "사단법인 한국사회적일자리협회",
+  "ceo": "조종민",
+  "opened": "2019-10-31",
+  "region": "경기도 안양시 동안구",
+  "address": "경기도 안양시 동안구 흥안대로427번길 57-2 (평촌동) 1층 124호",
+  "employees": 21,
+  "homepage": "www.kasj.or.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T14:38:25.986Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T14:38:26.369Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T14:38:26.369Z"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "주식회사 네오아리아",
+  "ceo": "김승현",
+  "opened": "2022-06-29",
+  "region": "서울특별시 서초구",
+  "address": "서울특별시 서초구 서초대로 275, 2층 202호 (서초동, 중앙빌딩)",
+  "employees": 12,
+  "homepage": "https://www.neoaria.io",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T14:39:28.721Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 3,
+   "202512": 3,
+   "202601": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T14:39:29.771Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T14:39:29.771Z"
+ }
+}
