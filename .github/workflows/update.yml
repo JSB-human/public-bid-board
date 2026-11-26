@@ -2,9 +2,10 @@ name: 공고 갱신 및 배포
 
 on:
   schedule:
-    # 3시간마다 17분 (한국시간 00·03·06·09·12·15·18·21시). GitHub 예약은 늦거나 건너뛰는 일이 잦아
-    # 횟수를 늘려 한 번 빠져도 다음 번에 메운다. 정각은 예약이 몰려 피한다.
-    - cron: '17 */3 * * *'
+    # GitHub 예약은 늦거나 건너뛰는 일이 잦다 (3시간마다로 걸어도 실제로는 하루 2~3번만 돌았다).
+    # 그래서 30분마다 두드리고, 아래 gate 작업이 마지막 갱신 후 2시간 반이 지났을 때만 통과시킨다.
+    # 결과적으로 3시간쯤마다 한 번 갱신된다. 정각은 예약이 몰려 피한다.
+    - cron: '17,47 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -19,7 +20,33 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # 예약 실행은 마지막 데이터 갱신 후 충분히 지났을 때만 통과시킨다. 직접 실행·푸시는 늘 통과.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.check.outputs.run }}
+    steps:
+      - id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MIN_GAP_MINUTES: 150
+        run: |
+          run=true
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            # 확인에 실패하면 건너뛰지 않고 갱신한다.
+            last=$(gh api "repos/${{ github.repository }}/commits?path=site/data/bids.json&per_page=1" --jq '.[0].commit.committer.date' || true)
+            if [ -n "$last" ] && [ "$last" != "null" ]; then
+              age=$(( ( $(date -u +%s) - $(date -u -d "$last" +%s) ) / 60 ))
+              echo "마지막 갱신: $last (${age}분 전)"
+              if [ "$age" -lt "$MIN_GAP_MINUTES" ]; then run=false; fi
+            fi
+          fi
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+          echo "갱신 실행: $run"
+
   update:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
