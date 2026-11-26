@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "한서전자",
+  "ceo": "김영옥",
+  "opened": "2000-01-20",
+  "region": "서울특별시 도봉구",
+  "address": "서울특별시 도봉구 도봉로180길 6-23, 상가동 2층 202호(도봉동, 동아에코빌아파트)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:27:46.017Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202603": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T23:27:46.585Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:27:46.585Z"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "이너큐브 주식회사",
+  "ceo": "박춘",
+  "opened": "2024-05-29",
+  "region": "서울특별시 서초구 양재동",
+  "address": "서울특별시 서초구 매헌로 16 (양재동) 하이브랜드 1310-1호",
+  "employees": 1,
+  "homepage": "www.innercube.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:25:39.687Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202512": 3,
+   "202601": 3,
+   "202602": 4
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T23:25:40.707Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:25:40.871Z"
+ }
+}

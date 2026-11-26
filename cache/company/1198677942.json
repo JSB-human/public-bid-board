@@ -1,0 +1,31 @@
+{
+ "basic": {
+  "name": "주식회사 에듀엠텍",
+  "ceo": "박형식",
+  "opened": "2013-10-08",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 벚꽃로 278-0 (가산동), 609-139호",
+  "employees": 10,
+  "homepage": "www.moreco.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:25:25.305Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 5,
+   "202512": 5,
+   "202601": 5,
+   "202602": 5
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T23:25:26.514Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:25:26.514Z"
+ }
+}

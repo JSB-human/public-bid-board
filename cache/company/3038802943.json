@@ -1,0 +1,33 @@
+{
+ "basic": {
+  "name": "주식회사 플러거",
+  "ceo": "김서연",
+  "opened": "2023-09-04",
+  "region": "서울특별시 구로구 구로동",
+  "address": "서울특별시 구로구 디지털로 243 (구로동) 지하이시티 507호",
+  "employees": 1,
+  "homepage": "www.pluger.net",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:26:37.966Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 5,
+   "202512": 6,
+   "202601": 6,
+   "202602": 6,
+   "202603": 6,
+   "202604": 9
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T23:26:40.271Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:26:40.271Z"
+ }
+}

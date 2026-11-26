@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 에이코드",
+  "ceo": "정석원",
+  "opened": "2019-09-03",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 가산디지털1로 142, 더스카이밸리1차 308호(가산동)",
+  "employees": 6,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:26:40.460Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T23:26:40.860Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:26:40.860Z"
+ }
+}

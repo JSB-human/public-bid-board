@@ -1,0 +1,30 @@
+{
+ "basic": {
+  "name": "에스엘티(주)",
+  "ceo": "서진영",
+  "opened": "2021-02-24",
+  "region": "경기도 성남시 분당구",
+  "address": "경기도 성남시 분당구 장미로86번길 6, 5층 (야탑동)",
+  "employees": 4,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:27:04.975Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 5,
+   "202512": 5,
+   "202604": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T23:27:06.361Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:27:06.852Z"
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "(주)월드정보기술",
+  "ceo": "최동열",
+  "opened": "2004-01-01",
+  "region": "경상북도 경산시",
+  "address": "경상북도 경산시 대학로8길 21, 4층(정평동)",
+  "employees": 4,
+  "homepage": "www.worldit.co.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:25:54.622Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202601": 0
+  },
+  "found": true,
+  "fetchedAt": "2026-11-26T23:25:55.226Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:25:55.226Z"
+ }
+}

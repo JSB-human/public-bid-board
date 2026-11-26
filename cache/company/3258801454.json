@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 리얼인벤션",
+  "ceo": "이기용",
+  "opened": "2019-09-03",
+  "region": "서울특별시 관악구",
+  "address": "서울특별시 관악구 쑥고개로 67-1 (봉천동) 3층",
+  "employees": 3,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:26:34.347Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T23:26:34.733Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:26:34.733Z"
+ }
+}

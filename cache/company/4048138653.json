@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "유한회사 가온정보통신",
+  "ceo": "라세현",
+  "opened": "2012-02-10",
+  "region": "전북특별자치도 정읍시",
+  "address": "전북특별자치도 정읍시 수성6로 48 (수성동)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:27:25.944Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T23:27:26.327Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:27:26.327Z"
+ }
+}

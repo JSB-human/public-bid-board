@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "유한회사 아홉",
+  "ceo": "김연우",
+  "opened": "2003-07-31",
+  "region": "서울특별시 중구",
+  "address": "서울특별시 중구 퇴계로22길 11-8 (남산동3가, 프린스호텔별관)",
+  "employees": 33,
+  "homepage": "www.ahope.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:26:27.892Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T23:26:28.279Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:26:28.279Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 디에스 이앤티",
+  "ceo": "양종만",
+  "opened": "1997-11-01",
+  "region": "서울특별시 영등포구 문래동5가",
+  "address": "서울특별시 영등포구 선유로3길 10, 409호(문래동 5가, 하우스디 비즈)",
+  "employees": 80,
+  "homepage": "www.daesungtel.net",
+  "kinds": "물품,외자,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:25:18.249Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T23:25:18.634Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:25:18.634Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "힐탑아이씨티",
+  "ceo": "정강준",
+  "opened": "2024-03-05",
+  "region": "서울특별시 구로구",
+  "address": "서울특별시 구로구 디지털로31길 62, 905호(구로동, 아티스포럼)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-26T23:27:04.427Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-26T23:27:04.792Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-26T23:27:04.792Z"
+ }
+}
