@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "한다글다글",
+  "ceo": "안성범",
+  "opened": "2024-04-03",
+  "region": "서울특별시 강남구 역삼동",
+  "address": "서울특별시 강남구 논현로98길 28 (역삼동) 1층 6호",
+  "employees": 5,
+  "homepage": "https://daggle.io",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T23:52:00.157Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T23:52:00.525Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T23:52:00.525Z"
+ }
+}

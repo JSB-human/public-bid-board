@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 수성이앤씨건축사사무소",
+  "ceo": "염용규",
+  "opened": "2015-11-06",
+  "region": "충청남도 예산군",
+  "address": "충청남도 예산군 예산읍 충서로 760-0, 2층",
+  "employees": 106,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T23:51:42.995Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T23:51:43.375Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T23:51:43.375Z"
+ }
+}

@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-27T15:43:44.303Z",
+ "updatedAt": "2026-11-27T23:49:54.873Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
@@ -111,7 +111,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.221Z"
+   "checkedAt": "2026-11-27T23:49:49.436Z"
   },
   {
    "id": "R26BK01833109",
@@ -134,7 +134,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.298Z"
+   "checkedAt": "2026-11-27T23:49:49.461Z"
   },
   {
    "id": "R26BK01831434",
@@ -213,7 +213,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.012Z"
+   "checkedAt": "2026-11-27T23:49:49.987Z"
   },
   {
    "id": "R26BK01834163",
@@ -294,7 +294,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.155Z"
+   "checkedAt": "2026-11-27T23:49:49.282Z"
   },
   {
    "id": "R26BK01832895",
@@ -318,7 +318,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.333Z"
+   "checkedAt": "2026-11-27T23:49:49.485Z"
   },
   {
    "id": "R26BK01832192",
@@ -342,7 +342,34 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.576Z"
+   "checkedAt": "2026-11-27T23:49:49.789Z"
+  },
+  {
+   "id": "R26BK01847867",
+   "ord": "000",
+   "title": "2027년 함안군 스마트 행복한 동행 경로당 유지관리 용역",
+   "org": "경상남도 함안군",
+   "amount": 40986364,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847867&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "award": "소액수의견적-소액수의견적(2인 이상 견적 제출)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 16:00:00",
+   "participants": 0,
+   "note": "무응찰",
+   "final": true,
+   "checkedAt": "2026-11-27T23:49:49.105Z",
+   "openingKey": "0/0/1"
   },
   {
    "id": "R26BK01832101",
@@ -361,7 +388,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.688Z"
+   "checkedAt": "2026-11-27T23:49:49.811Z"
   },
   {
    "id": "R26BK01832013",
@@ -412,7 +439,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.397Z"
+   "checkedAt": "2026-11-27T23:49:49.611Z"
   },
   {
    "id": "R26BK01831202",
@@ -435,7 +462,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.904Z"
+   "checkedAt": "2026-11-27T23:49:49.973Z"
   },
   {
    "id": "R26BK01848308",
@@ -505,7 +532,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.529Z"
+   "checkedAt": "2026-11-27T23:49:49.307Z"
   },
   {
    "id": "R26BK01847935",
@@ -533,33 +560,6 @@
    "openingKey": "0/0/0",
    "final": true,
    "checkedAt": "2026-11-27T05:29:01.301Z"
-  },
-  {
-   "id": "R26BK01847867",
-   "ord": "000",
-   "title": "2027년 함안군 스마트 행복한 동행 경로당 유지관리 용역",
-   "org": "경상남도 함안군",
-   "amount": 40986364,
-   "deadline": "2026-11-27 10:00:00",
-   "method": "수의계약",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847867&bidPbancOrd=000",
-   "keywords": [
-    "유지관리"
-   ],
-   "award": "소액수의견적-소액수의견적(2인 이상 견적 제출)",
-   "category": [
-    "운영 및 유지관리",
-    "정보시스템유지관리서비스"
-   ],
-   "reNotice": false,
-   "regions": [],
-   "status": "재입찰",
-   "openedAt": "2026-11-27 11:00:00",
-   "participants": 0,
-   "note": "단독응찰",
-   "openingKey": "0/0/0",
-   "final": false,
-   "checkedAt": "2026-11-27T05:29:01.473Z"
   },
   {
    "id": "R26BK01833650",
@@ -666,7 +666,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:42.942Z"
+   "checkedAt": "2026-11-27T23:49:49.261Z"
   },
   {
    "id": "R26BK01832720",
@@ -690,7 +690,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.644Z"
+   "checkedAt": "2026-11-27T23:49:49.549Z"
   },
   {
    "id": "R26BK01832572",
@@ -714,7 +714,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.477Z"
+   "checkedAt": "2026-11-27T23:49:49.636Z"
   },
   {
    "id": "R26BK01832549",
@@ -738,7 +738,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.509Z"
+   "checkedAt": "2026-11-27T23:49:49.663Z"
   },
   {
    "id": "R26BK01832535",
@@ -762,7 +762,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.548Z"
+   "checkedAt": "2026-11-27T23:49:49.728Z"
   },
   {
    "id": "R26BK01832175",
@@ -787,7 +787,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.655Z"
+   "checkedAt": "2026-11-27T23:49:49.795Z"
   },
   {
    "id": "R26BK01831566",
@@ -811,7 +811,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.756Z"
+   "checkedAt": "2026-11-27T23:49:49.843Z"
   },
   {
    "id": "R26BK01831522",
@@ -836,7 +836,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.822Z"
+   "checkedAt": "2026-11-27T23:49:49.902Z"
   },
   {
    "id": "R26BK01831347",
@@ -859,7 +859,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.867Z"
+   "checkedAt": "2026-11-27T23:49:49.969Z"
   },
   {
    "id": "R26BK01813480",
@@ -883,7 +883,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.224Z"
+   "checkedAt": "2026-11-27T23:49:50.164Z"
   },
   {
    "id": "R26BK01798220",
@@ -2345,7 +2345,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.292Z"
+   "checkedAt": "2026-11-27T23:49:50.911Z"
   },
   {
    "id": "R26BK01833786",
@@ -2458,7 +2458,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.319Z",
+   "checkedAt": "2026-11-27T23:49:50.209Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "(주)서울정보시스템",
@@ -2845,7 +2845,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.225Z"
+   "checkedAt": "2026-11-27T23:49:50.255Z"
   },
   {
    "id": "R26BK01824094",
@@ -3009,7 +3009,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.693Z",
+   "checkedAt": "2026-11-27T23:49:49.620Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "주식회사 다비오",
@@ -3041,7 +3041,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.113Z"
+   "checkedAt": "2026-11-27T23:49:50.152Z"
   },
   {
    "id": "R26BK01805039",
@@ -3139,7 +3139,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.928Z",
+   "checkedAt": "2026-11-27T23:49:50.713Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3280,7 +3280,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.548Z",
+   "checkedAt": "2026-11-27T23:49:51.297Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3940,7 +3940,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.746Z",
+   "checkedAt": "2026-11-27T23:49:50.732Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4349,7 +4349,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.961Z",
+   "checkedAt": "2026-11-27T23:49:50.779Z",
    "openingKey": "0/1/0"
   },
   {
@@ -4789,7 +4789,7 @@
     "date": "2026-11-13"
    },
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.009Z",
+   "checkedAt": "2026-11-27T23:49:51.584Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4983,7 +4983,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.316Z",
+   "checkedAt": "2026-11-27T23:49:50.735Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5736,7 +5736,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.123Z",
+   "checkedAt": "2026-11-27T23:49:50.830Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5810,7 +5810,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.362Z",
+   "checkedAt": "2026-11-27T23:49:51.284Z",
    "openingKey": "1/0/0"
   },
   {
@@ -6475,7 +6475,7 @@
     "date": "2026-10-21"
    },
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.522Z",
+   "checkedAt": "2026-11-27T23:49:51.146Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6734,7 +6734,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.986Z",
+   "checkedAt": "2026-11-27T23:49:51.485Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7385,7 +7385,7 @@
     "date": "2026-11-09"
    },
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.733Z",
+   "checkedAt": "2026-11-27T23:49:51.210Z",
    "openingKey": "0/0/0"
   },
   {
@@ -7596,7 +7596,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.143Z",
+   "checkedAt": "2026-11-27T23:49:51.720Z",
    "openingKey": "1/0/0"
   },
   {
@@ -9455,7 +9455,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.456Z",
+   "checkedAt": "2026-11-27T23:49:51.866Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9595,7 +9595,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.641Z",
+   "checkedAt": "2026-11-27T23:49:53.126Z",
    "openingKey": "0/0/0"
   },
   {
@@ -10188,7 +10188,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.612Z",
+   "checkedAt": "2026-11-27T23:49:52.164Z",
    "openingKey": "0/0/0"
   },
   {
@@ -10379,7 +10379,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.637Z",
+   "checkedAt": "2026-11-27T23:49:51.866Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "주식회사 하이퍼로직",
@@ -10781,7 +10781,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.374Z",
+   "checkedAt": "2026-11-27T23:49:51.857Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12325,7 +12325,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.658Z",
+   "checkedAt": "2026-11-27T23:49:54.154Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12883,7 +12883,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.719Z",
+   "checkedAt": "2026-11-27T23:49:54.259Z",
    "openingKey": "0/0/0"
   },
   {
@@ -13881,7 +13881,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.763Z",
+   "checkedAt": "2026-11-27T23:49:52.301Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15203,7 +15203,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.751Z",
+   "checkedAt": "2026-11-27T23:49:53.206Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16363,7 +16363,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.995Z",
+   "checkedAt": "2026-11-27T23:49:52.244Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17094,7 +17094,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:04.846Z",
+   "checkedAt": "2026-11-27T23:49:52.239Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17500,7 +17500,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.003Z",
+   "checkedAt": "2026-11-27T23:49:52.437Z",
    "openingKey": "0/0/0"
   },
   {
@@ -18280,7 +18280,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:07.430Z",
+   "checkedAt": "2026-11-27T23:49:54.850Z",
    "openingKey": "1/0/0"
   },
   {
@@ -18362,7 +18362,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.598Z",
+   "checkedAt": "2026-11-27T23:49:52.895Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19078,7 +19078,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.623Z",
+   "checkedAt": "2026-11-27T23:49:53.524Z",
    "openingKey": "0/0/3"
   },
   {
@@ -20116,7 +20116,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.149Z",
+   "checkedAt": "2026-11-27T23:49:52.623Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20299,7 +20299,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.032Z",
+   "checkedAt": "2026-11-27T23:49:52.550Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20499,7 +20499,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.645Z",
+   "checkedAt": "2026-11-27T23:49:53.065Z",
    "openingKey": "0/0/0"
   },
   {
@@ -21869,7 +21869,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.238Z",
+   "checkedAt": "2026-11-27T23:49:53.704Z",
    "openingKey": "0/0/0"
   },
   {
@@ -22072,7 +22072,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.227Z",
+   "checkedAt": "2026-11-27T23:49:53.648Z",
    "openingKey": "0/0/0"
   },
   {
@@ -22720,7 +22720,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.986Z",
+   "checkedAt": "2026-11-27T23:49:53.282Z",
    "openingKey": "0/0/0"
   },
   {
@@ -25111,7 +25111,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.256Z",
+   "checkedAt": "2026-11-27T23:49:53.781Z",
    "openingKey": "0/0/0"
   },
   {
@@ -25950,7 +25950,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.626Z",
+   "checkedAt": "2026-11-27T23:49:54.085Z",
    "openingKey": "0/0/0"
   },
   {
@@ -26058,7 +26058,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.580Z",
+   "checkedAt": "2026-11-27T23:49:54.092Z",
    "openingKey": "0/0/0"
   },
   {
@@ -26469,7 +26469,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:05.241Z",
+   "checkedAt": "2026-11-27T23:49:52.696Z",
    "openingKey": "0/0/0"
   },
   {
@@ -29362,7 +29362,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.342Z",
+   "checkedAt": "2026-11-27T23:49:53.891Z",
    "openingKey": "0/0/0"
   },
   {
@@ -30931,7 +30931,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.835Z",
+   "checkedAt": "2026-11-27T23:49:54.222Z",
    "openingKey": "0/0/0"
   },
   {
@@ -33443,7 +33443,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:07.329Z",
+   "checkedAt": "2026-11-27T23:49:54.810Z",
    "openingKey": "0/0/0"
   },
   {
@@ -35963,7 +35963,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:06.965Z",
+   "checkedAt": "2026-11-27T23:49:54.456Z",
    "openingKey": "0/0/0"
   },
   {
@@ -36054,7 +36054,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:07.219Z",
+   "checkedAt": "2026-11-27T23:49:54.669Z",
    "openingKey": "0/0/0"
   },
   {
@@ -37688,7 +37688,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-27T05:29:07.060Z",
+   "checkedAt": "2026-11-27T23:49:54.528Z",
    "openingKey": "1/0/0"
   },
   {
@@ -942714,7 +942714,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.045Z"
+   "checkedAt": "2026-11-27T23:49:50.079Z"
   },
   {
    "id": "R26BK01834284",
@@ -942737,7 +942737,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:42.583Z"
+   "checkedAt": "2026-11-27T23:49:49.373Z"
   },
   {
    "id": "R26BK01833571",
@@ -942759,7 +942759,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:43.123Z"
+   "checkedAt": "2026-11-27T23:49:49.259Z"
   },
   {
    "id": "R26BK01825885",
@@ -942781,7 +942781,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T15:43:44.136Z"
+   "checkedAt": "2026-11-27T23:49:50.149Z"
   }
  ]
 }

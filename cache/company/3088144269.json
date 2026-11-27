@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 도우텍",
+  "ceo": "양유리",
+  "opened": "2016-02-29",
+  "region": "서울특별시 영등포구",
+  "address": "서울특별시 영등포구 당산로41길 11, E동 912호 (당산동4가, 당산 SK V1 센터)",
+  "employees": 1,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T23:52:11.633Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T23:52:12.037Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T23:52:12.037Z"
+ }
+}
