@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "케이플",
+  "ceo": "김용찬",
+  "opened": "2016-11-08",
+  "region": "서울특별시 마포구 서교동",
+  "address": "서울특별시 마포구 양화로 85 (서교동), 9층",
+  "employees": 9,
+  "homepage": "https://kayple.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T05:30:42.269Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T05:30:42.679Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T05:30:42.679Z"
+ }
+}

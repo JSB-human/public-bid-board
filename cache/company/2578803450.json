@@ -1,0 +1,33 @@
+{
+ "basic": {
+  "name": "주식회사 디컴소프트",
+  "ceo": "김영철",
+  "opened": "2025-11-10",
+  "region": "경상남도 진주시 망경동",
+  "address": "경상남도 진주시 망경남길44번길 22 (망경동) 609호",
+  "employees": 4,
+  "homepage": "decomsoft.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T05:30:33.386Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202605": 4,
+   "202606": 4,
+   "202607": 3,
+   "202608": 3,
+   "202609": 3,
+   "202610": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-27T05:30:35.015Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T05:30:35.015Z"
+ }
+}

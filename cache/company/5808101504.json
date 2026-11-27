@@ -1,0 +1,28 @@
+{
+ "basic": {
+  "name": "주식회사 천아티엔엠",
+  "ceo": "문지연",
+  "opened": "2019-08-01",
+  "region": "경기도 군포시",
+  "address": "경기도 군포시 산본로 362-0 (산본동)",
+  "employees": 6,
+  "homepage": "wallpad.kr",
+  "kinds": "물품,일반용역,용역,공사",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T05:29:09.825Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-27T05:29:10.971Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T05:29:10.971Z"
+ }
+}

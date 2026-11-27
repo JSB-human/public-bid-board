@@ -1,7 +1,553 @@
 {
- "updatedAt": "2026-11-26T23:24:55.599Z",
+ "updatedAt": "2026-11-27T05:29:07.454Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
+  {
+   "id": "R26BK01832672",
+   "ord": "000",
+   "title": "2027년 기후예측분야 연구개발 협업 클라우드서버 유지관리 용역",
+   "org": "기상청 국립기상과학원",
+   "amount": 62727273,
+   "deadline": "2026-11-27 14:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832672&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.683Z"
+  },
+  {
+   "id": "R26BK01832013",
+   "ord": "000",
+   "title": "2027년 예산재무회계시스템(ERP) 유지관리 용역",
+   "org": "영화진흥위원회",
+   "amount": 54520878,
+   "deadline": "2026-11-27 14:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832013&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.881Z"
+  },
+  {
+   "id": "R26BK01831202",
+   "ord": "000",
+   "title": "2027년 기후시민회의 웹페이지 유지보수 및 운영",
+   "org": "국무조정실",
+   "amount": 81818182,
+   "deadline": "2026-11-27 14:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831202&bidPbancOrd=000",
+   "keywords": [
+    "웹"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:02.064Z"
+  },
+  {
+   "id": "R26BK01848308",
+   "ord": "000",
+   "title": "2027년 공사장소음 모니터링시스템 유지관리 용역",
+   "org": "서울특별시 보건환경연구원",
+   "amount": 54550218,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01848308&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "소액수의견적-소액수의견적(2인 이상 견적 제출)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [
+    "서울",
+    "경기"
+   ],
+   "status": "유찰",
+   "openedAt": "2026-11-27 13:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:01.298Z"
+  },
+  {
+   "id": "R26BK01858113",
+   "ord": "000",
+   "title": "2027년 시뮬레이션시스템 유지관리 용역",
+   "org": "해양경찰청 해양경찰교육원",
+   "amount": 157308182,
+   "deadline": "2026-11-27 11:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01858113&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "수의시담-일반경쟁->수의",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰완료",
+   "openedAt": "2026-11-27 12:00:00",
+   "participants": 1,
+   "note": "전자시담 개찰완료",
+   "openingKey": "0/1/0",
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "마린전자상사",
+     "bizno": "6021565031",
+     "ceo": "김광식",
+     "amount": 169000000,
+     "rate": 99.659,
+     "note": "정상"
+    }
+   ],
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.529Z"
+  },
+  {
+   "id": "R26BK01847935",
+   "ord": "000",
+   "title": "2027년 인천광역시의회 전자회의시스템 유지보수 용역",
+   "org": "인천광역시 의회사무처",
+   "amount": 37165455,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847935&bidPbancOrd=000",
+   "keywords": [
+    "시스템"
+   ],
+   "award": "소액수의견적-소액수의견적(2인 이상 견적 제출)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 11:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:01.301Z"
+  },
+  {
+   "id": "R26BK01847867",
+   "ord": "000",
+   "title": "2027년 함안군 스마트 행복한 동행 경로당 유지관리 용역",
+   "org": "경상남도 함안군",
+   "amount": 40986364,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "수의계약",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01847867&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "award": "소액수의견적-소액수의견적(2인 이상 견적 제출)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "재입찰",
+   "openedAt": "2026-11-27 11:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.473Z"
+  },
+  {
+   "id": "R26BK01833650",
+   "ord": "000",
+   "title": "2027년 한국기상산업기술원 정보시스템 통합 유지보수(재공고)",
+   "org": "한국기상산업기술원",
+   "amount": 453412727,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833650&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 11:00:00",
+   "participants": 0,
+   "note": "단일응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:01.491Z"
+  },
+  {
+   "id": "R26BK01833168",
+   "ord": "000",
+   "title": "2027년도 온라인투표시스템 위탁운영 사업",
+   "org": "중앙선거관리위원회",
+   "amount": 460000000,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833168&bidPbancOrd=000",
+   "keywords": [
+    "시스템"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 11:00:00",
+   "participants": 0,
+   "note": "단일응찰",
+   "openingKey": "0/1/0",
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:01.506Z"
+  },
+  {
+   "id": "R26BK01830867",
+   "ord": "000",
+   "title": "2027년 IUU어업 공동단속시스템 유지보수 용역",
+   "org": "해양수산부 서해어업관리단",
+   "amount": 90836364,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830867&bidPbancOrd=000",
+   "keywords": [
+    "시스템"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 11:00:00",
+   "participants": 0,
+   "note": "단독응찰로 인한 유찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:02.077Z"
+  },
+  {
+   "id": "R26BK01834180",
+   "ord": "000",
+   "title": "2027년도 평택시 버스정보시스템(BIS) 유지관리 용역(협상에 의한 계약)",
+   "org": "경기도 평택시",
+   "amount": 352489091,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834180&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.315Z"
+  },
+  {
+   "id": "R26BK01832720",
+   "ord": "000",
+   "title": "차세대자격정보시스템 구축에 따른 CBT정보시스템 연계 개선 사업",
+   "org": "한국산업인력공단",
+   "amount": 90701818,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832720&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "SW 및 시스템 개발",
+    "정보시스템개발서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.670Z"
+  },
+  {
+   "id": "R26BK01832572",
+   "ord": "000",
+   "title": "2027년 연구용 기상관측자료 통합관리시스템 운용지원 용역",
+   "org": "기상청 국립기상과학원",
+   "amount": 72727273,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832572&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "통합관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.697Z"
+  },
+  {
+   "id": "R26BK01832549",
+   "ord": "000",
+   "title": "2027년 경찰청 고객만족 모니터센터 업무시스템 유지관리",
+   "org": "경찰청",
+   "amount": 30000000,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832549&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.716Z"
+  },
+  {
+   "id": "R26BK01832535",
+   "ord": "000",
+   "title": "자격정보 DB표준화에 따른 통합출제시스템 연계기능 개선사업",
+   "org": "한국산업인력공단",
+   "amount": 181726364,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832535&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "DB"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "SW 및 시스템 개발",
+    "정보시스템개발서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.858Z"
+  },
+  {
+   "id": "R26BK01832175",
+   "ord": "000",
+   "title": "2027년 공간정보 품질관리시스템 운영 및 유지관리",
+   "org": "한국국토정보공사",
+   "amount": 136818182,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832175&bidPbancOrd=000",
+   "keywords": [
+    "공간정보",
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.874Z"
+  },
+  {
+   "id": "R26BK01831566",
+   "ord": "000",
+   "title": "2027~2028년도 출제관리종합시스템 유지관리 사업",
+   "org": "인사혁신처",
+   "amount": 90829091,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831566&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.882Z"
+  },
+  {
+   "id": "R26BK01831522",
+   "ord": "000",
+   "title": "개인정보 유출사고 조사를 위한 디지털 포렌식 SW 유지관리 용역",
+   "org": "개인정보보호위원회",
+   "amount": 272727273,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831522&bidPbancOrd=000",
+   "keywords": [
+    "SW",
+    "유지관리",
+    "디지털"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:01.903Z"
+  },
+  {
+   "id": "R26BK01831347",
+   "ord": "000",
+   "title": "2026년 충남 지역주도형 AI대전환 사업 - 대시보드 구축 용역",
+   "org": "(주)지에스티",
+   "amount": 70000000,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "일반경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831347&bidPbancOrd=000",
+   "keywords": [
+    "AI"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "SW 및 시스템 개발",
+    "정보시스템개발서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:02.046Z"
+  },
+  {
+   "id": "R26BK01813480",
+   "ord": "001",
+   "title": "2027년 양평군 정보시스템 통합유지보수 용역",
+   "org": "경기도 양평군",
+   "amount": 908062727,
+   "deadline": "2026-11-27 10:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01813480&bidPbancOrd=001",
+   "keywords": [
+    "정보시스템",
+    "시스템"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T05:29:02.258Z"
+  },
+  {
+   "id": "R26BK01798220",
+   "ord": "001",
+   "title": "2027년도 내부 업무 통합시스템 유지관리",
+   "org": "지방공기업평가원",
+   "amount": 77640909,
+   "deadline": "2026-11-26 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01798220&bidPbancOrd=001",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "유찰",
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:02.493Z",
+   "openedAt": "2026-11-26 17:00:00",
+   "participants": 0,
+   "note": "1개 업체 단독 응찰",
+   "openingKey": "1/0/0"
+  },
   {
    "id": "R26BK01859226",
    "ord": "000",
@@ -24,31 +570,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T23:24:54.988Z"
-  },
-  {
-   "id": "R26BK01798220",
-   "ord": "001",
-   "title": "2027년도 내부 업무 통합시스템 유지관리",
-   "org": "지방공기업평가원",
-   "amount": 77640909,
-   "deadline": "2026-11-26 16:00:00",
-   "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01798220&bidPbancOrd=001",
-   "keywords": [
-    "시스템",
-    "유지관리"
-   ],
-   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
-   "category": [
-    "운영 및 유지관리",
-    "정보시스템유지관리서비스"
-   ],
-   "reNotice": false,
-   "regions": [],
-   "status": "개찰 전",
-   "final": false,
-   "checkedAt": "2026-11-26T23:24:55.567Z"
+   "checkedAt": "2026-11-27T05:29:01.115Z"
   },
   {
    "id": "R26BK01854528",
@@ -1406,7 +1928,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.577Z"
+   "checkedAt": "2026-11-27T05:29:03.154Z"
   },
   {
    "id": "R26BK01833786",
@@ -1519,7 +2041,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:24.238Z",
+   "checkedAt": "2026-11-27T05:29:02.319Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "(주)서울정보시스템",
@@ -1906,7 +2428,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.555Z"
+   "checkedAt": "2026-11-27T05:29:02.317Z"
   },
   {
    "id": "R26BK01824094",
@@ -2070,7 +2592,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:24.608Z",
+   "checkedAt": "2026-11-27T05:29:01.693Z",
    "openingKey": "0/0/0",
    "winner": {
     "name": "주식회사 다비오",
@@ -2102,7 +2624,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.577Z"
+   "checkedAt": "2026-11-27T05:29:02.246Z"
   },
   {
    "id": "R26BK01805039",
@@ -2200,7 +2722,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:24.644Z",
+   "checkedAt": "2026-11-27T05:29:02.928Z",
    "openingKey": "0/1/0"
   },
   {
@@ -2341,7 +2863,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.420Z",
+   "checkedAt": "2026-11-27T05:29:03.548Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3001,7 +3523,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:24.308Z",
+   "checkedAt": "2026-11-27T05:29:02.746Z",
    "openingKey": "0/0/0"
   },
   {
@@ -3410,7 +3932,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:24.896Z",
+   "checkedAt": "2026-11-27T05:29:02.961Z",
    "openingKey": "0/1/0"
   },
   {
@@ -3850,7 +4372,7 @@
     "date": "2026-11-13"
    },
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.796Z",
+   "checkedAt": "2026-11-27T05:29:04.009Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4044,7 +4566,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:24.829Z",
+   "checkedAt": "2026-11-27T05:29:03.316Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4069,7 +4591,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-03 11:00:00",
    "participants": 6,
-   "note": "개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -4126,9 +4648,38 @@
      "note": "협상평가부적격자"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-26T14:37:25.640Z",
-   "openingKey": "0/1/0"
+   "final": true,
+   "checkedAt": "2026-11-27T05:29:03.839Z",
+   "openingKey": "0/1/0",
+   "winner": {
+    "name": "주식회사 디윅스",
+    "bizno": "8158702319",
+    "ceo": "안준형",
+    "amount": 574275000,
+    "rate": null,
+    "date": "2026-11-27"
+   },
+   "contract": {
+    "no": "R26TE20321369",
+    "name": "AI 인프라 및 생성형 AI 구축 사업 ",
+    "date": null,
+    "amount": 0,
+    "thisYear": 574275000,
+    "joint": false,
+    "method": "제한경쟁",
+    "reason": "중소벤처기업부장관이 지정.고시한 제품",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02478542&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "단독",
+      "name": "주식회사 디윅스",
+      "ceo": "안준형",
+      "share": 100,
+      "bizno": "8158702319"
+     }
+    ]
+   }
   },
   {
    "id": "R26BK01785225",
@@ -4768,7 +5319,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.206Z",
+   "checkedAt": "2026-11-27T05:29:03.123Z",
    "openingKey": "0/0/0"
   },
   {
@@ -4842,7 +5393,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.224Z",
+   "checkedAt": "2026-11-27T05:29:03.362Z",
    "openingKey": "1/0/0"
   },
   {
@@ -5507,7 +6058,7 @@
     "date": "2026-10-21"
    },
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.272Z",
+   "checkedAt": "2026-11-27T05:29:03.522Z",
    "openingKey": "0/0/0"
   },
   {
@@ -5766,7 +6317,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.812Z",
+   "checkedAt": "2026-11-27T05:29:03.986Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6417,7 +6968,7 @@
     "date": "2026-11-09"
    },
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.586Z",
+   "checkedAt": "2026-11-27T05:29:03.733Z",
    "openingKey": "0/0/0"
   },
   {
@@ -6628,7 +7179,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:25.863Z",
+   "checkedAt": "2026-11-27T05:29:04.143Z",
    "openingKey": "1/0/0"
   },
   {
@@ -8487,7 +9038,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.223Z",
+   "checkedAt": "2026-11-27T05:29:04.456Z",
    "openingKey": "0/0/0"
   },
   {
@@ -8627,7 +9178,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.376Z",
+   "checkedAt": "2026-11-27T05:29:05.641Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9220,7 +9771,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.406Z",
+   "checkedAt": "2026-11-27T05:29:04.612Z",
    "openingKey": "0/0/0"
   },
   {
@@ -9380,7 +9931,7 @@
    "status": "개찰완료",
    "openedAt": "2026-09-18 18:00:00",
    "participants": 3,
-   "note": "개찰완료",
+   "note": "",
    "bidders": [
     {
      "rank": 1,
@@ -9411,8 +9962,16 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.395Z",
-   "openingKey": "0/0/0"
+   "checkedAt": "2026-11-27T05:29:04.637Z",
+   "openingKey": "0/0/0",
+   "winner": {
+    "name": "주식회사 하이퍼로직",
+    "bizno": "7958700977",
+    "ceo": "김종호",
+    "amount": 40000000,
+    "rate": null,
+    "date": "2026-11-27"
+   }
   },
   {
    "id": "R26BK01716223",
@@ -9805,7 +10364,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.178Z",
+   "checkedAt": "2026-11-27T05:29:04.374Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11349,7 +11908,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.347Z",
+   "checkedAt": "2026-11-27T05:29:06.658Z",
    "openingKey": "0/0/0"
   },
   {
@@ -11907,7 +12466,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.404Z",
+   "checkedAt": "2026-11-27T05:29:06.719Z",
    "openingKey": "0/0/0"
   },
   {
@@ -12905,7 +13464,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.451Z",
+   "checkedAt": "2026-11-27T05:29:04.763Z",
    "openingKey": "0/0/0"
   },
   {
@@ -14227,7 +14786,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.434Z",
+   "checkedAt": "2026-11-27T05:29:05.751Z",
    "openingKey": "0/0/0"
   },
   {
@@ -15387,7 +15946,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.779Z",
+   "checkedAt": "2026-11-27T05:29:04.995Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16118,7 +16677,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.602Z",
+   "checkedAt": "2026-11-27T05:29:04.846Z",
    "openingKey": "0/0/0"
   },
   {
@@ -16524,7 +17083,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.781Z",
+   "checkedAt": "2026-11-27T05:29:05.003Z",
    "openingKey": "0/0/0"
   },
   {
@@ -17304,7 +17863,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:29.314Z",
+   "checkedAt": "2026-11-27T05:29:07.430Z",
    "openingKey": "1/0/0"
   },
   {
@@ -17386,7 +17945,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.377Z",
+   "checkedAt": "2026-11-27T05:29:05.598Z",
    "openingKey": "0/0/0"
   },
   {
@@ -18102,7 +18661,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.369Z",
+   "checkedAt": "2026-11-27T05:29:05.623Z",
    "openingKey": "0/0/3"
   },
   {
@@ -19140,7 +19699,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.839Z",
+   "checkedAt": "2026-11-27T05:29:05.149Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19323,7 +19882,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.796Z",
+   "checkedAt": "2026-11-27T05:29:05.032Z",
    "openingKey": "0/0/0"
   },
   {
@@ -19523,7 +20082,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.366Z",
+   "checkedAt": "2026-11-27T05:29:05.645Z",
    "openingKey": "0/0/0"
   },
   {
@@ -20893,7 +21452,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.958Z",
+   "checkedAt": "2026-11-27T05:29:06.238Z",
    "openingKey": "0/0/0"
   },
   {
@@ -21096,7 +21655,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.957Z",
+   "checkedAt": "2026-11-27T05:29:06.227Z",
    "openingKey": "0/0/0"
   },
   {
@@ -21744,7 +22303,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.755Z",
+   "checkedAt": "2026-11-27T05:29:05.986Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24135,7 +24694,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:27.968Z",
+   "checkedAt": "2026-11-27T05:29:06.256Z",
    "openingKey": "0/0/0"
   },
   {
@@ -24974,7 +25533,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.707Z",
+   "checkedAt": "2026-11-27T05:29:06.626Z",
    "openingKey": "0/0/0"
   },
   {
@@ -25082,7 +25641,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.345Z",
+   "checkedAt": "2026-11-27T05:29:06.580Z",
    "openingKey": "0/0/0"
   },
   {
@@ -25493,7 +26052,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:26.982Z",
+   "checkedAt": "2026-11-27T05:29:05.241Z",
    "openingKey": "0/0/0"
   },
   {
@@ -28386,7 +28945,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.016Z",
+   "checkedAt": "2026-11-27T05:29:06.342Z",
    "openingKey": "0/0/0"
   },
   {
@@ -29955,7 +30514,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.545Z",
+   "checkedAt": "2026-11-27T05:29:06.835Z",
    "openingKey": "0/0/0"
   },
   {
@@ -32467,7 +33026,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:29.304Z",
+   "checkedAt": "2026-11-27T05:29:07.329Z",
    "openingKey": "0/0/0"
   },
   {
@@ -34987,7 +35546,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.725Z",
+   "checkedAt": "2026-11-27T05:29:06.965Z",
    "openingKey": "0/0/0"
   },
   {
@@ -35078,7 +35637,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:29.015Z",
+   "checkedAt": "2026-11-27T05:29:07.219Z",
    "openingKey": "0/0/0"
   },
   {
@@ -36712,7 +37271,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T14:37:28.922Z",
+   "checkedAt": "2026-11-27T05:29:07.060Z",
    "openingKey": "1/0/0"
   },
   {
@@ -941738,7 +942297,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.528Z"
+   "checkedAt": "2026-11-27T05:29:02.098Z"
   }
  ]
 }
