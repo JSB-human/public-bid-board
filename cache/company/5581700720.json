@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "민 소프트(MIN SOFT)",
+  "ceo": "백명현",
+  "opened": "2018-07-02",
+  "region": "대구광역시 동구 상매동",
+  "address": "대구광역시 동구 매여로1길 50-12 (상매동), 항공교통본부 ATCC 3층 ATFMS 유지관리실",
+  "employees": 3,
+  "homepage": "www.min-soft.com",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T15:45:33.537Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T15:45:33.915Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T15:45:33.915Z"
+ }
+}

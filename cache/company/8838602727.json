@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사대정정보시스템",
+  "ceo": "남은경",
+  "opened": "2022-11-21",
+  "region": "강원특별자치도 원주시",
+  "address": "강원특별자치도 원주시 입춘로 45 (반곡동) 제씨동 1208호",
+  "employees": 2,
+  "homepage": "",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T15:45:19.836Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T15:45:20.216Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T15:45:20.216Z"
+ }
+}

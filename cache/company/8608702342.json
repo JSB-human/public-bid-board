@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 예원정보기술",
+  "ceo": "김범수",
+  "opened": "2022-01-10",
+  "region": "서울특별시 금천구",
+  "address": "서울특별시 금천구 서부샛길 606,4층 419-3호  (가산동,대성디폴리스 지식산업센터)",
+  "employees": 3,
+  "homepage": "http://www.ywinno.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T15:46:08.662Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T15:46:09.044Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T15:46:09.044Z"
+ }
+}

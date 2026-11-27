@@ -1,20 +1,108 @@
 {
- "updatedAt": "2026-11-27T05:29:07.454Z",
+ "updatedAt": "2026-11-27T15:43:44.303Z",
  "source": "조달청 나라장터 낙찰정보·계약정보서비스",
  "items": [
   {
-   "id": "R26BK01832672",
+   "id": "R26BK01834195",
    "ord": "000",
-   "title": "2027년 기후예측분야 연구개발 협업 클라우드서버 유지관리 용역",
-   "org": "기상청 국립기상과학원",
-   "amount": 62727273,
-   "deadline": "2026-11-27 14:00:00",
+   "title": "[긴급] 2027~2028년 행정정보시스템 통합 유지관리 용역",
+   "org": "서울특별시 서초구",
+   "amount": 617883636,
+   "deadline": "2026-11-27 17:00:00",
    "method": "제한경쟁",
-   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832672&bidPbancOrd=000",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834195&bidPbancOrd=000",
    "keywords": [
+    "정보시스템",
+    "시스템",
     "유지관리"
    ],
-   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 18:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:42.766Z"
+  },
+  {
+   "id": "R26BK01833957",
+   "ord": "000",
+   "title": "2027년 서울 영테크 재무정보시스템 운영 및 유지관리 용역",
+   "org": "서울특별시",
+   "amount": 193855455,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833957&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 17:00:00",
+   "participants": 2,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:43.176Z"
+  },
+  {
+   "id": "R26BK01833436",
+   "ord": "000",
+   "title": "2027년 참여예산관리시스템 운영 및 유지관리 용역(재공고)",
+   "org": "서울특별시",
+   "amount": 109520000,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833436&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "소프트웨어유지및지원서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 17:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:43.191Z"
+  },
+  {
+   "id": "R26BK01833363",
+   "ord": "000",
+   "title": "2027년 경기도 수사정보시스템 유지관리 용역",
+   "org": "경기도",
+   "amount": 26000000,
+   "deadline": "2026-11-27 17:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833363&bidPbancOrd=000",
+   "keywords": [
+    "정보시스템",
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
    "category": [
     "운영 및 유지관리",
     "정보시스템유지관리서비스"
@@ -23,7 +111,257 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.683Z"
+   "checkedAt": "2026-11-27T15:43:43.221Z"
+  },
+  {
+   "id": "R26BK01833109",
+   "ord": "000",
+   "title": "(긴급)(협상)2027년 용인시 지능형교통체계(ITS) 유지관리 용역",
+   "org": "경기도 용인시",
+   "amount": 1125686364,
+   "deadline": "2026-11-27 17:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833109&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:43.298Z"
+  },
+  {
+   "id": "R26BK01831434",
+   "ord": "000",
+   "title": "운수종사자 자격관리시스템 운영 및 유지관리 용역",
+   "org": "서울특별시",
+   "amount": 114545455,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01831434&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "소프트웨어유지및지원서비스"
+   ],
+   "reNotice": false,
+   "regions": [
+    "서울"
+   ],
+   "status": "유찰",
+   "openedAt": "2026-11-27 17:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:43.833Z"
+  },
+  {
+   "id": "R26BK01830356",
+   "ord": "000",
+   "title": "2027년 도시계획정보시스템 운영 및 유지관리(재공고)",
+   "org": "서울특별시",
+   "amount": 332985455,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01830356&bidPbancOrd=000",
+   "keywords": [
+    "도시계획정보",
+    "정보시스템",
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 17:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:43.934Z"
+  },
+  {
+   "id": "R26BK01829857",
+   "ord": "000",
+   "title": "2027년 스마트도시 플랫폼 통합 운영 및 유지관리사업",
+   "org": "충청남도",
+   "amount": 300000000,
+   "deadline": "2026-11-27 17:00",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01829857&bidPbancOrd=000",
+   "keywords": [
+    "스마트도시"
+   ],
+   "award": "",
+   "category": [],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:44.012Z"
+  },
+  {
+   "id": "R26BK01834163",
+   "ord": "000",
+   "title": "2027년 정보소통광장·문서공개시스템 유지관리  용역",
+   "org": "서울특별시",
+   "amount": 665117273,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834163&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "SW 및 시스템 개발",
+    "정보시스템개발서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 16:21:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:42.976Z"
+  },
+  {
+   "id": "R26BK01832681",
+   "ord": "000",
+   "title": "2027년 서울시 생성형 AI 서비스 운영 및 유지관리",
+   "org": "서울특별시",
+   "amount": 213292727,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832681&bidPbancOrd=000",
+   "keywords": [
+    "AI",
+    "생성형",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "SW 및 시스템 개발",
+    "패키지소프트웨어개발및도입서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "유찰",
+   "openedAt": "2026-11-27 16:16:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:43.369Z"
+  },
+  {
+   "id": "R26BK01833487",
+   "ord": "001",
+   "title": "2027년 서울재정포털 운영 및 유지관리 용역(재공고)",
+   "org": "서울특별시",
+   "amount": 54968182,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833487&bidPbancOrd=001",
+   "keywords": [
+    "포털",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "소프트웨어유지및지원서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:43.155Z"
+  },
+  {
+   "id": "R26BK01832895",
+   "ord": "000",
+   "title": "2027년 서소문청사 통신시스템 유지관리 용역",
+   "org": "서울특별시",
+   "amount": 292646364,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832895&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:43.333Z"
+  },
+  {
+   "id": "R26BK01832192",
+   "ord": "000",
+   "title": "2027년 서울 부동산동향분석시스템 운영 및 통합유지관리",
+   "org": "서울특별시",
+   "amount": 183636364,
+   "deadline": "2026-11-27 16:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832192&bidPbancOrd=000",
+   "keywords": [
+    "시스템",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:43.576Z"
+  },
+  {
+   "id": "R26BK01832101",
+   "ord": "000",
+   "title": "AI 대응 실전적 의정 혁신 방법론 연구",
+   "org": "서울특별시 의회사무처",
+   "amount": 41362727,
+   "deadline": "2026-11-27 16:00",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832101&bidPbancOrd=000",
+   "keywords": [
+    "AI"
+   ],
+   "award": "",
+   "category": [],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:43.688Z"
   },
   {
    "id": "R26BK01832013",
@@ -45,9 +383,36 @@
    ],
    "reNotice": false,
    "regions": [],
+   "status": "유찰",
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:43.728Z",
+   "openedAt": "2026-11-27 15:00:00",
+   "participants": 0,
+   "note": "단독응찰",
+   "openingKey": "0/0/0"
+  },
+  {
+   "id": "R26BK01832672",
+   "ord": "000",
+   "title": "2027년 기후예측분야 연구개발 협업 클라우드서버 유지관리 용역",
+   "org": "기상청 국립기상과학원",
+   "amount": 62727273,
+   "deadline": "2026-11-27 14:00:00",
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01832672&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": true,
+   "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.881Z"
+   "checkedAt": "2026-11-27T15:43:43.397Z"
   },
   {
    "id": "R26BK01831202",
@@ -70,7 +435,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.064Z"
+   "checkedAt": "2026-11-27T15:43:43.904Z"
   },
   {
    "id": "R26BK01848308",
@@ -301,7 +666,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.315Z"
+   "checkedAt": "2026-11-27T15:43:42.942Z"
   },
   {
    "id": "R26BK01832720",
@@ -325,7 +690,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.670Z"
+   "checkedAt": "2026-11-27T15:43:43.644Z"
   },
   {
    "id": "R26BK01832572",
@@ -349,7 +714,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.697Z"
+   "checkedAt": "2026-11-27T15:43:43.477Z"
   },
   {
    "id": "R26BK01832549",
@@ -373,7 +738,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.716Z"
+   "checkedAt": "2026-11-27T15:43:43.509Z"
   },
   {
    "id": "R26BK01832535",
@@ -397,7 +762,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.858Z"
+   "checkedAt": "2026-11-27T15:43:43.548Z"
   },
   {
    "id": "R26BK01832175",
@@ -422,7 +787,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.874Z"
+   "checkedAt": "2026-11-27T15:43:43.655Z"
   },
   {
    "id": "R26BK01831566",
@@ -446,7 +811,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.882Z"
+   "checkedAt": "2026-11-27T15:43:43.756Z"
   },
   {
    "id": "R26BK01831522",
@@ -471,7 +836,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.903Z"
+   "checkedAt": "2026-11-27T15:43:43.822Z"
   },
   {
    "id": "R26BK01831347",
@@ -494,7 +859,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.046Z"
+   "checkedAt": "2026-11-27T15:43:43.867Z"
   },
   {
    "id": "R26BK01813480",
@@ -518,7 +883,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.258Z"
+   "checkedAt": "2026-11-27T15:43:44.224Z"
   },
   {
    "id": "R26BK01798220",
@@ -568,9 +933,24 @@
    ],
    "reNotice": false,
    "regions": [],
-   "status": "개찰 전",
+   "status": "개찰완료",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:01.115Z"
+   "checkedAt": "2026-11-27T15:43:42.405Z",
+   "openedAt": "2026-11-26 17:00:00",
+   "participants": 1,
+   "note": "전자시담 개찰완료",
+   "openingKey": "0/0/0",
+   "bidders": [
+    {
+     "rank": 1,
+     "name": "엔티에스커뮤니케이션 주식회사",
+     "bizno": "2118761137",
+     "ceo": "장준철",
+     "amount": 69000000,
+     "rate": 100,
+     "note": "정상"
+    }
+   ]
   },
   {
    "id": "R26BK01854528",
@@ -594,7 +974,7 @@
    "regions": [],
    "status": "개찰완료",
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.383Z",
+   "checkedAt": "2026-11-27T15:43:42.796Z",
    "openedAt": "2026-11-26 12:00:00",
    "participants": 1,
    "note": "전자시담 개찰완료",
@@ -902,7 +1282,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.401Z"
+   "checkedAt": "2026-11-27T15:43:42.817Z"
   },
   {
    "id": "R26BK01830166",
@@ -949,8 +1329,37 @@
      "note": "정상"
     }
    ],
-   "final": false,
-   "checkedAt": "2026-11-26T23:24:55.351Z"
+   "final": true,
+   "checkedAt": "2026-11-27T15:43:44.201Z",
+   "contract": {
+    "no": "R26TE20328701",
+    "name": "2027년 성평등가족부 정보화 업무지원시스템 운영 및 유지관리",
+    "date": null,
+    "amount": 0,
+    "thisYear": 237000000,
+    "joint": false,
+    "method": "수의계약",
+    "reason": "재공고입찰등과 수의계약",
+    "url": "https://www.g2b.go.kr/link/FIUA027_01/single/?ctrtNo=R26TA02479183&ctrtChgOrd=00&prcmBsneSeCd=조070002&srchName=ctrtCrst&openUrl=Y",
+    "members": [
+     {
+      "role": "주계약업체",
+      "type": "공동",
+      "name": "주식회사 티지",
+      "ceo": "전원영",
+      "share": 85.9,
+      "bizno": "1058748713"
+     },
+     {
+      "role": "도급업체",
+      "type": "공동",
+      "name": "주식회사 웹소울랩",
+      "ceo": "이진병",
+      "share": 14.1,
+      "bizno": "4278800329"
+     }
+    ]
+   }
   },
   {
    "id": "R26BK01846070",
@@ -1182,7 +1591,7 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.379Z"
+   "checkedAt": "2026-11-27T15:43:43.012Z"
   },
   {
    "id": "R26BK01836070",
@@ -1202,7 +1611,7 @@
    "status": "개찰완료",
    "openedAt": "2026-11-25 11:00:00",
    "participants": 70,
-   "note": "개찰완료",
+   "note": "",
    "openingKey": "0/1/0",
    "bidders": [
     {
@@ -1837,7 +2246,15 @@
     }
    ],
    "final": false,
-   "checkedAt": "2026-11-26T23:24:55.372Z"
+   "checkedAt": "2026-11-27T15:43:43.042Z",
+   "winner": {
+    "name": "에스제이데이타 주식회사",
+    "bizno": "8038800144",
+    "ceo": "박상전",
+    "amount": 150475000,
+    "rate": 86.252,
+    "date": "2026-11-27"
+   }
   },
   {
    "id": "R26BK01841029",
@@ -1928,7 +2345,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:03.154Z"
+   "checkedAt": "2026-11-27T15:43:44.292Z"
   },
   {
    "id": "R26BK01833786",
@@ -2428,7 +2845,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.317Z"
+   "checkedAt": "2026-11-27T15:43:44.225Z"
   },
   {
    "id": "R26BK01824094",
@@ -2624,7 +3041,7 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.246Z"
+   "checkedAt": "2026-11-27T15:43:44.113Z"
   },
   {
    "id": "R26BK01805039",
@@ -942297,7 +942714,74 @@
    "regions": [],
    "status": "개찰 전",
    "final": false,
-   "checkedAt": "2026-11-27T05:29:02.098Z"
+   "checkedAt": "2026-11-27T15:43:44.045Z"
+  },
+  {
+   "id": "R26BK01834284",
+   "ord": "000",
+   "title": "2027년 홈페이지 유지관리 용역(긴급)",
+   "org": "서울특별시 강서구",
+   "amount": 200834545,
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01834284&bidPbancOrd=000",
+   "keywords": [
+    "홈페이지",
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:42.583Z"
+  },
+  {
+   "id": "R26BK01833571",
+   "ord": "000",
+   "title": "재난예경보시설 신규설치 및 통합플랫폼 구축사업(협상)(긴급)",
+   "org": "경상북도 영양군",
+   "amount": 618981818,
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01833571&bidPbancOrd=000",
+   "keywords": [
+    "플랫폼"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(엔지니어링)",
+   "category": [
+    "기타",
+    "기타기술용역"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:43.123Z"
+  },
+  {
+   "id": "R26BK01825885",
+   "ord": "000",
+   "title": "2027년 재난예경보시설 통합 유지관리 용역",
+   "org": "경기도 동두천시",
+   "amount": 158594545,
+   "method": "제한경쟁",
+   "url": "https://www.g2b.go.kr/link/PNPE027_01/single/?bidPbancNo=R26BK01825885&bidPbancOrd=000",
+   "keywords": [
+    "유지관리"
+   ],
+   "award": "협상에의한계약-협상에 의한 낙찰자 결정(SW사업)",
+   "category": [
+    "운영 및 유지관리",
+    "정보시스템유지관리서비스"
+   ],
+   "reNotice": false,
+   "regions": [],
+   "status": "개찰 전",
+   "final": false,
+   "checkedAt": "2026-11-27T15:43:44.136Z"
   }
  ]
 }

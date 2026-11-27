@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "살아남는 개발자들 (DWS)",
+  "ceo": "이진",
+  "opened": "2026-01-01",
+  "region": "대전광역시 유성구 봉명동",
+  "address": "대전광역시 유성구 계룡로105번길 15 (봉명동) 1동 2층 203-S77호 ",
+  "employees": 3,
+  "homepage": "https://www.dwsoft.org/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-27T15:46:19.042Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-27T15:46:19.404Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-27T15:46:19.404Z"
+ }
+}
