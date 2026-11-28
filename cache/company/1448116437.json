@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "주식회사 에이티지 (ATG)",
+  "ceo": "임강민",
+  "opened": "2013-07-29",
+  "region": "경기도 성남시 분당구",
+  "address": "경기도 성남시 분당구 정자일로 100-0 (정자동, 미켈란쉐르빌), E동 506-510호",
+  "employees": 28,
+  "homepage": "http://www.atg.co.kr",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-28T14:17:37.598Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-28T14:17:38.060Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-28T14:17:38.060Z"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "(주)키투웨이(Key To Way Inc.)",
+  "ceo": "권영상",
+  "opened": "2009-03-04",
+  "region": "서울특별시 서초구",
+  "address": "서울특별시 서초구 반포대로 79-0 (서초동) 6층",
+  "employees": 20,
+  "homepage": "www.keytoway.kr",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-28T14:19:42.102Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-28T14:19:42.552Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-28T14:19:42.552Z"
+ }
+}

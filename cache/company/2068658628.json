@@ -1,0 +1,29 @@
+{
+ "basic": {
+  "name": "티티비 주식회사",
+  "ceo": "유정석",
+  "opened": "2011-10-11",
+  "region": "서울특별시 강남구 역삼동",
+  "address": "서울특별시 강남구 강남대로62길 33 3층 (역삼동, 알앤씨빌딩)",
+  "employees": 5,
+  "homepage": "",
+  "kinds": "일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-28T14:20:03.967Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {
+   "202511": 3,
+   "202512": 3
+  },
+  "found": true,
+  "fetchedAt": "2026-11-28T14:20:04.881Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-28T14:20:04.881Z"
+ }
+}
