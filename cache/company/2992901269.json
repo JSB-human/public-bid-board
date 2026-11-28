@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "보스마린",
+  "ceo": "김창한",
+  "opened": "2022-03-02",
+  "region": "부산광역시 강서구",
+  "address": "부산광역시 강서구 미음산단5로41번길 71, 5층 509호(미음동, 부산글로벌테크비즈센터)",
+  "employees": 3,
+  "homepage": "www.bosemarine.com",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-28T05:05:31.464Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-28T05:05:31.767Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-28T05:05:31.767Z"
+ }
+}

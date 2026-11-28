@@ -1,0 +1,26 @@
+{
+ "basic": {
+  "name": "오케스트로 AGI 주식회사",
+  "ceo": "김영광",
+  "opened": "2022-11-14",
+  "region": "서울특별시 영등포구 여의도동",
+  "address": "서울특별시 영등포구 여의대로 108, 43층 일부(여의도동, 파크원타워2)",
+  "employees": 11,
+  "homepage": "https://oksagi.co.kr/",
+  "kinds": "물품,일반용역,용역",
+  "hq": "본사",
+  "fetchedAt": "2026-11-28T05:04:31.877Z"
+ },
+ "industries": [],
+ "nps": {
+  "months": {},
+  "found": false,
+  "fetchedAt": "2026-11-28T05:04:32.187Z"
+ },
+ "dart": {
+  "corpCode": null,
+  "listed": false,
+  "years": [],
+  "fetchedAt": "2026-11-28T05:04:32.187Z"
+ }
+}
